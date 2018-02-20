@@ -1,8 +1,9 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "reda-lemeden",
+  "private": true,
+  "description": "Home page of Reda Lemeden",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Reda Lemeden <hello@redalemeden.com>",
   "dependencies": {
     "gatsby": "^1.9.158",
     "gatsby-link": "^1.6.34",
@@ -10,7 +11,8 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby", 
+    "sass"
   ],
   "license": "MIT",
   "main": "n/a",

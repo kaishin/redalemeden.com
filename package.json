@@ -10,6 +10,7 @@
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.36",
+    "lodash": "^4.17.5",
     "react-helmet": "^5.2.0"
   },
   "keywords": [

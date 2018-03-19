@@ -1,4 +1,5 @@
 const path = require('path')
+const moment = require('moment')
 const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
@@ -18,6 +19,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           }
           frontmatter {
             title
+            date
           }
         }
       }
@@ -44,11 +46,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({ node, getNode }).replace(/[0-9]{4}-[0-9]{2}-[0-9]{2}-|\//g, '')
     createNodeField({
       name: `slug`,
       node,
-      value,
+      value: `/blog/${moment(node.frontmatter.date).format('YYYY')}/${value}`,
     })
   }
 }

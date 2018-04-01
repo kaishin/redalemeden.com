@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: 'Reda Lemeden',
-    author: 'Reda Lemeden'
+    author: 'Reda Lemeden',
+    siteUrl: 'https://redalemeden.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

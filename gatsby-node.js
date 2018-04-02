@@ -46,11 +46,13 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
   if (node.internal.type === `MarkdownRemark`) {
+    const isPost = /content\/posts/.test(node.id)
     const value = createFilePath({ node, getNode }).replace(/[0-9]{4}-[0-9]{2}-[0-9]{2}-|\//g, '')
+
     createNodeField({
       name: `slug`,
       node,
-      value: `/blog/${moment(node.frontmatter.date).format('YYYY')}/${value}`,
+      value: isPost ? `/blog/${moment(node.frontmatter.date).format('YYYY')}/${value}` : value,
     })
   }
 }

@@ -12,7 +12,7 @@ const IndexPage = () => (
         Software that is <em>accessible</em>, <em>unambiguous</em>, <em>open</em>, and <em>respectful</em> to both its users and the platforms it runs on.
       </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/syndicate/">Go to Syndicate</Link>
   </section>
 )
 

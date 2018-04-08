@@ -9,7 +9,9 @@ import '../styles/main.scss'
 
 class DefaultLayout extends React.Component {
   render() {
-    const isHomepage = this.props.location.pathname == `/`
+    const { location, children } = this.props
+    const isHomepage = location.pathname == `/`
+
     return (
       <div>
         <Helmet
@@ -28,7 +30,7 @@ class DefaultLayout extends React.Component {
             paddingTop: 0,
           }}
         >
-          {this.props.children()}
+          {children()}
         </div>
       </div>
     )

@@ -1,3 +1,5 @@
+const cssnext = require('postcss-cssnext')
+
 module.exports = {
   siteMetadata: {
     title: 'Reda Lemeden',
@@ -7,6 +9,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-postcss-sass',
+      options: {
+        postCssPlugins: [cssnext()],
+      },
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {

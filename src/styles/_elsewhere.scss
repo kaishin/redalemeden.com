@@ -1,0 +1,124 @@
+.elsewhere-section {
+  @extend .recent-projects-section;
+  background-color: darken($dusk, 12%);
+  padding: $large-spacing * 2;
+
+  @include media-width(until, 40rem) {
+    padding: $large-spacing;
+  }
+
+  ol {
+    list-style: none;
+  }
+
+  .column-heading {
+    @extend .section-heading;
+    padding: $base-spacing 0;
+
+    &::after {
+      height: 2px;
+    }
+  }
+
+  .container {
+    @extend .recent-project-list;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+
+    @include media-width(until, 60rem) {
+      justify-content: space-around;
+    }
+  }
+
+  .column {
+    flex: 0 1 $container-width / 3.5;
+  }
+}
+
+.article-list {
+  padding: 0;
+
+  .article {
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: $large-spacing;
+  }
+
+  .article-link {
+    text-decoration: none;
+  }
+
+  .article-title {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 auto 0.4rem;
+    max-width: 14rem;
+    transition: color 0.2s;
+
+    &:hover  {
+      color: $white;
+    }
+  }
+
+  .article-metadata {
+    font-size: 0.76rem;
+    color: $secondary-text-color;
+  }
+
+  .outlet-thumbnail {
+    width: 1.4rem;
+    display: inline-block;
+    margin-right: 0.2rem;
+    vertical-align: -0.3rem;
+    border-radius: 50%;
+  }
+}
+
+.podcast-list {
+  @include media-width(until, $container-width) {
+    padding-left: $small-spacing;
+  }
+}
+
+.podcast-cell {
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: $large-spacing;
+
+  .podcast-thumbnail {
+    @include size(4rem);
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .podcast-name {
+    @extend [class$=heading];
+    color: $white;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .role {
+    color: $secondary-text-color;
+  }
+
+  .podcast-metadata {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: $base-spacing;
+  }
+
+  .podcast-link {
+    display: flex;
+    text-decoration: none;
+  }
+
+  .episode-metadata {
+    font-size: 0.76rem;
+    line-height: 0;
+    color: $secondary-text-color;
+  }
+}
+

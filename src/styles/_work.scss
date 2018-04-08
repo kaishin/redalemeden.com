@@ -1,0 +1,27 @@
+.work-section {
+  @extend .recent-projects-section;
+
+  .project-list {
+    @extend .recent-project-list;
+  }
+
+  .section-heading {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    max-width: $container-width;
+    text-align: left;
+
+    @include media-width(until, $container-width + $large-spacing) {
+      padding: $large-spacing;
+    }
+
+    &::after {
+      background-color: lighten($dusk, 20%);
+      flex-grow: 1;
+      height: 1px;
+      margin-left: $base-spacing;
+      margin-top: 0;
+    }
+  }
+}

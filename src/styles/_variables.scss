@@ -1,0 +1,29 @@
+$container-width: 60rem;
+$container-padding: 1rem;
+$container-breakpoint: $container-width;
+$sidebar-max-width: 22.5rem;
+
+$blog-container-width: 40rem;
+
+$apple-system: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$fira: "Fira Sans", $apple-system;
+$titillium: "Titillium Web", sans-serif;
+$sintony: "Sintony", "Helvetica Neue", "Arial", sans-serif;
+
+$base-spacing: 1rem;
+$small-spacing: $base-spacing / 2;
+$tiny-spacing: $small-spacing / 2;
+$large-spacing: $base-spacing * 2;
+
+$border-radius: 4px;
+
+// Colors
+$blog-accent-color: $mauve;
+$ashtray: adjust-hue($blog-accent-color, -50deg);
+
+$blog-link-active-color: darken($blog-accent-color, 40%);
+$blog-link-color: lighten($blog-accent-color, 10%);
+$blog-link-hover-color: $blog-accent-color;
+$blog-link-visited-color: darken($blog-accent-color, 20%);
+$blog-tertiary-color: darken($ash, 5%);
+

@@ -1,0 +1,151 @@
+$global-values: 'initial', 'inherit', 'unset';
+$font-length-units: 'em', 'ex', 'ch', 'rem';
+$viewport-length-units: 'vw', 'vh', 'vmin', 'vmax';
+$relative-length-units: join($font-length-units, $viewport-length-units);
+$absolute-length-units: 'cm', 'mm', 'in', 'px', 'pt', 'pc';
+$length-units: join($relative-length-units, $absolute-length-units);
+$box-sizing-width-values: 'border-box', 'content-box';
+$box-sizing-values: join($box-sizing-width-values, 'padding-box');
+$width-values: 'available', 'min-content', 'max-content', 'fit-content', 'auto';
+$media-constraints: 'until', 'until-excluding', 'from', 'from-excluding', 'equal', 'between';
+
+@function list-contains($list, $value) {
+  @return not(list-contains-not($list, $value));
+}
+
+@function list-contains-not($list, $value) {
+  @return not(index($list, $value));
+}
+
+@function is-number($value) {
+  @return type-of($value) == 'number';
+}
+
+@function is-list($value) {
+  @return type-of($value) == 'list';
+}
+
+@function is-string($value) {
+  @return type-of($value) == 'string';
+}
+
+@function is-calc($value) {
+  @return is-string($value)
+  and str-slice($value, 1, 5) == 'calc('
+  and str-slice($value, str-length($value)) == ')';
+}
+
+@function is-global-value($value) {
+  @return list-contains($global-values, $value);
+}
+
+@function is-percentage($value) {
+  @return is-number($value) and unit($value) == '%';
+}
+
+@function is-length($value) {
+  $valid-number: is-number($value) and list-contains($length-units, unit($value));
+  $valid-calc: is-calc($value);
+  $unitless-zero: $value == 0;
+  @return $valid-number or $valid-calc or $unitless-zero;
+}
+
+@function is-size($value) {
+  $list-length: length($value);
+
+  @if $list-length == 1 {
+    @return is-length($value)
+    or is-percentage($value)
+    or list-contains($width-values, $value)
+    or is-global-value($value);
+  } @else if $list-length == 2 {
+    $first-value: nth($value, 1);
+    $second-value: nth($value, 2);
+
+    $valid-first-value: is-length($first-value) or is-percentage($first-value);
+    $valid-second-value: list-contains($box-sizing-width-values, $second-value);
+    @return $valid-first-value and $valid-second-value;
+  } @else {
+    @return false;
+  }
+}
+
+@function is-media-constraint($value) {
+  @return is-string($value) and list-contains($media-constraints, $value);
+}
+
+@function increment($value, $increment: 1) {
+  @return if(is-number($value), $value + $increment, null);
+}
+
+@function decrement($value, $decrement: 1) {
+  @return increment($value, - $decrement);
+}
+
+@function media-expression($feature, $prefix: null) {
+  @return #{$prefix}#{$feature};
+}
+
+@function media-prefix($constraint) {
+  @if not(is-media-constraint($constraint)) {
+    @error 'Argument should be a constraint';
+  }
+
+  $prefix: null;
+
+  @if $constraint == 'from' or $constraint == 'from-excluding' {
+    $prefix: 'min-';
+  } @else if $constraint == 'until' or $constraint == 'until-excluding' {
+    $prefix: 'max-';
+  }
+
+  @return $prefix;
+}
+
+@mixin size($width, $height: $width) {
+  height: if(is-size($height), $height, null);
+  width: if(is-size($width), $width, null);
+}
+
+@mixin assert($condition, $message, $warn-only: false) {
+  @if not($condition) {
+    @error $message;
+  }
+}
+
+@mixin media-width($constraint, $first-value, $second-value: null) {
+  $feature: 'width';
+  @include assert(is-media-constraint($constraint), 'Invalid constraint argument');
+  @include assert(is-length($first-value), 'Value should be of type `length`');
+
+  @if $constraint == 'between' {
+    @include assert($second-value, 'Constraints of type `between` require a second `length` argument');
+    $first-expression: media-expression($feature, media-prefix('from'));
+    $second-expression: media-expression($feature, media-prefix('until'));
+
+    @media screen and (#{$first-expression}: $first-value) and (#{$second-expression}: $second-value) {
+      @content;
+    }
+  } @else {
+    $expression: media-expression($feature, media-prefix($constraint));
+
+    @if $constraint == 'until-excluding' {
+      $first-value: decrement($first-value);
+    } @else if $constraint == 'from-excluding' {
+      $first-value: increment($first-value);
+    }
+
+    @media screen and (#{$expression}: $first-value) {
+      @content;
+    }
+  }
+}
+
+
+body {
+  background: red;
+
+  @include media-width(from, 67px, 90px) {
+    background: blue;
+  }
+}

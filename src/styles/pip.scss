@@ -1,0 +1,17 @@
+@import "vendor";
+@import "syntax";
+@import "colors";
+@import "variables";
+@import "buttons";
+
+$page-text-color: $white;
+$page-main-color: $page-text-color;
+$page-background-color: darken($black, 20%);
+$page-border: 1px solid $black;
+$page-main-cta-color: #3bc3a3;
+
+@import "product";
+
+.title {
+  color: $page-main-cta-color;
+}

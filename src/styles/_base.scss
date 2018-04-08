@@ -1,0 +1,30 @@
+body {
+  background-color: $background-color;
+  color: lighten($background-color, 50%);
+}
+
+// Site Layout
+
+.grid-container {
+  @include media-width(from, $container-breakpoint) {
+    display: grid;
+    grid-template-columns: $sidebar-max-width 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .site-header {
+    grid-area: 1 / 1;
+  }
+
+  .site-navigation {
+    grid-area: 2 / 1;
+  }
+
+  .site-footer {
+    grid-area: 3 / 1;
+  }
+
+  .main-container {
+    grid-area: 1 / 2 / -1;
+  }
+}

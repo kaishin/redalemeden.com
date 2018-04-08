@@ -2,32 +2,18 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
+  <header class="site-header">
+    <h1 class="full-name">
+      Reda Lemeden
+    </h1>
+    <h2 class="tagline">
+      <span class="designer">Designer</span> &amp;
+      <span class="developer">Developer</span>
+    </h2>
+    <a href="/" class="sakigake">
+        <img src="/images/sakigake.svg" alt="Sakigake logo" />
+    </a>
+  </header>
 )
 
 export default Header

@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { ReactComponent as SakigakeLogo } from '../assets/sakigake.svg'
+
 class Header extends React.Component {
   render() {
     const { title } = this.props
@@ -15,7 +17,7 @@ class Header extends React.Component {
           <span class="developer">Developer</span>
         </h2>
         <a href="/" class="sakigake">
-            <img src="/images/sakigake.svg" alt="Sakigake logo" />
+            <SakigakeLogo />
         </a>
       </header>
     )

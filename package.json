@@ -11,6 +11,7 @@
     "gatsby-plugin-postcss-sass": "^1.0.19",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-sitemap": "^1.2.20",
+    "gatsby-plugin-svgr": "^1.0.0",
     "gatsby-remark-abbr": "^1.0.0",
     "gatsby-remark-autolink-headers": "^1.4.15",
     "gatsby-remark-prismjs": "^1.2.21",

@@ -38,6 +38,12 @@ module.exports = {
         path: `${__dirname}/content/pages/`,
         name: 'pages'
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-svgr`,
+      options: {
+        icon: false,
+      },
+    },
   ]
 };

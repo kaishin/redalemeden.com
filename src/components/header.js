@@ -3,10 +3,12 @@ import Link from 'gatsby-link'
 
 class Header extends React.Component {
   render() {
+    const { title } = this.props
+
     return (
       <header class="site-header">
         <h1 class="full-name">
-          Reda Lemeden
+          {title}
         </h1>
         <h2 class="tagline">
           <span class="designer">Designer</span> &amp;

@@ -10,18 +10,20 @@ import '../styles/main.scss'
 class DefaultLayout extends React.Component {
   render() {
     const { location, children } = this.props
-    const isHomepage = location.pathname == `/`
+    const { siteMetadata } = this.props.data.site
+    const siteTitle = siteMetadata.title
+    const isHomepage = location.pathname == `/` // Currently unused
 
     return (
       <div>
         <Helmet
-          defaultTitle="Gatsby Default Starter"
+          defaultTitle={siteTitle}
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        <Header />
+        <Header {...siteMetadata}/>
         <div
           style={{
             margin: '0 auto',
@@ -30,7 +32,7 @@ class DefaultLayout extends React.Component {
             paddingTop: 0,
           }}
         >
-          {children()}
+        {children()}
         </div>
       </div>
     )
@@ -42,3 +44,14 @@ DefaultLayout.propTypes = {
 }
 
 export default DefaultLayout
+
+export const pageQuery = graphql`
+  query Query {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
+  }
+`

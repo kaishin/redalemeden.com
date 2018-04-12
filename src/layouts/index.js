@@ -19,6 +19,7 @@ class DefaultLayout extends React.Component {
         <Helmet
           defaultTitle={siteTitle}
           meta={[
+            { name: 'robots', content: 'noodp, noydir' },
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}

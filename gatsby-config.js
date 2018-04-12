@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-react-next',
     {
       resolve: 'gatsby-plugin-postcss-sass',
       options: {

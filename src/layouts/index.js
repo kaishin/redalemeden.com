@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
+import Navigation from '../components/navigation'
 
 import Normalize from 'normalize.css';
 import '../styles/main.scss'
@@ -25,6 +26,7 @@ class DefaultLayout extends React.Component {
           ]}
         />
         <Header {...siteMetadata}/>
+        <Navigation/>
         <main className='main-container'>
           {children()}
         </main>

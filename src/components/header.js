@@ -14,7 +14,7 @@ class Header extends React.Component {
         </h1>
         <h2 class="tagline">
           <span class="designer">Designer</span> &amp;
-          <span class="developer">Developer</span>
+          <span class="developer"> Developer</span>
         </h2>
         <Link to="/" activeClassName="sakigake">
             <SakigakeLogo />

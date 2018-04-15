@@ -40,6 +40,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Fira Mono`,
+          `Fira Sans\:300i,400,400i,500`
+        ]
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/pages/`,

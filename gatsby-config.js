@@ -10,6 +10,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-react-next',
+    'gatsby-transformer-yaml',
     {
       resolve: 'gatsby-plugin-postcss-sass',
       options: {
@@ -59,6 +60,13 @@ module.exports = {
       resolve: `gatsby-plugin-svgr`,
       options: {
         icon: false,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/data`,
+        name: `data`,
       },
     },
   ]

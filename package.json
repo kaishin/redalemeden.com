@@ -20,6 +20,7 @@
     "gatsby-remark-prismjs": "^1.2.24",
     "gatsby-source-filesystem": "^1.5.29",
     "gatsby-transformer-remark": "^1.7.39",
+    "gatsby-transformer-yaml": "^1.5.16",
     "lodash": "^4.17.5",
     "moment": "^2.22.0",
     "normalize.css": "^8.0.0",

@@ -1,0 +1,114 @@
+- version: 1.0
+  date: 2001-01-09 00:00:00 +0800
+  image_file: 1-0-0.png
+  subtitle: "Beginnings"
+  lifespan_days: 112
+  description: |
+    The first, and lesser-known, icon appeared on Mac OS 9 when iTunes 1.0 made its debut.
+    Apple heavily marketed iTunes as a digital jukebox that can be used to rip and burn audio CDs—the prevalent music distribution format at the time.
+    This made the CD an obvious choice for the icon, with the addition of three colorful eighth notes to spice things up.
+    With less than 4 months in service, this was the shortest-lived iteration.
+
+- version: 1.1.1
+  date: 2001-05-01 00:00:00 +0800
+  image_file: 1-1-1.png
+  subtitle: "Perspective"
+  lifespan_days: 175
+  description: |
+    The second iteration was released shortly after the initial release of OS X, but before iTunes added support for the new OS.
+    The CD gained more details—notably the translucent plastic hub—and bid farewell to the straight-on perspective it originally shipped with.
+    The notes got a visual upgrade as well, expanding in size and scoring more highlights and reflective shadows.
+    These changes added a touch of realism to the icon and made it look sharper and more modern than the previous take.
+
+- version: 2.0
+  date: 2001-10-23 00:00:00 +0800
+  image_file: 2-0-0.png
+  subtitle: "Hello, OS X"
+  lifespan_days: 267
+  description: |
+    This icon was introduced when iTunes made the jump to OS X in its second major version,
+    which was timed with the release of the iPod.
+    The colorful notes were replaced by a single beamed eighth note coated in a stern navy blue
+    and casting a more visible reflection on the CD.
+    Changes to the CD were relatively minor, with the most notable one being the less translucent plastic hub.
+
+- version: 3.0
+  date: 2002-07-17 00:00:00 +0800
+  image_file: 3-0-0.png
+  subtitle: "Goodbye, OS 9"
+  lifespan_days: 285
+  description: |
+    In its third major release, iTunes dropped support for Mac OS 9.
+    On the icon front, the note reverted to a purple hue reminiscent of the one used in pre-OS X versions,
+    and traded the CD reflection for more reflective shadows, especially on the heads.
+    The CD itself regained some of its pre-2.0 hub translucency and was given a less banded gradient.
+
+- version: 4.0
+  date: 2003-04-28 00:00:00 +0800
+  image_file: 4-0-0.png
+  subtitle: "Green"
+  lifespan_days: 1233
+  description: |
+    Another year, another color.
+    This time, the vibrant purple was replaced by an equally vibrant green,
+    perhaps a harbinger of the huge commercial success of the then newly-released iTunes Store.
+    Within the same year, iTunes 4.1 added Windows XP support, making this icon the first to make an appearance on a non-Mac platform.
+
+- version: 7.0
+  date: 2006-09-12 00:00:00 +0800
+  image_file: 7-0-0.png
+  subtitle: "The Calm"
+  lifespan_days: 1450
+  description: |
+    With four years sitting in our docks, this is indisputably the most memorable and iconic version in this timeline.
+    Apple went back to blue as a note color—albeit a brighter hue—and made the note heads rounder and less slanted.
+    The note also gained a glossier finish as a result of toning down its reflective shadows and cranking up its highlights.
+    As for the CD, the plastic hub lost most of its transluency,
+    while additional color stops made the angle gradient on the surface look more detailed than ever.
+
+- version: 10.0
+  date: 2010-09-01 00:00:00 +0800
+  image_file: 10-0-0.png
+  subtitle: "The Storm"
+  lifespan_days: 820
+  description: |
+    The most radical, and thus controversial, icon redesign in the history of iTunes.
+    To celebrate the prevalence of digital downloads over physical media,
+    the realistic-looking CD of yore was shown the door and a simplistic circular icon took its place.
+    The note itself shrank in size and turned dark gray, with an outer glow serving to improve contrast against the blue background.
+    A highlight was used in the top half of the icon to give it a glossy finish not dissimilar from the one used in iOS icons back then.
+
+- version: 11.0
+  date: 2012-11-29 00:00:00 +0800
+  image_file: 11-0-0.png
+  subtitle: "Cloud White"
+  lifespan_days: 686
+  description: |
+    The musical note turned white,
+    a color choice that was possibly a nod to the tighter iCloud integration that shipped in this version.
+    Alongside this change, the note shrank even more—perhaps to better fit inside the circle—and
+    lost its outer glow in favor of a not-so-subtle drop shadow.
+    Meanwhile, the elliptic icon highlight became rounder and subtler towards the center.
+
+- version: 12.0
+  date: 2014-10-16 00:00:00 +0800
+  image_file: 12-0-0.png
+  subtitle: "Reunion"
+  lifespan_days: 247
+  description: |
+    In the spirit of the desktop-mobile unification theme that Yosemite championed,
+    this icon was the first to match its iOS Music counterpart in terms of palette and composition details.
+    A bright salmon-pink gradient was used as a background and all shadows and highlights were removed.
+    The note went on a diet in this iteration and gained a solid footing thanks to its more rectangular heads.
+
+- version: 12.2
+  date: 2015-06-20 00:00:00 +0800
+  image_file: 12-2-0.png
+  subtitle: "Past Meets Future"
+  lifespan_days: 0
+  description: |
+    The release of Apple Music brought with it arguably the most colorful iTunes icon since 2001.
+    The purple, blue, and salmon-pink colors of the radial gradient are in many ways an homage to the rich history of the icon.
+    Unlike previous iterations and other OS X icons, the note was carved out of a white foreground,
+    letting the colorful background bleed to form the outer edge of the icon.
+    The shape of the musical note was subject to a minor change that affected the size and angle of the heads.

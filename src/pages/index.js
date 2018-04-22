@@ -36,7 +36,13 @@ query Index {
         description
         year
         url
-        image
+        image {
+          childImageSharp {
+            sizes(maxWidth: 130) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
         tags
         featured
       }

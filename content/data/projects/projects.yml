@@ -1,0 +1,151 @@
+- name: "Critiq"
+  image: images/critiq.jpg
+  year: 2016
+  tags: [macos, web, swift, design]
+  featured: true
+  url: https://critiq-staging.herokuapp.com
+  description: "Early groundwork for a design feedback Mac app."
+
+- name: "Courier"
+  image: images/courier.jpg
+  year: 2016
+  tags: [branding, web]
+  featured: true
+  url: https://courier.thoughtbot.com
+  description: "UI design & logo for Courier, a mobile notification SaaS."
+
+- name: "Keelhaul"
+  image: images/keelhaul.jpg
+  year: 2016
+  tags: [ios, swift, open-source, macos]
+  featured: false
+  url: https://github.com/thoughtbot/Keelhaul
+  description: "SDK and API for server-side App Store receipt validation."
+
+- name: "Nope"
+  image: images/nope.jpg
+  year: 2016
+  tags: [safari, javascript, open-source]
+  featured: false
+  url: http://redalemeden.com/nope
+  description: "A content-blocking extension for Safari."
+
+- name: "Markoff"
+  image: images/markoff.jpg
+  year: 2016
+  tags: [macos, design, swift, open-source]
+  featured: false
+  url: https://github.com/thoughtbot/Markoff
+  description: "An open-source Markdown previewer for macOS."
+
+- name: "Speedster"
+  image: images/speedster.jpg
+  year: 2016
+  tags: [macos, design, swift]
+  featured: true
+  url: https://speedsterapp.com
+  description: "A native SpeedOfMe client for macOS."
+
+- name: "Podcast Covers"
+  image: images/podcast-covers.jpg
+  year: 2015
+  tags: [branding, design]
+  featured: false
+  url: https://thoughtbot.com/learn
+  description: "Visual identity for thoughtbot's podcast line-up."
+
+- name: "Syndicate"
+  image: images/syndicate.jpg
+  year: 2015
+  tags: [safari, javascript, open-source]
+  featured: false
+  url: https://redalemeden.com/syndicate
+  description: "An RSS discovery extension for Safari."
+
+- name: "Kromatic"
+  image: images/kromatic.jpg
+  year: 2015
+  tags: [macos, design, swift]
+  featured: false
+  url: http://kromatic.thoughtbot.com
+  description: "A color picking & naming utility for macOS."
+
+- name: "A Visual History of the iTunes Icon"
+  image: images/itunes.jpg
+  year: 2015
+  tags: [resource, design]
+  featured: false
+  url: https://redalemeden.com/itunes
+  description: "A trip down memory lane."
+
+- name: "IPinator"
+  image: images/ipinator.jpg
+  year: 2015
+  tags: [macos, design, swift]
+  featured: true
+  url: http://ipinator.kaishin.co
+  description: "An IP address geo-coding utility for macOS."
+
+- name: "Rototo"
+  image: images/rototo.jpg
+  year: 2015
+  tags: [ios, design, game]
+  featured: false
+  url: http://playroto.to
+  description: "2D space-survival game for iOS and Android."
+
+- name: "Sassquatch"
+  image: images/sassquatch.jpg
+  year: 2014
+  tags: [macos, design, swift]
+  featured: false
+  url: http://sassquatch.thoughtbot.com
+  description: "Zero-setup Sass playground for macOS."
+
+- name: "XVim"
+  image: images/xvim.jpg
+  year: 2014
+  tags: [branding, open-source]
+  featured: false
+  url: https://github.com/XVimProject/XVim
+  description: "Logo design for XVim, an Xcode vi plugin."
+
+- name: "Cascade"
+  image: images/xvim.jpg
+  year: 2014
+  tags: [swift, open-source, ios]
+  featured: true
+  url: https://github.com/thoughtbot/Cascade
+  description: "An open-source waterfall layout implementation."
+
+- name: "ImageScout"
+  image: images/imagescout.jpg
+  year: 2014
+  tags: [swift, open-source, ios, macos]
+  featured: false
+  url: https://github.com/kaishin/ImageScout
+  description: "A Swift implementation of fastimage."
+
+- name: "Gifu"
+  image: images/imagescout.jpg
+  year: 2015
+  tags: [swift, open-source, ios]
+  featured: true
+  url: https://github.com/kaishin/Gifu
+  description: "High-performance animated GIF library for iOS."
+
+- name: "Dash"
+  image: images/dash.jpg
+  year: 2014
+  tags: [branding, macos]
+  featured: true
+  url: https://kapeli.com/dash
+  description: "Icon design for Dash, a docset viewer for macOS."
+
+- name: "Swiftbits"
+  image: images/swiftbits.jpg
+  year: 2014
+  tags: [web, resource, swift]
+  featured: false
+  url: https://swiftbits.redalemeden.com
+  description: "Swift recipes, snippets, and resources."

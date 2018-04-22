@@ -9,8 +9,10 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-react-next',
     'gatsby-transformer-yaml',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-postcss-sass',
       options: {

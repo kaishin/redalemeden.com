@@ -38,7 +38,7 @@ query Index {
         url
         image {
           childImageSharp {
-            sizes(maxWidth: 130) {
+            sizes(maxWidth: 800) {
               ...GatsbyImageSharpSizes
             }
           }

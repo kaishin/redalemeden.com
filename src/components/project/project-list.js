@@ -9,7 +9,7 @@ class ProjectList extends React.Component {
 
   render() {
     return (
-      <ul style={{ margin: 0 }} className='project-list'>
+      <ul className='project-list'>
         {this.state.projects.map(({ project }, id) => <ProjectCard project={project} key={id} />)}
       </ul>
     )

@@ -1,6 +1,7 @@
 const path = require('path')
 const moment = require('moment')
 const { createFilePath } = require('gatsby-source-filesystem')
+const fs = require('fs-extra')
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
@@ -53,6 +54,18 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       name: `slug`,
       node,
       value: isPost ? `/blog/${moment(node.frontmatter.date).format('YYYY')}/${value}` : value,
+    })
+  } else if (node.internal.mediaType === `image/gif`) {
+    const newPath = path.join(
+      process.cwd(),
+      'public',
+      'gifs',
+      node.base
+    );
+    fs.copy(node.absolutePath, newPath, err => {
+      if (err) {
+        console.error('Error copying file', err);
+      }
     })
   }
 }

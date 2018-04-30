@@ -42,7 +42,7 @@
   image: images/speedster.jpg
   year: 2016
   tags: [macos, design, swift]
-  featured: true
+  featured: false
   url: https://speedsterapp.com
   description: "A native SpeedOfMe client for macOS."
 
@@ -111,7 +111,7 @@
   description: "Logo design for XVim, an Xcode vi plugin."
 
 - name: "Cascade"
-  image: images/xvim.jpg
+  image: images/cascade.gif
   year: 2014
   tags: [swift, open-source, ios]
   featured: true
@@ -127,7 +127,7 @@
   description: "A Swift implementation of fastimage."
 
 - name: "Gifu"
-  image: images/imagescout.jpg
+  image: images/gifu.gif
   year: 2015
   tags: [swift, open-source, ios]
   featured: true

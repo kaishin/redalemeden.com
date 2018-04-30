@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import ProjectList from '../components/project-list.js'
+import ProjectList from '../components/project/project-list.js'
 
 const IndexPage = ({ data }) => (
   <React.Fragment>
@@ -29,7 +29,10 @@ query Index {
       title
     }
   }
-  projects: allProjectsYaml {
+  projects: allProjectsYaml(
+    limit: 100
+    filter: { featured: { eq: true } }
+  ) {
     list: edges {
       project: node {
         name
@@ -37,6 +40,8 @@ query Index {
         year
         url
         image {
+          name
+          extension
           childImageSharp {
             sizes(maxWidth: 800) {
               ...GatsbyImageSharpSizes

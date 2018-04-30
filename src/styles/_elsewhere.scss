@@ -21,11 +21,11 @@
   }
 
   .container {
-    @extend .recent-project-list;
-    display: flex;
+    @extend .project-list;
     align-items: flex-start;
-    justify-content: space-between;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     text-align: center;
 
     @include media-width(until, 60rem) {

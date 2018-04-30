@@ -34,7 +34,7 @@ $highlights-transition-duration: 0.2s;
   }
 }
 
-.recent-project-list {
+.project-list {
   margin: 0 auto;
   max-width: $highlights-width;
   padding: 0 $base-spacing;
@@ -102,10 +102,11 @@ $highlights-transition-duration: 0.2s;
 
 .project-name {
   color: $white;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
+  font-size: .9rem;
+  letter-spacing: .08em;
   margin: $large-spacing auto 0;
   max-width: 14em;
+  text-align: center;
   text-transform: uppercase;
 }
 

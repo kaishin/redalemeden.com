@@ -1,10 +1,6 @@
 .work-section {
   @extend .recent-projects-section;
 
-  .project-list {
-    @extend .recent-project-list;
-  }
-
   .section-heading {
     align-items: center;
     display: flex;

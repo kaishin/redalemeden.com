@@ -32,6 +32,7 @@ query Index {
   projects: allProjectsYaml(
     limit: 100
     filter: { featured: { eq: true } }
+    sort: { fields: [year], order: DESC }
   ) {
     list: edges {
       project: node {

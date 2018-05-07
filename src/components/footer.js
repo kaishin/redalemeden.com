@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 class Footer extends React.Component {
   render() {
@@ -9,19 +8,19 @@ class Footer extends React.Component {
       <footer class="site-footer">
         <ul class="links-list">
           <li class="link">
-            <Link to="https://twitter.com/kaishin">Twitter</Link>
+            <a href="https://twitter.com/kaishin">Twitter</a>
             <span class="separator">/</span>
           </li>
           <li class="link">
-            <Link to="https://github.com/kaishin">Github</Link>
+            <a href="https://github.com/kaishin">Github</a>
             <span class="separator">/</span>
           </li>
           <li class="link">
-            <Link to="https://dribbble.com/kaishin">Dribbble</Link>
+            <a href="https://dribbble.com/kaishin">Dribbble</a>
             <span class="separator">/</span>
           </li>
           <li class="link">
-            <Link to="https://represent.io/kaishin">Resume</Link>
+            <a href="https://represent.io/kaishin">Resume</a>
           </li>
         </ul>
         <span class="copyright"><em>&copy;</em> 2009-{new Date().getFullYear()} {author}.

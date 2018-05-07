@@ -18,6 +18,7 @@ const IndexPage = ({ data }) => (
     <section class="recent-projects-section">
       <h4 class="section-heading">Featured Projects</h4>
       <ProjectList projects={data.projects.list} />
+      <Link to="/work" className="button">See more projects</Link>
     </section>
   </React.Fragment>
 )

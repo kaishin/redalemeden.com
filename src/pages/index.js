@@ -36,21 +36,7 @@ query Index {
   ) {
     list: edges {
       project: node {
-        name
-        description
-        year
-        url
-        image {
-          name
-          extension
-          childImageSharp {
-            sizes(maxWidth: 800) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
-        tags
-        featured
+        ...ProjectDetails
       }
     }
   }

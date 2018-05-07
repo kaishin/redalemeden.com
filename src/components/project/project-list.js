@@ -16,4 +16,24 @@ class ProjectList extends React.Component {
   }
 }
 
+export const projectDetails = graphql`
+fragment ProjectDetails on ProjectsYaml {
+  name
+  description
+  year
+  url
+  image {
+    name
+    extension
+    childImageSharp {
+      sizes(maxWidth: 800) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+  }
+  tags
+  featured
+}
+`
+
 export default ProjectList

@@ -1,14 +1,20 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 import ProjectList from '../components/project/project-list.js'
 
 const WorkPage = ({ data }) => (
+  <React.Fragment>
+    <Helmet
+      title={'Work ~ ' + data.site.siteMetadata.title}
+    />
   <section class="work-section">
     <div class="container">
       <h4 class="section-heading">Work</h4>
       <ProjectList projects={data.projects.list} />
     </div>
   </section>
+  </React.Fragment>
 )
 
 export const query = graphql`

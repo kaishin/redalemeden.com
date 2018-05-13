@@ -3,14 +3,14 @@ $highlights-transition-duration: 0.2s;
 
 .recent-projects-section {
   background-color: $dusk;
-  padding: $large-spacing 0;
-  text-align: center;
   overflow: hidden;
+  padding: $large-spacing;
+  text-align: center;
 
   .section-heading {
     color: $white;
     font-weight: 500;
-    letter-spacing: 0.2em;
+    letter-spacing: .2em;
     margin: 0;
     padding-top: 3rem;
     padding-bottom: 4rem;
@@ -35,47 +35,24 @@ $highlights-transition-duration: 0.2s;
 }
 
 .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 0 auto;
   max-width: $highlights-width;
-  padding: 0 $base-spacing;
-  text-align: left;
-
-  @include media-width(until, $container-width) {
-    padding: 0 $large-spacing;
-  }
+  padding: 0;
 }
 
 .project-cell {
-  -webkit-font-smoothing: antialiased;
   background-color: lighten($mirage, 5%);
-  border-radius: 6px;
   border: 1px solid $dusk;
-  display: inline-block;
+  border-radius: 6px;
+  flex: 0 1 280px;
+  font-smoothing: antialiased;
   list-style-type: none;
-  margin-bottom: 4%;
-  margin-right: 0;
+  margin-bottom: 1.5rem;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
-
-  @include media-width(from, 56rem) {
-    width: 30%;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-  }
-
-  @include media-width(from, 40rem) {
-    margin-right: 4%;
-  }
-
-  @include media-width(between, 40rem, 56rem) {
-    width: 46.5%;
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-  }
 
   &:hover {
     transform: scale(1.1);

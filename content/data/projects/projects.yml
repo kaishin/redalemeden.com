@@ -17,7 +17,7 @@
 - name: "Keelhaul"
   image: images/keelhaul.jpg
   year: 2016
-  tags: [ios, swift, open-source, macos]
+  tags: [ios, swift, OSS, macos]
   featured: false
   url: https://github.com/thoughtbot/Keelhaul
   description: "SDK and API for server-side App Store receipt validation."
@@ -25,7 +25,7 @@
 - name: "Nope"
   image: images/nope.jpg
   year: 2016
-  tags: [safari, javascript, open-source]
+  tags: [safari, javascript, OSS]
   featured: false
   url: http://redalemeden.com/nope
   description: "A content-blocking extension for Safari."
@@ -33,7 +33,7 @@
 - name: "Markoff"
   image: images/markoff.jpg
   year: 2016
-  tags: [macos, design, swift, open-source]
+  tags: [macos, design, swift, OSS]
   featured: false
   url: https://github.com/thoughtbot/Markoff
   description: "An open-source Markdown previewer for macOS."
@@ -57,7 +57,7 @@
 - name: "Syndicate"
   image: images/syndicate.jpg
   year: 2015
-  tags: [safari, javascript, open-source]
+  tags: [safari, javascript, OSS]
   featured: false
   url: https://redalemeden.com/syndicate
   description: "An RSS discovery extension for Safari."
@@ -105,7 +105,7 @@
 - name: "XVim"
   image: images/xvim.jpg
   year: 2014
-  tags: [branding, open-source]
+  tags: [branding, OSS]
   featured: false
   url: https://github.com/XVimProject/XVim
   description: "Logo design for XVim, an Xcode vi plugin."
@@ -113,7 +113,7 @@
 - name: "Cascade"
   image: images/cascade.gif
   year: 2014
-  tags: [swift, open-source, ios]
+  tags: [swift, OSS, ios]
   featured: true
   url: https://github.com/thoughtbot/Cascade
   description: "An open-source waterfall layout implementation."
@@ -121,7 +121,7 @@
 - name: "ImageScout"
   image: images/imagescout.jpg
   year: 2014
-  tags: [swift, open-source, ios, macos]
+  tags: [swift, OSS, ios, macos]
   featured: false
   url: https://github.com/kaishin/ImageScout
   description: "A Swift implementation of fastimage."
@@ -129,7 +129,7 @@
 - name: "Gifu"
   image: images/gifu.gif
   year: 2015
-  tags: [swift, open-source, ios]
+  tags: [swift, OSS, ios]
   featured: true
   url: https://github.com/kaishin/Gifu
   description: "High-performance animated GIF library for iOS."

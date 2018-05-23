@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import ProjectList from '../components/project/project-list.js'
+import Seo from '../components/seo'
 
 const IndexPage = ({ data }) => (
   <React.Fragment>
+    <Seo title='Home' />
     <section class="intro">
       <div class="intro-content">
         <h3 class="intro-tagline">

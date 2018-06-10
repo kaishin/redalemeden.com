@@ -193,35 +193,37 @@ $unfill-color: $blog-tertiary-color;
 @include style-reading-time("short", 2, 3);
 @include style-reading-time("medium", 4, 7);
 
-article[class*=post] {
+article.blog-content {
   $image-outdent: 5%;
   $margin: 1.5em;
 
-  figure {
-    margin: $margin 0;
-
-    @include media-width(from, $container-breakpoint) {
-      margin: ($margin * 2) 0 ($margin * 1.5);
-    }
-  }
-
-  figcaption {
-    color: $gray;
-    font-size: 0.85rem;
-    font-style: italic;
-    margin-top: 0.5em;
-  }
-
-  img {
-    border-radius: $border-radius;
-    box-shadow: 0 0 0 1px rgba($black, 0.05);
+  .gatsby-resp-image-link {
     margin-left: $image-outdent * -1;
     max-width: 100% + $image-outdent * 2;
 
-    &[alt*="[Chart]"] {
-      border-radius: 0;
-      box-shadow: none;
+    &,
+    &:hover {
+      border: 0;
     }
+
+    &:hover {
+      opacity: .9;
+    }
+
+    & + em {
+      color: $gray;
+      display: block;
+      font-size: .9rem;
+      font-style: italic;
+      margin-top: .5rem;
+    }
+  }
+
+  .gatsby-resp-image-wrapper,
+  .gatsby-resp-image-background-image,
+  img {
+    border-radius: $border-radius;
+    box-shadow: 0 0 0 1px rgba($black, 0.05);
   }
 
   ul,

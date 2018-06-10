@@ -7,13 +7,7 @@ category: design
 I often joke about the [HIG] being an acronym for *Highly Ignored Guidelines*.
 This is an effort to change that, at least for tvOS.
 
-~~~swift
-var people = [Person()]
-var encoder = JSONEncoder()
-try encoder.encode(people)
-
 // {% include figure.html file="blog/tvos.jpg" alt="Apple TV UI" caption="The user interface of Apple TV." %}
-~~~
 
 ## Glossary
 

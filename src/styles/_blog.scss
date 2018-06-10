@@ -3,7 +3,6 @@
   padding: 2em;
 
   a {
-    // color: $blog-link-color;
     text-decoration: none;
     transition: color 0.2s;
 
@@ -57,8 +56,6 @@
   .post-title {
     margin-top: 0.4rem;
   }
-
-  .post-metadata {}
 
   .footnote,
   .footnotes {
@@ -261,9 +258,9 @@ article[class*=post] {
 
     &:hover,
     &:focus {
-      color: $blog-link-hover-color;
       background-color: transparent;
       border-bottom: 1px solid $blog-link-color;
+      color: $blog-link-hover-color;
     }
 
     &:link {
@@ -273,6 +270,11 @@ article[class*=post] {
     &:visited {
       color: $blog-link-visited-color;
     }
+
+    &.anchor {
+      background-color: transparent;
+      border-bottom: 0;
+    }
   }
 
   li {
@@ -281,7 +283,7 @@ article[class*=post] {
 
     &::before {
       color: darken($ash, 20%);
-      content: "–";
+      content: '–';
       left: -1em;
       position: absolute;
 

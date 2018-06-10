@@ -23,6 +23,12 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 740,
+            },
+          },
           'gatsby-remark-abbr',
           'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs'

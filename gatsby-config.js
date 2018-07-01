@@ -23,6 +23,12 @@ module.exports = {
               quality: 90
             },
           },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            }
+          },
           'gatsby-remark-abbr',
           'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs'

@@ -5,8 +5,6 @@ category: product
 excerpt: "Two months ago I started working on a content blocking extension for Safari. Today I am happy to announce that it's ready for the masses."
 ---
 
-{% include figure.html file="" alt="" %}
-
 ![Nope Icon](nope-safari-icon.jpg)
 
 Two months ago I started working on [Nope], a content blocking extension for Safari 9. Today I am happy to launch [a stable version][Download Link] and get more people to try it.
@@ -39,7 +37,7 @@ Currently the content blocking APIs don't expose the blocked resources to the ex
 
 Those who are happy to make this—hopefully temporary—tradeoff will see improved Safari performance, especially on sites that load dozens of third party scripts.
 
-{% include figure.html file="content-blocked-console.jpg" alt="Safari Developer Console" caption="Logging blocked resources in the Safari Developer Console." %}
+![Safari Developer Console](content-blocked-console.jpg) _Logging blocked resources in the Safari Developer Console._
 
 ## Roadmap
 

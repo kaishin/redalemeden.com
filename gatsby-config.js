@@ -1,5 +1,3 @@
-const cssnext = require('postcss-cssnext')
-
 module.exports = {
   siteMetadata: {
     title: 'Reda Lemeden',
@@ -13,12 +11,7 @@ module.exports = {
     'gatsby-plugin-react-next',
     'gatsby-transformer-yaml',
     'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-plugin-postcss-sass',
-      options: {
-        postCssPlugins: [cssnext()],
-      },
-    },
+    'gatsby-plugin-postcss-sass',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -57,13 +50,6 @@ module.exports = {
           `Fira Sans\:300i,400,400i,500`
         ]
       },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/pages/`,
-        name: 'pages'
-      }
     },
     {
       resolve: `gatsby-plugin-svgr`,

@@ -43,8 +43,6 @@ Oops. Consumables aren't popular outside of games for a reason. The app made a m
 
 Remember that projection graph from earlier? Now it looks like this:
 
-{% include figure.html file="" alt="" caption="" %}
-
 ![[Chart] Readjusted Cumulative Revenue/Cost Projection](sales-adjusted-cumulative-costs-sales.svg) _Readjusted cumulative revenue and costs projection (purple and orange respectively)._
 
 Did these changes make things worse? Absolutely. Do I have a clue why? Maybe. Let's look at some ★☆☆☆☆ reviews:

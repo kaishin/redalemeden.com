@@ -49,12 +49,13 @@
 
 .post-list-item {
   list-style: none;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
 }
 
 .post-summary {
   .post-title {
-    margin-top: 0.4rem;
+    margin-top: .4rem;
+    margin-bottom: .2em;
   }
 
   .footnote,
@@ -104,8 +105,8 @@
   }
 
   &:hover {
-    text-decoration: none;
     color: $blog-link-hover-color;
+    text-decoration: none;
   }
 }
 
@@ -352,4 +353,10 @@ article.blog-content {
   border-radius: 4px;
   margin: 3rem auto 1rem;
   padding: 1rem;
+}
+
+.page-heading {
+  @extend .post-category;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }

@@ -16,6 +16,7 @@ class BlogPage extends React.Component {
         
         <Seo title='Blog' />
         <article className="content blog-content">
+          <h3 class="page-heading">Blog</h3>
           <ol class="post-list">
           {posts.map(({ node: post }) => {
             const title = post.frontmatter.title || post.fields.slug
@@ -28,16 +29,14 @@ class BlogPage extends React.Component {
                     </Link>
                   </h2>
                   <div className="post-metadata">
+                    <span className="category">{post.frontmatter.category}</span>
+                    <span className="separator"> | </span>
                     <time date={post.frontmatter.date}>
                       {post.frontmatter.formattedDate}
                     </time>
-                    <span className="separator"> &mdash; </span>
+                    <span className="separator"> | </span>
                     <span className="reading-time">{post.timeToRead}min read</span>
                   </div>
-
-                  <section className="post-content">
-                    <p dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-                  </section>
                 </article>
               </li>
             )

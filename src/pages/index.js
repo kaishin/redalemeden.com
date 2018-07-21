@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import ProjectList from '../components/project/project-list.js'
+import ArticleList from '../components/article-list.js'
 import Seo from '../components/seo'
 
 const IndexPage = ({ data }) => (
@@ -22,6 +23,26 @@ const IndexPage = ({ data }) => (
       <ProjectList projects={data.projects.list} />
       <Link to="/work" className="button">See more projects</Link>
     </section>
+
+    <section class="elsewhere-section">
+      <div class="container">
+        <div class="column">
+          <h5 class="column-heading">Highlights</h5>
+          <ArticleList articles={data.highlightedArticles.list} />
+        </div>
+
+        <div class="column">
+          <h5 class="column-heading">Recent Articles</h5>
+          <ArticleList articles={data.recentArticles.list} />
+        </div>
+
+        <div class="column">
+          <h5 class="column-heading">Podcasts</h5>
+          <ol class="podcast-list">
+          </ol>
+        </div>
+      </div>
+    </section>
   </React.Fragment>
 )
 
@@ -40,6 +61,33 @@ query Index {
     list: edges {
       project: node {
         ...ProjectDetails
+      }
+    }
+  }
+  highlightedArticles: allArticlesYaml(
+    limit: 3
+    filter: { highlighted: { eq: true }}
+    sort: { fields: [published], order: DESC }
+  ) {
+    list: edges {
+      article: node {
+        title
+        url
+        outlet_name
+        formattedDate: published(formatString: "MMMM DD, YYYY")
+      }
+    }
+  }
+  recentArticles: allArticlesYaml(
+    limit: 3
+    sort: { fields: [published], order: DESC }
+  ) {
+    list: edges {
+      article: node {
+        title
+        url
+        outlet_name
+        formattedDate: published(formatString: "MMMM DD, YYYY")
       }
     }
   }

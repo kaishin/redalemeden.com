@@ -69,3 +69,15 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     })
   }
 }
+exports.onCreatePage = async ({ page, boundActionCreators }) => {
+  const { createPage } = boundActionCreators
+
+  return new Promise((resolve, reject) => {
+    if (page.path.match(/syndicate|itunes/)) {
+      page.layout = "standalone";
+      createPage(page);
+    }
+
+    resolve();
+  });
+};

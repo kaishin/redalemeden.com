@@ -1,5 +1,5 @@
 - name: "Tentative"
-  thumbnail: tentative.png
+  thumbnail: images/tentative.png
   published: 2016-07-15
   url: http://tentative.fm/
   description: "Product Design"
@@ -7,7 +7,7 @@
   role: Co-host
 
 - name: "Build Phase"
-  thumbnail: buildphase.png
+  thumbnail: images/buildphase.png
   published: 2016-07-21
   url: http://buildphase.fm/99
   description: "iOS Development"
@@ -15,7 +15,7 @@
   role: Guest
 
 - name: "App Masters"
-  thumbnail: app-masters.png
+  thumbnail: images/app-masters.png
   published: 2015-07-15
   url: http://www.appmasters.co/thoughtbot-reda-lemeden-jack-nutting/
   description: "App Marketing & Business"

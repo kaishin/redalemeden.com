@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import ProjectList from '../components/project/project-list.js'
 import ArticleList from '../components/article-list.js'
+import PodcastList from '../components/podcast-list.js'
 import Seo from '../components/seo'
 
 const IndexPage = ({ data }) => (
@@ -38,6 +39,7 @@ const IndexPage = ({ data }) => (
 
         <div class="column">
           <h5 class="column-heading">Podcasts</h5>
+          <PodcastList podcasts={data.recentPodcasts.list} />
           <ol class="podcast-list">
           </ol>
         </div>
@@ -91,7 +93,31 @@ query Index {
       }
     }
   }
-}
-`
+  recentPodcasts: allPodcastsYaml(
+    limit: 3
+    sort: { fields: [published], order: DESC }
+  ) {
+    list: edges {
+      podcast: node {
+        name
+        thumbnail {
+          name
+          extension
+          childImageSharp {
+            sizes(maxWidth: 256) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+        url
+        description
+        episode
+        role
+        published
+        formattedPublishedDate: published(formatString: "MMMM DD, YYYY")
+      }
+    }
+  }
+}`
 
 export default IndexPage

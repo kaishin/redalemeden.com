@@ -2,9 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Normalize from 'normalize.css';
-
 class StandaloneLayout extends React.Component {
+
   render() {
     const { location, children } = this.props
     const { siteMetadata } = this.props.data.site

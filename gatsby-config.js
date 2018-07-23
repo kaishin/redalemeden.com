@@ -43,6 +43,20 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/data`,
+        name: `data`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages/`,
+        name: `pages`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://redalemeden.com`,
@@ -61,13 +75,6 @@ module.exports = {
       resolve: `gatsby-plugin-svgr`,
       options: {
         icon: false,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content/data`,
-        name: `data`,
       },
     },
   ]

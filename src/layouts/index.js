@@ -7,10 +7,10 @@ import Footer from '../components/footer'
 import Navigation from '../components/navigation'
 
 import Normalize from 'normalize.css';
-import '../styles/main.scss'
 
 class DefaultLayout extends React.Component {
   render() {
+    require('../styles/main.scss')
     const { location, children } = this.props
     const { siteMetadata } = this.props.data.site
     const siteTitle = siteMetadata.title

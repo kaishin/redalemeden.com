@@ -73,7 +73,7 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    if (page.path.match(/syndicate|itunes/)) {
+    if (page.path.match(/syndicate|itunes|nope|pip-my-safari/)) {
       page.layout = "standalone";
       createPage(page);
     }

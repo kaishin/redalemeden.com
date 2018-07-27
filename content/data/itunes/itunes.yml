@@ -1,6 +1,6 @@
-- version: 1.0
-  date: 2001-01-09 00:00:00 +0800
-  image_file: 1-0-0.png
+- version: "1.0"
+  date: 2001-01-09T00:00:00+08:00
+  image_file: images/1-0-0.png
   subtitle: "Beginnings"
   lifespan_days: 112
   description: |
@@ -9,9 +9,9 @@
     This made the CD an obvious choice for the icon, with the addition of three colorful eighth notes to spice things up.
     With less than 4 months in service, this was the shortest-lived iteration.
 
-- version: 1.1.1
-  date: 2001-05-01 00:00:00 +0800
-  image_file: 1-1-1.png
+- version: "1.1.1"
+  date: 2001-05-01T00:00:00+08:00
+  image_file: images/1-1-1.png
   subtitle: "Perspective"
   lifespan_days: 175
   description: |
@@ -20,9 +20,9 @@
     The notes got a visual upgrade as well, expanding in size and scoring more highlights and reflective shadows.
     These changes added a touch of realism to the icon and made it look sharper and more modern than the previous take.
 
-- version: 2.0
-  date: 2001-10-23 00:00:00 +0800
-  image_file: 2-0-0.png
+- version: "2.0"
+  date: 2001-10-23T00:00:00+08:00
+  image_file: images/2-0-0.png
   subtitle: "Hello, OS X"
   lifespan_days: 267
   description: |
@@ -32,9 +32,9 @@
     and casting a more visible reflection on the CD.
     Changes to the CD were relatively minor, with the most notable one being the less translucent plastic hub.
 
-- version: 3.0
-  date: 2002-07-17 00:00:00 +0800
-  image_file: 3-0-0.png
+- version: "3.0"
+  date: 2002-07-17T00:00:00+08:00
+  image_file: images/3-0-0.png
   subtitle: "Goodbye, OS 9"
   lifespan_days: 285
   description: |
@@ -43,9 +43,9 @@
     and traded the CD reflection for more reflective shadows, especially on the heads.
     The CD itself regained some of its pre-2.0 hub translucency and was given a less banded gradient.
 
-- version: 4.0
-  date: 2003-04-28 00:00:00 +0800
-  image_file: 4-0-0.png
+- version: "4.0"
+  date: 2003-04-28T00:00:00+08:00
+  image_file: images/4-0-0.png
   subtitle: "Green"
   lifespan_days: 1233
   description: |
@@ -54,9 +54,9 @@
     perhaps a harbinger of the huge commercial success of the then newly-released iTunes Store.
     Within the same year, iTunes 4.1 added Windows XP support, making this icon the first to make an appearance on a non-Mac platform.
 
-- version: 7.0
-  date: 2006-09-12 00:00:00 +0800
-  image_file: 7-0-0.png
+- version: "7.0"
+  date: 2006-09-12T00:00:00+08:00
+  image_file: images/7-0-0.png
   subtitle: "The Calm"
   lifespan_days: 1450
   description: |
@@ -66,9 +66,9 @@
     As for the CD, the plastic hub lost most of its transluency,
     while additional color stops made the angle gradient on the surface look more detailed than ever.
 
-- version: 10.0
-  date: 2010-09-01 00:00:00 +0800
-  image_file: 10-0-0.png
+- version: "10.0"
+  date: 2010-09-01T00:00:00+08:00
+  image_file: images/10-0-0.png
   subtitle: "The Storm"
   lifespan_days: 820
   description: |
@@ -78,9 +78,9 @@
     The note itself shrank in size and turned dark gray, with an outer glow serving to improve contrast against the blue background.
     A highlight was used in the top half of the icon to give it a glossy finish not dissimilar from the one used in iOS icons back then.
 
-- version: 11.0
-  date: 2012-11-29 00:00:00 +0800
-  image_file: 11-0-0.png
+- version: "11.0"
+  date: 2012-11-29T00:00:00+08:00
+  image_file: images/11-0-0.png
   subtitle: "Cloud White"
   lifespan_days: 686
   description: |
@@ -90,9 +90,9 @@
     lost its outer glow in favor of a not-so-subtle drop shadow.
     Meanwhile, the elliptic icon highlight became rounder and subtler towards the center.
 
-- version: 12.0
-  date: 2014-10-16 00:00:00 +0800
-  image_file: 12-0-0.png
+- version: "12.0"
+  date: 2014-10-16T00:00:00+08:00
+  image_file: images/12-0-0.png
   subtitle: "Reunion"
   lifespan_days: 247
   description: |
@@ -101,9 +101,9 @@
     A bright salmon-pink gradient was used as a background and all shadows and highlights were removed.
     The note went on a diet in this iteration and gained a solid footing thanks to its more rectangular heads.
 
-- version: 12.2
-  date: 2015-06-20 00:00:00 +0800
-  image_file: 12-2-0.png
+- version: "12.2"
+  date: 2015-06-20T00:00:00+08:00
+  image_file: images/12-2-0.png
   subtitle: "Past Meets Future"
   lifespan_days: 0
   description: |

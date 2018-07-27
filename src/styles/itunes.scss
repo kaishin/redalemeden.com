@@ -115,11 +115,12 @@ main {
   }
 }
 
-.icon-image {
+.icon-wrapper {
   left: -$image-size - 20px;
   max-width: $image-size;
   position: absolute;
   top: -$image-size / 2;
+  width: 100%;
 }
 
 time {

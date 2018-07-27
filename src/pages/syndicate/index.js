@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Seo from '../../components/seo'
-import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
 class SyndicatePage extends React.Component {
@@ -12,10 +11,9 @@ class SyndicatePage extends React.Component {
 
     return (
       <React.Fragment>
-        <Helmet bodyAttributes={{ class: "page-syndicate" }}>
-        </Helmet>
+        <Helmet bodyAttributes={{ class: "page-syndicate" }}></Helmet>
 
-        <Seo title='Syndicate' />
+        <Seo title="Syndicate" />
         <header class="main-header">
           <h1 class="main-title">
             <div class="main-title-icon">
@@ -64,7 +62,7 @@ class SyndicatePage extends React.Component {
         </main>
 
         <footer>
-          <span class="copyright">&copy; 2015 Reda Lemeden. All Rights Reserved.</span>
+          <span class="copyright">&copy; 2015-{new Date().getFullYear()} Reda Lemeden. All Rights Reserved.</span>
           <a href="https://github.com/kaishin/syndicate">Source Code</a>
         </footer>
       </React.Fragment>

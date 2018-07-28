@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import Seo from '../components/seo'
 
 class StandaloneLayout extends React.Component {
 
@@ -11,14 +12,7 @@ class StandaloneLayout extends React.Component {
 
     return (
       <React.Fragment>
-        <Helmet
-          defaultTitle={siteTitle}
-          meta={[
-            { name: 'robots', content: 'noodp, noydir' },
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        />
+        <Seo />
         {children()}
       </React.Fragment>
     )

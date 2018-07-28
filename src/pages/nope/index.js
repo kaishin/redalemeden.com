@@ -13,7 +13,11 @@ class NopePage extends React.Component {
       <React.Fragment>
         <Helmet bodyAttributes={{ class: "page-nope" }} title="Nope for Safari – Content Blocking Extension"></Helmet>
 
-        <Seo title="Nope" />
+        <Seo
+          title="Nope"
+          description="Blazing fast advertising & tracking blocker extension for Safari 9"
+          keywords={["safari", "extension", "ads", "block", "adblock"]}
+        />
         <header class="main-header">
           <h1 class="main-title">
             <div class="main-title-icon">

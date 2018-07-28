@@ -1,7 +1,15 @@
 module.exports = {
   siteMetadata: {
+    description: 'Personal Site of Reda Lemeden',
     title: 'Reda Lemeden',
     author: 'Reda Lemeden',
+    keywords: [
+      'reda',
+      'kaishin',
+      'lemeden',
+      'developer',
+      'designer',
+      'kaishinlab'],
     siteUrl: 'https://redalemeden.com'
   },
   plugins: [

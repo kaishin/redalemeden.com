@@ -14,7 +14,6 @@ class DefaultLayout extends React.Component {
     const { location, children } = this.props
     const { siteMetadata } = this.props.data.site
     const siteTitle = siteMetadata.title
-    const isHomepage = location.pathname == `/` // Currently unused
 
     return (
       <React.Fragment>
@@ -22,8 +21,8 @@ class DefaultLayout extends React.Component {
           defaultTitle={siteTitle}
           meta={[
             { name: 'robots', content: 'noodp, noydir' },
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: siteMetadata.description },
+            { name: 'keywords', content: siteMetadata.keywords },
           ]}
         />
         <Header {...siteMetadata}/>
@@ -47,8 +46,10 @@ export const pageQuery = graphql`
   query Query {
     site {
       siteMetadata {
-        title
         author
+        description
+        keywords
+        title
       }
     }
   }

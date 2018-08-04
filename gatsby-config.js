@@ -21,6 +21,7 @@ module.exports = {
     'gatsby-transformer-yaml',
     'gatsby-transformer-sharp',
     'gatsby-plugin-postcss-sass',
+    'gatsby-plugin-feed',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

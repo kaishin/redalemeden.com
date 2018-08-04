@@ -15,7 +15,12 @@ class PipMySafariPage extends React.Component {
       <React.Fragment>
         <Helmet bodyAttributes={{ class: "page-pip" }} />
 
-        <Seo title="PiP My Safari" />
+        <Seo title="" />
+        <Seo
+          title="PiP My Safari"
+          description="A lightweight workflow to toggle Safari's PiP mode for videos in the foreground"
+          keywords={["safari", "automation", "video", "macos"]}
+        />
         <header class="main-header">
           <h1 class="main-title">
             <div class="main-title-icon">

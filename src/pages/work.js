@@ -6,7 +6,7 @@ import Seo from '../components/seo'
 
 const WorkPage = ({ data }) => (
   <React.Fragment>
-    <Seo title='Work' />
+    <Seo title="Work" />
     <section class="work-section">
       <div class="container">
         <h4 class="section-heading">Work</h4>

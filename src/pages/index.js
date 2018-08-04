@@ -7,7 +7,7 @@ import Seo from '../components/seo'
 
 const IndexPage = ({ data }) => (
   <React.Fragment>
-    <Seo title='Home' />
+    <Seo title="Home" />
     <section class="intro">
       <div class="intro-content">
         <h3 class="intro-tagline">

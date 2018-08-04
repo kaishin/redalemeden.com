@@ -13,7 +13,11 @@ class SyndicatePage extends React.Component {
       <React.Fragment>
         <Helmet bodyAttributes={{ class: "page-syndicate" }}></Helmet>
 
-        <Seo title="Syndicate" />
+        <Seo
+          title="Syndicate"
+          description="Safari extension that brings the RSS button back to the toolbar."
+          keywords={["safari", "extension", "rss", "feed"]}
+        />
         <header class="main-header">
           <h1 class="main-title">
             <div class="main-title-icon">

@@ -14,7 +14,7 @@ class BlogPage extends React.Component {
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sintony:400,700|Titillium+Web:600,700"/>
         </Helmet>
         
-        <Seo title='Blog' />
+        <Seo title="Blog" />
         <article className="content blog-content">
           <h3 class="page-heading">Blog</h3>
           <ol class="post-list">

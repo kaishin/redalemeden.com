@@ -8,13 +8,11 @@ import AutomatorDemoGIF from './images/automator-demo.gif'
 
 class PipMySafariPage extends React.Component {
   render() {
-    require('../../styles/pip.scss')
     const icon = this.props.data.icon
 
     return (
       <React.Fragment>
-        <Helmet bodyAttributes={{ class: "page-pip" }} />
-
+        <Helmet bodyAttributes={{ class: "page-pip page-product" }} />
         <Seo title="" />
         <Seo
           title="PiP My Safari"

@@ -5,13 +5,12 @@ import Img from 'gatsby-image'
 
 class SyndicatePage extends React.Component {
   render() {
-    require('../../styles/syndicate.scss')
     const icon = this.props.data.icon
     const screenshots = this.props.data.allImageSharp.screenshots
 
     return (
       <React.Fragment>
-        <Helmet bodyAttributes={{ class: "page-syndicate" }}></Helmet>
+        <Helmet bodyAttributes={{ class: "page-syndicate page-product" }}></Helmet>
 
         <Seo
           title="Syndicate"

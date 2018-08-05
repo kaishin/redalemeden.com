@@ -13,7 +13,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <React.Fragment>
         <Seo title={post.frontmatter.title} />
-        <Helmet bodyAttributes={{class: "post-page"}}>
+        <Helmet bodyAttributes={{class: "post-page blog-page"}}>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sintony:400,700|Titillium+Web:600,700"/>
         </Helmet>
            

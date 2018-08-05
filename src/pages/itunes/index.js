@@ -6,12 +6,24 @@ import Img from 'gatsby-image'
 
 class iTunesPage extends React.Component {
   render() {
-    require('../../styles/itunes.scss')
     const { versions } = this.props.data.itunes
 
     return (
       <React.Fragment>
-        <Helmet bodyAttributes={{ class: "page-itunes" }}></Helmet>
+        <Helmet bodyAttributes={{ class: "page-itunes" }}>
+        <style type="text/css">
+          {`
+            html {
+              background-attachment: fixed;
+              background-color: #000;
+              background-image: linear-gradient(#000, #1d2530);
+              background-repeat: no-repeat;
+              background-size: cover;
+              color: #fff;
+            }
+          `}
+        </style>
+        </Helmet>
         <Seo
           title="A Visual History of the iTunes Icon"
           description="The iTunes icon changed 9 times in the last 14 years. Let's take a look at all the iterations and the context in which they saw the light of day."

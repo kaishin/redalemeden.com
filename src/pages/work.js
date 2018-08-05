@@ -6,6 +6,7 @@ import Seo from '../components/seo'
 
 const WorkPage = ({ data }) => (
   <React.Fragment>
+    <Helmet bodyAttributes={{ class: "page-base" }} />
     <Seo title="Work" />
     <section class="work-section">
       <div class="container">

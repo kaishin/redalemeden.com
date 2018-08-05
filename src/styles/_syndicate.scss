@@ -1,0 +1,30 @@
+@import "helpers";
+@import "syntax";
+@import "variables";
+@import "mixins";
+
+$page-main-color: #e9f2f4;
+$page-background-color: $page-main-color;
+$page-text-color: $black;
+$page-border: 1px solid darken($page-main-color, 10%);
+$page-main-cta-color: darken($page-main-color, 50%);
+
+body.page-syndicate {
+  color: $page-text-color;
+  background-color: $page-background-color;
+  a {
+    color: darken(complement($page-main-color), 35%);
+  }
+  .main-title-copy {
+    @include media-width(from, $container-width) {
+      border-left: $page-border;
+    }
+  }
+  .description {
+    border-bottom: $page-border;
+  }
+  [class$=button] {
+    @include colorize-button($page-main-cta-color);
+  }
+}
+

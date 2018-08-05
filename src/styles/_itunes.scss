@@ -1,0 +1,146 @@
+@import "helpers";
+@import "syntax";
+@import "variables";
+
+$background-color: #1d2530;
+$link-color: #58a5ff;
+$line-color: rgba($link-color, 0.6);
+$image-size: 90px;
+$detail-padding: 1rem;
+
+body.page-itunes {
+  box-sizing: border-box;
+  font-family: $fira;
+  margin: auto;
+  max-width: $container-width;
+  min-height: 100vh;
+  padding: 0 2rem;
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 200;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+
+  h1 {
+    line-height: 1.3;
+    margin-bottom: 0.2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  a {
+    box-shadow: 0 1px 0 0 rgba($link-color, 0.5);
+    color: $link-color;
+    position: relative;
+    text-decoration: none;
+    transition: box-shadow 0.2s;
+
+    &:hover {
+      box-shadow: 0 2px 0 0 $link-color;
+    }
+  }
+
+  .main-header {
+    $inset: 6rem;
+    border-left: 1px solid $line-color;
+    margin-left: $image-size;
+    max-width: 20rem;
+    padding: $inset 0 ($inset * 2) $detail-padding;
+  }
+
+  main {
+    &::after {
+      @include size(1px, 30px);
+      border-left: 1px dashed $line-color;
+      content: "";
+      display: block;
+      margin-left: $image-size;
+    }
+  }
+
+  .itunes-versions-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: $image-size;
+  }
+
+  .itunes-version {
+    $bullet-size: 8px;
+    border-left: 1px solid $line-color;
+    display: inline-block;
+    padding-bottom: 8rem;
+    padding-left: $detail-padding;
+    position: relative;
+    width: 100%;
+
+    .description {
+      font-weight: 300;
+      line-height: 1.5;
+      opacity: 0.8;
+      transition: opacity 0.4s;
+    }
+
+    &:hover {
+      .description {
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      $width: 20px;
+      border-bottom: 1px solid $line-color;
+      content: "";
+      display: block;
+      left: -$width / 2;
+      position: absolute;
+      width: $width;
+    }
+  }
+
+  .icon-wrapper {
+    left: -$image-size - 20px;
+    max-width: $image-size;
+    position: absolute;
+    top: -$image-size / 2;
+    width: 100%;
+  }
+
+  time {
+    display: block;
+    margin-top: -0.7em;
+  }
+
+  footer {
+    $radius: 0.3rem;
+    background-color: rgba(#000, 0.3);
+    border-radius: $radius;
+    color: lighten($background-color, 20%);
+    font-size: 0.9rem;
+    margin: 4rem auto 2rem $image-size;
+    padding: 1rem 2rem;
+    text-align: center;
+
+    @include media-width(until, $container-width) {
+      margin-left: 0;
+    }
+  }
+
+  .version-details {
+    time {
+      font-weight: 300;
+      margin-bottom: 0.1rem;
+    }
+
+    .version {
+      color: lighten($background-color, 50%);
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+}

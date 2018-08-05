@@ -4,9 +4,11 @@ import ProjectList from '../components/project/project-list.js'
 import ArticleList from '../components/article-list.js'
 import PodcastList from '../components/podcast-list.js'
 import Seo from '../components/seo'
+import Helmet from 'react-helmet'
 
 const IndexPage = ({ data }) => (
   <React.Fragment>
+    <Helmet bodyAttributes={{ class: "page-base" }} />
     <Seo title="Home" />
     <section class="intro">
       <div class="intro-content">

@@ -3,8 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Seo from '../components/seo'
 
-class StandaloneLayout extends React.Component {
+import Normalize from 'normalize.css'
+import '../styles/main.scss'
 
+class StandaloneLayout extends React.Component {
   render() {
     const { location, children } = this.props
     const { siteMetadata } = this.props.data.site

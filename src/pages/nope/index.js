@@ -5,13 +5,12 @@ import Img from 'gatsby-image'
 
 class NopePage extends React.Component {
   render() {
-    require('../../styles/nope.scss')
     const icon = this.props.data.icon
     const screenshots = this.props.data.allImageSharp.screenshots
 
     return (
       <React.Fragment>
-        <Helmet bodyAttributes={{ class: "page-nope" }} title="Nope for Safari – Content Blocking Extension"></Helmet>
+        <Helmet bodyAttributes={{ class: "page-nope page-product" }} title="Nope for Safari – Content Blocking Extension"></Helmet>
 
         <Seo
           title="Nope"

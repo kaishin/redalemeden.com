@@ -18,6 +18,26 @@ body.page-base {
     text-transform: uppercase;
   }
 
+  code {
+    background: rgba(#000, 0.02);
+    border-radius: 2px;
+    padding: 0.2em 0.4em;
+    width: 100%;
+  }
+  
+  sup {
+    margin-left: 0.2em;
+    top: 0;
+    vertical-align: super;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    margin: 1rem auto;
+    max-width: $container-width;
+  }
+
   [class$=button] {
     @extend %default-button;
 
@@ -31,6 +51,10 @@ body.page-base {
     &:hover {
       text-decoration: none;
     }
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 400;
   }
 
   a {

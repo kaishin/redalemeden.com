@@ -27,7 +27,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 740,
               quality: 90
@@ -56,36 +56,37 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/data`,
-        name: `data`,
+        name: 'data',
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages/`,
-        name: `pages`,
+        name: 'pages',
       },
     },
     {
-      resolve: `gatsby-plugin-canonical-urls`,
+      resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: `https://redalemeden.com`,
+        siteUrl: 'https://redalemeden.com',
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          `Fira Mono`,
-          `Fira Sans\:300i,400,400i,500`
+          'Fira Mono',
+          'Fira Sans\:300i,400,400i,500'
         ]
       },
     },
     {
-      resolve: `gatsby-plugin-svgr`,
+      resolve: 'gatsby-plugin-svgr',
       options: {
         icon: false,
       },
     },
+    'gatsby-plugin-netlify'
   ]
 };

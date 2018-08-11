@@ -70,12 +70,20 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   }
 }
 exports.onCreatePage = async ({ page, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+  const { createPage, deletePage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
     if (page.path.match(/syndicate|itunes|nope|pip-my-safari/)) {
       page.layout = "standalone";
-      createPage(page);
+    }
+
+    const newPage = Object.assign({}, page, {
+      path: page.path === `/` ? page.path : page.path.replace(/\/$/, ``),
+    })
+
+    if (newPage.path !== page.path) {
+      deletePage(page)
+      createPage(newPage)
     }
 
     resolve();

@@ -2,26 +2,31 @@
 date: 2010-05-07T20:52:46+02:00
 title: "On Design Feedback"
 category: design
+tags:
+  - design
+  - feedback
+  - work
+  - opinion
 ---
 
-Design is oftentimes subjective. This makes giving constructive design feedback a lifelong challenge, especially when one of the parties involved is not a designer by profession.
+The subjective side of design work makes giving and receiving feedback a
+challenge for everyone involved, especially when one of the parties is not a
+designer by profession. Poor or unconstructive feedback slows down the
+design process, erodes trust, and ultimately leads to poor results. Here are
+some rules of thumb to keep in mind when dealing with design feedback.
 
-It goes without saying that failure to give constructive feedback slows down the design process and might ultimately veer it to the wrong direction. To avoid that, it is the responsibility of both parties to make sure they are fulfilling their ends of the deal.
+When you are giving feedback:
 
-Those in a position to *give* design feedback should:
+- Try to understand the thought process behind design decisions.
 
-- **Avoid generic adjectives.** Examples include "good", "bad", "awesome", "meh", etc. Better yet, avoid *all* adjectives.
+- Present your feedback as an invitation to rethink these decisions.
 
-- **Avoid appreciation verbs.** Examples include "like", "love", "hate", etc.
+- Avoid giving alternatives without explaining why they would work better.
 
-- **Ask questions**. Understanding the thought process of the designer is key to assess the proposed solution.
+If you are receiving feedback:
 
-- **Refrain from offering solutions**. Let the designer do his work.
+- Do not take it personally. All criticism should be funneled through the work.
 
-Designers *receiving* design feedback should:
+- Try to ask questions that help turn feedback into problem statements.
 
-- **Avoid taking things personally**. All criticism should be funneled through the work.
-
-- **Ask questions**. Questions that help turn feedback into problem statements.
-
-- **Listen.** And then listen some more.
+- Listen. And then listen some more.

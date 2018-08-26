@@ -62,12 +62,13 @@ body.page-base {
   }
 
   .grid-container {
+    min-height: 100vh;
+
     @include media-width(from, $container-breakpoint) {
       display: grid;
       grid-template-columns: $sidebar-max-width 1fr;
       grid-template-rows: auto 1fr auto;
     }
-
 
     .site-header {
       grid-area: 1 / 1;

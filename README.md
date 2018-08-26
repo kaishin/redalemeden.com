@@ -1,13 +1,23 @@
-# gatsby-starter-default
-The default Gatsby starter
+# About
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+Source code of https://redalemeden.com
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+This project is built using Gatsby 1.x.
+
+## Setup
+
+Make sure you have `node` and `npm` installed, then run:
+
+```bash
+npm install
 ```
-gatsby new gatsby-example-site
-```
 
-## Deploy
+Once all dependencies are installed, run `gatsby develop` to start development. To build the website for production, run `gatsby build`.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+# Categories
+
+Here are the currently used categories in the blog:
+
+- Design
+- Code
+- Art

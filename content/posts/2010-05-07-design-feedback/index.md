@@ -3,10 +3,10 @@ date: 2010-05-07T20:52:46+02:00
 title: "On Design Feedback"
 category: design
 tags:
-  - design
-  - feedback
-  - work
-  - opinion
+  - Design
+  - Feedback
+  - Work
+  - Opinion
 ---
 
 The subjective side of design work makes giving and receiving feedback a

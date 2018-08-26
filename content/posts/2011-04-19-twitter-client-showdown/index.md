@@ -1,18 +1,24 @@
 ---
 date: 2011-04-19T14:56:20+02:00
-title: "Twitter Client UI Showdown"
+title: "Twitter iOS Apps: Interaction Design Showdown"
 category: design
+tags:
+  - Research
+  - Interaction
+  - Mobile
+  - Twitter
+  - iOS
 ---
 
-Amidst the noise surrounding Twitter's new third party restrictions, [Tweetbot]— the long-awaited Twitter client from Tapbots — is finally out for iPhone and iPod Touch. The overwhelmingly positive feedback is a clear sign that the app met and even exceeded expectations.
+In the thick of the controversy surrounding Twitter's new third party restrictions, [Tweetbot]—the long-awaited Twitter client from Tapbots—is finally out for iPhone and iPod Touch. The overwhelmingly positive feedback is a clear sign that the app met and even exceeded expectations.
 
-To examine whether Tweetbot is a viable replacement for the official app, we will pit the two clients against each other using a GOMS-inspired, oversimplified [human information processing model][HIP] on a set of tasks performed by average user on Twitter.
+To find out whether Tweetbot is a legitimate contender, I decided tp pit it against the official client using a GOMS-inspired, oversimplified [human information processing model][HIP] on a set of tasks performed by the average user on Twitter.
 
 ![Tweet options](tweet-options.jpg) _Tweet options displayed after a single tap._
 
 ### The Rules
 
-Before jumping in, let's introduce some of the concepts used in this model:
+Before starting this exercise, let me introduce some of the keywords that will be used throughout this article:
 
 * *An interaction* is any point of contact between the user and the interface, such as a tap or a swipe. Each interaction is assigned a value based on the time required to execute it. For the sake of simplicity, a *single tap* is given a nominal value of `1` and used as a base unit for other interactions.
 
@@ -20,7 +26,7 @@ Before jumping in, let's introduce some of the concepts used in this model:
 
 * Unless stated otherwise, typing time was zeroed out.
 
-* When two or more methods of achieving a given task are possible, only the most efficient one is used in the comparison. The impact on the overall work-flow is also taken into account.
+* When two or more methods of achieving a given task are possible, only the most efficient one is used in the comparison. The impact on the overall workflow is also taken into account.
 
 * Only the default behavior of the triple tap is taken into consideration for Tweetbot.
 
@@ -34,7 +40,7 @@ The values assigned to each interaction are as follows:
 | Triple tap | 2 |
 | Long tap | 2 |
 
-Thinking time was assigned a value of `0.5`, and will be referred to as MOP (multi-option prompt) in the tests. For simplification purposes, the number of options was not taken into account, nor was the habit factor.
+Thinking time was assigned a value of `0.5`, and will be referred to as MOP (multi-option prompt) in the tests. To keep things simple, the number of options was not taken into account, nor was the habit factor.
 
 ### Round 1: Basic Tasks
 
@@ -75,7 +81,7 @@ Let's now spice up the comparison with some hashtags and @ mentions:
 
 **Outcome:** Twitter for iPhone wins.
 
-Thanks to shortcuts, the official Twitter client trumps Tweetbot when it comes to composing tweets containing hashtags and @ symbols. Theoretically, the two clients handle multi-mention replies with almost equal efficiency. Practically, Twitter's less intrusive solution gives it the upper hand.
+Thanks to shortcuts, the official Twitter client outclasses Tweetbot when it comes to composing tweets containing hashtags and @ symbols. In theory, the two clients handle multi-mention replies with almost equal efficiency. In practice, Twitter's less intrusive solution gives it the upper hand.
 
 ![Replying all](replying-all.jpg) _Replying a tweet with multiple @ mentions._
 
@@ -106,17 +112,17 @@ The official client didn't stand a chance here; Tweetbot's long tap is a godsend
 
 The relatively awkward, albeit native, method of keying hashtags and @ mentions in Tweetbot skews the results in favor of Twitter for iPhone. If it wasn't for this detail, the third party client would have come out ahead.
 
-That being said, it would be short-sighted to declare a winner based on the total score alone. In order to gauge the relevance of these tests, we need to take a closer look at the way we use Twitter in reality. [Studies] suggest that a big majority of users on the social platform are silent; unless you are a news agency, a celebrity, or a spam bot, you are more likely to be reading tweets than tweeting or sending DM's. As a result, the overall experience is deeply affected by our passive use, a point that the tests above completely eschewed in favor of purely active use scenarios.
+When all is said and done, it would be short-sighted to pick a winner based on the total score alone. In order to gauge the relevance of these tests, we need to take a closer look at the way we use Twitter in reality. [Studies] suggest that a big majority of users on the social platform are silent; unless you are a news agency, a celebrity, or a spam bot, you are more likely to be reading tweets than tweeting or sending DM's. As a result, the overall experience is greatly affected by our passive use, a point that the tests above completely eschewed in favor of purely active use scenarios.
 
 ![Notifications](notifications.jpg) _In-app notifications in Tweetbot._
 
 Notably, Tweetbot shines in some areas that would be hard to assess using the HIP model above. Save for the occasional tweet, reply, or DM, we spend most of the time on Twitter wading through hundreds of tweets and swapping accounts and lists. Few Twitter clients address these areas as elegantly as Tweetbot does:
 
-* The number of new tweets (since the last refresh) is displayed in a unobtrusive blue bar in the time-line. This may seem gimmicky at first, but it turns out to be a huge time saver for time-line completionists.
+* The number of new tweets (since the last refresh) is displayed in a unobtrusive blue bar in the timeline. This may seem gimmicky at first, but it turns out to be a huge time saver for timeline completionists.
 
 * Single swiping a tweet displays related tweets in a dedicated conversation view, even if the user is not taking part in them. There seems to be no way to do that in the official client.
 
-* Even though the visual style may not appeal to everyone, it provides a good balance of contrast between content and controls.
+* Even though the visual style may not appeal to everyone, it provides a good balance of contrast between content and chrome.
 
 For a 1.0 release, Tweetbot is doing a remarkable job, especially when considering the saturated and volatile market of Twitter third party clients. Even though there is still room for improvement in certain areas, Tweetbot for iPhone has got what it takes to dethrone the official client, and then some.
 

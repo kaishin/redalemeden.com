@@ -19,7 +19,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-yaml',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-postcss-sass',
+    'gatsby-plugin-sass',
     'gatsby-plugin-feed',
     {
       resolve: 'gatsby-transformer-remark',
@@ -30,12 +30,12 @@ module.exports = {
             options: {
               maxWidth: 740,
               quality: 90
-            },
+            }
           },
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
-              destinationDir: 'static',
+              destinationDir: 'static'
             }
           },
           'gatsby-remark-abbr',

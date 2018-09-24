@@ -17,7 +17,6 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-react-next',
     'gatsby-transformer-yaml',
     'gatsby-transformer-sharp',
     'gatsby-plugin-postcss-sass',

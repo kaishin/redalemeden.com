@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import ProjectList from '../components/project/project-list.js'
+import DefaultLayout from '../components/layouts/default.js'
 import Seo from '../components/seo'
 
 const WorkPage = ({ data }) => (
-  <React.Fragment>
+  <DefaultLayout>
     <Helmet bodyAttributes={{ class: "page-base" }} />
     <Seo title="Work" />
     <section class="work-section">
@@ -14,7 +14,7 @@ const WorkPage = ({ data }) => (
         <ProjectList projects={data.projects.list} />
       </div>
     </section>
-  </React.Fragment>
+  </DefaultLayout>
 )
 
 export const query = graphql`

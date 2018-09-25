@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Seo from '../../components/seo'
 import Img from 'gatsby-image'
+import StandaloneLayout from '../../components/layouts/standalone.js'
 
 class NopePage extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class NopePage extends React.Component {
     const screenshots = this.props.data.allImageSharp.screenshots
 
     return (
-      <React.Fragment>
+      <StandaloneLayout>
         <Helmet bodyAttributes={{ class: "page-nope page-product" }} title="Nope for Safari – Content Blocking Extension"></Helmet>
 
         <Seo
@@ -49,7 +50,7 @@ class NopePage extends React.Component {
         <footer>
           <span class="copyright">&copy; 2015-{new Date().getFullYear()} Reda Lemeden. All Rights Reserved. </span><a href="https://github.com/kaishin/nope">Source Code</a>
         </footer>
-      </React.Fragment>
+      </StandaloneLayout>
     )
   }
 }

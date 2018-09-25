@@ -2,17 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
-import Footer from '../components/footer'
-import Navigation from '../components/navigation'
-import Seo from '../components/seo'
+import Header from '../header'
+import Footer from '../footer'
+import Navigation from '../navigation'
+import Seo from '../seo'
 
 import Normalize from 'normalize.css'
-import '../styles/main.scss'
+import '../../styles/main.scss'
 
 class DefaultLayout extends React.Component {
   render() {
-    const { location, children } = this.props
+    const { children } = this.props
     const { siteMetadata } = this.props.data.site
 
     return (
@@ -21,7 +21,7 @@ class DefaultLayout extends React.Component {
         <Header {...siteMetadata}/>
         <Navigation/>
         <main className='main-container'>
-          {children()}
+          {children}
         </main>
         <Footer {...siteMetadata}/>
       </React.Fragment>

@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Seo from '../../components/seo'
 import Img from 'gatsby-image'
+import StandaloneLayout from '../../components/layouts/standalone.js'
 
 import AlfredDemoGIF from './images/alfred-demo.gif'
 import AutomatorDemoGIF from './images/automator-demo.gif'
@@ -11,7 +12,7 @@ class PipMySafariPage extends React.Component {
     const icon = this.props.data.icon
 
     return (
-      <React.Fragment>
+      <StandaloneLayout>
         <Helmet bodyAttributes={{ class: "page-pip page-product" }} />
         <Seo title="" />
         <Seo
@@ -75,7 +76,7 @@ class PipMySafariPage extends React.Component {
           <span class="copyright">&copy; 2015-{new Date().getFullYear()} Reda Lemeden. All Rights Reserved. </span>
           <a href="https://github.com/kaishin/pip-my-safari">Source Code</a>
         </footer>
-      </React.Fragment>
+      </StandaloneLayout>
     )
   }
 }

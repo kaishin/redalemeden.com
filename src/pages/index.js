@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import DefaultLayout from '../components/layouts/default.js'
 import ProjectList from '../components/project/project-list.js'
 import ArticleList from '../components/article-list.js'
 import PodcastList from '../components/podcast-list.js'
@@ -7,7 +8,7 @@ import Seo from '../components/seo'
 import Helmet from 'react-helmet'
 
 const IndexPage = ({ data }) => (
-  <React.Fragment>
+  <DefaultLayout>
     <Helmet bodyAttributes={{ class: "page-base" }} />
     <Seo title="Home" />
     <section class="intro">
@@ -47,7 +48,7 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </section>
-  </React.Fragment>
+  </DefaultLayout>
 )
 
 export const query = graphql`

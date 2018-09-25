@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Seo from '../components/seo'
+import Seo from '../seo'
 
 import Normalize from 'normalize.css'
 import '../styles/main.scss'
@@ -15,7 +15,7 @@ class StandaloneLayout extends React.Component {
     return (
       <React.Fragment>
         <Seo />
-        {children()}
+        {children}
       </React.Fragment>
     )
   }

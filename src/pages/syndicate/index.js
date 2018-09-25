@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Seo from '../../components/seo'
 import Img from 'gatsby-image'
+import StandaloneLayout from '../../components/layouts/standalone.js'
+
 
 class SyndicatePage extends React.Component {
   render() {
@@ -9,7 +11,7 @@ class SyndicatePage extends React.Component {
     const screenshots = this.props.data.allImageSharp.screenshots
 
     return (
-      <React.Fragment>
+      <StandaloneLayout>
         <Helmet bodyAttributes={{ class: "page-syndicate page-product" }}></Helmet>
 
         <Seo
@@ -68,7 +70,7 @@ class SyndicatePage extends React.Component {
           <span class="copyright">&copy; 2015-{new Date().getFullYear()} Reda Lemeden. All Rights Reserved.</span>
           <a href="https://github.com/kaishin/syndicate">Source Code</a>
         </footer>
-      </React.Fragment>
+      </StandaloneLayout>
     )
   }
 }

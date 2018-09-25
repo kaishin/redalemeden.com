@@ -2,48 +2,48 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Seo from '../components/seo'
 import Helmet from 'react-helmet'
-import Moment from 'moment'
+import DefaultLayout from '../components/layouts/default.js'
 
 class BlogPage extends React.Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
 
     return (
-      <React.Fragment>
-        <Helmet bodyAttributes={{class: "blog-page"}}>
+      <DefaultLayout>
+        <Helmet bodyAttributes={{ class: 'blog-page' }}>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sintony:400,700|Titillium+Web:600,700"/>
         </Helmet>
-        
+
         <Seo title="Blog" />
         <article className="content blog-content">
           <h3 class="page-heading">Blog</h3>
           <ol class="post-list">
-          {posts.map(({ node: post }) => {
-            const title = post.frontmatter.title || post.fields.slug
-            return (
-              <li class="post-list-item">
-                <article className="post-summary">
-                  <h2 className="post-title">
-                    <Link className="post-link" to={post.fields.slug}>
-                      {title}
-                    </Link>
-                  </h2>
-                  <div className="post-metadata">
-                    <span className="category">{post.frontmatter.category}</span>
-                    <span className="separator"> | </span>
-                    <time date={post.frontmatter.date}>
-                      {post.frontmatter.formattedDate}
-                    </time>
-                    <span className="separator"> | </span>
-                    <span className="reading-time">{post.timeToRead}min read</span>
-                  </div>
-                </article>
-              </li>
-            )
-          })}
+            {posts.map(({ node: post }) => {
+              const title = post.frontmatter.title || post.fields.slug
+              return (
+                <li class="post-list-item">
+                  <article className="post-summary">
+                    <h2 className="post-title">
+                      <Link className="post-link" to={post.fields.slug}>
+                        {title}
+                      </Link>
+                    </h2>
+                    <div className="post-metadata">
+                      <span className="category">{post.frontmatter.category}</span>
+                      <span className="separator"> | </span>
+                      <time date={post.frontmatter.date}>
+                        {post.frontmatter.formattedDate}
+                      </time>
+                      <span className="separator"> | </span>
+                      <span className="reading-time">{post.timeToRead}min read</span>
+                    </div>
+                  </article>
+                </li>
+              )
+            })}
           </ol>
         </article>
-      </React.Fragment>
+      </DefaultLayout>
     )
   }
 }

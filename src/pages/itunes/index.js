@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Seo from '../../components/seo'
+import StandaloneLayout from '../../components/layouts/standalone.js'
+
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
@@ -9,10 +11,10 @@ class iTunesPage extends React.Component {
     const { versions } = this.props.data.itunes
 
     return (
-      <React.Fragment>
+      <StandaloneLayout>
         <Helmet bodyAttributes={{ class: "page-itunes" }}>
-        <style type="text/css">
-          {`
+          <style type="text/css">
+            {`
             html {
               background-attachment: fixed;
               background-color: #000;
@@ -22,7 +24,7 @@ class iTunesPage extends React.Component {
               color: #fff;
             }
           `}
-        </style>
+          </style>
         </Helmet>
         <Seo
           title="A Visual History of the iTunes Icon"
@@ -54,7 +56,7 @@ class iTunesPage extends React.Component {
           <p class="copyright">Copyright &copy; 2016-{new Date().getFullYear()} Reda Lemeden.
           <br />The iTunes logo and name are trademarks of Apple Inc.</p>
         </footer>
-      </React.Fragment>
+      </StandaloneLayout>
     )
   }
 }

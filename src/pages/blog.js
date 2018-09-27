@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
 import Seo from '../components/seo'
 import Helmet from 'react-helmet'
 import DefaultLayout from '../components/layouts/default.js'

@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Seo from '../../components/seo'
 import StandaloneLayout from '../../components/layouts/standalone.js'
 
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 class iTunesPage extends React.Component {
@@ -41,7 +41,7 @@ class iTunesPage extends React.Component {
           {versions.map(({ version }, id) =>
             <li className="itunes-version" style={{paddingBottom: version.lifespan_days / 2 + "px"}}>
               <div className="icon-wrapper">
-                <Img sizes={version.image_file.childImageSharp.sizes} outerWrapperClassName="icon-image-wrapper" alt={"Icon for iTunes " + version.version}></Img>
+                <Img fluid={version.image_file.childImageSharp.fluid} alt={"Icon for iTunes " + version.version}></Img>
               </div>
               <section className="version-details">
                 <time datetime={version.date}>{version.formattedDate}</time>
@@ -76,8 +76,8 @@ query iTunes {
           name
           extension
           childImageSharp {
-            sizes(maxWidth: 90) {
-              ...GatsbyImageSharpSizes
+            fluid(maxWidth: 90) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

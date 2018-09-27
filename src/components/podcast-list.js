@@ -14,7 +14,7 @@ class PodcastList extends React.Component {
           <li className="podcast-cell">
             <a href={podcast.url} className="podcast-link">
               <img src="" alt="" />
-              <Img sizes={podcast.thumbnail.childImageSharp.sizes} className="podcast-thumbnail" alt={podcast.name} />
+              <Img fluid={podcast.thumbnail.childImageSharp.fluid} className="podcast-thumbnail" alt={podcast.name} />
               <div className="podcast-metadata">
                 <h6 className="podcast-name">{podcast.name} <span className="role">({podcast.role})</span></h6>
                 <span className="episode-metadata">

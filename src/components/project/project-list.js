@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from './project-card.js'
+import { graphql } from 'gatsby'
 
 class ProjectList extends React.Component {
   constructor(props) {
@@ -26,8 +27,8 @@ fragment ProjectDetails on ProjectsYaml {
     name
     extension
     childImageSharp {
-      sizes(maxWidth: 800) {
-        ...GatsbyImageSharpSizes
+      fluid(maxWidth: 800) {
+        ...GatsbyImageSharpFluid
       }
     }
   }

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Seo from '../components/seo'
 import get from 'lodash/get'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
 
 class BlogPostTemplate extends React.Component {
   render() {

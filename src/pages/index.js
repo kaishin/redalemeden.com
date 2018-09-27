@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
 import DefaultLayout from '../components/layouts/default.js'
 import ProjectList from '../components/project/project-list.js'
 import ArticleList from '../components/article-list.js'
@@ -107,8 +107,8 @@ query Index {
           name
           extension
           childImageSharp {
-            sizes(maxWidth: 256) {
-              ...GatsbyImageSharpSizes
+            fluid(maxWidth: 256) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

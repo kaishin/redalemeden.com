@@ -15,7 +15,7 @@ class ProjectCard extends React.Component {
         <a href={project.url}>
           {project.image.extension == 'gif' ?
             <img src={'/gifs/' + project.image.name + '.gif'} className='project-image' />
-            : <Img sizes={project.image.childImageSharp.sizes} className='project-image' />
+            : <Img fluid={project.image.childImageSharp.fluid} className='project-image' />
           }
           <div className='project-details'>
             <ul style={{ margin: 0 }} className='project-tag-list'>

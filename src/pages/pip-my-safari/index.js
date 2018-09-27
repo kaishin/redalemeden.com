@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Seo from '../../components/seo'
 import Img from 'gatsby-image'
 import StandaloneLayout from '../../components/layouts/standalone.js'
+import { graphql } from 'gatsby'
 
 import AlfredDemoGIF from './images/alfred-demo.gif'
 import AutomatorDemoGIF from './images/automator-demo.gif'
@@ -23,7 +24,7 @@ class PipMySafariPage extends React.Component {
         <header class="main-header">
           <h1 class="main-title">
             <div class="main-title-icon">
-              <Img sizes={icon.sizes} className="icon" alt="PiP My Safari icon" />
+              <Img fluid={icon.fluid} className="icon" alt="PiP My Safari icon" />
             </div>
             <div class="main-title-copy">
               <span class="title">PiP MY Safari</span>
@@ -83,9 +84,11 @@ class PipMySafariPage extends React.Component {
 
 export const query = graphql`
 query PipQuery {
-  icon: imageSharp(id: { regex: "/pip-icon.png/" }) {
-    sizes(maxWidth: 200) {
-      ...GatsbyImageSharpSizes
+  icon: imageSharp(
+    fluid: { originalName: { regex: "/pip-icon.png/" }}
+  ){
+    fluid(maxWidth: 200) {
+      ...GatsbyImageSharpFluid
     }
   }
 }

@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import ProjectList from '../components/project/project-list.js'
 import DefaultLayout from '../components/layouts/default.js'
 import Seo from '../components/seo'
+import { graphql } from 'gatsby'
 
 const WorkPage = ({ data }) => (
   <DefaultLayout>

@@ -3,8 +3,8 @@ const moment = require('moment')
 const { createFilePath } = require('gatsby-source-filesystem')
 const fs = require('fs-extra')
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
 
   const blogPostTemplate = path.resolve('./src/templates/template-blog-post.js');
 
@@ -43,8 +43,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     });
 };
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
     const isPost = /content\/posts/.test(node.id)
@@ -69,23 +69,3 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     })
   }
 }
-exports.onCreatePage = async ({ page, boundActionCreators }) => {
-  const { createPage, deletePage } = boundActionCreators
-
-  return new Promise((resolve, reject) => {
-    if (page.path.match(/syndicate|itunes|nope|pip-my-safari/)) {
-      page.layout = "standalone";
-    }
-
-    const newPage = Object.assign({}, page, {
-      path: page.path === `/` ? page.path : page.path.replace(/\/$/, ``),
-    })
-
-    if (newPage.path !== page.path) {
-      deletePage(page)
-      createPage(newPage)
-    }
-
-    resolve();
-  });
-};

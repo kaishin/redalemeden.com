@@ -1,16 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import Seo from '../seo'
-
 import Normalize from 'normalize.css'
+
 import '../styles/main.scss'
 
 class StandaloneLayout extends React.Component {
   render() {
-    const { location, children } = this.props
-    const { siteMetadata } = this.props.data.site
-    const siteTitle = siteMetadata.title
+    const { children } = this.props
 
     return (
       <React.Fragment>
@@ -22,18 +19,7 @@ class StandaloneLayout extends React.Component {
 }
 
 StandaloneLayout.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.node.isRequired
 }
 
 export default StandaloneLayout
-
-export const pageQuery = graphql`
-  query StandaloneQuery {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
-  }
-`

@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Seo from '../../components/seo'
 import Img from 'gatsby-image'
 import StandaloneLayout from '../../components/layouts/standalone.js'
+import { graphql } from 'gatsby'
 
 class NopePage extends React.Component {
   render() {
@@ -21,7 +22,7 @@ class NopePage extends React.Component {
         <header class="main-header">
           <h1 class="main-title">
             <div class="main-title-icon">
-              <Img sizes={icon.sizes} className="icon" alt="Nope icon"/>
+              <Img fluizes={icon.fluid} className="icon" alt="Nope icon"/>
             </div>
             <div class="main-title-copy">
               <span class="title">Nope</span>
@@ -32,7 +33,7 @@ class NopePage extends React.Component {
 
         <main>
           <p>
-            <Img className="screenshot" sizes={screenshots[0].screenshot.sizes} alt="A screenshot of Nope" />
+            <Img className="screenshot" fluid={screenshots[0].screenshot.fluid} alt="A screenshot of Nope" />
           </p>
           <div class="description">
             <p>
@@ -57,17 +58,21 @@ class NopePage extends React.Component {
 
 export const query = graphql`
 query NopeQuery {
-  icon: imageSharp(id: { regex: "/nope-icon.png/" }) {
-    sizes(maxWidth: 200) {
-      ...GatsbyImageSharpSizes
+  icon: imageSharp(
+    fluid: { originalName: { regex: "/nope-icon.png/"}}
+  }) {
+    fluid(maxWidth: 200) {
+      ...GatsbyImageSharpFluid
     }
   }
 
-  allImageSharp(filter: { id: { regex: "/nope.*screenshot/" }}) {
+  allImageSharp(filter: {
+    fluid: { originalName: { regex: "/nope.*screenshot/" }}
+  ){
     screenshots: edges {
       screenshot: node {
-        sizes(jpegProgressive: true, maxWidth: 600) {
-          ...GatsbyImageSharpSizes
+        fluid(jpegProgressive: true, maxWidth: 600) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

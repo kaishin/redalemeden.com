@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Seo from '../../components/seo'
 import Img from 'gatsby-image'
 import StandaloneLayout from '../../components/layouts/standalone.js'
-
+import { graphql } from 'gatsby'
 
 class SyndicatePage extends React.Component {
   render() {
@@ -22,7 +22,7 @@ class SyndicatePage extends React.Component {
         <header class="main-header">
           <h1 class="main-title">
             <div class="main-title-icon">
-              <Img sizes={icon.sizes} className="icon" alt="Syndicate icon"/>
+              <Img fluid={icon.fluid} className="icon" alt="Syndicate icon"/>
             </div>
             <div class="main-title-copy">
               <span class="title">Syndicate</span>
@@ -32,7 +32,7 @@ class SyndicatePage extends React.Component {
         </header>
         <main>
           <p>
-            <Img sizes={screenshots[0].screenshot.sizes} className="screenshot" alt="A screenshot of Syndicate"/>
+            <Img fluid={screenshots[0].screenshot.fluid} className="screenshot" alt="A screenshot of Syndicate"/>
           </p>
 
           <div class="description">
@@ -40,7 +40,7 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <Img className="screenshot" sizes={screenshots[1].screenshot.sizes} alt="A screenshot of Syndicate with badge" />
+            <Img className="screenshot" fluid={screenshots[1].screenshot.fluid} alt="A screenshot of Syndicate with badge" />
           </p>
 
           <div class="description">
@@ -48,7 +48,7 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <Img className="screenshot" sizes={screenshots[2].screenshot.sizes} alt="A screenshot of Syndicate with multiple feeds" />
+            <Img className="screenshot" fluid={screenshots[2].screenshot.fluid} alt="A screenshot of Syndicate with multiple feeds" />
           </p>
 
           <div class="description">
@@ -56,7 +56,7 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <Img className="screenshot" sizes={screenshots[3].screenshot.sizes} alt="A screenshot of Syndicate with selected URL" />
+            <Img className="screenshot" fluid={screenshots[3].screenshot.fluid} alt="A screenshot of Syndicate with selected URL" />
           </p>
 
           <div class="description">
@@ -78,16 +78,18 @@ class SyndicatePage extends React.Component {
 export const query = graphql`
 query SyndicateQuery {
   icon: imageSharp(id: { regex: "/syndicate-icon.png/" }) {
-    sizes(maxWidth: 200) {
-      ...GatsbyImageSharpSizes
+    fluid(maxWidth: 200) {
+      ...GatsbyImageSharpFluid
     }
   }
 
-  allImageSharp(filter: { id: { regex: "/syndicate.*screenshot/" }}) {
+  allImageSharp(filter: { 
+    fluid: { originalName: { regex: "/syndicate.*screenshot/" }}
+   ){
     screenshots: edges {
       screenshot: node {
-        sizes(jpegProgressive: true, maxWidth: 600) {
-          ...GatsbyImageSharpSizes
+        fluid(jpegProgressive: true, maxWidth: 600) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

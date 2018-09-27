@@ -7,22 +7,22 @@ import { graphql } from 'gatsby'
 
 class NopePage extends React.Component {
   render() {
-    const icon = this.props.data.icon
-    const screenshots = this.props.data.allImageSharp.screenshots
+    const icon = this.props.data.icon.imageSharp
+    const screenshots = this.props.data.screenshots.edges
 
     return (
       <StandaloneLayout>
-        <Helmet bodyAttributes={{ class: "page-nope page-product" }} title="Nope for Safari – Content Blocking Extension"></Helmet>
+        <Helmet bodyAttributes={{ class: "page-nope page-product" }} />
 
         <Seo
-          title="Nope"
+          title="Nope for Safari – Content Blocking Extension"
           description="Blazing fast advertising & tracking blocker extension for Safari 9"
           keywords={["safari", "extension", "ads", "block", "adblock"]}
         />
         <header class="main-header">
           <h1 class="main-title">
             <div class="main-title-icon">
-              <Img fluizes={icon.fluid} className="icon" alt="Nope icon"/>
+              <Img fluid={icon.fluid} className="icon" alt="Nope icon"/>
             </div>
             <div class="main-title-copy">
               <span class="title">Nope</span>
@@ -33,7 +33,7 @@ class NopePage extends React.Component {
 
         <main>
           <p>
-            <Img className="screenshot" fluid={screenshots[0].screenshot.fluid} alt="A screenshot of Nope" />
+            <Img className="screenshot" fluid={screenshots[0].screenshot.imageSharp.fluid} alt="A screenshot of Nope" />
           </p>
           <div class="description">
             <p>
@@ -58,21 +58,21 @@ class NopePage extends React.Component {
 
 export const query = graphql`
 query NopeQuery {
-  icon: imageSharp(
-    fluid: { originalName: { regex: "/nope-icon.png/"}}
-  }) {
-    fluid(maxWidth: 200) {
-      ...GatsbyImageSharpFluid
+  icon: file(relativePath: { regex: "/nope-icon.png/" }) {
+    imageSharp: childImageSharp {
+      fluid(maxWidth: 200) {
+        ...GatsbyImageSharpFluid
+      }
     }
   }
 
-  allImageSharp(filter: {
-    fluid: { originalName: { regex: "/nope.*screenshot/" }}
-  ){
-    screenshots: edges {
+  screenshots: allFile(filter: {relativePath: {regex: "/nope.*screenshot/"}}) {
+    edges {
       screenshot: node {
-        fluid(jpegProgressive: true, maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+        imageSharp: childImageSharp {
+          fluid(jpegProgressive: true, maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }

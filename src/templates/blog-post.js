@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Seo from '../components/seo'
+import DefaultLayout from '../components/layouts/default'
 import get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
 
@@ -11,7 +12,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <React.Fragment>
+      <DefaultLayout>
         <Seo title={post.frontmatter.title} />
         <Helmet bodyAttributes={{class: "post-page blog-page"}}>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sintony:400,700|Titillium+Web:600,700"/>
@@ -43,7 +44,7 @@ class BlogPostTemplate extends React.Component {
             </div>
           </section>
         </article>
-      </React.Fragment>
+      </DefaultLayout>
     )
   }
 }

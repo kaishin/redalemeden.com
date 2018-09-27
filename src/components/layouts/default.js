@@ -29,15 +29,15 @@ class DefaultLayout extends React.Component {
         }
       `}
         render={ data => (
-          <React.Fragment>
+          <section className='grid-container'>
             <Seo />
             <Header {...data.site.siteMetadata} />
             <Navigation />
             <main className='main-container'>
               {children}
             </main>
-            <Footer {...data.site.iteMetadata} />
-          </React.Fragment>
+            <Footer {...data.site.siteMetadata} />
+          </section>
         )}
       />
 

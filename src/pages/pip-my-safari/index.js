@@ -15,7 +15,6 @@ class PipMySafariPage extends React.Component {
     return (
       <StandaloneLayout>
         <Helmet bodyAttributes={{ class: "page-pip page-product" }} />
-        <Seo title="" />
         <Seo
           title="PiP My Safari"
           description="A lightweight workflow to toggle Safari's PiP mode for videos in the foreground"

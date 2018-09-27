@@ -7,8 +7,8 @@ import { graphql } from 'gatsby'
 
 class SyndicatePage extends React.Component {
   render() {
-    const icon = this.props.data.icon
-    const screenshots = this.props.data.allImageSharp.screenshots
+    const icon = this.props.data.icon.imageSharp
+    const screenshots = this.props.data.screenshots.edges
 
     return (
       <StandaloneLayout>
@@ -32,7 +32,7 @@ class SyndicatePage extends React.Component {
         </header>
         <main>
           <p>
-            <Img fluid={screenshots[0].screenshot.fluid} className="screenshot" alt="A screenshot of Syndicate"/>
+            <Img fluid={screenshots[0].screenshot.imageSharp.fluid} className="screenshot" alt="A screenshot of Syndicate"/>
           </p>
 
           <div class="description">
@@ -40,7 +40,7 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <Img className="screenshot" fluid={screenshots[1].screenshot.fluid} alt="A screenshot of Syndicate with badge" />
+            <Img className="screenshot" fluid={screenshots[1].screenshot.imageSharp.fluid} alt="A screenshot of Syndicate with badge" />
           </p>
 
           <div class="description">
@@ -48,7 +48,7 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <Img className="screenshot" fluid={screenshots[2].screenshot.fluid} alt="A screenshot of Syndicate with multiple feeds" />
+            <Img className="screenshot" fluid={screenshots[2].screenshot.imageSharp.fluid} alt="A screenshot of Syndicate with multiple feeds" />
           </p>
 
           <div class="description">
@@ -56,7 +56,7 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <Img className="screenshot" fluid={screenshots[3].screenshot.fluid} alt="A screenshot of Syndicate with selected URL" />
+            <Img className="screenshot" fluid={screenshots[3].screenshot.imageSharp.fluid} alt="A screenshot of Syndicate with selected URL" />
           </p>
 
           <div class="description">
@@ -77,24 +77,25 @@ class SyndicatePage extends React.Component {
 
 export const query = graphql`
 query SyndicateQuery {
-  icon: imageSharp(id: { regex: "/syndicate-icon.png/" }) {
-    fluid(maxWidth: 200) {
-      ...GatsbyImageSharpFluid
+  icon: file(relativePath: { regex: "/syndicate-icon.png/" }) {
+    imageSharp: childImageSharp {
+      fluid(maxWidth: 200) {
+        ...GatsbyImageSharpFluid
+      }
     }
   }
 
-  allImageSharp(filter: { 
-    fluid: { originalName: { regex: "/syndicate.*screenshot/" }}
-   ){
-    screenshots: edges {
+  screenshots: allFile(filter: {relativePath: {regex: "/syndicate.*screenshot/"}}) {
+    edges {
       screenshot: node {
-        fluid(jpegProgressive: true, maxWidth: 600) {
-          ...GatsbyImageSharpFluid
+        imageSharp: childImageSharp {
+          fluid(jpegProgressive: true, maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
   }
-}
-`
+}`
 
 export default SyndicatePage

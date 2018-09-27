@@ -6,7 +6,7 @@ const fs = require('fs-extra')
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = path.resolve('./src/templates/template-blog-post.js');
+  const blogPostTemplate = path.resolve('./src/templates/blog-post.js');
 
   return graphql(`{
     allMarkdownRemark(

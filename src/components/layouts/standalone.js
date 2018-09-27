@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Seo from '../seo'
 import Normalize from 'normalize.css'
 
-import '../styles/main.scss'
+import '../../styles/main.scss'
 
 class StandaloneLayout extends React.Component {
   render() {

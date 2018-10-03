@@ -10,7 +10,7 @@ tags:
 ---
 
 The subjective side of design work makes giving and receiving feedback a
-challenge for everyone involved, especially when one of the parties is not a
+challenge for everyone involved, especially if one of the parties is not a
 designer by profession. Poor or unconstructive feedback slows down the
 design process, erodes trust, and ultimately leads to poor results. Here are
 some rules of thumb to keep in mind when dealing with design feedback.

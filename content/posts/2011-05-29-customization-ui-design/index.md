@@ -40,3 +40,4 @@ The recently released iA Writer for Mac trod the path of *zero customizability* 
 The one-size-fits-all approach could be easily dismissed as limiting for more complex software products such as graphic editors and word processors. Their thoroughly customizable interfaces are built on the premise that users have esoteric expectations and disparate workflows. Then again, one can wonder if these monolithic, can-do-it-all applications are the right answer to productivity and efficiency.
 
 [Tullis]: http://scholarship.rice.edu/handle/1911/15866
+*[GUI]: Graphical User Interface

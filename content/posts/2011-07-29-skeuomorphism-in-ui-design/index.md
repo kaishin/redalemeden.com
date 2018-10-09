@@ -8,17 +8,17 @@ tags:
   - Apple
 ---
 
-Skeuomorphs in UI design refer to interface elements that retain obsolete visual or behavioral aspects of the physical objects they are based on. Take for instance the bumps in the `F` and `J` keys on the iPad virtual keyboard which serve no functional purpose; They are mere artifacts of physical keyboards where similar indentations help provide sensory feedback to touch-typists.
+Skeuomorphs in UI design refer to interface elements that retain obsolete visual or behavioral aspects of the physical objects they are based on. For instance, the visual bumps in the `F` and `J` keys on the iPad virtual keyboard serve no functional purpose; They are mere artifacts of physical keyboards where similar indentations help provide sensory feedback to touch-typists.
 
 ![iPad keyboard](ipad-keyboard.jpg) _The iPad keyboard on iOS 6._
 
-Skeuomorphism is [not new][quicktime] at Apple; They have shipped on multiple occasions user interfaces that heavily borrowed from the physical objects they are based on. The most recent episode involves the redesigned iCal and Address Book in Lion, sporting a new skeuomorphic look similar to their iPad counterparts—Calendar and Contacts.
+Skeuomorphism is [not new][quicktime] at Apple; They have, on multiple occasions, shipped user interfaces that heavily borrowed from the physical objects they are based on. The most recent episode involves the redesigned iCal and Address Book in Lion, sporting a new skeuomorphic look similar to their iPad counterparts—Calendar and Contacts.
 
 ![iCal interface in OSX Lion](ical-lion.jpg) _iCal interface in OS X Lion_
 
 The iOS-inspired interface came under harsh criticism, dismissed as an [unnecessary gimmick][macworld] and mocked for being [hideous][kensegall] and [infantile][cushley]. While these reactions might be disproportionate, they are not completely unfounded, as skeuomorphs come with their fair share of drawbacks:
 
-- *False affordance*. Users may expect the skeuomorph to mimic the behavior of the original object in a particular situation. Failure to meet these expectations will result in frustration and discomfort. For instance, the user might expect to be able to browse contacts by flipping the pages in the new Address Book app, even though such interaction wasn't implemented.
+- *False affordance* leads users to expect the skeuomorph to mimic the behavior of the original object in a particular situation. Failure to meet these expectations often results in frustration and discomfort. For instance, the user might expect to be able to browse contacts by flipping the pages in the new Address Book app, even though such interaction wasn't implemented.
 
 - *Visual noise* distracts users and negatively affect their productivity. Skeuomorphs are greedy for both screen real-estate and users' attention, on the expense of efficiency and usability. The stitches in the iCal navigation bar illustrate this point.
 

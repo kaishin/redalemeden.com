@@ -28,7 +28,8 @@ exports.createPages = ({ actions, graphql }) => {
     }
     }`).then(result => {
       if (result.errors) {
-        return Promise.reject(result.errors);
+        console.log(result.errors)
+        reject(result.errors)
       }
 
       result.data.allMarkdownRemark.edges
@@ -48,7 +49,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const isPost = /content\/posts/.test(node.id)
+    const isPost = /content\/posts/.test(node.fileAbsolutePath)
     const value = createFilePath({ node, getNode }).replace(/[0-9]{4}-[0-9]{2}-[0-9]{2}-|\//g, '')
 
     createNodeField({

@@ -18,7 +18,7 @@ Users who relied heavily on scrollbars in Snow Leopard might be disoriented at f
 
 [^1]: Raskin, 2000.
 
-[skeuomorph]: /on-skeuomorphism
+[skeuomorph]: /blog/2011/on-skeuomorphism
 [siracusa]: http://arstechnica.com/apple/2011/07/mac-os-x-10-7/3/#scroll-bars
 [locus]: http://www.usabilityfirst.com/glossary/locus-of-attention/
 [progressive disclosure]: http://en.wikipedia.org/wiki/Progressive_disclosure]

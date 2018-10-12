@@ -7,7 +7,7 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage, createRedirect } = actions
   const blogPostTemplate = path.resolve('./src/templates/blog-post.js');
 
-  createRedirect({ fromPath: "/skeuomorphism-in-ui-design", toPath: "/on-skeuomorphism", isPermanent: true })
+  createRedirect({ fromPath: "/blog/2011/skeuomorphism-in-ui-design", toPath: "/blog/2011/on-skeuomorphism", isPermanent: true })
 
   return graphql(`{
     allMarkdownRemark(

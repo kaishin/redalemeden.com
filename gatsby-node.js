@@ -4,9 +4,10 @@ const { createFilePath } = require('gatsby-source-filesystem')
 const fs = require('fs-extra')
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
-
+  const { createPage, createRedirect } = actions
   const blogPostTemplate = path.resolve('./src/templates/blog-post.js');
+
+  createRedirect({ fromPath: "/skeuomorphism-in-ui-design", toPath: "/on-skeuomorphism", isPermanent: true })
 
   return graphql(`{
     allMarkdownRemark(

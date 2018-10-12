@@ -4,7 +4,7 @@ title: "Thoughts on Scrollbars in Lion"
 category: design
 ---
 
-Much like the [skeuomorph controversy]({% post_url 2011-07-29-skeuomorphism-in-ui-design %}), the iOS-inspired scrollbars in OS X Lion have been the topic of a heated debate in the Apple community. They have been [accused][siracusa] of causing a usability handicap by removing key information about the current state of the interface.
+Much like the [skeuomorph controversy][skeuomorph], the iOS-inspired scrollbars in OS X Lion have been the topic of a heated debate in the Apple community. They have been [accused][siracusa] of causing a usability handicap by removing key information about the current state of the interface.
 
 ![Scrollbars in Lion](lion-scrollbars.jpg) _Scrollbars in Lion_
 
@@ -18,6 +18,7 @@ Users who relied heavily on scrollbars in Snow Leopard might be disoriented at f
 
 [^1]: Raskin, 2000.
 
+[skeuomorph]: /on-skeuomorphism
 [siracusa]: http://arstechnica.com/apple/2011/07/mac-os-x-10-7/3/#scroll-bars
 [locus]: http://www.usabilityfirst.com/glossary/locus-of-attention/
 [progressive disclosure]: http://en.wikipedia.org/wiki/Progressive_disclosure]

@@ -21,6 +21,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sass',
     'gatsby-plugin-feed',
+    'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

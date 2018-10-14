@@ -47,9 +47,9 @@ Remember that projection graph from earlier? Now it looks like this:
 
 Did these changes make things worse? Absolutely. Do I have a clue why? Maybe. Let's look at some ★☆☆☆☆ reviews:
 
-> I would stay away from this. Says free but its more like test three times and you must buy it. — Jatilq
-> no ping and 3x per day? — Ojaste
-> Why pay for a speed test when there are dozens of websites that provide this for free? limit the free version to 3 daily tests? $4 for unlimited? I will use speedtest.net for free — Legatony
+> I would stay away from this. Says free but its more like test three times and you must buy it. --- Jatilq
+> no ping and 3x per day? --- Ojaste
+> Why pay for a speed test when there are dozens of websites that provide this for free? limit the free version to 3 daily tests? $4 for unlimited? I will use speedtest.net for free --- Legatony
 
 The list goes on, but I will stop here. The gist of it is that the vast majority of users do not see enough value to justify paying for a consumable IAP.
 

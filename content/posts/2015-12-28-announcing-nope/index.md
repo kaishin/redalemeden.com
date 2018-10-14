@@ -33,9 +33,9 @@ You can view a list of all the (sub)domains that you've already categorized in t
 
 ## API Limitations
 
-Currently the content blocking APIs don't expose the blocked resources to the extension. This means that there is no way of displaying what has been blocked outside of the *Console* logs in the developer console—not a great user experience for the average user.
+Currently the content blocking APIs don't expose the blocked resources to the extension. This means that there is no way of displaying what has been blocked outside of the *Console* logs in the developer console---not a great user experience for the average user.
 
-Those who are happy to make this—hopefully temporary—tradeoff will see improved Safari performance, especially on sites that load dozens of third party scripts.
+Those who are happy to make this---hopefully temporary---tradeoff will see improved Safari performance, especially on sites that load dozens of third party scripts.
 
 ![Safari Developer Console](content-blocked-console.jpg) _Logging blocked resources in the Safari Developer Console._
 

@@ -9,6 +9,8 @@ exports.createPages = ({ actions, graphql }) => {
 
   createRedirect({ fromPath: "/blog/2011/skeuomorphism-in-ui-design", toPath: "/blog/2011/on-skeuomorphism", isPermanent: true })
   createRedirect({ fromPath: "/blog/2011/thoughts-on-scrollbars-in-lion", toPath: "/blog/2011/scrollbars-in-osx-lion", isPermanent: true })
+  createRedirect({ fromPath: "/blog/2011/invisible-interfaces", toPath: "/blog/2011/invisible-computers", isPermanent: true })
+  createRedirect({ fromPath: "/blog/2011/2011-ui-design", toPath: "/blog/2011/year-in-interface-design", isPermanent: true })
 
   return graphql(`{
     allMarkdownRemark(

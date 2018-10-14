@@ -12,7 +12,7 @@ Skeuomorphs in UI design refer to interface elements that retain obsolete visual
 
 ![iPad keyboard](ipad-keyboard.jpg) _The iPad keyboard on iOS 6._
 
-Skeuomorphism is [not new][quicktime] at Apple; They have, on multiple occasions, shipped user interfaces that heavily borrowed from the physical objects they are based on. The most recent episode involves the redesigned iCal and Address Book in Lion, sporting a new skeuomorphic look similar to their iPad counterparts—Calendar and Contacts.
+Skeuomorphism is [not new][quicktime] at Apple; They have, on multiple occasions, shipped user interfaces that heavily borrowed from the physical objects they are based on. The most recent episode involves the redesigned iCal and Address Book in Lion, sporting a new skeuomorphic look similar to their iPad counterparts---Calendar and Contacts.
 
 ![iCal interface in OSX Lion](ical-lion.jpg) _iCal interface in OS X Lion_
 

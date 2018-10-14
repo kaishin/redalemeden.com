@@ -1,7 +1,11 @@
 ---
 date: 2011-09-29T20:55:40+00:00
 title: "My Quest for the Perfect Text Editor"
-category: code
+category: programming
+tags:
+  - Tools
+  - Opinion
+  - macOS
 ---
 
 I started my career making mediocre websites with clunky WYSIWYG tools from Macromedia and Adobe. Everything looked and felt horrible. But I didn't know any better.
@@ -10,7 +14,7 @@ I started my career making mediocre websites with clunky WYSIWYG tools from Macr
 
 In 2007, I bought my first iMac and started using Textmate as my main text editor. Before long, I was enjoying every line of code I wrote. A good user interface goes a long way in making software delightful to use.
 
-Textmate was simple by design. It didn't have auto-save, smart undo, or autocomplete—features that have become standard in other editors at the time. It was getting harder by the day to not jump ship. I started by taking Coda and Espresso for a spin. I was fairly impressed with their obsession to make Web design as seamless as possible. Inconveniently, their main selling point is also their biggest snag: they suck as standalone text editors.
+Textmate was simple by design. It didn't have auto-save, smart undo, or autocomplete---features that have become standard in other editors at the time. It was getting harder by the day to not jump ship. I started by taking Coda and Espresso for a spin. I was fairly impressed with their obsession to make Web design as seamless as possible. Inconveniently, their main selling point is also their biggest snag: they suck as standalone text editors.
 
 My quest for the perfect text editor had to continue on Google. The first result page suggested BBedit, Vim, and Emacs, among other lesser-known alternatives. At the time, Vim and Emacs were too keyboard-centric for my taste, not to mention their unappealing user interfaces, or lack thereof.
 

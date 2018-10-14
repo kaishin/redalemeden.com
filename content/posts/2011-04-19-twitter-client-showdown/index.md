@@ -10,7 +10,7 @@ tags:
   - iOS
 ---
 
-In the thick of the controversy surrounding Twitter's new third party restrictions, [Tweetbot]—the long-awaited Twitter client from Tapbots—is finally out for iPhone and iPod Touch. The overwhelmingly positive feedback is a clear sign that the app met and even exceeded expectations.
+In the thick of the controversy surrounding Twitter's new third party restrictions, [Tweetbot]---the long-awaited Twitter client from Tapbots---is finally out for iPhone and iPod Touch. The overwhelmingly positive feedback is a clear sign that the app met and even exceeded expectations.
 
 To find out whether Tweetbot is a legitimate contender, I decided tp pit it against the official client using a GOMS-inspired, oversimplified [human information processing model][HIP] on a set of tasks performed by the average user on Twitter.
 

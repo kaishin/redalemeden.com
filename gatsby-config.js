@@ -30,7 +30,8 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 740,
-              quality: 90
+              quality: 90,
+              wrapperStyle: 'margin-top: 3rem'
             }
           },
           {
@@ -39,9 +40,15 @@ module.exports = {
               destinationDir: 'static'
             }
           },
+          {
+            resolve: 'gatsby-remark-smartypants',
+            options: {
+              dashes: 'oldschool',
+            },
+          },
           'gatsby-remark-abbr',
           'gatsby-remark-autolink-headers',
-          'gatsby-remark-prismjs'
+          'gatsby-remark-prismjs',
         ]
       }
     },

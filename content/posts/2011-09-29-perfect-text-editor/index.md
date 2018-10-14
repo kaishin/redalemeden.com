@@ -1,24 +1,26 @@
 ---
 date: 2011-09-29T20:55:40+00:00
-title: "Quest for the Perfect Text Editor"
+title: "My Quest for the Perfect Text Editor"
 category: code
 ---
 
-Interface is a deciding factor when I pick my tools. Few years ago, I was designing mediocre websites using clunky tools from Macromedia and Adobe. As I switched to Mac in 2007, I had the chance to try Textmate as my main IDE. I was pleasantly surprised with its simplicity and efficiency. I gradually moved away from WYSIWYG tools, and before long, I was enjoying every line of code I write in Textmate.
+I started my career making mediocre websites with clunky WYSIWYG tools from Macromedia and Adobe. Everything looked and felt horrible. But I didn't know any better.
 
 > "Ignorance is bliss." --- Thomas Gray
 
-Textmate remained my go-to text editor until I started looking at the competition. Auto-save, smart undo, autocomplete suggestions, and a native fullscreen mode have all become standard features in other editors. My hunt for an alternative has begun before I realized.
+In 2007, I bought my first iMac and started using Textmate as my main text editor. Before long, I was enjoying every line of code I wrote. A good user interface goes a long way in making software delightful to use.
 
-I started by taking Coda and Espresso for a spin. I was quite impressed with their endeavor to make Web design as seamless as possible. Notwithstanding, their main selling point is also their biggest snag: they suck as standalone text editors.
+Textmate was simple by design. It didn't have auto-save, smart undo, or autocomplete—features that have become standard in other editors at the time. It was getting harder by the day to not jump ship. I started by taking Coda and Espresso for a spin. I was fairly impressed with their obsession to make Web design as seamless as possible. Inconveniently, their main selling point is also their biggest snag: they suck as standalone text editors.
 
-Subsequently, I turned to Google for ideas. The first results hinted at BBedit, Vim and Emacs. Albeit being the darlings of many, Vim and Emacs are simply too keyboard-centric for a mouse-trained brain like mine, not to mention their daunting learning curve and ugly non-native interfaces.
+My quest for the perfect text editor had to continue on Google. The first result page suggested BBedit, Vim, and Emacs, among other lesser-known alternatives. At the time, Vim and Emacs were too keyboard-centric for my taste, not to mention their unappealing user interfaces, or lack thereof.
 
-Eventually, my next stop was the two-decades-old BBedit, which coincided with the release of a major update for OS X Lion. Recommended by many pundits, I was almost confident that BBedit would fit the bill. Alas, that didn't happen as I was not happy with the intrusive toolbar, the nebulous syntax highlighting, and the poor support for  CSS preprocessors such as Less and Sass.
+Eventually, my next stop was the two-decades-old BBedit, which coincided with the release of a big update for OS X Lion. Recommended by many pundits, I was almost confident that BBedit would fit the bill. Alas, the intrusive toolbar, the nebulous syntax highlighting, and the poor support for CSS preprocessors left me disappointed.
 
-Although I was initially reluctant to try the less popular alternatives, I had little choice but to wade through an unhealthy number of Textmate 2 wannabes. Some are clearly coming out of the lot (Sublime Text), while many are too unstable for doing any serious work. What they all seem to have in common are the tiny communities and the narrow range of third party extensions.
+The only options I was left with was to wade through an unhealthy number of Textmate 2 wannabes. Some came out of the lot, such as Sublime Text, while many others were too unstable for doing any serious work. What they all seemed to have in common was a noticeable lack of third party extensions and community support.
 
-End of the road? I am concurrently using Sublime Text 2, BBedit and Espresso 2. Am I satisfied with my current workflow? Hell no, and not even the recent Textmate 2 announcement was enough to placate my urgent craving for a decent text editor.
+At the end of this fruitless search, I kept Sublime Text 2, BBedit, and Espresso 2 installed, and used them in rotation depending on the project and the mood.
+
+*To be continued...*
 
 *[WYSIWYG]: What You See Is What You Get
 *[IDE]: Integrated Development Environment

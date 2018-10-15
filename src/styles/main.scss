@@ -1028,6 +1028,10 @@ body.blog-page {
   .footnotes {
     border-top: 1px solid $ash;
     font-size: 0.9em;
+
+    p {
+      display: inline;
+    }
   }
 
   .feedback-box {

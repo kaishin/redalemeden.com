@@ -11,6 +11,8 @@ exports.createPages = ({ actions, graphql }) => {
   createRedirect({ fromPath: "/blog/2011/thoughts-on-scrollbars-in-lion", toPath: "/blog/2011/scrollbars-in-osx-lion", isPermanent: true })
   createRedirect({ fromPath: "/blog/2011/invisible-interfaces", toPath: "/blog/2011/invisible-computers", isPermanent: true })
   createRedirect({ fromPath: "/blog/2011/2011-ui-design", toPath: "/blog/2011/year-in-interface-design", isPermanent: true })
+  createRedirect({ fromPath: "/blog/2011/twitter-client-showdown", toPath: "/blog/2011/twitter-ios-showdown", isPermanent: true })
+  createRedirect({ fromPath: "/blog/2012/twitter-client-showdown-round-2", toPath: "/blog/2012/twitter-ios-showdown-round-2", isPermanent: true })
 
   return graphql(`{
     allMarkdownRemark(

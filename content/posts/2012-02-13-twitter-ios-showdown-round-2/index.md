@@ -1,15 +1,20 @@
 ---
 date: 2012-02-13T08:38:51-06:00
-title: "Twitter Client Showdown: Round 2"
-description: "An update to the original showdown pitting the user interfaces of Tweetbot 1.0 and Twitter for iPhone using a simplified GOMS model."
+title: "Twitter iOS Apps: Interaction Design Showdown – Round 2"
 category: design
+tags:
+  - Research
+  - Interaction
+  - Mobile
+  - Twitter
+  - iOS
 ---
 
-It has been almost a year since the [original showdown]({% post_url 2011-04-19-twitter-client-showdown %}) pitting the user interfaces of the Twitter official client and Tweetbot. Since the latter got a major update last week, it is a good opportunity to revisit the Twitter client landscape on iOS.
+It has been almost a year since the [original showdown] pitting the user interfaces of the official Twitter client and Tapbots' Tweetbot. Given that the latter got a major update last week, it's a good opportunity to give the showdown another go.
 
 For starters, here is a quick summary of the simplified HIP model used in this showdown:
 
-* Touch interactions are assigned a value based on the precision and time required to execute them. Single taps take in average 165 milliseconds, while double taps and swipes take 350ms and 400ms respectively. The single tap is given a nominal value of 1 and will serve as the base unit of other interactions. For instance, assigning the value of 2 to a swipe means that it's twice harder to execute than a single tap.
+* Touch interactions are assigned a value based on the precision and time required to execute them. In average, Single taps take 165 milliseconds, while double taps and swipes take 350ms and 400ms respectively. The single tap is given a nominal value of 1 and will serve as the base unit of other interactions. For instance, assigning the value of 2 to a swipe means that it's twice harder to execute than a single tap.
 
 * A task is a chain of user interactions with an end goal. The effort required to achieve a certain task equals the sum of the individual values of each interaction involved. The lower the sum, the more efficient the interface.
 
@@ -19,7 +24,7 @@ For starters, here is a quick summary of the simplified HIP model used in this s
 
 For long-time readers, here is what's new:
 
-* Here comes a new challenger: Twitterrific.
+* Here comes a new challenger! It's called Twitterrific.
 
 * User flow is taken into account this time by adding the interactions required to take the user back to the main timeline in each task.
 
@@ -68,7 +73,7 @@ Tweetbot has clearly the upper-hand even though little has changed since the ini
 | Switch time-lines | 2.5 | 3 | 3 |
 | **Total** | **39.5** | **44.5** | **41** |
 
-Tweetbot still comes out ahead of the official client, and barely ahead of Twitterrific. Tapbots' popover implementation of account switching contrasts heavily with the 2 layer deep navigation required to do the same task in Twitter 4. Twitterrific does direct messages best, despite the 2 penalty points tied to the impossibility of sending a new DM without resorting to the obscure trick of adding a lowercase "d" to the beginning of the tweet.
+Tweetbot still comes out ahead of the official client, and barely ahead of Twitterrific. Tapbots' popover implementation for account switching contrasts heavily with the 2 layers deep navigation required to do the same task in Twitter 4. Twitterrific does direct messages best, despite the 2 penalty points tied to the impossibility of sending a new DM without resorting to the obscure trick of adding a lowercase "d" to the beginning of the tweet.
 
 ### Verdict
 
@@ -80,11 +85,12 @@ Tweetbot still comes out ahead of the official client, and barely ahead of Twitt
 | Total (Uncalibrated) | 61.5 | 76 | 66 |
 | Previous Total | 71.0 | 68 | 74 |
 
-Tweetbot wins. Twitterrific closes in second and Twitter 4 lands third with a significant margin. The uncalibrated new scores[^1] and the old scores were adde for comparison purposes. Of the three, only the official client regressed.
+Tweetbot wins. Twitterrific comes as a close second, while Twitter 4 lands third with a significant margin. The uncalibrated new scores[^1] and the old scores were added for comparison purposes. Of the three, only the official client regressed.
 
 The detailed methodology and results can be viewed in this [spreadsheet].
 
 [spreadsheet]: http://goo.gl/Ydh6vR
+[original showdown]: /blog/2011/twitter-ios-showdown
 
 [^1]: The uncalibrated scores were calculated using the original interaction cost values.
 

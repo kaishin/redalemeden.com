@@ -2,6 +2,10 @@
 date: "2015-10-04T23:40:00+01:00"
 title: "tvOS HIG: Too Long; Didn't Read"
 category: design
+tags:
+  - tvOS
+  - Apple
+  - HIG
 ---
 
 I often joke about the [HIG] being an acronym for *Highly Ignored Guidelines*.

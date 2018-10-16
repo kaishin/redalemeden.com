@@ -1,8 +1,13 @@
 ---
 date: 2015-12-28T22:30:00+01:00
 title: "Announcing Nope for Safari"
-category: product
-excerpt: "Two months ago I started working on a content blocking extension for Safari. Today I am happy to announce that it's ready for the masses."
+category: journal
+tags:
+  - Product
+  - macOS
+  - Safari
+  - Ads
+  - Extension
 ---
 
 ![Nope Icon](nope-safari-icon.jpg)

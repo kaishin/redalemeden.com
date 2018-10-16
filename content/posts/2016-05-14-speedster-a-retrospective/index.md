@@ -1,11 +1,14 @@
 ---
 date: 2016-05-17T01:50:22+02:00
 title: "Speedster: A Retrospective"
-excerpt: "Last year, I had the <del>not so</del> brilliant idea to build a connection speed testing app for OS X. Between a full-time job and summer vacations, it took me about 6 months to wrap up a 1.0. Speedster was born."
-category: product
+category: journal
+tags:
+  - Product
+  - macOS
+  - App
 ---
 
-Last year, I had the ~~not so~~ brilliant idea to build a connection speed testing app for OS X. Between a full-time job and summer vacations, it took me about 6 months to wrap up a 1.0 using the [SpeedOfMe] free-while-in-beta API. [Speedster] was born.
+Last year, I set to build an Internet speed testing app for OS X. Between a full-time job and summer vacations, it took me about 6 months to wrap up a 1.0 using the [SpeedOfMe] free-while-in-beta API. [Speedster] was born.
 
 Speed tests are a tricky business. I wasn't convinced that the app would work for everyone, so I made it free. I also capped the number of daily tests per user to not get my API key revoked, and added an IAP to remove that limitation for good measure.
 

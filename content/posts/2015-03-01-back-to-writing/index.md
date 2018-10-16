@@ -4,7 +4,7 @@ title: "Back to Writing"
 category: journal
 tags:
   - Writing
-  - Data
+  - Productivity
 ---
 
 I haven't updated this blog since I joined thoughtbot in 2012. This was due to a combination of lacking the time to do proper research outside working hours and finding [better][robots] [venues][smashing] for technical writing. I was convinced that it's better to spend my time fixing things rather than writing about it. But as time went on, I started to realize that writing about something is the best way to get it out of your system and move on to the next thing.

@@ -1,7 +1,9 @@
 ---
 date: 2015-12-27T12:02:37+01:00
 title: "Achievement Unlocked: 2015 Edition"
-category: meta
+category: journal
+tags:
+  - Productivity
 ---
 
 It's that time of the year where we mull over what we accomplished in the past twelve months. Here is my list.
@@ -30,7 +32,7 @@ It's that time of the year where we mull over what we accomplished in the past t
 
 - **Avoided buying an Apple Watch.** Believe me, this one was particularly challenging.
 
-- **Earned a Platinum trophy on PSN**. Better yet, it's from [Bloodborne].
+- **Earned my first Platinum trophy on PSN**. Better yet, it's from [Bloodborne].
 
 [1Password]: https://agilebits.com/onepassword
 [Authy]: https://www.authy.com

@@ -1,7 +1,9 @@
 ---
 date: 2017-02-02T09:52:55+01:00
 title: "Achievement Unlocked: January 2017"
-category: meta
+category: journal
+tags:
+  - Productivity
 ---
 
 Amidst all the depressing stuff going on, it is sometimes healthy to celebrate the little victories of everyday life. Here is a round-up to follow up on [the one][Retro 2015] I wrote a little over a year ago.

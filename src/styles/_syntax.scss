@@ -1,224 +1,149 @@
-.highlight {
-  background: #ffffff;
-  color: #4d4d4c;
+code,
+pre {
+  &[class*='language-'] {
+    background: #2a2734;
+    border-radius: .6em;
+    color: #9a86fd;
+    direction: ltr;
+    font-size: 14px;
+    hyphens: none;
+    line-height: 1.375;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
 
-  .hll {
-    background-color: #d6d6d6;
+    &::selection,
+    & ::selection {
+      background: #6a51e6;
+      text-shadow: none;
+    }
+  }
+}
+
+pre {
+  &[class*='language-'] {
+    margin: .5em 0;
+    overflow: auto;
+    padding: 1em;
+  }
+}
+
+code {
+  &[class*='language-'] {
+    :not(pre) > & {
+      border-radius: .3em;
+      padding: .2em .5em;
+      display: inline-block;
+    }
+  }
+}
+
+.token {
+  &.comment,
+  &.prolog,
+  &.doctype,
+  &.cdata,
+  &.punctuation {
+    color: #6c6783;
   }
 
-  .c {
-    color: #8e908c;
+  &.namespace {
+    opacity: .7;
   }
 
-  .err {
-    color: #c82829;
+  &.tag,
+  &.operator,
+  &.number {
+    color: #e09142;
   }
 
-  .k {
-    color: #8959a8;
+  &.property,
+  &.function {
+    color: #9a86fd;
   }
 
-  .l {
-    color: #f5871f;
+  &.tag-id,
+  &.selector,
+  &.atrule-id {
+    color: #eeebff;
   }
 
-  .n {
-    color: #4d4d4c;
+  &.boolean,
+  &.string,
+  &.entity,
+  &.url {
+    color: #ffcc99;
   }
 
-  .o {
-    color: #3e999f;
+  &.string {
+    .language-css &,
+    .language-scss &,
+    .style & {
+      color: #ffcc99;
+    }
   }
 
-  .p {
-    color: #4d4d4c;
+
+  &.attr-name {
+    color: #c4b9fe;
   }
 
-  .cm,
-  .cp,
-  .c1,
-  .cs {
-    color: #8e908c;
+  &.attr-value,
+  &.keyword,
+  &.control,
+  &.directive,
+  &.unit,
+  &.statement,
+  &.regex,
+  &.atrule,
+  &.placeholder,
+  &.variable {
+    color: #ffcc99;
   }
 
-  .gd {
-    color: #c82829;
+  &.deleted {
+    text-decoration: line-through;
   }
 
-  .ge {
+  &.inserted {
+    border-bottom: 1px dotted #eeebff;
+    text-decoration: none;
+  }
+
+  &.italic {
     font-style: italic;
   }
 
-  .gh {
-    color: #4d4d4c;
+  &.important, &.bold {
     font-weight: bold;
   }
 
-  .gi {
-    color: #718c00;
+  &.important {
+    color: #c4b9fe;
   }
 
-  .gp {
-    color: #8e908c;
-    font-weight: bold;
+  &.entity {
+    cursor: help;
   }
+}
 
-  .gs {
-    font-weight: bold;
-  }
 
-  .gu {
-    color: #3e999f;
-    font-weight: bold;
-  }
+pre > code.highlight {
+  outline: .4em solid #8a75f5;
+  outline-offset: .4em;
+}
 
-  .kc,
-  .kd {
-    color: #8959a8;
-  }
+.line-numbers .line-numbers-rows {
+  border-right-color: #2c2937;
+}
 
-  .kn {
-    color: #3e999f;
-  }
+.line-numbers-rows > span:before {
+  color: #3c3949;
+}
 
-  .kp,
-  .kr {
-    color: #8959a8;
-  }
-
-  .kt {
-    color: #eab700;
-  }
-
-  .ld {
-    color: #718c00;
-  }
-
-  .m {
-    color: #f5871f;
-  }
-
-  .s {
-    color: #718c00;
-  }
-
-  .na {
-    color: #4271ae;
-  }
-
-  .nb {
-    color: #4d4d4c;
-  }
-
-  .nc {
-    color: #eab700;
-  }
-
-  .no {
-    color: #c82829;
-  }
-
-  .nd {
-    color: #3e999f;
-  }
-
-  .ni {
-    color: #4d4d4c;
-  }
-
-  .ne {
-    color: #c82829;
-  }
-
-  .nf {
-    color: #4271ae;
-  }
-
-  .nl {
-    color: #4d4d4c;
-  }
-
-  .nn {
-    color: #eab700;
-  }
-
-  .nx {
-    color: #4271ae;
-  }
-
-  .py {
-    color: #4d4d4c;
-  }
-
-  .nt {
-    color: #3e999f;
-  }
-
-  .nv {
-    color: #c82829;
-  }
-
-  .ow {
-    color: #3e999f;
-  }
-
-  .w {
-    color: #4d4d4c;
-  }
-
-  .mf,
-  .mh,
-  .mi,
-  .mo {
-    color: #f5871f;
-  }
-
-  .sb {
-    color: #718c00;
-  }
-
-  .sc {
-    color: #4d4d4c;
-  }
-
-  .sd {
-    color: #8e908c;
-  }
-
-  .s2 {
-    color: #718c00;
-  }
-
-  .se {
-    color: #f5871f;
-  }
-
-  .sh {
-    color: #718c00;
-  }
-
-  .si {
-    color: #f5871f;
-  }
-
-  .sx,
-  .sr,
-  .s1,
-  .ss {
-    color: #718c00;
-  }
-
-  .bp {
-    color: #4d4d4c;
-  }
-
-  .vc,
-  .vg,
-  .vi {
-    color: #c82829;
-  }
-
-  .il {
-    color: #f5871f;
-  }
+.line-highlight {
+  background: rgba(224, 145, 66, .2);
+  background: linear-gradient(to right, rgba(224, 145, 66, .2) 70%, rgba(224, 145, 66, 0));
 }

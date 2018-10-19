@@ -1,15 +1,28 @@
-code,
+@import "variables";
+
+$code-light-theme-foreground-color: #444444;
+$code-dark-theme-foreground-color: #b8b8b8;
+$code-light-theme-background-color: rgba($pitch-black, .02);
+$code-dark-theme-background-color: #343642;
+$code-comment-color: rgba(lighten($code-dark-theme-background-color, 50%), 0.8);
+$code-number-color: #e9a94b;
+$code-function-color: #60a1e7;
+$code-string-color: #04c69e;
+$code-keyword-color: #bb89dd;
+$code-variable-color: #ff6166;
+
 pre {
   &[class*='language-'] {
-    background: #2a2734;
-    border-radius: .6em;
-    color: #9a86fd;
+    background: $code-light-theme-background-color;
+    border-radius: .4em;
+    color: $code-light-theme-foreground-color;
     direction: ltr;
-    font-size: 14px;
+    // font-size: 14px;
     hyphens: none;
     line-height: 1.375;
     tab-size: 4;
     text-align: left;
+    transition: background-color .1s, color .1s;
     white-space: pre;
     word-break: normal;
     word-spacing: normal;
@@ -19,14 +32,26 @@ pre {
       background: #6a51e6;
       text-shadow: none;
     }
+
+    &:hover {
+      background-color: $code-dark-theme-background-color;
+      color: $code-dark-theme-foreground-color;
+    }
   }
 }
 
+
 pre {
   &[class*='language-'] {
-    margin: .5em 0;
+    margin: 2em 0;
     overflow: auto;
     padding: 1em;
+  }
+
+  & > code {
+    &[class*='language-'] {
+      background-color: transparent;
+    }
   }
 }
 
@@ -46,7 +71,7 @@ code {
   &.doctype,
   &.cdata,
   &.punctuation {
-    color: #6c6783;
+    color: $code-comment-color;
   }
 
   &.namespace {
@@ -56,12 +81,12 @@ code {
   &.tag,
   &.operator,
   &.number {
-    color: #e09142;
+    color: $code-number-color;
   }
 
   &.property,
   &.function {
-    color: #9a86fd;
+    color: $code-function-color;
   }
 
   &.tag-id,
@@ -70,24 +95,23 @@ code {
     color: #eeebff;
   }
 
+  &.builtin {
+    color: $code-number-color;
+  }
+
+  &.class-name {
+    color: $code-variable-color;
+  }
+
   &.boolean,
   &.string,
   &.entity,
   &.url {
-    color: #ffcc99;
+    color: $code-string-color;
   }
-
-  &.string {
-    .language-css &,
-    .language-scss &,
-    .style & {
-      color: #ffcc99;
-    }
-  }
-
 
   &.attr-name {
-    color: #c4b9fe;
+    color: $code-function-color;
   }
 
   &.attr-value,
@@ -100,7 +124,7 @@ code {
   &.atrule,
   &.placeholder,
   &.variable {
-    color: #ffcc99;
+    color: $code-keyword-color;
   }
 
   &.deleted {

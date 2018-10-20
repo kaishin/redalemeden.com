@@ -925,10 +925,8 @@ body.blog-page {
     font-family: $sintony;
 
     a {
-      font-style: italic;
       text-decoration: none;
       border-bottom: 1px solid rgba($blog-link-color, 0.4);
-      background-color: rgba($blog-link-color, 0.08);
       transition: all 0.2s;
 
       &:active {
@@ -937,7 +935,7 @@ body.blog-page {
 
       &:hover,
       &:focus {
-        background-color: transparent;
+        background-color: rgba($blog-link-color, 0.08);
         border-bottom: 1px solid $blog-link-color;
         color: $blog-link-hover-color;
       }

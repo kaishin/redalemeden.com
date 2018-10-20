@@ -82,7 +82,7 @@ $blog-accent-color: $mauve;
 $ashtray: adjust-hue($blog-accent-color, -50deg);
 
 $blog-link-active-color: darken($blog-accent-color, 40%);
-$blog-link-color: lighten($blog-accent-color, 10%);
+$blog-link-color: $blog-accent-color;
 $blog-link-hover-color: $blog-accent-color;
 $blog-link-visited-color: darken($blog-accent-color, 20%);
 $blog-tertiary-color: darken($ash, 5%);

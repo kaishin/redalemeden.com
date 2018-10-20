@@ -1,15 +1,17 @@
 @import "variables";
 
-$code-light-theme-foreground-color: #444444;
+$code-number-color: $deep-saffron;
+$code-function-color: $blog-link-color;
+$code-string-color: $tag-web;
+$code-keyword-color: $bleu-de-france;
+$code-variable-color: $tag-design;
+
+$code-light-theme-background-color: rgba($lilac, .7);
+$code-dark-theme-background-color: $background-color;
+$code-light-theme-foreground-color: darken($code-light-theme-background-color, 70%);
 $code-dark-theme-foreground-color: #b8b8b8;
-$code-light-theme-background-color: rgba($pitch-black, .02);
-$code-dark-theme-background-color: #343642;
-$code-comment-color: rgba(lighten($code-dark-theme-background-color, 50%), 0.8);
-$code-number-color: #e9a94b;
-$code-function-color: #60a1e7;
-$code-string-color: #04c69e;
-$code-keyword-color: #bb89dd;
-$code-variable-color: #ff6166;
+
+$code-comment-color: rgba(lighten(#343642, 50%), .8);
 
 pre {
   &[class*='language-'] {
@@ -17,7 +19,6 @@ pre {
     border-radius: .4em;
     color: $code-light-theme-foreground-color;
     direction: ltr;
-    // font-size: 14px;
     hyphens: none;
     line-height: 1.375;
     tab-size: 4;
@@ -29,7 +30,7 @@ pre {
 
     &::selection,
     & ::selection {
-      background: #6a51e6;
+      background: rgba($code-keyword-color, 0.2);
       text-shadow: none;
     }
 
@@ -58,9 +59,11 @@ pre {
 code {
   &[class*='language-'] {
     :not(pre) > & {
+      background-color: $code-light-theme-background-color;
       border-radius: .3em;
-      padding: .2em .5em;
+      color: $code-light-theme-foreground-color;
       display: inline-block;
+      padding: .1em .3em;
     }
   }
 }
@@ -155,7 +158,7 @@ code {
 
 
 pre > code.highlight {
-  outline: .4em solid #8a75f5;
+  outline: .4em solid $code-keyword-color;
   outline-offset: .4em;
 }
 

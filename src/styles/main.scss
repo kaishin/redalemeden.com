@@ -1039,6 +1039,28 @@ body.blog-page {
     font-size: 1rem;
     margin-bottom: 2rem;
   }
+
+  .swift-version {
+    background-color: lighten($plum, 58%);
+    border-radius: .4rem;
+    color: $plum;
+    display: block;
+    font-size: .8rem;
+    margin: 2rem 0 1rem;
+    padding: .5em 1em;
+  
+    a {
+      text-decoration: none;
+  
+      &:active,
+      &:hover,
+      &:focus,
+      &:link,
+      &:visited {
+        color: red;
+      }
+    }
+  }
 }
 
 

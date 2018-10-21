@@ -1,15 +1,19 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Seo from '../components/seo'
 import DefaultLayout from '../components/layouts/default'
-import get from 'lodash/get'
+import find from 'lodash/find'
 import { Link, graphql } from 'gatsby'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+
+    function swiftVersion(tags) {
+      return tags.find(function (tag) {
+        return tag.includes('Swift-')
+      }).replace('-', ' ')
+    }
 
     return (
       <DefaultLayout>
@@ -37,6 +41,7 @@ class BlogPostTemplate extends React.Component {
           </aside>
 
           <section className="full-post-content">
+            {post.frontmatter.tags.includes('Literate') && <span className="swift-version">The code snippets in this article are compatible with <strong>{swiftVersion(post.frontmatter.tags)}</strong>.</span>} 
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
             <div className="feedback-box">
@@ -64,6 +69,7 @@ export const pageQuery = graphql`
         title
         date
         category
+        tags
         formattedDate: date(formatString: "MMM D, YYYY")
       }
     }

@@ -16,7 +16,7 @@ $code-comment-color: rgba(lighten(#343642, 50%), .8);
 pre {
   &[class*='language-'] {
     background: $code-light-theme-background-color;
-    border-radius: .4em;
+    border-radius: .4rem;
     color: $code-light-theme-foreground-color;
     direction: ltr;
     hyphens: none;

@@ -10,9 +10,15 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
 
     function swiftVersion(tags) {
-      return tags.find(function (tag) {
+      var tag = tags.find(function (tag) {
         return tag.includes('Swift-')
-      }).replace('-', ' ')
+      })
+
+      if (typeof tag === "undefined") {
+        return false
+      } else {
+        return tag.replace('-', ' ')
+      }
     }
 
     return (
@@ -41,7 +47,7 @@ class BlogPostTemplate extends React.Component {
           </aside>
 
           <section className="full-post-content">
-            {post.frontmatter.tags.includes('Literate') && <span className="swift-version">The code snippets in this article are compatible with <strong>{swiftVersion(post.frontmatter.tags)}</strong>.</span>} 
+            {swiftVersion(post.frontmatter.tags) && <span className="swift-version">The code snippets in this article are written using the <strong>{swiftVersion(post.frontmatter.tags)}</strong> syntax.</span>} 
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
             <div className="feedback-box">

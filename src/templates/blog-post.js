@@ -51,7 +51,7 @@ class BlogPostTemplate extends React.Component {
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
             <div className="feedback-box">
-              <a href={'https://twitter.com/intent/tweet?url=' + post.fields.slug + '=&amp;text=' + encodeURIComponent(post.frontmatter.title) + '&amp;via=kaishin'} target="_blank">Tweet this</a> or send your feedback to <a target="_blank" href="https://twitter.com/intent/tweet?screen_name=kaishin">@kaishin</a>.
+              Have feedback? Send it to <a target="_blank" href="https://twitter.com/intent/tweet?screen_name=kaishin">@kaishin</a>.
             </div>
           </section>
         </article>

@@ -89,6 +89,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-fathom',
+      options: {
+        trackingUrl: 'stats.redalemeden.com',
+        siteId: 'VKAGX'
+      }
+    },
+    {
       resolve: 'gatsby-plugin-svgr',
       options: {
         icon: false,

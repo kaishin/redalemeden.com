@@ -6,19 +6,18 @@
   "author": "Reda Lemeden <hello@redalemeden.com>",
   "dependencies": {
     "autoprefixer": "^9.1.0",
-    "gatsby": "^2.0.7",
+    "gatsby": "^2.0.81",
     "gatsby-cli": "^2.4.8",
     "gatsby-image": "^2.0.0",
     "gatsby-plugin-canonical-urls": "^2.0.0",
     "gatsby-plugin-catch-links": "^2.0.4",
     "gatsby-plugin-fathom": "^1.0.4",
     "gatsby-plugin-feed": "^2.0.0",
-    "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-netlify": "^2.0.0",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-robots-txt": "^1.3.0",
     "gatsby-plugin-sass": "^2.0.1",
-    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-sharp": "^2.0.17",
     "gatsby-plugin-sitemap": "^2.0.0",
     "gatsby-plugin-svgr": "^2.0.0-alpha",
     "gatsby-remark-abbr": "^1.0.0",
@@ -38,7 +37,8 @@
     "prismjs": "^1.15.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "typeface-rubik": "0.0.54"
   },
   "keywords": [
     "gatsby",

@@ -24,10 +24,8 @@ class BlogPostTemplate extends React.Component {
     return (
       <DefaultLayout>
         <Seo title={post.frontmatter.title} />
-        <Helmet bodyAttributes={{class: "post-page blog-page"}}>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sintony:400,700|Titillium+Web:600,700"/>
-        </Helmet>
-           
+        <Helmet bodyAttributes={{class: "post-page blog-page"}} />
+
         <article className="content blog-content">
           <header className="post-header">
             <div className="post-category">{post.frontmatter.category}</div>

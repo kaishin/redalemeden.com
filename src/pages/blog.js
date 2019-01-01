@@ -10,9 +10,7 @@ class BlogPage extends React.Component {
 
     return (
       <DefaultLayout>
-        <Helmet bodyAttributes={{ class: 'blog-page' }}>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sintony:400,700|Titillium+Web:600,700"/>
-        </Helmet>
+        <Helmet bodyAttributes={{ class: 'blog-page' }} />
 
         <Seo title="Blog" />
         <article className="content blog-content">

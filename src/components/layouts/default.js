@@ -9,6 +9,7 @@ import Seo from '../seo'
 
 import Normalize from 'normalize.css'
 import '../../styles/main.scss'
+import 'typeface-rubik'
 
 class DefaultLayout extends React.Component {
   render() {

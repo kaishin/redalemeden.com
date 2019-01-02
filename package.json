@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Reda Lemeden <hello@redalemeden.com>",
   "dependencies": {
+    "@svgr/webpack": "^4.1.0",
     "autoprefixer": "^9.1.0",
     "gatsby": "^2.0.81",
     "gatsby-cli": "^2.4.8",

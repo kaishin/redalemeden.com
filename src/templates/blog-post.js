@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Seo from '../components/seo'
 import DefaultLayout from '../components/layouts/default'
-import find from 'lodash/find'
 import { Link, graphql } from 'gatsby'
 
 class BlogPostTemplate extends React.Component {
@@ -49,7 +48,7 @@ class BlogPostTemplate extends React.Component {
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
             <div className="feedback-box">
-              Have feedback? Send it to <a target="_blank" href="https://twitter.com/intent/tweet?screen_name=kaishin">@kaishin</a>.
+              Have feedback? Send it to <a target="_blank" href="https://twitter.com/intent/tweet?screen_name=kaishin" rel="noreferrer noopener">@kaishin</a>.
             </div>
           </section>
         </article>

@@ -9,10 +9,6 @@
 @import "pip";
 
 body.page-base {
-  background-color: $background-color;
-  color: lighten($background-color, 50%);
-  font-family: $primary-font;
-
   [class$=heading] {
     font-weight: 300;
     letter-spacing: 0.05em;
@@ -82,51 +78,7 @@ body.page-base {
     }
   }
 
-  .site-header {
-    background-image: url("/images/sidebar-pattern.svg");
-    background-repeat: no-repeat;
-    padding-top: 5.5rem;
-    text-align: center;
 
-    a {
-      text-decoration: none;
-    }
-
-    .full-name {
-      color: $white;
-      font-size: 1.04rem;
-      font-weight: 500;
-      letter-spacing: .2em;
-      margin-bottom: .6em;
-      text-transform: uppercase;
-    }
-
-    .tagline {
-      color: $medium-red-violet;
-      font-size: 1rem;
-      font-style: italic;
-      line-height: .9;
-      margin-top: 0;
-
-      span {
-        font-weight: 500;
-        letter-spacing: .05em;
-      }
-
-      .designer {
-        color: $topaz;
-      }
-
-      .developer {
-        color: $bleu-de-france;
-      }
-    }
-
-    .sakigake {
-      display: block;
-      margin-top: 3.3em;
-    }
-  }
 
   .site-navigation {
     .navigation-links {
@@ -151,9 +103,6 @@ body.page-base {
   }
 
   .intro {
-    background-color: darken($dusk, 12%);
-    color: $white;
-    padding: $large-spacing;
   }
   
   .intro-content {
@@ -183,7 +132,6 @@ body.page-base {
   $highlights-transition-duration: 0.2s;
 
   .recent-projects-section {
-    background-color: $dusk;
     overflow: hidden;
     padding: $large-spacing;
     text-align: center;
@@ -455,7 +403,6 @@ body.page-base {
   .elsewhere-section {
     @extend .recent-projects-section;
 
-    background-color: darken($dusk, 12%);
     padding: $large-spacing * 2;
 
     @include media-width(until, 40rem) {
@@ -694,7 +641,6 @@ body.page-base {
   }
 
   footer {
-    background-color: $mirage;
     padding: $large-spacing;
     text-align: center;
 

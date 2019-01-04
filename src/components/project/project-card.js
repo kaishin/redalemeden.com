@@ -13,8 +13,8 @@ class ProjectCard extends React.Component {
     return (
       <li class='project-cell'>
         <a href={project.url}>
-          {project.image.extension == 'gif' ?
-            <img src={'/gifs/' + project.image.name + '.gif'} className='project-image' />
+          {project.image.extension === 'gif' ?
+            <img src={'/gifs/' + project.image.name + '.gif'} className='project-image' alt={project.name} />
             : <Img fluid={project.image.childImageSharp.fluid} className='project-image' />
           }
           <div className='project-details'>

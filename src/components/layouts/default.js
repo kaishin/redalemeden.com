@@ -7,9 +7,9 @@ import Footer from '../footer'
 import Navigation from '../navigation'
 import Seo from '../seo'
 
-import Normalize from 'normalize.css'
-import '../../styles/main.scss'
-import 'typeface-rubik'
+import { StyleVar } from '../../utils/style-helper'
+
+import '../../css/styles.css'
 
 class DefaultLayout extends React.Component {
   render() {
@@ -30,10 +30,13 @@ class DefaultLayout extends React.Component {
         }
       `}
         render={ data => (
-          <section className='grid-container'>
+          <section className='grid-container' style={{
+            backgroundColor: StyleVar('--primary-color')
+          }}>
             <Seo />
             <Header {...data.site.siteMetadata} />
             <Navigation />
+            <hr />
             <main className='main-container'>
               {children}
             </main>

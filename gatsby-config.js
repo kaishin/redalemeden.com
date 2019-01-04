@@ -22,6 +22,8 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-feed',
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -91,7 +93,6 @@ module.exports = {
       options: {
         icon: false,
       },
-    },
-    'gatsby-plugin-netlify'
+    }
   ]
 };

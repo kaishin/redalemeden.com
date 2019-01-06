@@ -8,20 +8,19 @@
 @import "nope";
 @import "pip";
 
-body.page-base {
+body.home-page {
   [class$=heading] {
     font-weight: 300;
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
 
-  
   sup {
     margin-left: 0.2em;
     top: 0;
     vertical-align: super;
   }
-  
+
   hr {
     border: 0;
     height: 1px;
@@ -44,7 +43,11 @@ body.page-base {
     }
   }
 
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-weight: 400;
   }
 
@@ -78,60 +81,10 @@ body.page-base {
     }
   }
 
-
-
-  .site-navigation {
-    .navigation-links {
-      list-style: none;
-      padding-top: 3rem;
-      padding-left: 0;
-
-      a {
-        color: $white;
-        text-decoration: none;
-      }
-
-      .link {
-        font-size: .8rem;
-        font-weight: 500;
-        letter-spacing: .16em;
-        padding-bottom: 2.1em;
-        text-align: center;
-        text-transform: uppercase;
-      }
-    }
-  }
-
-  .intro {
-  }
-  
-  .intro-content {
-    margin: 0 auto;
-    max-width: 28rem;
-    padding: 1rem 0 1.5rem;
-    position: relative;
-    text-align: center;
-  }
-  
-  .intro-tagline {
-    color: lighten($honey-flower, 20%);
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: 0.04em;
-    line-height: 1.7;
-  }
-  
-  .intro-paragraph {
-    font-weight: 300;
-    letter-spacing: 0.01em;
-    line-height: 1.8;
-  }
-
   $highlights-width: $container-width;
   $highlights-transition-duration: 0.2s;
 
-  .recent-projects-section {
+  .recent-projects {
     overflow: hidden;
     padding: $large-spacing;
     text-align: center;
@@ -165,7 +118,7 @@ body.page-base {
   }
 
   .work-section {
-    @extend .recent-projects-section;
+    @extend .recent-projects;
 
     .section-heading {
       font-size: 2rem;
@@ -303,7 +256,6 @@ body.page-base {
       padding: ($large-spacing * 2) 0;
     }
 
-
     .narrow-header & {
       padding: $large-spacing 0;
       text-align: left;
@@ -340,7 +292,6 @@ body.page-base {
 
       margin: auto auto $base-spacing;
     }
-
 
     .narrow-header & {
       @include size(5rem);
@@ -400,15 +351,14 @@ body.page-base {
     }
   }
 
-  .elsewhere-section {
-    @extend .recent-projects-section;
+  .elsewhere {
+    @extend .recent-projects;
 
     padding: $large-spacing * 2;
 
     @include media-width(until, 40rem) {
       padding: $large-spacing;
     }
-
 
     ol {
       list-style: none;
@@ -543,7 +493,6 @@ body.page-base {
       padding: ($large-spacing * 2) 0;
     }
 
-
     .narrow-header & {
       padding: $large-spacing 0;
       text-align: left;
@@ -580,7 +529,6 @@ body.page-base {
 
       margin: auto auto $base-spacing;
     }
-
 
     .narrow-header & {
       @include size(5rem);
@@ -686,7 +634,7 @@ body.page-base {
 }
 
 body.blog-page {
-  @extend body.page-base;
+  @extend body.home-page;
 
   .main-container {
     @extend %blog-container;
@@ -968,7 +916,7 @@ body.blog-page {
   }
 
   .feedback-box {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     border-radius: 4px;
     margin: 3rem auto 1rem;
     padding: 1rem;
@@ -989,10 +937,10 @@ body.blog-page {
     font-size: .8rem;
     margin: 2rem 0 1rem;
     padding: .5em 1em;
-  
+
     a {
       text-decoration: none;
-  
+
       &:active,
       &:hover,
       &:focus,
@@ -1003,7 +951,6 @@ body.blog-page {
     }
   }
 }
-
 
 body.page-product {
   box-sizing: border-box;
@@ -1036,7 +983,6 @@ body.page-product {
       text-align: center;
     }
 
-
     @include media-width(from, $container-width) {
       display: flex;
       margin: 5rem auto;
@@ -1061,11 +1007,9 @@ body.page-product {
       flex-direction: column;
     }
 
-
     @include media-width(until, $container-width) {
       margin: 0 auto 3rem;
     }
-
 
     .title {
       font-size: 1.4rem;
@@ -1098,7 +1042,6 @@ body.page-product {
     @include media-width(from, $container-width) {
       margin-top: 0.5rem;
     }
-
 
     @include media-width(until, $container-width) {
       margin-bottom: 1rem;

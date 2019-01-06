@@ -1,3 +1,7 @@
 :root {
-  --primary-color: #4A20AD;
+  --primary-color-hsl: 258deg 69% 40%;
+  --primary-color: hsl(var(--primary-color-hsl));
+
+  --secondary-color-hsl: 38deg 100% 75%;
+  --secondary-color: hsl(var(--secondary-color-hsl));
 }

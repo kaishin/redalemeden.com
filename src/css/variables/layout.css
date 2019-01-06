@@ -1,1 +1,6 @@
 @custom-media --narrow-window (max-width: 30em);
+
+:root {
+  --spacing-header-top: 4rem;
+  --spacing-home-content: 6rem;
+}

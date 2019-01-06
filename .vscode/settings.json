@@ -1,10 +1,13 @@
 {
-  "spellright.language": ["en"],
+  "spellright.language": [
+    "en"
+  ],
   "spellright.documentTypes": [
     "markdown",
-    "latex",
-    "plaintext"
+    "latex"
   ],
   "workbench.panel.defaultLocation": "right",
-  "eslint.enable": false
+  "files.associations": {
+    "*.css": "postcss"
+  }
 }

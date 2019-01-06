@@ -1,41 +1,94 @@
-@import 'variables/glob';
+@import "variables/glob";
+@import "pages/glob";
 @import-normalize;
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
 
 body {
   background-color: var(--primary-color);
-  color: #FFF;
+  color: #fff;
   font-family: var(--text-font);
+  font-size: 16px;
   margin: 0;
 }
 
+.site-header {
+  background-repeat: no-repeat;
+  padding-top: var(--spacing-header-top);
+  text-align: center;
 
+  & .header-pattern {
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
 
-  .site-header {
-    background-repeat: no-repeat;
-    padding-top: 5.5rem;
-    text-align: center;
+  & a {
+    text-decoration: none;
+  }
 
-    & .pattern {
-      top: 0;
-      display: block;
-      position: absolute;
+  & .full-name {
+    color: white;
+    font-size: var(--header-title-size);
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    margin-bottom: calc(var(--header-title-size) * 2);
+    text-transform: uppercase;
+  }
+
+  & .sakigake {
+    margin: auto;
+
+    %container {
+      background-color: hsl(var(--secondary-color-hsl) / 35%);
+      content: '';
+      display: inline-block;
+      height: 1px;
+      vertical-align: 10px;
+      width: calc(var(--header-title-size) * 4);
     }
 
+    &::before {
+      @extend %container;
+      margin-right: 10px;
+    }
+
+    &::after {
+      @extend %container;
+      margin-left: 10px;
+    }
+  }
+}
+
+.site-navigation {
+  & .navigation-links {
+    list-style: none;
+    padding-top: 3rem;
+    padding-left: 0;
+
     & a {
+      color: #fff;
       text-decoration: none;
     }
 
-    & .full-name {
-      color: white;
-      font-size: 1.04rem;
-      font-weight: 500;
-      letter-spacing: .2em;
-      margin-bottom: .6em;
+    & .link {
+      font-size: .85rem;
+      font-weight: 400;
+      letter-spacing: .16em;
+      padding-bottom: 2.1em;
+      text-align: center;
       text-transform: uppercase;
     }
-
-    & .sakigake {
-      display: block;
-      margin-top: 3.3em;
-    }
   }
+}

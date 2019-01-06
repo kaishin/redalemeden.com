@@ -1,13 +1,13 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import ProjectList from '../components/project/project-list.js'
-import DefaultLayout from '../components/layouts/default.js'
-import Seo from '../components/seo'
-import { graphql } from 'gatsby'
+import React from 'react';
+import Helmet from 'react-helmet';
+import ProjectList from '../components/project/project-list.js';
+import DefaultLayout from '../components/layouts/default.js';
+import Seo from '../components/seo';
+import { graphql } from 'gatsby';
 
 const WorkPage = ({ data }) => (
   <DefaultLayout>
-    <Helmet bodyAttributes={{ class: "page-base" }} />
+    <Helmet bodyAttributes={{ class: 'home-page' }} />
     <Seo title="Work" />
     <section class="work-section">
       <div class="container">
@@ -16,21 +16,18 @@ const WorkPage = ({ data }) => (
       </div>
     </section>
   </DefaultLayout>
-)
+);
 
 export const query = graphql`
-query Work {
-  projects: allProjectsYaml(
-    limit: 100
-    sort: { fields: [year], order: DESC }
-  ) {
-    list: edges {
-      project: node {
-        ...ProjectDetails
+  query Work {
+    projects: allProjectsYaml(limit: 100, sort: { fields: [year], order: DESC }) {
+      list: edges {
+        project: node {
+          ...ProjectDetails
+        }
       }
     }
   }
-}
-`
+`;
 
-export default WorkPage
+export default WorkPage;

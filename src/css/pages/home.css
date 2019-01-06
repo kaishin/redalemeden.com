@@ -1,0 +1,36 @@
+.home-page {
+  & .main-container {
+    background: linear-gradient(transparent, rgb(0 0 0 / 18%));
+    padding: 0 var(--spacing-home-content);
+  }
+}
+
+.intro-content {
+  max-width: 38rem;
+
+  & :--heading {
+    margin-block: 0;
+  }
+}
+
+.intro-tagline {
+  font-size: 1.56rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  padding-top: var(--spacing-header-top);
+}
+
+.intro-paragraph {
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.8;
+  opacity: 0.8;
+
+  & em {
+    font-style: normal;
+    font-weight: bold;
+  }
+}

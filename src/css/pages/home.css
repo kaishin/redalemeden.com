@@ -34,3 +34,34 @@
     font-weight: bold;
   }
 }
+
+.recent-projects {
+  overflow: hidden;
+
+  & .section-heading {
+    color: #fff;
+    letter-spacing: .2em;
+    font-weight: 500;
+    margin: 0;
+    padding: 3rem 0;
+    text-transform: uppercase;
+
+    &::after {
+      width: 4rem;
+      height: 3px;
+      background-color: var(--secondary-color);
+      content: "";
+      display: block;
+      margin: 1.5rem 0 0;
+    }
+  }
+
+  & .button {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin: 1rem auto 2rem;
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+  }
+}

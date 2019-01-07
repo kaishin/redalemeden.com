@@ -9,11 +9,11 @@
 @import "pip";
 
 body.home-page {
-  [class$=heading] {
-    font-weight: 300;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-  }
+  // [class$=heading] {
+  //   font-weight: 300;
+  //   letter-spacing: 0.05em;
+  //   text-transform: uppercase;
+  // }
 
   sup {
     margin-left: 0.2em;
@@ -84,41 +84,8 @@ body.home-page {
   $highlights-width: $container-width;
   $highlights-transition-duration: 0.2s;
 
-  .recent-projects {
-    overflow: hidden;
-    padding: $large-spacing;
-    text-align: center;
-
-    .section-heading {
-      color: $white;
-      font-weight: 500;
-      letter-spacing: .2em;
-      margin: 0;
-      padding-top: 3rem;
-      padding-bottom: 4rem;
-
-      &::after {
-        @include size(4rem, 3px);
-
-        background-color: $yellow-orange;
-        content: "";
-        display: block;
-        margin: 1.5rem auto 0;
-      }
-    }
-
-    .button {
-      font-size: 0.9rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      margin: $base-spacing auto $large-spacing;
-      padding: 0.8rem 2rem;
-      text-transform: uppercase;
-    }
-  }
-
   .work-section {
-    @extend .recent-projects;
+    // @extend .recent-projects;
 
     .section-heading {
       font-size: 2rem;
@@ -352,7 +319,7 @@ body.home-page {
   }
 
   .elsewhere {
-    @extend .recent-projects;
+    // @extend .recent-projects;
 
     padding: $large-spacing * 2;
 

@@ -2,7 +2,7 @@
   image: images/critiq.jpg
   year: 2016
   tags: [macos, web, swift, design]
-  featured: true
+  featured: false
   url: https://critiq-staging.herokuapp.com
   description: "Early groundwork for a design feedback Mac app."
 
@@ -10,7 +10,7 @@
   image: images/courier.jpg
   year: 2016
   tags: [branding, web]
-  featured: true
+  featured: false
   url: https://courier.thoughtbot.com
   description: "UI design & logo for Courier, a mobile notification SaaS."
 
@@ -26,7 +26,7 @@
   image: images/nope.jpg
   year: 2016
   tags: [safari, javascript, OSS]
-  featured: false
+  featured: true
   url: http://redalemeden.com/nope
   description: "A content-blocking extension for Safari."
 
@@ -34,8 +34,8 @@
   image: images/markoff.jpg
   year: 2016
   tags: [macos, design, swift, OSS]
-  featured: false
-  url: https://github.com/thoughtbot/Markoff
+  featured: true
+  url: https://github.com/kaishin/Markoff
   description: "An open-source Markdown previewer for macOS."
 
 - name: "Speedster"
@@ -58,7 +58,7 @@
   image: images/syndicate.jpg
   year: 2015
   tags: [safari, javascript, OSS]
-  featured: false
+  featured: true
   url: https://redalemeden.com/syndicate
   description: "An RSS discovery extension for Safari."
 
@@ -66,7 +66,7 @@
   image: images/kromatic.jpg
   year: 2015
   tags: [macos, design, swift]
-  featured: false
+  featured: true
   url: http://kromatic.thoughtbot.com
   description: "A color picking & naming utility for macOS."
 
@@ -82,7 +82,7 @@
   image: images/ipinator.jpg
   year: 2015
   tags: [macos, design, swift]
-  featured: true
+  featured: false
   url: http://ipinator.kaishin.co
   description: "An IP address geo-coding utility for macOS."
 
@@ -114,7 +114,7 @@
   image: images/cascade.gif
   year: 2014
   tags: [swift, OSS, ios]
-  featured: true
+  featured: false
   url: https://github.com/thoughtbot/Cascade
   description: "An open-source waterfall layout implementation."
 

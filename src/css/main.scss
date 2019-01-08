@@ -93,23 +93,12 @@ body.home-page {
     }
   }
 
-  .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    max-width: $highlights-width;
-    padding: 0;
-  }
-
   .project-cell {
     background-color: lighten($mirage, 5%);
     border: 1px solid $dusk;
     border-radius: 6px;
     flex: 0 1 280px;
-    font-smoothing: antialiased;
     list-style-type: none;
-    margin-bottom: 1.5rem;
     overflow: hidden;
     transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
 
@@ -342,7 +331,7 @@ body.home-page {
     }
 
     .container {
-      @extend .project-list;
+      // @extend .project-list;
 
       align-items: flex-start;
       display: flex;

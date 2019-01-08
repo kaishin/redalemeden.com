@@ -36,8 +36,6 @@
 }
 
 .recent-projects {
-  overflow: hidden;
-
   & .section-heading {
     color: #fff;
     letter-spacing: .2em;
@@ -48,7 +46,7 @@
 
     &::after {
       width: 4rem;
-      height: 3px;
+      height: 2px;
       background-color: var(--secondary-color);
       content: "";
       display: block;
@@ -63,5 +61,18 @@
     margin: 1rem auto 2rem;
     padding: 0.8rem 2rem;
     text-transform: uppercase;
+  }
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 0 auto;
+  padding: 0;
+
+  & .project-cell {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
   }
 }

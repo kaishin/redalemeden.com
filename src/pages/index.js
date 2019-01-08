@@ -13,11 +13,11 @@ const IndexPage = ({ data }) => (
     <Seo title="Home" />
     <section className="intro">
       <div className="intro-content">
-        <h2 className="intro-tagline">Designer, programmer, and illustrator based in Stockolm, Sweden.</h2>
+        <h2 className="intro-tagline">Designer, programmer, and illustrator based in Stockholm, Sweden.</h2>
 
         <p className="intro-paragraph">
-          I dedicated my career to building and shipping software that doesn’t confuse people. Software that is
-          accessible, open, and respectful to its users.
+          I dedicated a sizable chunk of my career to making humane, responsible, and open software. My current
+          interests include the federated Web, open-source Swift, privacy, and new computing paradigms.
         </p>
         <p className="intro-paragraph">
           Favorite Word: <em>魁</em> [sakigake] Forerunner, vanguard, pioneer.
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => (
     </section>
 
     <section className="recent-projects">
-      <h4 className="section-heading">Featured Projects</h4>
+      <h4 className="section-heading">Recent Projects</h4>
       <ProjectList projects={data.projects.list} />
       <Link to="/work" className="button">
         See more projects

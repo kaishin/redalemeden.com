@@ -21,6 +21,10 @@ body {
   margin: 0;
 }
 
+.main-container {
+  padding: 0 var(--padding-main-container);
+}
+
 .site-header {
   background-repeat: no-repeat;
   padding-top: var(--spacing-header-top);

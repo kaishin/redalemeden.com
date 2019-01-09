@@ -1,0 +1,25 @@
+.button {
+  background-color: var(--secondary-color);
+  border-radius: 12em;
+  color: var(--primary-color);
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin: 1rem auto 2rem;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0 0 0 / 30%);
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

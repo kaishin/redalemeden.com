@@ -52,15 +52,6 @@
       margin: 1.5rem 0 0;
     }
   }
-
-  & .button {
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    margin: 1rem auto 2rem;
-    padding: 0.8rem 2rem;
-    text-transform: uppercase;
-  }
 }
 
 .project-list {
@@ -73,5 +64,44 @@
   & .project-cell {
     margin-right: 2rem;
     margin-bottom: 2rem;
+  }
+}
+
+.elsewhere {
+  --max-width: 56rem;
+  max-width: var(--max-width);
+
+  & a {
+    color: var(--secondary-color);
+  }
+
+  & ol {
+    list-style: none;
+  }
+
+  & .column-heading {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    &::after {
+      height: 2px;
+    }
+  }
+
+  & .container {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    text-align: left;
+  }
+
+  & .column {
+    flex: 0 1 calc(var(--max-width) / 3);
+  }
+
+  & .podcast-list {
+    padding: 0;
   }
 }

@@ -28,31 +28,12 @@ body.home-page {
     max-width: $container-width;
   }
 
-  [class$=button] {
-    @extend %default-button;
-
-    border-radius: 12em;
-    display: inline-block;
-    padding: 0.5em 2em;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
   h1,
   h2,
   h3,
   h4,
   h5 {
     font-weight: 400;
-  }
-
-  a {
-    color: $link-color;
   }
 
   .grid-container {
@@ -308,45 +289,9 @@ body.home-page {
   }
 
   .elsewhere {
-    // @extend .recent-projects;
-
-    padding: $large-spacing * 2;
-
-    @include media-width(until, 40rem) {
-      padding: $large-spacing;
-    }
-
-    ol {
-      list-style: none;
-    }
-
-    .column-heading {
-      @extend .section-heading;
-
-      padding: $base-spacing 0;
-
-      &::after {
-        height: 2px;
-      }
-    }
-
-    .container {
-      // @extend .project-list;
-
-      align-items: flex-start;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      text-align: center;
-
-      @include media-width(until, 60rem) {
-        justify-content: space-around;
-      }
-    }
-
-    .column {
-      flex: 0 1 ($container-width / 3.5);
-    }
+    // @include media-width(until, 40rem) {
+    //   padding: $large-spacing;
+    // }
 
     .article-list {
       padding: 0;
@@ -363,7 +308,7 @@ body.home-page {
       .article-title {
         font-size: 1em;
         font-weight: 500;
-        margin: 0 auto 0.4rem;
+        margin: 0 0 0.4rem;
         max-width: 14rem;
         transition: color 0.2s;
 

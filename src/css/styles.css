@@ -1,5 +1,6 @@
 @import "variables/glob";
 @import "pages/glob";
+@import "components/glob";
 @import-normalize;
 
 html {
@@ -81,11 +82,6 @@ body {
     padding-top: 3rem;
     padding-left: 0;
 
-    & a {
-      color: #fff;
-      text-decoration: none;
-    }
-
     & .link {
       font-size: .85rem;
       font-weight: 400;
@@ -94,5 +90,16 @@ body {
       text-align: center;
       text-transform: uppercase;
     }
+  }
+
+  & a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.site-footer {
+  & a {
+    color: var(--secondary-color);
   }
 }

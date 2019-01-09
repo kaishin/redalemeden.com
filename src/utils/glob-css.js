@@ -8,7 +8,7 @@ module.exports = {
 		'--secondary-color-hsl': '38deg 100% 75%',
 		'--secondary-color': 'hsl(var(--secondary-color-hsl))',
 		'--spacing-header-top': '4rem',
-		'--spacing-home-content': '6rem',
+		'--padding-main-container': '10vw',
 		'--font-rubik': '\'Rubik\'',
 		'--text-font': 'var(--font-rubik), system-ui',
 		'--header-title-size': '1.1rem'

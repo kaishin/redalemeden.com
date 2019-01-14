@@ -1,6 +1,10 @@
-@custom-media --narrow-window (max-width: 30em);
-
 :root {
-  --spacing-header-top: 4rem;
-  --padding-main-container: 10vw;
+  --footer-padding: 2rem;
+  --header-top-spacing: 4rem;
+  --main-container-padding: 10vw;
+  --grid-container-full-width: 60rem;
+  --sidebar-max-width: 22.5rem;
+  --main-content-max-width: 40rem;
 }
+
+@custom-media --full-grid-container (width >= 60rem);

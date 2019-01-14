@@ -4,4 +4,6 @@
 
   --secondary-color-hsl: 38deg 100% 75%;
   --secondary-color: hsl(var(--secondary-color-hsl));
+
+  --light-theme-bg-color: #fff7e6;
 }

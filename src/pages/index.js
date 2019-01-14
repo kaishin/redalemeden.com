@@ -16,11 +16,11 @@ const IndexPage = ({ data }) => (
         <h2 className="intro-tagline">Designer, programmer, and illustrator based in Stockholm, Sweden.</h2>
 
         <p className="intro-paragraph">
-          I dedicated a sizable chunk of my career to making humane, responsible, and open software. My current
-          interests include the federated Web, open-source Swift, privacy, and new computing paradigms.
+          <em>Current Interests ▹</em> The federated Web, open-source Swift, privacy, and new computing paradigms.
         </p>
+
         <p className="intro-paragraph">
-          Favorite Word: <em>魁</em> [sakigake] Forerunner, vanguard, pioneer.
+          <em>Favorite Kanji ▹ 魁</em> [sakigake] Forerunner, vanguard, pioneer.
         </p>
       </div>
     </section>

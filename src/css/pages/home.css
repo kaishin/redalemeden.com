@@ -17,7 +17,7 @@
   font-weight: 300;
   letter-spacing: 0.04em;
   line-height: 1.5;
-  padding-top: var(--spacing-header-top);
+  padding-top: var(--header-top-spacing);
 }
 
 .intro-paragraph {
@@ -30,7 +30,7 @@
 
   & em {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
 

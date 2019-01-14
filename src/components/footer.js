@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 class Footer extends React.Component {
   render() {
-    const { author } = this.props
+    const { author } = this.props;
 
     return (
       <footer class="site-footer">
-        <ul class="links-list">
+        <ul class="link-list">
           <li class="link">
             <a href="https://twitter.com/kaishin">Twitter</a>
             <span class="separator">/</span>
@@ -23,11 +23,13 @@ class Footer extends React.Component {
             <a href="https://represent.io/kaishin">Resume</a>
           </li>
         </ul>
-        <span class="copyright"><em>&copy;</em> 2009-{new Date().getFullYear()} {author}.
-        <br/>All Rights Reserved.</span>
+        <span class="copyright">
+          <em>&copy;</em> 2009-{new Date().getFullYear()} {author}.
+          <br />All Rights Reserved.
+        </span>
       </footer>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;

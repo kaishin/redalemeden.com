@@ -1,0 +1,19 @@
+.blog-page {
+  & .main-container {
+    background-color: var(--light-theme-bg-color);
+    transform: translateY(20px);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
+
+.blog-content {
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+  max-width: var(--main-content-max-width);
+
+  @media (--full-grid-container) {
+    margin-top: var(--header-top-spacing);
+    padding-top: 0;
+  }
+}

@@ -9,59 +9,6 @@
 @import "pip";
 
 body.home-page {
-  // [class$=heading] {
-  //   font-weight: 300;
-  //   letter-spacing: 0.05em;
-  //   text-transform: uppercase;
-  // }
-
-  sup {
-    margin-left: 0.2em;
-    top: 0;
-    vertical-align: super;
-  }
-
-  hr {
-    border: 0;
-    height: 1px;
-    margin: 1rem auto;
-    max-width: $container-width;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-weight: 400;
-  }
-
-  .grid-container {
-    min-height: 100vh;
-
-    @include media-width(from, $container-breakpoint) {
-      display: grid;
-      grid-template-columns: $sidebar-max-width 1fr;
-      grid-template-rows: auto 1fr auto;
-    }
-
-    .site-header {
-      grid-area: 1 / 1;
-    }
-
-    .site-navigation {
-      grid-area: 2 / 1;
-    }
-
-    .site-footer {
-      grid-area: 3 / 1;
-    }
-
-    .main-container {
-      grid-area: 1 / 2 / -1;
-    }
-  }
-
   $highlights-width: $container-width;
   $highlights-transition-duration: 0.2s;
 
@@ -71,92 +18,6 @@ body.home-page {
     .section-heading {
       font-size: 2rem;
       letter-spacing: 0.1em;
-    }
-  }
-
-  .project-cell {
-    background-color: lighten($mirage, 5%);
-    border: 1px solid $dusk;
-    border-radius: 6px;
-    flex: 0 1 280px;
-    list-style-type: none;
-    overflow: hidden;
-    transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
-
-    &:hover {
-      transform: scale(1.1);
-      box-shadow: 0 10px 20px rgba($pitch-black, 0.2);
-    }
-
-    .year-label {
-      color: $yellow-orange;
-    }
-
-    a {
-      text-decoration: none;
-    }
-  }
-
-  .project-image {
-    display: block;
-    max-width: 100%;
-  }
-
-  .project-details {
-    text-align: center;
-  }
-
-  .project-name {
-    color: $white;
-    font-size: .9rem;
-    font-weight: normal;
-    letter-spacing: .08em;
-    margin: $large-spacing auto 0;
-    max-width: 14em;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .project-description {
-    color: $secondary-text-color;
-    font-size: 0.8rem;
-    margin: $small-spacing auto $large-spacing;
-    max-width: 14em;
-    text-align: center;
-  }
-
-  .project-tag-list {
-    background-color: $pitch-black;
-    list-style: none;
-    margin: 0;
-    padding: $small-spacing $base-spacing;
-
-    .tag {
-      border-radius: 10em;
-      color: $white;
-      display: inline-block;
-      font-size: 0.55rem;
-      font-weight: 400;
-      letter-spacing: 0.08em;
-      margin-right: 1em;
-      text-transform: uppercase;
-
-      &:last-of-type {
-        margin-right: 0;
-      }
-
-      &::before {
-        content: "●";
-        font-size: 1rem;
-        margin-right: 2px;
-        vertical-align: -2px;
-      }
-    }
-  }
-
-  @each $tag, $color in $tag-colors {
-    [data-tag="#{$tag}"] {
-      @include tag($color);
     }
   }
 
@@ -179,10 +40,6 @@ body.home-page {
     }
   }
 
-  .main-header {
-    background-color: $mirage;
-  }
-
   .header-container {
     margin: 0 auto;
     max-width: $container-width;
@@ -196,95 +53,6 @@ body.home-page {
     .narrow-header & {
       padding: $large-spacing 0;
       text-align: left;
-    }
-  }
-
-  .home-link {
-    color: $white;
-    text-decoration: none;
-
-    .narrow-header & {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-
-      @include media-width(until, $container-width) {
-        justify-content: center;
-      }
-    }
-  }
-
-  .mugshot-container {
-    @include size(9rem);
-
-    background-image: url("/images/logo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    margin: auto auto $large-spacing;
-
-    @include media-width(until, $container-width) {
-      @include size(6rem);
-
-      margin: auto auto $base-spacing;
-    }
-
-    .narrow-header & {
-      @include size(5rem);
-
-      flex-shrink: 1;
-      margin: 0 $base-spacing 0 0;
-
-      @include media-width(until, 25rem) {
-        @include size(4rem);
-      }
-    }
-  }
-
-  .header-full-name {
-    font-weight: 300;
-    line-height: 1.1;
-    margin-bottom: 0.2em;
-    margin-top: 0;
-    transition: color 0.2s linear;
-
-    .narrow-header & {
-      font-size: 1.5rem;
-    }
-  }
-
-  .header-tagline {
-    color: $banana;
-    font-size: 1rem;
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    margin: 0;
-    transition: color 0.2s linear;
-
-    .narrow-header & {
-      font-size: 0.9rem;
-      font-weight: 300;
-    }
-  }
-
-  .home-link {
-    display: inline-block;
-    margin: 0 auto;
-
-    &:hover {
-      .header-full-name {
-        color: $banana;
-      }
-
-      .header-tagline {
-        color: $white;
-      }
-
-      .mugshot-container {
-        @extend %pulse;
-      }
     }
   }
 
@@ -399,166 +167,98 @@ body.home-page {
       text-align: left;
     }
   }
+}
 
-  .home-link {
-    color: $white;
+.project-cell {
+  background-color: lighten($mirage, 5%);
+  border: 1px solid $dusk;
+  border-radius: 6px;
+  flex: 0 1 280px;
+  list-style-type: none;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba($pitch-black, 0.2);
+  }
+
+  .year-label {
+    color: $yellow-orange;
+  }
+
+  a {
     text-decoration: none;
-
-    .narrow-header & {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-
-      @include media-width(until, $container-width) {
-        justify-content: center;
-      }
-    }
   }
+}
 
-  .mugshot-container {
-    @include size(9rem);
+.project-image {
+  display: block;
+  max-width: 100%;
+}
 
-    background-image: url("/images/logo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    margin: auto auto $large-spacing;
+.project-details {
+  text-align: center;
+}
 
-    @include media-width(until, $container-width) {
-      @include size(6rem);
+.project-name {
+  color: $white;
+  font-size: .9rem;
+  font-weight: normal;
+  letter-spacing: .08em;
+  margin: $large-spacing auto 0;
+  max-width: 14em;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-      margin: auto auto $base-spacing;
-    }
+.project-description {
+  color: $secondary-text-color;
+  font-size: 0.8rem;
+  margin: $small-spacing auto $large-spacing;
+  max-width: 14em;
+  text-align: center;
+}
 
-    .narrow-header & {
-      @include size(5rem);
+.project-tag-list {
+  background-color: $pitch-black;
+  list-style: none;
+  margin: 0;
+  padding: $small-spacing $base-spacing;
 
-      flex-shrink: 1;
-      margin: 0 $base-spacing 0 0;
-
-      @include media-width(until, 25rem) {
-        @include size(4rem);
-      }
-    }
-  }
-
-  .header-full-name {
-    font-weight: 300;
-    line-height: 1.1;
-    margin-bottom: 0.2em;
-    margin-top: 0;
-    transition: color 0.2s linear;
-
-    .narrow-header & {
-      font-size: 1.5rem;
-    }
-  }
-
-  .header-tagline {
-    color: $banana;
-    font-size: 1rem;
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    margin: 0;
-    transition: color 0.2s linear;
-
-    .narrow-header & {
-      font-size: 0.9rem;
-      font-weight: 300;
-    }
-  }
-
-  .home-link {
+  .tag {
+    border-radius: 10em;
+    color: $white;
     display: inline-block;
-    margin: 0 auto;
+    font-size: 0.55rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    margin-right: 1em;
+    text-transform: uppercase;
 
-    &:hover {
-      .header-full-name {
-        color: $banana;
-      }
-
-      .header-tagline {
-        color: $white;
-      }
-
-      .mugshot-container {
-        @extend %pulse;
-      }
-    }
-  }
-
-  footer {
-    padding: $large-spacing;
-    text-align: center;
-
-    hr {
-      margin-bottom: 2rem;
+    &:last-of-type {
+      margin-right: 0;
     }
 
-    a {
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
-    .copyright {
-      color: lighten($honey-flower, 10%);
-
-      em {
-        font-size: 1.2rem;
-        vertical-align: top;
-      }
-    }
-  }
-
-  .links-list {
-    color: lighten($honey-flower, 10%);
-    list-style: none;
-    margin: 0;
-    padding: 0 0 1em;
-
-    .link {
-      display: inline-block;
-      font-weight: 300;
-    }
-
-    .separator {
-      color: lighten($dusk, 10%);
-      display: inline-block;
-      margin: 0 0.5em;
+    &::before {
+      content: "●";
+      font-size: 1rem;
+      margin-right: 2px;
+      vertical-align: -2px;
     }
   }
 }
 
-body.blog-page {
-  @extend body.home-page;
-
-  .main-container {
-    @extend %blog-container;
+@each $tag, $color in $tag-colors {
+  [data-tag="#{$tag}"] {
+    @include tag($color);
   }
+}
 
+body.blog-page {
   .post-list {
     margin: 0;
     padding: 0;
-  }
-
-  .blog-content {
-    margin: 10rem auto 4rem;
-    max-width: $blog-container-width;
-
-    @include media-width(until, $container-breakpoint) {
-      margin-top: 0;
-    }
-  }
-
-  .post-page {
-    .main-container {
-      @extend %blog-container;
-    }
   }
 
   .post-list {
@@ -655,11 +355,6 @@ body.blog-page {
     &:last-of-type::after {
       content: "";
     }
-  }
-
-  .separator {
-    color: $blog-tertiary-color;
-    font-weight: 600;
   }
 
   article.blog-content {

@@ -34,26 +34,6 @@
   }
 }
 
-.recent-projects {
-  & .section-heading {
-    color: #fff;
-    letter-spacing: .2em;
-    font-weight: 500;
-    margin: 0;
-    padding: 3rem 0;
-    text-transform: uppercase;
-
-    &::after {
-      width: 4rem;
-      height: 2px;
-      background-color: var(--secondary-color);
-      content: "";
-      display: block;
-      margin: 1.5rem 0 0;
-    }
-  }
-}
-
 .project-list {
   display: flex;
   flex-wrap: wrap;

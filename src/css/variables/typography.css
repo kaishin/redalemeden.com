@@ -5,3 +5,26 @@
   --text-font: var(--font-rubik), system-ui;
   --header-title-size: 1.1rem;
 }
+
+%body-text {
+  font-size: 1rem;
+  color: var(--light-theme-fg-color);
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+%heading {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+
+  &::after {
+    background-color: var(--secondary-color);
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 1em;
+    width: 3em;
+  }
+}

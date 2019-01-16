@@ -4,7 +4,7 @@
     color: var(--light-theme-fg-color);
     transform: translateY(20px);
     border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.35);
   }
 
   & a {

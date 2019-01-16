@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Seo from '../components/seo'
-import Helmet from 'react-helmet'
-import DefaultLayout from '../components/layouts/default.js'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Seo from '../components/seo';
+import Helmet from 'react-helmet';
+import DefaultLayout from '../components/layouts/default.js';
 
 class BlogPage extends React.Component {
   render() {
-    const { edges: posts } = this.props.data.allMarkdownRemark
+    const { edges: posts } = this.props.data.allMarkdownRemark;
 
     return (
       <DefaultLayout>
@@ -14,63 +14,61 @@ class BlogPage extends React.Component {
 
         <Seo title="Blog" />
         <article className="content blog-content">
-          <h3 class="page-heading">Blog</h3>
+          <h2 class="page-heading">Blog</h2>
+          <p className="blog-intro">
+            I write about design, technology, programming, and other esoteric interests. Subscribe to the RSS feed{' '}
+            <Link to="/rss.xml">here</Link>.
+          </p>
           <ol class="post-list">
             {posts.map(({ node: post }) => {
-              const title = post.frontmatter.title || post.fields.slug
+              const title = post.frontmatter.title || post.fields.slug;
               return (
                 <li class="post-list-item">
                   <article className="post-summary">
-                    <h2 className="post-title">
+                    <span className="category">{post.frontmatter.category}</span>
+                    <h3 className="post-title">
                       <Link className="post-link" to={post.fields.slug}>
                         {title}
                       </Link>
-                    </h2>
+                    </h3>
                     <div className="post-metadata">
-                      <span className="category">{post.frontmatter.category}</span>
-                      <span className="separator"> | </span>
-                      <time date={post.frontmatter.date}>
-                        {post.frontmatter.formattedDate}
-                      </time>
-                      <span className="separator"> | </span>
-                      <span className="reading-time">{post.timeToRead}min read</span>
+                      <time date={post.frontmatter.date}>{post.frontmatter.formattedDate}</time> —{' '}
+                      <span className="reading-time">{post.timeToRead}min read</span> —{' '}
+                      {post.frontmatter.tags.join(' / ')}
                     </div>
                   </article>
                 </li>
-              )
+              );
             })}
           </ol>
         </article>
       </DefaultLayout>
-    )
+    );
   }
 }
 
 export const pageQuery = graphql`
-query BlogIndexQuery {
-  allMarkdownRemark(
-    sort: { 
-      order: DESC, 
-      fields: [frontmatter___date] 
-    }) {
-    edges {
-      node {
-        excerpt(pruneLength: 250)
-        id
-        timeToRead
-        fields {
-          slug
-        }
-        frontmatter {
-          title
-          date
-          formattedDate: date(formatString: "MMMM DD, YYYY")
-          category
+  query BlogIndexQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          timeToRead
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date
+            formattedDate: date(formatString: "MMM DD, YYYY")
+            category
+            tags
+          }
         }
       }
     }
   }
-}
-`
+`;
 
-export default BlogPage
+export default BlogPage;

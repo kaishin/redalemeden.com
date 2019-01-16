@@ -28,6 +28,16 @@ sup {
   vertical-align: super;
 }
 
+.section-heading {
+  @extend %heading;
+  margin: 3.5rem 0;
+}
+
+.page-heading {
+  @extend %heading;
+  font-weight: 600;
+}
+
 .main-container {
   padding: 0 var(--main-container-padding);
 }

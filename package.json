@@ -46,10 +46,7 @@
     "react-helmet": "^5.2.0",
     "typeface-rubik": "0.0.54"
   },
-  "keywords": [
-    "gatsby",
-    "sass"
-  ],
+  "keywords": [ "gatsby", "sass" ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {

@@ -25,15 +25,15 @@ class BlogPage extends React.Component {
               return (
                 <li class="post-list-item">
                   <article className="post-summary">
-                    <span className="category">{post.frontmatter.category}</span>
+                    <span className="post-category">{post.frontmatter.category}</span>
                     <h3 className="post-title">
                       <Link className="post-link" to={post.fields.slug}>
                         {title}
                       </Link>
                     </h3>
                     <div className="post-metadata">
-                      <time date={post.frontmatter.date}>{post.frontmatter.formattedDate}</time> —{' '}
-                      <span className="reading-time">{post.timeToRead}min read</span> —{' '}
+                      <time date={post.frontmatter.date}>{post.frontmatter.formattedDate}</time> &mdash;{' '}
+                      <span className="reading-time">{post.timeToRead}min read</span> &mdash;{' '}
                       {post.frontmatter.tags.join(' / ')}
                     </div>
                   </article>

@@ -87,8 +87,12 @@
 }
 
 .full-post-content {
+  line-height: 1.6;
+  font-size: 1.125rem;
+
   & a {
     text-decoration: none;
-    border-bottom: 1px solid var(--theme-link-color);
+    border-bottom: 1px solid color-mod(var(--theme-link-color) alpha(40%));
+    transition: all 0.2s;
   }
 }

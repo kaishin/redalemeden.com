@@ -16,6 +16,7 @@ $code-comment-color: rgba(lighten(#343642, 50%), .8);
 pre {
   &[class*='language-'] {
     background: $code-light-theme-background-color;
+    background-color: rgba(black, .04);
     border-radius: .4rem;
     color: $code-light-theme-foreground-color;
     direction: ltr;
@@ -23,10 +24,11 @@ pre {
     line-height: 1.375;
     tab-size: 4;
     text-align: left;
-    transition: background-color .1s, color .1s;
+    transition: all .5s;
     white-space: pre;
     word-break: normal;
     word-spacing: normal;
+    border: 1px solid transparent;
 
     &::selection,
     & ::selection {
@@ -36,11 +38,12 @@ pre {
 
     &:hover {
       background-color: $code-dark-theme-background-color;
-      color: $code-dark-theme-foreground-color;
+      background-color: #fff;
+      border: 1px solid rgba(black, 0.1);
+      // color: $code-dark-theme-foreground-color;
     }
   }
 }
-
 
 pre {
   &[class*='language-'] {
@@ -143,7 +146,8 @@ code {
     font-style: italic;
   }
 
-  &.important, &.bold {
+  &.important,
+  &.bold {
     font-weight: bold;
   }
 
@@ -155,7 +159,6 @@ code {
     cursor: help;
   }
 }
-
 
 pre > code.highlight {
   outline: .4em solid $code-keyword-color;

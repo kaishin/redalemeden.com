@@ -47,7 +47,7 @@ class BlogPostTemplate extends React.Component {
                 <strong>{swiftVersion(post.frontmatter.tags)}</strong> syntax.
               </span>
             )}
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className="content-wrapper" dangerouslySetInnerHTML={{ __html: post.html }} />
 
             <div className="feedback-box">
               Have feedback? Send it to{' '}

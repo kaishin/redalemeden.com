@@ -12,15 +12,6 @@ body.home-page {
   $highlights-width: $container-width;
   $highlights-transition-duration: 0.2s;
 
-  .work-section {
-    // @extend .recent-projects;
-
-    // .section-heading {
-    //   font-size: 2rem;
-    //   letter-spacing: 0.1em;
-    // }
-  }
-
   .pagination {
     $margin: 0.14em;
 
@@ -254,21 +245,6 @@ body.home-page {
     @include tag($color);
   }
 }
-
-// body.blog-page {
-//     ul,
-//     ol {
-//       padding: 0;
-//       list-style-type: none;
-//     }
-
-//   .full-post-content {
-//     > p:first-child {
-
-//     }
-//   }
-
-// }
 
 body.page-product {
   box-sizing: border-box;

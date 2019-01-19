@@ -74,7 +74,7 @@ $tag-colors: (
   game: $tag-game
 );
 
-// Blog 
+// Blog
 
 $blog-accent-color: $mauve;
 $ashtray: adjust-hue($blog-accent-color, -50deg);
@@ -130,13 +130,14 @@ $blog-tertiary-color: darken($ash, 5%);
 }
 
 @keyframes pulsate {
-  0%, 25%, 50% {
+  0%,
+  25%,
+  50% {
     transform: scale(1);
   }
 
-  15%, 35% {
+  15%,
+  35% {
     transform: scale(1.1);
   }
 }
-
-// Extends

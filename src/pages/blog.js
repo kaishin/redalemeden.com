@@ -14,10 +14,10 @@ class BlogPage extends React.Component {
 
         <Seo title="Blog" />
         <article className="content blog-content">
-          <h2 class="page-heading">Blog</h2>
+          <h2 class="page-heading">Unredacted</h2>
           <p className="blog-intro">
-            I write about design, technology, programming, and other esoteric interests. Subscribe to the RSS feed{' '}
-            <Link to="/rss.xml">here</Link>.
+            My personal blog. I write about design, technology, programming, and other esoteric interests. Subscribe to
+            the RSS feed <Link to="/rss.xml">here</Link>.
           </p>
           <ol class="post-list">
             {posts.map(({ node: post }) => {

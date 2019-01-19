@@ -46,9 +46,11 @@ sup {
   background-repeat: no-repeat;
   padding-top: var(--header-top-spacing);
   text-align: center;
+  overflow: hidden;
 
   & .header-pattern {
     display: block;
+    max-width: 100%;
     pointer-events: none;
     position: absolute;
     top: 0;
@@ -98,13 +100,22 @@ sup {
     padding-top: 3rem;
     padding-left: 0;
 
+    @media (--narrow-grid-container) {
+      display: flex;
+      padding: 2rem 2rem 1rem;
+    }
+
     & .link {
       font-size: .85rem;
       font-weight: 400;
       letter-spacing: .16em;
-      padding-bottom: 2.1em;
       text-align: center;
       text-transform: uppercase;
+      width: 100%;
+
+      @media (--full-grid-container) {
+        padding-bottom: 2.1em;
+      }
     }
   }
 

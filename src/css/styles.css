@@ -72,7 +72,7 @@ sup {
     margin: auto;
 
     %container {
-      background-color: hsl(var(--secondary-color-hsl) / 35%);
+      background-color: color-mod(var(--secondary-color) alpha(35%));
       content: '';
       display: inline-block;
       height: 1px;

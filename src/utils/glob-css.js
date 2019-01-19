@@ -7,8 +7,6 @@ module.exports = {
 		'--secondary-color': '#ffd080',
 		'--light-theme-bg-color': '#fff7e6',
 		'--light-theme-fg-color': '#202020',
-		'--primary-color-hsl': '258deg 69% 40%',
-		'--secondary-color-hsl': '38deg 100% 75%',
 		'--theme-background-color': 'var(--light-theme-bg-color)',
 		'--theme-foreground-color': 'var(--light-theme-fg-color)',
 		'--theme-link-color': 'var(--primary-color)',

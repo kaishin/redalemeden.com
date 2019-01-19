@@ -49,7 +49,7 @@
 
   &:hover {
     color: var(--theme-link-color);
-    background-color: hsl(var(--primary-color-hsl) / 5%);
+    background-color: color-mod(var(--primary-color) alpha(5%));
   }
 }
 

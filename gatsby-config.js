@@ -26,8 +26,7 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 740,
-              quality: 90,
-              wrapperStyle: 'margin-top: 3rem'
+              quality: 90
             }
           },
           {
@@ -46,7 +45,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-autolink-headers',
             options: {
-              icon: false
+              icon: '# '
             }
           },
           'gatsby-remark-prismjs'

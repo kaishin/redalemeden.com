@@ -9,26 +9,25 @@ $page-background-color: darken($black, 20%);
 $page-border: 1px solid $black;
 $page-main-cta-color: #3bc3a3;
 
-body.page-pip {
-  color: $page-text-color;
-  background-color: $page-background-color;
-  a {
-    color: darken(complement($page-main-color), 35%);
-  }
-  .main-title-copy {
-    @include media-width(from, $container-width) {
-      border-left: $page-border;
-    }
-  }
-  .description {
-    border-bottom: $page-border;
-  }
-  [class$=button] {
-    @include colorize-button($page-main-cta-color);
-  }
+// body.page-pip {
+//   color: $page-text-color;
+//   background-color: $page-background-color;
+//   a {
+//     color: darken(complement($page-main-color), 35%);
+//   }
+//   .main-title-copy {
+//     @include media-width(from, $container-width) {
+//       border-left: $page-border;
+//     }
+//   }
+//   .description {
+//     border-bottom: $page-border;
+//   }
+//   [class$=button] {
+//     @include colorize-button($page-main-cta-color);
+//   }
 
-  .title {
-    color: $page-main-cta-color;
-  }
-}
-
+//   .title {
+//     color: $page-main-cta-color;
+//   }
+// }

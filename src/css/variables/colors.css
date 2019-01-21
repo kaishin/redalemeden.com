@@ -7,6 +7,16 @@
   --light-theme-link-color: #7760c3;
 
   --theme-background-color: var(--light-theme-bg-color);
+  --theme-inset-background-color: color-mod(var(--theme-background-color) shade(2%));
   --theme-foreground-color: var(--light-theme-fg-color);
   --theme-link-color: var(--light-theme-link-color);
+
+  --code-number-color: #fca105;
+  --code-function-color: var(--theme-link-color);
+  --code-string-color: #00c8a7;
+  --code-keyword-color: #3da4ef;
+  --code-variable-color: #ff6166;
+  --code-comment-color: #b2b5c3;
+  --code-background-color: var(--theme-inset-background-color);
+  --code-foreground-color: color-mod(var(--theme-foreground-color) alpha(80%));
 }

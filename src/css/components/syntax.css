@@ -1,0 +1,152 @@
+code[class*='language-'] {
+  padding: 0 0.5em;
+  display: inline-block;
+  border-radius: 0.3em;
+  background-color: var(--code-background-color);
+  color: var(--code-foreground-color);
+}
+
+pre {
+  &[class*='language-'] {
+    background-color: var(--code-background-color);
+    border-radius: 0.4rem;
+    border: 1px solid transparent;
+    color: var(--code-foreground-color);
+    direction: ltr;
+    hyphens: none;
+    line-height: 1.375;
+    margin: 2em 0;
+    overflow: auto;
+    padding: 1em;
+    tab-size: 4;
+    text-align: left;
+    transition: all 0.5s;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+
+    &::selection,
+    & ::selection {
+      background: color-mod(var(--code-keyword-color) alpha(20%));
+      text-shadow: none;
+    }
+
+    &:hover {
+      background-color: #fff;
+      border: 1px solid rgba(black, 0.1);
+      box-shadow: 0 5px 10px color-mod(black alpha(10%));
+    }
+
+    & > code {
+      &[class*='language-'] {
+        background-color: transparent;
+      }
+    }
+  }
+}
+.token {
+  &.comment,
+  &.prolog,
+  &.doctype,
+  &.cdata,
+  &.punctuation {
+    color: var(--code-comment-color);
+  }
+
+  &.namespace {
+    opacity: .7;
+  }
+
+  &.tag,
+  &.operator,
+  &.number {
+    color: var(--code-number-color);
+  }
+
+  &.property,
+  &.function {
+    color: var(--code-function-color);
+  }
+
+  &.tag-id,
+  &.selector,
+  &.atrule-id {
+    color: #eeebff;
+  }
+
+  &.builtin {
+    color: var(--code-number-color);
+  }
+
+  &.class-name {
+    color: var(--code-variable-color);
+  }
+
+  &.boolean,
+  &.string,
+  &.entity,
+  &.url {
+    color: var(--code-string-color);
+  }
+
+  &.attr-name {
+    color: var(--code-function-color);
+  }
+
+  &.attr-value,
+  &.keyword,
+  &.control,
+  &.directive,
+  &.unit,
+  &.statement,
+  &.regex,
+  &.atrule,
+  &.placeholder,
+  &.variable {
+    color: var(--code-keyword-color);
+  }
+
+  &.deleted {
+    text-decoration: line-through;
+  }
+
+  &.inserted {
+    border-bottom: 1px dotted #eeebff;
+    text-decoration: none;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+
+  &.important,
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.important {
+    color: #c4b9fe;
+  }
+
+  &.entity {
+    cursor: help;
+  }
+}
+
+pre > code.highlight {
+  outline: .4em solid var(--code-keyword-color);
+  outline-offset: .4em;
+}
+
+.line-numbers .line-numbers-rows {
+  border-right-color: #2c2937;
+}
+
+.line-numbers-rows > span:before {
+  color: #3c3949;
+}
+
+.line-highlight {
+  background: color-mod(rgb(224, 145, 66) alpha(20%));
+  background: linear-gradient(to right, rgba(224, 145, 66, .2) 70%, rgba(224, 145, 66, 0));
+}

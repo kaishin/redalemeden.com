@@ -1,24 +1,24 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Seo from '../../components/seo'
-import Img from 'gatsby-image'
-import StandaloneLayout from '../../components/layouts/standalone.js'
-import { graphql } from 'gatsby'
+import React from 'react';
+import Helmet from 'react-helmet';
+import Seo from '../../components/seo';
+import Img from 'gatsby-image';
+import StandaloneLayout from '../../components/layouts/standalone.js';
+import { graphql } from 'gatsby';
 
-import AlfredDemoGIF from './images/alfred-demo.gif'
-import AutomatorDemoGIF from './images/automator-demo.gif'
+import AlfredDemoGIF from './images/alfred-demo.gif';
+import AutomatorDemoGIF from './images/automator-demo.gif';
 
 class PipMySafariPage extends React.Component {
   render() {
-    const icon = this.props.data.icon
+    const icon = this.props.data.icon;
 
     return (
       <StandaloneLayout>
-        <Helmet bodyAttributes={{ class: "page-pip page-product" }} />
+        <Helmet bodyAttributes={{ class: 'page-pip page-product' }} />
         <Seo
           title="PiP My Safari"
           description="A lightweight workflow to toggle Safari's PiP mode for videos in the foreground"
-          keywords={["safari", "automation", "video", "macos"]}
+          keywords={[ 'safari', 'automation', 'video', 'macos' ]}
         />
         <header class="main-header">
           <h1 class="main-title">
@@ -37,7 +37,8 @@ class PipMySafariPage extends React.Component {
         <main>
           <div class="description">
             <p>
-              Tested with YouTube, Twitch, Vimeo, Netflix, and Facebook but it should work with any website using the HTML5 <code> &lt;video&gt; </code> tag.
+              Tested with YouTube, Twitch, Vimeo, Netflix, and Facebook but it should work with any website using the
+              HTML5 <code> &lt;video&gt; </code> tag.
             </p>
           </div>
 
@@ -48,12 +49,17 @@ class PipMySafariPage extends React.Component {
           </p>
 
           <div class="description">
-            You can download the workflow directly or install it via <a href="http://www.packal.org/workflow/pip-my-safari">Packal</a>, which can be used to automatically update the workflow using <a href="http://www.packal.org/workflow/packal-updater">Packal Updater</a>.
+            You can download the workflow directly or install it via{' '}
+            <a href="http://www.packal.org/workflow/pip-my-safari">Packal</a>, which can be used to automatically update
+            the workflow using <a href="http://www.packal.org/workflow/packal-updater">Packal Updater</a>.
             <p>
-              Keep in mind that you need to enable <em>Allow JavaScript from Apple Events</em> in the Safari <em>Develop</em> menu. The Develop menu can be enabled in Safari's <em>Preferences > Advanced</em> tab.
+              Keep in mind that you need to enable <em>Allow JavaScript from Apple Events</em> in the Safari{' '}
+              <em>Develop</em> menu. The Develop menu can be enabled in Safari's <em>Preferences > Advanced</em> tab.
             </p>
-
-            <a class="download-button" href="https://github.com/kaishin/pip-my-safari/releases/download/v1.0/pip-my-safari.alfredworkflow">
+            <a
+              class="button"
+              href="https://github.com/kaishin/pip-my-safari/releases/download/v1.0/pip-my-safari.alfredworkflow"
+            >
               Alfred Workflow <span class="details">(1.0.0)</span>
             </a>
           </div>
@@ -65,8 +71,12 @@ class PipMySafariPage extends React.Component {
           </p>
 
           <div class="description">
-            The Automator workflow can be used as a service and accessed from <em> Safari > Services > General: PiP My Safari </em>.
-            <a class="automator-button" href="https://github.com/kaishin/pip-my-safari/releases/download/v1.0/pip-my-safari-automator.zip">
+            The Automator workflow can be used as a service and accessed from{' '}
+            <em> Safari > Services > General: PiP My Safari </em>.
+            <a
+              class="button"
+              href="https://github.com/kaishin/pip-my-safari/releases/download/v1.0/pip-my-safari-automator.zip"
+            >
               Automator Workflow <span class="details">(1.0.0)</span>
             </a>
           </div>
@@ -77,20 +87,18 @@ class PipMySafariPage extends React.Component {
           <a href="https://github.com/kaishin/pip-my-safari">Source Code</a>
         </footer>
       </StandaloneLayout>
-    )
+    );
   }
 }
 
 export const query = graphql`
-query PipQuery {
-  icon: imageSharp(
-    fluid: { originalName: { regex: "/pip-icon.png/" }}
-  ){
-    fluid(maxWidth: 200) {
-      ...GatsbyImageSharpFluid
+  query PipQuery {
+    icon: imageSharp(fluid: { originalName: { regex: "/pip-icon.png/" } }) {
+      fluid(maxWidth: 200) {
+        ...GatsbyImageSharpFluid
+      }
     }
   }
-}
-`
+`;
 
-export default PipMySafariPage
+export default PipMySafariPage;

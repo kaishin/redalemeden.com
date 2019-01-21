@@ -1,0 +1,56 @@
+.project-cell {
+  background-color: black;
+  border-radius: 6px;
+  flex: 0 1 280px;
+  list-style-type: none;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
+  box-shadow: 0 10px 20px color-mod(black alpha(20%));
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px color-mod(black alpha(50%));
+  }
+
+  & .year-label {
+    color: var(--secondary-color);
+  }
+
+  & a {
+    color: white;
+    text-decoration: none;
+  }
+
+  & .project-details {
+    padding: 1.5rem;
+  }
+
+  & .project-image {
+    display: block;
+    max-width: 100%;
+  }
+
+  & .project-name {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  & .project-tags {
+    margin: 0 0 1rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  & .project-description {
+    margin: 0;
+    color: gray(50);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}

@@ -1,28 +1,28 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Seo from '../../components/seo'
-import Img from 'gatsby-image'
-import StandaloneLayout from '../../components/layouts/standalone.js'
-import { graphql } from 'gatsby'
+import React from 'react';
+import Helmet from 'react-helmet';
+import Seo from '../../components/seo';
+import Img from 'gatsby-image';
+import StandaloneLayout from '../../components/layouts/standalone.js';
+import { graphql } from 'gatsby';
 
 class NopePage extends React.Component {
   render() {
-    const icon = this.props.data.icon.imageSharp
-    const screenshots = this.props.data.screenshots.edges
+    const icon = this.props.data.icon.imageSharp;
+    const screenshots = this.props.data.screenshots.edges;
 
     return (
       <StandaloneLayout>
-        <Helmet bodyAttributes={{ class: "page-nope page-product" }} />
+        <Helmet bodyAttributes={{ class: 'page-nope page-product' }} />
 
         <Seo
           title="Nope for Safari – Content Blocking Extension"
           description="Blazing fast advertising & tracking blocker extension for Safari 9"
-          keywords={["safari", "extension", "ads", "block", "adblock"]}
+          keywords={[ 'safari', 'extension', 'ads', 'block', 'adblock' ]}
         />
         <header class="main-header">
           <h1 class="main-title">
             <div class="main-title-icon">
-              <Img fluid={icon.fluid} className="icon" alt="Nope icon"/>
+              <Img fluid={icon.fluid} className="icon" alt="Nope icon" />
             </div>
             <div class="main-title-copy">
               <span class="title">Nope</span>
@@ -37,47 +37,52 @@ class NopePage extends React.Component {
           </p>
           <div class="description">
             <p>
-              Nope is a 3rd party resource blocker that makes use of the new Safari 9 content blocking capabilities to remove ads, tracking scripts, and social widgets in the websites you visit.
+              Nope is a 3rd party resource blocker that makes use of the new Safari 9 content blocking capabilities to
+              remove ads, tracking scripts, and social widgets in the websites you visit.
             </p>
 
             <p>
-              Unlike a lot of existing ad blockers (AdBlock, Ghostery, Disconnect, etc.) Nope doesn't need to run custom JavaScript on every page load to identify and block unwanted resources, resulting in a noticeably better performance.
+              Unlike a lot of existing ad blockers (AdBlock, Ghostery, Disconnect, etc.) Nope doesn't need to run custom
+              JavaScript on every page load to identify and block unwanted resources, resulting in a noticeably better
+              performance.
             </p>
           </div>
 
-          <a class="download-button" href="https://github.com/kaishin/nope/releases/download/v1.2.0/Nope.safariextz">Download <span class="details">(1.2.0)</span></a>
+          <a class="button" href="https://github.com/kaishin/nope/releases/download/v1.2.0/Nope.safariextz">
+            Download <span class="details">(1.2.0)</span>
+          </a>
         </main>
 
         <footer>
-          <span class="copyright">&copy; 2015-{new Date().getFullYear()} Reda Lemeden. All Rights Reserved. </span><a href="https://github.com/kaishin/nope">Source Code</a>
+          <span class="copyright">&copy; 2015-{new Date().getFullYear()} Reda Lemeden. All Rights Reserved. </span>
+          <a href="https://github.com/kaishin/nope">Source Code</a>
         </footer>
       </StandaloneLayout>
-    )
+    );
   }
 }
 
 export const query = graphql`
-query NopeQuery {
-  icon: file(relativePath: { regex: "/nope-icon.png/" }) {
-    imageSharp: childImageSharp {
-      fluid(maxWidth: 200) {
-        ...GatsbyImageSharpFluid
+  query NopeQuery {
+    icon: file(relativePath: { regex: "/nope-icon.png/" }) {
+      imageSharp: childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
-  }
-
-  screenshots: allFile(filter: {relativePath: {regex: "/nope.*screenshot/"}}) {
-    edges {
-      screenshot: node {
-        imageSharp: childImageSharp {
-          fluid(jpegProgressive: true, maxWidth: 600) {
-            ...GatsbyImageSharpFluid
+    screenshots: allFile(filter: { relativePath: { regex: "/nope.*screenshot/" } }) {
+      edges {
+        screenshot: node {
+          imageSharp: childImageSharp {
+            fluid(jpegProgressive: true, maxWidth: 600) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
     }
   }
-}
-`
+`;
 
-export default NopePage
+export default NopePage;

@@ -13,7 +13,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-yaml',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sass',
     'gatsby-plugin-feed',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-postcss',

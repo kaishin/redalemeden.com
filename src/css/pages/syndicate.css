@@ -1,0 +1,29 @@
+:root {
+  --syndicate-color: #e9f2f4;
+  --syndicate-border: 1px solid color-mod(var(--syndicate-color) shade(10%));
+  --syndicate-cta-color: #4a8794;
+}
+
+.page-syndicate {
+  color: black;
+  background-color: var(--syndicate-color);
+
+  & a {
+    color: var(--syndicate-cta-color);
+  }
+
+  & .button {
+    background-color: var(--syndicate-cta-color);
+    color: white;
+  }
+
+  & .main-title-copy {
+    @media (--full-grid-container) {
+      border-left: var(--syndicate-border);
+    }
+  }
+
+  & .description {
+    border-bottom: var(--syndicate-border);
+  }
+}

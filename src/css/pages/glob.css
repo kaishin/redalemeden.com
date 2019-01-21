@@ -1,2 +1,7 @@
 @import 'home';
 @import 'blog';
+@import 'standalone';
+@import 'itunes';
+@import 'syndicate';
+@import 'pip';
+@import 'nope';

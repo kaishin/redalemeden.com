@@ -50,10 +50,11 @@ class BlogPostTemplate extends React.Component {
             <div className="content-wrapper" dangerouslySetInnerHTML={{ __html: post.html }} />
 
             <div className="feedback-box">
-              Have feedback? Send it to{' '}
-              <a target="_blank" href="https://twitter.com/intent/tweet?screen_name=kaishin" rel="noreferrer noopener">
-                @kaishin
-              </a>.
+              Have feedback about this article? Drop me a line via {' '}
+              <a target="_blank" href="https://widegamut.club/@kaishin" rel="noreferrer noopener">
+                Mastodon
+              </a>{' '}
+              or through the contact form.
             </div>
           </section>
         </article>

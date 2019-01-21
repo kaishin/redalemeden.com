@@ -1,0 +1,29 @@
+:root {
+  --pip-color: #222222;
+  --pip-border: 1px solid color-mod(var(--pip-color) tint(10%));
+  --pip-cta-color: #3bc3a3;
+}
+
+.page-pip {
+  color: white;
+  background-color: var(--pip-color);
+
+  & a {
+    color: var(--pip-cta-color);
+  }
+
+  & .button {
+    background-color: var(--pip-cta-color);
+    color: white;
+  }
+
+  & .main-title-copy {
+    @media (--full-grid-container) {
+      border-left: var(--pip-border);
+    }
+  }
+
+  & .description {
+    border-bottom: var(--pip-border);
+  }
+}

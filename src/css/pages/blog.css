@@ -15,7 +15,6 @@
 .blog-content {
   margin-bottom: 4rem;
   max-width: var(--main-content-max-width);
-  overflow: hidden;
   padding-top: 2rem;
 
   @media (--full-grid-container) {
@@ -197,12 +196,13 @@
     border: none;
     margin-left: calc(var(--outdent) * -1);
     width: calc(100% + (var(--outdent) * 2));
+    border-radius: 4px;
 
     &:hover,
     &:active,
     &:focus {
       border: none;
-      opacity: 0.9;
+      box-shadow: 0 10px 20px color-mod(black alpha(20%));
     }
 
     & + em {
@@ -230,10 +230,11 @@
   }
 
   & .feedback-box {
-    background-color: color-mod(black alpha(5%));
-    border-radius: 4px;
+    border-top: 1px solid color-mod(black alpha(10%));
     margin: 3rem auto 1rem;
-    padding: 1rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    font-style: italic;
   }
 
   & .swift-version {

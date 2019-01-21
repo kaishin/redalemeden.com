@@ -1,0 +1,130 @@
+.page-product {
+  margin: auto;
+  max-width: 40rem;
+  padding: 0 2rem;
+
+  & a:not(.button) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & img {
+    max-width: 100%;
+  }
+
+  & h2 {
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.2rem;
+    margin: 2rem auto;
+  }
+
+  & .main-title {
+    display: flex;
+    margin: 5rem auto;
+  }
+
+  & .main-title-icon {
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  & .main-title-copy {
+    margin-left: 1.4rem;
+    padding-left: 2rem;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-direction: column;
+
+    & .title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.8rem;
+      text-transform: uppercase;
+
+      @media (--narrow-grid-container) {
+        display: block;
+      }
+    }
+
+    & .tagline {
+      font-size: 1rem;
+      font-weight: 300;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+      line-height: 1.4;
+      max-width: 20rem;
+      opacity: 0.7;
+
+      @media (--narrow-grid-container) {
+        display: inline-block;
+      }
+    }
+  }
+
+  & .icon {
+    @media (--full-grid-container) {
+      margin-top: 0.5rem;
+    }
+
+    @media (--narrow-grid-container) {
+      margin-bottom: 1rem;
+      max-width: 85px;
+    }
+  }
+
+  & .screenshot {
+    border-radius: 4px;
+    box-shadow: 0 1px 4px color-mod(black alpha(10%));
+    margin-top: 1em;
+  }
+
+  & .description {
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    text-align: center;
+
+    @media (--full-grid-container) {
+      width: 90%;
+    }
+  }
+
+  & footer {
+    letter-spacing: 0.04em;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+  & .button {
+    border-radius: 3em;
+    display: block;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem 1.4rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 70%;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    & .details {
+      opacity: 0.5;
+    }
+  }
+}

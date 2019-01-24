@@ -1,0 +1,34 @@
+:root {
+  --spacing-default: 1rem;
+  --footer-padding: 2rem;
+  --header-top-spacing: 4rem;
+  --main-container-padding: 10vw;
+  --grid-container-full-width: 60rem;
+  --sidebar-max-width: 22.5rem;
+  --main-content-max-width: 40rem;
+  --sheet-margin-top: calc(var(--header-top-spacing) * 1.4);
+}
+
+@custom-media --full-grid-container (width >= 60rem);
+@custom-media --narrow-grid-container (width < 60rem);
+
+%sheet {
+  background-color: var(--light-theme-bg-color);
+  border-top-left-radius: 1rem;
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.35);
+  color: var(--light-theme-fg-color);
+  transform: translateY(20px);
+}
+
+%gradient-background {
+  background: linear-gradient(transparent, rgb(0 0 0 / 18%));
+}
+
+%sakigake-pseudo {
+  background-color: color-mod(var(--secondary-color) alpha(35%));
+  content: '';
+  display: inline-block;
+  height: 1px;
+  vertical-align: 10px;
+  width: calc(var(--header-title-size) * 4);
+}

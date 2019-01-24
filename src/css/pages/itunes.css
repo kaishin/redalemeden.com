@@ -118,7 +118,7 @@
 
   & footer {
     --radius: 0.3rem;
-    background-color: color-mod(black alpha(30%));
+    background-color: rgba(0 0 0 / 30%);
     border-radius: var(--radius);
     color: var(--itunes-secondary-color);
     font-size: 0.9rem;

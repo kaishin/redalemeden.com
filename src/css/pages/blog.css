@@ -1,10 +1,6 @@
 .blog-page {
   & .main-container {
-    background-color: var(--light-theme-bg-color);
-    color: var(--light-theme-fg-color);
-    transform: translateY(20px);
-    border-top-left-radius: 1rem;
-    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.35);
+    @extend %sheet;
   }
 
   & a {
@@ -18,7 +14,7 @@
   padding-top: 2rem;
 
   @media (--full-grid-container) {
-    margin-top: calc(var(--header-top-spacing) * 1.4);
+    margin-top: var(--sheet-margin-top);
     padding-top: 0;
   }
 }
@@ -139,7 +135,7 @@
       margin-bottom: 0.4em;
 
       &::before {
-        color: color-mod(black alpha(20%));
+        color: rgba(0 0 0 / 20%);
         content: '–';
         left: -1em;
         position: absolute;
@@ -202,7 +198,7 @@
     &:active,
     &:focus {
       border: none;
-      box-shadow: 0 10px 20px color-mod(black alpha(20%));
+      box-shadow: 0 10px 20px rgba(0 0 0 / 20%);
     }
 
     & + em {
@@ -218,7 +214,7 @@
   & .gatsby-resp-image-background-image,
   & img {
     border-radius: 4px;
-    box-shadow: 0 1px 5px color-mod(black alpha(10%));
+    box-shadow: 0 1px 5px rgba(0 0 0 / 10%);
     margin-top: 2rem;
   }
 
@@ -230,7 +226,7 @@
   }
 
   & .feedback-box {
-    border-top: 1px solid color-mod(black alpha(10%));
+    border-top: 1px solid rgba(0 0 0 / 10%);
     margin: 3rem auto 1rem;
     padding: 1rem 0;
     font-size: 0.9rem;

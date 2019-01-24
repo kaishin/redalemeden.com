@@ -38,10 +38,10 @@ class ContactPage extends React.Component {
       <DefaultLayout>
         <Helmet bodyAttributes={{ class: 'contact-page' }} />
         <Seo title="Work" />
-        <section class="contact-section">
+        <section class="content">
           <div class="container">
-            <h4 class="section-heading">Contact</h4>
-            <p>
+            <h2 class="page-heading">Contact</h2>
+            <p className="intro">
               Have feedback or just want to say hi? Use the form below to get in touch. I will do my best to reply
               within a resonable timeframe.
             </p>

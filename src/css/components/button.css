@@ -1,6 +1,6 @@
 .button,
 button,
-input[type="submit"],
+[type="submit"],
 input[type="reset"],
 input[type="button"] {
   appearance: none;
@@ -8,10 +8,10 @@ input[type="button"] {
   border: none;
   cursor: pointer;
   border-radius: 12em;
-  color: var(--primary-color);
+  color: color-mod(var(--secondary-color) lightness(30%));
   display: inline-block;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.1em;
   margin: 1rem auto 2rem;
   min-width: 8rem;
@@ -23,7 +23,7 @@ input[type="button"] {
 
   &:hover {
     text-decoration: none;
-    box-shadow: 0 10px 20px rgba(0 0 0 / 30%);
+    box-shadow: 0 10px 20px rgba(0 0 0 / 10%);
     transform: scale(1.05);
   }
 

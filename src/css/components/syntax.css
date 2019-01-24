@@ -35,8 +35,8 @@ pre {
 
     &:hover {
       background-color: #fff;
-      border: 1px solid rgba(black, 0.1);
-      box-shadow: 0 5px 10px color-mod(black alpha(10%));
+      border: 1px solid rgba(0 0 0 / 10%);
+      box-shadow: 0 5px 10px rgba(0 0 0 / 10%);
     }
 
     & > code {

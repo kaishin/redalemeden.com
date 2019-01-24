@@ -7,7 +7,7 @@ import { graphql } from 'gatsby';
 
 const WorkPage = ({ data }) => (
   <DefaultLayout>
-    <Helmet bodyAttributes={{ class: 'home-page' }} />
+    <Helmet bodyAttributes={{ class: 'work-page' }} />
     <Seo title="Work" />
     <section class="work-section">
       <div class="container">

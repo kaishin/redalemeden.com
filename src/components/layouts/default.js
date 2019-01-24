@@ -7,7 +7,11 @@ import Footer from '../footer';
 import Navigation from '../navigation';
 import Seo from '../seo';
 
+import '../../css/normalize.css';
 import '../../css/styles.css';
+
+import 'typeface-rubik';
+import 'typeface-fira-mono';
 
 class DefaultLayout extends React.Component {
   render() {

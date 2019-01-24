@@ -18,7 +18,7 @@
   padding-top: 2rem;
 
   @media (--full-grid-container) {
-    margin-top: var(--header-top-spacing);
+    margin-top: calc(var(--header-top-spacing) * 1.4);
     padding-top: 0;
   }
 }

@@ -4,6 +4,8 @@
   --font-rubik: 'Rubik';
   --text-font: var(--font-rubik), system-ui;
   --header-title-size: 1.1rem;
+  --font-fira: 'Fira Mono';
+  --monospaced-font: var(--font-fira), monospace;
 }
 
 %body-text {

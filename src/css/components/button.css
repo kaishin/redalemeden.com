@@ -1,5 +1,12 @@
-.button {
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  appearance: none;
   background-color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
   border-radius: 12em;
   color: var(--primary-color);
   display: inline-block;
@@ -7,11 +14,12 @@
   font-weight: 500;
   letter-spacing: 0.1em;
   margin: 1rem auto 2rem;
+  min-width: 8rem;
   padding: 1em 2em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform 0.3s;
+  transition: all 0.3s;
 
   &:hover {
     text-decoration: none;

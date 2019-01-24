@@ -1,18 +1,7 @@
+@import "normalize";
 @import "variables/glob";
 @import "pages/glob";
 @import "components/glob";
-@import-normalize;
-
-html {
-  box-sizing: border-box;
-}
-
-* {
-  &::before,
-  &::after {
-    box-sizing: inherit;
-  }
-}
 
 body {
   background-color: var(--primary-color);
@@ -30,7 +19,11 @@ sup {
 
 .section-heading {
   @extend %heading;
-  margin: 3.5rem 0;
+  margin: var(--header-top-spacing) 0 calc(var(--header-top-spacing) * 0.8);
+}
+
+.container > .section-heading {
+  margin-top: calc(var(--header-top-spacing) * 1.25);
 }
 
 .page-heading {
@@ -195,4 +188,8 @@ sup {
   & .main-container {
     grid-area: 1 / 2 / -1;
   }
+}
+
+.hidden {
+  display: none;
 }

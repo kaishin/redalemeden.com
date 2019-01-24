@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
 class Navigation extends React.Component {
   render() {
@@ -15,10 +15,13 @@ class Navigation extends React.Component {
           <li class="link">
             <Link to="/blog">Blog</Link>
           </li>
+          <li class="link">
+            <Link to="/contact">Contact</Link>
+          </li>
         </ol>
       </nav>
-    )
+    );
   }
 }
 
-export default Navigation
+export default Navigation;

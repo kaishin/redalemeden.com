@@ -1,4 +1,5 @@
 :root {
+  --spacing-default: 1rem;
   --footer-padding: 2rem;
   --header-top-spacing: 4rem;
   --main-container-padding: 10vw;

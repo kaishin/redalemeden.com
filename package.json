@@ -5,7 +5,6 @@
   "version": "1.0.0",
   "author": "Reda Lemeden <hello@redalemeden.com>",
   "dependencies": {
-    "@svgr/webpack": "^4.1.0",
     "autoprefixer": "^9.1.0",
     "gatsby": "^2.0.81",
     "gatsby-cli": "^2.4.8",
@@ -40,11 +39,15 @@
     "postcss-preset-env": "^6.5.0",
     "prismjs": "^1.15.0",
     "react": "^16.5.1",
+    "react-async-script": "^1.0.0",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "typeface-fira-mono": "0.0.54",
     "typeface-rubik": "0.0.54"
   },
-  "keywords": [ "gatsby" ],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
@@ -58,6 +61,8 @@
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.11.1",
     "prettier": "^1.14.0",
-    "stylelint-config-recommended": "^2.1.0"
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended": "^2.1.0",
+    "@svgr/webpack": "^4.1.0"
   }
 }

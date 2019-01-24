@@ -1,0 +1,21 @@
+.contact-page {
+  & .main-container {
+    @extend %sheet;
+  }
+
+  & .intro {
+    @extend %body-text;
+    margin-bottom: 3rem;
+  }
+
+  & .content {
+    margin-bottom: 4rem;
+    max-width: var(--main-content-max-width);
+    padding-top: 2rem;
+
+    @media (--full-grid-container) {
+      margin-top: var(--sheet-margin-top);
+      padding-top: 0;
+    }
+  }
+}

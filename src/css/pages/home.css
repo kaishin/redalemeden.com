@@ -1,6 +1,10 @@
 .home-page {
   & .main-container {
-    background: linear-gradient(transparent, rgb(0 0 0 / 18%));
+    @extend %gradient-background;
+  }
+
+  & .button {
+    font-weight: 500;
   }
 }
 

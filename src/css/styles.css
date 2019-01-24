@@ -1,7 +1,7 @@
 @import "normalize";
-@import "variables/glob";
-@import "pages/glob";
-@import "components/glob";
+@import "helpers/_glob";
+@import "pages/_glob";
+@import "components/_glob";
 
 body {
   background-color: var(--primary-color);
@@ -66,22 +66,13 @@ sup {
   & .sakigake {
     margin: auto;
 
-    %container {
-      background-color: color-mod(var(--secondary-color) alpha(35%));
-      content: '';
-      display: inline-block;
-      height: 1px;
-      vertical-align: 10px;
-      width: calc(var(--header-title-size) * 4);
-    }
-
     &::before {
-      @extend %container;
+      @extend %sakigake-pseudo;
       margin-right: 10px;
     }
 
     &::after {
-      @extend %container;
+      @extend %sakigake-pseudo;
       margin-left: 10px;
     }
   }

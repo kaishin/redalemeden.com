@@ -81,7 +81,7 @@
 
   & .screenshot {
     border-radius: 4px;
-    box-shadow: 0 1px 4px color-mod(black alpha(10%));
+    box-shadow: 0 1px 4px rgba(0 0 0 / 10%);
     margin-top: 1em;
   }
 

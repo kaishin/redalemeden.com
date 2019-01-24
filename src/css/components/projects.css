@@ -5,11 +5,11 @@
   list-style-type: none;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
-  box-shadow: 0 10px 20px color-mod(black alpha(20%));
+  box-shadow: 0 10px 20px rgba(0 0 0 / 20%);
 
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px color-mod(black alpha(50%));
+    box-shadow: 0 10px 20px rgba(0 0 0 / 50%);
   }
 
   & .year-label {

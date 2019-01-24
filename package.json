@@ -39,15 +39,12 @@
     "postcss-preset-env": "^6.5.0",
     "prismjs": "^1.15.0",
     "react": "^16.5.1",
-    "react-async-script": "^1.0.0",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "typeface-fira-mono": "0.0.54",
     "typeface-rubik": "0.0.54"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": [ "gatsby" ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {

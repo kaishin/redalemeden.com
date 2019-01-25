@@ -2,30 +2,30 @@
   appearance: none;
   background-color: var(--theme-inset-background-color);
   border-radius: 4px;
-  border: 1px solid #dbdbdb;
+  border: 1px solid transparent;
   color: #363636;
-  font-size: 0.9rem;
-  padding: 0.5em;
-  width: 100%;
   font-family: var(--monospaced-font);
+  font-size: 0.9rem;
+  padding: 0.8em;
+  transform: all 0.2s;
+  width: 100%;
 
   &::placeholder {
-    color: gray;
+    color: color-mod(var(--theme-inset-background-color) shade(60%));
   }
 
   &:focus {
     outline: none;
+    border-color: color-mod(var(--theme-inset-background-color) lightness(70%));
   }
 }
-
 input {
   @extend %field;
 }
-
 textarea {
   @extend %field;
-  height: 6rem;
-  resize: vertical;
+  height: 12rem;
+  resize: none;
 }
 
 form {

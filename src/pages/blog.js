@@ -17,7 +17,7 @@ class BlogPage extends React.Component {
           <h2 class="page-heading">Unredacted</h2>
           <p className="blog-intro">
             My personal blog. I write about design, technology, programming, and other esoteric interests. Subscribe to
-            the RSS feed <Link to="/rss.xml">here</Link>.
+            the <Link to="/feed.xml">RSS</Link> or <Link to="/feed.json">JSON</Link> feeds.
           </p>
           <ol class="post-list">
             {posts.map(({ node: post }) => {

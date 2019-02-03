@@ -3,7 +3,7 @@ const moment = require('moment');
 const { createFilePath } = require('gatsby-source-filesystem');
 const fs = require('fs-extra');
 const { Feed } = require('feed');
-const { feedOptions, runQuery, writeFile } = require('./src/utils/feed-helpers');
+const { feedOptions, runQuery, writeFile, getFileUpdatedDate } = require('./src/utils/feed-helpers');
 const publicPath = './public';
 
 exports.createPages = ({ actions, graphql }) => {
@@ -85,10 +85,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const value = createFilePath({ node, getNode }).replace(/[0-9]{4}-[0-9]{2}-[0-9]{2}-|\//g, '');
 
     createNodeField({
-      name: `slug`,
       node,
+      name: 'slug',
       value: isPost ? `/blog/${moment(node.frontmatter.date).format('YYYY')}/${value}` : value
     });
+
+    if (isPost) {
+      createNodeField({
+        node,
+        name: 'dateUpdated',
+        value: getFileUpdatedDate(node.fileAbsolutePath)
+      });
+    }
   } else if (node.internal.mediaType === `image/gif`) {
     const newPath = path.join(process.cwd(), 'public', 'gifs', node.base);
     fs.copy(node.absolutePath, newPath, (err) => {
@@ -116,7 +124,7 @@ exports.onPostBuild = async ({ graphql }) => {
       title: frontmatter.title,
       slug: slug,
       datePublished: moment(frontmatter.date).toDate(),
-      dateModified: frontmatter.date,
+      dateUpdated: moment(fields.dateUpdated).toDate(),
       content: html
     };
   });
@@ -146,7 +154,7 @@ exports.onPostBuild = async ({ graphql }) => {
       title: item.title,
       id: path.join(siteUrl, item.slug),
       link: path.join(siteUrl, item.slug),
-      date: item.datePublished,
+      date: item.dateUpdated,
       published: item.datePublished,
       content: item.content,
       author: [

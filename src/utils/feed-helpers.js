@@ -3,6 +3,11 @@ const pify = require('pify');
 
 const writeFile = pify(fs.writeFile);
 
+const getFileUpdatedDate = (path) => {
+  const stats = fs.statSync(path);
+  return stats.mtime;
+};
+
 const runQuery = (handler, query) =>
   handler(query).then((r) => {
     if (r.errors) {
@@ -38,6 +43,7 @@ const feedOptions = {
               html
               fields {
                 slug
+                dateUpdated
               }
               frontmatter {
                 date
@@ -53,5 +59,6 @@ const feedOptions = {
 module.exports = {
   writeFile,
   runQuery,
-  feedOptions
+  feedOptions,
+  getFileUpdatedDate
 };

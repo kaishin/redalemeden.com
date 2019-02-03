@@ -1,9 +1,9 @@
-import fs from 'fs';
-import pify from 'pify';
+const fs = require('fs');
+const pify = require('pify');
 
-export const writeFile = pify(fs.writeFile);
+const writeFile = pify(fs.writeFile);
 
-export const runQuery = (handler, query) =>
+const runQuery = (handler, query) =>
   handler(query).then((r) => {
     if (r.errors) {
       throw new Error(r.errors.join(`, `));
@@ -12,7 +12,7 @@ export const runQuery = (handler, query) =>
     return r.data;
   });
 
-export const feedOptions = {
+const feedOptions = {
   siteQuery: `
     {
       site {
@@ -30,7 +30,7 @@ export const feedOptions = {
       {
         allMarkdownRemark(
           sort: {order: DESC, fields: [frontmatter___date]}, 
-          limit: 100, 
+          limit: 10, 
           
           ) {
           edges {
@@ -48,4 +48,10 @@ export const feedOptions = {
         }
       }
       `
+};
+
+module.exports = {
+  writeFile,
+  runQuery,
+  feedOptions
 };

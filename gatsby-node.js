@@ -181,5 +181,9 @@ exports.onPostBuild = async ({ graphql }) => {
     console.log('Failed to write RSS Feed File:', r);
   });
 
+  await writeFile(path.join(publicPath, 'rss.xml'), newFeed.rss2(), 'utf8').catch((r) => {
+    console.log('Failed to write RSS Feed File:', r);
+  });
+
   return Promise.resolve();
 };

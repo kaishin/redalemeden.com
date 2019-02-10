@@ -56,13 +56,25 @@ class ContactPage extends React.Component {
               <input type="hidden" name="form-name" value="contact" />
               <fieldset>
                 <label>
-                  <input placeholder="Your Name" type="text" name="name" onChange={this.handleChange} />
+                  <input placeholder="Your Name" type="text" name="name" required={true} onChange={this.handleChange} />
                 </label>
                 <label>
-                  <input placeholder="Your Email" type="email" name="email" onChange={this.handleChange} />
+                  <input
+                    placeholder="Your Email"
+                    type="email"
+                    name="email"
+                    required={true}
+                    onChange={this.handleChange}
+                  />
                 </label>
                 <label className="textarea">
-                  <textarea placeholder="Your Message..." name="message" id="message" onChange={this.handleChange} />
+                  <textarea
+                    placeholder="Your Message..."
+                    name="message"
+                    id="message"
+                    required={true}
+                    onChange={this.handleChange}
+                  />
                 </label>
               </fieldset>
               <label className="hidden">

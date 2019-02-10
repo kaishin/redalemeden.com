@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Seo from '../components/seo';
 import DefaultLayout from '../components/layouts/default';
+import BlogHeader from '../components/blog-header';
 import { Link, graphql } from 'gatsby';
 
 class BlogPostTemplate extends React.Component {
@@ -26,6 +27,7 @@ class BlogPostTemplate extends React.Component {
         <Helmet bodyAttributes={{ class: 'post-page blog-page' }} />
 
         <article className="content blog-content">
+          <BlogHeader />
           <header className="post-header">
             <span className="post-category">{post.frontmatter.category}</span>
             <h1 className="post-title">

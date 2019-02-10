@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby';
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
 import DefaultLayout from '../components/layouts/default.js';
+import BlogHeader from '../components/blog-header';
 
 class BlogPage extends React.Component {
   render() {
@@ -14,11 +15,7 @@ class BlogPage extends React.Component {
 
         <Seo title="Blog" />
         <article className="content blog-content">
-          <h2 class="page-heading">Unredacted</h2>
-          <p className="blog-intro">
-            My personal blog. I write about design, technology, programming, and other esoteric interests. Subscribe to
-            the <Link to="/feed.xml">RSS</Link> or <Link to="/feed.json">JSON</Link> feeds.
-          </p>
+          <BlogHeader />
           <ol class="post-list">
             {posts.map(({ node: post }) => {
               const title = post.frontmatter.title || post.fields.slug;

@@ -36,13 +36,9 @@ fieldset {
   padding: 0;
   margin-bottom: var(--spacing-default);
   border: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-default);
 
-  & label {
-    flex-basis: 10rem;
-    flex-grow: 1;
+  & input {
+    margin-bottom: 1rem;
   }
 
   & .textarea {

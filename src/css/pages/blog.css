@@ -22,6 +22,7 @@
 .blog-intro {
   @extend %body-text;
   margin-bottom: 3rem;
+  color: gray(50);
 }
 
 .post-list {

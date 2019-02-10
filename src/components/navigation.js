@@ -4,18 +4,18 @@ import { Link } from 'gatsby';
 class Navigation extends React.Component {
   render() {
     return (
-      <nav class="site-navigation">
-        <ol class="navigation-links">
-          <li class="link">
+      <nav className="site-navigation">
+        <ol className="navigation-links">
+          <li className="link">
             <Link to="/">Home</Link>
           </li>
-          <li class="link">
+          <li className="link">
             <Link to="/work">Work</Link>
           </li>
-          <li class="link">
+          <li className="link">
             <Link to="/blog">Blog</Link>
           </li>
-          <li class="link">
+          <li className="link">
             <Link to="/contact">Contact</Link>
           </li>
         </ol>

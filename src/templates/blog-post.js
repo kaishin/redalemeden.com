@@ -53,10 +53,8 @@ class BlogPostTemplate extends React.Component {
 
             <div className="feedback-box">
               Have feedback about this article? Drop me a line via {' '}
-              <a target="_blank" href="https://widegamut.club/@kaishin" rel="noreferrer noopener">
-                Mastodon
-              </a>{' '}
-              or through the contact form.
+              <a href="https://widegamut.club/@kaishin">Mastodon</a> or through the{' '}
+              <Link to="/contact?hello">contact form.</Link>
             </div>
           </section>
         </article>

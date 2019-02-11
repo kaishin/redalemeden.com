@@ -6,6 +6,8 @@ tags:
   - Productivity
 ---
 
+*[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html) --- People who have been following my work and/or are interested in independent blogging.*
+
 Between a new job, a house move, and a flurry of depressing news, my productivity took a hit in 2016. I was nevertheless able to do some fun things on the side:
 
 - Built and launched [Speedster], a native bandwidth speed testing app for macOS. The feedback was very positive, but I [struggled with the business model][Speedster retrospective]. As of this writing, the app is no longer available on the App Store, while version 3.0 is still in the works (more on that later).

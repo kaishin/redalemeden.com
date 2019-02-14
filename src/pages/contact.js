@@ -18,6 +18,18 @@ class ContactPage extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  getQueryVariable = (variable) => {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split('=');
+      if (pair[0] === variable) {
+        return pair[1];
+      }
+    }
+    return false;
+  };
+
   handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -43,7 +55,7 @@ class ContactPage extends React.Component {
             <h2 class="page-heading">Contact</h2>
             <p className="intro">
               Have feedback or just want to say hi? Use the form below to get in touch. I will do my best to reply
-              within a resonable timeframe.
+              within a reasonable timeframe.
             </p>
             <form
               name="contact"
@@ -74,6 +86,13 @@ class ContactPage extends React.Component {
                     id="message"
                     required={true}
                     onChange={this.handleChange}
+                    value={
+                      this.getQueryVariable('source') !== false ? (
+                        'Subject: Feedback about "' + decodeURIComponent(this.getQueryVariable('source')) + '"\n\n'
+                      ) : (
+                        ''
+                      )
+                    }
                   />
                 </label>
               </fieldset>

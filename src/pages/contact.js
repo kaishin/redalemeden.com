@@ -11,8 +11,16 @@ function encode(data) {
 class ContactPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      message: this.setMessageSourceFromURI()
+    };
   }
+
+  setMessageSourceFromURI = () => {
+    return this.getQueryVariable('source') !== false
+      ? 'Subject: Feedback about "' + decodeURIComponent(this.getQueryVariable('source')) + '"\n\n'
+      : '';
+  };
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
@@ -86,13 +94,7 @@ class ContactPage extends React.Component {
                     id="message"
                     required={true}
                     onChange={this.handleChange}
-                    value={
-                      this.getQueryVariable('source') !== false ? (
-                        'Subject: Feedback about "' + decodeURIComponent(this.getQueryVariable('source')) + '"\n\n'
-                      ) : (
-                        ''
-                      )
-                    }
+                    value={this.state.message}
                   />
                 </label>
               </fieldset>

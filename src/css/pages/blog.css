@@ -92,7 +92,7 @@
   }
 
   & a {
-    @extend %inline-style;
+    @extend %inline-link-style;
   }
 
   /* Header Links */

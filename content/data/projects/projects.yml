@@ -1,32 +1,16 @@
-- name: "Critiq"
-  image: images/critiq.jpg
-  year: 2016
-  tags: [macos, web, swift, design]
-  featured: false
-  url: https://critiq-staging.herokuapp.com
-  description: "Early groundwork for a design feedback Mac app."
-
-- name: "Courier"
-  image: images/courier.jpg
-  year: 2016
-  tags: [branding, web]
-  featured: false
-  url: https://courier.thoughtbot.com
-  description: "UI design & logo for Courier, a mobile notification SaaS."
-
-- name: "Keelhaul"
-  image: images/keelhaul.jpg
-  year: 2016
-  tags: [ios, swift, OSS, macos]
-  featured: false
-  url: https://github.com/thoughtbot/Keelhaul
-  description: "SDK and API for server-side App Store receipt validation."
+- name: "Swift & Fika"
+  image: images/swift-and-fika.jpg
+  year: 2018
+  tags: [conference, swift]
+  featured: true
+  url: http://swiftandfika.com
+  description: "The first ever Swift conference in Stockholm, Sweden."
 
 - name: "Nope"
   image: images/nope.jpg
   year: 2016
   tags: [safari, javascript, OSS]
-  featured: true
+  featured: false
   url: http://redalemeden.com/nope
   description: "A content-blocking extension for Safari."
 
@@ -101,22 +85,6 @@
   featured: false
   url: http://sassquatch.thoughtbot.com
   description: "Zero-setup Sass playground for macOS."
-
-- name: "XVim"
-  image: images/xvim.jpg
-  year: 2014
-  tags: [branding, OSS]
-  featured: false
-  url: https://github.com/XVimProject/XVim
-  description: "Logo design for XVim, an Xcode vi plugin."
-
-- name: "Cascade"
-  image: images/cascade.gif
-  year: 2014
-  tags: [swift, OSS, ios]
-  featured: false
-  url: https://github.com/thoughtbot/Cascade
-  description: "An open-source waterfall layout implementation."
 
 - name: "ImageScout"
   image: images/imagescout.jpg

@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import DefaultLayout from '../components/layouts/default.js';
-import Seo from '../components/seo';
+import DefaultLayout from '../../components/layouts/default.js';
+import Seo from '../../components/seo';
 import { navigateTo } from 'gatsby-link';
 
 function encode(data) {
@@ -57,7 +57,7 @@ class ContactPage extends React.Component {
     return (
       <DefaultLayout>
         <Helmet bodyAttributes={{ class: 'contact-page' }} />
-        <Seo title="Work" />
+        <Seo title="Contact" />
         <section class="content">
           <div class="container">
             <h2 class="page-heading">Contact</h2>
@@ -68,7 +68,7 @@ class ContactPage extends React.Component {
             <form
               name="contact"
               method="POST"
-              action="/"
+              action="/contact/thanks"
               data-netlify-honeypot="bot-field"
               data-netlify="true"
               onSubmit={this.handleSubmit}

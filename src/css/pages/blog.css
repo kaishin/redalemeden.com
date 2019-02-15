@@ -92,19 +92,7 @@
   }
 
   & a {
-    text-decoration: none;
-    border-bottom: 1px solid color-mod(var(--theme-link-color) alpha(40%));
-    transition: all 0.2s;
-
-    &:hover,
-    &:focus {
-      background-color: color-mod(var(--theme-link-color) alpha(8%));
-      border-bottom: 1px solid var(--theme-link-color);
-    }
-
-    &:visited {
-      color: color-mod(var(--theme-link-color) shade(40%));
-    }
+    @extend %inline-style;
   }
 
   /* Header Links */

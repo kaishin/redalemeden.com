@@ -17,5 +17,9 @@
       margin-top: var(--sheet-margin-top);
       padding-top: 0;
     }
+
+    & a {
+      @extend %inline-link-style;
+    }
   }
 }

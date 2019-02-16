@@ -17,7 +17,7 @@ class ContactPage extends React.Component {
               Have feedback or just want to say hi? Use the form below to get in touch. I will do my best to reply
               within a reasonable timeframe.
             </p>
-            <p className="intro">Message sent successfully. Thank you for getting in touch!</p>
+            <p className="intro">Message successfully sent. Thank you for getting in touch!</p>
             <Link to="/">Back to Home</Link>
           </div>
         </section>

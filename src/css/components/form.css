@@ -18,7 +18,13 @@
     outline: none;
     border-color: color-mod(var(--theme-inset-background-color) lightness(70%));
   }
+
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
 }
+
 input {
   @extend %field;
 }

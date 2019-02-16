@@ -3,7 +3,8 @@ import { Link, graphql } from 'gatsby';
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
 import DefaultLayout from '../components/layouts/default.js';
-import BlogHeader from '../components/blog-header';
+import BlogHeader from '../components/blog/blog-header';
+import PostMetadata from '../components/blog/post-metadata';
 
 class BlogPage extends React.Component {
   render() {
@@ -28,11 +29,7 @@ class BlogPage extends React.Component {
                         {title}
                       </Link>
                     </h3>
-                    <div className="post-metadata">
-                      <time date={post.frontmatter.date}>{post.frontmatter.formattedDate}</time> &mdash;{' '}
-                      <span className="reading-time">{post.timeToRead}min read</span> &mdash;{' '}
-                      {post.frontmatter.tags.join(' / ')}
-                    </div>
+                    <PostMetadata post={post} />
                   </article>
                 </li>
               );

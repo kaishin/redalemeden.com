@@ -68,7 +68,7 @@ class ContactPage extends React.Component {
             <form
               name="contact"
               method="POST"
-              action="/contact/thanks"
+              action="/contact/thank-you"
               data-netlify-honeypot="bot-field"
               data-netlify="true"
               onSubmit={this.handleSubmit}

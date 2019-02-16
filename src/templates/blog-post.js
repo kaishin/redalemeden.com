@@ -2,12 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Seo from '../components/seo';
 import DefaultLayout from '../components/layouts/default';
-import BlogHeader from '../components/blog-header';
+import BlogHeader from '../components/blog/blog-header';
+import PostMetadata from '../components/blog/post-metadata';
 import { Link, graphql } from 'gatsby';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark;
+    const { markdownRemark: post } = this.props.data;
 
     return (
       <DefaultLayout>
@@ -23,11 +24,7 @@ class BlogPostTemplate extends React.Component {
                 {post.frontmatter.title}
               </Link>
             </h1>
-            <div className="post-metadata">
-              <time date={post.frontmatter.date}>{post.frontmatter.formattedDate}</time> &mdash;{' '}
-              <span className="reading-time">{post.timeToRead}min read</span> &mdash;{' '}
-              {post.frontmatter.tags.join(' / ')}
-            </div>
+            <PostMetadata post={post} />
           </header>
 
           <section className="full-post-content">

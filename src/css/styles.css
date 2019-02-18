@@ -110,7 +110,8 @@ sup {
 }
 
 .site-footer {
-  padding: var(--footer-padding);
+  padding: calc(var(--footer-padding) * 2) var(--footer-padding) var(--footer-padding);
+  overflow: hidden;
   text-align: center;
 
   & hr {

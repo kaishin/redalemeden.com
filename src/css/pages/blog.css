@@ -1,6 +1,7 @@
 .blog-page {
   & .main-container {
     @extend %sheet;
+    overflow: hidden;
   }
 
   & a {
@@ -18,7 +19,7 @@
 }
 
 .blog-content {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   max-width: var(--main-content-max-width);
   padding-top: 2rem;
 
@@ -77,11 +78,12 @@
 }
 
 .post-metadata {
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  font-size: 0.8rem;
   color: gray(50);
+  font-size: 0.8rem;
+  letter-spacing: 0.07em;
+  line-height: 1.5;
   margin-top: 0.5rem;
+  text-transform: uppercase;
 }
 
 .post-header {

@@ -1,6 +1,7 @@
 .contact-page {
   & .main-container {
     @extend %sheet;
+    padding-bottom: 2rem;
   }
 
   & .intro {

@@ -154,7 +154,7 @@ exports.onPostBuild = async ({ graphql }) => {
       title: item.title,
       id: path.join(siteUrl, item.slug),
       link: path.join(siteUrl, item.slug),
-      date: item.dateUpdated,
+      date: item.datePublished,
       published: item.datePublished,
       content: item.content,
       author: [

@@ -78,12 +78,13 @@
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     text-align: left;
   }
 
   & .column {
     flex: 0 1 calc(var(--max-width) / 3);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
   }
 
   & .article-list {

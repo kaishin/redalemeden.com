@@ -8,7 +8,7 @@ class Footer extends React.Component {
       <footer class="site-footer">
         <ul class="link-list">
           <li class="link">
-            <a href="https://twitter.com/kaishin">Twitter</a>
+            <a href="https://widegamut.club/@kaishin">Mastodon</a>
             <span class="separator">/</span>
           </li>
           <li class="link">
@@ -18,9 +18,6 @@ class Footer extends React.Component {
           <li class="link">
             <a href="https://dribbble.com/kaishin">Dribbble</a>
             <span class="separator">/</span>
-          </li>
-          <li class="link">
-            <a href="https://represent.io/kaishin">Resume</a>
           </li>
         </ul>
         <span class="copyright">

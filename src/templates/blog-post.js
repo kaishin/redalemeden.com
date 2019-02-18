@@ -9,18 +9,6 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
 
-    function swiftVersion(tags) {
-      var tag = tags.find(function(tag) {
-        return tag.includes('Swift-');
-      });
-
-      if (typeof tag === 'undefined') {
-        return false;
-      } else {
-        return tag.replace('-', ' ');
-      }
-    }
-
     return (
       <DefaultLayout>
         <Seo title={post.frontmatter.title} />
@@ -43,12 +31,6 @@ class BlogPostTemplate extends React.Component {
           </header>
 
           <section className="full-post-content">
-            {swiftVersion(post.frontmatter.tags) && (
-              <span className="swift-version">
-                The code snippets in this article are written using the{' '}
-                <strong>{swiftVersion(post.frontmatter.tags)}</strong> syntax.
-              </span>
-            )}
             <div className="content-wrapper" dangerouslySetInnerHTML={{ __html: post.html }} />
 
             <div className="feedback-box">

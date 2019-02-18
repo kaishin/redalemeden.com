@@ -4,11 +4,11 @@ title: "Units in Foundation"
 category: programming
 tags:
   - Swift
-  - Swift-3.0
-  - Literate
+  - Foundation
 ---
 
-*[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html) --- People interested in the Swift programming language. [Literate Programming](http://www.literateprogramming.com/) --- All code snippets below are written in __Swift 3.0__.*
+> [Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html): People interested in the Swift programming language.
+> [Literate Programming](http://www.literateprogramming.com/): All code snippets below are written in Swift 3.0.
 
 Starting iOS 10 and macOS 10.12, *Foundation* supports units and measurements out of the box, in the form of [(NS)Unit][unit] and [(NS)Measurement][measurement] respectively.
 
@@ -70,7 +70,7 @@ let speedInKpbs = speed.converted(to: .kilobitPerSecond)
 // -> 100000 kbps
 ```
 
-### Learn More
+## Learn More
 
 - [WWDC session 238](https://developer.apple.com/videos/play/wwdc2016/238/)
 - [Measurements and Units in Foundation](https://oleb.net/blog/2016/07/measurements-and-units/) by Ole Begemann.

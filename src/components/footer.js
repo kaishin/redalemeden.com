@@ -17,7 +17,6 @@ class Footer extends React.Component {
           </li>
           <li class="link">
             <a href="https://dribbble.com/kaishin">Dribbble</a>
-            <span class="separator">/</span>
           </li>
         </ul>
         <span class="copyright">

@@ -239,13 +239,4 @@
     font-size: 0.9rem;
     font-style: italic;
   }
-
-  & .swift-version {
-    background-color: color-mod(var(--secondary-color) alpha(30%));
-    border-radius: .4rem;
-    color: color-mod(var(--secondary-color) shade(20%));
-    display: block;
-    margin: 2rem 0 1.5rem;
-    padding: .5em 1em;
-  }
 }

@@ -1,5 +1,5 @@
 ---
-date: 2019-02-10T23:00:00+01:00
+date: 2019-02-18T21:40:00+01:00
 title: "New Year, New Blog, New Design"
 category: journal
 tags:
@@ -12,7 +12,9 @@ tags:
 
 Today marks a new beginning for this blog. After a long hiatus, I am finally back to writing, and I couldn’t be happier about it.
 
-Six weeks in, I can confidently say that 2019 is off to a good start for me. I am slowly breaking free of the constant feeling of anxiety and pressure that paralyzed me a great deal throughout last year. Healthy habits were key in this process. Today, I have a concrete action plan to achieve my goals and ambitions. And it starts here.
+Six weeks in, I can confidently say that 2019 is off to a good start for me. I am slowly breaking free of the constant feeling of anxiety and pressure that paralyzed me a great deal throughout last year, thanks in no small part to healthier habits and a renewed sense of purpose.
+
+Capitalizing on this newfound energy, I concocted an action plan to achieve [the goals] I set for myself this year. And it starts here.
 
 Since last fall, I’ve been deliberately distancing myself from Twitter. My over-reliance on it as a medium for hot takes and shallow interactions inhibited my drive to write longer, more reflective pieces. The result is a trail of abandoned blogs and writing experiments that didn’t get the attention they deserve.
 
@@ -31,3 +33,4 @@ In closing, I'm very pleased with the outcome, and I'm pumped to resume writing 
 [RSS]: /feed.xml
 [JSON]: /feed.json
 [Fathom]: https://usefathom.com/
+[the goals]: https://widegamut.club/@kaishin/101341226283154612

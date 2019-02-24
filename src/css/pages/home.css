@@ -17,11 +17,12 @@
 }
 
 .intro-tagline {
-  font-size: 1.56rem;
-  font-weight: 300;
+  font-size: 1.6rem;
+  font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5;
   padding-top: var(--header-top-spacing);
+  padding-bottom: 1rem;
 }
 
 .intro-paragraph {

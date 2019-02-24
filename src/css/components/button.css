@@ -8,11 +8,12 @@ input[type="button"] {
   border: none;
   cursor: pointer;
   border-radius: 12em;
-  color: color-mod(var(--secondary-color) lightness(30%));
+  color: var(--primary-color);
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.1em;
+  line-height: 1.5;
   margin: 1rem auto 2rem;
   min-width: 8rem;
   padding: 1em 2em;

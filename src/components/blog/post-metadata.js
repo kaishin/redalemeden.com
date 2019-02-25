@@ -12,8 +12,11 @@ class PostMetadata extends React.Component {
     return (
       <div className="post-metadata">
         <time date={frontmatter.date}>{frontmatter.formattedDate}</time> &mdash;{' '}
-        {frontmatter.tags.map((tag) => '#' + tag).join(' ')} &mdash;{' '}
-        <span className="reading-time">{this.state.post.timeToRead}min read</span>
+        <ul className="tag-list">
+          {frontmatter.tags.map((tag) => {
+            return <li class="tag">{'#' + tag + ' '}</li>;
+          })}
+        </ul>&mdash; <span className="reading-time">{this.state.post.timeToRead}min read</span>
       </div>
     );
   }

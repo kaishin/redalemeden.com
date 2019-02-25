@@ -72,9 +72,10 @@
 }
 
 .post-title {
-  margin-top: 0;
-  margin-bottom: 0.2em;
   font-size: 1.55rem;
+  margin-bottom: 0.2em;
+  margin-top: 0;
+  max-width: 20em;
 }
 
 .post-metadata {
@@ -84,6 +85,17 @@
   line-height: 1.5;
   margin-top: 0.5rem;
   text-transform: uppercase;
+
+  & .tag-list {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+
+  & li {
+    display: inline;
+    margin: 0 0.2em;
+  }
 }
 
 .post-header {
@@ -157,6 +169,7 @@
 
   & h2 {
     font-size: 1.4rem;
+    margin: 2rem 0;
   }
 
   %blog-headings {
@@ -169,7 +182,9 @@
   & h3 {
     @extend %blog-headings;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 
   & h4 {
@@ -180,18 +195,31 @@
   }
 
   & .footnotes {
-    border-top: 1px solid gray(90%);
     font-size: 0.9em;
+    margin-top: 2rem;
 
     & p {
       display: inline;
     }
+
+    & hr {
+      background: rgba(0 0 0 / 10%);
+      border: 0;
+      height: 1px;
+    }
+  }
+
+  & sup a:any-link {
+    border: none;
+    font-weight: 500;
   }
 
   & .gatsby-resp-image-link {
     --outdent: 5%;
     border: none;
     margin-left: calc(var(--outdent) * -1);
+    margin-top: var(--image-vertical-spacing);
+    margin-bottom: var(--image-vertical-spacing);
     width: calc(100% + (var(--outdent) * 2));
     border-radius: 4px;
 
@@ -207,7 +235,8 @@
       display: block;
       font-size: 0.9rem;
       font-style: italic;
-      margin-top: 0.5rem;
+      margin-top: calc((var(--image-vertical-spacing) - 0.8rem) * -1);
+      margin-bottom: var(--image-vertical-spacing);
     }
   }
 

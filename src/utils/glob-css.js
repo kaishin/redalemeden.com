@@ -29,6 +29,7 @@ module.exports = {
 		'--sidebar-max-width': '22.5rem',
 		'--main-content-max-width': '40rem',
 		'--sheet-margin-top': 'calc(var(--header-top-spacing) * 1.4)',
+		'--image-vertical-spacing': '3rem',
 		'--font-rubik': '\'Rubik\'',
 		'--text-font': 'var(--font-rubik), system-ui',
 		'--header-title-size': '1.1rem',

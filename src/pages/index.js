@@ -16,7 +16,8 @@ const IndexPage = ({ data }) => (
         <h2 className="intro-tagline">Designer, programmer, and illustrator based in Stockholm, Sweden.</h2>
 
         <p className="intro-paragraph">
-          <em>Current Interests ▹</em> The federated Web, open-source Swift, privacy, and new computing paradigms.
+          <em>Current Interests ▹</em> Federated social networks, open-source Swift, privacy, and new computing
+          paradigms.
         </p>
 
         <p className="intro-paragraph">

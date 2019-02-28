@@ -11,7 +11,7 @@ tags:
 
 *[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html) --- People interested in the open Web as a platform.*
 
-Ten years ago, we needed Google Chrome to break the Web free from corporate greed, and we managed to do so for a brief period. Today, its dominance is stifling the very platform it once saved from the clutches of Microsoft. And no one, beside Google, needs that.
+Ten years ago, we needed Google Chrome to break the Web free from corporate hegemony, and we managed to do so for a brief period. Today, its dominance is stifling the very platform it once saved from the clutches of Microsoft. And no one, beside Google, needs that.
 
 ![Google Chrome](header-image.jpg)
 

@@ -43,7 +43,7 @@ Alas, not anymore.
 
 The company’s focus gradually shifted towards transforming their browser dominance into business growth. It also happens that Google’s business *is* search engine advertising and AdSense. Everything else is a measly 10% of their annual revenue. That in and of itself is not an issue, but when the line between the browser, the search engine, and online services is blurred, we have a problem. And a big one at that.
 
-Successful businesses capitalize on their competitive advantages.  Unscrupulous ones abuse them when given free rein. When your browser [forces you to sign in], places cookies that [you can’t delete], and seeks to [neutralize ad-blocking and privacy extensions], something’s gone terribly wrong[^1]. Even more so when you factor the fact that every website contains at least one snippet of code that pings Google’s servers to track visitors, show them ads, or serve them custom fonts.
+Successful businesses capitalize on their competitive advantages.  Unscrupulous ones abuse them when given free rein. When your browser [forces you to sign in], places cookies that [you can’t delete], and seeks to [neutralize ad-blocking and privacy extensions], something’s gone terribly wrong[^1]. Even more so when you factor in the fact that every website contains at least one snippet of code that pings Google’s servers to track visitors, show them ads, or serve them custom fonts.
 
 In theory, these malpractices could be overlooked if the company involved had a good track record with handling personal data. In practice, however, Google is institutionally creepy, and they can’t help themselves. You might think that your personal data is nobody's business, but they don’t seem to agree.
 
@@ -75,5 +75,5 @@ I’ve been Chrome-free since 2014, and I’ve never looked back. Chances are yo
 [you can’t delete]: https://news.softpedia.com/news/chrome-69-does-not-delete-google-cookies-when-clearing-all-website-data-522884.shtml
 [neutralize ad-blocking and privacy extensions]: https://www.cnet.com/news/google-may-break-ad-blockers-with-upcoming-chrome-change/
 
-[^1]: Opera and Brave are two other alternatives, but the former is owned by an online advertising and gaming consortium based in China, and the latter is experimenting with [unconventional ad-based business models](https://www.cnet.com/news/braves-privacy-focused-ads-to-spread-beyond-startups-own-browser/).
-[^2]: I am aware that after the user backlash, Chrome 70 reverted some of these. My point still stands.
+[^1]: I am aware that after the user backlash, Chrome 70 reverted some of these. My point still stands.
+[^2]: Opera and Brave are two other alternatives, but the former is owned by an online advertising and gaming consortium based in China, and the latter is experimenting with [unconventional ad-based business models](https://www.cnet.com/news/braves-privacy-focused-ads-to-spread-beyond-startups-own-browser/).

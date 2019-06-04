@@ -11,7 +11,6 @@ import '../../css/normalize.css';
 import '../../css/styles.css';
 
 import 'typeface-rubik';
-import 'typeface-fira-mono';
 
 class DefaultLayout extends React.Component {
   render() {

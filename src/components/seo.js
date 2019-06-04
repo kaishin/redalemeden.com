@@ -34,7 +34,7 @@ class Seo extends React.Component {
 Seo.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  keywords: PropTypes.arrayOf.string
+  keywords: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default Seo;

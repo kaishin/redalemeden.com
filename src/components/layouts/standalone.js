@@ -6,7 +6,6 @@ import '../../css/normalize.css';
 import '../../css/styles.css';
 
 import 'typeface-rubik';
-import 'typeface-fira-mono';
 
 class StandaloneLayout extends React.Component {
   render() {

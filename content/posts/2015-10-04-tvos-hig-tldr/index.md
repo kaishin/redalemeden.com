@@ -1,5 +1,5 @@
 ---
-date: "2015-10-04T23:40:00+01:00"
+date: 2015-10-04T23:40:00+01:00
 title: "tvOS HIG: Too Long; Didn't Read"
 category: design
 tags:

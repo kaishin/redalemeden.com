@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class Seo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = props;
+    this.state = { ...props };
   }
 
   render() {
@@ -26,7 +26,9 @@ class Seo extends React.Component {
           { name: 'description', content: description },
           { name: 'keywords', content: keywords.concat(metadata.keywords).join(', ') }
         ]}
-      />
+      >
+        <noscript>Good riddance.</noscript>
+      </Helmet>
     );
   }
 }

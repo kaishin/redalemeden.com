@@ -1,4 +1,3 @@
-@import "normalize";
 @import "helpers/_glob";
 @import "pages/_glob";
 @import "components/_glob";
@@ -15,6 +14,10 @@ sup {
   margin-left: 0.2em;
   top: 0;
   vertical-align: super;
+}
+
+noscript {
+  display: none;
 }
 
 .section-heading {

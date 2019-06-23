@@ -1,40 +1,40 @@
-import React from 'react'
-import ProjectCard from './project-card.js'
-import { graphql } from 'gatsby'
+import React from 'react';
+import ProjectCard from './project-card.js';
+import { graphql } from 'gatsby';
 
 class ProjectList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = props;
+    this.state = { ...props };
   }
 
   render() {
     return (
-      <ul className='project-list'>
+      <ul className="project-list">
         {this.state.projects.map(({ project }, id) => <ProjectCard project={project} key={id} />)}
       </ul>
-    )
+    );
   }
 }
 
 export const projectDetails = graphql`
-fragment ProjectDetails on ProjectsYaml {
-  name
-  description
-  year
-  url
-  image {
+  fragment ProjectDetails on ProjectsYaml {
     name
-    extension
-    childImageSharp {
-      fluid(maxWidth: 800) {
-        ...GatsbyImageSharpFluid
+    description
+    year
+    url
+    image {
+      name
+      extension
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
+    tags
+    featured
   }
-  tags
-  featured
-}
-`
+`;
 
-export default ProjectList
+export default ProjectList;

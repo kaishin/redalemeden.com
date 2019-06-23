@@ -9,8 +9,8 @@ const to = './src/utils/glob-css.js';
 
 module.exports = () => ({
   plugins: [
-    postcssNormalize(),
     postcssImport(),
+    postcssNormalize(),
     postcssPresetEnv({
       stage: 0,
       importFrom: [ from ],

@@ -9,9 +9,9 @@ const WorkPage = ({ data }) => (
   <DefaultLayout>
     <Helmet bodyAttributes={{ class: 'work-page' }} />
     <Seo title="Work" />
-    <section class="work-section">
-      <div class="container">
-        <h4 class="section-heading">Work</h4>
+    <section className="work-section">
+      <div className="container">
+        <h4 className="section-heading">Work</h4>
         <ProjectList projects={data.projects.list} />
       </div>
     </section>

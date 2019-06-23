@@ -5,21 +5,21 @@ class Footer extends React.Component {
     const { author } = this.props;
 
     return (
-      <footer class="site-footer">
-        <ul class="link-list">
-          <li class="link">
+      <footer className="site-footer">
+        <ul className="link-list">
+          <li className="link">
             <a href="https://widegamut.club/@kaishin">Mastodon</a>
-            <span class="separator">/</span>
+            <span className="separator">/</span>
           </li>
-          <li class="link">
+          <li className="link">
             <a href="https://github.com/kaishin">Github</a>
-            <span class="separator">/</span>
+            <span className="separator">/</span>
           </li>
-          <li class="link">
+          <li className="link">
             <a href="https://dribbble.com/kaishin">Dribbble</a>
           </li>
         </ul>
-        <span class="copyright">
+        <span className="copyright">
           <em>&copy;</em> 2009-{new Date().getFullYear()} {author}.
           <br />All Rights Reserved.
         </span>

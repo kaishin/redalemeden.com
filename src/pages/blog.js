@@ -17,11 +17,11 @@ class BlogPage extends React.Component {
         <Seo title="Blog" />
         <article className="content blog-content">
           <BlogHeader />
-          <ol class="post-list">
+          <ol className="post-list">
             {posts.map(({ node: post }) => {
               const title = post.frontmatter.title || post.fields.slug;
               return (
-                <li class="post-list-item">
+                <li className="post-list-item" key={post.fields.slug}>
                   <article className="post-summary">
                     <span className="post-category">{post.frontmatter.category}</span>
                     <h3 className="post-title">

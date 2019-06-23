@@ -43,7 +43,7 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-helmet": "^5.2.1",
-    "typeface-rubik": "0.0.54"
+    "typeface-rubik": "^0.0.72"
   },
   "keywords": [
     "gatsby"
@@ -63,7 +63,7 @@
     "eslint": "^5.0.0",
     "eslint-plugin-react": "^7.13.0",
     "prettier": "^1.18.0",
-    "stylelint": "^9.10.1",
+    "stylelint": "^10.0.0",
     "stylelint-config-recommended": "^2.2.0",
     "typescript": "^3.5.2"
   }

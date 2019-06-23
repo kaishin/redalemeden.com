@@ -10,7 +10,7 @@ class ProjectCard extends React.Component {
   render() {
     const project = this.state;
     return (
-      <li class="project-cell">
+      <li className="project-cell">
         <a href={project.url}>
           {project.image.extension === 'gif' ? (
             <img src={'/gifs/' + project.image.name + '.gif'} className="project-image" alt={project.name} />

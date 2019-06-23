@@ -27,7 +27,7 @@ class Seo extends React.Component {
           { name: 'keywords', content: keywords.concat(metadata.keywords).join(', ') }
         ]}
       >
-        <noscript>Good riddance.</noscript>
+        <noscript />
       </Helmet>
     );
   }

@@ -16,10 +16,6 @@ sup {
   vertical-align: super;
 }
 
-noscript {
-  display: none;
-}
-
 .section-heading {
   @extend %heading;
   margin: var(--header-top-spacing) 0 calc(var(--header-top-spacing) * 0.8);

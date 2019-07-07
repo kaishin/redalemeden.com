@@ -43,7 +43,10 @@ class BlogPage extends React.Component {
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { draft: { ne: true } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           excerpt(pruneLength: 250)

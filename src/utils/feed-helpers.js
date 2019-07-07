@@ -34,6 +34,7 @@ const feedOptions = {
   feedQuery: `
       {
         allMarkdownRemark(
+          filter: { frontmatter: { draft: { ne: true } } },
           sort: {order: DESC, fields: [frontmatter___date]}, 
           limit: 10, 
           

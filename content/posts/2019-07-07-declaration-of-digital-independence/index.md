@@ -1,11 +1,11 @@
 ---
-date: 2019-07-07T20:55+02:00
+date: 2019-07-07T21:25+02:00
 title: "Declaration of Digital Independence"
 category: Technology
 tags:
   - Privacy
   - Internet
-  - Freedom
+  - Web
 ---
 
 *[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html)

@@ -45,23 +45,21 @@
     "react-helmet": "^5.2.1",
     "typeface-rubik": "^0.0.72"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": [ "gatsby" ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "start": "npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "plop --plopfile ./generators/plopfile.js"
   },
   "devDependencies": {
     "@svgr/webpack": "^4.3.0",
     "acorn": "^6.1.1",
     "eslint": "^5.0.0",
     "eslint-plugin-react": "^7.13.0",
+    "plop": "^2.4.0",
     "prettier": "^1.18.0",
     "stylelint": "^10.0.0",
     "stylelint-config-recommended": "^2.2.0",

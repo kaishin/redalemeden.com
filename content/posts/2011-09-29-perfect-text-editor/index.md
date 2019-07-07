@@ -1,5 +1,5 @@
 ---
-date: 2011-09-29T20:55:40+00:00
+date: 2011-09-29T20:55+00:00
 title: "My Quest for the Perfect Text Editor"
 category: programming
 tags:

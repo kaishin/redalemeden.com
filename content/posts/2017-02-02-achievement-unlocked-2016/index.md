@@ -1,5 +1,5 @@
 ---
-date: 2017-02-02T09:52:55+01:00
+date: 2017-02-02T09:52+01:00
 title: "Achievement Unlocked: 2016 Edition"
 category: journal
 tags:

@@ -1,5 +1,5 @@
 ---
-date: 2011-09-15T01:42:37+00:00
+date: 2011-09-15T01:42+00:00
 title: "Scrollbars in OS X Lion"
 category: design
 tags:

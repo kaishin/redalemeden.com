@@ -1,5 +1,5 @@
 ---
-date: 2011-07-29T22:00:19+00:00
+date: 2011-07-29T22:00+00:00
 title: "On Skeuomorphism"
 category: design
 tags:

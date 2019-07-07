@@ -1,5 +1,5 @@
 ---
-date: 2019-02-27T01:40:00+01:00
+date: 2019-02-27T01:40+01:00
 title: "We Need Chrome No More"
 category: technology
 tags:

@@ -1,5 +1,5 @@
 ---
-date: 2016-05-17T01:50:22+02:00
+date: 2016-05-17T01:50+02:00
 title: "Speedster: A Retrospective"
 category: journal
 tags:

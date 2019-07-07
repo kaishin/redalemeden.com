@@ -1,5 +1,5 @@
 ---
-date: 2015-12-27T12:02:37+01:00
+date: 2015-12-27T12:02+01:00
 title: "Achievement Unlocked: 2015 Edition"
 category: journal
 tags:

@@ -1,5 +1,5 @@
 ---
-date: 2011-11-02T02:18:53-06:00
+date: 2011-11-02T02:18-06:00
 title: "Rethinking Google+ for iOS"
 category: design
 tags:

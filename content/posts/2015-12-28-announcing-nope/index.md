@@ -1,5 +1,5 @@
 ---
-date: 2015-12-28T22:30:00+01:00
+date: 2015-12-28T22:30+01:00
 title: "Announcing Nope for Safari"
 category: journal
 tags:

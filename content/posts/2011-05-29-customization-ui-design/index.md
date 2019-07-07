@@ -1,5 +1,5 @@
 ---
-date: 2011-05-29T23:55:50+02:00
+date: 2011-05-29T23:55+02:00
 title: "On UI Customization & Productivity"
 category: design
 tags:

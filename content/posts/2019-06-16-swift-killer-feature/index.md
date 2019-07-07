@@ -1,5 +1,5 @@
 ---
-date: 2019-06-18T09:05:50+01:00
+date: 2019-06-18T09:05+01:00
 title: "Swift's Killer Feature"
 category: programming
 tags:
@@ -46,7 +46,7 @@ while the holdouts stuck to their ~~guns~~ bows and arrows in the absence of a c
 
 But all of this is bound to change.
 
-During this past WWDC, 
+During this past WWDC,
 Apple introduced *[SwiftUI]*---a modern,
 universal framework for building user interfaces across their platforms.
 And it’s *packing quite a punch.*

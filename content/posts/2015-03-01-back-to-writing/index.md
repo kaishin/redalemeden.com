@@ -1,5 +1,5 @@
 ---
-date: 2015-03-01T01:16:33+01:00
+date: 2015-03-01T01:16+01:00
 title: "Back to Writing"
 category: journal
 tags:

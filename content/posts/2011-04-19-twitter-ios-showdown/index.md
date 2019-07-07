@@ -1,5 +1,5 @@
 ---
-date: 2011-04-19T14:56:20+02:00
+date: 2011-04-19T14:56+02:00
 title: "Twitter iOS Apps: Interaction Design Showdown"
 category: design
 tags:

@@ -1,5 +1,5 @@
 ---
-date: 2016-09-29T09:33:19+02:00
+date: 2016-09-29T09:33+02:00
 title: "Swift 3 Access Control"
 category: programming
 tags:

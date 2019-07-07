@@ -1,5 +1,5 @@
 ---
-date: 2015-03-07T12:24:52+01:00
+date: 2015-03-07T12:24+01:00
 title: "IPinator"
 category: journal
 tags:

@@ -1,5 +1,5 @@
 ---
-date: 2012-02-13T08:38:51-06:00
+date: 2012-02-13T08:38-06:00
 title: "Twitter iOS Apps: Interaction Design Showdown – Round 2"
 category: design
 tags:

@@ -1,5 +1,5 @@
 ---
-date: 2011-10-12T17:02:10+00:00
+date: 2011-10-12T17:02+00:00
 title: "Invisible Computers"
 category: design
 tags:
@@ -19,7 +19,7 @@ He argues that voice-based digital assistants such as Siri should not be designe
 
 ![Siri screenshots](siri-tap.jpg) _Siri on iOS 6_
 
-I've given this some thoguht, and I agree that good interfaces should not compete for user attention. But then, the computer he imagined talking to is certainly not one you can fit in your pocket. From that angle, we are by all means moving one step closer to invisibile computers.
+I've given this some thought, and I agree that good interfaces should not compete for user attention. But then, the computer he imagined talking to is certainly not one you can fit in your pocket. From that angle, we are by all means moving one step closer to invisible computers.
 
 [^1]: Perspectives. [Interactions] issue 1 (January 1994)
 

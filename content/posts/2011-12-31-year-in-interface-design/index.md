@@ -1,5 +1,5 @@
 ---
-date: 2011-12-31T23:51:32-06:00
+date: 2011-12-31T23:51-06:00
 title: "2011: A Year in Interface Design"
 category: design
 tags:
@@ -11,13 +11,13 @@ This is a summary of what happened in the world of interface and interaction des
 
 ### The Desktop Identity Crisis
 
-After a series of leaks, Microsoft unveiled the eigth major iteration of its ubiquitous desktop operating system. Based on the *Metro* design language that they introduced previously on mobile, Windows 8 is touted as a "no-compromise" OS that offers the best of both worlds---a strategy that will likely continue to be a hot topic for years to come.
+After a series of leaks, Microsoft unveiled the eighth major iteration of its ubiquitous desktop operating system. Based on the *Metro* design language that they introduced previously on mobile, Windows 8 is touted as a "no-compromise" OS that offers the best of both worlds---a strategy that will likely continue to be a hot topic for years to come.
 
 Meanwhile, Apple was busy shipping OS X Lion, a milestone update that brought multi-touch gestures, native fullscreen support, and other iOS-inspired interface elements to the desktop OS. They also made sure to upset legions of users by changing the scroll paradigm to match their mobile implementation. Mac third-party apps are coming in all sorts of flavors, and the somewhat unified look and feel of yore gave place to a hodgepodge of visual styles and design patterns: popovers, pull-to-refresh, icon-based tab navigation, monochrome icons, you name it.
 
 ### Social Innovation
 
-Google+ is the new kid in the block, and eveyone is talking about it. Led by Andy Hertzfeld, a prominent member of the original Macintosh team, the fledgling social network is showing more promise than all of Google's previous attempts to make a dent in the social space.
+Google+ is the new kid in the block, and everyone is talking about it. Led by Andy Hertzfeld, a prominent member of the original Macintosh team, the fledgling social network is showing more promise than all of Google's previous attempts to make a dent in the social space.
 
 Meanwhile, Facebook upset its users once again with a radical redesign of the timeline. They sort of made up for it with a redesigned iOS app and official iPad support.
 

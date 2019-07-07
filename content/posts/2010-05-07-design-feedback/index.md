@@ -1,5 +1,5 @@
 ---
-date: 2010-05-07T20:52:46+02:00
+date: 2010-05-07T20:52+02:00
 title: "On Design Feedback"
 category: design
 tags:

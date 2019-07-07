@@ -1,5 +1,5 @@
 ---
-date: 2015-03-29T16:00:00+02:00
+date: 2015-03-29T16:00+02:00
 title: "React Native: Initial Thoughts"
 category: programming
 tags:

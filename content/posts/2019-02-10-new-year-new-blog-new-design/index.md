@@ -1,5 +1,5 @@
 ---
-date: 2019-02-18T21:40:00+01:00
+date: 2019-02-18T21:40+01:00
 title: "New Year, New Blog, New Design"
 category: journal
 tags:

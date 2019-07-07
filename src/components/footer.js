@@ -21,7 +21,7 @@ class Footer extends React.Component {
         </ul>
         <span className="copyright">
           <em>&copy;</em> 2009-{new Date().getFullYear()} {author}.
-          <br />All Rights Reserved.
+          <br />All Rights Reserved. <a href="https://github.com/kaishin/redalemeden.com">Source</a>
         </span>
       </footer>
     );

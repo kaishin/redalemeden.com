@@ -28,6 +28,7 @@ class Seo extends React.Component {
         ]}
       >
         <noscript />
+        <link href="https://micro.blog/kaishin" rel="me" />
       </Helmet>
     );
   }

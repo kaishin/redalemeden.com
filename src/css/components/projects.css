@@ -1,6 +1,6 @@
 .project-cell {
   background-color: black;
-  border-radius: 6px;
+  border-radius: 1rem;
   flex: 0 1 280px;
   list-style-type: none;
   overflow: hidden;

@@ -13,7 +13,10 @@ class Navigation extends React.Component {
             <Link to="/work">Work</Link>
           </li>
           <li className="link">
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog">
+              Blog
+              <small>Unredacted</small>
+            </Link>
           </li>
           <li className="link">
             <Link to="/contact">Contact</Link>

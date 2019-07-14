@@ -82,6 +82,9 @@ sup {
     list-style: none;
     padding-top: 3rem;
     padding-left: 0;
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
 
     @media (--narrow-grid-container) {
       display: flex;
@@ -90,14 +93,40 @@ sup {
 
     & .link {
       font-size: .85rem;
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: .16em;
       text-align: center;
       text-transform: uppercase;
+      transition: all 0.3s;
       width: 100%;
 
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      & small {
+        font-weight: 400;
+        display: none;
+      }
+
       @media (--full-grid-container) {
-        padding-bottom: 2.1em;
+        & a {
+          display: inline-block;
+          padding: 1.4em 2em;
+          border-radius: 1rem;
+        }
+
+        &:hover {
+          & a {
+            background-color: rgba(255, 255, 255, 0.05);
+          }
+        }
+
+        & small {
+          font-weight: 400;
+          display: block;
+          margin-top: 0.4em;
+        }
       }
     }
   }
@@ -127,8 +156,8 @@ sup {
   }
 
   & .copyright {
-    opacity: 0.5;
     line-height: 1.3;
+    color: color-mod(var(--primary-color) lightness(75%));
 
     & em {
       font-size: 1.2rem;

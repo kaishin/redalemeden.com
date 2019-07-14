@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
     <Seo title="Home" />
     <section className="intro">
       <div className="intro-content">
-        <h2 className="intro-tagline">Designer, programmer, and illustrator based in Stockholm, Sweden.</h2>
+        <h2 className="intro-tagline">{data.site.siteMetadata.authorBio}</h2>
 
         <p className="intro-paragraph">
           <em>Current Interests ▹</em> Decentralized social networks, open-source Swift, privacy, and new computing
@@ -61,6 +61,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        authorBio
       }
     }
     projects: allProjectsYaml(limit: 100, filter: { featured: { eq: true } }, sort: { fields: [year], order: DESC }) {

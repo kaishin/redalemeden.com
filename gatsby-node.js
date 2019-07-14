@@ -110,7 +110,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.onPostBuild = async ({ graphql }) => {
   const siteQuery = await runQuery(graphql, feedOptions.siteQuery);
-  const { site: { siteMetadata: { title, description, siteUrl, author } } } = siteQuery;
+  const { site: { siteMetadata: { title, description, siteUrl, author, email } } } = siteQuery;
   const feedQuery = await runQuery(graphql, feedOptions.feedQuery);
   const { allMarkdownRemark: { edges: data } } = feedQuery;
 
@@ -146,7 +146,7 @@ exports.onPostBuild = async ({ graphql }) => {
     },
     author: {
       name: author,
-      email: 'hello@redalemeden.com'
+      email: email
     }
   });
 
@@ -161,7 +161,7 @@ exports.onPostBuild = async ({ graphql }) => {
       author: [
         {
           name: author,
-          email: 'hello@redalemeden.com',
+          email: email,
           link: siteUrl
         }
       ]
@@ -170,7 +170,7 @@ exports.onPostBuild = async ({ graphql }) => {
 
   newFeed.addContributor({
     name: author,
-    email: 'hello@redalemeden.com',
+    email: email,
     link: siteUrl
   });
 

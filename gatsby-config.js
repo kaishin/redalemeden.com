@@ -3,8 +3,10 @@ module.exports = {
     description: 'Personal Site of Reda Lemeden',
     title: 'Reda Lemeden',
     author: 'Reda Lemeden',
+    email: 'hello@redalemeden.com',
     keywords: [ 'reda', 'kaishin', 'lemeden', 'developer', 'designer', 'kaishinlab' ],
-    siteUrl: 'https://redalemeden.com'
+    siteUrl: 'https://redalemeden.com',
+    authorBio: 'Designer, programmer, and illustrator based in Stockholm, Sweden.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

@@ -27,6 +27,8 @@ class DefaultLayout extends React.Component {
                 keywords
                 title
                 siteUrl
+                email
+                authorBio
               }
             }
           }

@@ -26,6 +26,7 @@ class DefaultLayout extends React.Component {
                 description
                 keywords
                 title
+                siteUrl
               }
             }
           }

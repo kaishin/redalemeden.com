@@ -2,7 +2,7 @@ import React from 'react';
 
 class Footer extends React.Component {
   render() {
-    const { author } = this.props;
+    const { author, siteUrl } = this.props;
 
     return (
       <footer className="site-footer">
@@ -26,7 +26,10 @@ class Footer extends React.Component {
           </li>
         </ul>
         <span className="copyright">
-          <em>&copy;</em> 2009-{new Date().getFullYear()} {author}.
+          <em>&copy;</em> 2009-{new Date().getFullYear()}{' '}
+          <a href={siteUrl} class="h-card">
+            {author}
+          </a>.
           <br />All Rights Reserved. <a href="https://github.com/kaishin/redalemeden.com">Source</a>
         </span>
       </footer>

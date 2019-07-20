@@ -29,7 +29,7 @@ module.exports = {
 		'--main-content-max-width': '40rem',
 		'--main-container-padding': 'calc(var(--header-top-spacing) * 1.4)',
 		'--sheet-margin-top': 'var(--main-container-padding)',
-		'--image-vertical-spacing': '3rem',
+		'--image-vertical-spacing': '2rem',
 		'--font-rubik': '\'Rubik\'',
 		'--text-font': 'var(--font-rubik), system-ui',
 		'--header-title-size': '1.1rem',

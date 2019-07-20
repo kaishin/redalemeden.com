@@ -1,0 +1,32 @@
+.microblog-page {
+  & .main-container {
+    @extend %sheet;
+    overflow: hidden;
+  }
+
+  & a {
+    color: var(--theme-link-color);
+  }
+
+  & .full-post-content {
+    & img {
+      display: block;
+      margin: var(--image-vertical-spacing) auto;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+
+  & .title {
+    margin: 0.2em 0 0;
+  }
+
+  & .permalink {
+    text-decoration: none;
+    color: gray(50);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

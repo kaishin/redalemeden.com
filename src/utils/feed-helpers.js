@@ -34,10 +34,9 @@ const feedOptions = {
   feedQuery: `
       {
         allMarkdownRemark(
-          filter: { frontmatter: { draft: { ne: true } } },
+          filter: { frontmatter: { draft: { ne: true } }, fileAbsolutePath: { regex: "/content/posts/" } },
           sort: {order: DESC, fields: [frontmatter___date]}, 
-          limit: 10, 
-          
+          limit: 10
           ) {
           edges {
             node {
@@ -54,7 +53,34 @@ const feedOptions = {
           }
         }
       }
-      `
+    `,
+  microblogFeedQuery: `
+      {
+        allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/content/microblog/" },
+                    frontmatter: { date: { gt: "2019-07-20T00:00+02:00" }}
+                  },
+          limit: 100
+          ) {
+          edges {
+            node {
+              html
+              rawMarkdownBody
+              frontmatter {
+                date
+                formattedDate: date(formatString: "HH:mm MMM DD, YYYY")
+                title
+                type
+                tags
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+  `
 };
 
 module.exports = {

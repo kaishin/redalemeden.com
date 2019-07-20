@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Seo from '../components/seo';
 import DefaultLayout from '../components/layouts/default';
-import BlogHeader from '../components/blog/blog-header';
+import BlogHeader from '../components/blog/header';
 import PostMetadata from '../components/blog/post-metadata';
 import { Link, graphql } from 'gatsby';
 

@@ -9,6 +9,7 @@ const publicPath = './public';
 exports.createPages = ({ actions, graphql }) => {
   const { createPage, createRedirect } = actions;
   const blogPostTemplate = path.resolve('./src/templates/blog-post.js');
+  const microblogPostTemplate = path.resolve('./src/templates/microblog-post.js');
 
   createRedirect({
     fromPath: '/blog/2011/skeuomorphism-in-ui-design',
@@ -50,6 +51,7 @@ exports.createPages = ({ actions, graphql }) => {
     ) {
       edges {
         node {
+          fileAbsolutePath
           fields {
             slug
           }
@@ -69,7 +71,7 @@ exports.createPages = ({ actions, graphql }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: blogPostTemplate,
+        component: /content\/microblog/.test(node.fileAbsolutePath) ? microblogPostTemplate : blogPostTemplate,
         context: {
           slug: node.fields.slug
         }
@@ -83,12 +85,21 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const isPost = /content\/posts/.test(node.fileAbsolutePath);
+    const isMicropost = /content\/microblog/.test(node.fileAbsolutePath);
     const value = createFilePath({ node, getNode }).replace(/[0-9]{4}-[0-9]{2}-[0-9]{2}-|\//g, '');
+
+    var customPath = value;
+
+    if (isPost) {
+      customPath = `/blog/${moment(node.frontmatter.date).format('YYYY')}/${value}`;
+    } else if (isMicropost) {
+      customPath = `/microblog/${value}`;
+    }
 
     createNodeField({
       node,
       name: 'slug',
-      value: isPost ? `/blog/${moment(node.frontmatter.date).format('YYYY')}/${value}` : value
+      value: customPath
     });
 
     if (isPost) {
@@ -111,6 +122,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.onPostBuild = async ({ graphql }) => {
   const siteQuery = await runQuery(graphql, feedOptions.siteQuery);
   const { site: { siteMetadata: { title, description, siteUrl, author, email } } } = siteQuery;
+
+  // Main Feed
+
   const feedQuery = await runQuery(graphql, feedOptions.feedQuery);
   const { allMarkdownRemark: { edges: data } } = feedQuery;
 
@@ -182,7 +196,74 @@ exports.onPostBuild = async ({ graphql }) => {
     console.log('Failed to write RSS Feed File:', r);
   });
 
-  await writeFile(path.join(publicPath, 'rss.xml'), newFeed.rss2(), 'utf8').catch((r) => {
+  // Microblog
+
+  const microblogQuery = await runQuery(graphql, feedOptions.microblogFeedQuery);
+  const { allMarkdownRemark: { edges: microposts } } = microblogQuery;
+
+  const micropostItems = microposts.map((i) => {
+    const { node: { html, frontmatter, fields } } = i;
+
+    let slug = fields.slug;
+
+    return {
+      id: path.join(siteUrl, slug),
+      url: path.join(siteUrl, slug),
+      title: frontmatter.title || '',
+      slug: slug,
+      datePublished: moment(frontmatter.date).toDate(),
+      dateUpdated: moment(frontmatter.date).toDate(),
+      content: html
+    };
+  });
+
+  let microBlogFeed = new Feed({
+    title: 'Wide Gamut',
+    description: "Reda Lemeden's homebrewed micro-blog.",
+    link: path.join(siteUrl, 'widegamut'),
+    id: path.join(siteUrl, 'widegamut'),
+    copyright: 'All Rights reserved 2013-2019, Reda Lemeden',
+    favicon: path.join(siteUrl, 'favicon.ico'),
+    image: path.join(siteUrl, 'icon-touch.png'),
+    feedLinks: {
+      rss: path.join(siteUrl, 'microblog.xml'),
+      json: path.join(siteUrl, 'microblog.json')
+    },
+    author: {
+      name: author,
+      email: email
+    }
+  });
+
+  micropostItems.forEach((item) => {
+    microBlogFeed.addItem({
+      title: item.title,
+      id: path.join(siteUrl, item.slug),
+      link: path.join(siteUrl, item.slug),
+      date: item.datePublished,
+      published: item.datePublished,
+      content: item.content,
+      author: [
+        {
+          name: author,
+          email: email,
+          link: siteUrl
+        }
+      ]
+    });
+  });
+
+  microBlogFeed.addContributor({
+    name: author,
+    email: email,
+    link: siteUrl
+  });
+
+  await writeFile(path.join(publicPath, 'microblog.json'), microBlogFeed.json1(), 'utf8').catch((r) => {
+    console.log('Failed to write JSON Feed file: ', r);
+  });
+
+  await writeFile(path.join(publicPath, 'microblog.xml'), microBlogFeed.rss2(), 'utf8').catch((r) => {
     console.log('Failed to write RSS Feed File:', r);
   });
 

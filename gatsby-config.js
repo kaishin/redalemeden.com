@@ -23,16 +23,10 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 740,
-              quality: 90
-            }
-          },
-          {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
-              destinationDir: 'static'
+              destinationDir: 'static',
+              ignoreFileExtensions: []
             }
           },
           {
@@ -57,6 +51,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/posts/`,
         name: 'posts'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/microblog/`,
+        name: 'microblog'
       }
     },
     {

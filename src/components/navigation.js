@@ -19,6 +19,12 @@ class Navigation extends React.Component {
             </Link>
           </li>
           <li className="link">
+            <Link to="/microblog">
+              Microblog
+              <small>Wide Gamut</small>
+            </Link>
+          </li>
+          <li className="link">
             <Link to="/contact">Contact</Link>
           </li>
         </ol>

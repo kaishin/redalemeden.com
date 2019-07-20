@@ -1,3 +1,3 @@
 module.exports = (plop) => {
-  plop.load('./blog-post-generator.js');
+  plop.load('./post-generator.js');
 };

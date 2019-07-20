@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
 import DefaultLayout from '../components/layouts/default.js';
-import BlogHeader from '../components/blog/blog-header';
+import BlogHeader from '../components/blog/header';
 import PostMetadata from '../components/blog/post-metadata';
 
 class BlogPage extends React.Component {
@@ -44,7 +44,7 @@ class BlogPage extends React.Component {
 export const pageQuery = graphql`
   query BlogIndexQuery {
     allMarkdownRemark(
-      filter: { frontmatter: { draft: { ne: true } } }
+      filter: { frontmatter: { draft: { ne: true } }, fileAbsolutePath: { regex: "/content/posts/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

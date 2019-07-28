@@ -30,7 +30,7 @@
     "gatsby-transformer-remark": "^2.5.0",
     "gatsby-transformer-sharp": "^2.2.0",
     "gatsby-transformer-yaml": "^2.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "pify": "^4.0.1",
     "postcss-color-mod-function": "^3.0.3",
@@ -44,7 +44,9 @@
     "react-helmet": "^5.2.1",
     "typeface-rubik": "^0.0.72"
   },
-  "keywords": [ "gatsby" ],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {

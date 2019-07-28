@@ -1,7 +1,8 @@
 module.exports = {
 	customMedia: {
 		'--full-grid-container': '(width >= 60rem)',
-		'--narrow-grid-container': '(width < 60rem)'
+		'--narrow-grid-container': '(width < 60rem)',
+		'--full-width-image': '(width < 450px)'
 	},
 	customProperties: {
 		'--primary-color': '#4a20ac',

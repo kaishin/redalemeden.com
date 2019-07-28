@@ -28,9 +28,6 @@
     padding-top: 0;
     margin-bottom: var(--sheet-margin-top);
   }
-
-  & img {
-  }
 }
 
 .blog-intro {

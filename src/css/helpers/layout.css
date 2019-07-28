@@ -12,6 +12,7 @@
 
 @custom-media --full-grid-container (width >= 60rem);
 @custom-media --narrow-grid-container (width < 60rem);
+@custom-media --full-width-image (width < 450px);
 
 %sheet {
   background-color: var(--light-theme-bg-color);

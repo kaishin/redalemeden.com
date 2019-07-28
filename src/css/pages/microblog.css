@@ -11,9 +11,12 @@
   & .full-post-content {
     & img {
       display: block;
-      margin: var(--image-vertical-spacing) auto;
-      max-width: 100%;
-      width: auto;
+      margin: var(--image-vertical-spacing) 0;
+      max-width: 450px;
+
+      @media (--full-width-image) {
+        max-width: 100%;
+      }
     }
   }
 

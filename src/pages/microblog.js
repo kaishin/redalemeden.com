@@ -45,7 +45,10 @@ class MicroBlogPage extends React.Component {
 
 export const microblogQuery = graphql`
   query MicroblogIndexQuery {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/microblog/" } }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/microblog/" } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           ...MicroBlogPost

@@ -31,7 +31,10 @@ sup {
 }
 
 .main-container {
-  padding: 0 var(--main-container-padding);
+  padding: 0 2rem;
+  @media (--full-grid-container) {
+    padding: 0 var(--main-container-padding);
+  }
 }
 
 .site-header {
@@ -88,7 +91,9 @@ sup {
 
     @media (--narrow-grid-container) {
       display: flex;
-      padding: 2rem 2rem 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 1rem 1rem;
     }
 
     & .link {
@@ -98,7 +103,11 @@ sup {
       text-align: center;
       text-transform: uppercase;
       transition: all 0.3s;
-      width: 100%;
+
+      @media (--narrow-grid-container) {
+        padding: 0.5rem 1rem;
+        font-size: .8rem;
+      }
 
       &:hover {
         transform: scale(1.1);

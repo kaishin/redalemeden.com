@@ -14,7 +14,7 @@ module.exports = {
 		'--theme-inset-background-color': 'color-mod(var(--theme-background-color) shade(2%))',
 		'--theme-foreground-color': 'var(--light-theme-fg-color)',
 		'--theme-link-color': 'var(--light-theme-link-color)',
-		'--code-number-color': '#fca105',
+		'--code-number-color': '#f9730f',
 		'--code-function-color': 'var(--theme-link-color)',
 		'--code-string-color': '#00c8a7',
 		'--code-keyword-color': '#3da4ef',

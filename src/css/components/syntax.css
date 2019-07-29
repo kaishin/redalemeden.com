@@ -16,6 +16,7 @@ pre {
     color: var(--code-foreground-color);
     direction: ltr;
     hyphens: none;
+    font-size: 1rem;
     line-height: 1.375;
     margin: 2em 0;
     overflow: auto;

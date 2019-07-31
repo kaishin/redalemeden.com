@@ -122,6 +122,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.onPostBuild = async ({ graphql }) => {
   const siteQuery = await runQuery(graphql, feedOptions.siteQuery);
   const { site: { siteMetadata: { title, description, siteUrl, author, email } } } = siteQuery;
+  const imageRegex = /<img.*?src="(.*?)"/gi;
 
   // Main Feed
 
@@ -205,6 +206,7 @@ exports.onPostBuild = async ({ graphql }) => {
     const { node: { html, frontmatter, fields } } = i;
 
     let slug = fields.slug;
+    let imageMatch = imageRegex.exec(html);
 
     return {
       id: path.join(siteUrl, slug),
@@ -213,6 +215,7 @@ exports.onPostBuild = async ({ graphql }) => {
       slug: slug,
       datePublished: moment(frontmatter.date).toDate(),
       dateUpdated: moment(frontmatter.date).toDate(),
+      ...(imageMatch && { image: imageMatch[1] }),
       content: html
     };
   });
@@ -243,6 +246,7 @@ exports.onPostBuild = async ({ graphql }) => {
       date: item.datePublished,
       published: item.datePublished,
       content: item.content,
+      ...(item.image && { image: path.join(siteUrl, item.image) }),
       author: [
         {
           name: author,

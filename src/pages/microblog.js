@@ -66,7 +66,7 @@ export const microBlogFragment = graphql`
       date
       formattedDate: date(formatString: "HH:mm MMM DD, YYYY")
       title
-      type
+      excerpt
       tags
     }
     fields {

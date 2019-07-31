@@ -65,12 +65,11 @@ const feedOptions = {
           edges {
             node {
               html
-              rawMarkdownBody
               frontmatter {
                 date
                 formattedDate: date(formatString: "HH:mm MMM DD, YYYY")
                 title
-                type
+                excerpt
                 tags
               }
               fields {

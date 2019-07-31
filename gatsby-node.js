@@ -209,7 +209,7 @@ exports.onPostBuild = async ({ graphql }) => {
     return {
       id: path.join(siteUrl, slug),
       url: path.join(siteUrl, slug),
-      title: frontmatter.title || '',
+      title: frontmatter.title || frontmatter.excerpt || '',
       slug: slug,
       datePublished: moment(frontmatter.date).toDate(),
       dateUpdated: moment(frontmatter.date).toDate(),

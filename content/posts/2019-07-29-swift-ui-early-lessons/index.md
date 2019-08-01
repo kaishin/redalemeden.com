@@ -1,6 +1,6 @@
 ---
 date: 2019-08-02T01:05+02:00
-title: "Early Lessons with SwiftUI"
+title: "Early Lessons in Adopting SwiftUI"
 category: programming
 draft: false
 tags:

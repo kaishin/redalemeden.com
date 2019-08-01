@@ -2,6 +2,7 @@
 date: 2019-08-02T01:05+02:00
 title: "Early Lessons with SwiftUI"
 category: programming
+draft: false
 tags:
   - Swift
   - iOS

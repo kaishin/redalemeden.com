@@ -35,5 +35,5 @@ Here are some lessons I've learnt:
 
 * UIKit appearance helpers still work in SwiftUI. call them from within the `init()` method of the view when needed. For instance, this is the only method to remove the opaque background from a `List` as of now.
 
-* Keep your cool and stay hydrated.🥤
+* SwiftUI is still very rough around the edges, so keep your cool and stay hydrated.🥤
 

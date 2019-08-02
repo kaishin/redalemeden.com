@@ -121,6 +121,10 @@
 
   & a {
     @extend %inline-link-style;
+
+    & code {
+      text-decoration: underline;
+    }
   }
 
   /* Header Links */

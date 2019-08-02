@@ -12,9 +12,8 @@ tags:
 *[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html) 
 --- Apple platform developers interested in using SwiftUI in their projects.*
 
-I've been using SwiftUI day in and day out since the first beta.
-At work, we’re using it exclusively to build a non-trivial app---
-a bold move, but one that makes me like this job.
+We've been using SwiftUI day in and day out since the first beta to build a non-trivial app at work---
+a bold move, but one that makes me like my job.
 Here are some lessons I've learnt:
 
 * Stick to standard navigation. As unstable as the APIs are for the time being, this will spare you the layout and accessibility headaches that come with custom transitions.

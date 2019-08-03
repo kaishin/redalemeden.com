@@ -24,6 +24,7 @@
     "gatsby-remark-abbr": "^1.0.0",
     "gatsby-remark-autolink-headers": "^2.1.0",
     "gatsby-remark-copy-linked-files": "^2.1.0",
+    "gatsby-remark-embedder": "^1.1.2",
     "gatsby-remark-prismjs": "^3.3.0",
     "gatsby-remark-smartypants": "^2.1.0",
     "gatsby-source-filesystem": "^2.1.0",

@@ -36,6 +36,7 @@ module.exports = {
             }
           },
           'gatsby-remark-abbr',
+          'gatsby-remark-embedder',
           {
             resolve: 'gatsby-remark-autolink-headers',
             options: {

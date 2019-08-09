@@ -8,7 +8,7 @@
     "autoprefixer": "^9.6.0",
     "browserslist": "^4.6.3",
     "feed": "^3.0.0",
-    "gatsby": "^2.10.0",
+    "gatsby": "^2.13.0",
     "gatsby-cli": "^2.7.0",
     "gatsby-image": "^2.2.0",
     "gatsby-plugin-canonical-urls": "^2.1.0",

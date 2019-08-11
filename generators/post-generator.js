@@ -24,7 +24,12 @@ module.exports = (plop) => {
 
       // Parse tags as yaml array
       if (data.tags) {
-        data.tags = `\ntags:\n  - ${data.tags.split(',').join('\n  - ')}`;
+        data.tags = `\ntags:\n  - ${data.tags
+          .split(',')
+          .map(function(e) {
+            return e.trim();
+          })
+          .join('\n  - ')}`;
       }
 
       return [
@@ -62,7 +67,12 @@ module.exports = (plop) => {
       data.slug = date.toString();
 
       if (data.tags) {
-        data.tags = `\ntags:\n  - ${data.tags.split(',').join('\n  - ')}`;
+        data.tags = `\ntags:\n  - ${data.tags
+          .split(',')
+          .map(function(e) {
+            return e.trim();
+          })
+          .join('\n  - ')}`;
       }
 
       return [

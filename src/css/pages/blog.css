@@ -113,7 +113,7 @@
 
 .full-post-content {
   line-height: 1.6;
-  font-size: 1.125rem;
+  font-size: var(--blog-body-size);
 
   & strong {
     font-weight: 500;
@@ -131,6 +131,10 @@
     & code {
       text-decoration: line-through;
     }
+  }
+
+  & p {
+    margin: 1em 0;
   }
 
   /* Header Links */
@@ -172,6 +176,10 @@
         left: -1em;
         position: absolute;
       }
+    }
+
+    &:last-child {
+      margin-bottom: 1em;
     }
   }
 

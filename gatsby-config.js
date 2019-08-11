@@ -43,7 +43,12 @@ module.exports = {
               icon: '# '
             }
           },
-          'gatsby-remark-prismjs'
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              noInlineHighlight: true
+            }
+          }
         ]
       }
     },

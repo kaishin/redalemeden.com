@@ -1,11 +1,12 @@
-code[class*='language-'] {
-  background-color: var(--code-background-color);
+code {
+  background-color: color-mod(var(--code-background-color) shade(2%));
   border-radius: 0.3em;
   color: var(--code-foreground-color);
   display: inline-block;
   font-family: var(--monospaced-font);
-  padding: 0 0.5em;
+  font-size: 0.95em;
   font-weight: 400;
+  padding: 0 0.5em;
 }
 
 pre {

@@ -1,13 +1,14 @@
 :root {
-  --spacing-default: 1rem;
   --footer-padding: 2rem;
-  --header-top-spacing: 4rem;
   --grid-container-full-width: 60rem;
-  --sidebar-max-width: 22.5rem;
+  --header-top-spacing: 4rem;
+  --image-vertical-spacing: 2rem;
   --main-content-max-width: 40rem;
+  --sidebar-max-width: 22.5rem;
+  --spacing-default: 1rem;
+
   --main-container-padding: calc(var(--header-top-spacing) * 1.4);
   --sheet-margin-top: var(--main-container-padding);
-  --image-vertical-spacing: 2rem;
 }
 
 @custom-media --full-grid-container (width >= 60rem);

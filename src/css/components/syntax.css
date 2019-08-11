@@ -153,3 +153,36 @@ pre > code.highlight {
   background: color-mod(rgb(224, 145, 66) alpha(20%));
   background: linear-gradient(to right, rgba(224, 145, 66, .2) 70%, rgba(224, 145, 66, 0));
 }
+
+.gatsby-highlight-code-line {
+  background-color: rgba(0 0 0 / 5%));
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
+}
+
+
+.command-line-prompt {
+  border-right: none;
+  margin-right: 0;
+  letter-spacing: inherit;
+
+  & > span:before {
+    color: var(--code-comment-color);
+  }
+}
+
+.command-line-prompt > span[data-user]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] $";
+}
+
+.command-line-prompt > span[data-user="root"]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] #";
+}
+
+.command-line-prompt > span[data-prompt]:before {
+  content: attr(data-prompt);
+}

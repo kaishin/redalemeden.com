@@ -30,6 +30,27 @@
   }
 }
 
+.pagination-links {
+  padding: 2rem 0;
+
+  & a {
+    background-color: var(--code-background-color);
+    border-radius: 1rem;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: var(--link-transition);
+
+    &:hover {
+      background-color: color-mod(var(--code-background-color) shade(4%));
+    }
+
+    &:nth-child(2) {
+      margin-left: 1em;
+    }
+  }
+}
+
 .blog-intro {
   @extend %body-text;
   margin-bottom: 3rem;
@@ -59,7 +80,7 @@
 }
 
 .post-link {
-  transition: all 0.2s linear;
+  transition: var(--link-transition);
 
   &:any-link {
     text-decoration: none;

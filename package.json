@@ -9,6 +9,7 @@
     "browserslist": "^4.6.6",
     "feed": "^4.0.0",
     "gatsby": "^2.13.57",
+    "gatsby-awesome-pagination": "^0.3.4",
     "gatsby-cli": "^2.7.29",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-canonical-urls": "^2.1.2",

@@ -37,6 +37,7 @@ module.exports = {
 		'--blog-body-size': '1.125rem',
 		'--text-font': 'var(--font-rubik), system-ui',
 		'--monospaced-font': 'var(--font-fira), monospace',
+		'--link-transition': 'all 0.2s linear',
 		'--itunes-link-color': '#58a5ff',
 		'--itunes-line-color': 'color-mod(var(--itunes-link-color) alpha(60%))',
 		'--itunes-image-size': '90px',

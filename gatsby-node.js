@@ -1,6 +1,7 @@
 const path = require('path');
 const moment = require('moment');
 const { createFilePath } = require('gatsby-source-filesystem');
+const { paginate } = require('gatsby-awesome-pagination');
 const fs = require('fs-extra');
 const { Feed } = require('feed');
 const { feedOptions, runQuery, writeFile, getFileUpdatedDate } = require('./src/utils/feed-helpers');
@@ -9,6 +10,7 @@ const publicPath = './public';
 exports.createPages = ({ actions, graphql }) => {
   const { createPage, createRedirect } = actions;
   const blogPostTemplate = path.resolve('./src/templates/blog-post.js');
+  const blogIndexTemplate = path.resolve('./src/templates/blog-index.js');
   const microblogPostTemplate = path.resolve('./src/templates/microblog-post.js');
 
   createRedirect({
@@ -67,6 +69,21 @@ exports.createPages = ({ actions, graphql }) => {
       console.log(result.errors);
       reject(result.errors);
     }
+
+    const allPosts = result.data.allMarkdownRemark.edges.filter(({ node }) => {
+      return !/content\/microblog/.test(node.fileAbsolutePath);
+    });
+    const allMicroPosts = result.data.allMarkdownRemark.edges.filter(({ node }) => {
+      return /content\/microblog/.test(node.fileAbsolutePath);
+    });
+
+    paginate({
+      createPage,
+      items: allPosts,
+      component: blogIndexTemplate,
+      itemsPerPage: 10,
+      pathPrefix: '/blog'
+    });
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({

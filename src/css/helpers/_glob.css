@@ -1,3 +1,4 @@
 @import 'colors';
-@import 'layout.css';
-@import 'typography.css';
+@import 'layout';
+@import 'typography';
+@import 'animation';

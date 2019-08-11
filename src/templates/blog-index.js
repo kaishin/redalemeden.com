@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import Seo from '../components/seo';
 import Helmet from 'react-helmet';
+
+import Seo from '../components/seo';
 import DefaultLayout from '../components/layouts/default.js';
 import BlogHeader from '../components/blog/header';
 import PostMetadata from '../components/blog/post-metadata';
 
-class BlogPage extends React.Component {
+class BlogIndexPage extends React.Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark;
+    const { pageContext } = this.props;
+    const { previousPagePath, nextPagePath } = pageContext;
 
     return (
       <DefaultLayout>
@@ -35,6 +38,11 @@ class BlogPage extends React.Component {
               );
             })}
           </ol>
+
+          <div className="pagination-links">
+            {previousPagePath ? <Link to={previousPagePath}>&lsaquo; Newer</Link> : null}
+            {nextPagePath ? <Link to={nextPagePath}>Older &rsaquo;</Link> : null}
+          </div>
         </article>
       </DefaultLayout>
     );
@@ -42,10 +50,12 @@ class BlogPage extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query BlogIndexQuery {
+  query BlogIndexQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       filter: { frontmatter: { draft: { ne: true } }, fileAbsolutePath: { regex: "/content/posts/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
+      skip: $skip
+      limit: $limit
     ) {
       edges {
         node {
@@ -68,4 +78,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default BlogPage;
+export default BlogIndexPage;

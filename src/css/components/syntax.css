@@ -164,25 +164,26 @@ pre > code.highlight {
   border-left: 0.25em solid #f99;
 }
 
+.gatsby-highlight {
+  & .command-line-prompt {
+    border-right: none;
+    margin-right: 0;
+    letter-spacing: inherit;
 
-.command-line-prompt {
-  border-right: none;
-  margin-right: 0;
-  letter-spacing: inherit;
+    & > span:before {
+      color: var(--code-comment-color);
+    }
 
-  & > span:before {
-    color: var(--code-comment-color);
+    & > span[data-user]:before {
+      content: "[" attr(data-user) "@" attr(data-host) "] $";
+    }
+
+    & > span[data-user="root"]:before {
+      content: "[" attr(data-user) "@" attr(data-host) "] #";
+    }
+
+    & > span[data-prompt]:before {
+      content: attr(data-prompt);
+    }
   }
-}
-
-.command-line-prompt > span[data-user]:before {
-  content: "[" attr(data-user) "@" attr(data-host) "] $";
-}
-
-.command-line-prompt > span[data-user="root"]:before {
-  content: "[" attr(data-user) "@" attr(data-host) "] #";
-}
-
-.command-line-prompt > span[data-prompt]:before {
-  content: attr(data-prompt);
 }

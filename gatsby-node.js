@@ -1,4 +1,5 @@
 const path = require('path');
+const url = require('url');
 const moment = require('moment');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { paginate } = require('gatsby-awesome-pagination');
@@ -152,8 +153,8 @@ exports.onPostBuild = async ({ graphql }) => {
     let slug = fields.slug;
 
     return {
-      id: path.join(siteUrl, slug),
-      url: path.join(siteUrl, slug),
+      id: url.resolve(siteUrl, slug),
+      url: url.resolve(siteUrl, slug),
       title: frontmatter.title,
       slug: slug,
       datePublished: moment(frontmatter.date).toDate(),
@@ -170,11 +171,11 @@ exports.onPostBuild = async ({ graphql }) => {
     link: siteUrl,
     id: siteUrl,
     copyright: 'All Rights reserved 2013-2019, Reda Lemeden',
-    favicon: path.join(siteUrl, 'favicon.ico'),
-    image: path.join(siteUrl, 'icon-touch.png'),
+    favicon: url.resolve(siteUrl, 'favicon.ico'),
+    image: url.resolve(siteUrl, 'icon-touch.png'),
     feedLinks: {
-      rss: path.join(siteUrl, 'feed.xml'),
-      json: path.join(siteUrl, 'feed.json')
+      rss: url.resolve(siteUrl, 'feed.xml'),
+      json: url.resolve(siteUrl, 'feed.json')
     },
     author: {
       name: author,
@@ -185,8 +186,8 @@ exports.onPostBuild = async ({ graphql }) => {
   items.forEach((item) => {
     newFeed.addItem({
       title: item.title,
-      id: path.join(siteUrl, item.slug),
-      link: path.join(siteUrl, item.slug),
+      id: url.resolve(siteUrl, item.slug),
+      link: url.resolve(siteUrl, item.slug),
       date: item.datePublished,
       published: item.datePublished,
       content: item.content,
@@ -226,8 +227,8 @@ exports.onPostBuild = async ({ graphql }) => {
     let imageMatch = imageRegex.exec(html);
 
     return {
-      id: path.join(siteUrl, slug),
-      url: path.join(siteUrl, slug),
+      id: url.resolve(siteUrl, slug),
+      url: url.resolve(siteUrl, slug),
       title: frontmatter.title || frontmatter.excerpt || '',
       slug: slug,
       datePublished: moment(frontmatter.date).toDate(),
@@ -240,14 +241,14 @@ exports.onPostBuild = async ({ graphql }) => {
   let microBlogFeed = new Feed({
     title: 'Wide Gamut',
     description: "Reda Lemeden's homebrewed micro-blog.",
-    link: path.join(siteUrl, 'widegamut'),
-    id: path.join(siteUrl, 'widegamut'),
+    link: url.resolve(siteUrl, 'widegamut'),
+    id: url.resolve(siteUrl, 'widegamut'),
     copyright: 'All Rights reserved 2013-2019, Reda Lemeden',
-    favicon: path.join(siteUrl, 'favicon.ico'),
-    image: path.join(siteUrl, 'icon-touch.png'),
+    favicon: url.resolve(siteUrl, 'favicon.ico'),
+    image: url.resolve(siteUrl, 'icon-touch.png'),
     feedLinks: {
-      rss: path.join(siteUrl, 'microblog.xml'),
-      json: path.join(siteUrl, 'microblog.json')
+      rss: url.resolve(siteUrl, 'microblog.xml'),
+      json: url.resolve(siteUrl, 'microblog.json')
     },
     author: {
       name: author,
@@ -258,12 +259,12 @@ exports.onPostBuild = async ({ graphql }) => {
   micropostItems.forEach((item) => {
     microBlogFeed.addItem({
       title: item.title,
-      id: path.join(siteUrl, item.slug),
-      link: path.join(siteUrl, item.slug),
+      id: url.resolve(siteUrl, item.slug),
+      link: url.resolve(siteUrl, item.slug),
       date: item.datePublished,
       published: item.datePublished,
       content: item.content,
-      ...(item.image && { image: path.join(siteUrl, item.image) }),
+      ...(item.image && { image: url.resolve(siteUrl, item.image) }),
       author: [
         {
           name: author,

@@ -58,8 +58,8 @@ const feedOptions = {
       {
         allMarkdownRemark(
           filter: { fileAbsolutePath: { regex: "/content/microblog/" },
-                    frontmatter: { date: { gt: "2019-07-20T00:00+02:00" }}
-                  },
+                    frontmatter: { date: { gt: "2019-07-20T00:00+02:00" }}},
+          sort: {order: DESC, fields: [frontmatter___date]}, 
           limit: 100
           ) {
           edges {

@@ -241,8 +241,8 @@ exports.onPostBuild = async ({ graphql }) => {
   let microBlogFeed = new Feed({
     title: 'Wide Gamut',
     description: "Reda Lemeden's homebrewed micro-blog.",
-    link: url.resolve(siteUrl, 'widegamut'),
-    id: url.resolve(siteUrl, 'widegamut'),
+    link: url.resolve(siteUrl, 'microblog'),
+    id: 'widegamut',
     copyright: 'All Rights reserved 2013-2019, Reda Lemeden',
     favicon: url.resolve(siteUrl, 'favicon.ico'),
     image: url.resolve(siteUrl, 'icon-touch.png'),

@@ -132,6 +132,21 @@
   }
 }
 
+.footnotes {
+  font-size: 0.9em;
+  margin-top: 2rem;
+
+  & p {
+    display: inline;
+  }
+
+  & hr {
+    background: rgba(0 0 0 / 10%);
+    border: 0;
+    height: 1px;
+  }
+}
+
 .full-post-content {
   line-height: 1.6;
   font-size: var(--blog-body-size);
@@ -241,21 +256,6 @@
     font-size: 0.95rem;
     font-weight: 500;
     font-style: italic;
-  }
-
-  & .footnotes {
-    font-size: 0.9em;
-    margin-top: 2rem;
-
-    & p {
-      display: inline;
-    }
-
-    & hr {
-      background: rgba(0 0 0 / 10%);
-      border: 0;
-      height: 1px;
-    }
   }
 
   & sup a:any-link {

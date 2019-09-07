@@ -45,12 +45,6 @@ const IndexPage = ({ data }) => (
           <h5 className="column-heading">Recent Articles</h5>
           <ArticleList articles={data.recentArticles.list} />
         </div>
-
-        <div className="column">
-          <h5 className="column-heading">Podcasts</h5>
-          <PodcastList podcasts={data.recentPodcasts.list} />
-          <ol className="podcast-list" />
-        </div>
       </div>
     </section>
   </DefaultLayout>

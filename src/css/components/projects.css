@@ -1,15 +1,14 @@
 .project-cell {
+  mask-image: radial-gradient(white, black);
   background-color: black;
   border-radius: 1rem;
   flex: 0 1 280px;
   list-style-type: none;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
-  box-shadow: 0 10px 20px rgba(0 0 0 / 20%);
 
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0 0 0 / 50%);
   }
 
   & .year-label {

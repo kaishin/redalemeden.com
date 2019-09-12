@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby';
 import DefaultLayout from '../components/layouts/default.js';
 import ProjectList from '../components/project/project-list.js';
 import ArticleList from '../components/article-list.js';
-import PodcastList from '../components/podcast-list.js';
 import Seo from '../components/seo';
 import Helmet from 'react-helmet';
 

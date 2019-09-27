@@ -230,6 +230,7 @@ exports.onPostBuild = async ({ graphql }) => {
       id: url.resolve(siteUrl, slug),
       url: url.resolve(siteUrl, slug),
       title: frontmatter.title || frontmatter.excerpt || '',
+      ...(frontmatter.excerpt && { excerpt: frontmatter.excerpt }),
       slug: slug,
       tags: frontmatter.tags,
       datePublished: moment(frontmatter.date).toDate(),
@@ -266,7 +267,10 @@ exports.onPostBuild = async ({ graphql }) => {
       published: item.datePublished,
       content: item.content,
       ...(item.image && { image: url.resolve(siteUrl, item.image) }),
-      extensions: [ { name: 'tags', objects: item.tags } ],
+      extensions: [
+        { name: 'tags', objects: item.tags || [] },
+        { name: 'excerpt', objects: item.excerpt || item.title }
+      ],
       author: [
         {
           name: author,

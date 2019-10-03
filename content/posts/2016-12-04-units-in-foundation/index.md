@@ -5,11 +5,13 @@ category: programming
 tags:
   - Swift
   - Foundation
+audience: "people interested in the Swift programming language"
 ---
 
-*[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html) --- People interested in the Swift programming language. [Literate Programming](http://www.literateprogramming.com/) --- All code snippets below are written in __Swift 3.0__.*
 
-Starting iOS 10 and macOS 10.12, *Foundation* supports units and measurements out of the box, in the form of [(NS)Unit][unit] and [(NS)Measurement][measurement] respectively.
+Starting iOS 10 and macOS 10.12, *Foundation* supports units and measurements out of the box, in the form of [(NS)Unit][unit] and [(NS)Measurement][measurement] respectively. Let's take a look at how they work.
+
+Note: All code snippets below are written in __Swift 3.0__.
 
 To get started, let's define a measurement. To do that, you have to pass a  *value* and a *unit* to the initializer:
 

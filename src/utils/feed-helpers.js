@@ -48,6 +48,7 @@ const feedOptions = {
               frontmatter {
                 date
                 title
+                audience
               }
             }
           }

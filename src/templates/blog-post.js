@@ -28,8 +28,15 @@ class BlogPostTemplate extends React.Component {
           </header>
 
           <section className="full-post-content">
+            {post.frontmatter.audience && (
+              <p class="assumed-audience">
+                This post was written for {post.frontmatter.audience}.{' '}
+                <small>
+                  <a href="/microblog/post-1570576215962">What's this?</a>
+                </small>
+              </p>
+            )}
             <div className="content-wrapper" dangerouslySetInnerHTML={{ __html: post.html }} />
-
             <div className="feedback-box">
               Have feedback about this article? Drop me a line via {' '}
               <a href="https://widegamut.club/@kaishin">Mastodon</a>, <a href="https://twitter.com/kaishin">Twitter</a>,
@@ -58,6 +65,7 @@ export const pageQuery = graphql`
         date
         category
         tags
+        audience
         formattedDate: date(formatString: "MMM D, YYYY")
       }
     }

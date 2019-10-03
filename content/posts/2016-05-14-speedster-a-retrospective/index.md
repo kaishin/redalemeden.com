@@ -6,6 +6,7 @@ tags:
   - Product
   - macOS
   - App
+audience: "people who have been following my work as a Mac developer"
 ---
 
 Last year, I set to build an Internet speed testing app for OS X. Between a full-time job and summer vacations, it took me about 6 months to wrap up a 1.0 using the [SpeedOfMe] free-while-in-beta API. [Speedster] was born.

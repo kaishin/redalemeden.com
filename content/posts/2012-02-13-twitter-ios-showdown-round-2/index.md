@@ -8,6 +8,7 @@ tags:
   - Mobile
   - Twitter
   - iOS
+audience: "anyone interested in interaction design heuristics"
 ---
 
 It has been almost a year since the [original showdown] pitting the user interfaces of the official Twitter client and Tapbots' Tweetbot. Given that the latter got a major update last week, it's a good opportunity to give the showdown another go.

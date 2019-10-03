@@ -6,10 +6,8 @@ tags:
   - Privacy
   - Internet
   - Web
+audience: "everyone, especially those fed up with the privacy-infringing practices of big tech and centralized social networks"
 ---
-
-*[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html)
---- Everyone, especially those fed up with the privacy-infringing practices of big tech and centralized social networks.*
 
 There is little doubt that we, as individuals, need to do much more to stand up to the incessant infringement of our right to privacy at the hands of large tech corporations and VC-backed startups alike. Their unabating encroachment on our daily lives can only be stopped if we pour our hearts and souls into conceiving, building, and growing decentralized alternatives using open standards and protocols.
 

@@ -6,9 +6,8 @@ tags:
   - Writing
   - Meta
   - Web Design
+audience: "people who have been following my work and/or are interested in independent blogging"
 ---
-
-*[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html) --- People who have been following my work and/or are interested in independent blogging.*
 
 Today marks a new beginning for this blog. After a long hiatus, I am finally back to writing, and I couldn’t be happier about it.
 

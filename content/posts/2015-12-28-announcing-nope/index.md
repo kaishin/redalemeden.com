@@ -8,6 +8,7 @@ tags:
   - Safari
   - Ads
   - Extension
+audience: "people interested in content blockers and privacy"
 ---
 
 ![Nope Icon](nope-safari-icon.jpg)

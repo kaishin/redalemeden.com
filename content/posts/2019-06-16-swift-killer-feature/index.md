@@ -5,9 +5,8 @@ category: programming
 tags:
   - Swift
   - Apple
+audience: "Apple platform developers interested in Swift and its adoption in the community"
 ---
-
-*[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html) --- App developers and designers woking on Apple platforms.*
 
 Since its release 5 years ago,
 Swift has matured a great deal as a programming language,

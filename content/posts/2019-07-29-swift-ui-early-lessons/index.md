@@ -7,10 +7,8 @@ tags:
   - Swift
   - iOS
   - SwiftUI
+audience: "Apple platform developers interested in using SwiftUI in their projects"
 ---
-
-*[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html) 
---- Apple platform developers interested in using SwiftUI in their projects.*
 
 We've been using SwiftUI day in and day out since the first beta to build a non-trivial app at work---
 a bold move, but one that makes me like my job.

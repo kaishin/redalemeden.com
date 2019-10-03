@@ -6,6 +6,7 @@ tags:
   - Product
   - macOS
   - App
+audience: "people who have been following my work as a Mac developer"
 ---
 
 I'm pleased to announce that [IPinator] is *finally* [live on the App Store][appstore]. It's a utility app and Notification Center widget that displays your external IP address and locates it on a map for easy access during local development, VPN setup, etc.

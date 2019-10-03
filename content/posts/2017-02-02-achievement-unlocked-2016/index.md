@@ -4,9 +4,8 @@ title: "Achievement Unlocked: 2016 Edition"
 category: journal
 tags:
   - Productivity
+audience: "people who have been following my work and/or are interested in independent blogging"
 ---
-
-*[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html) --- People who have been following my work and/or are interested in independent blogging.*
 
 Between a new job, a house move, and a flurry of depressing news, my productivity took a hit in 2016. I was nevertheless able to do some fun things on the side:
 

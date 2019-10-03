@@ -6,6 +6,7 @@ tags:
   - Web
   - JavaScript
   - React
+audience: "iOS developers curious about React Native"
 ---
 
 Facebook open-sourced [React Native] last week, so I spent a couple of days toying with it. Here are my initial thoughts, as someone who works with both iOS and Web development:

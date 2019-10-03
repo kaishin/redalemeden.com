@@ -258,11 +258,6 @@
     font-style: italic;
   }
 
-  & sup a:any-link {
-    border: none;
-    font-weight: 500;
-  }
-
   & img {
     --outdent: 5%;
     margin-left: calc(var(--outdent) * -1);
@@ -296,18 +291,16 @@
     }
   }
 
-  & .content-wrapper > p:first-of-type > em {
-    @extend %quote-style;
-    display: block;
-    font-size: 0.95rem;
-    padding: 1rem;
+  & .assumed-audience {
+    font-size: 0.98rem;
+    font-style: italic;
 
-    & a {
-      display: inline-block;
+    & small {
+      font-size: 0.85rem;
     }
   }
 
-  & .content-wrapper > p:nth-child(2) {
+  & .content-wrapper > p:first-of-type {
     background: transparent;
     border: none;
     font-size: 1.1em;
@@ -323,5 +316,10 @@
     font-style: italic;
     margin: 3rem auto 1rem;
     padding: 0.6rem 0;
+  }
+
+  & sup a:any-link {
+    border: none;
+    font-weight: 500;
   }
 }

@@ -152,6 +152,13 @@ exports.onPostBuild = async ({ graphql }) => {
 
     let slug = fields.slug;
 
+    let body = frontmatter.audience
+      ? '<p><em>This post was written for ' +
+        frontmatter.audience +
+        '. <a href="https://redalemeden.com/microblog/post-1570576215962">What\'s this?</a></em></p>' +
+        html
+      : html;
+
     return {
       id: url.resolve(siteUrl, slug),
       url: url.resolve(siteUrl, slug),
@@ -159,7 +166,7 @@ exports.onPostBuild = async ({ graphql }) => {
       slug: slug,
       datePublished: moment(frontmatter.date).toDate(),
       dateUpdated: moment(fields.dateUpdated).toDate(),
-      content: html
+      content: body
     };
   });
 

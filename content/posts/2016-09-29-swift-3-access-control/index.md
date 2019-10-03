@@ -4,6 +4,7 @@ title: "Swift 3 Access Control"
 category: programming
 tags:
   - Swift
+audience: "people interested in the Swift programming language"
 ---
 
 Swift 3 introduced finer-grained control over what can access what in your code.

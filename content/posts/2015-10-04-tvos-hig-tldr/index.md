@@ -6,6 +6,7 @@ tags:
   - tvOS
   - Apple
   - HIG
+audience: "people interested in designing or building apps for tvOS"
 ---
 
 I often joke about the [HIG] being an acronym for *Highly Ignored Guidelines*.

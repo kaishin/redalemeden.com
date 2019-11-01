@@ -7,7 +7,7 @@
   --sidebar-max-width: 22.5rem;
   --spacing-default: 1rem;
 
-  --main-container-padding: calc(var(--header-top-spacing) * 1.4);
+  --main-container-padding: calc(var(--header-top-spacing) * 1.6);
   --sheet-margin-top: var(--main-container-padding);
 }
 
@@ -16,16 +16,8 @@
 @custom-media --full-width-image (width < 450px);
 
 %sheet {
-  background-color: var(--light-theme-bg-color);
-  border-top-left-radius: 1rem;
-  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.35);
-  color: var(--light-theme-fg-color);
-  transform: translateY(20px);
-  height: calc(100% - 20px);
-
-  @media (--narrow-grid-container) {
-    border-top-left-radius: 0;
-  }
+  background-color: var(--theme-background-color);
+  color: var(--theme-foreground-color);
 }
 
 %gradient-background {

@@ -12,7 +12,7 @@
 
 %body-text {
   font-size: 1rem;
-  color: var(--light-theme-fg-color);
+  color: var(--theme-foreground-color);
   line-height: 1.5;
   letter-spacing: 0.05em;
 }
@@ -35,16 +35,16 @@
 
 %inline-link-style {
   text-decoration: none;
-  border-bottom: 1px solid color-mod(var(--theme-link-color) alpha(40%));
+  border-bottom: 1px solid var(--theme-link-border-bottom-color);
   transition: all 0.2s;
 
   &:hover,
   &:focus {
-    background-color: color-mod(var(--theme-link-color) alpha(8%));
+    background-color: var(--theme-link-hover-background-color);
     border-bottom: 1px solid var(--theme-link-color);
   }
 
   &:visited {
-    color: color-mod(var(--theme-link-color) shade(40%));
+    color: var(--theme-visited-link-color);
   }
 }

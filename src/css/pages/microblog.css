@@ -27,7 +27,7 @@
 
   & .permalink {
     text-decoration: none;
-    color: gray(50);
+    color: var(--theme-link-color);
 
     &:hover {
       text-decoration: underline;

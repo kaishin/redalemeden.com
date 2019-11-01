@@ -7,7 +7,7 @@ table {
   margin: var(--table-spacing) 0;
   max-width: 100%;
   min-width: 15rem;
-  padding: calc(var(--table-spacing) / 3) calc(var(--table-spacing) * 2);
+  padding: var(--table-spacing) calc(var(--table-spacing) * 2);
 
   %padded-cell {
     padding-bottom: var(--table-spacing);
@@ -23,11 +23,18 @@ table {
     border-bottom: 2px solid color-mod(var(--theme-foreground-color) alpha(10%));
     font-weight: 600;
     text-align: left;
+    padding-bottom: var(--table-spacing);
+    padding-top: var(--table-spacing);
+    padding-left: var(--table-spacing);
+
+    &:not(:last-child) {
+      padding-right: var(--table-spacing);
+    }
   }
 
   & td {
     @extend %padded-cell;
-    border-bottom: 1px solid color-mod(var(--theme-foreground-color) alpha(10%));
+    border-bottom: 1px solid var(--code-background-color);
     padding-bottom: calc(var(--table-spacing) / 2);
     padding-top: calc(var(--table-spacing) / 2);
   }

@@ -9,15 +9,6 @@
   }
 }
 
-%quote-style {
-  background: linear-gradient(90deg, rgba(0 0 0 / 2%), transparent);
-  border-left: 2px solid gray(80);
-  color: rgba(0, 0, 0, 0.6);
-  margin: 2em 0;
-  overflow: hidden;
-  padding-left: 0.8em;
-}
-
 .blog-content {
   margin-bottom: 2rem;
   max-width: var(--main-content-max-width);
@@ -34,7 +25,7 @@
   padding: 2rem 0;
 
   & a {
-    background-color: var(--code-background-color);
+    background-color: color-mod(var(--theme-link-color) alpha(5%));
     border-radius: 1rem;
     display: inline-block;
     padding: 0.5em 1em;
@@ -42,7 +33,7 @@
     transition: var(--link-transition);
 
     &:hover {
-      background-color: color-mod(var(--code-background-color) shade(4%));
+      background-color: color-mod(var(--theme-link-color) alpha(15%));
     }
 
     &:nth-child(2) {
@@ -54,7 +45,7 @@
 .blog-intro {
   @extend %body-text;
   margin-bottom: 3rem;
-  color: gray(50);
+  color: var(--theme-secondary-foreground-color);
 }
 
 .post-title {
@@ -97,15 +88,15 @@
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 500;
-  border-bottom: 1px solid gray(80);
+  border-bottom: 1px solid color-mod(var(--theme-tertiary-foreground-color) alpha(50%));
   margin-bottom: 0.8rem;
   letter-spacing: 0.05em;
-  color: gray(30);
+  color: var(--theme-tertiary-foreground-color);
   display: inline-block;
 }
 
 .post-metadata {
-  color: gray(50);
+  color: var(--theme-secondary-foreground-color);
   font-size: 0.8rem;
   letter-spacing: 0.07em;
   line-height: 1.5;
@@ -150,6 +141,7 @@
 .full-post-content {
   line-height: 1.6;
   font-size: var(--blog-body-size);
+  letter-spacing: 0.02em;
 
   & strong {
     font-weight: 500;
@@ -207,7 +199,7 @@
       margin-bottom: 0.4em;
 
       &::before {
-        color: rgba(0 0 0 / 20%);
+        color: var(--theme-bullet-dash-color);
         content: '–';
         left: -1em;
         position: absolute;
@@ -220,7 +212,12 @@
   }
 
   & blockquote {
-    @extend %quote-style;
+    background: linear-gradient(90deg, var(--theme-quote-background-color), transparent);
+    border-left: 2px solid var(--theme-quote-border-color);
+    color: var(--theme-quote-foreground-color);
+    margin: 2em 0;
+    overflow: hidden;
+    padding: 0.5em 1em 0.5em 1.5em;
 
     & p {
       margin: 0.6em auto;
@@ -229,6 +226,7 @@
 
   & :--heading {
     margin: 1rem 0;
+    font-weight: 500;
   }
 
   & h2 {
@@ -310,8 +308,8 @@
   }
 
   & .feedback-box {
-    border-top: 1px solid rgba(0 0 0 / 10%);
-    color: gray(40);
+    border-top: 1px solid var(--code-background-color);
+    color: var(--theme-tertiary-foreground-color);
     font-size: 0.9rem;
     font-style: italic;
     margin: 3rem auto 1rem;

@@ -1,17 +1,19 @@
 ---
 date: 2019-11-25T09:25+01:00
 title: "Launching SwiftUI Directory"
-category:
+category: journal
 tags:
   - Swift
   - SwiftUI
   - OSS
-audience: "SwiftUI developers struggling to find open source libraries to solve specific problems."
+audience: "SwiftUI developers having a hard time finding the right open source library"
 ---
 
 Today I am happy to launch [SwiftUI Directory],
 a curated list of open-source SwiftUI libraries that are painstakingly scouted,
 categorized, and tagged for anyone who’s looking to solve a particular problem within the nascent framework.
+
+![SwiftUI Directory](header-image.png)
 
 SwiftUI represents an exciting opportunity for the open-source ecosystem around Apple platforms.
 An opportunity that many good samaritans are jumping on to fill the gaps of SwiftUI’s current embryonic state.

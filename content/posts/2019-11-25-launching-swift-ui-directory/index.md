@@ -2,7 +2,6 @@
 date: 2019-11-25T09:25+01:00
 title: "Launching SwiftUI Directory"
 category:
-draft: true
 tags:
   - Swift
   - SwiftUI

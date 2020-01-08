@@ -2,10 +2,10 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
-import Seo from '../components/seo';
-import DefaultLayout from '../components/layouts/default.js';
-import BlogHeader from '../components/blog/header';
-import PostMetadata from '../components/blog/post-metadata';
+import Seo from '../seo';
+import DefaultLayout from '../layouts/default.js';
+import BlogHeader from '../blog/header';
+import PostMetadata from '../blog/post-metadata';
 
 class BlogIndexPage extends React.Component {
   render() {

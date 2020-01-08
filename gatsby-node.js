@@ -8,45 +8,45 @@ const { Feed } = require('feed');
 const { feedOptions, runQuery, writeFile, getFileUpdatedDate } = require('./src/utils/feed-helpers');
 const publicPath = './public';
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage, createRedirect } = actions;
-  const blogPostTemplate = path.resolve('./src/templates/blog-post.js');
-  const blogIndexTemplate = path.resolve('./src/templates/blog-index.js');
-  const microblogPostTemplate = path.resolve('./src/templates/microblog-post.js');
+  const blogPostTemplate = path.resolve('./src/components/templates/blog-post.js');
+  const blogIndexTemplate = path.resolve('./src/components/templates/blog-index.js');
+  const microblogPostTemplate = path.resolve('./src/components/templates/microblog-post.js');
 
   createRedirect({
     fromPath: '/blog/2011/skeuomorphism-in-ui-design',
     toPath: '/blog/2011/on-skeuomorphism',
-    isPermanent: true
+    isPermanent: true,
   });
   createRedirect({
     fromPath: '/blog/2011/thoughts-on-scrollbars-in-lion',
     toPath: '/blog/2011/scrollbars-in-osx-lion',
-    isPermanent: true
+    isPermanent: true,
   });
   createRedirect({
     fromPath: '/blog/2011/invisible-interfaces',
     toPath: '/blog/2011/invisible-computers',
-    isPermanent: true
+    isPermanent: true,
   });
   createRedirect({
     fromPath: '/blog/2011/2011-ui-design',
     toPath: '/blog/2011/year-in-interface-design',
-    isPermanent: true
+    isPermanent: true,
   });
   createRedirect({
     fromPath: '/blog/2011/twitter-client-showdown',
     toPath: '/blog/2011/twitter-ios-showdown',
-    isPermanent: true
+    isPermanent: true,
   });
   createRedirect({
     fromPath: '/blog/2012/twitter-client-showdown-round-2',
     toPath: '/blog/2012/twitter-ios-showdown-round-2',
-    isPermanent: true
+    isPermanent: true,
   });
   createRedirect({ fromPath: '/blog/2015/writing', toPath: '/blog/2015/back-to-writing', isPermanent: true });
 
-  return graphql(`{
+  const result = await graphql(`{
     allMarkdownRemark(
       filter: { frontmatter: { draft: { ne: true } } }
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -65,35 +65,36 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-    }`).then((result) => {
-    if (result.errors) {
-      console.log(result.errors);
-      reject(result.errors);
-    }
+    }`);
 
-    const allPosts = result.data.allMarkdownRemark.edges.filter(({ node }) => {
-      return !/content\/microblog/.test(node.fileAbsolutePath);
-    });
-    const allMicroPosts = result.data.allMarkdownRemark.edges.filter(({ node }) => {
-      return /content\/microblog/.test(node.fileAbsolutePath);
-    });
+  if (result.errors) {
+    reporter.panicOnBuild('Error while running GraphQL query.');
+    return;
+  }
 
-    paginate({
-      createPage,
-      items: allPosts,
-      component: blogIndexTemplate,
-      itemsPerPage: 10,
-      pathPrefix: '/blog'
-    });
+  const allPosts = result.data.allMarkdownRemark.edges.filter(({ node }) => {
+    return !/content\/microblog/.test(node.fileAbsolutePath);
+  });
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.fields.slug,
-        component: /content\/microblog/.test(node.fileAbsolutePath) ? microblogPostTemplate : blogPostTemplate,
-        context: {
-          slug: node.fields.slug
-        }
-      });
+  const allMicroPosts = result.data.allMarkdownRemark.edges.filter(({ node }) => {
+    return /content\/microblog/.test(node.fileAbsolutePath);
+  });
+
+  paginate({
+    createPage,
+    items: allPosts,
+    component: blogIndexTemplate,
+    itemsPerPage: 10,
+    pathPrefix: '/blog',
+  });
+
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: /content\/microblog/.test(node.fileAbsolutePath) ? microblogPostTemplate : blogPostTemplate,
+      context: {
+        slug: node.fields.slug,
+      },
     });
   });
 };
@@ -117,14 +118,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       node,
       name: 'slug',
-      value: customPath
+      value: customPath,
     });
 
     if (isPost) {
       createNodeField({
         node,
         name: 'dateUpdated',
-        value: getFileUpdatedDate(node.fileAbsolutePath)
+        value: getFileUpdatedDate(node.fileAbsolutePath),
       });
     }
   } else if (node.internal.mediaType === `image/gif`) {
@@ -166,7 +167,7 @@ exports.onPostBuild = async ({ graphql }) => {
       slug: slug,
       datePublished: moment(frontmatter.date).toDate(),
       dateUpdated: moment(fields.dateUpdated).toDate(),
-      content: body
+      content: body,
     };
   });
 
@@ -177,17 +178,17 @@ exports.onPostBuild = async ({ graphql }) => {
     description: "Reda Lemeden's main blog",
     link: siteUrl,
     id: 'unredacted',
-    copyright: 'All Rights reserved 2013-2019, Reda Lemeden',
+    copyright: 'All Rights reserved 2013-2020, Reda Lemeden',
     favicon: url.resolve(siteUrl, 'favicon.ico'),
     image: url.resolve(siteUrl, 'icon-touch.png'),
     feedLinks: {
       rss: url.resolve(siteUrl, 'feed.xml'),
-      json: url.resolve(siteUrl, 'feed.json')
+      json: url.resolve(siteUrl, 'feed.json'),
     },
     author: {
       name: author,
-      email: email
-    }
+      email: email,
+    },
   });
 
   items.forEach((item) => {
@@ -202,16 +203,16 @@ exports.onPostBuild = async ({ graphql }) => {
         {
           name: author,
           email: email,
-          link: siteUrl
-        }
-      ]
+          link: siteUrl,
+        },
+      ],
     });
   });
 
   newFeed.addContributor({
     name: author,
     email: email,
-    link: siteUrl
+    link: siteUrl,
   });
 
   await writeFile(path.join(publicPath, 'feed.json'), newFeed.json1(), 'utf8').catch((r) => {
@@ -243,7 +244,7 @@ exports.onPostBuild = async ({ graphql }) => {
       datePublished: moment(frontmatter.date).toDate(),
       dateUpdated: moment(frontmatter.date).toDate(),
       ...(imageMatch && { image: imageMatch[1] }),
-      content: html
+      content: html,
     };
   });
 
@@ -257,12 +258,12 @@ exports.onPostBuild = async ({ graphql }) => {
     image: url.resolve(siteUrl, 'icon-touch.png'),
     feedLinks: {
       rss: url.resolve(siteUrl, 'microblog.xml'),
-      json: url.resolve(siteUrl, 'microblog.json')
+      json: url.resolve(siteUrl, 'microblog.json'),
     },
     author: {
       name: author,
-      email: email
-    }
+      email: email,
+    },
   });
 
   micropostItems.forEach((item) => {
@@ -276,22 +277,22 @@ exports.onPostBuild = async ({ graphql }) => {
       ...(item.image && { image: url.resolve(siteUrl, item.image) }),
       extensions: [
         { name: 'tags', objects: item.tags || [] },
-        { name: 'excerpt', objects: item.excerpt || item.title }
+        { name: 'excerpt', objects: item.excerpt || item.title },
       ],
       author: [
         {
           name: author,
           email: email,
-          link: siteUrl
-        }
-      ]
+          link: siteUrl,
+        },
+      ],
     });
   });
 
   microBlogFeed.addContributor({
     name: author,
     email: email,
-    link: siteUrl
+    link: siteUrl,
   });
 
   await writeFile(path.join(publicPath, 'microblog.json'), microBlogFeed.json1(), 'utf8').catch((r) => {

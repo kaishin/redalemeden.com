@@ -1,9 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Seo from '../components/seo';
-import DefaultLayout from '../components/layouts/default';
-import Micropost from '../components/microblog/micropost';
-import MicroblogHeader from '../components/microblog/header';
+import Seo from '../seo';
+import DefaultLayout from '../layouts/default';
+import Micropost from '../microblog/micropost';
+import MicroblogHeader from '../microblog/header';
 import { graphql } from 'gatsby';
 
 class MicroBlogPostTemplate extends React.Component {

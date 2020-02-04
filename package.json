@@ -56,14 +56,12 @@
     "shallow-compare": "^1.2.2",
     "typeface-rubik": "^0.0.72"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "dev": "gatsby develop --host 0.0.0.0",
     "start": "npm run dev",
     "generate": "plop --plopfile ./generators/plopfile.js"
   },

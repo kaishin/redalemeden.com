@@ -27,7 +27,7 @@ class MicroBlogPostTemplate extends React.Component {
       <DefaultLayout>
         <Helmet bodyAttributes={{ class: 'microblog-page' }} />
 
-        <Seo title={title} description={description} keywords={post.frontmatter.tags} />
+        <Seo title={title} description={description} keywords={post.frontmatter.tags ? post.frontmatter.tags : []} />
         <section className="content blog-content">
           <MicroblogHeader />
           <Micropost post={post} />

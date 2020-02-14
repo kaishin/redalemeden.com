@@ -30,9 +30,13 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-twitter-cards',
+            resolve: 'gatsby-remark-social-cards',
             options: {
-              author: 'Mestapha',
+              author: 'Reda Lemeden (@kaishin)',
+              subtitleFontSize: 50,
+              fontStyle: 'sans-serif',
+              background: '#4a20ac',
+              fontFile: require.resolve('./assets/rubik-bold.ttf'),
             },
           },
           {

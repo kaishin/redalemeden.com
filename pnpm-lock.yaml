@@ -27,11 +27,11 @@ dependencies:
   gatsby-remark-embedder: 1.7.0_gatsby@2.18.18
   gatsby-remark-prismjs: 3.3.29_gatsby@2.18.18+prismjs@1.18.0
   gatsby-remark-smartypants: 2.1.19_gatsby@2.18.18
-  gatsby-remark-twitter-cards: 0.2.0_gatsby@2.18.18
   gatsby-source-filesystem: 2.1.43_gatsby@2.18.18
   gatsby-transformer-remark: 2.6.45_gatsby@2.18.18
   gatsby-transformer-sharp: 2.3.9_e5e5d7203e35f46b42f92d6ad16b87ee
   gatsby-transformer-yaml: 2.2.20_gatsby@2.18.18
+  jimp: 0.6.4
   lodash: 4.17.15
   minimatch: 3.0.4
   mitt: 1.2.0
@@ -50,6 +50,7 @@ dependencies:
   react-helmet: 5.2.1_react@16.12.0
   shallow-compare: 1.2.2
   typeface-rubik: 0.0.72
+  wasm-twitter-card: 0.3.0
 devDependencies:
   '@svgr/webpack': 4.3.3
   acorn: 7.1.0
@@ -761,13 +762,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-/TS23MVvo34dFmf8mwCisCbWGrfhbiWZSwBo6HkADTBhUa2Q/jWltyY/tpofz/b6/RIhqaqQcquptCirqIhOaQ==
-  /@babel/polyfill/7.8.3:
-    dependencies:
-      core-js: 2.6.11
-      regenerator-runtime: 0.13.3
-    dev: false
-    resolution:
-      integrity: sha512-0QEgn2zkCzqGIkSWWAEmvxD7e00Nm9asTtQvi7HdlYvMhjy/J38V/1Y9ode0zEJeIuxAI0uftiAzqc7nVeWUGg==
   /@babel/preset-env/7.7.7_@babel+core@7.7.7:
     dependencies:
       '@babel/core': 7.7.7
@@ -6095,17 +6089,6 @@ packages:
       gatsby: ^2.0.0
     resolution:
       integrity: sha512-gviw/Ebqq1vBZ6JI7UpibyHc4lwYGaf58D5nRMR1TLOnEdut7bI647OlfSQfs4FwgeQ56yDt0bWhLVK9L6gm+g==
-  /gatsby-remark-twitter-cards/0.2.0_gatsby@2.18.18:
-    dependencies:
-      gatsby: 2.18.18_8ddf281f274af080185d848b10298ddf
-      jimp: 0.6.4
-      path: 0.12.7
-      wasm-twitter-card: 0.3.0
-    dev: false
-    peerDependencies:
-      gatsby: '>=2.0.0'
-    resolution:
-      integrity: sha512-AhTEOf2Qf+USxrMHPf7crtAbg5Xbc7ErecsUN1jxuXR6bG9WmuSlcZiEdLEYPqdLLlrSJf2VQ+nc65mU/q9nIA==
   /gatsby-source-filesystem/2.1.43_gatsby@2.18.18:
     dependencies:
       '@babel/runtime': 7.7.7
@@ -8159,7 +8142,7 @@ packages:
       integrity: sha512-51PE4haMSXcHohnSMdM42anbvZANYTqMrr52tVKPqqsPJMzoP6FYYDVqahX/HrAoKEKz3uUPzSvKs9A3qR4iVw==
   /jimp/0.6.4:
     dependencies:
-      '@babel/polyfill': 7.8.3
+      '@babel/polyfill': 7.7.0
       '@jimp/custom': 0.6.8
       '@jimp/plugins': 0.6.8_@jimp+custom@0.6.8
       '@jimp/types': 0.6.8_@jimp+custom@0.6.8
@@ -10292,13 +10275,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
-  /path/0.12.7:
-    dependencies:
-      process: 0.11.10
-      util: 0.10.4
-    dev: false
-    resolution:
-      integrity: sha1-1NwqUGxM4hl+tIHr/NWzbAFAsQ8=
   /pbkdf2/3.0.17:
     dependencies:
       create-hash: 1.2.0
@@ -14231,12 +14207,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-evsa/lCAUkZInj23/g7TeTNqwPk=
-  /util/0.10.4:
-    dependencies:
-      inherits: 2.0.3
-    dev: false
-    resolution:
-      integrity: sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==
   /util/0.11.1:
     dependencies:
       inherits: 2.0.3
@@ -14923,11 +14893,11 @@ specifiers:
   gatsby-remark-embedder: ^1.7.0
   gatsby-remark-prismjs: ^3.3.29
   gatsby-remark-smartypants: ^2.1.19
-  gatsby-remark-twitter-cards: ^0.2.0
   gatsby-source-filesystem: ^2.1.43
   gatsby-transformer-remark: ^2.6.45
   gatsby-transformer-sharp: ^2.3.9
   gatsby-transformer-yaml: ^2.2.20
+  jimp: 0.6.4
   lodash: ^4.17.15
   minimatch: ^3.0.4
   mitt: ^1.2.0
@@ -14951,3 +14921,4 @@ specifiers:
   stylelint-config-recommended: ^3.0.0
   typeface-rubik: ^0.0.72
   typescript: ^3.7.4
+  wasm-twitter-card: 0.3.0

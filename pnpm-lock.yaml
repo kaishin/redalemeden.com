@@ -36,6 +36,7 @@ dependencies:
   minimatch: 3.0.4
   mitt: 1.2.0
   moment: 2.24.0
+  path: 0.12.7
   pify: 4.0.1
   postcss-color-mod-function: 3.0.3
   postcss-extend: 1.0.5
@@ -10275,6 +10276,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
+  /path/0.12.7:
+    dependencies:
+      process: 0.11.10
+      util: 0.10.3
+    dev: false
+    resolution:
+      integrity: sha1-1NwqUGxM4hl+tIHr/NWzbAFAsQ8=
   /pbkdf2/3.0.17:
     dependencies:
       create-hash: 1.2.0
@@ -14902,6 +14910,7 @@ specifiers:
   minimatch: ^3.0.4
   mitt: ^1.2.0
   moment: ^2.24.0
+  path: 0.12.7
   pify: ^4.0.1
   plop: ^2.5.3
   postcss-color-mod-function: ^3.0.3

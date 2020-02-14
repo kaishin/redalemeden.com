@@ -52,7 +52,8 @@ module.exports = (
   validateFontSize(titleFontSize, 'titleFontSize');
   validateFontSize(subtitleFontSize, 'subtitleFontSize');
 
-  const output = path.join('./public', markdownNode.fields.slug, 'twitter-card.jpg');
+  const fileName = 'social-card.jpg';
+  const output = path.join('./public', markdownNode.fields.slug, fileName);
 
   let formattedDetails = '';
   if (title || author) {
@@ -78,7 +79,10 @@ module.exports = (
   return Promise.all([generateBackground(background), writeTextToCard(buffer)])
     .then(([base, text]) => base.composite(text, 0, 0))
     .then((image) =>
-      image.writeAsync(output).then(() => console.log('Generated social card', output)).catch((err) => err),
+      image
+        .writeAsync(output)
+        .then(() => console.log('Generated social card', output.replace(fileName, '')))
+        .catch((err) => err),
     )
     .catch(console.error);
 };

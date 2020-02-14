@@ -9,12 +9,25 @@ import { graphql } from 'gatsby';
 class MicroBlogPostTemplate extends React.Component {
   render() {
     const { markdownRemark: post } = this.props.data;
+    var description;
+    var title;
+
+    if (post.frontmatter.title) {
+      title = post.frontmatter.title + ' | Wide Gamut';
+      description = post.frontmatter.excerpt ? post.frontmatter.excerpt : post.excerpt;
+    } else if (post.frontmatter.excerpt) {
+      title = post.frontmatter.excerpt;
+      description = post.excerpt;
+    } else {
+      title = 'Wide Gamut';
+      description = 'Posted on ' + post.frontmatter.formattedDate;
+    }
 
     return (
       <DefaultLayout>
         <Helmet bodyAttributes={{ class: 'microblog-page' }} />
 
-        <Seo title={post.frontmatter.title || 'Microblog Entry ' + post.frontmatter.formattedDate} />
+        <Seo title={title} description={description} keywords={post.frontmatter.tags} />
         <section className="content blog-content">
           <MicroblogHeader />
           <Micropost post={post} />

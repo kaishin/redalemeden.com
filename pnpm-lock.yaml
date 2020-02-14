@@ -27,6 +27,7 @@ dependencies:
   gatsby-remark-embedder: 1.7.0_gatsby@2.18.18
   gatsby-remark-prismjs: 3.3.29_gatsby@2.18.18+prismjs@1.18.0
   gatsby-remark-smartypants: 2.1.19_gatsby@2.18.18
+  gatsby-remark-twitter-cards: 0.2.0_gatsby@2.18.18
   gatsby-source-filesystem: 2.1.43_gatsby@2.18.18
   gatsby-transformer-remark: 2.6.45_gatsby@2.18.18
   gatsby-transformer-sharp: 2.3.9_e5e5d7203e35f46b42f92d6ad16b87ee
@@ -760,6 +761,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-/TS23MVvo34dFmf8mwCisCbWGrfhbiWZSwBo6HkADTBhUa2Q/jWltyY/tpofz/b6/RIhqaqQcquptCirqIhOaQ==
+  /@babel/polyfill/7.8.3:
+    dependencies:
+      core-js: 2.6.11
+      regenerator-runtime: 0.13.3
+    dev: false
+    resolution:
+      integrity: sha512-0QEgn2zkCzqGIkSWWAEmvxD7e00Nm9asTtQvi7HdlYvMhjy/J38V/1Y9ode0zEJeIuxAI0uftiAzqc7nVeWUGg==
   /@babel/preset-env/7.7.7_@babel+core@7.7.7:
     dependencies:
       '@babel/core': 7.7.7
@@ -6087,6 +6095,17 @@ packages:
       gatsby: ^2.0.0
     resolution:
       integrity: sha512-gviw/Ebqq1vBZ6JI7UpibyHc4lwYGaf58D5nRMR1TLOnEdut7bI647OlfSQfs4FwgeQ56yDt0bWhLVK9L6gm+g==
+  /gatsby-remark-twitter-cards/0.2.0_gatsby@2.18.18:
+    dependencies:
+      gatsby: 2.18.18_8ddf281f274af080185d848b10298ddf
+      jimp: 0.6.4
+      path: 0.12.7
+      wasm-twitter-card: 0.3.0
+    dev: false
+    peerDependencies:
+      gatsby: '>=2.0.0'
+    resolution:
+      integrity: sha512-AhTEOf2Qf+USxrMHPf7crtAbg5Xbc7ErecsUN1jxuXR6bG9WmuSlcZiEdLEYPqdLLlrSJf2VQ+nc65mU/q9nIA==
   /gatsby-source-filesystem/2.1.43_gatsby@2.18.18:
     dependencies:
       '@babel/runtime': 7.7.7
@@ -8138,6 +8157,16 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-51PE4haMSXcHohnSMdM42anbvZANYTqMrr52tVKPqqsPJMzoP6FYYDVqahX/HrAoKEKz3uUPzSvKs9A3qR4iVw==
+  /jimp/0.6.4:
+    dependencies:
+      '@babel/polyfill': 7.8.3
+      '@jimp/custom': 0.6.8
+      '@jimp/plugins': 0.6.8_@jimp+custom@0.6.8
+      '@jimp/types': 0.6.8_@jimp+custom@0.6.8
+      core-js: 2.6.11
+    dev: false
+    resolution:
+      integrity: sha512-WQVMoNhkcq/fgthZOWeMdIguCVPg+t4PDFfSxvbNcrECwl8eq3/Ou2whcFWWjyW45m43yAJEY2UT7acDKl6uSQ==
   /jimp/0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -9982,6 +10011,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-0DTvPVU3ed8+HNXOu5Bs+o//Mbdj9VNQMUOe9oKCwh8l0GNwpTDMKCWbRjgtD291AWnkAgkqA/LOnQS8AmS1tw==
+  /pako/1.0.11:
+    dev: false
+    resolution:
+      integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
   /parallel-transform/1.2.0:
     dependencies:
       cyclist: 1.0.1
@@ -10259,6 +10292,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
+  /path/0.12.7:
+    dependencies:
+      process: 0.11.10
+      util: 0.10.4
+    dev: false
+    resolution:
+      integrity: sha1-1NwqUGxM4hl+tIHr/NWzbAFAsQ8=
   /pbkdf2/3.0.17:
     dependencies:
       create-hash: 1.2.0
@@ -14172,7 +14212,7 @@ packages:
       integrity: sha1-K1viOjK2Onyd640PKNSFcko98ZA=
   /utif/2.0.1:
     dependencies:
-      pako: 1.0.10
+      pako: 1.0.11
     dev: false
     resolution:
       integrity: sha512-Z/S1fNKCicQTf375lIP9G8Sa1H/phcysstNrrSdZKj1f9g58J4NMgb5IgiEZN9/nLMPDwF0W7hdOe9Qq2IYoLg==
@@ -14191,6 +14231,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-evsa/lCAUkZInj23/g7TeTNqwPk=
+  /util/0.10.4:
+    dependencies:
+      inherits: 2.0.3
+    dev: false
+    resolution:
+      integrity: sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==
   /util/0.11.1:
     dependencies:
       inherits: 2.0.3
@@ -14298,6 +14344,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-MuU3fLVy3kqwR1O9+IIcAe1gW3w=
+  /wasm-twitter-card/0.3.0:
+    dev: false
+    resolution:
+      integrity: sha512-S5wPvSJclw/JOqw3XQyP1S7a+KMjL6O42jy0wBIzKZ7x/Yz9/Ou4Itd2TgExGkZ90dd7MhzYsMNC/UxoctVLUw==
   /watchpack/1.6.0:
     dependencies:
       chokidar: 2.1.8
@@ -14873,6 +14923,7 @@ specifiers:
   gatsby-remark-embedder: ^1.7.0
   gatsby-remark-prismjs: ^3.3.29
   gatsby-remark-smartypants: ^2.1.19
+  gatsby-remark-twitter-cards: ^0.2.0
   gatsby-source-filesystem: ^2.1.43
   gatsby-transformer-remark: ^2.6.45
   gatsby-transformer-sharp: ^2.3.9

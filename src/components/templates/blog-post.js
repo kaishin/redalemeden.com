@@ -9,10 +9,21 @@ import { Link, graphql } from 'gatsby';
 class BlogPostTemplate extends React.Component {
   render() {
     const { markdownRemark: post } = this.props.data;
+    var description;
+
+    if (post.frontmatter.audience) {
+      description = 'Audience: ' + post.frontmatter.audience + '.';
+    } else {
+      description = post.excerpt;
+    }
 
     return (
       <DefaultLayout>
-        <Seo title={post.frontmatter.title} />
+        <Seo
+          title={post.frontmatter.title + ' | Unredacted'}
+          description={description}
+          keywords={post.frontmatter.tags}
+        />
         <Helmet bodyAttributes={{ class: 'post-page blog-page' }} />
 
         <article className="content blog-content">
@@ -29,7 +40,7 @@ class BlogPostTemplate extends React.Component {
 
           <section className="full-post-content">
             {post.frontmatter.audience && (
-              <p class="assumed-audience">
+              <p className="assumed-audience">
                 This post was written for {post.frontmatter.audience}.{' '}
                 <small>
                   <a href="/microblog/post-1570576215962">What's this?</a>
@@ -57,6 +68,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
+      excerpt
       timeToRead
       fields {
         slug

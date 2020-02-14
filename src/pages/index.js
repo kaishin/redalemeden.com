@@ -9,7 +9,7 @@ import Helmet from 'react-helmet';
 const IndexPage = ({ data }) => (
   <DefaultLayout>
     <Helmet bodyAttributes={{ class: 'home-page' }} />
-    <Seo title="Home" />
+    <Seo title="Reda Lemeden" />
     <section className="intro">
       <div className="intro-content">
         <h2 className="intro-tagline">{data.site.siteMetadata.authorBio}</h2>

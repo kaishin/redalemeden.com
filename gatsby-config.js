@@ -4,7 +4,7 @@ module.exports = {
     title: 'Reda Lemeden',
     author: 'Reda Lemeden',
     email: 'hello@redalemeden.com',
-    keywords: ['reda', 'kaishin', 'lemeden', 'developer', 'designer', 'kaishinlab'],
+    keywords: ['Reda', 'Lemeden', 'Kaishin', 'Designer', 'Programmer', 'Swift', 'Stockholm', 'KaishinLab'],
     siteUrl: 'https://redalemeden.com',
     authorBio: 'Designer, programmer, and illustrator based in Stockholm, Sweden.',
   },
@@ -27,6 +27,12 @@ module.exports = {
             options: {
               destinationDir: 'static',
               ignoreFileExtensions: [],
+            },
+          },
+          {
+            resolve: 'gatsby-remark-twitter-cards',
+            options: {
+              author: 'Mestapha',
             },
           },
           {

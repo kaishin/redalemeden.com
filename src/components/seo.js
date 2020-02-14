@@ -12,7 +12,7 @@ class Seo extends React.Component {
   render() {
     const metadata = Config.siteMetadata;
     const description = this.state.description === undefined ? metadata.description : this.state.description;
-    const title = this.state.title === undefined ? metadata.title : metadata.title + ' | ' + this.state.title;
+    const title = this.state.title === undefined ? metadata.title : this.state.title;
     const keywords = this.state.keywords === undefined ? [] : this.state.keywords;
     const meta = this.state.meta === undefined ? [] : this.state.meta;
 

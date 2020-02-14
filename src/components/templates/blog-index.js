@@ -17,7 +17,11 @@ class BlogIndexPage extends React.Component {
       <DefaultLayout>
         <Helmet bodyAttributes={{ class: 'blog-page' }} />
 
-        <Seo title="Blog" />
+        <Seo
+          title="Unredacted"
+          description="I write about design, technology, programming, and other esoteric interests. "
+          keywords={['Unredacted', 'Blog']}
+        />
         <article className="content blog-content">
           <BlogHeader />
           <ol className="post-list">

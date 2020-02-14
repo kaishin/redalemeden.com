@@ -25,7 +25,11 @@ class MicroBlogPage extends React.Component {
       <DefaultLayout>
         <Helmet bodyAttributes={{ class: 'microblog-page' }} />
 
-        <Seo title="Blog" />
+        <Seo
+          title="Wide Gamut"
+          description="A collection of micro posts, hot takes, and reflections about whatever happens to preoccupy me."
+          keywords={['Microblog', 'Wide Gamut']}
+        />
         <section className="content blog-content">
           <MicroblogHeader />
           <ol className="post-list">
@@ -62,6 +66,7 @@ export const microBlogFragment = graphql`
   fragment MicroBlogPost on MarkdownRemark {
     html
     rawMarkdownBody
+    excerpt
     frontmatter {
       date
       formattedDate: date(formatString: "HH:mm MMM DD, YYYY")

@@ -8,6 +8,16 @@ export default function HTML(props) {
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" />
+        <link rel="manifest" href="/site.webmanifest?v=2" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#5bbad5" />
+        <link rel="shortcut icon" href="/favicon.ico?v=2" />
+        <meta name="apple-mobile-web-app-title" content="Kaishin" />
+        <meta name="application-name" content="Kaishin" />
+        <meta name="msapplication-TileColor" content="#ffc40d" />
+        <meta name="theme-color" content="#000000" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
@@ -25,5 +35,5 @@ HTML.propTypes = {
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
-  postBodyComponents: PropTypes.array
+  postBodyComponents: PropTypes.array,
 };

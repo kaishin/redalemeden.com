@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    description: 'Personal Site of Reda Lemeden',
+    description: 'Personal website of Reda Lemeden, programmer, designer, and tech writer based in Stockholm.',
     title: 'Reda Lemeden',
     author: 'Reda Lemeden',
     email: 'hello@redalemeden.com',
-    keywords: [ 'reda', 'kaishin', 'lemeden', 'developer', 'designer', 'kaishinlab' ],
+    keywords: ['reda', 'kaishin', 'lemeden', 'developer', 'designer', 'kaishinlab'],
     siteUrl: 'https://redalemeden.com',
-    authorBio: 'Designer, programmer, and illustrator based in Stockholm, Sweden.'
+    authorBio: 'Designer, programmer, and illustrator based in Stockholm, Sweden.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -26,86 +26,86 @@ module.exports = {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static',
-              ignoreFileExtensions: []
-            }
+              ignoreFileExtensions: [],
+            },
           },
           {
             resolve: 'gatsby-remark-smartypants',
             options: {
-              dashes: 'oldschool'
-            }
+              dashes: 'oldschool',
+            },
           },
           'gatsby-remark-abbr',
           'gatsby-remark-embedder',
           {
             resolve: 'gatsby-remark-autolink-headers',
             options: {
-              icon: '# '
-            }
+              icon: '# ',
+            },
           },
           {
             resolve: 'gatsby-remark-prismjs',
             options: {
               noInlineHighlight: true,
               aliases: {
-                sh: 'bash'
+                sh: 'bash',
               },
               prompt: {
                 user: 'user',
                 host: 'hostname',
-                global: true
-              }
-            }
-          }
-        ]
-      }
+                global: true,
+              },
+            },
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/posts/`,
-        name: 'posts'
-      }
+        name: 'posts',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/microblog/`,
-        name: 'microblog'
-      }
+        name: 'microblog',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/data`,
-        name: 'data'
-      }
+        name: 'data',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages/`,
-        name: 'pages'
-      }
+        name: 'pages',
+      },
     },
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://redalemeden.com'
-      }
+        siteUrl: 'https://redalemeden.com',
+      },
     },
     {
       resolve: 'gatsby-plugin-fathom',
       options: {
         trackingUrl: 'stats.redalemeden.com',
-        siteId: 'VKAGX'
-      }
+        siteId: 'VKAGX',
+      },
     },
     {
       resolve: 'gatsby-plugin-svgr',
       options: {
-        icon: false
-      }
-    }
-  ]
+        icon: false,
+      },
+    },
+  ],
 };

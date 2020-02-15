@@ -18,10 +18,17 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-postcss',
     'gatsby-plugin-netlify',
+    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-plugin-netlify-cms',
+            options: {
+              modulePath: `${__dirname}/src/cms/index.js`,
+            },
+          },
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {

@@ -20,6 +20,7 @@
     "gatsby-plugin-catch-links": "^2.1.21",
     "gatsby-plugin-fathom": "^1.2.0",
     "gatsby-plugin-netlify": "^2.1.30",
+    "gatsby-plugin-netlify-cms": "^4.1.40",
     "gatsby-plugin-postcss": "^2.1.18",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-robots-txt": "^1.5.0",
@@ -38,13 +39,13 @@
     "gatsby-transformer-sharp": "^2.3.9",
     "gatsby-transformer-yaml": "^2.2.20",
     "jimp": "0.6.4",
-    "wasm-twitter-card": "0.3.0",
     "lodash": "^4.17.15",
     "minimatch": "^3.0.4",
     "mitt": "^1.2.0",
     "moment": "^2.24.0",
-    "pify": "^4.0.1",
+    "netlify-cms-app": "^2.11.19",
     "path": "0.12.7",
+    "pify": "^4.0.1",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^12.0.1",
@@ -57,7 +58,8 @@
     "react-error-overlay": "^6.0.4",
     "react-helmet": "^5.2.1",
     "shallow-compare": "^1.2.2",
-    "typeface-rubik": "^0.0.72"
+    "typeface-rubik": "^0.0.72",
+    "wasm-twitter-card": "0.3.0"
   },
   "keywords": ["gatsby"],
   "license": "MIT",
@@ -67,6 +69,11 @@
     "dev": "gatsby develop --host 0.0.0.0",
     "start": "npm run dev",
     "generate": "plop --plopfile ./generators/plopfile.js"
+  },
+  "peerDependencies": {
+    "@types/react": "16.0.8",
+    "codemirror": "^6.0.0",
+    "webpack": "^5.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^4.3.3",

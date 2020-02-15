@@ -32,10 +32,9 @@ module.exports = {
           {
             resolve: 'gatsby-remark-social-cards',
             options: {
-              author: 'Reda Lemeden (@kaishin)',
               subtitleFontSize: 50,
               fontStyle: 'sans-serif',
-              background: '#4a20ac',
+              background: require.resolve('./assets/social-card-background.jpg'),
               fontFile: require.resolve('./assets/rubik-bold.ttf'),
             },
           },

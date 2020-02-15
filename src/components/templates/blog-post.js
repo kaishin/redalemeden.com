@@ -23,6 +23,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title + ' | Unredacted'}
           description={description}
           keywords={post.frontmatter.tags}
+          image={(post.fields.slug + '/social-card.jpg').substr(1)}
         />
         <Helmet bodyAttributes={{ class: 'post-page blog-page' }} />
 

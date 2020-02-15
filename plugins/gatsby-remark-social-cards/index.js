@@ -48,7 +48,7 @@ module.exports = (
 ) => {
   const post = markdownNode.frontmatter;
   if (!markdownNode.fields) return;
-  // if (/microblog/.test(markdownNode.fields.slug)) return;
+  if (/microblog/.test(markdownNode.fields.slug)) return;
   validateFontSize(titleFontSize, 'titleFontSize');
   validateFontSize(subtitleFontSize, 'subtitleFontSize');
 
@@ -81,7 +81,7 @@ module.exports = (
     .then((image) =>
       image
         .writeAsync(output)
-        .then(() => console.log('Generated social card', output.replace(fileName, '')))
+        .then(() => console.log('Generated social card in', output.replace(fileName, '')))
         .catch((err) => err),
     )
     .catch(console.error);

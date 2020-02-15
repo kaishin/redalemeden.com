@@ -12,7 +12,7 @@ collections:
     identifier_field: path
     slug: "{{path}}"
     description: Custom microblog setup.
-    folder: content/microblog
+    folder: content/microblog-1
     media_folder: content/microblog/assets
     create: true
     fields:

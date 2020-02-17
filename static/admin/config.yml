@@ -16,10 +16,10 @@ collections:
     media_folder: content/microblog/assets
     create: true
     fields:
-      - { name: title, label: Title }
-      - { name: excerpt, label: Excerpt, widget: text }
+      - { name: title, label: Title, required: false }
+      - { name: excerpt, label: Excerpt, widget: text, required: false }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
       - { name: draft, label: Draft, widget: boolean, default: false }
-      - { name: tags, label: Tags, widget: list }
+      - { name: tags, label: Tags, widget: list, required: false }
       - { name: path, label: Path, widget: path-widget }

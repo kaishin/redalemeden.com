@@ -15,12 +15,7 @@ const IndexPage = ({ data }) => (
         <h2 className="intro-tagline">{data.site.siteMetadata.authorBio}</h2>
 
         <p className="intro-paragraph">
-          <em>Current Interests ▹</em> Decentralized social networks, open-source Swift, privacy, and new computing
-          paradigms.
-        </p>
-
-        <p className="intro-paragraph">
-          <em>Favorite Kanji ▹ 魁</em> [sakigake] Forerunner, vanguard, pioneer.
+          <em>Current Interests ▹</em> Server-side Swift, computer graphics, information theory, and privacy.
         </p>
       </div>
     </section>

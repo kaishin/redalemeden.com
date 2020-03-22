@@ -32,9 +32,19 @@ sup {
 
 .main-container {
   padding: 0 2rem;
+
   @media (--full-grid-container) {
     padding: 0 var(--main-container-padding);
   }
+}
+
+.background-pattern {
+  display: block;
+  max-width: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .site-header {
@@ -42,15 +52,6 @@ sup {
   padding-top: var(--header-top-spacing);
   text-align: center;
   overflow: hidden;
-
-  & .header-pattern {
-    display: block;
-    max-width: 100%;
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    z-index: -1;
-  }
 
   & a {
     text-decoration: none;
@@ -195,6 +196,8 @@ sup {
 
 .grid-container {
   min-height: 100vh;
+  max-width: calc(var(--grid-container-full-width) + var(--sidebar-max-width));
+  margin: 0 auto;
 
   @media (--full-grid-container) {
     display: grid;

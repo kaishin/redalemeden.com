@@ -6,6 +6,7 @@ import Header from '../header';
 import Footer from '../footer';
 import Navigation from '../navigation';
 import Seo from '../seo';
+import { ReactComponent as Pattern } from '../../images/pattern.svg';
 
 import '../../css/normalize.css';
 import '../../css/styles.css';
@@ -34,6 +35,8 @@ class DefaultLayout extends React.Component {
           }
         `}
         render={(data) => (
+          <>
+          <Pattern className="background-pattern" />
           <section className="grid-container">
             <Seo />
             <Header {...data.site.siteMetadata} />
@@ -41,6 +44,7 @@ class DefaultLayout extends React.Component {
             <main className="main-container">{children}</main>
             <Footer {...data.site.siteMetadata} />
           </section>
+          </>
         )}
       />
     );
@@ -48,7 +52,7 @@ class DefaultLayout extends React.Component {
 }
 
 DefaultLayout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default DefaultLayout;

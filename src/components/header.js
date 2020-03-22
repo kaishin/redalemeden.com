@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import { ReactComponent as SakigakeLogo } from '../images/sakigake.svg';
-import { ReactComponent as Pattern } from '../images/pattern.svg';
 
 class Header extends React.Component {
   render() {
@@ -10,7 +9,6 @@ class Header extends React.Component {
 
     return (
       <header className="site-header">
-        <Pattern className="header-pattern" />
         <Link to="/" activeClassName="header-link">
           <h1 className="full-name">{title}</h1>
         </Link>

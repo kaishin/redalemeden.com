@@ -49,7 +49,7 @@ module.exports = {
 		'--main-content-max-width': '40rem',
 		'--sidebar-max-width': '22.5rem',
 		'--spacing-default': '1rem',
-		'--main-container-padding': 'calc(var(--header-top-spacing) * 1.6)',
+		'--main-container-padding': '6rem',
 		'--sheet-margin-top': 'var(--main-container-padding)',
 		'--font-fira': '\'Fira Mono\'',
 		'--font-rubik': '\'Rubik\'',

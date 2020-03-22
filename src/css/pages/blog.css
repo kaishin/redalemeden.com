@@ -11,7 +11,6 @@
 
 .blog-content {
   margin-bottom: 2rem;
-  max-width: var(--main-content-max-width);
   padding-top: 2rem;
 
   @media (--full-grid-container) {

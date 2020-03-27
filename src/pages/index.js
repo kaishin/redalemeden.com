@@ -20,6 +20,30 @@ const IndexPage = ({ data }) => (
       </div>
     </section>
 
+    <h3>This is level 3</h3>
+    <h4>This is level 4</h4>
+    <h5>This is level 5</h5>
+
+    <section className="highlight-section">
+      <h4 className="section-heading">I Write Code</h4>
+      <p>
+        Swift and Web mostly. Comfortable with <abbr title="Functional Programming">FP</abbr>,{' '}
+        <abbr title="Functional Reactive Programming">FRP</abbr>, and{' '}
+        <abbr title="Object-oriented Programming">OOP</abbr>.
+      </p>
+      <p>
+        In 2012, I co-authored <a href="https://neat.bourbon.io/">Bourbon Neat</a>, a float-based grid framework for{' '}
+        <a href="https://sass-lang.com/">Sass</a>. Although eclipsed by <em>Flexbox</em> and <em>CSS Grid</em>, Neat is
+        still used by some prominent organizations such as <a href="https://github.com/WhiteHouse">The White House</a>.
+        I also made an interactive Sass playground for macOS called{' '}
+        <a href="http://sassquatch.thoughtbot.com/">Sassquatch</a> to speed up feature development.
+      </p>
+
+      <Link to="/work" className="button">
+        See more projects
+      </Link>
+    </section>
+
     <section className="recent-projects">
       <h4 className="section-heading">Recent Projects</h4>
       <ProjectList projects={data.projects.list} />

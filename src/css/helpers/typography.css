@@ -49,6 +49,14 @@
   }
 }
 
+%highlight-p {
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
 %standalone-blog-link {
   background-color: color-mod(var(--theme-link-color) alpha(5%));
   border-radius: 1rem;

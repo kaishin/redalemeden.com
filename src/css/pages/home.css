@@ -1,10 +1,36 @@
 .home-page {
   & .main-container {
-    @extend %gradient-background;
+    @extend %sheet;
+    overflow: hidden;
   }
 
   & .button {
     font-weight: 500;
+  }
+
+  & a {
+    color: var(--secondary-color);
+  }
+
+  & h3,
+  & h4,
+  & h5 {
+    @extend %highlight-p;
+    font-weight: 500;
+  }
+
+  & h3 {
+    @extend %heading;
+  }
+
+  & h4 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+
+  & h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 }
 
@@ -26,12 +52,8 @@
 }
 
 .intro-paragraph {
-  font-size: 1.15rem;
+  @extend %highlight-p;
   font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  line-height: 1.8;
-  opacity: 0.8;
 
   & em {
     font-style: normal;
@@ -49,6 +71,25 @@
   & .project-cell {
     margin-right: 2rem;
     margin-bottom: 2rem;
+  }
+}
+
+.highlight-section {
+  @extend %highlight-p;
+
+  & .section-subheading {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  & ul {
+    padding: 0;
+  }
+
+  & a {
+    @extend %inline-link-style;
   }
 }
 

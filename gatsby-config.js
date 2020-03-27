@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    description: 'Personal website of Reda Lemeden, programmer, designer, and tech writer based in Stockholm.',
+    description: 'Personal website of Reda Lemeden.',
     title: 'Reda Lemeden',
     author: 'Reda Lemeden',
     email: 'hello@redalemeden.com',

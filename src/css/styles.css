@@ -23,6 +23,10 @@ sup {
   vertical-align: super;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .section-heading {
   @extend %heading;
   margin: var(--header-top-spacing) 0 calc(var(--header-top-spacing) * 0.8);

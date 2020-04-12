@@ -203,6 +203,16 @@
         left: -1em;
         position: absolute;
       }
+
+      & ul,
+      & ol {
+        padding-left: 1rem;
+
+        & li::before {
+          color: var(--theme-bullet-dash-color);
+          content: '>';
+        }
+      }
     }
 
     &:last-child {

@@ -16,9 +16,9 @@ collections:
     media_folder: content/microblog/assets
     create: true
     fields:
+      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title, required: false }
       - { name: excerpt, label: Excerpt, widget: text, required: false }
-      - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }
       - { name: draft, label: Draft, widget: boolean, default: false }
       - { name: tags, label: Tags, widget: list, required: false }

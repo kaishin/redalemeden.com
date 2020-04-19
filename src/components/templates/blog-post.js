@@ -24,6 +24,7 @@ class BlogPostTemplate extends React.Component {
           description={description}
           keywords={post.frontmatter.tags}
           image={(post.fields.slug + '/social-card.jpg').substr(1)}
+          largeImage={true}
         />
         <Helmet bodyAttributes={{ class: 'post-page blog-page' }} />
 

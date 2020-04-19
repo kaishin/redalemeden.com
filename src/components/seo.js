@@ -16,6 +16,7 @@ class Seo extends React.Component {
     const keywords = this.state.keywords === undefined ? [] : this.state.keywords;
     const meta = this.state.meta === undefined ? [] : this.state.meta;
     const image = this.state.image ? this.state.image : 'social-card.jpg';
+    const largeImage = this.state.largeImage ? this.state.largeImage : false;
 
     return (
       <Helmet
@@ -31,7 +32,7 @@ class Seo extends React.Component {
           { property: 'og:description', content: description },
           { property: 'og:type', content: 'website' },
           { property: 'og:image', content: `${metadata.siteUrl}/${image}` },
-          { name: 'twitter:card', content: 'summary' },
+          { name: 'twitter:card', content: largeImage ? 'summary_large_image' : 'summary' },
           { name: 'twitter:creator', content: '@kaishin' },
           { name: 'twitter:site', content: '@kaishin' },
           { name: 'twitter:title', content: title },

@@ -9,7 +9,7 @@
   "author": "Reda Lemeden <hello@redalemeden.com> (http://redalemeden.com)",
   "license": "MIT",
   "dependencies": {
-    "jimp": "0.6.4",
+    "jimp": "0.10.2",
     "wasm-twitter-card": "0.3.0",
     "path": "0.12.7"
   }

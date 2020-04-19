@@ -32,7 +32,7 @@ dependencies:
   gatsby-transformer-remark: 2.6.45_gatsby@2.18.18
   gatsby-transformer-sharp: 2.3.9_e5e5d7203e35f46b42f92d6ad16b87ee
   gatsby-transformer-yaml: 2.2.20_gatsby@2.18.18
-  jimp: 0.6.4
+  jimp: 0.10.2
   lodash: 4.17.15
   minimatch: 3.0.4
   mitt: 1.2.0
@@ -1083,6 +1083,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-FmuxfCuolpLl0AnQ2NHSzoUKWEJDFl63qXjzdoWBVyFCXzMGm1spBzk7LeHNoVCiWCF7mRVms9e6jEV9+MoPbg==
+  /@jimp/bmp/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      bmp-js: 0.1.0
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-vsLwkfj6rcxtSxEdpQaxDagrgpOB0ErHTS/vVRQKDIhrzZkW1ddQa9W1hV8qssSY3K7lz1QNYFQdeRw/qoCiBA==
   /@jimp/bmp/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1094,6 +1106,23 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-uxVgSkI62uAzk5ZazYHEHBehow590WAkLKmDXLzkr/XP/Hv2Fx1T4DKwJ/15IY5ktq5VAhAUWGXTyd8KWFsx7w==
+  /@jimp/core/0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/utils': 0.10.2
+      any-base: 1.1.0
+      buffer: 5.4.3
+      core-js: 3.6.2
+      exif-parser: 0.1.12
+      file-type: 9.0.0
+      load-bmfont: 1.4.0
+      mkdirp: 0.5.1
+      phin: 2.9.3
+      pixelmatch: 4.0.2
+      tinycolor2: 1.4.1
+    dev: false
+    resolution:
+      integrity: sha512-oyJLzWYcT6u0joD2YJAAVqCc1Ng9wXGPdAijWy3xxQT/roALmWLGL5ev6fQ/gugPVAD+xKUQpM0OxJepRYUl0Q==
   /@jimp/core/0.6.8:
     dependencies:
       '@jimp/utils': 0.6.8
@@ -1110,6 +1139,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-JOFqBBcSNiDiMZJFr6OJqC6viXj5NVBQISua0eacoYvo4YJtTajOIxC4MqWyUmGrDpRMZBR8QhSsIOwsFrdROA==
+  /@jimp/custom/0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/core': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    resolution:
+      integrity: sha512-+ErCKYrIC0m6nDxRwIq0ETdltL4+C8RKrv3bGW/bI94QSfIXCdP6Vsz03VMae1J9+IPjfhn1LJ5rQ3zWkZEfdA==
   /@jimp/custom/0.6.8:
     dependencies:
       '@jimp/core': 0.6.8
@@ -1117,6 +1154,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-FrYlzZRVXP2vuVwd7Nc2dlK+iZk4g6IaT1Ib8Z6vU5Kkwlt83FJIPJ2UUFABf3bF5big0wkk8ZUihWxE4Nzdng==
+  /@jimp/gif/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+      omggif: 1.0.10
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-Evkwr7Vlt5zMqNccsUDetHpKtvhFz07yg8BRZl3kXzkeKeaK/PbuAV7yjXn1DxVVU+1uSS765MdbsMVe7J404A==
   /@jimp/gif/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1128,6 +1177,18 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-yyOlujjQcgz9zkjM5ihZDEppn9d1brJ7jQHP5rAKmqep0G7FU1D0AKcV+Ql18RhuI/CgWs10wAVcrQpmLnu4Yw==
+  /@jimp/jpeg/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+      jpeg-js: 0.3.6
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-+aQUGBZI6OueB0K6gqLCwehV5skZceVyZjjmPmuXaE7ZvdhFMP2QDh45vcT8LzlPGUcOwpIWxsGHrB6Q6RcFXQ==
   /@jimp/jpeg/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1139,6 +1200,17 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-rGtXbYpFXAn471qLpTGvhbBMNHJo5KiufN+vC5AWyufntmkt5f0Ox2Cx4ijuBMDtirZchxbMLtrfGjznS4L/ew==
+  /@jimp/plugin-blit/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-PdqKZLkwnOOnrr+M4X4K/GrQ26qeCHut7AoFbKW+BsHooHvyadOWwVTBUBfK8GyDp/NApEC9SXbT0UNk8XqabA==
   /@jimp/plugin-blit/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1149,6 +1221,17 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-7Tl6YpKTSpvwQbnGNhsfX2zyl3jRVVopd276Y2hF2zpDz9Bycow7NdfNU/4Nx1jaf96X6uWOtSVINcQ7rGd47w==
+  /@jimp/plugin-blur/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-9KeLyUY3s5N0cPZN4uMg0qIiSDvIPhXEnpYnXdN2V53dM25sKrBCMH578/W+n9hAHVpsbJHS+VFknO1JV47QVw==
   /@jimp/plugin-blur/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1159,6 +1242,29 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-NpZCMKxXHLDQsX9zPlWtpMA660DQStY6/z8ZetyxCDbqrLe9YCXpeR4MNhdJdABIiwTm1W5FyFF4kp81PHJx3Q==
+  /@jimp/plugin-circle/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-wOJ3qKa916YZMEwA9qwIn8yROYonkscJ3bqaaSsyf5CadiY8VCijKxA3BVwr7PKjj89yf5RCS4mcy+CO8+nmkw==
+  /@jimp/plugin-color/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+      tinycolor2: 1.4.1
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-c6cw41Hn3tLYQIRg3hxXrefKcOfW4jRN9b9DGH16mcZrRtw5jMzq3NfZ+RLQM47SyAE7N2BeUz0Ah3pmCArI0g==
   /@jimp/plugin-color/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1170,6 +1276,23 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-jjFyU0zNmGOH2rjzHuOMU4kaia0oo82s/7UYfn5h7OUkmUZTd6Do3ZSK1PiXA7KR+s4B76/Omm6Doh/0SGb7BQ==
+  /@jimp/plugin-contain/0.10.2_527ce8d464922dc6f62c52e378721b22:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/plugin-blit': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-resize': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-scale': 0.10.2_ef3c29032c5b16935f2155d6c14105c9
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+      '@jimp/plugin-blit': '>=0.3.5'
+      '@jimp/plugin-resize': '>=0.3.5'
+      '@jimp/plugin-scale': '>=0.3.5'
+    resolution:
+      integrity: sha512-oDDe+XdpSwx2OQOSb6ar4O31+4d02Qz4R+1BeucuO7FzOrbDggnCWavSg6RevyOJPDKGkmv8Jj3V6S0jUwgVgw==
   /@jimp/plugin-contain/0.6.8_167d0a206a128b6e534eb78737ee93b9:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1186,6 +1309,23 @@ packages:
       '@jimp/plugin-scale': '>=0.3.5'
     resolution:
       integrity: sha512-p/P2wCXhAzbmEgXvGsvmxLmbz45feF6VpR4m9suPSOr8PC/i/XvTklTqYEUidYYAft4vHgsYJdS74HKSMnH8lw==
+  /@jimp/plugin-cover/0.10.2_5c410b36b94fb73963bbecd9a343f878:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/plugin-crop': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-resize': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-scale': 0.10.2_ef3c29032c5b16935f2155d6c14105c9
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+      '@jimp/plugin-crop': '>=0.3.5'
+      '@jimp/plugin-resize': '>=0.3.5'
+      '@jimp/plugin-scale': '>=0.3.5'
+    resolution:
+      integrity: sha512-cnEqx8kHqBvQA+axKA8qRshwAIIfyxAwjdeRB/LZ9bWroh8XvbifW5buBgITDG5KklDkBhivmDEtPY90r3mMFQ==
   /@jimp/plugin-cover/0.6.8_4a8ab35597fd26efbb01ca4f8dd71896:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1202,6 +1342,17 @@ packages:
       '@jimp/plugin-scale': '>=0.3.5'
     resolution:
       integrity: sha512-2PvWgk+PJfRsfWDI1G8Fpjrsu0ZlpNyZxO2+fqWlVo6y/y2gP4v08FqvbkcqSjNlOu2IDWIFXpgyU0sTINWZLg==
+  /@jimp/plugin-crop/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-6uTb3LMP0kiMqYOAHyU/q/pkScw6aRWkTSxhjgcsewQS3zPHWTSGgP8u6CNAFnlDmVYVIz/jdKlFnnOdf0ZwrA==
   /@jimp/plugin-crop/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1212,6 +1363,17 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-CbrcpWE2xxPK1n/JoTXzhRUhP4mO07mTWaSavenCg664oQl/9XCtL+A0FekuNHzIvn4myEqvkiTwN7FsbunS/Q==
+  /@jimp/plugin-displace/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-AGQDlyeFJz+zszYUkIzi5QyLLPsJzRJNIplU0S0HBxmXf5tZEeiiEtmsaC4j9VoAVD9Jwwn39+cfwV88Ij7WGg==
   /@jimp/plugin-displace/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1222,6 +1384,17 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-RmV2bPxoPE6mrPxtYSPtHxm2cGwBQr5a2p+9gH6SPy+eUMrbGjbvjwKNfXWUYD0leML+Pt5XOmAS9pIROmuruQ==
+  /@jimp/plugin-dither/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-TEu7n44OS/+F1eWqKumsKYI+i2cPxzRTmxJhxrsUGyDD2aNi7tCIfKILXDqO6Ii0tYgSqwakG2+Eu0Jqg7J/VQ==
   /@jimp/plugin-dither/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1232,6 +1405,30 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-x6V/qjxe+xypjpQm7GbiMNqci1EW5UizrcebOhHr8AHijOEqHd2hjXh5f6QIGfrkTFelc4/jzq1UyCsYntqz9Q==
+  /@jimp/plugin-fisheye/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-kxtfkcnnXitqpTxGaZg/q6bzMBRWCFEWs7maMIgjFkGvXsMegQ90EdKF1Ku76/gCTIGxyfbped8QD/+iACgzFw==
+  /@jimp/plugin-flip/0.10.2_f428b35ef7b22964589827c02105fdf0:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/plugin-rotate': 0.10.2_993d475d4a4673206ee6e48f10ab70da
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+      '@jimp/plugin-rotate': '>=0.3.5'
+    resolution:
+      integrity: sha512-JW/aAKPGYOEGrqldpUBFxHUZ21pwhtxeRiwXEyMu/8N23PVuNBAePKboPMxRvkSLvAOn122xKEyCQvF10v/TOQ==
   /@jimp/plugin-flip/0.6.8_b4ef8f38de70f2d420c9bfa98f3d5188:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1244,6 +1441,17 @@ packages:
       '@jimp/plugin-rotate': '>=0.3.5'
     resolution:
       integrity: sha512-4il6Da6G39s9MyWBEee4jztEOUGJ40E6OlPjkMrdpDNvge6hYEAB31BczTYBP/CEY74j4LDSoY5LbcU4kv06yA==
+  /@jimp/plugin-gaussian/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-uP1up3fCIBzGexqs/+HMGBoZckEEcic09RNRj5Lq6EUVY8vFdKeBk3F+tAA+fstpA6yHhjPk1w7FZKX/tkECNw==
   /@jimp/plugin-gaussian/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1254,6 +1462,17 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-pVOblmjv7stZjsqloi4YzHVwAPXKGdNaHPhp4KP4vj41qtc6Hxd9z/+VWGYRTunMFac84gUToe0UKIXd6GhoKw==
+  /@jimp/plugin-invert/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-zm1NB+AS0fTKW0gmFs1Tjgkj892gtnDicyxzmYeCLoQzPTr/1iPVf2EGidCS88+aw04sA5DOu0UX7637ib7TkA==
   /@jimp/plugin-invert/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1264,6 +1483,17 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-11zuLiXDHr6tFv4U8aieXqNXQEKbDbSBG/h+X62gGTNFpyn8EVPpncHhOqrAFtZUaPibBqMFlNJ15SzwC7ExsQ==
+  /@jimp/plugin-mask/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-4pVBAU6d/7EhfYs8sYuBGB3JMIuvrdiXbt6ESNs4CyDSbiDT4z1/f2sjWvNyLYlJ7cQJ+we50qqvq8vvNnb5lA==
   /@jimp/plugin-mask/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1274,6 +1504,17 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-hZJ0OiKGJyv7hDSATwJDkunB1Ie80xJnONMgpUuUseteK45YeYNBOiZVUe8vum8QI1UwavgBzcvQ9u4fcgXc9g==
+  /@jimp/plugin-normalize/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-B2HXf6uaH8EAyZA5KvVYJOfv4AZpferIuDhOQSqDLKAEBBfEViwHk/Rn+nCUzGsAzQ/yiVtKAil68YcybaI6oQ==
   /@jimp/plugin-normalize/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1284,6 +1525,20 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-Q4oYhU+sSyTJI7pMZlg9/mYh68ujLfOxXzQGEXuw0sHGoGQs3B0Jw7jmzGa6pIS06Hup5hD2Zuh1ppvMdjJBfQ==
+  /@jimp/plugin-print/0.10.2_e4faa97f981ccf62db906e8f942ae406:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/plugin-blit': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+      load-bmfont: 1.4.0
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+      '@jimp/plugin-blit': '>=0.3.5'
+    resolution:
+      integrity: sha512-YXKBG5yNOr/DX958Omk1GzTrprRJ3YXWhJ6tzCbboxqXK6pErLDxFsa1mlngDGb/a43oGs63Myj7CuGf98/vaw==
   /@jimp/plugin-print/0.6.8_21246ce2f05fe055476be94ee1679980:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1297,6 +1552,17 @@ packages:
       '@jimp/plugin-blit': '>=0.3.5'
     resolution:
       integrity: sha512-2aokejGn4Drv1FesnZGqh5KEq0FQtR0drlmtyZrBH+r9cx7hh0Qgf4D1BOTDEgXkfSSngjGRjKKRW/fwOrVXYw==
+  /@jimp/plugin-resize/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-F+pXSU5sbACqqArZfVeYYXrq7qMwZcMs97Z3V70qsLtvDSVyNFG5iYpJhFKJOj05O7a2G7FQ1Nq2h0UKJdlLJg==
   /@jimp/plugin-resize/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1307,6 +1573,23 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-27nPh8L1YWsxtfmV/+Ub5dOTpXyC0HMF2cu52RQSCYxr+Lm1+23dJF70AF1poUbUe+FWXphwuUxQzjBJza9UoA==
+  /@jimp/plugin-rotate/0.10.2_993d475d4a4673206ee6e48f10ab70da:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/plugin-blit': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-crop': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-resize': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+      '@jimp/plugin-blit': '>=0.3.5'
+      '@jimp/plugin-crop': '>=0.3.5'
+      '@jimp/plugin-resize': '>=0.3.5'
+    resolution:
+      integrity: sha512-bQ0RQuXS768G9l1HemULJ7puuevU5N3TpE1QV5NdzbKwjHidFAAavp8XFXOhd2Mj/Xh/3iFlMMEB7NG/McYoOA==
   /@jimp/plugin-rotate/0.6.8_043c85606aebc80050ed3aa58fa5105b:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1323,6 +1606,19 @@ packages:
       '@jimp/plugin-resize': '>=0.3.5'
     resolution:
       integrity: sha512-GbjETvL05BDoLdszNUV4Y0yLkHf177MnqGqilA113LIvx9aD0FtUopGXYfRGVvmtTOTouoaGJUc+K6qngvKxww==
+  /@jimp/plugin-scale/0.10.2_ef3c29032c5b16935f2155d6c14105c9:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/plugin-resize': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+      '@jimp/plugin-resize': '>=0.3.5'
+    resolution:
+      integrity: sha512-47GRG3joOGDBLHYyLR0tc3hEz/H8tgPcLZaNEAaIdyL+ckAWQIgnoytbqj7OEAFeMj5j+loNm+ahJVX7w/X/ug==
   /@jimp/plugin-scale/0.6.8_7d7b1de5ba1127d66c6ca607d242a90e:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1335,6 +1631,68 @@ packages:
       '@jimp/plugin-resize': '>=0.3.5'
     resolution:
       integrity: sha512-GzIYWR/oCUK2jAwku23zt19V1ssaEU4pL0x2XsLNKuuJEU6DvEytJyTMXCE7OLG/MpDBQcQclJKHgiyQm5gIOQ==
+  /@jimp/plugin-shadow/0.10.2_5bfed296bc28dba4ff4fa6f84d19ee93:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/plugin-blur': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-resize': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+      '@jimp/plugin-blur': '>=0.3.5'
+      '@jimp/plugin-resize': '>=0.3.5'
+    resolution:
+      integrity: sha512-koksEMJZKjq8OiprLh+ffrRo/x/dXHCsfaKS4kf2EoFZEb6sZHeJgKLwozLky1DXBPiMryYSrNt8Cb6wzjd1zA==
+  /@jimp/plugin-threshold/0.10.2_e0bc6d55e5cef8d162b6ec44387347a7:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/plugin-color': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-resize': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+      '@jimp/plugin-color': '>=0.8.0'
+      '@jimp/plugin-resize': '>=0.8.0'
+    resolution:
+      integrity: sha512-RQzxB40KK50iUUNLF9M7G3dVKFmbe/T4EQVWMPxxX8NQPNbU0vjZzTW0vVYoTYno2vLxewQgV0Y3ydX/l08NLg==
+  /@jimp/plugins/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/plugin-blit': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-blur': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-circle': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-color': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-contain': 0.10.2_527ce8d464922dc6f62c52e378721b22
+      '@jimp/plugin-cover': 0.10.2_5c410b36b94fb73963bbecd9a343f878
+      '@jimp/plugin-crop': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-displace': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-dither': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-fisheye': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-flip': 0.10.2_f428b35ef7b22964589827c02105fdf0
+      '@jimp/plugin-gaussian': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-invert': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-mask': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-normalize': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-print': 0.10.2_e4faa97f981ccf62db906e8f942ae406
+      '@jimp/plugin-resize': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/plugin-rotate': 0.10.2_993d475d4a4673206ee6e48f10ab70da
+      '@jimp/plugin-scale': 0.10.2_ef3c29032c5b16935f2155d6c14105c9
+      '@jimp/plugin-shadow': 0.10.2_5bfed296bc28dba4ff4fa6f84d19ee93
+      '@jimp/plugin-threshold': 0.10.2_e0bc6d55e5cef8d162b6ec44387347a7
+      core-js: 3.6.2
+      timm: 1.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-z4Fhu97WZIussTzd1PJXUUuluushXlfCYzXifixf8fGAoVGZuMMJl6aqtuy4eUOgLyN8sXun0MzdWAahelqbfA==
   /@jimp/plugins/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1362,6 +1720,18 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-fMcTI72Vn/Lz6JftezTURmyP5ml/xGMe0Ljx2KRJ85IWyP33vDmGIUuutFiBEbh2+y7lRT+aTSmjs0QGa/xTmQ==
+  /@jimp/png/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/utils': 0.10.2
+      core-js: 3.6.2
+      pngjs: 3.4.0
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-3r5q9Ns3Gz8pcI8oBdGTY7d0TkkW4atZ12bknB1sABc3UYX69arqmTvrULMYhWf0M6n3tKHdnmdW2cTlFWIAbw==
   /@jimp/png/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1373,6 +1743,17 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-JHHg/BZ7KDtHQrcG+a7fztw45rdf7okL/YwkN4qU5FH7Fcrp41nX5QnRviDtD9hN+GaNC7kvjvcqRAxW25qjew==
+  /@jimp/tiff/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      core-js: 3.6.2
+      utif: 2.0.1
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-uuJF6ZMXo0EDyooho9RhwAY9YGcgUju1mw53N9BtU7E9Y+AxKn7miaK2niROmN2/ufmLJO8vS9zjpgAxv+zgKQ==
   /@jimp/tiff/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -1383,6 +1764,22 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-iWHbxd+0IKWdJyJ0HhoJCGYmtjPBOusz1z1HT/DnpePs/Lo3TO4d9ALXqYfUkyG74ZK5jULZ69KLtwuhuJz1bg==
+  /@jimp/types/0.10.2_@jimp+custom@0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      '@jimp/bmp': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/custom': 0.10.2
+      '@jimp/gif': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/jpeg': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/png': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/tiff': 0.10.2_@jimp+custom@0.10.2
+      core-js: 3.6.2
+      timm: 1.6.2
+    dev: false
+    peerDependencies:
+      '@jimp/custom': '>=0.3.5'
+    resolution:
+      integrity: sha512-XCgFhH8BR0ovxrEkDnKRXalEAUjo3vW9vwOFxfSrJR/YS/k0TsvYB6/+QAU/cGwcN8icmYdDyhq2yhJACAl13w==
   /@jimp/types/0.6.8_@jimp+custom@0.6.8:
     dependencies:
       '@jimp/bmp': 0.6.8_@jimp+custom@0.6.8
@@ -1398,6 +1795,14 @@ packages:
       '@jimp/custom': '>=0.3.5'
     resolution:
       integrity: sha512-vCZ/Cp2osy69VP21XOBACfHI5HeR60Rfd4Jidj4W73UL+HrFWOtyQiJ7hlToyu1vI5mR/NsUQpzyQvz56ADm5A==
+  /@jimp/utils/0.10.2:
+    dependencies:
+      '@babel/runtime': 7.8.4
+      core-js: 3.6.2
+      regenerator-runtime: 0.13.3
+    dev: false
+    resolution:
+      integrity: sha512-B3fBgkE7t7S4X1RXKY5vfx+8QdUvN0AIbG2rM7csYTsudOczTtzimlP7XxunYtOwCYBLVswRWpqn8PZcRLWu2w==
   /@jimp/utils/0.6.8:
     dependencies:
       core-js: 2.6.11
@@ -4005,7 +4410,6 @@ packages:
     resolution:
       integrity: sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
   /core-js/3.6.2:
-    dev: true
     requiresBuild: true
     resolution:
       integrity: sha512-hIE5dXkRzRvnZ5vhkRfQxUvDxQZmD9oueA08jDYRBKJHx+VIl/Pne/e0A4x9LObEEthC/TqiZybUoNM4tRgnKg==
@@ -8968,16 +9372,17 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-51PE4haMSXcHohnSMdM42anbvZANYTqMrr52tVKPqqsPJMzoP6FYYDVqahX/HrAoKEKz3uUPzSvKs9A3qR4iVw==
-  /jimp/0.6.4:
+  /jimp/0.10.2:
     dependencies:
-      '@babel/polyfill': 7.7.0
-      '@jimp/custom': 0.6.8
-      '@jimp/plugins': 0.6.8_@jimp+custom@0.6.8
-      '@jimp/types': 0.6.8_@jimp+custom@0.6.8
-      core-js: 2.6.11
+      '@babel/runtime': 7.8.4
+      '@jimp/custom': 0.10.2
+      '@jimp/plugins': 0.10.2_@jimp+custom@0.10.2
+      '@jimp/types': 0.10.2_@jimp+custom@0.10.2
+      core-js: 3.6.2
+      regenerator-runtime: 0.13.3
     dev: false
     resolution:
-      integrity: sha512-WQVMoNhkcq/fgthZOWeMdIguCVPg+t4PDFfSxvbNcrECwl8eq3/Ou2whcFWWjyW45m43yAJEY2UT7acDKl6uSQ==
+      integrity: sha512-dt6n3P0LZyoqAiIUur+gJEKS55sCUUo19cKx8LTSZRqGizF4JN0jfRAnfnV4nxF+sINP2FN6SOi82gHcAMm1nQ==
   /jimp/0.6.8:
     dependencies:
       '@jimp/custom': 0.6.8
@@ -17287,7 +17692,7 @@ specifiers:
   gatsby-transformer-remark: ^2.6.45
   gatsby-transformer-sharp: ^2.3.9
   gatsby-transformer-yaml: ^2.2.20
-  jimp: 0.6.4
+  jimp: 0.10.2
   lodash: ^4.17.15
   minimatch: ^3.0.4
   mitt: ^1.2.0

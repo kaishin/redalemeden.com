@@ -10,11 +10,18 @@ class BlogPostTemplate extends React.Component {
   render() {
     const { markdownRemark: post } = this.props.data;
     var description;
+    var image;
 
     if (post.frontmatter.audience) {
       description = 'Audience: ' + post.frontmatter.audience + '.';
     } else {
       description = post.excerpt;
+    }
+
+    if (post.frontmatter.image) {
+      image = 'social-cards/' + post.frontmatter.image;
+    } else {
+      image = (post.fields.slug + '/social-card.jpg').substr(1);
     }
 
     return (
@@ -23,7 +30,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title + ' | Unredacted'}
           description={description}
           keywords={post.frontmatter.tags}
-          image={(post.fields.slug + '/social-card.jpg').substr(1)}
+          image={image}
           largeImage={true}
         />
         <Helmet bodyAttributes={{ class: 'post-page blog-page' }} />
@@ -81,6 +88,7 @@ export const pageQuery = graphql`
         category
         tags
         audience
+        image
         formattedDate: date(formatString: "MMM D, YYYY")
       }
     }

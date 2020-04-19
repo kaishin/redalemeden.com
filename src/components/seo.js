@@ -15,7 +15,7 @@ class Seo extends React.Component {
     const title = this.state.title === undefined ? metadata.title : this.state.title;
     const keywords = this.state.keywords === undefined ? [] : this.state.keywords;
     const meta = this.state.meta === undefined ? [] : this.state.meta;
-    const image = this.state.image ? this.state.image : 'social-card.jpg';
+    const image = this.state.image ? this.state.image : 'social-cards/default.jpg';
     const largeImage = this.state.largeImage ? this.state.largeImage : false;
 
     return (

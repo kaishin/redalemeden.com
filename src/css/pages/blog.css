@@ -168,13 +168,15 @@
   & a.anchor {
     background-color: transparent;
     border-bottom: none;
-    font-weight: 100;
-    opacity: 0.2;
-    font-size: 1.2rem;
-    vertical-align: middle;
     float: none;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 100;
+    margin-left: -1rem;
+    opacity: 0.4;
     padding-right: 0;
-    margin-left: -1.3rem;
+    position: relative;
+    vertical-align: middle;
 
     &:hover {
       background-color: transparent;

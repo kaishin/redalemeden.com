@@ -2,7 +2,7 @@
   "extends": "stylelint-config-recommended",
   "rules": {
     "selector-nested-pattern": "^&",
-    "no-descending-specificity": false,
+    "no-descending-specificity": 0,
     "at-rule-no-unknown": [
       true,
       {

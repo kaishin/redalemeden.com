@@ -37,7 +37,7 @@ A relevant and timely example would be distraction-free writing environments on 
 
 The recently released iA Writer for Mac trod the path of *zero customizability* in a bold move that goes against this trend. Unsurprisingly, it takes only a couple of minutes on iA Writer to realize that the lack of customization is nowhere near detrimental to efficiency. From typography to colors, everything has been taken care of for users, allowing them to fully concentrate on the task at hand: writing.
 
-The one-size-fits-all approach could be easily dismissed as limiting for more complex software products such as graphic editors and word processors. Their thoroughly customizable interfaces are built on the premise that users have esoteric expectations and disparate workflows. Then again, one can wonder if these monolithic, can-do-it-all applications are the right answer to productivity and efficiency.
+The one-size-fits-all approach could be easily dismissed as limiting for more complex software products such as graphic editors and word processors. Their thoroughly customizable interfaces are built on the premise that users have different expectations and disparate workflows. Then again, one can wonder if these monolithic, can-do-it-all applications are the right answer to productivity and efficiency.
 
 [Tullis]: http://scholarship.rice.edu/handle/1911/15866
 *[GUI]: Graphical User Interface

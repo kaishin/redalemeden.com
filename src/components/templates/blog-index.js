@@ -19,7 +19,7 @@ class BlogIndexPage extends React.Component {
 
         <Seo
           title="Unredacted"
-          description="I write about design, technology, programming, and other esoteric interests. "
+          description="I write about design, technology, programming, and other personal interests."
           keywords={['Unredacted', 'Blog']}
         />
         <article className="content blog-content">

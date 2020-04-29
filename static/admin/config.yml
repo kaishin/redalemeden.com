@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: kaishin/redalemeden.com
+  squash_merges: true
 
 publish_mode: editorial_workflow
 media_folder: static
@@ -9,11 +10,11 @@ collections:
   - name: widegamut
     label: Wide Gamut
     label_singular: Entry
-    identifier_field: path
+    identifier_field: date
     slug: "{{path}}"
     description: Custom microblog setup.
     folder: content/microblog
-    media_folder: content/microblog/assets
+    media_folder: assets
     create: true
     fields:
       - { name: date, label: Date, widget: datetime }

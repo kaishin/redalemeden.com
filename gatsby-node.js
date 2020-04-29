@@ -237,7 +237,7 @@ exports.onPostBuild = async ({ graphql }) => {
     return {
       id: url.resolve(siteUrl, slug),
       url: url.resolve(siteUrl, slug),
-      title: frontmatter.title || frontmatter.excerpt || '',
+      title: frontmatter.title || '',
       ...(frontmatter.excerpt && { excerpt: frontmatter.excerpt }),
       slug: slug,
       tags: frontmatter.tags,

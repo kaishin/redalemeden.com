@@ -10,7 +10,7 @@ collections:
   - name: widegamut
     label: Wide Gamut
     label_singular: Entry
-    identifier_field: date
+    identifier_field: body
     slug: "{{path}}"
     description: Custom microblog setup.
     folder: content/microblog

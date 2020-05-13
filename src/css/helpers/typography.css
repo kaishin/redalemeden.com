@@ -48,3 +48,20 @@
     color: var(--theme-visited-link-color);
   }
 }
+
+%standalone-blog-link {
+  background-color: color-mod(var(--theme-link-color) alpha(5%));
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: var(--link-transition);
+
+  &:hover {
+    background-color: color-mod(var(--theme-link-color) alpha(15%));
+  }
+
+  &:nth-child(2) {
+    margin-left: 1em;
+  }
+}

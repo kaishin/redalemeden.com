@@ -33,4 +33,13 @@
       text-decoration: underline;
     }
   }
+
+  & .edit-post {
+    margin-top: 2rem;
+  }
+}
+
+.edit-post {
+  @extend %standalone-blog-link;
+  font-size: 0.8em;
 }

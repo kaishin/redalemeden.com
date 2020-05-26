@@ -1,0 +1,280 @@
+{
+  "basics": {
+    "name": "Reda Lemeden",
+    "label": "Independent Software Designer & Developer",
+    "email": "hello@redalemeden.com",
+    "phone": "+46736455922",
+    "website": "https://redalemeden.com",
+    "summary": "I am software developer, designer, and product manager (MIM) based in Stockholm, Sweden. Over the past decade, I worked with various Web and native Apple technologies in different full-time positions around the US and Europe. I am passionate about writing, education, open-source, and community involvement. I lead by example and enjoy going the extra mile to deliver delightful products.",
+    "location": {
+      "address": "Råcksta Gådsväg 28",
+      "postalCode": "16273",
+      "city": "Stockholm",
+      "countryCode": "SE"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "kaishin",
+        "url": "https://twitter.com/kaishin"
+      },
+      {
+        "network": "Github",
+        "username": "kaishin",
+        "url": "https://github.com/kaishin"
+      },
+      {
+        "network": "Dribbble",
+        "username": "kaishin",
+        "url": "https://dribbble.com/kaishin"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Four Rays AB",
+      "position": "Founder",
+      "website": "https://4rays.studio",
+      "startDate": "2019-05-01",
+      "summary": "Author and publish educational and commercial products as an independent software shop.",
+      "location": {
+        "city": "Stockholm",
+        "countryCode": "SE"
+      }
+    },
+    {
+      "company": "Kaching AB",
+      "position": "Chief Product Officer",
+      "website": "https://kachingretail.com",
+      "startDate": "2019-05-01",
+      "endDate": "2020-03-13",
+      "summary": "Provide product and design team leadership with the goal of planning, building, and launching a new mobile product for the retail industry.",
+      "location": {
+        "city": "Stockholm",
+        "countryCode": "SE"
+      },
+      "highlights": [
+        "Oversaw the development of a universal iOS app built entirely in SwiftUI.",
+        "Worked with the team on different payment integrations including Swish, Klarna, and card payment processors.",
+        "Aligned the product, design, and development efforts around the same strategic goals.",
+        "Coached the product manager and the product designer and supported them in their day-to-day operations.",
+        "Represented the company at various trade fairs and events in Europe."
+      ]
+    },
+    {
+      "company": "Kaching AB",
+      "position": "Chief Design Officer",
+      "website": "https://kachingretail.com",
+      "startDate": "2018-04-01",
+      "endDate": "2019-04-30",
+      "location": {
+        "city": "Stockholm",
+        "countryCode": "SE"
+      },
+      "summary": "Lead a team of product designers to build new retail experiences for mobile.",
+      "highlights": [
+        "Oversaw the creation and implementation of an expansive design system for mobile.",
+        "Refreshed the visual identity of the company and the product line-up.",
+        "Organized dozens of design sprints with internal stakeholders and external participants from leading retail companies such as Apple and Ikea.",
+        "Built several UI components for iOS, including an in-app notification framework."
+      ]
+    },
+    {
+      "company": "Dynamo Consulting AB",
+      "position": "iOS Developer & UI Designer",
+      "website": "https://dyna.mo",
+      "startDate": "2016-09-01",
+      "endDate": "2018-03-31",
+      "location": {
+        "city": "Stockholm",
+        "countryCode": "SE"
+      },
+      "summary": "Design and develop digital products for clients and in-house projects.",
+      "highlights": [
+        "Led a team to build a video consultation app for iOS and Android.",
+        "Gave a talk about design sprints at the STHLM TECH Meetup.",
+        "Used different design and prototyping tools to create early concepts of a mobile retail product.",
+        "Collaborated with other iOS developers to build a native retail application in Swift."
+      ]
+    },
+    {
+      "company": "thoughtbot Filial",
+      "position": "Design Director",
+      "website": "https://thoughtbot.com",
+      "startDate": "2013-04-21",
+      "endDate": "2016-08-31",
+      "location": {
+        "city": "Stockholm",
+        "countryCode": "SE"
+      },
+      "summary": "Provide design and development services for enterprise and startup clients.",
+      "highlights": [
+        "Co-hosted \"Tentative\", a weekly podcast about UI design.",
+        "Gave talks at local meetups including CocoaHeads and the Dribbble meetup.",
+        "Hosted a one-day workshop about iOS and Auto Layout at Hyped Island.",
+        "Co-organized on-site workshops covering various Web and native development technologies.",
+        "Led and supported the design teams between the two European branches."
+      ]
+    },
+    {
+      "company": "thoughtbot, Inc",
+      "position": "Front-end Product Designer",
+      "website": "http://thoughtbot.com",
+      "startDate": "2012-01-09",
+      "endDate": "2013-04-21",
+      "location": {
+        "city": "Boston, MA",
+        "countryCode": "US"
+      },
+      "summary": "Design and implement Web and mobile user interfaces for enterprise and startup clients.",
+      "highlights": [
+        "Built the front-end of a large-scale MOOC platform at MIT (edX).",
+        "Co-authored Bourbon Neat, a Sass-powered grid framework.",
+        "Designed several product interfaces for Web, desktop, and mobile."
+      ]
+    },
+    {
+      "company": "Contactually (500 Startups)",
+      "position": "Part-time Designer",
+      "website": "http://contactually.com",
+      "startDate": "2011-09-01",
+      "endDate": "2011-12-20",
+      "summary": "Design a Web-based CRM product for a 500 Startups alumni (2012).",
+      "location": {
+        "city": "Washington DC",
+        "countryCode": "US"
+      },
+      "highlights": ["Created the visual identity of the company.", "Designed a Web-based dashboard UI."]
+    },
+    {
+      "company": "Kaishin & Co",
+      "position": "Founder",
+      "startDate": "2009-03-01",
+      "endDate": "2011-08-20",
+      "location": {
+        "city": "Casablanca",
+        "countryCode": "MA"
+      },
+      "summary": "Run a design and development consultancy working with clients in Europe and North Africa.",
+      "highlights": [
+        "Authored an RSS reader for iOS in Objective-C.",
+        "Illustrated a children's book for teaching Japanese characters (Kana). Published by Kai Japanese School based in Tokyo."
+      ]
+    },
+    {
+      "company": "Orange Vallée",
+      "position": "Assistant Product Manager",
+      "website": "http://www.orange.com",
+      "startDate": "2010-01-06",
+      "endDate": "2010-12-20",
+      "location": {
+        "city": "Paris",
+        "countryCode": "FR"
+      },
+      "summary": "Assisted the product manager with various planning, design, and development tasks.",
+      "highlights": [
+        "Desinged the user interface of a multi-platform social network where users can share short audio clips."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "American University",
+      "area": "Economics",
+      "studyType": "Exchange",
+      "startDate": "2011-08-21",
+      "endDate": "2011-12-21",
+      "location": {
+        "city": "Washington DC",
+        "countryCode": "US"
+      },
+      "courses": ["Global Economics & Business Program"]
+    },
+    {
+      "institution": "Audencia Business School",
+      "area": "Product Management",
+      "studyType": "Master in Management",
+      "startDate": "2009-09-21",
+      "endDate": "2012-07-12",
+      "location": {
+        "city": "Nantes",
+        "countryCode": "FR"
+      },
+      "courses": ["MIM Marketing for Product Manager"]
+    },
+    {
+      "institution": "Kai Japanese School",
+      "area": "Language Studies",
+      "studyType": "Vocational",
+      "startDate": "2007-09-21",
+      "endDate": "2009-03-20",
+      "location": {
+        "city": "Tokyo",
+        "countryCode": "JP"
+      },
+      "courses": ["Japanese Language Proficiency Test 2 Certificate"]
+    },
+    {
+      "institution": "ISCAE Business School",
+      "area": "Marketing & Communication",
+      "studyType": "Bachelor",
+      "startDate": "2003-09-21",
+      "endDate": "2007-06-20",
+      "location": {
+        "city": "Casablanca",
+        "countryCode": "MA"
+      },
+      "courses": ["Bachelor's Degree in Marketing & Communication"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "First prize at the Kai Speech Contest 2009",
+      "date": "2009-02-20",
+      "awarder": "Kai Japanese School",
+      "summary": "Gave a speech about living life without regrets."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Product Design",
+      "keywords": ["Wireframing", "Prototyping", "Planning"]
+    },
+    {
+      "name": "Web",
+      "keywords": ["HTML", "CSS", "Javascript", "PostCSS"]
+    },
+    {
+      "name": "Mobile & Desktop",
+      "keywords": ["Swift", "iOS", "macOS", "Core Graphics"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native level"
+    },
+    {
+      "language": "French",
+      "fluency": "Native level"
+    },
+    {
+      "language": "Arabic",
+      "fluency": "Business level"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Business level"
+    },
+    {
+      "language": "Swedish",
+      "fluency": "Business level"
+    }
+  ],
+  "references": [
+    {
+      "name": "Tony Cappaert, Co-Founder & COO at Contactually, ex-Microsoft PM, MIT alum",
+      "reference": "Reda is a rockstar designer. He designed nearly all of the front-end features on Contactually, as well as the logo and iconography used throughout the site. We constantly get complements from users on everything Reda produced. Beyond his design skill, Reda is a pleasure to manage and a strong advocate for the customer. He constantly kept us grounded in what would be the best UX for our users, and his insight was generally spot on. I'd highly recommend Reda for any project requiring beautiful design and effective UX."
+    }
+  ]
+}

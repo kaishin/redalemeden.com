@@ -7,6 +7,7 @@ tags:
   - Google
   - Browsers
   - Opinion
+  - Essay
 audience: "people interested in the open Web as a platform"
 image: chrome-no-more.jpg
 ---

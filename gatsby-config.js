@@ -6,7 +6,7 @@ module.exports = {
     email: 'hello@redalemeden.com',
     keywords: ['Reda', 'Lemeden', 'Kaishin', 'Designer', 'Programmer', 'Swift', 'Stockholm', 'KaishinLab'],
     siteUrl: 'https://redalemeden.com',
-    authorBio: 'Designer, programmer, and illustrator based in Stockholm, Sweden.',
+    authorBio: 'Independent Developer, Designer, and Writer Based in Stockholm, Sweden.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

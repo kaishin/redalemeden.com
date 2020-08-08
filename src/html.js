@@ -19,6 +19,13 @@ export default function HTML(props) {
         <meta name="msapplication-TileColor" content="#ffc40d" />
         <meta name="theme-color" content="#000000" />
         {props.headComponents}
+        <script
+          src="https://stats.redalemeden.com/tracker.js"
+          site="VKAGX"
+          included-domains="redalemeden.com"
+          honor-dnt="true"
+          defer
+        />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

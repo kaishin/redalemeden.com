@@ -64,21 +64,61 @@ p {
   text-align: center;
   overflow: hidden;
 
+  & .author-avatar {
+    border-radius: 2.5rem;
+    transform: translate(-2.5rem);
+    width: 5rem;
+  }
+
+  & .avatar-placeholder {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 2.5rem;
+    display: inline-block;
+    height: 5rem;
+    transform: translate(2.5rem);
+    width: 5rem;
+  }
+
+  & .header-link {
+    transition: all 0.3s;
+    padding: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 1.6rem;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      transform: scale(1.1);
+    }
+  }
+
   & a {
     text-decoration: none;
   }
 
-  & .full-name {
+  & .author-name {
     color: white;
     font-size: var(--header-title-size);
     font-weight: 500;
     letter-spacing: 0.2em;
-    margin-bottom: calc(var(--header-title-size) * 2);
+    margin-bottom: 0;
     text-transform: uppercase;
   }
 
+  & .author-bio {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    color: color-mod(var(--primary-color) tint(70%));
+
+    & em {
+      color: var(--secondary-color);
+      font-weight: 500;
+    }
+  }
+
   & .sakigake {
-    margin: auto;
+    margin: 2rem auto;
 
     &::before {
       @extend %sakigake-pseudo;
@@ -95,7 +135,6 @@ p {
 .site-navigation {
   & .navigation-links {
     list-style: none;
-    padding-top: 3rem;
     padding-left: 0;
     max-width: 30em;
     margin-left: auto;
@@ -105,7 +144,8 @@ p {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 2rem 1rem 1rem;
+      padding: 1rem;
+      margin: 0 auto;
     }
 
     & .link {

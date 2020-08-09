@@ -13,6 +13,8 @@
   --dark-theme-fg-color: white;
   --dark-theme-link-color: #7760c3;
 
+  /* Light Theme */
+
   --theme-background-color: var(--light-theme-bg-color);
   --theme-foreground-color: var(--light-theme-fg-color);
   --theme-inset-background-color: color-mod(var(--theme-background-color) shade(2%));
@@ -44,6 +46,8 @@
   --code-highlighted-line-color: rgba(0 0 0 / 5%);
   --code-highlighted-line-border-color: #f99;
 }
+
+/* Dark Theme */
 
 @media (prefers-color-scheme: dark) {
   :root {

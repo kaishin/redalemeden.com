@@ -9,8 +9,13 @@ class Header extends React.Component {
 
     return (
       <header className="site-header">
-        <Link to="/" activeClassName="header-link">
-          <h1 className="full-name">{title}</h1>
+        <Link to="/" className="header-link">
+          <div className="avatar-placeholder" />
+          <img className="author-avatar" src="author-photo.jpg" alt="Reda Lemeden" />
+          <h1 className="author-name">{title}</h1>
+          <p className="author-bio">
+            Independent <em>Developer</em> &amp; <em>Designer</em> based in Sweden
+          </p>
         </Link>
         <div className="sakigake">
           <SakigakeLogo className="asset" />

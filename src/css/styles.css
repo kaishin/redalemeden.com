@@ -3,8 +3,8 @@
 @import "components/_glob";
 
 body {
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: var(--theme-body-background-color);
+  color: var(--theme-body-foreground-color);
   font-family: var(--text-font);
   font-size: 16px;
   margin: 0;
@@ -51,6 +51,7 @@ p {
 
 .background-pattern {
   display: block;
+  fill: var(--theme-pattern-color);
   max-width: 100%;
   pointer-events: none;
   position: absolute;
@@ -98,7 +99,7 @@ p {
   }
 
   & .author-name {
-    color: white;
+    color: var(--theme-foreground-color);
     font-size: var(--header-title-size);
     font-weight: 500;
     letter-spacing: 0.2em;
@@ -109,10 +110,10 @@ p {
   & .author-bio {
     font-size: 0.95rem;
     margin-bottom: 0;
-    color: color-mod(var(--primary-color) tint(70%));
+    color: var(--theme-secondary-foreground-color);
 
     & em {
-      color: var(--secondary-color);
+      color: var(--theme-link-color);
       font-weight: 500;
     }
   }
@@ -193,7 +194,7 @@ p {
   }
 
   & a {
-    color: #fff;
+    color: var(--theme-body-foreground-color);
     text-decoration: none;
   }
 }

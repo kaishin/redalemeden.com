@@ -74,7 +74,7 @@
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 500;
-  border-bottom: 1px solid color-mod(var(--theme-tertiary-foreground-color) alpha(50%));
+  border-bottom: 1px solid var(--theme-post-category-color);
   margin-bottom: 0.8rem;
   letter-spacing: 0.05em;
   color: var(--theme-tertiary-foreground-color);

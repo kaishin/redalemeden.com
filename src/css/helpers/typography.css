@@ -57,7 +57,7 @@
 }
 
 %standalone-blog-link {
-  background-color: color-mod(var(--theme-link-color) alpha(5%));
+  background-color: var(--theme-blog-link-background-color);
   border-radius: 1rem;
   display: inline-block;
   padding: 0.5em 1em;
@@ -65,7 +65,7 @@
   transition: var(--link-transition);
 
   &:hover {
-    background-color: color-mod(var(--theme-link-color) alpha(15%));
+    background-color: var(--theme-blog-hover-link-background-color);
   }
 
   &:nth-child(2) {

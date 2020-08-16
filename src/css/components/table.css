@@ -20,7 +20,7 @@ table {
 
   & th {
     @extend %padded-cell;
-    border-bottom: 2px solid color-mod(var(--theme-foreground-color) alpha(10%));
+    border-bottom: 2px solid var(--theme-table-border-color);
     font-weight: 600;
     text-align: left;
     padding-bottom: var(--table-spacing);

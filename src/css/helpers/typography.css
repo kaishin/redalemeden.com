@@ -2,25 +2,55 @@
 
 :root {
   --font-fira: 'Fira Mono';
-  --font-rubik: 'Rubik';
+  --font-inter: 'Inter';
   --header-title-size: 1.1rem;
   --blog-body-size: 1.125rem;
 
-  --text-font: var(--font-rubik), system-ui;
+  --text-font: var(--font-inter), system-ui;
   --monospaced-font: var(--font-fira), monospace;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h5 {
+  font-size: 1.1em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 600;
 }
 
 %body-text {
   font-size: 1rem;
   color: var(--theme-foreground-color);
   line-height: 1.5;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 %heading {
   font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: .2em;
+  letter-spacing: .16em;
   text-transform: uppercase;
 
   &::after {

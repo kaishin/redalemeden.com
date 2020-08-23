@@ -4,11 +4,11 @@ button,
 input[type="reset"],
 input[type="button"] {
   appearance: none;
-  background-color: var(--secondary-color);
+  background-color: var(--theme-pill-button-background-color);
   border: none;
   cursor: pointer;
-  border-radius: 12em;
-  color: var(--primary-color);
+  border-radius: 2em;
+  color: var(--theme-pill-button-foreground-color);
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 700;

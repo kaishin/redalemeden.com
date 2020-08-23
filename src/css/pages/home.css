@@ -7,31 +7,6 @@
   & .button {
     font-weight: 500;
   }
-
-  & a {
-    color: var(--secondary-color);
-  }
-
-  & h3,
-  & h4,
-  & h5 {
-    @extend %highlight-p;
-    font-weight: 500;
-  }
-
-  & h3 {
-    @extend %heading;
-  }
-
-  & h4 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-  }
-
-  & h5 {
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
 }
 
 .intro-content {
@@ -88,8 +63,10 @@
     padding: 0;
   }
 
-  & a {
-    @extend %inline-link-style;
+  & p {
+    & a {
+      @extend %inline-link-style;
+    }
   }
 }
 
@@ -98,7 +75,7 @@
   max-width: var(--max-width);
 
   & a {
-    color: var(--secondary-color);
+    color: var(--theme-link-color);
   }
 
   & ol {
@@ -150,12 +127,13 @@
     transition: color 0.2s;
 
     &:hover {
-      color: white;
+      color: var(--theme-foreground-color);
     }
   }
 
   & .article-metadata {
-    color: color-mod(white alpha(60%));
+    color: var(--theme-foreground-color);
+    opacity: 0.7;
   }
 
   & .podcast-list {

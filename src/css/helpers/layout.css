@@ -16,8 +16,54 @@
 @custom-media --full-width-image (width < 450px);
 
 %sheet {
-  background-color: var(--theme-background-color);
   color: var(--theme-foreground-color);
+
+  @media (--narrow-grid-container) {
+    background-color: var(--theme-background-color);
+  }
+
+  &::before {
+    background-color: var(--theme-background-color);
+    content: '';
+    display: block;
+
+    @media (--full-grid-container) {
+      height: 150vh;
+      margin-left: -14rem;
+      margin-top: -6rem;
+      position: fixed;
+      transform: rotate(14deg);
+      width: 100vw;
+      z-index: -1;
+    }
+
+    @media (--narrow-grid-container) {
+      height: 5rem;
+      left: 0;
+      margin-left: -1rem;
+      margin-top: -2.5rem;
+      position: absolute;
+      transform: rotate(-5deg);
+      width: 105%;
+      z-index: -1;
+    }
+  }
+
+  &::after {
+    @media (--narrow-grid-container) {
+      background-color: var(--theme-background-color);
+      content: '';
+      display: block;
+      height: 5rem;
+      left: 0;
+      margin-left: -1rem;
+      margin-top: -2.5rem;
+      position: absolute;
+      transform: rotate(-5deg);
+      width: 105%;
+      z-index: -1;
+    }
+  }
 }
 
 %gradient-background {
@@ -25,10 +71,11 @@
 }
 
 %sakigake-pseudo {
-  background-color: color-mod(var(--secondary-color) alpha(35%));
+  background-color: var(--theme-link-color);
   content: '';
   display: inline-block;
   height: 1px;
+  opacity: 0.2;
   vertical-align: 10px;
   width: calc(var(--header-title-size) * 4);
 }

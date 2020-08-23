@@ -26,18 +26,27 @@
 %light-theme {
   --theme-body-background-color: var(--light-theme-bg-color);
   --theme-pattern-color: rgb(241, 140, 106);
+  --theme-navigation-link-color: var(--primary-color);
+  --theme-navigation-hover-link-bg-color: rgba(255, 255, 255, 0.6);
 
-  --theme-background-color: var(--light-theme-bg-color);
+  --theme-background-color: white;
   --theme-foreground-color: var(--light-theme-fg-color);
-  --theme-secondary-foreground-color: gray(50);
-  --theme-tertiary-foreground-color: gray(30);
-  --theme-inset-background-color: color-mod(var(--light-theme-bg-color) shade(2%));
+  --theme-secondary-foreground-color: color-mod(var(--dusk-blue) shade(25%));
+  --theme-tertiary-foreground-color: color-mod(var(--dusk-blue) shade(25%));
+  --theme-inset-background-color: color-mod(var(--light-theme-bg-color) alpha(60%));
   --theme-bullet-dash-color: color-mod(var(--light-theme-fg-color) alpha(40%));
+  --theme-card-background-color: var(--light-theme-bg-color);
+
+  --form-placeholder-color: var(--light-theme-fg-color);
+  --form-focus-color: color-mod(var(--light-theme-fg-color) alpha(20%));
 
   --theme-link-color: var(--light-theme-link-color);
   --theme-visited-link-color: color-mod(var(--light-theme-link-color) shade(30%));
   --theme-link-hover-background-color: color-mod(var(--light-theme-link-color) alpha(8%));
   --theme-link-border-bottom-color: color-mod(var(--light-theme-link-color) alpha(40%));
+
+  --theme-pill-button-background-color: var(--primary-color);
+  --theme-pill-button-foreground-color: var(--dark-theme-fg-color);
 
   --theme-blog-link-background-color: color-mod(var(--light-theme-link-color) alpha(5%));
   --theme-blog-hover-link-background-color: color-mod(var(--light-theme-link-color) alpha(15%));
@@ -59,6 +68,8 @@
 %dark-theme {
   --theme-body-background-color: var(--primary-color);
   --theme-pattern-color: black;
+  --theme-navigation-link-color: var(--dark-theme-fg-color);
+  --theme-navigation-hover-link-bg-color: rgba(255, 255, 255, 0.05);
 
   --theme-background-color: var(--dark-theme-bg-color);
   --theme-foreground-color: var(--dark-theme-fg-color);
@@ -66,11 +77,18 @@
   --theme-tertiary-foreground-color: var(--marin-blue);
   --theme-inset-background-color: color-mod(var(--dark-theme-bg-color) shade(20%));
   --theme-bullet-dash-color: color-mod(var(--dark-theme-fg-color) alpha(40%));
+  --theme-card-background-color: black;
+
+  --form-placeholder-color: var(--dusk-blue);
+  --form-focus-color: var(--dusk-blue);
 
   --theme-link-color: var(--dark-theme-link-color);
   --theme-visited-link-color: color-mod(var(--dark-theme-link-color) shade(30%));
   --theme-link-hover-background-color: color-mod(var(--dark-theme-link-color) alpha(8%));
   --theme-link-border-bottom-color: color-mod(var(--dark-theme-link-color) alpha(40%));
+
+  --theme-pill-button-background-color: var(--dark-theme-link-color);
+  --theme-pill-button-foreground-color: var(--light-theme-fg-color);
 
   --theme-blog-link-background-color: color-mod(var(--dark-theme-link-color) alpha(5%));
   --theme-blog-hover-link-background-color: color-mod(var(--dark-theme-link-color) alpha(15%));
@@ -104,10 +122,10 @@
   }
 }
 
-.manual-light-theme {
+.light-theme {
   @extend %light-theme;
 }
 
-.manual-dark-theme {
+.dark-theme {
   @extend %dark-theme;
 }

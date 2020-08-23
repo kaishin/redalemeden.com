@@ -5,7 +5,7 @@ import Seo from '../seo';
 import '../../css/normalize.css';
 import '../../css/styles.css';
 
-import 'typeface-rubik';
+import 'typeface-inter';
 
 class StandaloneLayout extends React.Component {
   render() {
@@ -21,7 +21,7 @@ class StandaloneLayout extends React.Component {
 }
 
 StandaloneLayout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default StandaloneLayout;

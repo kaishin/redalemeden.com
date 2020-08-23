@@ -1,6 +1,6 @@
 .project-cell {
   mask-image: radial-gradient(white, black);
-  background-color: black;
+  background-color: var(--theme-card-background-color);
   border-radius: 1rem;
   flex: 0 1 280px;
   list-style-type: none;
@@ -12,11 +12,11 @@
   }
 
   & .year-label {
-    color: var(--secondary-color);
+    color: var(--theme-link-color);
   }
 
   & a {
-    color: white;
+    color: var(--theme-foreground-color);
     text-decoration: none;
   }
 
@@ -48,7 +48,8 @@
 
   & .project-description {
     margin: 0;
-    color: gray(50);
+    color: var(--theme-foreground-color);
+    opacity: 0.8;
     font-size: 0.9rem;
     line-height: 1.4;
   }

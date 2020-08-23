@@ -1,13 +1,4 @@
 .microblog-page {
-  & .main-container {
-    @extend %sheet;
-    overflow: hidden;
-  }
-
-  & a {
-    color: var(--theme-link-color);
-  }
-
   & .full-post-content {
     & img {
       display: block;
@@ -22,7 +13,7 @@
 
   & .title {
     margin: 0.2em 0 0;
-    font-weight: normal;
+    font-weight: 600;
   }
 
   & .permalink {

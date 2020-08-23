@@ -14,7 +14,7 @@ class Header extends React.Component {
           <img className="author-avatar" src="author-photo.jpg" alt="Reda Lemeden" />
           <h1 className="author-name">{title}</h1>
           <p className="author-bio">
-            Independent <em>Developer</em> &amp; <em>Designer</em> based in Sweden
+            Independent <em>Developer</em> &amp; <em>Designer</em> based in 🇸🇪
           </p>
         </Link>
         <div className="sakigake">

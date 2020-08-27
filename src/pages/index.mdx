@@ -42,7 +42,11 @@ I particulalry enjoy working with **interaction** and **interface** design,
 
 ## Currently Working On
 
-<ProjectList projects={props.data.projects.list} />
+<ProjectList projects={props.data.currentProjects.list} />
+
+## Recent Projects
+
+<ProjectList projects={props.data.recentProjects.list} />
 
 </section>
 
@@ -57,7 +61,14 @@ export const pageQuery = graphql`
         authorBio
       }
     }
-    projects: allProjectsYaml(limit: 6, filter: {state: {in: ["ongoing", "upcoming"]}}, sort: { fields: [year], order: DESC }) {
+    currentProjects: allProjectsYaml(limit: 6, filter: {state: {in: ["current"]}}, sort: { fields: [year], order: DESC }) {
+      list: edges {
+        project: node {
+          ...ProjectDetails
+        }
+      }
+    }
+    recentProjects: allProjectsYaml(limit: 6, filter: {state: {in: ["recent"]}}, sort: { fields: [year], order: DESC }) {
       list: edges {
         project: node {
           ...ProjectDetails

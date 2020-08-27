@@ -1,24 +1,24 @@
 - name: "-Unannounced-"
   image: images/gokuhi.png
   year: 2021
-  state: upcoming
+  state: current
   url: https://4rays.studio
-  description: "An platform for video game enthusiasts."
+  description: "A service for video game enthusiasts"
 
 - name: "-Unannounced-"
   image: images/gokuhi.png
   year: 2021
-  state: upcoming
+  state: current
   url: https://4rays.studio
-  description: "A book about programming, math, and graphics."
+  description: "About about geometry and programming"
 
 - name: "Swift & Fika"
   image: images/swift-and-fika.jpg
   year: 2018
   tags: [conference, swift]
-  state: paused
+  state: recent
   url: http://swiftandfika.com
-  description: "The first ever Swift conference in Stockholm, Sweden."
+  description: "Co-organized the first Swift conf in the nordics"
 
 - name: "Nope"
   image: images/nope.jpg
@@ -26,15 +26,15 @@
   tags: [safari, javascript, OSS]
   state: abandoned
   url: http://redalemeden.com/nope
-  description: "A content-blocking extension for Safari."
+  description: "A content-blocking extension for Safari"
 
 - name: "Markoff"
   image: images/markoff.jpg
   year: 2016
   tags: [macos, design, swift, OSS]
-  state: ongoing
+  state: current
   url: https://github.com/kaishin/Markoff
-  description: "An open-source Markdown previewer for macOS."
+  description: "An open-source Markdown previewer for macOS"
 
 - name: "Speedster"
   image: images/speedster.jpg
@@ -42,7 +42,7 @@
   tags: [macos, design, swift]
   state: abandoned
   url: https://speedsterapp.com
-  description: "A native SpeedOfMe client for macOS."
+  description: "A native SpeedOfMe client for macOS"
 
 - name: "Podcast Covers"
   image: images/podcast-covers.jpg
@@ -50,7 +50,7 @@
   tags: [branding, design]
   state: idle
   url: https://thoughtbot.com/learn
-  description: "Visual identity for thoughtbot's podcast line-up."
+  description: "Visual identity for thoughtbot's podcast line-up"
 
 - name: "Syndicate"
   image: images/syndicate.jpg
@@ -58,7 +58,7 @@
   tags: [safari, javascript, OSS]
   state: abandoned
   url: https://redalemeden.com/syndicate
-  description: "An RSS discovery extension for Safari."
+  description: "An RSS discovery extension for Safari"
 
 - name: "Kromatic"
   image: images/kromatic.jpg
@@ -66,15 +66,15 @@
   tags: [macos, design, swift]
   state: idle
   url: http://kromatic.thoughtbot.com
-  description: "A color picking & naming utility for macOS."
+  description: "A color picking & naming utility for macOS"
 
 - name: "A Visual History of the iTunes Icon"
   image: images/itunes.jpg
   year: 2015
   tags: [resource, design]
-  state: ongoing
+  state: idle
   url: https://redalemeden.com/itunes
-  description: "A trip down memory lane."
+  description: "A trip down memory lane"
 
 - name: "IPinator"
   image: images/ipinator.jpg
@@ -82,7 +82,7 @@
   tags: [macos, design, swift]
   state: idle
   url: http://ipinator.kaishin.co
-  description: "An IP address geo-coding utility for macOS."
+  description: "An IP address geo-coding utility for macOS"
 
 - name: "Rototo"
   image: images/rototo.jpg
@@ -90,7 +90,7 @@
   tags: [ios, design, game]
   state: abandoned
   url: http://playroto.to
-  description: "2D space-survival game for iOS and Android."
+  description: "2D space-survival game for iOS and Android"
 
 - name: "Sassquatch"
   image: images/sassquatch.jpg
@@ -98,7 +98,7 @@
   tags: [macos, design, swift]
   state: abandoned
   url: http://sassquatch.thoughtbot.com
-  description: "Zero-setup Sass playground for macOS."
+  description: "Zero-setup Sass playground for macOS"
 
 - name: "ImageScout"
   image: images/imagescout.jpg
@@ -107,7 +107,7 @@
   featured: false
   state: idle
   url: https://github.com/kaishin/ImageScout
-  description: "A Swift implementation of fastimage."
+  description: "A Swift implementation of fastimage"
 
 - name: "Gifu"
   image: images/gifu.gif
@@ -116,20 +116,20 @@
   featured: true
   state: idle
   url: https://github.com/kaishin/Gifu
-  description: "High-performance animated GIF library for iOS."
+  description: "High-performance animated GIF library for iOS"
 
 - name: "Dash Icon Design"
   image: images/dash.png
   year: 2020
   tags: [branding, macos]
-  state: ongoing
+  state: recent
   url: https://kapeli.com/dash
-  description: "Icon design for Dash, a docset viewer for macOS."
+  description: "Icon design for Dash, a docset viewer for macOS"
 
 - name: "SwiftUI Directory"
   image: images/swiftui-dir.png
   year: 2020
   tags: [web, resource, swift]
-  state: ongoing
+  state: recent
   url: https://swiftui.directory
   description: "A curated list of open source SwiftUI components"

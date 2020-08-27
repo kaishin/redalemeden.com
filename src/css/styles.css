@@ -61,6 +61,7 @@ a {
 .background-pattern {
   display: block;
   fill: var(--theme-pattern-color);
+  height: 100vh;
   max-width: 100%;
   pointer-events: none;
   position: absolute;

@@ -71,7 +71,7 @@ const IndexPage = ({ data }) => (
 );
 
 export const query = graphql`
-  query Index {
+  query OldIndex {
     site {
       siteMetadata {
         title

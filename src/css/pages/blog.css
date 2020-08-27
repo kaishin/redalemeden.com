@@ -3,7 +3,6 @@
   padding-top: 2rem;
 
   @media (--full-grid-container) {
-    margin-top: var(--sheet-margin-top);
     padding-top: 0;
     margin-bottom: var(--sheet-margin-top);
   }
@@ -17,7 +16,7 @@
   }
 }
 
-.blog-intro {
+.page-description {
   @extend %body-text;
   margin-bottom: 3rem;
   color: var(--theme-secondary-foreground-color);
@@ -73,7 +72,7 @@
 .post-metadata {
   color: var(--theme-secondary-foreground-color);
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.05em;
   line-height: 1.5;
   margin-top: 0.5rem;
@@ -142,25 +141,12 @@
     margin: 1em 0;
   }
 
-  /* Header Links */
   & a.anchor {
-    background-color: transparent;
     border-bottom: none;
-    float: none;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 100;
-    margin-left: -1rem;
-    opacity: 0.4;
+    font-size: 1.1rem;
+    margin-left: -1.1rem;
     padding-right: 0;
     position: relative;
-    vertical-align: middle;
-
-    &:hover {
-      background-color: transparent;
-      border-bottom: none;
-      opacity: 1;
-    }
   }
 
   & ol {

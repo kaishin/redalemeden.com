@@ -17,6 +17,11 @@
 
 %sheet {
   color: var(--theme-foreground-color);
+  padding-bottom: 3rem;
+
+  @media (--full-grid-container) {
+    padding-top: 10.2rem;
+  }
 
   @media (--narrow-grid-container) {
     background-color: var(--theme-background-color);
@@ -30,7 +35,7 @@
     @media (--full-grid-container) {
       height: 150vh;
       margin-left: -14rem;
-      margin-top: -6rem;
+      margin-top: -16rem;
       position: fixed;
       transform: rotate(14deg);
       width: 100vw;

@@ -12,6 +12,7 @@
 
 h1 {
   font-weight: 800;
+  line-height: 1.3;
 }
 
 h2 {
@@ -41,11 +42,28 @@ h5 {
   font-weight: 600;
 }
 
+.inline-icon {
+  height: 1em;
+
+  &.apple {
+    fill: red;
+  }
+}
+
 %body-text {
   font-size: 1rem;
   color: var(--theme-foreground-color);
   line-height: 1.5;
   letter-spacing: 0.04em;
+}
+
+%divider {
+  border: none;
+  background-color: var(--secondary-color);
+  display: block;
+  height: 2px;
+  margin-top: 1em;
+  width: 4em;
 }
 
 %heading {
@@ -54,12 +72,8 @@ h5 {
   text-transform: uppercase;
 
   &::after {
-    background-color: var(--secondary-color);
+    @extend %divider;
     content: "";
-    display: block;
-    height: 2px;
-    margin-top: 1em;
-    width: 3em;
   }
 }
 

@@ -1,6 +1,6 @@
 %field {
   appearance: none;
-  background-color: var(--theme-inset-background-color);
+  background-color: var(--form-field-bg-color);
   border-radius: 0.5em;
   border: 1px solid transparent;
   color: var(--theme-foreground-color);
@@ -28,6 +28,7 @@
 input {
   @extend %field;
 }
+
 textarea {
   @extend %field;
   height: 12rem;

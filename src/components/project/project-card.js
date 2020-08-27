@@ -18,11 +18,10 @@ class ProjectCard extends React.Component {
             <Img fluid={project.image.childImageSharp.fluid} className="project-image" />
           )}
           <div className="project-details">
-            <h5 className="project-name">
-              {project.name} <span className="year-label">({project.year})</span>
-            </h5>
-            <p className="project-tags">{project.tags.join(' / ')}</p>
-            <p className="project-description">{project.description}</p>
+            <h5 className="project-name">{project.name}</h5>
+            <p className="project-description">
+              {project.description} ({project.year})
+            </p>
           </div>
         </a>
       </li>

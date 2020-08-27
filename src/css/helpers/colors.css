@@ -32,12 +32,13 @@
   --theme-background-color: white;
   --theme-foreground-color: var(--light-theme-fg-color);
   --theme-secondary-foreground-color: color-mod(var(--dusk-blue) shade(25%));
-  --theme-tertiary-foreground-color: color-mod(var(--dusk-blue) shade(25%));
+  --theme-tertiary-foreground-color: color-mod(var(--dusk-blue) shade(35%));
   --theme-inset-background-color: color-mod(var(--light-theme-bg-color) alpha(60%));
   --theme-bullet-dash-color: color-mod(var(--light-theme-fg-color) alpha(40%));
-  --theme-card-background-color: var(--light-theme-bg-color);
+  --theme-card-background-color: color-mod(var(--dusk-blue) lightness(95%));
 
-  --form-placeholder-color: var(--light-theme-fg-color);
+  --form-field-bg-color: color-mod(var(--dusk-blue) lightness(96%));
+  --form-placeholder-color: color-mod(var(--dusk-blue) lightness(36%));
   --form-focus-color: color-mod(var(--light-theme-fg-color) alpha(20%));
 
   --theme-link-color: var(--light-theme-link-color);
@@ -79,6 +80,7 @@
   --theme-bullet-dash-color: color-mod(var(--dark-theme-fg-color) alpha(40%));
   --theme-card-background-color: black;
 
+  --form-field-bg-color: color-mod(var(--dark-theme-bg-color) shade(20%));
   --form-placeholder-color: var(--dusk-blue);
   --form-focus-color: var(--dusk-blue);
 

@@ -2,17 +2,12 @@
   mask-image: radial-gradient(white, black);
   background-color: var(--theme-card-background-color);
   border-radius: 1rem;
-  flex: 0 1 280px;
   list-style-type: none;
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
 
   &:hover {
     transform: scale(1.05);
-  }
-
-  & .year-label {
-    color: var(--theme-link-color);
   }
 
   & a {
@@ -31,8 +26,8 @@
 
   & .project-name {
     margin: 0 0 0.5rem;
-    font-size: 0.9rem;
-    font-weight: normal;
+    font-size: 0.8rem;
+    font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
@@ -48,9 +43,7 @@
 
   & .project-description {
     margin: 0;
-    color: var(--theme-foreground-color);
-    opacity: 0.8;
-    font-size: 0.9rem;
-    line-height: 1.4;
+    color: var(--theme-secondary-foreground-color);
+    font-size: 0.8rem;
   }
 }

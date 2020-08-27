@@ -17,6 +17,12 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        gatsbyRemarkPlugins: ['gatsby-remark-abbr'],
+      },
+    },
     'gatsby-plugin-netlify',
     'gatsby-plugin-netlify-cms',
     {

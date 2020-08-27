@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import DefaultLayout from '../../components/layouts/default.js';
 import Seo from '../../components/seo';
+import PageHeader from '../../components/page-header';
 import { navigateTo } from 'gatsby-link';
 
 function encode(data) {
@@ -12,7 +13,7 @@ class ContactPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      message: this.setMessageSourceFromURI()
+      message: this.setMessageSourceFromURI(),
     };
   }
 
@@ -47,8 +48,8 @@ class ContactPage extends React.Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        ...this.state
-      })
+        ...this.state,
+      }),
     })
       .then(() => navigateTo(form.getAttribute('action')))
       .catch((error) => alert(error));
@@ -61,11 +62,10 @@ class ContactPage extends React.Component {
         <Seo title="Contact" />
         <section className="content">
           <div className="container">
-            <h2 className="page-heading">Contact</h2>
-            <p className="intro">
+            <PageHeader title="Get in Touch">
               Have feedback or just want to say hi? Use the form below to get in touch. I will do my best to reply
               within a reasonable timeframe.
-            </p>
+            </PageHeader>
             <form
               name="contact"
               method="POST"

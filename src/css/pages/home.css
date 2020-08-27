@@ -7,46 +7,32 @@
   & .button {
     font-weight: 500;
   }
-}
 
-.intro-content {
-  max-width: 38rem;
-
-  & :--heading {
-    margin-block: 0;
+  & hr {
+    @extend %divider;
+    margin-bottom: 2rem;
   }
 }
 
-.intro-tagline {
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-  padding-top: var(--header-top-spacing);
-  padding-bottom: 1rem;
+.intro-content {
+  max-width: 40rem;
 }
 
-.intro-paragraph {
-  @extend %highlight-p;
-  font-style: italic;
-
-  & em {
-    font-style: normal;
-    font-weight: 500;
+.home-content {
+  & h2 {
+    @extend %heading;
+    margin: 4rem 0 2rem;
   }
 }
 
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  margin: 0 auto;
+  --gap: 1rem;
+  list-style: none;
+  margin: 0;
   padding: 0;
-
-  & .project-cell {
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  grid-gap: var(--gap);
 }
 
 .highlight-section {

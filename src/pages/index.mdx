@@ -1,0 +1,116 @@
+import { Link, graphql } from 'gatsby';
+import ProjectList from '../components/project/project-list.js';
+import ArticleList from '../components/article-list.js';
+import Seo from '../components/seo';
+import Helmet from 'react-helmet';
+import ReactTooltip from 'react-tooltip';
+import AppleLogo from '../images/apple-logo.svg'
+import SwiftLogo from '../images/swift-logo.svg'
+
+import DefaultLayout from '../components/layouts/default.js';
+
+<Seo title="Reda Lemeden" />
+<Helmet bodyAttributes={{ class: 'home-page' }} />
+
+<ReactTooltip type="light" textColor="var(--theme-foreground-color)" backgroundColor="var(--theme-body-background-color)"/>
+
+<div data-tip="Hi, my name is Reda Lemeden." title="Hi, my name is Reda Lemeden.">
+
+### こんにちは, _mitt_ name _est_ Reda لمدن
+
+</div>
+
+<div className="intro-content">
+
+# Indie developer, designer, and tech writer based in Stockholm, Sweden.
+
+</div>
+
+I spent two thirds of my life in my hometown of Casablanca 🇲🇦,
+culminating in a BBA in 2007.
+I since studied Japanese in Tokyo 🇯🇵,
+continued my post-graduate studies (MIM) in Nantes 🇫🇷,
+and got a job in Boston, MA 🇺🇸 before settling in Stockholm 🇸🇪 in 2014. 
+
+Today I write software—and about software—for a living.
+I particulalry enjoy working with **interaction** and **interface** design,
+**web** technologies,
+**app** development on <img src={AppleLogo} alt="Apple" className="inline-icon apple"/> **platforms**,
+ and more recently **server-side** <img src={SwiftLogo} alt="Swift" className="inline-icon swift" /> **Swift**.
+
+<section className="home-content">
+
+## Currently Working On
+
+<ProjectList projects={props.data.projects.list} />
+
+</section>
+
+*[BBA]: Bachelor of Business Administration
+*[MIM]: Master in Management
+
+export const pageQuery = graphql`
+  query Index {
+    site {
+      siteMetadata {
+        title
+        authorBio
+      }
+    }
+    projects: allProjectsYaml(limit: 6, filter: {state: {in: ["ongoing", "upcoming"]}}, sort: { fields: [year], order: DESC }) {
+      list: edges {
+        project: node {
+          ...ProjectDetails
+        }
+      }
+    }
+    highlightedArticles: allArticlesYaml(
+      limit: 3
+      filter: { highlighted: { eq: true } }
+      sort: { fields: [published], order: DESC }
+    ) {
+      list: edges {
+        article: node {
+          title
+          url
+          outlet_name
+          formattedDate: published(formatString: "MMMM DD, YYYY")
+        }
+      }
+    }
+    recentArticles: allArticlesYaml(limit: 3, sort: { fields: [published], order: DESC }) {
+      list: edges {
+        article: node {
+          title
+          url
+          outlet_name
+          formattedDate: published(formatString: "MMMM DD, YYYY")
+        }
+      }
+    }
+    recentPodcasts: allPodcastsYaml(limit: 3, sort: { fields: [published], order: DESC }) {
+      list: edges {
+        podcast: node {
+          name
+          thumbnail {
+            name
+            extension
+            childImageSharp {
+              fluid(maxWidth: 256) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          url
+          description
+          episode
+          role
+          published
+          formattedPublishedDate: published(formatString: "MMMM DD, YYYY")
+        }
+      }
+    }
+  }
+`;
+
+export default DefaultLayout;

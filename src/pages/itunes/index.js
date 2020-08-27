@@ -29,7 +29,7 @@ class iTunesPage extends React.Component {
         <Seo
           title="A Visual History of the iTunes Icon"
           description="The iTunes icon changed 9 times in the last 14 years. Let's take a look at all the iterations and the context in which they saw the light of day."
-          keywords={[ 'itunes', 'icon', 'timeline', 'icon revisions' ]}
+          keywords={['itunes', 'icon', 'timeline', 'icon revisions']}
         />
         <header className="main-header">
           <h1>A Visual History of the iTunes Icon</h1>
@@ -83,7 +83,7 @@ export const query = graphql`
             extension
             childImageSharp {
               fluid(maxWidth: 90) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }

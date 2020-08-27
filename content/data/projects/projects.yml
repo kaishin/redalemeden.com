@@ -1,8 +1,22 @@
+- name: "-Unannounced-"
+  image: images/gokuhi.png
+  year: 2021
+  state: upcoming
+  url: https://4rays.studio
+  description: "An platform for video game enthusiasts."
+
+- name: "-Unannounced-"
+  image: images/gokuhi.png
+  year: 2021
+  state: upcoming
+  url: https://4rays.studio
+  description: "A book about programming, math, and graphics."
+
 - name: "Swift & Fika"
   image: images/swift-and-fika.jpg
   year: 2018
   tags: [conference, swift]
-  featured: true
+  state: paused
   url: http://swiftandfika.com
   description: "The first ever Swift conference in Stockholm, Sweden."
 
@@ -10,7 +24,7 @@
   image: images/nope.jpg
   year: 2016
   tags: [safari, javascript, OSS]
-  featured: false
+  state: abandoned
   url: http://redalemeden.com/nope
   description: "A content-blocking extension for Safari."
 
@@ -18,7 +32,7 @@
   image: images/markoff.jpg
   year: 2016
   tags: [macos, design, swift, OSS]
-  featured: true
+  state: ongoing
   url: https://github.com/kaishin/Markoff
   description: "An open-source Markdown previewer for macOS."
 
@@ -26,7 +40,7 @@
   image: images/speedster.jpg
   year: 2016
   tags: [macos, design, swift]
-  featured: false
+  state: abandoned
   url: https://speedsterapp.com
   description: "A native SpeedOfMe client for macOS."
 
@@ -34,7 +48,7 @@
   image: images/podcast-covers.jpg
   year: 2015
   tags: [branding, design]
-  featured: false
+  state: idle
   url: https://thoughtbot.com/learn
   description: "Visual identity for thoughtbot's podcast line-up."
 
@@ -42,7 +56,7 @@
   image: images/syndicate.jpg
   year: 2015
   tags: [safari, javascript, OSS]
-  featured: true
+  state: abandoned
   url: https://redalemeden.com/syndicate
   description: "An RSS discovery extension for Safari."
 
@@ -50,7 +64,7 @@
   image: images/kromatic.jpg
   year: 2015
   tags: [macos, design, swift]
-  featured: true
+  state: idle
   url: http://kromatic.thoughtbot.com
   description: "A color picking & naming utility for macOS."
 
@@ -58,7 +72,7 @@
   image: images/itunes.jpg
   year: 2015
   tags: [resource, design]
-  featured: false
+  state: ongoing
   url: https://redalemeden.com/itunes
   description: "A trip down memory lane."
 
@@ -66,7 +80,7 @@
   image: images/ipinator.jpg
   year: 2015
   tags: [macos, design, swift]
-  featured: false
+  state: idle
   url: http://ipinator.kaishin.co
   description: "An IP address geo-coding utility for macOS."
 
@@ -74,7 +88,7 @@
   image: images/rototo.jpg
   year: 2015
   tags: [ios, design, game]
-  featured: false
+  state: abandoned
   url: http://playroto.to
   description: "2D space-survival game for iOS and Android."
 
@@ -82,7 +96,7 @@
   image: images/sassquatch.jpg
   year: 2014
   tags: [macos, design, swift]
-  featured: false
+  state: abandoned
   url: http://sassquatch.thoughtbot.com
   description: "Zero-setup Sass playground for macOS."
 
@@ -91,6 +105,7 @@
   year: 2014
   tags: [swift, OSS, ios, macos]
   featured: false
+  state: idle
   url: https://github.com/kaishin/ImageScout
   description: "A Swift implementation of fastimage."
 
@@ -99,21 +114,22 @@
   year: 2015
   tags: [swift, OSS, ios]
   featured: true
+  state: idle
   url: https://github.com/kaishin/Gifu
   description: "High-performance animated GIF library for iOS."
 
-- name: "Dash"
-  image: images/dash.jpg
-  year: 2014
+- name: "Dash Icon Design"
+  image: images/dash.png
+  year: 2020
   tags: [branding, macos]
-  featured: true
+  state: ongoing
   url: https://kapeli.com/dash
   description: "Icon design for Dash, a docset viewer for macOS."
 
-- name: "Swiftbits"
-  image: images/swiftbits.jpg
-  year: 2014
+- name: "SwiftUI Directory"
+  image: images/swiftui-dir.png
+  year: 2020
   tags: [web, resource, swift]
-  featured: false
-  url: https://swiftbits.redalemeden.com
-  description: "Swift recipes, snippets, and resources."
+  state: ongoing
+  url: https://swiftui.directory
+  description: "A curated list of open source SwiftUI components"

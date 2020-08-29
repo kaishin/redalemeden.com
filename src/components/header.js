@@ -11,7 +11,7 @@ class Header extends React.Component {
       <header className="site-header">
         <Link to="/" className="header-link">
           <div className="avatar-placeholder" />
-          <img className="author-avatar" src="author-photo.jpg" alt="Reda Lemeden" />
+          <img className="author-avatar" src="/author-photo.jpg" alt="Reda Lemeden" />
           <h1 className="author-name">{title}</h1>
           <p className="author-bio">
             Independent <em>Designer</em>, <em>Developer</em>, and <em>Writer</em>

@@ -1,8 +1,9 @@
 @import 'home';
 @import 'blog';
 @import 'microblog';
-@import 'standalone';
 @import 'itunes';
 @import 'syndicate';
 @import 'pip';
 @import 'nope';
+@import 'standalone';
+@import 'chrome-no-more';

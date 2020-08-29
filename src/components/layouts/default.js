@@ -42,7 +42,7 @@ class DefaultLayout extends React.Component {
             <Header {...data.site.siteMetadata} />
             <Navigation />
             <main className="main-container">{children}</main>
-            <Footer {...data.site.siteMetadata} />
+            <Footer />
           </section>
           </>
         )}

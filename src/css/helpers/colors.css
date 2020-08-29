@@ -28,11 +28,13 @@
   --theme-pattern-color: rgb(241, 140, 106);
   --theme-navigation-link-color: var(--primary-color);
   --theme-navigation-hover-link-bg-color: rgba(255, 255, 255, 0.6);
+  --background-data-uri: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMzAwTDc1Ljg2NCAwSDQwMHYzMDB6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4K');
 
   --theme-background-color: white;
   --theme-foreground-color: var(--light-theme-fg-color);
   --theme-secondary-foreground-color: color-mod(var(--dusk-blue) shade(25%));
   --theme-tertiary-foreground-color: color-mod(var(--dusk-blue) shade(35%));
+  --theme-tertiary-background-color: color-mod(var(--dusk-blue) alpha(10%));
   --theme-inset-background-color: color-mod(var(--light-theme-bg-color) alpha(60%));
   --theme-bullet-dash-color: color-mod(var(--light-theme-fg-color) alpha(40%));
   --theme-card-background-color: color-mod(var(--dusk-blue) lightness(95%));
@@ -71,11 +73,13 @@
   --theme-pattern-color: black;
   --theme-navigation-link-color: var(--dark-theme-fg-color);
   --theme-navigation-hover-link-bg-color: rgba(255, 255, 255, 0.05);
+  --background-data-uri: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iIzE5MWYyZCIgZD0iTTAgMzAwTDc1Ljg2NCAwSDQwMHYzMDB6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4K');
 
   --theme-background-color: var(--dark-theme-bg-color);
   --theme-foreground-color: var(--dark-theme-fg-color);
   --theme-secondary-foreground-color: var(--dusk-blue);
   --theme-tertiary-foreground-color: var(--marin-blue);
+  --theme-tertiary-background-color: color-mod(var(--dusk-blue) alpha(10%));
   --theme-inset-background-color: color-mod(var(--dark-theme-bg-color) shade(20%));
   --theme-bullet-dash-color: color-mod(var(--dark-theme-fg-color) alpha(40%));
   --theme-card-background-color: black;

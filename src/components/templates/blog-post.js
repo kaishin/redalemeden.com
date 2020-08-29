@@ -36,7 +36,6 @@ class BlogPostTemplate extends React.Component {
         <Helmet bodyAttributes={{ class: 'post-page blog-page' }} />
 
         <article className="content blog-content">
-          <BlogHeader />
           <header className="post-header">
             <span className="post-category">{post.frontmatter.category}</span>
             <h1 className="post-title">
@@ -58,12 +57,18 @@ class BlogPostTemplate extends React.Component {
             )}
             <div className="content-wrapper" dangerouslySetInnerHTML={{ __html: post.html }} />
             <div className="feedback-box">
-              Have feedback about this article? Drop me a line via {' '}
-              <a href="https://mastodon.social/@redalemeden">Mastodon</a>,{' '}
-              <a href="https://twitter.com/kaishin">Twitter</a>, or the{' '}
-              <Link to={'/contact?source=' + post.frontmatter.title}>contact form.</Link>
+              Have feedback about this article? Drop me a line via the{' '}
+              <Link to={'/contact?source=' + post.frontmatter.title}>contact form</Link>,{' '}
+              <a href="https://twitter.com/kaishin">Twitter</a>, or{' '}
+              <a href="https://mastodon.social/@redalemeden">Mastodon</a>.
             </div>
           </section>
+
+          <hr className="divider" />
+
+          <div className="shrunk-header">
+            <BlogHeader />
+          </div>
         </article>
       </DefaultLayout>
     );

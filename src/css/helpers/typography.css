@@ -57,7 +57,7 @@ h5 {
   letter-spacing: 0.04em;
 }
 
-%divider {
+%dash-divider {
   border: none;
   background-color: var(--secondary-color);
   display: block;
@@ -66,13 +66,21 @@ h5 {
   width: 4em;
 }
 
+%divider {
+  border: none;
+  background-color: var(--theme-tertiary-background-color);
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+
 %heading {
   font-size: 1rem;
   letter-spacing: .16em;
   text-transform: uppercase;
 
   &::after {
-    @extend %divider;
+    @extend %dash-divider;
     content: "";
   }
 }

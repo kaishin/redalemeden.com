@@ -1,28 +1,66 @@
 ---
-date: 2019-02-27T01:40+01:00
-title: "We Need Chrome No More"
-category: technology
-tags:
-  - Web
-  - Google
-  - Browsers
-  - Opinion
-  - Essay
-audience: "people interested in the open Web as a platform"
-image: chrome-no-more.jpg
+date: '2019-02-27T01:40+01:00'
+audience: "This post was written for people interested in the open Web as a platform."
 ---
 
-Ten years ago, we needed Google Chrome to break the Web free from corporate hegemony, and we managed to do so for a brief period. Today, its dominance is stifling the very platform it once saved from the clutches of Microsoft. And no one, beside Google, needs that.
+import PageLayout from '../../../components/layouts/longform.js';
+import Helmet from 'react-helmet';
+import moment from 'moment';
+
+export default PageLayout
+
+<Seo 
+  title="We Need Chrome No More" 
+  keywords="Web, Google, Browsers, Opinion" 
+  description={props.pageContext.frontmatter.audience}
+  image="social-cards/chrome-no-more.jpg"
+  largeImage={true}
+/>
+
+<Helmet bodyAttributes={{ class: 'chrome-no-more' }} />
+
+<div className="post-metadata">
+  <time date={props.pageContext.frontmatter.date}>{moment(props.pageContext.frontmatter.date).fromNow()}</time>
+</div>
+
+# We Need Chrome No More
+
+---
+
+<small>
+<span>{props.pageContext.frontmatter.audience}</span>{' '}
+  <a href="/microblog/post-1570576215962">What's this?</a>
+</small>
+
+Ten years ago, we needed Google Chrome to break the Web free from corporate hegemony, 
+and we managed to do so for a brief period. Today, its dominance is stifling the very
+platform it once saved from the clutches of Microsoft. And no one, beside Google, needs that.
 
 ![Google Chrome](header-image.jpg)
 
-It’s 2008. Microsoft still held a firm grip on the browser market. Six years had gone by since Mozilla released Firefox, a direct competitor to Internet Explorer. Google---the search engine company that everyone grew to love at the time---announced that they’re entering the ring. Chrome was born.
+It’s 2008. Microsoft still held a firm grip on the browser market. Six years had gone by
+since Mozilla released Firefox, a direct competitor to Internet Explorer. Google---the search
+engine company that everyone grew to love at the time---announced that they’re entering the ring.
+Chrome was born.
 
-Within two years, Chrome accounted for 15% of all Web traffic on desktop---for comparison, it took Firefox 6 years to get there. Google managed to deliver a fast, thoughtfully designed browser that was an instant hit among users and Web developers alike. Their product innovation and engineering prowess was a breath of fresh air, and their commitment to open-source was the cherry on top. Over the years, Google‘s adoption of Web standards continued to set the example.
+Within two years, Chrome accounted for 15% of all Web traffic on desktop---for comparison, it took
+Firefox 6 years to get there. Google managed to deliver a fast, thoughtfully designed browser that
+was an instant hit among users and Web developers alike. Their product innovation and engineering
+prowess was a breath of fresh air, and their commitment to open-source was the cherry on top.
+Over the years, Google‘s adoption of Web standards continued to set the example.
 
-Fast-forward a decade later. The browser landscape looks vastly different. Chrome is the most ubiquitous browser on the planet, making Google the de facto gatekeeper of the Web on both mobile and desktop in all but a handful of regions around the world. The browser comes preinstalled in most Android handsets sold outside of China, and serves as the UI layer of *Chrome OS*, Google’s foray into desktop and tablet operating systems. What started as an avant-garde, standard-compliant browser is now a sprawling platform that spares no area of modern computing.
+Fast-forward a decade later. The browser landscape looks vastly different. Chrome is the most
+ubiquitous browser on the planet, making Google the de facto gatekeeper of the Web on both mobile
+and desktop in all but a handful of regions around the world. The browser comes preinstalled in most
+Android handsets sold outside of China, and serves as the UI layer of *Chrome OS*, Google’s foray into
+desktop and tablet operating systems. What started as an avant-garde, standard-compliant browser is now a
+sprawling platform that spares no area of modern computing.
 
-While the Chrome browser itself is not open-source, most of its innards are. Chromium, the non-proprietary subset of Chrome, was open-sourced early on with a generously permissive license as a sign of commitment to the open Web community. As a full-featured browser, Chromium became widely popular among Linux users. As an open-source project, it has gained a large following in the open-source ecosystem, often used as a the foundation of other browsers and applications.
+While the Chrome browser itself is not open-source, most of its innards are. Chromium, the non-proprietary
+subset of Chrome, was open-sourced early on with a generously permissive license as a sign of commitment to
+the open Web community. As a full-featured browser, Chromium became widely popular among Linux users. As an
+open-source project, it has gained a large following in the open-source ecosystem, often used as a the
+foundation of other browsers and applications.
 
 Both Chrome and Chromium run Blink under the hood, the rendering engine that started as a WebKit fork in 2013 when Google grew dissatisfied with the Apple-led project. Blink continued to grow since and will pick even more steam when Microsoft will [start using it][edge] for their Edge browser.
 
@@ -75,6 +113,7 @@ I’ve been Chrome-free since 2014, and I’ve never looked back. Chances are yo
 [forces you to sign in]: https://blog.cryptographyengineering.com/2018/09/23/why-im-leaving-chrome/
 [you can’t delete]: https://news.softpedia.com/news/chrome-69-does-not-delete-google-cookies-when-clearing-all-website-data-522884.shtml
 [neutralize ad-blocking and privacy extensions]: https://www.cnet.com/news/google-may-break-ad-blockers-with-upcoming-chrome-change/
+
 
 [^1]: I am aware that after the user backlash, Chrome 70 reverted some of these. My point still stands.
 [^2]: Opera and Brave are two other alternatives, but the former is owned by an online advertising and gaming consortium based in China, and the latter is experimenting with [unconventional ad-based business models](https://www.cnet.com/news/braves-privacy-focused-ads-to-spread-beyond-startups-own-browser/).

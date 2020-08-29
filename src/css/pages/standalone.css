@@ -128,3 +128,100 @@
     }
   }
 }
+
+.longform-container {
+  @extend .main-container;
+  max-width: var(--grid-container-full-width);
+  margin: 0 auto;
+  padding-top: 0;
+
+  & header {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+
+    & .back-link {
+      border-radius: 0.5rem;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s;
+      margin-left: -1rem;
+
+      &:hover {
+        background-color: var(--theme-navigation-hover-link-bg-color);
+        transform: scale(1.1);
+      }
+    }
+
+    & .author-avatar {
+      width: 2rem;
+      border-radius: 1rem;
+      display: inline-block;
+      height: 2rem;
+      margin-right: 0.6rem;
+    }
+
+    & .details {
+      display: inline-block;
+    }
+
+    & .site-description {
+      padding: 0;
+      margin: 0;
+      font-size: 0.8rem;
+    }
+
+    & .author-name {
+      color: var(--theme-foreground-color);
+      display: inline-block;
+      font-size: 0.9rem;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.longform-content {
+  @extend .full-post-content;
+
+  & a.anchor {
+    border-radius: 0.4rem;
+    margin-left: -2.8rem;
+    margin-right: 0.5rem;
+    padding: 0.2em 0.5em 0 0.5em;
+
+    & svg {
+      fill: var(--theme-link-color);
+    }
+  }
+
+  & h1 {
+    margin: 0 1rem 1rem 0;
+
+    & + hr {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  & hr {
+    @extend %divider;
+  }
+
+  & figure {
+    margin: 0;
+
+    & .gatsby-resp-image-wrapper {
+      border-radius: 4px;
+
+      & * {
+        border-radius: 4px;
+      }
+    }
+  }
+
+  & figcaption {
+    font-size: 0.8rem;
+    color: var(--theme-secondary-foreground-color);
+    padding: 1rem 0;
+  }
+}

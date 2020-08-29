@@ -12,7 +12,7 @@ module.exports = {
 		'--header-top-spacing': '4rem',
 		'--image-vertical-spacing': '2rem',
 		'--main-content-max-width': '40rem',
-		'--sidebar-max-width': '22.5rem',
+		'--sidebar-max-width': '20rem',
 		'--spacing-default': '1rem',
 		'--main-container-padding': '6rem',
 		'--sheet-margin-top': 'var(--main-container-padding)',

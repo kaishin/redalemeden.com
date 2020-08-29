@@ -63,7 +63,7 @@
   font-size: 0.75rem;
   font-weight: 500;
   border-bottom: 1px solid var(--theme-post-category-color);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.4rem;
   letter-spacing: 0.05em;
   color: var(--theme-tertiary-foreground-color);
   display: inline-block;
@@ -99,8 +99,20 @@
   }
 }
 
+.shrunk-header {
+  font-size: 0.9rem;
+
+  & .page-description {
+    font-size: 1em;
+  }
+
+  & h1 {
+    font-size: 1.5em;
+  }
+}
+
 .footnotes {
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-top: 2rem;
 
   & p {
@@ -108,9 +120,7 @@
   }
 
   & hr {
-    background: rgba(0 0 0 / 10%);
-    border: 0;
-    height: 1px;
+    @extend %divider;
   }
 }
 
@@ -278,12 +288,13 @@
   }
 
   & .feedback-box {
-    border-top: 1px solid var(--code-background-color);
     color: var(--theme-tertiary-foreground-color);
+    background: var(--theme-tertiary-background-color);
+    border-radius: 1rem;
     font-size: 0.9rem;
     font-style: italic;
     margin: 3rem auto 1rem;
-    padding: 0.6rem 0;
+    padding: 1rem;
   }
 
   & sup a:any-link {

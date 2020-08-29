@@ -1,0 +1,36 @@
+.chrome-no-more {
+  & .longform-container {
+    &::before {
+      background-color: rgba(0, 0, 0, 0.5);
+      background-image: url('/social-cards/chrome-no-more.jpg');
+      background-position-x: 0;
+      background-size: cover;
+      content: '';
+      display: block;
+      height: 110vh;
+      margin-left: 0;
+      position: fixed;
+      top: -5vh;
+      width: 110vw;
+      z-index: -1;
+      left: -5vw;
+      filter: blur(15px);
+    }
+
+    &::after {
+      background-color: var(--theme-background-color);
+      background-position-x: 0;
+      background-size: cover;
+      content: '';
+      display: block;
+      height: 100vh;
+      margin-left: 0;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      z-index: -1;
+      left: 0;
+      opacity: 0.92;
+    }
+  }
+}

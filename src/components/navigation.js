@@ -7,9 +7,6 @@ class Navigation extends React.Component {
       <nav className="site-navigation">
         <ol className="navigation-links">
           <li className="link">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="link">
             <Link to="/work">Work</Link>
           </li>
           <li className="link">

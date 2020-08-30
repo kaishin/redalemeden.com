@@ -1,17 +1,18 @@
 ---
 date: '2019-02-27T01:40+01:00'
-audience: "This post was written for people interested in the open Web as a platform."
+audience: "This article was written for people interested in the open Web as a platform."
 ---
 
 import PageLayout from '../../../components/layouts/longform.js';
 import Helmet from 'react-helmet';
 import moment from 'moment';
+import Seo from '../../../components/seo';
 
 export default PageLayout
 
 <Seo 
   title="We Need Chrome No More" 
-  keywords="Web, Google, Browsers, Opinion" 
+  keywords={["Web", "Google", "Browsers", "Opinion"]}
   description={props.pageContext.frontmatter.audience}
   image="social-cards/chrome-no-more.jpg"
   largeImage={true}

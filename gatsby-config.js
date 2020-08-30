@@ -26,6 +26,7 @@ module.exports = {
             options: {
               maxWidth: 1200,
               showCaptions: true,
+              tracedSVG: true,
             },
           },
           {

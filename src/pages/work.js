@@ -13,7 +13,8 @@ const WorkPage = ({ data }) => (
     <section className="work-section">
       <div className="container">
         <PageHeader title="Work">
-          A collection of professional and personal projects I've worked on in the past 12 years.
+          Some of the professional and personal projects I've worked on in the past 12 years. Please{' '}
+          <a href="/contact">get in touch</a> for further inquiries.
         </PageHeader>
         <ProjectList projects={data.projects.list} />
       </div>

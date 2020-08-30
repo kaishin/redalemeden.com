@@ -206,22 +206,4 @@
   & hr {
     @extend %divider;
   }
-
-  & figure {
-    margin: 0;
-
-    & .gatsby-resp-image-wrapper {
-      border-radius: 4px;
-
-      & * {
-        border-radius: 4px;
-      }
-    }
-  }
-
-  & figcaption {
-    font-size: 0.8rem;
-    color: var(--theme-secondary-foreground-color);
-    padding: 1rem 0;
-  }
 }

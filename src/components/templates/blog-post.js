@@ -49,7 +49,7 @@ class BlogPostTemplate extends React.Component {
           <section className="full-post-content">
             {post.frontmatter.audience && (
               <p className="assumed-audience">
-                This post was written for {post.frontmatter.audience}.{' '}
+                <strong>Assumed audience</strong>: {post.frontmatter.audience}.{' '}
                 <small>
                   <a href="/microblog/post-1570576215962">What's this?</a>
                 </small>

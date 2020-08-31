@@ -132,7 +132,7 @@ exports.onPostBuild = async ({ graphql }) => {
     let slug = fields.slug;
 
     let body = frontmatter.audience
-      ? '<p><em>This post was written for ' +
+      ? '<p><em><strong>Assumed audience</strong>: ' +
         frontmatter.audience +
         '. <a href="https://redalemeden.com/microblog/post-1570576215962">What\'s this?</a></em></p>' +
         html

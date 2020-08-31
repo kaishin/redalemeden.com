@@ -1,12 +1,13 @@
 import React from 'react';
-import Seo from '../components/seo';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+import Helmet from 'react-helmet';
+
+import Seo from '../seo';
 import moment from 'moment';
 import map from 'lodash/map';
-import Helmet from 'react-helmet';
-import DefaultLayout from '../components/layouts/default.js';
-import MicroblogHeader from '../components/microblog/header';
-import Micropost from '../components/microblog/micropost';
+import DefaultLayout from '../layouts/default.js';
+import MicroblogHeader from '../microblog/header';
+import Micropost from '../microblog/micropost';
 
 class MicroBlogPage extends React.Component {
   componentDidMount() {
@@ -20,6 +21,8 @@ class MicroBlogPage extends React.Component {
 
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark;
+    const { pageContext } = this.props;
+    const { previousPagePath, nextPagePath } = pageContext;
 
     return (
       <DefaultLayout>
@@ -30,7 +33,7 @@ class MicroBlogPage extends React.Component {
           description="A collection of micro posts, hot takes, and reflections about whatever happens to preoccupy me."
           keywords={['Microblog', 'Wide Gamut']}
         />
-        <section className="content blog-content">
+        <article className="content blog-content">
           <MicroblogHeader />
           <ol className="post-list">
             {posts.map(({ node: post }) => {
@@ -41,17 +44,24 @@ class MicroBlogPage extends React.Component {
               );
             })}
           </ol>
-        </section>
+
+          <div className="pagination-links">
+            {previousPagePath ? <Link to={previousPagePath}>&lsaquo; Newer</Link> : null}
+            {nextPagePath ? <Link to={nextPagePath}>Older &rsaquo;</Link> : null}
+          </div>
+        </article>
       </DefaultLayout>
     );
   }
 }
 
 export const microblogQuery = graphql`
-  query MicroblogIndexQuery {
+  query MicroblogIndexQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/microblog/" } }
+      filter: { frontmatter: { draft: { ne: true } }, fileAbsolutePath: { regex: "/content/microblog/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
+      skip: $skip
+      limit: $limit
     ) {
       edges {
         node {

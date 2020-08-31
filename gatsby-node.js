@@ -13,6 +13,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage, createRedirect } = actions;
   const blogPostTemplate = path.resolve('./src/components/templates/blog-post.js');
   const blogIndexTemplate = path.resolve('./src/components/templates/blog-index.js');
+  const microblogIndexTemplate = path.resolve('./src/components/templates/microblog-index.js');
   const microblogPostTemplate = path.resolve('./src/components/templates/microblog-post.js');
 
   Redirects.permanent.forEach((redirect) => {
@@ -64,6 +65,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     component: blogIndexTemplate,
     itemsPerPage: 10,
     pathPrefix: '/blog',
+  });
+
+  paginate({
+    createPage,
+    items: allMicroPosts,
+    component: microblogIndexTemplate,
+    itemsPerPage: 20,
+    pathPrefix: '/microblog',
   });
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {

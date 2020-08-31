@@ -25,7 +25,7 @@ class Footer extends React.Component {
               {children}
               <li className="link">
                 <a href="https://github.com/kaishin" rel="me">
-                  Github
+                  GitHub
                 </a>
                 <span className="separator">/</span>
               </li>

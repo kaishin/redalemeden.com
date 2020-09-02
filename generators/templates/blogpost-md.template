@@ -2,8 +2,6 @@
 date: {{createdDate}}
 title: "{{title}}"
 category:
+audience: "{{audience}}"
 draft: true{{tags}}
 ---
-
-*[Assumed Audience](https://www.chriskrycho.com/2018/assumed-audiences.html) 
---- Everyone.*

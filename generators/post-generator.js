@@ -9,13 +9,18 @@ module.exports = (plop) => {
         type: 'input',
         name: 'title',
         message: 'Post title:',
-        validate: inputRequired('title')
+        validate: inputRequired('title'),
+      },
+      {
+        type: 'input',
+        name: 'audience',
+        message: 'Audience:',
       },
       {
         type: 'input',
         name: 'tags',
-        message: 'Comma-separated tags:'
-      }
+        message: 'Comma-separated tags:',
+      },
     ],
     actions: (data) => {
       // Get current date
@@ -36,10 +41,10 @@ module.exports = (plop) => {
         {
           type: 'add',
           path: '../content/posts/{{folderDate}}-{{dashCase title}}/index.md',
-          templateFile: 'templates/blogpost-md.template'
-        }
+          templateFile: 'templates/blogpost-md.template',
+        },
       ];
-    }
+    },
   });
 
   plop.setGenerator('micropost', {
@@ -47,18 +52,18 @@ module.exports = (plop) => {
       {
         type: 'input',
         name: 'body',
-        message: 'Body:'
+        message: 'Body:',
       },
       {
         type: 'input',
         name: 'title',
-        message: 'Title:'
+        message: 'Title:',
       },
       {
         type: 'input',
         name: 'tags',
-        message: 'Comma-separated tags:'
-      }
+        message: 'Comma-separated tags:',
+      },
     ],
     actions: (data) => {
       // Get current date
@@ -79,9 +84,9 @@ module.exports = (plop) => {
         {
           type: 'add',
           path: '../content/microblog/post-{{slug}}.md',
-          templateFile: 'templates/micropost-md.template'
-        }
+          templateFile: 'templates/micropost-md.template',
+        },
       ];
-    }
+    },
   });
 };

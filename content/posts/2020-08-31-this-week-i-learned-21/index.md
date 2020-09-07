@@ -1,7 +1,7 @@
 ---
 date: 2020-08-31T12:07+02:00
 title: "This Week I Learned #21"
-category: Learning
+category: learning
 audience: "people interested in learning and metacognitive tools"
 tags:
   - TWIL

@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { inputRequired } = require('./utils');
-const moment = require('moment');
+import { format, parseISO } from 'date-fns';
 
 module.exports = (plop) => {
   plop.setGenerator('post', {
@@ -24,8 +24,8 @@ module.exports = (plop) => {
     ],
     actions: (data) => {
       // Get current date
-      data.createdDate = moment().format('YYYY-MM-DDTHH:mmZ');
-      data.folderDate = moment(data.createdDate).format('YYYY-MM-DD');
+      data.createdDate = format(new Date(), "yyyy-MM-dd'T'HH:mmxxx");
+      data.folderDate = format(data.createdDate, 'yyy-MM-dd');
 
       // Parse tags as yaml array
       if (data.tags) {
@@ -67,8 +67,8 @@ module.exports = (plop) => {
     ],
     actions: (data) => {
       // Get current date
-      let date = Date.now();
-      data.createdDate = moment(date).format('YYYY-MM-DDTHH:mmZ');
+      let date = new Date();
+      data.createdDate = format(date, "yyyy-MM-dd'T'HH:mmxxx");
       data.slug = date.toString();
 
       if (data.tags) {

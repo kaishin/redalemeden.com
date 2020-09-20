@@ -1,6 +1,6 @@
 const path = require('path');
 const url = require('url');
-const moment = require('moment');
+const { format, parseISO } = require('date-fns');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { paginate } = require('gatsby-awesome-pagination');
 const fs = require('fs-extra');
@@ -97,7 +97,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     var customPath = value;
 
     if (isPost) {
-      customPath = `/blog/${moment(node.frontmatter.date).format('YYYY')}/${value}`;
+      customPath = `/blog/${format(parseISO(node.frontmatter.date), 'Y')}/${value}`;
     } else if (isMicropost) {
       customPath = `/microblog/${value}`;
     }
@@ -152,8 +152,8 @@ exports.onPostBuild = async ({ graphql }) => {
       url: url.resolve(siteUrl, slug),
       title: frontmatter.title,
       slug: slug,
-      datePublished: moment(frontmatter.date).toDate(),
-      dateUpdated: moment(fields.dateUpdated).toDate(),
+      datePublished: parseISO(frontmatter.date),
+      dateUpdated: parseISO(fields.dateUpdated),
       content: body,
     };
   });
@@ -228,8 +228,8 @@ exports.onPostBuild = async ({ graphql }) => {
       ...(frontmatter.excerpt && { excerpt: frontmatter.excerpt }),
       slug: slug,
       tags: frontmatter.tags,
-      datePublished: moment(frontmatter.date).toDate(),
-      dateUpdated: moment(frontmatter.date).toDate(),
+      datePublished: parseISO(frontmatter.date),
+      dateUpdated: parseISO(frontmatter.date),
       ...(imageMatch && { image: imageMatch[1] }),
       content: html,
     };

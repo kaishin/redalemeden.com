@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
 import Seo from '../seo';
-import moment from 'moment';
+import { parseISO, formatDistance } from 'date-fns';
 import map from 'lodash/map';
 import DefaultLayout from '../layouts/default.js';
 import MicroblogHeader from '../microblog/header';
@@ -14,8 +14,8 @@ class MicroBlogPage extends React.Component {
     var timeStamps = document.getElementsByTagName('time');
 
     map(timeStamps, function(elem) {
-      var relativeTime = moment(elem.getAttribute('date')).fromNow();
-      elem.innerHTML = relativeTime;
+      var relativeTime = formatDistance(parseISO(elem.getAttribute('date')), new Date());
+      elem.innerHTML = relativeTime + ' ago';
     });
   }
 

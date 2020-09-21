@@ -60,7 +60,15 @@ class BlogPostTemplate extends React.Component {
               Have any feedback? Drop me a line via the{' '}
               <Link to={'/contact?source=' + post.frontmatter.title}>contact form</Link>,{' '}
               <a href="https://twitter.com/kaishin">Twitter</a>, or{' '}
-              <a href="https://mastodon.social/@redalemeden">Mastodon</a>.
+              <a href="https://mastodon.social/@redalemeden">Mastodon</a>.<br />
+              Found any typos? Edit the post{' '}
+              <a
+                href={
+                  'https://github.com/kaishin/redalemeden.com/edit/master/content/posts/' + post.parent.relativePath
+                }
+              >
+                here
+              </a>.
             </div>
           </section>
 
@@ -84,6 +92,11 @@ export const pageQuery = graphql`
       html
       excerpt
       timeToRead
+      parent {
+        ... on File {
+          relativePath
+        }
+      }
       fields {
         slug
       }

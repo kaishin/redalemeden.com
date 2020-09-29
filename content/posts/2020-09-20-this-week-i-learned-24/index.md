@@ -7,6 +7,8 @@ tags:
   - TWIL
 ---
 
+Here are some of the things I learned this week, in the order I’ve noted them down.
+
 ### Programming
 
 - [Moment.js](https://momentjs.com) is now in [maintenance mode](https://momentjs.com/docs/#/-project-status/). I have used it on several occasions in the past, without realizing that it has fallen out of favor as of late. I looked for an alternative to display relative dates on the [microblog](/microblog) page and settled up on the more lightweight [date-fns](https://date-fns.org).

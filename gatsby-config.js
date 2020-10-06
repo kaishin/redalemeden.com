@@ -104,17 +104,9 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-prismjs',
+            resolve: 'gatsby-remark-vscode',
             options: {
-              noInlineHighlight: true,
-              aliases: {
-                sh: 'bash',
-              },
-              prompt: {
-                user: 'user',
-                host: 'hostname',
-                global: true,
-              },
+              theme: 'Abyss',
             },
           },
         ],

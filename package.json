@@ -58,7 +58,9 @@
     "typeface-inter": "^3.15.0",
     "wasm-twitter-card": "0.3.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {

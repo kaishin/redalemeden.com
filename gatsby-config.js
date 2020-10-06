@@ -44,20 +44,6 @@ module.exports = {
           },
           'gatsby-remark-embedder',
           'gatsby-remark-autolink-headers',
-          {
-            resolve: 'gatsby-remark-prismjs',
-            options: {
-              noInlineHighlight: true,
-              aliases: {
-                sh: 'bash',
-              },
-              prompt: {
-                user: 'user',
-                host: 'hostname',
-                global: true,
-              },
-            },
-          },
         ],
       },
     },
@@ -106,7 +92,14 @@ module.exports = {
           {
             resolve: 'gatsby-remark-vscode',
             options: {
-              theme: 'Abyss',
+              theme: {
+                default: 'Quiet Light',
+                dark: 'Abyss',
+                parentSelector: {
+                  'body.light-theme': 'Quiet Light',
+                  'body.dark-theme': 'Abyss',
+                },
+              },
             },
           },
         ],

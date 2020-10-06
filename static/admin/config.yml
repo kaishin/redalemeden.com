@@ -16,11 +16,34 @@ collections:
     folder: content/microblog
     media_folder: assets
     create: true
+    editor:
+      preview: false
     fields:
-      - { name: date, label: Date, widget: datetime }
+      - { name: date, label: Date, widget: datetime, format: 'YYYY-MM-DDTHH:mmZ'}
       - { name: title, label: Title, required: false }
       - { name: excerpt, label: Excerpt, widget: text, required: false }
       - { name: body, label: Body, widget: markdown }
       - { name: draft, label: Draft, widget: boolean, default: false }
       - { name: tags, label: Tags, widget: list, required: false }
-      - { name: path, label: Path, widget: path-widget }
+      - { name: path, label: Path, widget: widegamut-path-widget }
+  - name: unredacted
+    label: Unredacted
+    label_singular: Post
+    identifier_field: title
+    slug: 'index'
+    description: Manage Unredacted posts.
+    folder: content/posts
+    media_folder: ''
+    create: true
+    path: '{{year}}-{{month}}-{{day}}-{{title}}/index'
+    preview_path: "blog/{{year}}/{{title}}"
+    editor:
+      preview: false
+    fields:
+      - { name: title, label: Title, required: true }
+      - { name: date, label: Date, widget: datetime, format: 'YYYY-MM-DDTHH:mmZ'}
+      - { name: category, label: Category, widget: select, options: ["design", "programming", "journal", "learning", "technology"] }
+      - { name: audience, label: Audience, required: false }
+      - { name: body, label: Body, widget: markdown }
+      - { name: tags, label: Tags, widget: list, required: false }
+      - { name: draft, label: Draft, widget: boolean, default: false }

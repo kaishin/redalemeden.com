@@ -1,7 +1,7 @@
 ---
 date: 2019-07-07T21:25+02:00
 title: "Declaration of Digital Independence"
-category: Technology
+category: technology
 tags:
   - Privacy
   - Internet

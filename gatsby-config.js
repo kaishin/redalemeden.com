@@ -93,13 +93,21 @@ module.exports = {
             resolve: 'gatsby-remark-vscode',
             options: {
               theme: {
-                default: 'Quiet Light',
+                default: 'Noctis Lux',
                 dark: 'Abyss',
                 parentSelector: {
-                  'body.light-theme': 'Quiet Light',
+                  'body.light-theme': 'Noctis Lux',
                   'body.dark-theme': 'Abyss',
                 },
               },
+              inlineCode: {
+                marker: '•',
+              },
+              extensions: ['noctis'],
+              replaceColor: (oldColor) =>
+                ({
+                  '#fa8900': 'var(--theme-link-color)',
+                }[oldColor.toLowerCase()] || oldColor),
             },
           },
         ],

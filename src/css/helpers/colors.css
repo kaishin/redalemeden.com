@@ -106,7 +106,7 @@
   --theme-quote-foreground-color: var(--theme-secondary-foreground-color);
   --theme-quote-border-color: var(--marin-blue);
 
-  --code-background-color: color-mod(var(--dusk-blue) alpha(10%));
+  --code-background-color: #000c18;
   --code-foreground-color: color-mod(var(--dusk-blue) tint(20%));
   --code-function-color: var(--theme-link-color);
   --code-hover-background-color: black;

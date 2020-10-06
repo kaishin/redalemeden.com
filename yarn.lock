@@ -12011,6 +12011,10 @@ no-case@^3.0.3:
     lower-case "^2.0.1"
     tslib "^1.10.0"
 
+noctis@liviuschera/noctis:
+  version "10.39.0"
+  resolved "https://codeload.github.com/liviuschera/noctis/tar.gz/a7a59535e63be6cf8978d6bbb1f9980ea7287988"
+
 node-abi@^2.7.0:
   version "2.18.0"
   resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-2.18.0.tgz#1f5486cfd7d38bd4f5392fa44a4ad4d9a0dffbf4"

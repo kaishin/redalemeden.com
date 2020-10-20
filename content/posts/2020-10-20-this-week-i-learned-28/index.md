@@ -15,7 +15,7 @@ Here are some of the things I learned this week, in the order I’ve noted them 
 
 ### Docker, Nginx, and Let's Encrypt
 
-* This weekend I wrote a [tiny](https://github.com/kaishin/posse-server) Express.js app to use as a [POSSE](https://indieweb.org/POSSE) server for this website. After learning the hard way about the difference between [`CMD`](https://docs.docker.com/engine/reference/builder/#cmd) and [`RUN`](https://docs.docker.com/engine/reference/builder/#run) in a Dockerfile, I ran into an issue with my [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy) and Let's Encrypt setup on the VPS. After several hours of poking around, I found an outdated version of [this Docker image](https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion) to be the culprit. And me who thought that using the `latest` tag is a bad idea...
+* This weekend I wrote a [tiny](https://github.com/kaishin/posse-server) Express.js app to use as a [POSSE](https://indieweb.org/POSSE) server for this website. After learning the hard way about the difference between [`CMD`](https://docs.docker.com/engine/reference/builder/#cmd) and [`RUN`](https://docs.docker.com/engine/reference/builder/#run) in a Dockerfile, I ran into an issue with my [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy) and Let's Encrypt setup on the VPS. After several hours of poking around, I found an outdated version of [this Docker image](https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion) to be the culprit, which will make me think twice before version-locking security dependencies like this one.
 
 ### The Walrus Operator
 

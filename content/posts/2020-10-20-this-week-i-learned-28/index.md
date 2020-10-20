@@ -2,6 +2,7 @@
 title: "This Week I Learned #28"
 date: 2020-10-20T01:58+02:00
 category: learning
+audience: people interested in learning and metacognitive tools
 tags:
   - TWIL
 draft: false

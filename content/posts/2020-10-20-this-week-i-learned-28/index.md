@@ -19,6 +19,6 @@ Here are some of the things I learned this week, in the order I’ve noted them 
 
 ### The Walrus Operator
 
-* The assignment operator `:=` in Python is called the _walrus operator_. Simply brilliant. I mean, look at it! (via [this episode](https://www.youtube.com/watch?v=nWTvXbQHwWs) of the Lex Fridman podcast).
+* The assignment operator `:=` in Python is called the _walrus operator_ (via [this episode](https://www.youtube.com/watch?v=nWTvXbQHwWs) of the Lex Fridman podcast). Simply brilliant; I mean, look at it!
 
 *[VPS]: Virtual Private Server

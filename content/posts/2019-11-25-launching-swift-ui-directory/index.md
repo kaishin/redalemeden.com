@@ -37,4 +37,3 @@ Hope you have a pleasant experience using SwiftUI Directory and don’t hesitate
 [JSON]: https://swiftui.directory/feed.json
 [an endpoint]: https://swiftui.directory/all.json
 [GitHub issue]: https://github.com/kaishin/swiftui.directory/issues/new?&template=new-library-template.md
-

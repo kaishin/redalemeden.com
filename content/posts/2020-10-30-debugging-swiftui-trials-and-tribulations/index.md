@@ -67,6 +67,6 @@ And *just* like that, the crasher was gone. Squashed into oblivion.
 
 If this sounds dumb, it’s because it is. At no point did the compiler chastise me for doing something I wasn't supposed to do. And to make matters worse, the documentation doesn't mention anything related to... wait, what documentation?
 
-It’s a bittersweet feeling when you fix a bug in a non-deterministic, haphazard way. On one hand you are elated you’ve managed to fix it at all. On the other, you feel somewhat powerless and insecure about your ability to handle similar situations in the future. I adore SwiftUI, but moments like these give me a good dose of anticipatory anxiety—the kind that erodes trust and dampen the enthusiasm of being at the bleeding edge.
+It’s a bittersweet feeling when you fix a bug in a non-deterministic, haphazard way. On one hand you are elated you’ve managed to fix it at all. On the other, you feel somewhat powerless and insecure about your ability to handle similar situations in the future. I adore SwiftUI, but moments like these give me a good dose of anticipatory anxiety—the kind that erodes trust and dampen the thrill of being at the bleeding edge.
 
 [^1]: As an aside, apps that greet users with a sign up screen are generally trash. You don't ask prospective tenants to sign the contract at the door before they've even seen the apartment.

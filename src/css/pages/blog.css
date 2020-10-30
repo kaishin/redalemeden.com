@@ -269,16 +269,7 @@
     }
   }
 
-  & .assumed-audience {
-    font-size: 0.98rem;
-    font-style: italic;
-
-    & small {
-      font-size: 0.85rem;
-    }
-  }
-
-  & .content-wrapper > p:first-of-type {
+  & .content-wrapper > .large-p + p {
     background: transparent;
     border: none;
     font-size: 1.1em;
@@ -287,7 +278,7 @@
     padding: 0;
   }
 
-  & .feedback-box {
+  & .addendum-box {
     color: var(--theme-tertiary-foreground-color);
     background: var(--theme-tertiary-background-color);
     border-radius: 1rem;
@@ -295,6 +286,10 @@
     font-style: italic;
     margin: 3rem auto 1rem;
     padding: 1rem;
+
+    & small {
+      font-size: 0.85rem;
+    }
   }
 
   & sup a:any-link {

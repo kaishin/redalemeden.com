@@ -54,6 +54,7 @@
   --theme-blog-link-background-color: color-mod(var(--light-theme-link-color) alpha(5%));
   --theme-blog-hover-link-background-color: color-mod(var(--light-theme-link-color) alpha(15%));
   --theme-post-category-color: color-mod(gray(30) alpha(50%));
+  --theme-addendum-box-color: color-mod(var(--dusk-blue) alpha(8%));
 
   --theme-table-border-color: color-mod(var(--light-theme-fg-color) alpha(10%));
 
@@ -99,6 +100,7 @@
   --theme-blog-link-background-color: color-mod(var(--dark-theme-link-color) alpha(5%));
   --theme-blog-hover-link-background-color: color-mod(var(--dark-theme-link-color) alpha(15%));
   --theme-post-category-color: color-mod(var(--marin-blue) alpha(50%));
+  --theme-addendum-box-color: color-mod(var(--dark-theme-bg-color) shade(20%));
 
   --theme-table-border-color: color-mod(var(--dark-theme-fg-color) alpha(10%));
 

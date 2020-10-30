@@ -54,7 +54,7 @@ class BlogPostTemplate extends React.Component {
             )}
             <div className="content-wrapper" dangerouslySetInnerHTML={{ __html: post.html }} />
             <div className="addendum-box">
-              Have any feedback? Drop me a line via the{' '}
+              Have feedback or questions? Drop me a line via the{' '}
               <Link to={'/contact?source=' + post.frontmatter.title}>contact form</Link>,{' '}
               <a href="https://twitter.com/kaishin">Twitter</a>, or{' '}
               <a href="https://mastodon.social/@redalemeden">Mastodon</a>.<br />

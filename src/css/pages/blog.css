@@ -280,7 +280,7 @@
 
   & .addendum-box {
     color: var(--theme-tertiary-foreground-color);
-    background: var(--theme-tertiary-background-color);
+    background: var(--theme-addendum-box-color);
     border-radius: 1rem;
     font-size: 0.9rem;
     font-style: italic;

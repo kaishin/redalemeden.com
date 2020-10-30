@@ -48,15 +48,12 @@ class BlogPostTemplate extends React.Component {
 
           <section className="full-post-content">
             {post.frontmatter.audience && (
-              <p className="assumed-audience">
-                <strong>Assumed audience</strong>: {post.frontmatter.audience}.{' '}
-                <small>
-                  <a href="/microblog/post-1570576215962">What's this?</a>
-                </small>
+              <p className="addendum-box">
+                <a href="/microblog/post-1570576215962"><strong>Assumed audience</strong></a>: {post.frontmatter.audience}.{' '}
               </p>
             )}
             <div className="content-wrapper" dangerouslySetInnerHTML={{ __html: post.html }} />
-            <div className="feedback-box">
+            <div className="addendum-box">
               Have any feedback? Drop me a line via the{' '}
               <Link to={'/contact?source=' + post.frontmatter.title}>contact form</Link>,{' '}
               <a href="https://twitter.com/kaishin">Twitter</a>, or{' '}

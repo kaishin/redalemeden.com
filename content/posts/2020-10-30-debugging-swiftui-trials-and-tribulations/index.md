@@ -2,7 +2,7 @@
 title: "Debugging SwiftUI: Trials and Tribulations"
 date: 2020-10-30T12:00+01:00
 category: programming
-audience: people interested SwiftUI or UI programming in general.
+audience: people interested SwiftUI or UI programming in general
 tags:
   - Swift
   - SwiftUI

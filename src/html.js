@@ -19,7 +19,7 @@ export default function HTML(props) {
         <meta name="msapplication-TileColor" content="#ffc40d" />
         <meta name="theme-color" content="#000000" />
         {props.headComponents}
-        <script async defer data-domain="redalemeden.com" src="https://analytics.redalemeden.com/js/plausible.js"></script>
+        <script async defer data-domain="redalemeden.com" src="/plausible.js"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

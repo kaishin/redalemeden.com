@@ -27,4 +27,4 @@ Is it only me or executable Swift packages can't be tested in [SPM](https://swif
 
 ### The Actor Model
 
-While trying to follow along the [Swift Concurrency Roadmap](https://forums.swift.org/t/swift-concurrency-roadmap/41611), I came across the concept of the [actor model](https://en.wikipedia.org/wiki/Actor_model) which, beside yielding some noteworthy image results in DuckDuckGo, seems to be a tried-and-true computation concurrency model that draws some inspiration from certain laws of physics. I have a ton more reading to do to actually understand any of this, but I'm looking forward to that.
+While trying to follow along the [Swift Concurrency Roadmap](https://forums.swift.org/t/swift-concurrency-roadmap/41611), I came across the concept of the [actor model](https://en.wikipedia.org/wiki/Actor_model) which, beside yielding some noteworthy image results in DuckDuckGo, seems to be a tried-and-true computation concurrency model that draws some inspiration from the laws of physics. I have a ton more reading to do to actually understand any of this, but I'm looking forward to that.

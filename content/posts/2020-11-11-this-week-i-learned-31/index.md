@@ -23,4 +23,4 @@ formatter.timeZone = TimeZone(identifier: "UTC")
 
 ### Core Data Concurrency
 
-I finally decided to sit down and fix the myriad Core data issues that plagued my iOS app. I learned a ton regarding some APIs that I wasn't familiar with, including [`perform`/`performAndWait`](https://www.kairadiagne.com/2019/01/06/understanding-the-core-data-perform-methods.html), background contexts, and batch deletions. I recommend checking out [this blog](https://www.avanderlee.com/category/core-data/) to learn more about some of these topics.
+I finally decided to sit down and fix the myriad Core Data issues that plagued my iOS app. I learned a ton regarding some APIs that I wasn't familiar with, including `perform`/`performAndWait`([link](https://www.kairadiagne.com/2019/01/06/understanding-the-core-data-perform-methods.html)), background contexts, and batch deletions. I recommend checking out [Antoine's blog](https://www.avanderlee.com/category/core-data/) to learn more about some of these topics.

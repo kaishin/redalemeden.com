@@ -295,27 +295,27 @@
   ],
   "languages": [
     {
-      "language": "English",
+      "name": "English",
       "fluency": "Native level",
       "countryCode": "US"
     },
     {
-      "language": "French",
+      "name": "French",
       "fluency": "Native level",
       "countryCode": "FR"
     },
     {
-      "language": "Arabic",
+      "name": "Arabic",
       "fluency": "Business level",
       "countryCode": "MA"
     },
     {
-      "language": "Japanese",
+      "name": "Japanese",
       "fluency": "Business level",
       "countryCode": "JP"
     },
     {
-      "language": "Swedish",
+      "name": "Swedish",
       "fluency": "Intermediate level",
       "countryCode": "SE"
     }

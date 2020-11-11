@@ -23,7 +23,6 @@
 
   & strong {
     font-weight: bolder;
-    color: var(--theme-link-color);
   }
 
   & em {
@@ -65,6 +64,14 @@
 
   & .highlight {
     margin-bottom: 0.5rem;
+
+    & em {
+      color: var(--code-keyword-color);
+      font-weight: 600;
+      background-color: color-mod(var(--code-keyword-color) alpha(10%));
+      padding: .1em .3em;
+      border-radius: 2px;
+    }
   }
 
   & .keywords {
@@ -75,9 +82,9 @@
   }
 
   & .keyword {
-    background-color: var(--theme-inset-background-color);
+    background-color: var(--code-background-color);
     border-radius: 10rem;
-    color: var(--theme-secondary-foreground-color);
+    color: var(--code-foreground-color);
     font-size: .75rem;
     font-style: italic;
     margin-right: .4rem;
@@ -99,7 +106,7 @@
   grid-gap: 1rem;
 
   & .item {
-    border: 1px solid var(--theme-tertiary-background-color);
+    border: 2px solid var(--theme-tertiary-background-color);
     margin-top: -0.5rem;
     padding: 0 1.2rem;
     border-radius: 1.2rem;
@@ -107,5 +114,24 @@
 
   & .keyword {
     font-size: .9rem;
+  }
+}
+
+.education-list {
+  @extend .job-list;
+
+  & .institution-name {
+    display: block;
+  }
+}
+
+.language-list {
+  @extend .job-list;
+
+  & .language-name {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.2rem;
+    display: inline;
   }
 }

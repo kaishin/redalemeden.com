@@ -1,7 +1,10 @@
 import React from 'react';
+import { flag } from '../../utils/flag';
+
 const { format, parseISO, formatDistance } = require('date-fns');
 const MarkdownIt = require('markdown-it');
 const md = new MarkdownIt();
+
 
 class JobExperience extends React.Component {
   constructor(props) {
@@ -26,20 +29,9 @@ class JobExperience extends React.Component {
     const formattedStartDate = format(dateStarted, 'MMM y');
 
     const createMarkup = (content) => { return {__html: content}; };
-    const flag  = (country) => {
-      if (country === 'US') {
-        return '🇺🇸'
-      } else if (country === 'FR') {
-        return '🇫🇷'
-      } else if (country === 'SE') {
-        return '🇸🇪'
-      } else if (country === 'JP') {
-        return '🇯🇵'
-      } else if (country === 'MA') {
-        return '🇲🇦'
-      } else {
-        return '🏴‍☠️'
-      }
+
+    if (job.location.countryCode === 'MA') {
+      return <></>
     }
 
     return (

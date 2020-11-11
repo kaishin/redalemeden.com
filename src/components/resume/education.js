@@ -1,7 +1,7 @@
 import React from 'react';
-const { format, parseISO, formatDistance } = require('date-fns');
-const MarkdownIt = require('markdown-it');
-const md = new MarkdownIt();
+import { flag } from '../../utils/flag';
+
+const { format, parseISO } = require('date-fns');
 
 class Education extends React.Component {
   constructor(props) {
@@ -16,54 +16,24 @@ class Education extends React.Component {
     const formattedDateEnded = format(dateEnded, 'MMM y')
     const formattedStartDate = format(dateStarted, 'MMM y');
 
-    const createMarkup = (content) => { return {__html: content}; };
-    const flag  = (country) => {
-      if (country === 'US') {
-        return '🇺🇸'
-      } else if (country === 'FR') {
-        return '🇫🇷'
-      } else if (country === 'SE') {
-        return '🇸🇪'
-      } else if (country === 'JP') {
-        return '🇯🇵'
-      } else if (country === 'MA') {
-        return '🇲🇦'
-      } else {
-        return '🏴‍☠️'
-      }
-    }
-
     return (
       <li className="item">
         <span className="heading">
           <strong className="institution-name">
             {education.institution} {flag(education.location.countryCode)}
           </strong>
-        <em className="position">{education.area} {education.studyType}</em>
+        <em className="position">{education.area}</em>
         </span>
         <span className="dates">
-          {formattedStartDate} – {formattedDateEnded}{' '}
-          <span className="duration">
-          ({
-            formatDistance(
-              dateStarted,
-              dateEnded,
-              { addSuffix: false }
-            )
-          }) 
-          </span>
+          {formattedStartDate} – {formattedDateEnded}
         </span>
 
         {education.courses !== undefined &&
-          <ul className="courses">
-            {education.courses.map((item, id) => 
-              <li className="course" key={id}>
-                <span>
-                  {item}
-                </span>
-              </li>
-            )}
-          </ul>
+          <p className="course">
+            <span>
+              {education.courses[0]} ({education.studyType})
+            </span>
+          </p>
         }
       </li>
     );

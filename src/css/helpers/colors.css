@@ -82,7 +82,7 @@
   --theme-tertiary-foreground-color: var(--marin-blue);
   --theme-tertiary-background-color: color-mod(var(--dusk-blue) alpha(10%));
   --theme-inset-background-color: color-mod(var(--dark-theme-bg-color) shade(20%));
-  --theme-bullet-dash-color: color-mod(var(--dark-theme-fg-color) alpha(40%));
+  --theme-bullet-dash-color: color-mod(var(--dusk-blue) alpha(50%));
   --theme-card-background-color: black;
 
   --form-field-bg-color: color-mod(var(--dark-theme-bg-color) shade(20%));

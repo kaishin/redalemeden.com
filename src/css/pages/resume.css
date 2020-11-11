@@ -1,0 +1,111 @@
+.resume-page {
+  & h1 {
+    & em {
+      font-weight: normal;
+      font-style: normal;
+      text-transform: none;
+      color: var(--theme-link-color);
+      font-size: 0.85em;
+    }
+  }
+
+  & h3 {
+    color: var(--theme-quote-foreground-color);
+  }
+
+  & h2 {
+    @extend %heading;
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: normal;
+    color: var(--theme-secondary-foreground-color);
+  }
+
+  & strong {
+    font-weight: bolder;
+    color: var(--theme-link-color);
+  }
+
+  & em {
+    color: var(--theme-link-color);
+  }
+}
+
+.job-list {
+  @extend .project-list;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+
+  & .item::before {
+    display: none;
+  }
+
+  & .company-name {
+    color: var(--theme-foreground-color);
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  & .dates {
+    display: block;
+    font-size: 0.8em;
+    color: var(--marin-blue);
+  }
+
+  & .duration {
+    color: var(--theme-secondary-foreground-color);
+    text-transform: capitalize;
+  }
+
+  & .highlights {
+    padding-left: 0;
+    font-size: 0.85rem;
+    color: var(--theme-secondary-foreground-color);
+  }
+
+  & .highlight {
+    margin-bottom: 0.5rem;
+  }
+
+  & .keywords {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+
+  & .keyword {
+    background-color: var(--theme-inset-background-color);
+    border-radius: 10rem;
+    color: var(--theme-secondary-foreground-color);
+    font-size: .75rem;
+    font-style: italic;
+    margin-right: .4rem;
+    padding: .2rem .8rem;
+    transition: color .3s;
+
+    &:hover {
+      color: var(--theme-foreground-color);
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.skill-list {
+  @extend .job-list;
+  grid-gap: 1rem;
+
+  & .item {
+    border: 1px solid var(--theme-tertiary-background-color);
+    margin-top: -0.5rem;
+    padding: 0 1.2rem;
+    border-radius: 1.2rem;
+  }
+
+  & .keyword {
+    font-size: .9rem;
+  }
+}

@@ -42,6 +42,7 @@
     "gatsby-transformer-yaml": "^2.4.10",
     "jimp": "^0.16.0",
     "lodash": "^4.17.19",
+    "markdown-it": "^12.0.2",
     "netlify-cms-app": "^2.12.19",
     "noctis": "liviuschera/noctis",
     "path": "0.12.7",

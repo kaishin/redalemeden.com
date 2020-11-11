@@ -1,0 +1,60 @@
+import { Link, graphql } from 'gatsby';
+import Seo from '../../components/seo';
+import Helmet from 'react-helmet';
+import ReactTooltip from 'react-tooltip';
+import AppleLogo from '../../images/apple-logo.svg'
+import SwiftLogo from '../../images/swift-logo.svg'
+import Resume from '../../../content/data/resume.json'
+
+import PageLayout from '../../components/layouts/longform.js';
+import JobList from '../../components/resume/job-list.js';
+import SkillList from '../../components/resume/skill-list.js'
+import EducationList from '../../components/resume/education-list.js'
+
+export default PageLayout
+
+<Seo title="Resume" />
+<Helmet bodyAttributes={{ class: 'resume-page' }} />
+
+# Reda Lemeden _/ Software Developer_
+
+### Apple Platforms • Swift • Web
+
+---
+
+## About Me
+
+After getting a <abbr title="Bachelor of Business Administration">BBA</abbr> degree in 2007 in my hometown of Casablanca <span title="Morocco">🇲🇦</span>,
+I moved to Tokyo <span title="Japan">🇯🇵</span> to study Japanese,
+then Nantes <span title="France">🇫🇷</span> to resume my post-graduate studies (<abbr title="Master in Management">MIM</abbr>),
+then Boston, MA <span title="USA">🇺🇸</span> to work as a product designer & developer,
+before finally settling in Stockholm <span title="Sweden">🇸🇪</span> in 2014. 
+
+## Highlights
+
+- I started _Web development_ as a hobby in the early 2000s.
+- After 8 years of wrestling CSS tables in Internet Explorer, 
+I got inspired by the iPhone to learn _mobile development_.
+- In 2010, I wrote _my first mobile app_ in Objective-C.
+- Today, I enjoy working with various _web technologies_,
+_app development_ on <img src={AppleLogo} alt="Apple" className="inline-icon apple"/> platforms,
+ and more recently _server-side_ <img src={SwiftLogo} alt="Swift" className="inline-icon swift" /> Swift.
+
+## Open Source
+
+- In 2012, I open-sourced a [Sass grid framework](https://github.com/thoughtbot/neat) that gained considerable momentum in the community.
+- Since 2014, I have maintained a handful of open-source iOS and Swift projects on [GitHub](https://github.com/kaishin).
+- The latest of which is a [micro-framework](https://github.com/swift-glide/glide) for server-side development.
+- Most of my Web development work is done in the open, including [this website](https://github.com/kaishin/redalemeden.com).
+
+## Skills
+
+<SkillList />
+
+## Work
+
+<JobList jobs={Resume.experience}/>
+
+## Education
+
+<EducationList />

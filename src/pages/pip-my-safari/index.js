@@ -20,14 +20,14 @@ class PipMySafariPage extends React.Component {
           description="A lightweight workflow to toggle Safari's PiP mode for videos in the foreground"
           keywords={[ 'safari', 'automation', 'video', 'macos' ]}
         />
-        <header class="main-header">
-          <h1 class="main-title">
-            <div class="main-title-icon">
+        <header className="main-header">
+          <h1 className="main-title">
+            <div className="main-title-icon">
               <Img fluid={icon.fluid} className="icon" alt="PiP My Safari icon" />
             </div>
-            <div class="main-title-copy">
-              <span class="title">PiP MY Safari</span>
-              <span class="tagline">
+            <div className="main-title-copy">
+              <span className="title">PiP MY Safari</span>
+              <span className="tagline">
                 A lightweight workflow to toggle Safari's PiP mode for videos in the foreground
               </span>
             </div>
@@ -35,7 +35,7 @@ class PipMySafariPage extends React.Component {
         </header>
 
         <main>
-          <div class="description">
+          <div className="description">
             <p>
               Tested with YouTube, Twitch, Vimeo, Netflix, and Facebook but it should work with any website using the
               HTML5 <code> &lt;video&gt; </code> tag.
@@ -45,10 +45,10 @@ class PipMySafariPage extends React.Component {
           <h2>Alfred Workflow</h2>
 
           <p>
-            <img class="screenshot" src={AlfredDemoGIF} alt="Alfred demo GIF" />
+            <img className="screenshot" src={AlfredDemoGIF} alt="Alfred demo GIF" />
           </p>
 
-          <div class="description">
+          <div className="description">
             You can download the workflow directly or install it via{' '}
             <a href="http://www.packal.org/workflow/pip-my-safari">Packal</a>, which can be used to automatically update
             the workflow using <a href="http://www.packal.org/workflow/packal-updater">Packal Updater</a>.
@@ -57,33 +57,33 @@ class PipMySafariPage extends React.Component {
               <em>Develop</em> menu. The Develop menu can be enabled in Safari's <em>Preferences > Advanced</em> tab.
             </p>
             <a
-              class="button"
+              className="button"
               href="https://github.com/kaishin/pip-my-safari/releases/download/v1.0/pip-my-safari.alfredworkflow"
             >
-              Alfred Workflow <span class="details">(1.0.0)</span>
+              Alfred Workflow <span className="details">(1.0.0)</span>
             </a>
           </div>
 
           <h2>Automator Workflow</h2>
 
           <p>
-            <img class="screenshot" src={AutomatorDemoGIF} alt="Automator demo GIF" />
+            <img className="screenshot" src={AutomatorDemoGIF} alt="Automator demo GIF" />
           </p>
 
-          <div class="description">
+          <div className="description">
             The Automator workflow can be used as a service and accessed from{' '}
             <em> Safari > Services > General: PiP My Safari </em>.
             <a
-              class="button"
+              className="button"
               href="https://github.com/kaishin/pip-my-safari/releases/download/v1.0/pip-my-safari-automator.zip"
             >
-              Automator Workflow <span class="details">(1.0.0)</span>
+              Automator Workflow <span className="details">(1.0.0)</span>
             </a>
           </div>
         </main>
 
         <footer>
-          <span class="copyright">&copy; 2015-{new Date().getFullYear()} Reda Lemeden. All Rights Reserved. </span>
+          <span className="copyright">&copy; 2015-{new Date().getFullYear()} Reda Lemeden. All Rights Reserved. </span>
           <a href="https://github.com/kaishin/pip-my-safari">Source Code</a>
         </footer>
       </StandaloneLayout>

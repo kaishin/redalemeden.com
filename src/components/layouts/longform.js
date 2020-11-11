@@ -7,7 +7,7 @@ import 'typeface-inter';
 
 export default ({ children }) => (
   <React.Fragment>
-    <main class="longform-container">
+    <main className="longform-container">
       <header>
         <a className="back-link" href="/">
           <img className="author-avatar" src="/author-photo.jpg" alt="Reda Lemeden" />
@@ -17,7 +17,7 @@ export default ({ children }) => (
           </div>
         </a>
       </header>
-      <article class="longform-content">{children}</article>
+      <article className="longform-content">{children}</article>
     </main>
     <Footer>
       <li className="link">

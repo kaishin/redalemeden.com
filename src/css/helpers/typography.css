@@ -44,10 +44,6 @@ h5 {
 
 .inline-icon {
   height: 1em;
-
-  &.apple {
-    fill: red;
-  }
 }
 
 %body-text {

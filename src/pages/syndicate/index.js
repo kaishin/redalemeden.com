@@ -19,14 +19,14 @@ class SyndicatePage extends React.Component {
           description="Safari extension that brings the RSS button back to the toolbar."
           keywords={[ 'safari', 'extension', 'rss', 'feed' ]}
         />
-        <header class="main-header">
-          <h1 class="main-title">
-            <div class="main-title-icon">
+        <header className="main-header">
+          <h1 className="main-title">
+            <div className="main-title-icon">
               <Img fluid={icon.fluid} className="icon" alt="Syndicate icon" />
             </div>
-            <div class="main-title-copy">
-              <span class="title">Syndicate</span>
-              <span class="tagline">Safari extension that brings the RSS button back to the toolbar.</span>
+            <div className="main-title-copy">
+              <span className="title">Syndicate</span>
+              <span className="tagline">Safari extension that brings the RSS button back to the toolbar.</span>
             </div>
           </h1>
         </header>
@@ -39,7 +39,7 @@ class SyndicatePage extends React.Component {
             />
           </p>
 
-          <div class="description">
+          <div className="description">
             Using the toolbar button, finding and subscribing to any RSS feed is just one click away. Unlike the opaque
             built-in RSS functionality in Safari, Syndicate exposes every feed in the current page, giving you more
             visibility and control.
@@ -53,7 +53,7 @@ class SyndicatePage extends React.Component {
             />
           </p>
 
-          <div class="description">
+          <div className="description">
             You can also enable a badge on the toolbar icon to make RSS discovery easier. The badge is disabled by
             default.
           </div>
@@ -66,7 +66,7 @@ class SyndicatePage extends React.Component {
             />
           </p>
 
-          <div class="description">
+          <div className="description">
             Syndicate was built with multiple-feed sites in mind. It even fetches the feed title using{' '}
             <a href="https://developers.google.com/feed/">Google Feed API</a>. You can toggle this feature off in the
             extension preferences, or use Safari's private browsing mode.
@@ -80,17 +80,17 @@ class SyndicatePage extends React.Component {
             />
           </p>
 
-          <div class="description">
+          <div className="description">
             Double-click the URL field and hit <kbd>Cmd+C</kbd> to copy the feed URL. Useful for sharing or debugging.
           </div>
 
-          <a class="button" href="https://github.com/kaishin/syndicate/releases/download/v1.0.0/Syndicate.safariextz">
-            Download <span class="details">(1.0.0)</span>
+          <a className="button" href="https://github.com/kaishin/syndicate/releases/download/v1.0.0/Syndicate.safariextz">
+            Download <span className="details">(1.0.0)</span>
           </a>
         </main>
 
         <footer>
-          <span class="copyright">&copy; 2015-{new Date().getFullYear()} Reda Lemeden. All Rights Reserved.</span>
+          <span className="copyright">&copy; 2015-{new Date().getFullYear()} Reda Lemeden. All Rights Reserved.</span>
           <a href="https://github.com/kaishin/syndicate">Source Code</a>
         </footer>
       </StandaloneLayout>

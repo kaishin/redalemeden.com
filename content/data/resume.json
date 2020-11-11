@@ -6,12 +6,6 @@
     "phone": "+46736455922",
     "website": "https://redalemeden.com",
     "summary": "I am software developer, designer, and product manager (MIM) based in Stockholm, Sweden. Over the past decade, I worked with various Web and native Apple technologies in different full-time positions around the US and Europe. I am passionate about writing, education, open-source, and community involvement. I lead by example and enjoy going the extra mile to deliver delightful products.",
-    "location": {
-      "address": "Råcksta Gådsväg 28",
-      "postalCode": "16273",
-      "city": "Stockholm",
-      "countryCode": "SE"
-    },
     "profiles": [
       {
         "network": "Twitter",
@@ -30,40 +24,56 @@
       }
     ]
   },
-  "work": [
+  "experience": [
     {
       "company": "Four Rays AB",
       "position": "Founder",
       "website": "https://4rays.studio",
-      "startDate": "2019-05-01",
-      "summary": "Author and publish educational and commercial products as an independent software shop.",
-      "location": {
-        "city": "Stockholm",
-        "countryCode": "SE"
-      }
-    },
-    {
-      "company": "Kaching AB",
-      "position": "Chief Product Officer",
-      "website": "https://kachingretail.com",
-      "startDate": "2019-05-01",
-      "endDate": "2020-03-13",
-      "summary": "Provide product and design team leadership with the goal of planning, building, and launching a new mobile product for the retail industry.",
+      "startDate": "2020-05-01",
+      "summary": "Author open-source and commercial software products as an independent development and design shop.",
       "location": {
         "city": "Stockholm",
         "countryCode": "SE"
       },
       "highlights": [
-        "Oversaw the development of a universal iOS app built entirely in SwiftUI.",
-        "Worked with the team on different payment integrations including Swish, Klarna, and card payment processors.",
-        "Aligned the product, design, and development efforts around the same strategic goals.",
-        "Coached the product manager and the product designer and supported them in their day-to-day operations.",
-        "Represented the company at various trade fairs and events in Europe."
+        "Working as an _Industry Leader_ for the front-end program at [Hyper Island](https://hyperisland.com).",
+        "Building a platform for video game enthusiasts (backend, iOS).",
+        "Writing a book about _SwiftUI_ and _2D graphics_."
+      ],
+      "keywords": [
+        "iOS", "macOS", "SwiftUI", "Graphics", "Core Data", "Vapor", "Docker", "Server", "MongoDB", "PostgreSQL", "Jamstack", "PostCSS"
       ]
     },
     {
       "company": "Kaching AB",
-      "position": "Chief Design Officer",
+      "position": "Head of Product (Mobile)",
+      "website": "https://kachingretail.com",
+      "startDate": "2019-05-01",
+      "endDate": "2020-03-13",
+      "summary": "Provided leadership to the product and design teams with the goal of planning, building, and launching a new mobile product for the retail industry.",
+      "location": {
+        "city": "Stockholm",
+        "countryCode": "SE"
+      },
+      "highlights": [
+        "Oversaw the development of a universal iOS app built entirely in _SwiftUI_.",
+        "Worked with the team on different _payment integrations_ including Swish, Klarna, and card payment processors.",
+        "Represented the company at various trade fairs and events in Europe."
+      ],
+      "keywords": [
+        "Agile",
+        "KPIs",
+        "iPad",
+        "Swift",
+        "Bluetooth",
+        "Planning",
+        "UX Research",
+        "Management"
+      ]
+    },
+    {
+      "company": "Kaching AB",
+      "position": "Head of Design (Mobile)",
       "website": "https://kachingretail.com",
       "startDate": "2018-04-01",
       "endDate": "2019-04-30",
@@ -71,12 +81,14 @@
         "city": "Stockholm",
         "countryCode": "SE"
       },
-      "summary": "Lead a team of product designers to build new retail experiences for mobile.",
+      "summary": "Led a team of product designers to build new retail experiences for mobile.",
       "highlights": [
-        "Oversaw the creation and implementation of an expansive design system for mobile.",
-        "Refreshed the visual identity of the company and the product line-up.",
-        "Organized dozens of design sprints with internal stakeholders and external participants from leading retail companies such as Apple and Ikea.",
-        "Built several UI components for iOS, including an in-app notification framework."
+        "Oversaw the creation and implementation of an expansive _design system_ for mobile.",
+        "Organized dozens of _design sprints_ with internal and external stakeholders from leading retail companies such as Apple and Ikea.",
+        "Built several _UI components_ for iOS, including an in-app notification framework."
+      ],
+      "keywords": [
+        "Sketch", "Design Systems", "MVVM", "Frameworks", "Design Sprints", "Peer Review"
       ]
     },
     {
@@ -89,17 +101,24 @@
         "city": "Stockholm",
         "countryCode": "SE"
       },
-      "summary": "Design and develop digital products for clients and in-house projects.",
+      "summary": "Designed and developed digital products for clients and in-house projects.",
       "highlights": [
-        "Led a team to build a video consultation app for iOS and Android.",
-        "Gave a talk about design sprints at the STHLM TECH Meetup.",
-        "Used different design and prototyping tools to create early concepts of a mobile retail product.",
+        "Worked with the team to build a video consultation app for iOS and Android.",
+        "_Gave a talk_ about design sprints at the [STHLM TECH Meetup](https://sthlmtechmeetup.confetti.events).",
         "Collaborated with other iOS developers to build a native retail application in Swift."
+      ],
+      "keywords": [
+        "Design Sprints",
+        "iOS",
+        "BankID",
+        "Swift",
+        "UIKit",
+        "Gatsby"
       ]
     },
     {
       "company": "thoughtbot Filial",
-      "position": "Design Director",
+      "position": "Design Director / iOS Developer",
       "website": "https://thoughtbot.com",
       "startDate": "2013-04-21",
       "endDate": "2016-08-31",
@@ -107,18 +126,27 @@
         "city": "Stockholm",
         "countryCode": "SE"
       },
-      "summary": "Provide design and development services for enterprise and startup clients.",
+      "summary": "Provided design and development services for enterprise and startup clients, including _Klarna_ and _Intel_.",
       "highlights": [
-        "Co-hosted \"Tentative\", a weekly podcast about UI design.",
-        "Gave talks at local meetups including CocoaHeads and the Dribbble meetup.",
+        "Co-hosted [Tentative](https://www.tentative.fm), a _weekly podcast_ about UI design.",
+        "_Gave various talks_ at local meetups including CocoaHeads and the Dribbble meetup.",
         "Hosted a one-day workshop about iOS and Auto Layout at Hyped Island.",
-        "Co-organized on-site workshops covering various Web and native development technologies.",
         "Led and supported the design teams between the two European branches."
+      ],
+      "keywords": [
+        "iOS",
+        "macOS",
+        "AppKit",
+        "Unity",
+        "SVG",
+        "Open Source",
+        "JavaScript",
+        "Design Sprints"
       ]
     },
     {
       "company": "thoughtbot, Inc",
-      "position": "Front-end Product Designer",
+      "position": "Front-end Developer & Designer",
       "website": "http://thoughtbot.com",
       "startDate": "2012-01-09",
       "endDate": "2013-04-21",
@@ -126,25 +154,35 @@
         "city": "Boston, MA",
         "countryCode": "US"
       },
-      "summary": "Design and implement Web and mobile user interfaces for enterprise and startup clients.",
+      "summary": "Designed and implemented Web and mobile user interfaces for enterprise and startup clients, including _MIT_, _Shutterstock_, and _Yammer_ (Microsoft).",
       "highlights": [
         "Built the front-end of a large-scale MOOC platform at MIT (edX).",
         "Co-authored Bourbon Neat, a Sass-powered grid framework.",
         "Designed several product interfaces for Web, desktop, and mobile."
+      ],
+      "keywords": [
+        "CoffeeScript",
+        "Sass",
+        "UIKit",
+        "Open Source",
+        "Jekyll",
+        "Django",
+        "Ruby",
+        "Rails"
       ]
     },
     {
-      "company": "Contactually (500 Startups)",
+      "company": "Contactually",
       "position": "Part-time Designer",
       "website": "http://contactually.com",
       "startDate": "2011-09-01",
       "endDate": "2011-12-20",
-      "summary": "Design a Web-based CRM product for a 500 Startups alumni (2012).",
+      "summary": "Designed a Web-based CRM product for a 500 Startups alumni (2012).",
       "location": {
         "city": "Washington DC",
         "countryCode": "US"
       },
-      "highlights": ["Created the visual identity of the company.", "Designed a Web-based dashboard UI."]
+      "highlights": ["Created the _visual identity_ of the company.", "Designed a Web-based _dashboard UI_ (Ruby on Rails)."]
     },
     {
       "company": "Kaishin & Co",
@@ -155,14 +193,14 @@
         "city": "Casablanca",
         "countryCode": "MA"
       },
-      "summary": "Run a design and development consultancy working with clients in Europe and North Africa.",
+      "summary": "Ran a design and development consultancy working with clients in Europe and North Africa.",
       "highlights": [
         "Authored an RSS reader for iOS in Objective-C.",
         "Illustrated a children's book for teaching Japanese characters (Kana). Published by Kai Japanese School based in Tokyo."
       ]
     },
     {
-      "company": "Orange Vallée",
+      "company": "Orange (Vallée)",
       "position": "Assistant Product Manager",
       "website": "http://www.orange.com",
       "startDate": "2010-01-06",
@@ -173,7 +211,9 @@
       },
       "summary": "Assisted the product manager with various planning, design, and development tasks.",
       "highlights": [
-        "Desinged the user interface of a multi-platform social network where users can share short audio clips."
+        "Designed the UI of an iOS and Android app where users can share short audio clips.",
+        "Coordinated between development and product teams.",
+        "Contributed to planning and product roadmaps."
       ]
     }
   ],
@@ -227,7 +267,7 @@
       "courses": ["Bachelor's Degree in Marketing & Communication"]
     }
   ],
-  "awards": [
+  "achievements": [
     {
       "title": "First prize at the Kai Speech Contest 2009",
       "date": "2009-02-20",
@@ -237,38 +277,47 @@
   ],
   "skills": [
     {
+      "name": "Apple Platforms",
+      "keywords": ["Swift", "iOS", "macOS", "Core Graphics", "SwiftUI", "MVC", "MVVM", "Redux", "Core Data", "Core Image", "GCD"]
+    },
+    {
+      "name": "Server",
+      "keywords": ["Swift", "NIO", "MongoDB", "PostgreSQL", "Vapor", "Kitura", "TDD", "Unit Testing", "REST", "GraphQL", "Docker", "Redis"]
+    },
+    {
       "name": "Product Design",
-      "keywords": ["Wireframing", "Prototyping", "Planning"]
+      "keywords": ["Agile", "UX Research", "Prototyping", "Personas", "Job Stories", "Icons", "Sketch", "3D", "Illustration", "Animation"]
     },
     {
       "name": "Web",
-      "keywords": ["HTML", "CSS", "Javascript", "PostCSS"]
-    },
-    {
-      "name": "Mobile & Desktop",
-      "keywords": ["Swift", "iOS", "macOS", "Core Graphics"]
+      "keywords": ["HTML", "CSS", "JavaScript", "SVG", "PostCSS", "Jamstack", "Gatsby", "Three.js", "Components"]
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Native level"
+      "fluency": "Native level",
+      "countryCode": "US"
     },
     {
       "language": "French",
-      "fluency": "Native level"
+      "fluency": "Native level",
+      "countryCode": "FR"
     },
     {
       "language": "Arabic",
-      "fluency": "Business level"
+      "fluency": "Business level",
+      "countryCode": "MA"
     },
     {
       "language": "Japanese",
-      "fluency": "Business level"
+      "fluency": "Business level",
+      "countryCode": "JP"
     },
     {
       "language": "Swedish",
-      "fluency": "Business level"
+      "fluency": "Intermediate level",
+      "countryCode": "SE"
     }
   ],
   "references": [

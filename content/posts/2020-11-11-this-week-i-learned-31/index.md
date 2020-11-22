@@ -7,6 +7,7 @@ tags:
   - TWIL
 draft: false
 ---
+
 Here are some of the things I learned this week, in the order I’ve noted them down.
 
 ### Chiasmus & Antimetabole

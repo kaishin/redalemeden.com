@@ -22,11 +22,12 @@ module.exports = {
       options: {
         gatsbyRemarkPlugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1200,
               showCaptions: true,
               tracedSVG: true,
+              quality: 90
             },
           },
           {

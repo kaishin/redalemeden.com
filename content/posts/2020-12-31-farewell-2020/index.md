@@ -2,6 +2,8 @@
 title: "Achievement Unlocked: 2020 Edition"
 date: 2020-12-31T16:03+01:00
 category: journal
+audience: people who have been following my work and/or are interested in
+  independent blogging.
 tags:
   - Work
   - Life

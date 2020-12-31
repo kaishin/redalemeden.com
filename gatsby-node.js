@@ -97,7 +97,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     var customPath = value;
 
     if (isPost) {
-      customPath = `/blog/${format(parseISO(node.frontmatter.date), 'Y')}/${value}`;
+      customPath = `/blog/${format(parseISO(node.frontmatter.date), 'y')}/${value}`;
     } else if (isMicropost) {
       customPath = `/microblog/${value}`;
     }

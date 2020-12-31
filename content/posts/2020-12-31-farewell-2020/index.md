@@ -1,7 +1,10 @@
 ---
-title: Farewell, 2020
+title: "Achievement Unlocked: 2020 Edition"
 date: 2020-12-31T16:03+01:00
 category: journal
+tags:
+  - Work
+  - Life
 draft: false
 ---
 As challenging and anomalous as this year has been, I sought to make the best out of the exceptional circumstances. In March I quit my full time job to focus on a handful of personal projects—a [conference](https://swiftandfika.com/), a book, and a digital product. While the first was indefinitely postponed due to the pandemic, being confined at home was perfect for the remaining two—but more on that hopefully soon. In early fall, I had the opportunity to teach Web front-end development at [Hyper Island](https://www.hyperisland.com/programs-and-courses/frontend-developer); a unique and rewarding experience that I’m not ready to forget any time soon.

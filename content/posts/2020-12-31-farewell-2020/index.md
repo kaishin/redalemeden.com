@@ -15,4 +15,4 @@ Another perk of being stuck at home is having the opportunity to try new things.
 
 When all is said and done, this year was a rare chance for me to reflect and appreciate some of the things I took for granted. Visiting relatives, exercising in the gym, or going to a concert will certainly feel less mundane whenever I can do them without a care in the world again.
 
-So, 2020, you haven't been particularly nice, but I am here to bid you farewell. As for you, 2021, I understand  the expectations are high, but you can't do much worse than your predecessor, \_can you?\_
+So, 2020, you haven't been particularly nice, but I am here to bid you farewell. As for you, 2021, I understand  the expectations are high, but you can't do much worse than your predecessor, _can you?_

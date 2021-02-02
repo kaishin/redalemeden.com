@@ -8,7 +8,7 @@ tags:
   - Apple
 draft: false
 ---
-Riccardo Mori [writes](``) about a Twitter Thread by Jeff Johnson, where he criticizes the direction Apple took with Big Sur.
+Riccardo Mori [writes](http://morrick.me/archives/9150) about a Twitter Thread by Jeff Johnson, where he criticizes the direction Apple took with Big Sur.
 
 > [...] the Mac experience today feels disjointed. [...] Big Sur embodies what I’ve been fearing in recent years — a progressive iOS-ification of Mac OS.
 

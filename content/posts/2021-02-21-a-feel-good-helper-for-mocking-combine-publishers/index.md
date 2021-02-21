@@ -35,9 +35,9 @@ This does the job, but having to specify the error type (1) every time takes awa
 static func once<T, U: Error>(
   _ value: T
 ) -> AnyPublisher<T, U> {
-	Just(value)
-	  .setFailureType(to: U.self)
-	  .eraseToAnyPublisher()
+  Just(value)
+    .setFailureType(to: U.self)
+    .eraseToAnyPublisher()
 }
 ```
 
@@ -49,10 +49,10 @@ With the happy path case behind us, let's do the same for the failure-emitting c
 static func once<T, U: Error>( // 1
   failing error: U // 2
 ) -> AnyPublisher<T, U> {
-	Fail(
-	  outputType: T.self,
-	  failure: error
-	)
+  Fail(
+    outputType: T.self,
+    failure: error
+  )
   .eraseToAnyPublisher()
 }
 ```
@@ -80,7 +80,7 @@ Here's an example from the codebase that prompted me to write this post:
 ```swift
 let cache = Cache(
   upsert: { value in // -> AnyPublisher<Value, CachingError> 
-	  Just(value)
+    Just(value)
       .setFailureType(to: CachingError.self)
       .eraseToAnyPublisher()
   },

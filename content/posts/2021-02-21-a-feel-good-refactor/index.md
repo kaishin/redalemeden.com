@@ -8,6 +8,7 @@ tags:
   - Combine
 draft: false
 ---
+
 If you are using Combine's `Just`, `Fail`, or `Result.publisher` as much as I do to mock publishers for SwiftUI's previews and tests, chances are you have grown tired of manually setting either the output or the failure types, then erasing to `AnyPublisher` in every occurrence.
 
 Today I decided that it was time to honor the rule of three (or _thirty eight_?) and come up with something better. For one, we can heavily lean on Swift's [type inference](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID322) to improve the API at the call site. And while we're at it, we can make it easier to remember by using a similar syntax to handle both success and failure scenarios.

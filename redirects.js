@@ -8,5 +8,6 @@ module.exports = {
     { from: '/blog/2012/twitter-client-showdown-round-2', to: '/blog/2012/twitter-ios-showdown-round-2' },
     { from: '/blog/2015/writing', to: '/blog/2015/back-to-writing' },
     { from: '/blog/2019/we-need-chrome-no-more', to: '/writing/chrome-no-more' },
+    { from: '/blog/2021/a-feel-good-helper-for-mocking-combine-publishers', to: '/blog/2021/a-feel-good-refactor' },
   ],
 };

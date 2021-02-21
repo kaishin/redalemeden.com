@@ -2,7 +2,7 @@
 title: A Feel-Good Helper for Mocking Combine Publishers
 date: 2021-02-21T15:09+01:00
 category: programming
-audience: Combine developers or people curious about how I spend my Sunday mornings.
+audience: Combine developers or people curious about how I spend my Sunday mornings
 tags:
   - Swift
   - Combine

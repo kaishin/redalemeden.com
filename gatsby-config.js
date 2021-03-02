@@ -54,12 +54,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-plugin-netlify-cms',
-            options: {
-              modulePath: `${__dirname}/src/cms/index.js`,
-            },
-          },
-          {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static',

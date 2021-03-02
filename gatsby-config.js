@@ -49,7 +49,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify',
-    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

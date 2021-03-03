@@ -26,7 +26,7 @@
     "gatsby-plugin-robots-txt": "^1.5.1",
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-plugin-sitemap": "^3.0.0",
-    "gatsby-plugin-svgr": "^2.0.2",
+    "gatsby-plugin-svgr": "^3.0.0-beta.0",
     "gatsby-react-router-scroll": "^4.0.0",
     "gatsby-remark-abbr": "^2.0.0",
     "gatsby-remark-autolink-headers": "^3.0.0",

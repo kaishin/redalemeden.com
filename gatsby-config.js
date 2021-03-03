@@ -113,6 +113,7 @@ module.exports = {
         path: `${__dirname}/content/posts/`,
         name: 'posts',
       },
+      __key: "posts"
     },
     {
       resolve: 'gatsby-source-filesystem',
@@ -120,6 +121,7 @@ module.exports = {
         path: `${__dirname}/content/microblog/`,
         name: 'microblog',
       },
+      __key: "microblog"
     },
     {
       resolve: 'gatsby-source-filesystem',
@@ -127,6 +129,7 @@ module.exports = {
         path: `${__dirname}/content/data`,
         name: 'data',
       },
+      __key: "data"
     },
     {
       resolve: 'gatsby-source-filesystem',
@@ -134,6 +137,7 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
         name: 'pages',
       },
+      __key: "pages"
     },
     {
       resolve: 'gatsby-plugin-canonical-urls',

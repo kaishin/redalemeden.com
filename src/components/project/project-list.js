@@ -17,24 +17,21 @@ class ProjectList extends React.Component {
   }
 }
 
-export const projectDetails = graphql`
-  fragment ProjectDetails on ProjectsYaml {
+export const projectDetails = graphql`fragment ProjectDetails on ProjectsYaml {
+  name
+  description
+  year
+  url
+  image {
     name
-    description
-    year
-    url
-    image {
-      name
-      extension
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
+    extension
+    childImageSharp {
+      gatsbyImageData(width: 800, placeholder: TRACED_SVG, layout: CONSTRAINED)
     }
-    tags
-    featured
   }
+  tags
+  featured
+}
 `;
 
 export default ProjectList;

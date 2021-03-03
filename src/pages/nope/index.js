@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Seo from '../../components/seo';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import StandaloneLayout from '../../components/layouts/standalone.js';
 import { graphql } from 'gatsby';
 
@@ -22,7 +22,7 @@ class NopePage extends React.Component {
         <header className="main-header">
           <h1 className="main-title">
             <div className="main-title-icon">
-              <Img fluid={icon.fluid} className="icon" alt="Nope icon" />
+              <GatsbyImage image={icon.gatsbyImageData} className="icon" alt="Nope icon" />
             </div>
             <div className="main-title-copy">
               <span className="title">Nope</span>
@@ -33,7 +33,10 @@ class NopePage extends React.Component {
 
         <main>
           <p>
-            <Img className="screenshot" fluid={screenshots[0].screenshot.imageSharp.fluid} alt="A screenshot of Nope" />
+            <GatsbyImage
+              image={screenshots[0].screenshot.childImageSharp.gatsbyImageData}
+              className="screenshot"
+              alt="A screenshot of Nope" />
           </p>
           <div className="description">
             <p>
@@ -62,27 +65,22 @@ class NopePage extends React.Component {
   }
 }
 
-export const query = graphql`
-  query NopeQuery {
-    icon: file(relativePath: { regex: "/nope-icon.png/" }) {
-      imageSharp: childImageSharp {
-        fluid(maxWidth: 200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const query = graphql`query NopeQuery {
+  icon: file(relativePath: {regex: "/nope-icon.png/"}) {
+    imageSharp: childImageSharp {
+      gatsbyImageData(width: 200, layout: CONSTRAINED)
     }
-    screenshots: allFile(filter: { relativePath: { regex: "/nope.*screenshot/" } }) {
-      edges {
-        screenshot: node {
-          imageSharp: childImageSharp {
-            fluid(jpegProgressive: true, maxWidth: 600) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+  }
+  screenshots: allFile(filter: {relativePath: {regex: "/nope.*screenshot/"}}) {
+    edges {
+      screenshot: node {
+        imageSharp: childImageSharp {
+          gatsbyImageData(jpegProgressive: true, width: 600, layout: CONSTRAINED)
         }
       }
     }
   }
+}
 `;
 
 export default NopePage;

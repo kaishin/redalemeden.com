@@ -4,7 +4,7 @@ import Seo from '../../components/seo';
 import StandaloneLayout from '../../components/layouts/standalone.js';
 
 import { Link, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 class iTunesPage extends React.Component {
   render() {
@@ -43,7 +43,9 @@ class iTunesPage extends React.Component {
             {versions.map(({ version }, id) => (
               <li className="itunes-version" key={id} style={{ paddingBottom: version.lifespan_days / 2 + 'px' }}>
                 <div className="icon-wrapper">
-                  <Img fluid={version.image_file.childImageSharp.fluid} alt={'Icon for iTunes ' + version.version} />
+                  <GatsbyImage
+                    image={version.image_file.childImageSharp.gatsbyImageData}
+                    alt={'Icon for iTunes ' + version.version} />
                 </div>
                 <section className="version-details">
                   <time dateTime={version.date}>{version.formattedDate}</time>
@@ -67,29 +69,26 @@ class iTunesPage extends React.Component {
   }
 }
 
-export const query = graphql`
-  query iTunes {
-    itunes: allItunesYaml(sort: { fields: [date], order: ASC }) {
-      versions: edges {
-        version: node {
-          version
-          date
-          formattedDate: date(formatString: "MMM DD, YYYY")
-          subtitle
-          lifespan_days
-          description
-          image_file {
-            name
-            extension
-            childImageSharp {
-              fluid(maxWidth: 90) {
-                ...GatsbyImageSharpFluid_tracedSVG
-              }
-            }
+export const query = graphql`query iTunes {
+  itunes: allItunesYaml(sort: {fields: [date], order: ASC}) {
+    versions: edges {
+      version: node {
+        version
+        date
+        formattedDate: date(formatString: "MMM DD, YYYY")
+        subtitle
+        lifespan_days
+        description
+        image_file {
+          name
+          extension
+          childImageSharp {
+            gatsbyImageData(width: 90, placeholder: TRACED_SVG, layout: CONSTRAINED)
           }
         }
       }
     }
   }
+}
 `;
 export default iTunesPage;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Seo from '../../components/seo';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import StandaloneLayout from '../../components/layouts/standalone.js';
 import { graphql } from 'gatsby';
 
@@ -23,7 +23,7 @@ class PipMySafariPage extends React.Component {
         <header className="main-header">
           <h1 className="main-title">
             <div className="main-title-icon">
-              <Img fluid={icon.fluid} className="icon" alt="PiP My Safari icon" />
+              <GatsbyImage image={icon.gatsbyImageData} className="icon" alt="PiP My Safari icon" />
             </div>
             <div className="main-title-copy">
               <span className="title">PiP MY Safari</span>

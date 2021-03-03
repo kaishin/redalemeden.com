@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Seo from '../../components/seo';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import StandaloneLayout from '../../components/layouts/standalone.js';
 import { graphql } from 'gatsby';
 
@@ -22,7 +22,7 @@ class SyndicatePage extends React.Component {
         <header className="main-header">
           <h1 className="main-title">
             <div className="main-title-icon">
-              <Img fluid={icon.fluid} className="icon" alt="Syndicate icon" />
+              <GatsbyImage image={icon.gatsbyImageData} className="icon" alt="Syndicate icon" />
             </div>
             <div className="main-title-copy">
               <span className="title">Syndicate</span>
@@ -32,11 +32,10 @@ class SyndicatePage extends React.Component {
         </header>
         <main>
           <p>
-            <Img
-              fluid={screenshots[0].screenshot.imageSharp.fluid}
+            <GatsbyImage
+              image={screenshots[0].screenshot.childImageSharp.gatsbyImageData}
               className="screenshot"
-              alt="A screenshot of Syndicate"
-            />
+              alt="A screenshot of Syndicate" />
           </p>
 
           <div className="description">
@@ -46,11 +45,10 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <Img
+            <GatsbyImage
+              image={screenshots[1].screenshot.childImageSharp.gatsbyImageData}
               className="screenshot"
-              fluid={screenshots[1].screenshot.imageSharp.fluid}
-              alt="A screenshot of Syndicate with badge"
-            />
+              alt="A screenshot of Syndicate with badge" />
           </p>
 
           <div className="description">
@@ -59,11 +57,10 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <Img
+            <GatsbyImage
+              image={screenshots[2].screenshot.childImageSharp.gatsbyImageData}
               className="screenshot"
-              fluid={screenshots[2].screenshot.imageSharp.fluid}
-              alt="A screenshot of Syndicate with multiple feeds"
-            />
+              alt="A screenshot of Syndicate with multiple feeds" />
           </p>
 
           <div className="description">
@@ -73,11 +70,10 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <Img
+            <GatsbyImage
+              image={screenshots[3].screenshot.childImageSharp.gatsbyImageData}
               className="screenshot"
-              fluid={screenshots[3].screenshot.imageSharp.fluid}
-              alt="A screenshot of Syndicate with selected URL"
-            />
+              alt="A screenshot of Syndicate with selected URL" />
           </p>
 
           <div className="description">
@@ -98,27 +94,22 @@ class SyndicatePage extends React.Component {
   }
 }
 
-export const query = graphql`
-  query SyndicateQuery {
-    icon: file(relativePath: { regex: "/syndicate-icon.png/" }) {
-      imageSharp: childImageSharp {
-        fluid(maxWidth: 200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const query = graphql`query SyndicateQuery {
+  icon: file(relativePath: {regex: "/syndicate-icon.png/"}) {
+    imageSharp: childImageSharp {
+      gatsbyImageData(width: 200, layout: CONSTRAINED)
     }
-    screenshots: allFile(filter: { relativePath: { regex: "/syndicate.*screenshot/" } }) {
-      edges {
-        screenshot: node {
-          imageSharp: childImageSharp {
-            fluid(jpegProgressive: true, maxWidth: 600) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+  }
+  screenshots: allFile(filter: {relativePath: {regex: "/syndicate.*screenshot/"}}) {
+    edges {
+      screenshot: node {
+        imageSharp: childImageSharp {
+          gatsbyImageData(jpegProgressive: true, width: 600, layout: CONSTRAINED)
         }
       }
     }
   }
+}
 `;
 
 export default SyndicatePage;

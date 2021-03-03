@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 class PodcastList extends React.Component {
   constructor(props) {
@@ -14,7 +14,10 @@ class PodcastList extends React.Component {
           <li className="podcast-cell" key={id}>
             <a href={podcast.url} className="podcast-link">
               <img src="" alt="" />
-              <Img fluid={podcast.thumbnail.childImageSharp.fluid} className="podcast-thumbnail" alt={podcast.name} />
+              <GatsbyImage
+                image={podcast.thumbnail.childImageSharp.gatsbyImageData}
+                className="podcast-thumbnail"
+                alt={podcast.name} />
               <div className="podcast-metadata">
                 <h6 className="podcast-name">
                   {podcast.name} <span className="role">({podcast.role})</span>

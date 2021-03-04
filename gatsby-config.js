@@ -13,6 +13,7 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-image',
     'gatsby-transformer-yaml',
     'gatsby-transformer-sharp',
     'gatsby-plugin-catch-links',
@@ -97,7 +98,7 @@ module.exports = {
               inlineCode: {
                 marker: '•',
               },
-              extensions: ['noctis'],
+              extensions: ['noctis-theme'],
               replaceColor: (oldColor) =>
                 ({
                   '#fa8900': 'var(--theme-link-color)',

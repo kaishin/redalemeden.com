@@ -75,7 +75,7 @@ export const query = graphql`query NopeQuery {
     edges {
       screenshot: node {
         imageSharp: childImageSharp {
-          gatsbyImageData(jpegProgressive: true, width: 600, layout: CONSTRAINED)
+          gatsbyImageData(width: 600, layout: CONSTRAINED)
         }
       }
     }

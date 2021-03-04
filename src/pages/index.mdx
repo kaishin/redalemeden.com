@@ -108,9 +108,7 @@ export const pageQuery = graphql`
             name
             extension
             childImageSharp {
-              fluid(maxWidth: 256) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(width: 256, layout: CONSTRAINED)
             }
           }
           url

@@ -1,17 +1,14 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Seo from '../../components/seo';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import StandaloneLayout from '../../components/layouts/standalone.js';
-import { graphql } from 'gatsby';
 
 import AlfredDemoGIF from './images/alfred-demo.gif';
 import AutomatorDemoGIF from './images/automator-demo.gif';
 
 class PipMySafariPage extends React.Component {
   render() {
-    const icon = this.props.data.icon;
-
     return (
       <StandaloneLayout>
         <Helmet bodyAttributes={{ class: 'page-pip page-product' }} />
@@ -23,7 +20,7 @@ class PipMySafariPage extends React.Component {
         <header className="main-header">
           <h1 className="main-title">
             <div className="main-title-icon">
-              <GatsbyImage image={icon.gatsbyImageData} className="icon" alt="PiP My Safari icon" />
+              <StaticImage src="./images/pip-icon.png/" width={300} className="icon" alt="PiP My Safari icon" />
             </div>
             <div className="main-title-copy">
               <span className="title">PiP MY Safari</span>
@@ -54,7 +51,7 @@ class PipMySafariPage extends React.Component {
             the workflow using <a href="http://www.packal.org/workflow/packal-updater">Packal Updater</a>.
             <p>
               Keep in mind that you need to enable <em>Allow JavaScript from Apple Events</em> in the Safari{' '}
-              <em>Develop</em> menu. The Develop menu can be enabled in Safari's <em>Preferences > Advanced</em> tab.
+              <em>Develop</em> menu. The Develop menu can be enabled in Safari's <em>Preferences &gt; Advanced</em> tab.
             </p>
             <a
               className="button"
@@ -72,7 +69,7 @@ class PipMySafariPage extends React.Component {
 
           <div className="description">
             The Automator workflow can be used as a service and accessed from{' '}
-            <em> Safari > Services > General: PiP My Safari </em>.
+            <em> Safari &gt; Services &gt; General: PiP My Safari </em>.
             <a
               className="button"
               href="https://github.com/kaishin/pip-my-safari/releases/download/v1.0/pip-my-safari-automator.zip"
@@ -90,15 +87,5 @@ class PipMySafariPage extends React.Component {
     );
   }
 }
-
-export const query = graphql`
-  query PipQuery {
-    icon: imageSharp(fluid: { originalName: { regex: "/pip-icon.png/" } }) {
-      fluid(maxWidth: 200) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`;
 
 export default PipMySafariPage;

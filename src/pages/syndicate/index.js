@@ -1,19 +1,14 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Seo from '../../components/seo';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import StandaloneLayout from '../../components/layouts/standalone.js';
-import { graphql } from 'gatsby';
 
 class SyndicatePage extends React.Component {
   render() {
-    const icon = this.props.data.icon.imageSharp;
-    const screenshots = this.props.data.screenshots.edges;
-
     return (
       <StandaloneLayout>
         <Helmet bodyAttributes={{ class: 'page-syndicate page-product' }} />
-
         <Seo
           title="Syndicate"
           description="Safari extension that brings the RSS button back to the toolbar."
@@ -22,7 +17,7 @@ class SyndicatePage extends React.Component {
         <header className="main-header">
           <h1 className="main-title">
             <div className="main-title-icon">
-              <GatsbyImage image={icon.gatsbyImageData} className="icon" alt="Syndicate icon" />
+              <StaticImage src="./syndicate-icon.png" width={300} className="icon" alt="Syndicate icon" />
             </div>
             <div className="main-title-copy">
               <span className="title">Syndicate</span>
@@ -32,10 +27,7 @@ class SyndicatePage extends React.Component {
         </header>
         <main>
           <p>
-            <GatsbyImage
-              image={screenshots[0].screenshot.childImageSharp.gatsbyImageData}
-              className="screenshot"
-              alt="A screenshot of Syndicate" />
+            <StaticImage src="./screenshot-1.jpg" width={600} className="screenshot" alt="A screenshot of Syndicate" />
           </p>
 
           <div className="description">
@@ -45,10 +37,7 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <GatsbyImage
-              image={screenshots[1].screenshot.childImageSharp.gatsbyImageData}
-              className="screenshot"
-              alt="A screenshot of Syndicate with badge" />
+            <StaticImage src="./screenshot-2.jpg" width={600} className="screenshot" alt="A screenshot of Syndicate with badge" />
           </p>
 
           <div className="description">
@@ -57,10 +46,7 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <GatsbyImage
-              image={screenshots[2].screenshot.childImageSharp.gatsbyImageData}
-              className="screenshot"
-              alt="A screenshot of Syndicate with multiple feeds" />
+            <StaticImage src="./screenshot-3.jpg" width={600} className="screenshot" alt="A screenshot of Syndicate with multiple feeds" />
           </p>
 
           <div className="description">
@@ -70,10 +56,7 @@ class SyndicatePage extends React.Component {
           </div>
 
           <p>
-            <GatsbyImage
-              image={screenshots[3].screenshot.childImageSharp.gatsbyImageData}
-              className="screenshot"
-              alt="A screenshot of Syndicate with selected URL" />
+            <StaticImage src="./screenshot-4.jpg" width={600} className="screenshot" alt="A screenshot of Syndicate with selected URL" />
           </p>
 
           <div className="description">
@@ -94,22 +77,5 @@ class SyndicatePage extends React.Component {
   }
 }
 
-export const query = graphql`query SyndicateQuery {
-  icon: file(relativePath: {regex: "/syndicate-icon.png/"}) {
-    imageSharp: childImageSharp {
-      gatsbyImageData(width: 200, layout: CONSTRAINED)
-    }
-  }
-  screenshots: allFile(filter: {relativePath: {regex: "/syndicate.*screenshot/"}}) {
-    edges {
-      screenshot: node {
-        imageSharp: childImageSharp {
-          gatsbyImageData(width: 600, layout: CONSTRAINED)
-        }
-      }
-    }
-  }
-}
-`;
 
 export default SyndicatePage;

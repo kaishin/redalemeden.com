@@ -20,7 +20,7 @@ class PipMySafariPage extends React.Component {
         <header className="main-header">
           <h1 className="main-title">
             <div className="main-title-icon">
-              <StaticImage src="./images/pip-icon.png/" width={300} className="icon" alt="PiP My Safari icon" />
+              <StaticImage src="./images/pip-icon.png" width={300} className="icon" alt="PiP My Safari icon" />
             </div>
             <div className="main-title-copy">
               <span className="title">PiP MY Safari</span>

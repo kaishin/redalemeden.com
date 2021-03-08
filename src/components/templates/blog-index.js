@@ -10,8 +10,11 @@ import PostMetadata from '../blog/post-metadata';
 class BlogIndexPage extends React.Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark;
-    const { pageContext } = this.props;
-    const { previousPagePath, nextPagePath } = pageContext;
+    const { currentPage, blogPageCount } = this.props.pageContext;
+    const isFirst = currentPage === 1
+    const isLast = currentPage === blogPageCount
+    const newerPage = currentPage - 1 === 1 ? '/blog' : `/blog/${(currentPage - 1).toString()}`
+    const olderPage = `/blog/${currentPage + 1}`
 
     return (
       <DefaultLayout>
@@ -44,8 +47,16 @@ class BlogIndexPage extends React.Component {
           </ol>
 
           <div className="pagination-links">
-            {previousPagePath ? <Link to={previousPagePath}>&lsaquo; Newer</Link> : null}
-            {nextPagePath ? <Link to={nextPagePath}>Older &rsaquo;</Link> : null}
+            {!isFirst &&
+              <Link to={newerPage} rel="next">
+                &#10094; Newer
+              </Link>
+            }
+            {!isLast &&
+              <Link to={olderPage} rel="prev">
+                Older &#10095;
+              </Link>
+            }
           </div>
         </article>
       </DefaultLayout>

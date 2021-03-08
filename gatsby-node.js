@@ -2,7 +2,6 @@ const path = require('path');
 const url = require('url');
 const { format, parseISO } = require('date-fns');
 const { createFilePath } = require('gatsby-source-filesystem');
-const { paginate } = require('gatsby-awesome-pagination');
 const fs = require('fs-extra');
 const { Feed } = require('feed');
 const { feedOptions, runQuery, writeFile, getFileUpdatedDate } = require('./src/utils/feed-helpers');
@@ -59,21 +58,37 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return /content\/microblog/.test(node.fileAbsolutePath);
   });
 
-  paginate({
-    createPage,
-    items: allPosts,
-    component: blogIndexTemplate,
-    itemsPerPage: 10,
-    pathPrefix: '/blog',
-  });
+  const postsPerPage = 10
+  const blogPageCount = Math.ceil(allPosts.length / postsPerPage)
 
-  paginate({
-    createPage,
-    items: allMicroPosts,
-    component: microblogIndexTemplate,
-    itemsPerPage: 20,
-    pathPrefix: '/microblog',
-  });
+  Array.from({ length: blogPageCount }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      component: blogIndexTemplate,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        blogPageCount,
+        currentPage: i + 1,
+      },
+    })
+  })
+
+  const microPostsPerPage = 20
+  const microBlogPageCount = Math.ceil(allMicroPosts.length / microPostsPerPage)
+
+  Array.from({ length: microBlogPageCount }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/microblog` : `/microblog/${i + 1}`,
+      component: microblogIndexTemplate,
+      context: {
+        limit: microPostsPerPage,
+        skip: i * microPostsPerPage,
+        microBlogPageCount,
+        currentPage: i + 1,
+      },
+    })
+  })
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({

@@ -21,8 +21,11 @@ class MicroBlogPage extends React.Component {
 
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark;
-    const { pageContext } = this.props;
-    const { previousPagePath, nextPagePath } = pageContext;
+    const { currentPage, microBlogPageCount } = this.props.pageContext;
+    const isFirst = currentPage === 1
+    const isLast = currentPage === microBlogPageCount
+    const newerPage = currentPage - 1 === 1 ? '/microblog' : `/microblog/${(currentPage - 1).toString()}`
+    const olderPage = `/microblog/${currentPage + 1}`
 
     return (
       <DefaultLayout>
@@ -46,8 +49,16 @@ class MicroBlogPage extends React.Component {
           </ol>
 
           <div className="pagination-links">
-            {previousPagePath ? <Link to={previousPagePath}>&lsaquo; Newer</Link> : null}
-            {nextPagePath ? <Link to={nextPagePath}>Older &rsaquo;</Link> : null}
+            {!isFirst &&
+              <Link to={newerPage} rel="next">
+                &#10094; Newer
+              </Link>
+            }
+            {!isLast &&
+              <Link to={olderPage} rel="prev">
+                Older &#10095;
+              </Link>
+            }
           </div>
         </article>
       </DefaultLayout>

@@ -1,28 +1,25 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Seo from '../../components/seo';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import StandaloneLayout from '../../components/layouts/standalone.js';
 import { graphql } from 'gatsby';
 
 class NopePage extends React.Component {
   render() {
-    const icon = this.props.data.icon.imageSharp;
-    const screenshots = this.props.data.screenshots.edges;
-
     return (
       <StandaloneLayout>
         <Helmet bodyAttributes={{ class: 'page-nope page-product' }} />
 
         <Seo
           title="Nope for Safari – Content Blocking Extension"
-          description="Blazing fast advertising & tracking blocker extension for Safari 9"
+          description="Blazing fast advertising &amp; tracking blocker extension for Safari 9"
           keywords={[ 'safari', 'extension', 'ads', 'block', 'adblock' ]}
         />
         <header className="main-header">
           <h1 className="main-title">
             <div className="main-title-icon">
-              <GatsbyImage image={icon.gatsbyImageData} className="icon" alt="Nope icon" />
+              <StaticImage src="./images/nope-icon.png" width={300} className="icon" alt="Nope icon" />
             </div>
             <div className="main-title-copy">
               <span className="title">Nope</span>
@@ -30,13 +27,9 @@ class NopePage extends React.Component {
             </div>
           </h1>
         </header>
-
         <main>
           <p>
-            <GatsbyImage
-              image={screenshots[0].screenshot.childImageSharp.gatsbyImageData}
-              className="screenshot"
-              alt="A screenshot of Nope" />
+            <StaticImage src="./images/screenshot.jpg" width={600} className="screenshot" alt="A screenshot of Nope" />
           </p>
           <div className="description">
             <p>
@@ -64,23 +57,5 @@ class NopePage extends React.Component {
     );
   }
 }
-
-export const query = graphql`query NopeQuery {
-  icon: file(relativePath: {regex: "/nope-icon.png/"}) {
-    imageSharp: childImageSharp {
-      gatsbyImageData(width: 200, layout: CONSTRAINED)
-    }
-  }
-  screenshots: allFile(filter: {relativePath: {regex: "/nope.*screenshot/"}}) {
-    edges {
-      screenshot: node {
-        imageSharp: childImageSharp {
-          gatsbyImageData(width: 600, layout: CONSTRAINED)
-        }
-      }
-    }
-  }
-}
-`;
 
 export default NopePage;

@@ -20,8 +20,6 @@ class BlogPostTemplate extends React.Component {
 
     if (post.frontmatter.image) {
       image = 'social-cards/' + post.frontmatter.image;
-    } else {
-      image = (post.fields.slug + '/social-card.jpg').substr(1);
     }
 
     return (

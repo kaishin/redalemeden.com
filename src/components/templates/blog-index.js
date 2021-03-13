@@ -29,14 +29,13 @@ class BlogIndexPage extends React.Component {
           <BlogHeader />
           <ol className="post-list">
             {posts.map(({ node: post }) => {
-              const title = post.frontmatter.title || post.fields.slug;
               return (
                 <li className="post-list-item" key={post.fields.slug}>
                   <article className="post-summary">
                     <span className="post-category">{post.frontmatter.category}</span>
                     <h3 className="post-title">
                       <Link className="post-link" to={post.fields.slug}>
-                        {title}
+                        {post.frontmatter.title}
                       </Link>
                     </h3>
                     <PostMetadata post={post} />
@@ -74,7 +73,6 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
           id
           timeToRead
           fields {

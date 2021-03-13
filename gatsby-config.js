@@ -62,15 +62,6 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-social-cards',
-            options: {
-              subtitleFontSize: 50,
-              fontStyle: 'sans-serif',
-              background: require.resolve('./assets/social-card-background.jpg'),
-              fontFile: require.resolve('./assets/rubik-bold.ttf'),
-            },
-          },
-          {
             resolve: 'gatsby-remark-smartypants',
             options: {
               dashes: 'oldschool',

@@ -20,8 +20,6 @@ export default function HTML(props) {
         <meta name="theme-color" content="#000000" />
         {props.headComponents}
         <script async defer data-domain="redalemeden.com" src="/plausible.js"></script>
-        <script async defer src="/papercups.js"></script>
-        <script type="text/javascript" async defer src="https://app.papercups.io/widget.js" ></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

@@ -45,7 +45,8 @@ class iTunesPage extends React.Component {
                 <div className="icon-wrapper">
                   <GatsbyImage
                     image={version.image_file.childImageSharp.gatsbyImageData}
-                    alt={'Icon for iTunes ' + version.version} />
+                    alt={'Icon for iTunes ' + version.version}
+                  />
                 </div>
                 <section className="version-details">
                   <time dateTime={version.date}>{version.formattedDate}</time>

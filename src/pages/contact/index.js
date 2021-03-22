@@ -3,11 +3,6 @@ import Helmet from 'react-helmet';
 import DefaultLayout from '../../components/layouts/default.js';
 import Seo from '../../components/seo';
 import PageHeader from '../../components/page-header';
-import { navigate } from 'gatsby-link';
-
-function encode(data) {
-  return Object.keys(data).map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&');
-}
 
 class ContactPage extends React.Component {
   constructor(props) {

@@ -3,7 +3,7 @@
 @import "components/_glob";
 
 body {
-  background-color: var(--theme-body-background-color);
+  background-color: var(--theme-background-color);
   color: var(--theme-body-foreground-color);
   font-family: var(--text-font);
   font-size: 16px;
@@ -47,13 +47,14 @@ a {
 
 .background-pattern {
   display: block;
-  fill: var(--theme-pattern-color);
+  fill: var(--pattern-bg-color);
   height: 100vh;
   max-width: 100%;
   pointer-events: none;
   position: absolute;
   top: 0;
   z-index: -1;
+  opacity: var(--pattern-bg-opacity);
 }
 
 .site-header {
@@ -87,11 +88,7 @@ a {
 
     &:hover {
       background-color: var(--theme-navigation-hover-link-bg-color);
-      transform: scale(1.1);
-
-      & .author-bio {
-        opacity: 1;
-      }
+      transform: scale(1.02);
     }
   }
 
@@ -109,10 +106,9 @@ a {
   }
 
   & .author-bio {
-    color: var(--theme-foreground-color);
+    color: var(--theme-secondary-foreground-color);
     font-style: italic;
     margin-bottom: 0;
-    opacity: 0.8;
     letter-spacing: 0.04em;
 
     & em {

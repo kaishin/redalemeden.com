@@ -17,7 +17,9 @@ class ProjectCard extends React.Component {
           ) : (
             <GatsbyImage
               image={project.image.childImageSharp.gatsbyImageData}
-              className="project-image" />
+              className="project-image"
+              alt={project.name}
+            />
           )}
           <div className="project-details">
             <h5 className="project-name">{project.name}</h5>

@@ -57,9 +57,6 @@ class Footer extends React.Component {
             </div>
             <span className="copyright">
               <em>&copy;</em> 2009-{new Date().getFullYear()} {data.site.siteMetadata.author}.<br />
-              <small>
-                <a href="https://github.com/kaishin/redalemeden.com">Source Code</a>
-              </small>
             </span>
           </footer>
         )}

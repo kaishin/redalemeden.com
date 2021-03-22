@@ -22,27 +22,6 @@
   @media (--full-grid-container) {
     padding-top: 10.2rem;
   }
-
-  &::before {
-    --offset: 28vw;
-    background-image: var(--background-data-uri);
-    background-position-x: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: '';
-    display: block;
-    height: 100vh;
-    margin-left: calc(var(--offset) * -1);
-    position: fixed;
-    top: 0;
-    width: calc(100vw + var(--offset));
-    z-index: -1;
-
-    @media (--narrow-grid-container) {
-      margin-left: -30vw;
-      width: 130vw;
-    }
-  }
 }
 
 %gradient-background {

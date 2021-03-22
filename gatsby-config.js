@@ -44,7 +44,6 @@ module.exports = {
               dashes: 'oldschool',
             },
           },
-          'gatsby-remark-embedder',
           'gatsby-remark-autolink-headers',
         ],
       },
@@ -68,7 +67,6 @@ module.exports = {
             },
           },
           'gatsby-remark-abbr',
-          'gatsby-remark-embedder',
           {
             resolve: 'gatsby-remark-autolink-headers',
             options: {

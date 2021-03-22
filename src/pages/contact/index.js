@@ -40,21 +40,6 @@ class ContactPage extends React.Component {
     return false;
   };
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch((error) => alert(error));
-  };
-
   render() {
     return (
       <DefaultLayout>
@@ -69,10 +54,7 @@ class ContactPage extends React.Component {
             <form
               name="contact"
               method="POST"
-              action="/contact/thank-you"
-              data-netlify-honeypot="bot-field"
-              data-netlify="true"
-              onSubmit={this.handleSubmit}
+              action="https://usebasin.com/f/7ca7e53b4b0d"
             >
               <input type="hidden" name="form-name" value="contact" />
               <fieldset>
@@ -99,8 +81,8 @@ class ContactPage extends React.Component {
                   />
                 </label>
               </fieldset>
-              <label className="hidden">
-                Don’t fill this out if you're human: <input name="bot-field" onChange={this.handleChange} />
+              <label className="required">
+                <input name="amount-field" onChange={this.handleChange} placeholder="Please enable CSS." />
               </label>
               <button type="submit">Send</button>
             </form>

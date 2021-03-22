@@ -52,3 +52,7 @@ fieldset {
     flex-basis: 100%;
   }
 }
+
+label.required {
+  display: none;
+}

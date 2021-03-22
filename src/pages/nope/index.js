@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import Seo from '../../components/seo';
 import { StaticImage } from "gatsby-plugin-image";
 import StandaloneLayout from '../../components/layouts/standalone.js';
-import { graphql } from 'gatsby';
 
 class NopePage extends React.Component {
   render() {

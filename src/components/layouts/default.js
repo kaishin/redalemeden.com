@@ -10,6 +10,7 @@ import { ReactComponent as Pattern } from '../../images/pattern.svg';
 
 import '../../css/normalize.css';
 import '../../css/styles.css';
+import 'gatsby-remark-vscode/styles.css';
 
 import 'typeface-inter';
 

@@ -84,6 +84,7 @@ module.exports = {
                   'body.dark-theme': 'Abyss',
                 },
               },
+              injectStyles: false,
               inlineCode: {
                 marker: '•',
               },

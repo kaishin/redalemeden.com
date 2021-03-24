@@ -33,7 +33,7 @@ class MicroBlogPostTemplate extends React.Component {
           <Micropost post={post} />
           <a
             className="edit-post"
-            href={'https://github.com/kaishin/redalemeden.com/edit/master/content' + post.fields.slug + '.md'}
+            href={'https://github.com/kaishin/redalemeden.com/edit/main/content' + post.fields.slug + '.md'}
           >
             Edit Entry
           </a>

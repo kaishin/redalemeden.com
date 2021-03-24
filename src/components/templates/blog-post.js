@@ -59,7 +59,7 @@ class BlogPostTemplate extends React.Component {
               Found any typos? Edit the post{' '}
               <a
                 href={
-                  'https://github.com/kaishin/redalemeden.com/edit/master/content/posts/' + post.parent.relativePath
+                  'https://github.com/kaishin/redalemeden.com/edit/main/content/posts/' + post.parent.relativePath
                 }
               >
                 here

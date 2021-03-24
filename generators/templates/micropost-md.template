@@ -1,7 +1,7 @@
 ---
 date: {{createdDate}}{{#if title}}
 title: "{{title}}"{{/if}}
-excerpt:{{tags}}
+{{tags}}
 path: post-{{slug}}
 ---
 

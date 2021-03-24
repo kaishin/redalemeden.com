@@ -14,14 +14,11 @@ class MicroBlogPostTemplate extends React.Component {
 
     if (post.frontmatter.title) {
       title = post.frontmatter.title + ' | Wide Gamut';
-      description = post.frontmatter.excerpt ? post.frontmatter.excerpt : post.excerpt;
-    } else if (post.frontmatter.excerpt) {
-      title = post.frontmatter.excerpt;
-      description = post.excerpt;
     } else {
       title = 'Wide Gamut';
-      description = 'Posted on ' + post.frontmatter.formattedDate;
     }
+
+    description = post.excerpt;
 
     return (
       <DefaultLayout>

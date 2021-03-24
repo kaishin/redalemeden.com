@@ -66,11 +66,11 @@ const feedOptions = {
           edges {
             node {
               html
+              excerpt(pruneLength: 220)
               frontmatter {
                 date
                 formattedDate: date(formatString: "HH:mm MMM DD, YYYY")
                 title
-                excerpt
                 tags
               }
               fields {

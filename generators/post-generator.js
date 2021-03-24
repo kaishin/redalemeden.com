@@ -1,4 +1,3 @@
-const fs = require('fs');
 const { inputRequired } = require('./utils');
 const { format, parseISO } = require('date-fns');
 
@@ -69,7 +68,7 @@ module.exports = (plop) => {
       // Get current date
       let date = new Date();
       data.createdDate = format(date, "yyyy-MM-dd'T'HH:mmxxx");
-      data.slug = date.toString();
+      data.slug = Date.parse(new Date());;
 
       if (data.tags) {
         data.tags = `\ntags:\n  - ${data.tags

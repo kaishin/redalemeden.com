@@ -231,7 +231,7 @@ exports.onPostBuild = async ({ graphql }) => {
   const { allMarkdownRemark: { edges: microposts } } = microblogQuery;
 
   const micropostItems = microposts.map((i) => {
-    const { node: { html, frontmatter, fields } } = i;
+    const { node: { html, excerpt, frontmatter, fields } } = i;
 
     let slug = fields.slug;
     let imageMatch = imageRegex.exec(html);
@@ -240,7 +240,7 @@ exports.onPostBuild = async ({ graphql }) => {
       id: url.resolve(siteUrl, slug),
       url: url.resolve(siteUrl, slug),
       title: frontmatter.title || '',
-      ...(frontmatter.excerpt && { excerpt: frontmatter.excerpt }),
+      excerpt: excerpt,
       slug: slug,
       tags: frontmatter.tags,
       datePublished: parseISO(frontmatter.date),
@@ -279,7 +279,7 @@ exports.onPostBuild = async ({ graphql }) => {
       ...(item.image && { image: url.resolve(siteUrl, item.image) }),
       extensions: [
         { name: 'tags', objects: item.tags || [] },
-        { name: 'excerpt', objects: item.excerpt || item.title },
+        { name: 'excerpt', objects: item.excerpt },
       ],
       author: [
         {

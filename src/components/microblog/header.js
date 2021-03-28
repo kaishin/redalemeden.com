@@ -7,9 +7,8 @@ class MicroblogHeader extends React.Component {
     return (
       <PageHeader title="Wide Gamut">
         A collection of micro posts, hot takes, and reflections about whatever happens to preoccupy me. Stay updated
-        using <Link to="/microblog.xml">RSS</Link>/<Link to="/microblog.json">JSON</Link> feeds,{' '}
-        <a href="https://twitter.com/kaishin">Twitter</a>, or{' '}
-        <a href="https://mastodon.social/@redalemeden">Mastodon</a>
+        using the <Link to="/microblog.xml">RSS</Link>/<Link to="/microblog.json">JSON</Link> feeds,{' '}
+        or by following <a href="https://twitter.com/WideGamutFeed">@WideGamutFeed</a> on Twitter.
       </PageHeader>
     );
   }

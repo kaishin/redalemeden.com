@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import PageHeader from '../page-header';
 
 class MicroblogHeader extends React.Component {
@@ -7,7 +6,7 @@ class MicroblogHeader extends React.Component {
     return (
       <PageHeader title="Wide Gamut">
         A collection of micro posts, hot takes, and reflections about whatever happens to preoccupy me. Stay updated
-        using the <Link to="/microblog.xml">RSS</Link>/<Link to="/microblog.json">JSON</Link> feeds,{' '}
+        using the <a href="/microblog.xml">RSS</a>/<a href="/microblog.json">JSON</a> feeds,{' '}
         or by following <a href="https://twitter.com/WideGamutFeed">@WideGamutFeed</a> on Twitter.
       </PageHeader>
     );

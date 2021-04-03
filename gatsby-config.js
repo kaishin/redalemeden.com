@@ -54,6 +54,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-ruby',
+            options: {
+              parenthesis: '()',
+            },
+          },
+          {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static',

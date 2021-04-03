@@ -207,8 +207,9 @@
       &::before {
         color: var(--theme-bullet-dash-color);
         content: '–';
-        left: -1em;
-        position: absolute;
+        display: inline-block;
+        margin-left: -1em;
+        width: 1em;
       }
 
       & ul,

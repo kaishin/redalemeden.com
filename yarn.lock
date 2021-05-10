@@ -9993,7 +9993,7 @@ micromark-extension-mdxjs@^0.3.0:
     micromark-extension-mdx-md "~0.1.0"
     micromark-extension-mdxjs-esm "~0.3.0"
 
-micromark@^2.11.3, micromark@~2.11.0, micromark@~2.11.3:
+micromark@^2.11.2, micromark@^2.11.3, micromark@~2.11.0, micromark@~2.11.3:
   version "2.11.4"
   resolved "https://registry.yarnpkg.com/micromark/-/micromark-2.11.4.tgz#d13436138eea826383e822449c9a5c50ee44665a"
   integrity sha512-+WoovN/ppKolQOFIAajxi7Lu9kInbPxFuTBVEavFcL8eAfVstoc5MocPmqBeAdBOJV00uaVjegzH4+MA0DN/uA==
@@ -12968,6 +12968,13 @@ remark-ruby@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/remark-ruby/-/remark-ruby-0.1.0.tgz#feff8b4bb78710a384e7f23c89483ae4ab57dd09"
   integrity sha512-SNpXT2bD0OsWgLXMP88uX314Xb/7JydROFTZxIaN/EqUcU9td4nCJBePyfgPmXhGkRO+Oi/XR1FhELt2ws/yHQ==
+
+remark-ruby@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/remark-ruby/-/remark-ruby-0.3.0.tgz#455b5a7f6679d671920fb27a97c0086654ad826c"
+  integrity sha512-fNHEtHoQ1vOTtQnC2rP35gD11mIt5ScKcOI8/ciYYwBgDxXBHD8L6eJUsl6AxLpIATDz9/mLtFZoMlPME3EQrg==
+  dependencies:
+    micromark "^2.11.2"
 
 remark-squeeze-paragraphs@4.0.0:
   version "4.0.0"

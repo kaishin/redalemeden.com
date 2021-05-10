@@ -54,7 +54,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-ruby',
+            resolve: 'gatsby-remark-furigana',
             options: {
               parenthesis: '()',
             },

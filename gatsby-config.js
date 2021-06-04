@@ -72,7 +72,6 @@ module.exports = {
               dashes: 'oldschool',
             },
           },
-          'gatsby-remark-abbr',
           {
             resolve: 'gatsby-remark-autolink-headers',
             options: {

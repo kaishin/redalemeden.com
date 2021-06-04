@@ -12,7 +12,7 @@ tags:
 
 In the thick of the controversy surrounding Twitter's new third party restrictions, [Tweetbot]---the long-awaited Twitter client from Tapbots---is finally out for iPhone and iPod Touch. The overwhelmingly positive feedback is a clear sign that the app met and even exceeded expectations.
 
-To find out whether Tweetbot is a legitimate contender, I decided tp pit it against the official client using a GOMS-inspired, oversimplified [human information processing model][HIP] on a set of tasks performed by the average user on Twitter.
+To find out whether Tweetbot is a legitimate contender, I decided tp pit it against the official client using a <abbr title="Goals, Operators, Methods, and Selection rules">GOMS</abbr>-inspired, oversimplified [human information processing model][HIP] on a set of tasks performed by the average user on Twitter.
 
 ![Tweet options](tweet-options.jpg) _Tweet options displayed after a single tap._
 
@@ -73,8 +73,8 @@ Let's now spice up the comparison with some hashtags and @ mentions:
 | Compose a tweet with # and @ | 7 | 4 |
 | Compose a tweet with 3 # and 2 @ | 15 | 7 |
 | View conversations&sup1; | 1.5 | 2 |
-| Reply all (MMT)&sup2; | 4.5 | 5 |
-| Reply single (MMT)&sup2; | 4.5 | 4 |
+| Reply all (<abbr title="Multi-Mention Tweet">MMT</abbr>)&sup2; | 4.5 | 5 |
+| Reply single (<abbr title="Multi-Mention Tweet">MMT</abbr>)&sup2; | 4.5 | 4 |
 
 1. Where the user takes part
 2. Multi-mention tweet
@@ -116,7 +116,7 @@ When all is said and done, it would be short-sighted to pick a winner based on t
 
 ![Notifications](notifications.jpg) _In-app notifications in Tweetbot._
 
-Notably, Tweetbot shines in some areas that would be hard to assess using the HIP model above. Save for the occasional tweet, reply, or DM, we spend most of the time on Twitter wading through hundreds of tweets and swapping accounts and lists. Few Twitter clients address these areas as elegantly as Tweetbot does:
+Notably, Tweetbot shines in some areas that would be hard to assess using the <abbr title="Human Information Processing">HIP</abbr> model above. Save for the occasional tweet, reply, or DM, we spend most of the time on Twitter wading through hundreds of tweets and swapping accounts and lists. Few Twitter clients address these areas as elegantly as Tweetbot does:
 
 * The number of new tweets (since the last refresh) is displayed in a unobtrusive blue bar in the timeline. This may seem gimmicky at first, but it turns out to be a huge time saver for timeline completionists.
 
@@ -129,9 +129,3 @@ For a 1.0 release, Tweetbot is doing a remarkable job, especially when consideri
 [HIP]: http://en.wikipedia.org/wiki/Human*information*processor*model
 [studies]: http://labs.yahoo.com/publication/who-says-what-to-whom-on-twitter/
 [tweetbot]: http://tapbots.com/software/tweetbot/
-
-*[DM]: Direct Message
-*[GOMS]: Goals, Operators, Methods, and Selection rules
-*[HIP]: Human Information Processing
-*[MMT]: Multi-Mention Tweet
-*[MOP]: Multi-Option Prompt

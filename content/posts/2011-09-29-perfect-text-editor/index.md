@@ -8,7 +8,7 @@ tags:
   - macOS
 ---
 
-I started my career making mediocre websites with clunky WYSIWYG tools from Macromedia and Adobe. Everything looked and felt horrible. But I didn't know any better.
+I started my career making mediocre websites with clunky <abbr title="What You See Is What You Get">WYSIWYG</abbr> tools from Macromedia and Adobe. Everything looked and felt horrible. But I didn't know any better.
 
 > "Ignorance is bliss." --- Thomas Gray
 
@@ -25,6 +25,3 @@ The only options I was left with was to wade through an unhealthy number of Text
 At the end of this fruitless search, I kept Sublime Text 2, BBedit, and Espresso 2 installed, and used them in rotation depending on the project and the mood.
 
 *To be continued...*
-
-*[WYSIWYG]: What You See Is What You Get
-*[IDE]: Integrated Development Environment

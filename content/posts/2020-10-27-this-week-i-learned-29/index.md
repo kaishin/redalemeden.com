@@ -24,5 +24,3 @@ Here are some of the things I learned this week, in the order I’ve noted them 
 
 * I gave the official Mongo [driver](https://github.com/mongodb/mongo-swift-driver) for Swift a try and I am quite pleased with it. On the API-front, I have some quibbles with how it handles decoding errors for `Decodable` types, but I can live with those for now.
 * I have mixed feelings about Mongo itself, but I appreciate not having to worry about schemas and migrations for every server app I am deploying. For certain micro-projects, the benefits of [NoSQL](https://en.wikipedia.org/wiki/NoSQL) far outweigh the drawbacks.
-
-*[RTFM]: Read The F**king Manual

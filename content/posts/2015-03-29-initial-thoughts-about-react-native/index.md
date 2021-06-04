@@ -13,7 +13,7 @@ Facebook open-sourced [React Native] last week, so I spent a couple of days toyi
 
 ### The Good
 
-- *Immutable user interface*. You no longer have to track state in both the model and the view; the latter is a function of the former. As soon as the model changes, React Native re-renders a virtual tree of the view hierarchy, then applies the delta to the native views. This approach feels superior to bindings or FRP, and is certainly light-years ahead of the Apple-MVC that ships with iOS.
+- *Immutable user interface*. You no longer have to track state in both the model and the view; the latter is a function of the former. As soon as the model changes, React Native re-renders a virtual tree of the view hierarchy, then applies the delta to the native views. This approach feels superior to bindings or <abbr title="Functional Reactive Programming">FRP</abbr>, and is certainly light-years ahead of the Apple-MVC that ships with iOS.
 
 - *Instant feedback loop*. Once you build your app in Xcode, you can instantly refresh it from within the simulator using `Command + R`. You can even enable auto-refresh and forget about it. I will miss this feature in non-React projects.
 
@@ -46,4 +46,3 @@ Facebook open-sourced [React Native] last week, so I spent a couple of days toyi
 Even though a good number of these issues is very likely to be addressed as the framework matures, I find the abstraction overhead off-putting considering the current limitations. On the bright side, React Native introduces concepts that could potentially change the way we build native applications, and I am looking forward to seeing how that will unfold.
 
 [React Native]: http://reactnative.com
-*[FRP]: Functional Reactive Programming

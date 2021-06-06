@@ -38,5 +38,3 @@ The transition to gestural interfaces is dividing the design community. As users
 The question is no longer whether a radical shift is underway, but rather how we can cope with it next year and beyond.
 
 Goodbye 2011, welcome 2012.
-
-*[OS]: Operating System

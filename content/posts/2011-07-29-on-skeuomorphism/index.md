@@ -36,5 +36,3 @@ When all is said and done, skeuomorphic interfaces come with some perks. Their p
 [macworld]: http://www.macworld.com/article/161026/2011/07/osx_lion_review.htm
 [kensegall]: http://kensegall.com/2011/07/lions-little-lapse/
 [cushley]: https://web.archive.org/web/20110712034954/http://cushley.net/2011/07/in-depth-os-x-lion-review-part-3-new-visual-changes/
-
-*[UI]: User Interface

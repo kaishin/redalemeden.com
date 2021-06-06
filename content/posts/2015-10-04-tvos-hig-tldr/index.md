@@ -9,7 +9,7 @@ tags:
 audience: "people interested in designing or building apps for tvOS"
 ---
 
-I often joke about the [HIG] being an acronym for *Highly Ignored Guidelines*.
+I often joke about the [HIG] (Human Interface Guidelines) being an acronym for *Highly Ignored Guidelines*.
 This is an effort to change that, at least for tvOS.
 
 ![tvOS User Interface](tvos-screen-capture.jpg) _The user interface of tvOS._
@@ -95,8 +95,6 @@ This is an effort to change that, at least for tvOS.
 - Leave a padding around the content of your foreground layers.
 - Don’t include screenshots in your app icon.
 - Avoid text in your app icon, unless it’s part of the brand.
-
-*[HIG]: Human Interface Guidelines
 
 [HIG]: https://developer.apple.com/tvos/human-interface-guidelines/
 [Jack Nutting]: https://twitter.com/jacknutting

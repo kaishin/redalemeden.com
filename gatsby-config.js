@@ -54,7 +54,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-ruby',
+            resolve: 'gatsby-remark-furigana',
             options: {
               parenthesis: '()',
             },
@@ -72,7 +72,6 @@ module.exports = {
               dashes: 'oldschool',
             },
           },
-          'gatsby-remark-abbr',
           {
             resolve: 'gatsby-remark-autolink-headers',
             options: {

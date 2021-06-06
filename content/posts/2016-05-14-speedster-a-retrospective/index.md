@@ -11,7 +11,7 @@ audience: "people who have been following my work as a Mac developer"
 
 Last year, I set to build an Internet speed testing app for OS X. Between a full-time job and summer vacations, it took me about 6 months to wrap up a 1.0 using the [SpeedOfMe] free-while-in-beta API. [Speedster] was born.
 
-Speed tests are a tricky business. I wasn't convinced that the app would work for everyone, so I made it free. I also capped the number of daily tests per user to not get my API key revoked, and added an IAP to remove that limitation for good measure.
+Speed tests are a tricky business. I wasn't convinced that the app would work for everyone, so I made it free. I also capped the number of daily tests per user to not get my API key revoked, and added an <abbr title="In-app purchase">IAP</abbr> to remove that limitation for good measure.
 
 Shortly after submitting 1.0 for review, the app was rejected for violating section 2.9 of the review guidelines:
 
@@ -39,7 +39,7 @@ Going with the Pro plan as the only reasonable option, I projected cumulative re
 
 This did not bode well. Even an optimistic revenue projection wasn't enough to offset the costs for more than 3 months. Without recurring revenue, Speedster would not be sustainable on the long run.
 
-After 24 hours of hesitation, I pulled the trigger on the *Speedster Hero* IAP and replaced it with consumable tests packs in 1.1. Here's how things went since:
+After 24 hours of hesitation, I pulled the trigger on the *Speedster Hero* <abbr title="In-app purchase">IAP</abbr> and replaced it with consumable tests packs in 1.1. Here's how things went since:
 
 ![[Chart] Daily Sales](march-may-sales.svg) _Daily revenue between March 1st and May 12th. Total: $148._
 
@@ -71,8 +71,6 @@ In my last attempt to make this work, I am introducing some breaking changes in 
 Will these changes net me a few more ★☆☆☆☆ reviews? I betcha. But at this point that is the least of my concerns.
 
 *To be continued*.
-
-*[IAP]: In-app purchase
 
 [SpeedOfMe]: http://speedof.me
 [Speedster]: https://speedsterapp.com

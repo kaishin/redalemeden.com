@@ -13,7 +13,7 @@ audience: "anyone interested in interaction design heuristics"
 
 It has been almost a year since the [original showdown] pitting the user interfaces of the official Twitter client and Tapbots' Tweetbot. Given that the latter got a major update last week, it's a good opportunity to give the showdown another go.
 
-For starters, here is a quick summary of the simplified HIP model used in this showdown:
+For starters, here is a quick summary of the simplified <abbr title="Human Information Processin">HIP</abbr> model used in this showdown:
 
 * Touch interactions are assigned a value based on the precision and time required to execute them. In average, Single taps take 165 milliseconds, while double taps and swipes take 350ms and 400ms respectively. The single tap is given a nominal value of 1 and will serve as the base unit of other interactions. For instance, assigning the value of 2 to a swipe means that it's twice harder to execute than a single tap.
 
@@ -64,8 +64,8 @@ Tweetbot has clearly the upper-hand even though little has changed since the ini
 
 | Task | Tweetbot | Twitter | Twitterrific
 |-|:-:|:-:|:-:|
-| Reply all (MMT) | 5 | 5.5 | 3.5 |
-| Reply one user (MMT) | 5 | 4.5 | 8.5 |
+| Reply all (<abbr title="Multi-Mention Tweet">MMT</abbr>) | 5 | 5.5 | 3.5 |
+| Reply one user (<abbr title="Multi-Mention Tweet">MMT</abbr>) | 5 | 4.5 | 8.5 |
 | Send a new DM | 7.5 | 8.5 | 7 |
 | Reply to DM | 5 | 8 | 3.5 |
 | Compose a tweet with # and @ | 5 | 5 | 5 |
@@ -94,8 +94,3 @@ The detailed methodology and results can be viewed in this [spreadsheet].
 [original showdown]: /blog/2011/twitter-ios-showdown
 
 [^1]: The uncalibrated scores were calculated using the original interaction cost values.
-
-*[HIP]: Human Information Processing
-*[DM]: Direct Message
-*[MMT]: Multi-Mention Tweet
-*[MOP]: Multi-Option Prompt

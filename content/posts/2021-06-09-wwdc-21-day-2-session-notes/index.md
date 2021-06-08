@@ -7,7 +7,7 @@ tags:
   - WWDC21
 ---
 
-WWDC is finally here! Since I won't manage to post daily takes this year, I thought I'd jot down the sessions I watched along with a key takeaway for each. The sessions below are listed in the order I have watched the,
+WWDC is finally here! Since I won't manage to post daily takes this year, I thought I'd jot down the sessions I watched along with a key takeaway for each. The sessions below are listed in the order I have watched them:
 
 * [What’s New in SwiftUI](https://developer.apple.com/wwdc21/10192): I'm really excited about the new modifiers for list, which felt a bit abandoned last year. I hope later betas introduce some APIs to read the content offset of `ScrollView`; I need this frequently and I am not happy with the current workarounds.
 

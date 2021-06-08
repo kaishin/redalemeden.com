@@ -2,7 +2,7 @@
 date: 2021-06-09T01:08+02:00
 title: "WWDC 21: Day 2 Session Notes"
 category: programming
-audience: "my future self. Apple platform developers."
+audience: "my future self. Apple platform developers"
 tags:
   - WWDC21
 ---

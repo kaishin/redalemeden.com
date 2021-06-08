@@ -209,6 +209,7 @@
         content: '–';
         display: inline-block;
         margin-left: -1em;
+        position: absolute;
         width: 1em;
       }
 

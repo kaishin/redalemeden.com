@@ -17,8 +17,8 @@ WWDC is finally here! Since I won't manage to post daily takes this year, I thou
 
 * [Meet DocC Documentation in Xcode](https://developer.apple.com/wwdc21/10166): Hands-down my favorite new surprise announcement this year. Lots of neat little details—such as autocomplete symbol links for cross-referencing—and the project is slated to go open-source later this year! 💪
 
-* [What's new in Swift](https://developer.apple.com/wwdc21/10192): Really loved this session, especially the shoutouts to various efforts fromSwift community members.
+* [What's new in Swift](https://developer.apple.com/wwdc21/10192): Really loved this session, especially the shoutouts to various efforts from Swift community members.
 
-* [Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): Great starting point to get familiar with  async/await and what they bring to the table.
+* [Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): Great starting point to get familiar with async/await and what they bring to the table.
 
-* [Meet StoreKit 2](https://developer.apple.com/wwdc21/10114): I have no idea why I picked this session, but I don't regret it! Great to see async/await being already used in the SDK this prominently.
+* [Meet StoreKit 2](https://developer.apple.com/wwdc21/10114): I have no idea why I picked up this session, but I don't regret it! Great to see async/await being already used in the SDK this prominently.

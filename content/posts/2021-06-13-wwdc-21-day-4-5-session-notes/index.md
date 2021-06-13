@@ -9,7 +9,7 @@ tags:
 
 Things got a bit busy towards the end of the week, so I grouped Thursday and Friday together in this update.
 
-- [Meet Shortcuts for macOS](https://developer.apple.com/wwdc21/10232) I am really impressed but the amount of work that went into introducing Shortcuts for macOS.It even comes with a <abbr title=“Command Line Interface”>CLI</abbr> for more integration flexibility.
+- [Meet Shortcuts for macOS](https://developer.apple.com/wwdc21/10232) I am really impressed but the amount of work that went into introducing Shortcuts for macOS.It even comes with a <abbr title="Command Line Interface">CLI</abbr> for more integration flexibility.
 
 - [Host and automate your DocC Documentation](https://developer.apple.com/wwdc21/10236) I have yet to give this a try, but my first impression is that it’s more work than I expected to deploy this remotely.
 

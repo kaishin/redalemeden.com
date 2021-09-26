@@ -17,7 +17,7 @@
     "gatsby-link": "^3.0.0",
     "gatsby-plugin-canonical-urls": "^3.0.0",
     "gatsby-plugin-catch-links": "^3.0.0",
-    "gatsby-plugin-gatsby-cloud": "^2.0.0",
+    "gatsby-plugin-gatsby-cloud": "^3.0.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-mdx": "^2.0.0",
     "gatsby-plugin-postcss": "^4.0.0",

@@ -1,16 +1,16 @@
-- name: "-Unannounced-"
+- name: "-Work In Progress-"
   image: images/gokuhi.png
-  year: 2021
+  year: 2020
   state: current
   url: https://4rays.studio
-  description: "Something something video games"
+  description: "An app for video game enthusiasts"
 
-- name: "-Unannounced-"
+- name: "-Work In Progress-"
   image: images/gokuhi.png
-  year: 2021
+  year: 2020
   state: current
   url: https://4rays.studio
-  description: "Something something geometry and code"
+  description: "A book about geometry and code"
 
 - name: "Swift & Fika"
   image: images/swift-and-fika.jpg
@@ -18,7 +18,7 @@
   tags: [conference, swift]
   state: recent
   url: http://swiftandfika.com
-  description: "Co-organized the first Swift conf in the nordics"
+  description: "The first ever Swift conference in the nordics"
 
 - name: "Nope"
   image: images/nope.jpg

@@ -9,13 +9,13 @@ tags:
   - Front-end
 ---
 
-Last week I spent some of my time off learning [Svelte](https://svelte.dev), a relatively new Web framework (2016) with an increased focus on developer experience and performance. Most notably, Svelte does away with the virtual DOM approach popularized by *React.js*, opting instead to transform your application logic during build time into vanilla JavaScript that directly manipulates the DOM as a reaction to state changes. This results in production code that is free from client-side dependencies and thus has a smaller resource footprint.
+In the latest installment of my static site generation escapades, I picked up [Svelte](https://svelte.dev), a relatively new Web framework (2016) with an increased focus on developer experience and performance. 
 
-At the time of this writing, my aim is to evaluate Svelte as a pure static site generator. [My dissatisfaction with Gatsby](https://redalemeden.com/microblog/post-1627249229000) has left me looking for alternatives, including building my own in Swift—a daunting task, given the long list of features I need to support for this website. 
+[My dissatisfaction with Gatsby](https://redalemeden.com/microblog/post-1627249229000) has left me looking for alternatives, including writing my own in Swift—a daunting task given the long list of features I need to support for this website. I also briefly considered [Eleventy](https://www.11ty.dev), [Next.js](https://nextjs.org), [Hugo](https://gohugo.io), and [Gridsome](https://gridsome.org), but none made the right blend of compromises for my use case, nor allowed configuration to remedy that.
 
-I also briefly considered [Eleventy](https://www.11ty.dev), [Next.js](https://nextjs.org), [Hugo](https://gohugo.io), and [Gridsome](https://gridsome.org), but none made the right blend of compromises for my use case, nor allowed configuration to remedy that. So I turned to Svelte in this new installment of my static site generation escapades, and I'm hoping it’s the last one in a little while!
+One of the main selling points of Svelte is how it does away with the virtual DOM approach popularized by *React.js*. Instead, the framework generates vanilla JavaScript during build time, which in turn directly manipulates the DOM as the application state changes on the client. This means that your production code will be depedency-free and will have a smaller resource footprint as a result.
 
-The first good news is that [SvelteKit](https://kit.svelte.dev/docs)—the official Svelte application framework currently in Beta—supports all kinds of rendering ~~acronyms~~ approaches, and in any combination within the same app: _server-side rendering_ (SSR), _static site generation_ (SSG), and _client-side rendering_ (CSR). My thinking is that if it ends up working for my personal website, there is a high chance I will come back to it for other projects that require SSR or CSR.
+I previously hadn't considered Svelte for static site generation, but [SvelteKit](https://kit.svelte.dev/docs) changed that. SvelteKit is the official Svelte application framework and comes with support for all kinds of rendering ~~acronyms~~ approaches, and in any combination within the same app: _server-side rendering_ (SSR), _static site generation_ (SSG), and _client-side rendering_ (CSR). My guess is that if it ends up working out for SSG, there is a high chance I will come back to it for other projects that require SSR or CSR.
 
 ## Hands-on with Svelte
 

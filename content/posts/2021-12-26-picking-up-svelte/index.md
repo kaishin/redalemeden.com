@@ -51,7 +51,7 @@ After making these changes, I ran `pnpm run build` and checked the `build/index.
 </main>
 ```
 
-If you’re like me, the `svelte-g04a0w` would have certainly grabbed your attention. It’s there to ensure the CSS included in `index.svelte` stays scoped to this page/component, but I still largely prefer to work with good ol' fashioned global CSS.
+If you’re like me, the `svelte-g04a0w` class littering the markup would have certainly grabbed your attention. This is a common approach in modern front-end tooling to ensure that the CSS stays scoped to a single page-component, but I still largely prefer to work with good ol' fashioned global CSS when it comes to static websites.
 
 ```html
 <!-- In index.svelte -->
@@ -62,8 +62,8 @@ If you’re like me, the `svelte-g04a0w` would have certainly grabbed your atten
 </style>
 ```
 
-Removing this `style` block and re-running `pnpm run build` gets rid of these scope classes in the final output. Also starting with Svelte _v3.34.0_ it looks like you can modify their structure though the `cssHash` [svelte.compile option](https://svelte.dev/docs#compile-time-svelte-compile) if you still want to use component-scoped CSS.
+Removing this `style` block in `index.svelte` and re-running `pnpm run build` gets rid of these scope classes altogether in the final output. Also starting with Svelte _v3.34.0_ it looks like you can modify their naming convention though the `cssHash` [svelte.compile option](https://svelte.dev/docs#compile-time-svelte-compile) if you still want to use component-scoped CSS.
 
-After this spike, I spent another 10 minutes following [the tutorial](https://svelte.dev/tutorial/basics), but stopped half way since I am not particularly interested in state or props at this stage.
+After this spike, I spent another 10 minutes following [the tutorial](https://svelte.dev/tutorial/basics), before stopping half way when I realized that I am not particularly interested in state or props at this stage.
 
 And this about wraps up my first foray into Svelte. This brief experience has left me with a very good impression, and I can hopefully share some more about it in the coming weeks!

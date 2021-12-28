@@ -9,9 +9,9 @@ tags:
   - Front-end
 ---
 
-In the latest installment of my static site generation escapades, I picked up [Svelte](https://svelte.dev), a relatively new Web framework (2016) with an increased focus on developer experience and performance. 
+In this latest installment of my static site generation escapades, I will pick up [Svelte](https://svelte.dev), a relatively new Web framework (2016) with an increased focus on developer experience and performance. 
 
-[My dissatisfaction with Gatsby](https://redalemeden.com/microblog/post-1627249229000) has left me looking for alternatives, including writing my own in Swift—a daunting task given the long list of features I need to support for this website. I also briefly considered [Eleventy](https://www.11ty.dev), [Next.js](https://nextjs.org), [Hugo](https://gohugo.io), and [Gridsome](https://gridsome.org), but none made the right blend of compromises for my use case, nor allowed configuration to remedy that.
+[My dissatisfaction with Gatsby](https://redalemeden.com/microblog/post-1627249229000) has left me looking for alternatives, including writing my own in Swift—a daunting task given the long list of features I need to support for this website. I also considered [Eleventy](https://www.11ty.dev), [Next.js](https://nextjs.org), [Hugo](https://gohugo.io), and [Gridsome](https://gridsome.org), but none made the right blend of compromises for my use case, nor allowed configuration to remedy that.
 
 One of the main selling points of Svelte is how it does away with the virtual DOM approach popularized by *React.js*. Instead, the framework generates vanilla JavaScript during build time, which in turn directly manipulates the DOM as the application state changes on the client. This means that your production code will be depedency-free and will have a smaller resource footprint as a result.
 
@@ -19,9 +19,9 @@ I previously hadn't considered Svelte for static site generation, but [SvelteKit
 
 ## Hands-on with Svelte
 
-So to kick things off, I started with the [official guide](https://kit.svelte.dev/docs#introduction-getting-started), but soon took note that it's quite broad and largely irrelevant for static site generation. That led me to skim the [SSG](https://kit.svelte.dev/docs#appendix-ssg) and [Static sites](https://kit.svelte.dev/docs#adapters-supported-environments-static-sites) sections before jumping to the [adapters](https://kit.svelte.dev/docs#adapters) guide to learn more about `adapter-static`. 
+So to kick things off, I started out with the [official guide](https://kit.svelte.dev/docs#introduction-getting-started). It's quite broad and largely irrelevant for static site generation, but gives a good overview of how Svelte is different from the rest. Next I tried to go through the sections that ar emore relevant to the task at hand, namely the [SSG](https://kit.svelte.dev/docs#appendix-ssg) and [Static sites](https://kit.svelte.dev/docs#adapters-supported-environments-static-sites) sections. That in turn took me to the [adapters](https://kit.svelte.dev/docs#adapters) guide where I learned more about `adapter-static` and how it can make SvelteKit more tailored for static site generation. 
 
-It was a pleasant surprise to learn that both [_routing_](https://kit.svelte.dev/docs#ssr-and-javascript-router) and [_hydration_](https://kit.svelte.dev/docs#ssr-and-javascript-hydrate) are optional and can be turned off, effectively removing all JS from the final output; a basic amenity the Gatsby team [refuses](https://github.com/gatsbyjs/gatsby/issues/962#issuecomment-301392995) to provide, leaving developers no choice but to come up with [all sorts of hacks](https://ricard.dev/how-to-remove-client-side-javascript-from-gatsby/). Better yet, Svelte allows for these decisions to be made on a per-page basis, giving the developer full control over where and when to use these features.
+While going through all these guides, I was pleasantly surprised to learn that both [_routing_](https://kit.svelte.dev/docs#ssr-and-javascript-router) and [_hydration_](https://kit.svelte.dev/docs#ssr-and-javascript-hydrate) are optional and can be turned off, effectively removing all JS from the final output; a basic amenity the Gatsby team [refuses](https://github.com/gatsbyjs/gatsby/issues/962#issuecomment-301392995) to provide, leaving developers no choice but to come up with [all sorts of hacks](https://ricard.dev/how-to-remove-client-side-javascript-from-gatsby/). Better yet, Svelte allows for these decisions to be made on a per-page basis, giving the developer full control over where and when to use these features.
 
 After this brief documentation survey, I felt like it’s time to get my feet wet. I started by generating a blank app using the command borrowed from the [Getting Started](https://kit.svelte.dev/docs#introduction-getting-started) section:
 
@@ -31,7 +31,7 @@ pnpm init svelte@next my-app
 
 Note that I am using `pnpm` instead of `npm` (more on the motivations in [their own words](https://pnpm.io/motivation)). I encountered issues with it when used alongside React and Gatsby, but I am more than willing to give it another go with Svelte as part of this evaluation.
 
-After choosing _blank app_ during the setup process, I ran `pnpm run dev -- --open` to preview the output and make sure everything is fine and dandy. The next logical step for this evaluation was to try the syntax for disabling both hydration and routing as mentioned earlier—and it turns out it’s rather straightforward:
+After I answered some setup wizard questions, I ran `pnpm run dev -- --open` to preview the output and make sure everything is fine and dandy. The next logical step for this evaluation was to try the syntax for disabling both hydration and routing as mentioned earlier—and it turns out it’s rather straightforward:
 
 ```html
 <!-- In index.svelte -->

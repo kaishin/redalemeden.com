@@ -76,7 +76,6 @@ This line tells SvelteKit to use the default preprocessor, but also `mdsvex` for
 
 After restarting the server once more, our `/about` page is live in its full HTML glory!
 
-// IMAGE
 ![About page preview 1](about-page-1.png)
 
 Thanks to SvelteKit’s file based routing, anything added to the `/routes` folder ends up generating a stand-alone page. You can read more about SvelteKit routing [here](https://kit.svelte.dev/docs#routing).

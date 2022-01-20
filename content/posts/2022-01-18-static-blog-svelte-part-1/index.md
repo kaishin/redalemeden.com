@@ -15,7 +15,7 @@ We will continue from where we left off in the previous entry ([commit](https://
 
 But that’s too much hassle; I’ve been too spoiled by [mdx.js](https://mdxjs.com) in React-land, and I wanted to find something similar for Svelte. It didn’t take me long to come across exactly what I was looking for: [mdsvex](https://mdsvex.com). 
 
-I know, naming things in the JS ecosystem got out of hand for a while now, but both of these libraries allow you to write markdown alongside scripts, components, and other modern JS goodies. On paper this would upset every purist I know—and I know quite a lot of them!—but in practice it means I can start with plain markdown and add inline interactive bits and pieces whenever I need to, without having to rewrite the entire page as HTML first.
+I know, naming things in the JS ecosystem got quite out of hand, but both of these libraries allow you to write markdown alongside scripts, components, and other modern JS goodies. On paper this would upset every purist I know—and I know quite a lot of them!—but in practice it means I can start with plain markdown and add inline interactive bits and pieces whenever I need to, without having to rewrite the entire page in HTML first.
 
 Let’s start by adding the _mdsvex_ dependency. It might sound like an antibiotic, but you can add it just like any other `npm` library!
 
@@ -57,7 +57,7 @@ Visiting the `/about` page in the browser produced no error this time...but no H
 
 _Few minutes later_...
 
-Sparing you the painful details this time around, I realized I need to add `mdsvex` as _processor_ for the markdown to be properly parsed. To do that I had to import it at the top of the config file:
+Sparing you the painful details this time around, I realized that adding `mdsvex` as a _processor_ was required for the markdown to be properly parsed. To do that I had to import it at the top of the config file:
 
 ```js
 import { mdsvex } from "mdsvex";
@@ -80,7 +80,7 @@ After restarting the server once more, our `/about` page is live in its full HTM
 
 Thanks to SvelteKit’s file based routing, anything added to the `/routes` folder ends up generating a stand-alone page. You can read more about SvelteKit routing [here](https://kit.svelte.dev/docs#routing).
 
-Since this not strict markdown, we can have some fun! For instance we can add styles that only apply to the _about_ page.
+Since this is not strict markdown, we can have some fun! For instance we can add styles that only apply to the _about_ page.
 
 ```md
 # About

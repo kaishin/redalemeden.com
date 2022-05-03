@@ -3,11 +3,13 @@ date: 2022-05-02T23:18+00:00
 title: "Ditching Docker Desktop on Apple Silicon"
 category:
 audience: "Docker and Apple silicon Mac users"
-draft: true
 tags:
   - macOS
   - Docker
+image: header-image.jpeg
 ---
+
+![Whale](header-image.jpg)
 
 When I got my first M1 MacBook Pro last year and started setting it up, I decided to not bring over Docker Desktop. Part of it is the wonky dashboard UI that always put me off whenever I used it. Performance was nothing to write home about either. But the straw that broke the camel back was the licensing changes that denoted a clear shift in the company’s focus and target audience.
 

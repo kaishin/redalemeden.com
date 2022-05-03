@@ -6,7 +6,7 @@ audience: "Docker and Apple silicon Mac users"
 tags:
   - macOS
   - Docker
-image: header-image.jpeg
+image: header-image.jpg
 ---
 
 ![Whale](header-image.jpg)

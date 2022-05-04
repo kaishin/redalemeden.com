@@ -12,11 +12,11 @@ image: header-image.jpg
 ![Whale](header-image.jpg)
 
 When I got my first M1 MacBook Pro last year and started setting it up, I decided to not bring over Docker Desktop.
- For starters, the dashboard UI is wonky and has always put me off whenever I used it. 
+ For starters, the dashboard UI is wonky and had always put me off whenever I used it. 
  Performance was nothing to write home about either.
 But the straw that broke the camel back so to speak was the licensing changes that denoted a clear shift in the company’s focus and target audience.
 
-Docker Desktop is bundle of standalone tools that all come as a part of the same app:
+Docker Desktop is collection of tools bundled in a single app:
 
 - Docker Engine
 - Docker CLI
@@ -81,4 +81,6 @@ docker-compose up -d
 If your machine is resource constrained, you can temporarily stop the Colima VM by running `colima stop`. To start it again, just run the same `start` command above.
 
 I have used this setup for almost a year now and I am quite the happy camper.
-I sort of miss some aspects of the GUI dashboard, but it's nothing a [SwiftBar](https://github.com/swiftbar/SwiftBar) plugin can't solve!
+I sort of miss some aspects of the GUI dashboard, but they're nothing a [SwiftBar](https://github.com/swiftbar/SwiftBar) plugin can't solve—hopefully I can share more about that in a later post.
+
+Have you used any of the alternatives above? What was your experience? Don't hesitate to chime in via [Mastodon](https://mastodon.social/web/@redalemeden/108245594126322878) or [Twitter](https://twitter.com/kaishin/status/1521951812986810371)!

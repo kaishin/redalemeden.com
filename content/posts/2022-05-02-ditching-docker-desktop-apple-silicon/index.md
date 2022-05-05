@@ -16,18 +16,7 @@ When I got my first M1 MacBook Pro last year and started setting it up, I decide
  Performance was nothing to write home about either.
 But the straw that broke the camel back so to speak was the licensing changes that denoted a clear shift in the company’s focus and target audience.
 
-Docker Desktop is collection of tools bundled in a single app:
-
-- Docker Engine
-- Docker CLI
-- Docker Compose
-- Docker Build
-- Docker Content Trust
-- Docker Scan
-- Kubernetes
-- Credential Helper
-
-Lucky for me, my use case is relatively simple—I mostly rely on Docker to run half a dozen databases locally. This means that I only need a subset of features that Docker Desktop ships with.
+Docker Desktop is collection of tools bundled in a single app: Engine, CLI, Compose, Build, Content Trust, Scan, Kubernetes, and Credential Helper. Lucky for me, my use case is relatively simple—I mostly rely on Docker to run half a dozen databases locally. This means that I only need a subset of features that Docker Desktop ships with.
 
 As I started looking for alternatives, I was pleasantly surprised by how vibrant the containerization space is—there is no shortage of options with different interfaces and levels of control. On the requirement front, I mostly focused on compatibility with [`docker-compose`](https://docs.docker.com/compose/). Here are some of the alternatives I came across:
 

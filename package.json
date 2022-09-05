@@ -60,11 +60,11 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "yarn exec gatsby build",
-    "dev": "yarn exec gatsby develop --host 0.0.0.0",
-    "start": "yarn run dev",
+    "build": "npm exec gatsby build",
+    "dev": "npm exec gatsby develop",
+    "start": "npm run dev",
     "generate": "plop --plopfile ./generators/plopfile.js",
-    "clean": "yarn exec gatsby clean"
+    "clean": "npm exec gatsby clean"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",

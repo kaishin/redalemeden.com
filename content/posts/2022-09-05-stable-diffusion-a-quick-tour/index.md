@@ -3,7 +3,6 @@ date: 2022-09-05T22:49+02:00
 title: "Stable Diffusion: A Quick Tour"
 category:
 audience: "people interested in machine learning or curious about it&#x27;s applications"
-draft: true
 tags:
   - ML
   - AI

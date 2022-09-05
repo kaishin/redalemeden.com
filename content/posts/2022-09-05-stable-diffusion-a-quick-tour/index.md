@@ -14,19 +14,19 @@ Developer by [Stability.Ai](https://stability.ai), [Stable Diffusion](https://st
 
 To illustrate why this is a big deal, here is one of the results[^1] my 5 years old GTX 1080 graphics card generated for the prompt “A photo of a panda sitting in a primary school classroom”:
 
-![A photo of a panda sitting in a primary school classroom.](3313248937.png)
+![A photo of a panda sitting in a primary school classroom](3313248937.png) _A photo of a panda sitting in a primary school classroom_
 
 A you can see, the model  managed to understand what the prompt meant. It got the panda sitting, the classroom, and even the focus blur for that perfect photograph feel. The fascinating part, is that even small variations in the prompt or the parameters produce widely different results. For instance, consider the following prompt-output combination.
 
 > A painting by Katsushika Hokusai of a panda sitting in a classroom in primary school
 
-![A painting by Katsushika Hokusai of a panda sitting in a classroom in primary school](3345077563.png)
+![A painting by Katsushika Hokusai of a panda sitting in a primary school classroom](3345077563.png) _in a primary school classroom_
 
 Not only the model recognized and reproduced the style of the famous Japanese artist, but it managed to do so while capturing the historical context by eliminating all modern details from the image. If we try with a completely different prompt that purposefully include words like “cyberpunk” and “futuristic”, it still manage to stay faithful to the aesthetics of the [Ukiyo-e](https://en.wikipedia.org/wiki/Ukiyo-e) art form.
 
 > A painting by Katsushika Hokusai of a cyberpunk futuristic city
 
-![A painting by Katsushika Hokusai of a cyberpunk futuristic city](3183093862.png)
+![A painting by Katsushika Hokusai of a cyberpunk futuristic city](3183093862.png) _A painting by Katsushika Hokusai of a cyberpunk futuristic city_
 
 But the use cases of Stable Diffusion don’t stop here. It can generate images based on other images (_image-to-image_), fill empty pixels inside an image (_inpaiting_), fill empty pixels outside an image (_outpainting_), interpolate between images, and so forth. These building blocks open the door to large swaths of applications in more than one creative field.
 
@@ -60,14 +60,11 @@ Since the public release, it’s been hard to run out of resources, guides, and 
 
 Last but not least, why bother with closing words when we can do closing images? Enjoy!
 
-![A Kawase Hasui painting of a UFO in the icy landscape of Antarctica](2870482490.png)
-A Kawase Hasui painting of a UFO in the icy landscape of Antarctica
+![A Kawase Hasui painting of a UFO in the icy landscape of Antarctica](2870482490.png) _A Kawase Hasui painting of a UFO in the icy landscape of Antarctica_
 
-![A kid’s drawing of the pyramids](2613985449.png)
-A kid’s drawing of the pyramids
+![A kid’s drawing of the pyramids](2613985449.png) _A kid’s drawing of the pyramids_
 
-![An intricate painting of a cucumber, renaissance style](4716763.png)
-An intricate painting of a cucumber, renaissance style
+![An intricate painting of a cucumber, renaissance style](4716763.png) _An intricate painting of a cucumber, renaissance style_
 
 [^1]: The others were far less coherent, but that’s par for the course in these kind of models.
 [^2]: The model works best with Nvidia GPUs, but can work with AMD of even Apple’s M1 chips. At least 6Gb of VRAM is needed to generate images of 512px by 512px.

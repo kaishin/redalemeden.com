@@ -18,7 +18,7 @@ To illustrate why this is a big deal, here is one of the images[^1] my 5 years o
 
 The model managed to capture the meaning of the prompt and even nailed the focus blur for that perfect photograph feel. The fascinating part, is that even small variations in the prompt or the parameters produce widely different results. For instance, consider the following prompt-output combination.
 
-_"A painting by Katsushika Hokusai of a panda sitting in a classroom in primary school"_
+_"A painting by Katsushika Hokusai of a panda sitting in a primary school classroom"_
 ![A generated image of a painting by Katsushika Hokusai of a panda sitting in a primary school classroom](3345077563.png) _"A painting by Katsushika Hokusai of a panda sitting in a primary school classroom"_
 
 Not only the model recognized and reproduced the style of the famous Japanese artist, but it managed to do so while capturing the historical context by eliminating all modern details from the image. If we try with a completely different prompt that purposefully include words like “cyberpunk” and “futuristic”, it still does its best to stay faithful to the aesthetics of the [Ukiyo-e](https://en.wikipedia.org/wiki/Ukiyo-e) art form.

@@ -62,11 +62,11 @@ One analogy I heard that made a lot of sense is how photography never replaced a
 
 As someone who always enjoyed drawing—and made a living from it at some point—using Stable Diffusion won't stop me from reaching out to my pencil and sketchbook (or iPad these days). In fact, I'm already enjoying how it augmented my work by means of inspiration, quick experimentation, and fast turnaround. Taking my rough sketches and storyboards to the next level is all of a sudden much less time consuming than it ever was.
 
-Granted, this is a new frontier and it remains to be seen how things will evolve from here. I remain optimistic.
+Granted, this is a new frontier and it remains to be seen how things will evolve from here. I am relatively optimistic this time around.
 
 ## Learn More
 
-Since the public release, it’s been hard to run out of resources, guides, and tools related to SD. And quite frankly, it's overwhelming for someone new to machine learning like myself. But if you're curious about the topic and would like to learn more, you might find [my growing collection of links]((/collections/stable-diffusion/)) of some use!
+Since the public release, it’s been hard to run out of resources, guides, and tools related to SD. And quite frankly, it's overwhelming for someone new to machine learning like myself. But if you're curious about the topic and would like to learn more, you might find [my growing collection of links](/collections/stable-diffusion) of some use!
 
 Last but not least, why bother with closing words when we can do closing images? Enjoy!
 

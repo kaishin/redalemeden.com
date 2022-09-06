@@ -34,7 +34,7 @@ Image-to-image generation is particularly powerful as it allows the user to have
 
 ## How to Get Started
 
-Being an open-source model, it took only a couple of weeks for a barrage of wrappers, forks, GUIs, and CLIs to emerge. Unfortunately, the tooling can still be arcane to most people, even non-ML developers. There is a non-trivial amount of fiddling with python environments and other dependencies to get the intended results.
+Being an open-source model, it took only a couple of weeks for a barrage of wrappers, forks, GUIs, and CLIs to emerge. Unfortunately, the tooling can still be arcane to most people, even developers not familiar with machine learning. There is a non-trivial amount of fiddling with python environments and other dependencies to get the intended results.
 
 The most straightforward way to take SD for a spin is via the official [DreamStudio](https://beta.dreamstudio.ai/dream) web-based interface. You get 200 credits when you create a new account, where each credit corresponds to one 512px by 512px image. Another option is via the [official Discord server](https://discord.gg/stablediffusion) which features a bot command that parses prompts and displays the generated images directly in the channel.
 

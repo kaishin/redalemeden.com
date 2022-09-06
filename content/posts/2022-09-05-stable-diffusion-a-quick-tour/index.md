@@ -14,21 +14,19 @@ Developed by [Stability.Ai](https://stability.ai), [Stable Diffusion](https://st
 
 To illustrate why this is a big deal, here is one of the images[^1] my 5 years old GTX 1080 graphics card generated for the prompt _“A photo of a panda sitting in a primary school classroom”_:
 
-![A photo of a panda sitting in a primary school classroom](3313248937.png) _A photo of a panda sitting in a primary school classroom_
+![A generated image of a panda sitting in a primary school classroom](3313248937.png) _"A photo of a panda sitting in a primary school classroom"_
 
 The model managed to capture the meaning of the prompt and even nailed the focus blur for that perfect photograph feel. The fascinating part, is that even small variations in the prompt or the parameters produce widely different results. For instance, consider the following prompt-output combination.
 
 _"A painting by Katsushika Hokusai of a panda sitting in a classroom in primary school"_
-
-![A painting by Katsushika Hokusai of a panda sitting in a primary school classroom](3345077563.png) _in a primary school classroom_
+![A generated image of a painting by Katsushika Hokusai of a panda sitting in a primary school classroom](3345077563.png) _"A painting by Katsushika Hokusai of a panda sitting in a primary school classroom"_
 
 Not only the model recognized and reproduced the style of the famous Japanese artist, but it managed to do so while capturing the historical context by eliminating all modern details from the image. If we try with a completely different prompt that purposefully include words like “cyberpunk” and “futuristic”, it still does its best to stay faithful to the aesthetics of the [Ukiyo-e](https://en.wikipedia.org/wiki/Ukiyo-e) art form.
 
-_A painting by Katsushika Hokusai of a cyberpunk futuristic city_
+_"A painting by Katsushika Hokusai of a cyberpunk futuristic city"_
+![A generated image of a painting by Katsushika Hokusai of a cyberpunk futuristic city](3183093862.png) _A painting by Katsushika Hokusai of a cyberpunk futuristic city_
 
-![A painting by Katsushika Hokusai of a cyberpunk futuristic city](3183093862.png) _A painting by Katsushika Hokusai of a cyberpunk futuristic city_
-
-But the use cases of Stable Diffusion don’t stop here. It can generate images based on other images (_image-to-image_), fill empty pixels inside an image (_inpaiting_), fill empty pixels outside an image (_outpainting_), interpolate between images, and so forth. These building blocks open the door to large swaths of applications in more than one creative field.
+But the use cases of Stable Diffusion don’t stop here. It can generate images based on other images (_image-to-image_), fill empty pixels inside an image (_inpainting_), fill empty pixels outside an image (_outpainting_), interpolate between images, and so forth. These building blocks open the door to large swaths of applications in more than one creative field.
 
 Image-to-image generation is particularly powerful as it allows the user to have a much bigger say in the final output, eliminating the guesswork and making the prompt writing process much easier. To illustrate, consider this example below where I started with a crude manual drawing to the left, added the prompt _“a rainbow-colored umbrella”_, and ended with the generated image to the right (granted after a half a dozen tries).
 
@@ -58,13 +56,13 @@ The other aspect to consider is the ethical one. Using text-to-image to replicat
 
 ## Personal Thoughts
 
-Initially I was skeptical of this kind of machine learning applications, especially when they are developed by for-profit companies behind the curtains. But as the novelty started wearing off, I slowly realized that these tools aren't meant to replace humans as many skeptics would choose to believe. For one, these models are far from perfect. The generated images are often distorted or comically incoherent. Even if these tools improve, they are never going to make art on their own or compete with humans when it matters.
+Initially I was very skeptical of letting machines meddle with art, especially when they are developed by for-profit companies behind the curtains. But as the novelty started wearing off, I slowly realized that these tools aren't meant to replace humans as many skeptics, including myself, tend to believe. For one, these models are far from perfect. The generated images are often distorted or comically incoherent. Even if these tools improve, they are never going to make art on their own or compete with humans when it matters.
 
-One analogy I heard that made a lot of sense is how photography never replaced artists as some were anxious about. Neither did printing before it. In the best case scenario, AI-generated "art" is going to be accepted as its own sub-field. In the worst case, this technology is going to be nothing more than yet another tool for people, artists included, to work with.
+One analogy I heard that made a lot of sense is how photography never replaced artists as some were concerned about. Neither did printing before it. In the best case scenario, AI-generated "art" is going to be accepted as its own sub-field. In the worst case, this technology is going to be nothing more than yet another tool for people, artists included, to work with.
 
-As someone who always enjoyed drawing—and made a living from it at some point—using Stable Diffusion won't stop me from doing so. In fact, I'm already enjoying how it augmented my work by means of inspiration, quick experimentation, and fast turnaround. Taking my rough sketches and storyboards to the next level is all of a sudden much less time consuming than it ever was.
+As someone who always enjoyed drawing—and made a living from it at some point—using Stable Diffusion won't stop me from doing reaching out to my pencil and sketchbook (or iPad these days). In fact, I'm already enjoying how it augmented my work by means of inspiration, quick experimentation, and fast turnaround. Taking my rough sketches and storyboards to the next level is all of a sudden much less time consuming than it ever was.
 
-Grabted, this is a new frontier for the majority of us, and it remains to be seen how things will evolve from here.
+Granted, this is a new frontier and it remains to be seen how things will evolve from here. I remain optimistic.
 
 ## Learn More
 
@@ -72,13 +70,13 @@ Since the public release, it’s been hard to run out of resources, guides, and 
 
 Last but not least, why bother with closing words when we can do closing images? Enjoy!
 
-_A Kawase Hasui painting of a UFO in the icy landscape of Antarctica_
+_"A Kawase Hasui painting of a UFO in the icy landscape of Antarctica"_
 ![A Kawase Hasui painting of a UFO in the icy landscape of Antarctica](2870482490.png) _A Kawase Hasui painting of a UFO in the icy landscape of Antarctica_
 
-_A kid’s drawing of the pyramids_
+_"A kid’s drawing of the pyramids"_
 ![A kid’s drawing of the pyramids](2613985449.png) _A kid’s drawing of the pyramids_
 
-_An intricate painting of a cucumber, renaissance style_
+_"An intricate painting of a cucumber, renaissance style"_
 ![An intricate painting of a cucumber, renaissance style](4716763.png) _An intricate painting of a cucumber, renaissance style_
 
 [^1]: The others were far less coherent, but that’s par for the course in these kind of models.

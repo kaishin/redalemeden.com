@@ -60,13 +60,13 @@ Initially I was very skeptical of letting machines meddle with art, especially w
 
 One analogy I heard that made a lot of sense is how photography never replaced artists as some were concerned about. Neither did printing before it. In the best case scenario, AI-generated "art" is going to be accepted as its own sub-field. In the worst case, this technology is going to be nothing more than yet another tool for people, artists included, to work with.
 
-As someone who always enjoyed drawing—and made a living from it at some point—using Stable Diffusion won't stop me from doing reaching out to my pencil and sketchbook (or iPad these days). In fact, I'm already enjoying how it augmented my work by means of inspiration, quick experimentation, and fast turnaround. Taking my rough sketches and storyboards to the next level is all of a sudden much less time consuming than it ever was.
+As someone who always enjoyed drawing—and made a living from it at some point—using Stable Diffusion won't stop me from reaching out to my pencil and sketchbook (or iPad these days). In fact, I'm already enjoying how it augmented my work by means of inspiration, quick experimentation, and fast turnaround. Taking my rough sketches and storyboards to the next level is all of a sudden much less time consuming than it ever was.
 
 Granted, this is a new frontier and it remains to be seen how things will evolve from here. I remain optimistic.
 
 ## Learn More
 
-Since the public release, it’s been hard to run out of resources, guides, and tools related to SD. And quite frankly, it's overwhelming for someone new to machine learning like myself. But ff you're curious about the topic and would like to learn more, you might find [my growing collection of links]((/collections/stable-diffusion/)) of some use!
+Since the public release, it’s been hard to run out of resources, guides, and tools related to SD. And quite frankly, it's overwhelming for someone new to machine learning like myself. But if you're curious about the topic and would like to learn more, you might find [my growing collection of links]((/collections/stable-diffusion/)) of some use!
 
 Last but not least, why bother with closing words when we can do closing images? Enjoy!
 

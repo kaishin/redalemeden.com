@@ -46,13 +46,13 @@ As it stands now, Stable Diffusion is the only open-source latent diffusion mode
 
 [DALL·E](https://openai.com/blog/dall-e-now-available-in-beta/) is the other commercial alternative—albeit only for those who got access to the closed beta.
 
-## Gotchas
+## Caveats
 
 Generating images that are jaw-droppingly good takes a lot of iterations, prompt _engineering_, and parameter adjustments. It's quite rare for the first image to match what you had in mind when you wrote the prompt. The model also seems to have trouble with human limbs and fingers, often drawing more or less than necessary. Anatomy in general seems to be a hit or miss. Another shortcoming is the often-incorrect interpretation of relations between various objects and actors in the prompt.
 
 That being said, It’s been only a couple of weeks, and these early limitations are already in the radar of the Stability Ai team and the community.
 
-The other aspect to consider is the ethical one. Using text-to-image to replicate the style of living artists without their permission is not only possible but on the way to become the norm. The model also is as biased as the data it was trained on. The good news is that SD can be retrained by anyone on more curated datasets to minimize these issues.
+The other aspect to consider is the ethical one. Using text-to-image to replicate the style of living artists without their permission is not only possible but on the way to become the norm. The model also is as biased as the data it was trained on. The good news is that SD can be retrained by anyone invested enough on more curated datasets to minimize these issues.
 
 ## Personal Thoughts
 

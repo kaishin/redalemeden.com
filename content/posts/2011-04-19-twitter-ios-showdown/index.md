@@ -124,6 +124,8 @@ Notably, Tweetbot shines in some areas that would be hard to assess using the <a
 
 For a 1.0 release, Tweetbot is doing a remarkable job, especially when considering the saturated and volatile market of Twitter third party clients. Even though there is still room for improvement in certain areas, Tweetbot for iPhone has got what it takes to dethrone the official client, and then some.
 
+In [round 2](https://redalemeden.com/blog/2012/twitter-ios-showdown-round-2), we will introduce Twitterrific to the mix and revisit some of the tests introduced above.
+
 [HIP]: http://en.wikipedia.org/wiki/Human*information*processor*model
 [studies]: http://labs.yahoo.com/publication/who-says-what-to-whom-on-twitter/
 [tweetbot]: http://tapbots.com/software/tweetbot/

@@ -12,13 +12,13 @@ tags:
 
 In the thick of the controversy surrounding Twitter's new third party restrictions, [Tweetbot]---the long-awaited Twitter client from Tapbots---is finally out for iPhone and iPod Touch. The overwhelmingly positive feedback is a clear sign that the app met and even exceeded expectations.
 
-To find out whether Tweetbot is a legitimate contender, I decided tp pit it against the official client using a <abbr title="Goals, Operators, Methods, and Selection rules">GOMS</abbr>-inspired, oversimplified [human information processing model][HIP] on a set of tasks performed by the average user on Twitter.
+To find out whether Tweetbot is a legitimate contender, I decided to pit it against the official client using a <abbr title="Goals, Operators, Methods, and Selection rules">GOMS</abbr>-inspired, oversimplified [human information processing model][HIP] on a set of tasks performed by the average user on Twitter.
 
 ![Tweet options](tweet-options.jpg) _Tweet options displayed after a single tap._
 
 ### The Rules
 
-Before starting this exercise, let me introduce some of the keywords that will be used throughout this article:
+Before starting this exercise, let's go over some of the concepts that will be used throughout the article:
 
 * *An interaction* is any point of contact between the user and the interface, such as a tap or a swipe. Each interaction is assigned a value based on the time required to execute it. For the sake of simplicity, a *single tap* is given a nominal value of `1` and used as a base unit for other interactions.
 
@@ -113,8 +113,6 @@ The official client didn't stand a chance here; Tweetbot's long tap is a godsend
 The relatively awkward, albeit native, method of keying hashtags and @ mentions in Tweetbot skews the results in favor of Twitter for iPhone. If it wasn't for this detail, the third party client would have come out ahead.
 
 When all is said and done, it would be short-sighted to pick a winner based on the total score alone. In order to gauge the relevance of these tests, we need to take a closer look at the way we use Twitter in reality. [Studies] suggest that a big majority of users on the social platform are silent; unless you are a news agency, a celebrity, or a spam bot, you are more likely to be reading tweets than tweeting or sending DM's. As a result, the overall experience is greatly affected by our passive use, a point that the tests above completely eschewed in favor of purely active use scenarios.
-
-![Notifications](notifications.jpg) _In-app notifications in Tweetbot._
 
 Notably, Tweetbot shines in some areas that would be hard to assess using the <abbr title="Human Information Processing">HIP</abbr> model above. Save for the occasional tweet, reply, or DM, we spend most of the time on Twitter wading through hundreds of tweets and swapping accounts and lists. Few Twitter clients address these areas as elegantly as Tweetbot does:
 

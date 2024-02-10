@@ -1,0 +1,42 @@
+---
+import ThemeSelect from "./ThemeSelect.astro";
+const today = new Date();
+
+import {
+  SITE_EMAIL,
+  SITE_URL,
+  SITE_AUTHOR,
+  SITE_AUTHOR_BIO,
+} from "../consts";
+---
+
+<footer class="md:row-start-3 md:col-start-1 self-end px-6 pb-12 text-center">
+  <ul>
+    <li class="inline-block">
+      <a href="https://github.com/kaishin" rel="me" class="text-purple-500 dark:text-banana">GitHub</a>
+      <span class="text-stone-300 dark:text-ash px-3 opacity-50">/</span>
+    </li>
+    <li class="inline-block">
+      <a href="https://mastodon.social/@redalemeden" rel="me" class="text-purple-500 dark:text-banana"> Mastodon</a>
+    </li>
+  </ul>
+  <div class="h-card hidden">
+    <a class="p-name u-url" href={SITE_URL}>
+      {SITE_AUTHOR}
+    </a>
+    <img
+      class="u-photo"
+      src={SITE_URL + '/author-photo.jpg'}
+      alt={SITE_AUTHOR}
+    />
+    <p class="p-note">{SITE_AUTHOR_BIO}</p>
+    <a class="u-email" href={'mailto:' + SITE_EMAIL}>
+      {SITE_EMAIL}
+    </a>
+  </div>
+  <span class="text-stone-400 dark:text-ash pb-6 block">
+    <em>&copy;</em> 2009-{today.getFullYear()} Reda Lemeden
+  </span>
+
+  <ThemeSelect />
+</footer>

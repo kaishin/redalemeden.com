@@ -1,0 +1,38 @@
+---
+import ProjectCard from "@components/ProjectCard.astro";
+
+const projects = [
+  {
+    name: "Four Rays",
+    description: "An indie solopreneurship focusing on native app development and design",
+    image: "4rays.jpg",
+    url: "https://4rays.net",
+    state: "ongoing",
+    year: "2020",
+  },
+  {
+    name: "Dash Icon",
+    description: "Icon design for Dash—a docset viewer for macOS.",
+    image: "dash.jpg",
+    url: "https://kapeli.com/dash",
+    state: "complete",
+    year: "2020",
+  },
+  {
+    name: "Swift & Fika",
+    description: "The first Swift conference in the nordics with over 200 attendees.",
+    image: "swift-fika.jpg",
+    url: "https://2018.swiftandfika.com",
+    state: "paused",
+    year: "2018",
+  },
+];
+---
+
+<ul class="grid grid-cols-projects gap-4 list-none px-0 not-prose">
+  {projects.map((project) => (
+    <li class="list-display">
+      <ProjectCard {...project} />
+    </li>
+  ))}
+</ul>

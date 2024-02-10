@@ -4,10 +4,13 @@
   ],
   "spellright.documentTypes": [
     "markdown",
-    "latex"
+    "latex",
+    "plaintext",
+    "mdx"
   ],
-  "workbench.panel.defaultLocation": "right",
-  "files.associations": {
-    "*.css": "postcss"
+  "spellright.parserByClass": {
+    "mdx": {
+      "parser": "markdown"
+    }
   }
 }

@@ -1,0 +1,86 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets"; 
+
+interface Props {
+  name: string;
+  image: string;
+  year: string;
+  state: string;
+  url: string;
+  description: string;
+}
+
+const { name, image, year, url, description } = Astro.props;
+
+const imagePath = "/src/assets/images/projects/" + image;
+const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/images/projects/*.{jpeg,jpg,png,gif}");
+if (!images[imagePath]) throw new Error(`Image ${imagePath} not found`);
+const imageSrc = images[imagePath]();
+---
+
+<article class="overflow-hidden transition-transform rounded-2xl duration-300 ease-linear hover:scale-105 bg-white shadow dark:shadow-none dark:bg-slate-950">
+  <a href={url}>
+    <Image src={imageSrc} class="max-w-full" alt={name} />
+
+    <div class="p-6">
+      <h5 class="text-sm font-semibold tracking-widest uppercase mt-0 mb-2 mx-0">{name} <span class="text-stone-500 dark:text-ash">({year})</span></h5>
+      <p class="text-sm tracking-wider font-light text-stone-500 dark:text-ash">
+        {description}
+      </p>
+    </div>
+  </a>
+</article>
+
+
+<!-- <style>
+  .project-cell {
+  mask-image: radial-gradient(white, black);
+  background-color: var(--theme-card-background-color);
+  border-radius: 1rem;
+  list-style-type: none;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.7, -0.5, 0.3, 1.5);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  & a {
+    color: var(--theme-foreground-color);
+    text-decoration: none;
+  }
+
+  & .project-details {
+    padding: 1.5rem;
+  }
+
+  & .project-image {
+    display: block;
+    max-width: 100%;
+  }
+
+  & .project-name {
+    margin: 0 0 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  & .project-tags {
+    margin: 0 0 1rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  & .project-description {
+    margin: 0;
+    color: var(--theme-secondary-foreground-color);
+    font-size: 0.8rem;
+  }
+}
+</style> -->

@@ -1,0 +1,107 @@
+---
+import "@fontsource-variable/inter";
+import {SITE_TITLE, SITE_DESCRIPTION} from "@consts";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// TODO: Match metadata structure with the current site.
+let {
+  title = SITE_TITLE, 
+  description = SITE_DESCRIPTION, 
+  image = "/social-cards/default.jpg"
+} = Astro.props;
+
+if (title != SITE_TITLE) {
+  title = `${title} | ${SITE_TITLE}`;
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- SEO -->
+    <meta name="robots" content="noodp, noydir">
+    <meta name="keywords" content="Reda, Lemeden, Kaishin, Indie, Designer, Programmer, Swift, Stockholm">
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png?v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png?v=2"
+    />
+    <link rel="mask-icon" href="/logomark.svg?v=2" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon.ico?v=2" />
+    <meta name="apple-mobile-web-app-title" content="Reda Lemeden" />
+    <meta name="application-name" content="Reda Lemeden" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    
+    <!-- Additional Meta Tags -->
+    <slot name="head" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+    <!-- Dark Mode -->
+    <script is:inline>
+      if (
+        localStorage.theme === 'dark' 
+        || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+
+    <!-- GoatCounter -->
+    <script data-goatcounter="https://4rays.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  </head>
+  <body class="bg-cream dark:bg-asphalt dark:text-white">
+    <slot />
+  </body>
+</html>
+

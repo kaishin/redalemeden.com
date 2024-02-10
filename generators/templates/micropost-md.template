@@ -1,7 +1,0 @@
----
-date: {{createdDate}}{{#if title}}
-title: "{{title}}"{{/if}}{{tags}}
-path: post-{{slug}}
----
-
-{{body}}

@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import NavigationLayout from '@layouts/NavigationLayout.astro';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<NavigationLayout>
+  <h2>Unredacted</h2>
+  <p class="">
+    A blog about design, technology, programming, and other personal interests. Subscribe to the RSS or JSON feeds to get the latest articles, or follow me on Mastodon.
+  </p>
+  <hr class="mb-10"/>
+  <ul class="list-none not-prose">
+    {
+      posts.map((post) => (
+        <li class="mb-10">
+          <a href={`/blog/${post.slug}`}>
+            <h3 class="font-medium text-2xl max-w-80">{post.data.title}</h3>
+            <p class="text-sm text-purple-500 dark:text-banana font-semibold leading-normal tracking-wider uppercase mt-1">
+              <FormattedDate date={post.data.pubDate} />
+            </p>
+            {post.data.tags && post.data.tags.length > 0 && (
+              <ul class="list-none mt-2">
+                {post.data.tags.map((tag: string) => (
+                  <li class="inline-block mr-2">
+                    <span class="bg-stone-200 dark:bg-slate-800 text-stone-800 dark:text-slate-400 px-3 py-1 rounded-full text-xs font-medium tracking-wider uppercase">
+                      {tag}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</NavigationLayout>

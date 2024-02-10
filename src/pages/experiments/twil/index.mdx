@@ -1,0 +1,378 @@
+---
+layout: "@layouts/NavigationLayout.astro"
+title: "This Week I Learned"
+---
+
+## This Week I Learned
+
+An experiment where, for half a year, I published weekly blog posts about what I learned, in the order I've noted them down
+
+---
+
+### This Week I Learned #1
+
+🗓️ _2020-04-12_
+
+- _Calm technology_. A term coined by PARC researcher Mark Weiser in 1995, referring to technology that does not seek to become the center of attention when we use it. It’s there when we need it, and out of sight when we don’t. More on the topic [here](https://calmtech.com/index.html).
+
+- _Eggcorn_. A phrase or expression that resulted from intentionally or accidentally substituting one or more words from an expression with similar-sounding words ([Wikipedia](https://en.wikipedia.org/wiki/Eggcorn)). For example:
+  - _Praying mantis_ -> _preying mantis_.
+  - _Cut to the chase_ -> _cut to the cheese_.
+  - _Acorn_ -> _eggcorn_ (duh).
+
+- The entire [ACM Digital Library](https://dl.acm.org) is free to access until June 30th. There's more to COVID-19 quarantine than Netflix 😉.
+
+### This Week I Learned #2
+
+🗓️ _2020-04-20_
+
+- _Contact tracing_. A joint initiative by Apple and Google to help health organizations throughout the world slow down the spread of COVID-19. This [excellent entry](https://nshipster.com/contact-tracing/) on NSHipster is a good place to start if you’re interested in the nitty-gritty details. The official documentation itself can be found [here](https://www.apple.com/covid19/contacttracing/).
+
+- [Last week](https://redalemeden.com/microblog/post-1586715980964) I mentioned free access to the ACM Digital Library during COVID-19. This week I stumbled upon [this list](https://mjtsai.com/blog/2020/04/13/temporarily-free-content/) of similar offers compiled by Michael Tsai.
+
+- The relationship between `size`, `stride`, and `alignment` in the memory layout of Swift types, thanks to this [excellent article](https://swiftunboxed.com/internals/size-stride-alignment/) by [Greg Heo](https://gregheo.com).
+
+- In Swift _Combine_, you can filter out _nil_ values using `.compactMap { $0 }` ([reference](https://developer.apple.com/documentation/combine/publisher/3204698-compactmap)). I was using `filter(_:)` before but that still requires force-unwrapping the value in subsequent operations.
+
+### This Week I Learned #3
+
+🗓️ _2020-04-26_
+
+- The words "_esoteric_" and "_niche_" do not have the same connotations. I used the two interchangeably in the past, and that resulted in some really awkward sentences. Thanks anonymous reader for the tip!
+
+- How the layout algorithm works in SwiftUI stack views. Huge props to [Adrian Zubarev](https://twitter.com/DevAndArtist) for making that task [easier](https://github.com/UndefinedAlgorithm/swift-legacy-user-interface/blob/master/Sources/Layout/Layouts/HStackLayout.swift) for me. I will be sharing more about these findings, and the context that motivated them, in the near future.
+
+- Database normalization and normal forms, through various articles and resources, including [this one](https://www.lifewire.com/database-normalization-basics-1019735). I’ve intentionally tried to stay as far as possible from databases for the past 10 years, but now I feel like I am missing out on a fundamental aspect of building server-side software.
+
+- After all these years, CSS is [still](https://github.com/bansal-io/pattern.css) [fun](https://jdan.github.io/98.css/).
+
+### This Week I Learned #4
+
+🗓️ _2020-05-03_
+
+- _The Blub Paradox_ (thanks [Kim](https://www.burgestrand.se)!). Coined by Paul Graham in his 2001 essay “[Beating The Averages](http://www.paulgraham.com/avg.html)”, this concept refers to the inability of a programmer using a hypothetical mid-level language, called _Blub_, to:
+
+  - Use a lower-level language due to lack of features they are familiar with in Blub.
+  - Realize that they are looking at a higher-level language when they evaluate one.
+
+I have some reservations about this one, based on my own experience, but it’s a nice tidbit nonetheless.
+
+- I did some reading on flying machines this week and picked up a new word: _[ornithopter](https://en.wikipedia.org/wiki/Ornithopter)_.
+
+- I almost feel ashamed for not knowing this one until this week: [deuteragonist](https://en.wiktionary.org/wiki/deuteragonist) and [tritagonist](https://en.wiktionary.org/wiki/tritagonist).
+
+- [This answer](https://www.quora.com/What-are-the-most-important-things-involved-in-delivering-a-great-software-library/answer/Dave-Abrahams?share=c027457a) by [Dave Abrahams](https://daveabrahams.com) to a Quora question about the most important things involved in delivering a great software library. If I had to pick only one, that would be “rigorously document“.
+
+- The _.org_ <abbr title="Top-level Domain">TLD</abbr> is [saved](https://www.icann.org/news/blog/icann-board-withholds-consent-for-a-change-of-control-of-the-public-interest-registry-pir)!
+
+### This Week I Learned #5
+
+🗓️ _2020-05-10_
+
+- <ruby>自粛<rt>じしゅく</rt>疲<rt>つか</rt>れ</ruby> (jishuku-tsukare). An expression that’s gaining momentum right now in Japanese media, meaning _getting tired of voluntary confinement_.
+
+- Visual explanations go a long way in demystifying tricky topics such as [floating numbers]([Floating Point Visually Explained](https://fabiensanglard.net/floating_point_visually_explained/index.html)) and [regular expressions](https://refrf.shreyasminocha.me).
+
+- JavaScript frameworks are costly, argues [this well-researched piece](https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/) by Tim Kadlec. One would think that performance tends to get better over time in technology, but that doesn't seem to be the case in JS-land.
+
+- I picked up some LaTeX this week for writing mathematical notations and [this cheatsheet](https://davidhamann.de/2017/06/12/latex-cheat-sheet/) came in quite handy.
+
+### This Week I Learned #6
+
+🗓️ _2020-05-17_
+
+- How the _MissingNo._ sprite [is rendered](https://www.youtube.com/watch?v=ZI50XUeN6QE) in Pokémon. If you are into retro games and programming, I highly recommend this channel.
+
+- The _Scunthorpe problem_ is, according to Wikipedia, “the unintentional blocking of websites, e-mails, forum posts or search results by a spam filter or search engine because their text contains a string of letters that appear to have an obscene or otherwise unacceptable meaning.” Via [Scunthorpe Sans](https://vole.wtf/scunthorpe-sans/).
+
+- How HTTP/3 and QUIC work. I hadn’t heard about QUIC until earlier this week and watching [this talk](https://www.youtube.com/watch?v=idViw4anA6E) by [Daniel Stenberg](https://daniel.haxx.se) was a perfect way to catch up. Thanks [Alaa](https://twitter.com/aldn00) for the tip!
+
+- Global variables in Swift are _lazy_—it’s [in the docs even](https://docs.swift.org/swift-book/LanguageGuide/Properties.html#ID263). I don’t know how I ended up with the assumption that they are eagerly evaluated (thanks [again](/microblog/post-1588533158735), [Kim](https://www.burgestrand.se)!).
+
+### This Week I Learned #7
+
+🗓️ _2020-05-24_
+
+- _Concern trolls_. I had never heard this expression before until I read about it in the context of US politics. It refers to a person who, in order to be accepted, pretends to agree with a group of people about a given topic, only to constantly seek to sow doubt and confusion among their ranks, disguising their ruse as “concerns”.
+
+- If there is something that can be exploited, you can rest assured that unscrupulous Web sites will exploit it. The [latest episode](https://nullsweep.com/why-is-this-website-port-scanning-me/) is port scanning through WebSockets. I didn’t even know this was possible, and I am kind of bummed that browsers keep encroaching more and more on operating system territory. I mean, who in their right mind wants a random Web site to control their device [vibration](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API)?
+
+- _[Boolean blindness](https://shreevatsa.wordpress.com/2015/01/31/boolean-blindness/)_ and why booleans are not always the right choice in the context of data modeling. Via Matt Diephouse’s [“You Might Not Want a Boolean”](https://matt.diephouse.com/2020/05/you-might-not-want-a-boolean/).
+
+### This Week I Learned #8
+
+🗓️ _2020-05-31_
+
+- The difference between input and output randomness in game design ([video](https://youtu.be/dwI5b-wRLic)). The gist of it that randomness that occurs _before_ a player action is referred to as _input_ randomness—a prominent example being procedural level generation—while randomness that occurs _after_ user action is called _output_ randomness, such as the case with loot boxes and success rates.
+
+- I’ve been using Markdown for years, but I never realized you could add image titles like this: `![Alt](/url/to/image.jpg "A title")`. Granted, I usually avoid using the title attribute for the reasons [outlined here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#The_title_attribute).
+
+- [Core Data](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html) became a lot easier to work with since the last time I used it, which was before `NSPersistentContainer` for those familiar with the framework. That said, it still feels clunky by today's standards—can we have the `Codable` of data persistence already?
+
+### This Week I Learned #9
+
+🗓️ 2020-06-07
+
+- The current chain of events unfolding across the US made me realize how much work still needs to be done in a country that prides itself on equality and justice. #BLM
+
+- _Tools for better thinking_ ([link](https://untools.co)). A nifty website with an assortment of techniques and frameworks to help with decision making and problem solving. The Dropbox Design blog [has more](https://dropbox.design/article/mental-models-for-designers) on some of these models.
+
+- _Circle packing_ ([Wikipedia](https://en.wikipedia.org/wiki/Circle_packing)). I was introduced to the concept of _packing density_ in business school as part of a product design and packaging workshop, but I never had the chance to take a look at the math behind it. Geometry is beautiful.
+
+- The UI on the [Crew Dragon](https://en.wikipedia.org/wiki/Dragon_2#Crew_Dragon) was built using Web technology running on Chromium, according to this [AMA](https://www.reddit.com/r/spacex/comments/gxb7j1/we_are_the_spacex_software_team_ask_us_anything/).
+
+- I’ve used Swift key paths here and there, but I never explored the lesser known parts of this API. This week I picked up `AnyKeyPath` and `PartialKeyPath<Root>` and used them for a server-side project I am working on ([link](https://klundberg.com/blog/swift-4-keypaths-and-you/)).
+
+- Android phones seem to be crashing when using a particular image as a wallpaper ([link](https://www.androidauthority.com/image-wallpaper-crash-soft-brick-1124505/)). According to [this Twitter thread](https://twitter.com/mishaalrahman/status/1267940360967327746), the issue happens during color space conversion, where [the formula](https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/packages/SystemUI/src/com/android/systemui/glwallpaper/ImageProcessHelper.java#47) used to create a pixel lightness matrix rounds the color values up, resulting in a RGB sum greater than 255. This in turn causes an out-of-bounds exception that keeps happening every time the system UI process restarts. As a side note, this formula is formally called sRGB Luma (Rec. 709). I’ve written more about it and other color lightness topics [here](https://thoughtbot.com/blog/closer-look-color-lightness).
+
+### This Week I Learned #10
+
+🗓️ _2020-06-14_
+
+- _Spontaneous cognition_ and how random thoughts emerge from the brain ([link](https://cognitiontoday.com/2020/06/spontaneous-cognition-mind-wandering-default-mode-network-daydreaming-random-thoughts/)).
+
+- [IPFS](https://ipfs.io), a peer-to-peer protocol powering a number of decentralized Internet projects. I knew about [Solid](https://solidproject.org) and [Dat](https://dat.foundation), but never heard about this one, which seems to be even more popular within the decentralized Web community according to [this survey](https://medium.com/fluence-network/decentralized-web-developer-report-2020-5b41a8d86789).
+
+- NGINX has now a preview release with HTTP/3 over QUIC support. The [announcement blog post](https://www.nginx.com/blog/introducing-technology-preview-nginx-support-for-quic-http-3/) has a good overview of the technology and how it’s different from its predecessors.
+
+- The `Fail` publisher in Swift Combine. Similar to its sibling `Just`, it competes immediately, but with a failure instead of a value—useful for testing and debugging the unhappy paths in your app ([link](https://heckj.github.io/swiftui-notes/#reference-fail)).
+
+- Writing tests is vital for maintaining a healthy, and functional, codebase. This is less of a revelation and more of a reminder: a test I wrote while debugging a database query issue helped me discover and fix two unrelated bugs.
+
+### This Week I Learned #11
+
+🗓️ _2020-06-21_
+
+- Why books—and other traditional methods of knowledge transmission—don’t always work ([link](https://andymatuschak.org/books/)). It is no coincidence that this essay resonated with me a great deal—learning is a topic that’s very near and dear to my heart. Most of the skills I use today to do my job are self-taught, and learning languages was and is still a big passion of mine. Andy expands on the idea that without additional [metacognitive](https://en.wikipedia.org/wiki/Metacognition) skills, reading books is insufficient to acquire knowledge and understanding due to the flawed _transmissionist_ model that they are implicitly based on. And come to think of it, this very experiment is a metacognitive tool that helps me remember the new concepts, ideas, and techniques that I learned.
+  - As an aside, I’ve had the pleasure to interact with Andy Matuschak, the author of this essay, when he used to work on UIKit at Apple. He was kind, helpful, and profusely generous with insider knowledge that helped me improve some of the articles I wrote on [thoughtbot’s blog](https://thoughtbot.com/blog/authors/reda-lemeden). I stumbled across his website this week and I am really looking forward to more of his work in the field of learning and cognition.
+
+- Speaking of reading, I picked up the latest work of [Shūzō Oshimi](https://en.wikipedia.org/wiki/Shūzō_Oshimi), <ruby>血<rt>ち</rt></ruby>の<ruby>轍<rt>わだち</rt></ruby> (chi-no-wadachi, Trail of Blood, 2017–ongoing), and I wasn’t disappointed. What starts out as a run-of-the-mill slice of life quickly spirals into an unsettling psychological thriller with some of the most nail-biting moments I've experienced in the format. If this sounds like something you would enjoy, give it a shot ([日本語](https://www.amazon.co.jp/血の轍-1-ビッグコミックス-押見-修造/dp/4091896235/), [English](https://www.penguinrandomhouse.com/books/616944/blood-on-the-tracks-volume-1-by-shuzo-oshimi/)).
+
+### This Week I Learned #12
+
+🗓️ _2020-06-30_
+
+All of the notes I’ve taken this week are related to WWDC 2020, Apple’s annual developer conference.
+
+### This Week I Learned #13
+
+🗓️ _2020-07-05_
+
+- I am a bit late to the [r/covidcookery](https://www.reddit.com/r/covidcookery/) party, but this weekend I baked my first cake ever! An okay-looking, totally edible pound cake. There’s definitely a lot of room for improvement, but the sense of achievement when I took it out of the oven and it wasn’t a complete mess is quite the feeling. Thanks [Alaa](https://twitter.com/aldn00) for the hands-on tips!
+
+- It took [quaternions](https://en.wikipedia.org/wiki/Quaternion) 150 years after their discovery by Williams Rowan Hamilton to find practical uses such as 3D computer graphics and robotics. Immediate applicability is never the primary goal of mathematical research ([article](https://www.nature.com/articles/475166a) via Hacker News).
+
+- [Gemini](https://gemini.circumlunar.space/) is a budding client-server protocol aiming to offer a bloat-free alternative to the HTTP Web. It uses a Markdown-inspired document format and completely forgoes client-side scripting and styling ([source](https://toffelblog.xyz/blog/gemini-overview/)).
+
+- I saw a PC ad on Japanese TV that ended with the _Intel Inside_ slogan:「インテル入ってる」(_interu-haitteru_). Pretty clever for a marketing localization, right? Well, as it turns out, the perfectly-rhyming Japanese slogan came first (!) and served as inspiration for the English version, according to Susumu Furukawa, the president of Microsoft Japan between 1986 and 1992 ([source](https://dic.nicovideo.jp/a/%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AB%E5%85%A5%E3%81%A3%E3%81%A6%E3%82%8B)).
+
+- I totally missed this initially, but it’s possible starting iOS 14 to customize the navigation bar title in SwiftUI ([link](https://sarunw.com/posts/custom-navigation-bar-title-view-in-swiftui/)).
+
+### This Week I Learned #14
+
+🗓️ _2020-07-13_
+
+- Lambertian surfaces and their photometric properties, through [this stunning interactive guide](https://ciechanow.ski/lights-and-shadows/) by Bartosz Ciechanowski.
+  - If you had asked me ten years ago about how Wikipedia or Wolfram Alpha would look in 2020, I’d have pictured something along the lines of Bartosz's work. Yet, we’re absolutely nowhere near that. One can't help but wonder if we have been focusing on the right things all these years.
+
+- I learnt quite a bit from [this exploratory piece](https://nshipster.com/as-we-may-code/) by Mattt about how core concepts from the [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web) can be used to make the code we write semantically richer, unlocking new authoring, distribution, and reuse possibilities in the process.
+
+- How the new `matchGeometryEffect` works in SwiftUI. This new API enables synchronizing view animations and transitions regardless of their place in the hierarchy. It’s quite powerful and will make some previously labor-intensive effects much easier to achieve ([link 1](https://iankeen.tech/2020/07/03/cross-view-animations-with-matchedgeometryeffect/), [link 2](https://swiftui-lab.com/matchedgeometryeffect-part1/)).
+
+### This Week I Learned #15
+
+🗓️ _2020-07-19_
+
+- Understanding any topic in greater depth requires honesty, integrity, and patience. Thinking hard about the problem space and seeking first-hand experience also yields far deeper understanding than contenting oneself with the syntheses of others ([link](https://nabeelqu.co/understanding)).
+
+- Beta invites to OpenAI’s [API](https://beta.openai.com), powered by the new <abbr title="Generative Pre-trained Transformer">GPT</abbr>-3 ([paper](https://arxiv.org/pdf/2005.14165.pdf)), are starting to go out and some of the demos are generating a lot of buzz at the moment. [This was the article](https://maraoz.com/2020/07/18/openai-gpt3/) that brought my attention to this.
+
+- How to properly use [services](https://docs.vapor.codes/4.0/services/) in Vapor 4. I am still not fond of the amount of work involved, but it’s an effective way to extend the built-in capabilities of the default types.
+
+- How to use `HTMLElement` to build a custom DOM element that encapsulates structure, styling, and interactions ([link](https://html.spec.whatwg.org/multipage/custom-elements.html)).
+
+- How the `isSource` and `properties` arguments in SwiftUI’s `matchedGeometryEffect` work ([link](https://swiftui-lab.com/matchedgeometryeffect-part2/)).
+
+### This Week I Learned #16
+
+🗓️ _2020-07-26_
+
+- This week I picked up [aws-sdk-swift](https://github.com/swift-aws/aws-sdk-swift) with the goal of integrating with [SES](https://aws.amazon.com/ses/), Amazon’s cloud email service. After some initial struggle figuring out which API version to use and how, I managed to send emails from a server-side Swift app I am currently working on.
+
+- Some valuable lessons about S3, AWS billing, and CDNs by Chris Short ([link](https://chrisshort.net/the-aws-bill-heard-around-the-world/)).
+
+- SwiftUI’s new [`Menu`](https://developer.apple.com/documentation/swiftui/menu) component is now available on iOS 14 as of Beta 3. I suspect contextual menus to gain more traction on iOS and I am happy to see them join a growing list of SwiftUI components.
+
+### This Week I Learned #17
+
+🗓️ _2020-08-03_
+
+- The [coastline paradox](https://en.wikipedia.org/wiki/Coastline_paradox) refers to the phenomenon where the fractal nature of coastlines causes their length estimates to vary widely depending on the scale of the ruler-used. This length tends towards infinity as the measurement unit gets smaller and smaller, going against the logical expectation when measuring a finite distance (via [Marc Edwards](https://twitter.com/marcedwards)).
+
+- The [proportionality bias](http://www.skepdic.com/proportionalitybias.html) refers to our tendency to assume that major events have major causes. While it’s often [cited](https://www.scientificamerican.com/article/why-do-some-people-believe-in-conspiracy-theories/) as a likely reason people believe in conspiracy theories, it’s also why programmers spend hours debugging a problem, probing every nook and cranny, only to find out that the cause is much more trivial than what was anticipated.
+
+- In 3D graphics software, namely Blender, a *shadow catcher- is a completely transparent material that “catches” and renders the shadows of other objects in the scene—useful when exporting 3D renders for further 2D composition and editing. When using the _Cycles_ renderer in Blender, this is as easy as ticking a checkbox. In EEVEE, Blender 2.8’s new rendering engine, it requires using a custom shader to obtain a similar effect.
+
+- I went trough the first half of the [Tour of Rust](https://tourofrust.com/57_en.html) guide with the intention of getting more familiar with its syntax and memory management APIs. Beside the relationship between _ownership_ and _mutability_, many of the concepts introduced in what I’ve seen so far felt quite similar to their Swift counterparts.
+
+### This Week I Learned #18
+
+🗓️ _2020-08-09_
+
+- [Polybius](https://en.wikipedia.org/wiki/Polybius_(urban_legend)) is an urban legend from the early 2000s around an arcade game experiment that was allegedly run in the 80s by the US government in Portland, Oregon. According to the legend, the  game was extremely addictive and caused several psychoactive effect on the players.   Shortly after its supposed release, it is said that all Polybius arcade machines have disappeared without a trace.
+  - Most of this sounds ludicrous, but it never hurts to indulge in an urban legend or two, _especially_ if it involves video games.
+
+- The [Zeigarnik Effect](https://lawsofux.com/zeigarnik-effect.html) refers to people's tendency to remember incomplete tasks better than successful ones (via [Laws of UX](https://lawsofux.com)). No wonder I have a constant sense of guilt over my abandoned side projects.
+
+- Writing both the client-side app and the server-side API in Swift has some pretty significant benefits. In addition to sharing a lot of business logic, this approach reduces the impact of context switching when developing a new end-to-end feature. Writing the entire stack in the same language, using the same IDE, in the same workspace is a godsend.
+
+### This Week I Learned #19
+
+🗓️ _2020-08-16_
+
+- [Esprit de l'escalier](https://en.wikipedia.org/wiki/L%27esprit_de_l%27escalier), "the staircase spirit", is a French expression used in English to describe the frequent occurrence of coming up with the perfect reply only after leaving the premises of the argument or debate.
+
+- What _connection pooling_ means in the context of server-side applications and how it's implemented and used in various Swift frameworks ([link](https://forums.swift.org/t/generic-connection-pool/39161)).
+
+- [Orthogonality](https://en.wikipedia.org/wiki/Orthogonality_%28programming%29) in programming refers to the ability to use a limited set of constructs in a limited number of combinations, where changing one part doesn't affect the others (via [this article](https://edgedb.com/blog/we-can-do-better-than-sql/)).
+
+- Speaking of orthogonality, or extreme lack thereof, the Web front-end ecosystem is as fragmented, poorly documented, and messy as ever. With every new wave of build tools, frameworks, and dependency managers comes an additional layer of compatibility issues and gotchas. Sometimes writing few extra lines of code for one less dependency isn't all that bad.
+
+### This Week I Learned #20
+
+🗓️ _2020-08-24_
+
+- How to use [mdx](https://mdxjs.com/) and [mdx-deck](https://github.com/jxnblk/mdx-deck) to create interactive slide decks. It’s essentially a mashup of Markdown and React that generates highly customizable HTML slides that can be deployed as is or exported as a PDF document. I usually scuff at the idea of using Web-based presentation tools, but this stack lends itself particularly well for the Web-dev related material I am currently working on.
+
+- I never paid close attention to how bitwise operations and bit shifting exactly work, but [this article](https://www.donnywals.com/understanding-swifts-optionset/) by Donny Wals prompted me to stop procrastinating and go over the official [Swift guide](https://docs.swift.org/swift-book/LanguageGuide/AdvancedOperators.html) on the topic.
+
+- I managed to use the new `redacted(reason:)` modifier in SwiftUI and remove the custom view I used for the purpose of displaying placeholders while the content loads. Happy to see utility APIs like these make their way to the framework.
+
+### This Week I Learned #21
+
+🗓️ _2020-08-31_
+
+- What _Write-Ahead Logging_ (WAL) in SQLite is a and how it can be used in the context of Core Data ([link](https://www.avanderlee.com/swift/write-ahead-logging-wal/)).
+
+- The _rule of least power_ is a programming principle that prescribes the use of the least powerful programming language capable of solving the problem at hand ([wikipedia](https://en.wikipedia.org/wiki/Rule_of_least_power)). In the same vein, the _principle of least privilege_ refers to the design principle where each abstraction layer in a computer program should only be able to access the resources it needs to do its job ([wikipedia](https://en.wikipedia.org/wiki/Principle_of_least_privilege)).
+
+### This Week I Learned #22
+
+🗓️ _2020-09-07_
+
+- I picked up several new Japanese expressions this week, but this one stood out to me: <ruby><rb>売</rb><rp>(</rp><rt>う</rt><rp>)</rp></ruby>り<ruby><rb>言葉</rb><rp>(</rp><rt>ことば</rt><rp>)</rp></ruby>に<ruby><rb>買</rb><rp>(</rp><rt>か</rt><rp>)</rp></ruby>い<ruby><rb>言葉</rb><rp>(</rp><rt>ことば</rt><rp>)</rp></ruby>. An English equivalent would be _tit for tat_. The origin of this expression is likely related to the expression <ruby><rb>喧嘩</rb><rp>(</rp><rt>けんか</rt><rp>)</rp></ruby>を<ruby><rb>売</rb><rp>(</rp><rt>う</rt><rp>)</rp></ruby>る, to _"sell"_ a fight, meaning to provoke it. In this transactional analogy, _"buying"_ the fight is analogous to retaliating.
+
+- A good refresher on password storage best practices: [We Didn't Encrypt Your Password, We Hashed It](https://www.troyhunt.com/we-didnt-encrypt-your-password-we-hashed-it-heres-what-that-means/). I knew about using salts (and [peppers](https://dropbox.tech/security/how-dropbox-securely-stores-your-passwords)!) to secure password storage, but I have yet to add these extra security measures to the server-side app I am currently working on.
+
+- I learned how to do SQL joins with their different flavors. I always procrastinated on learning SQL, for various reasons, but I got to a point where I had to choose between taking a step back and doing things right, or hacking my way through the feature I was working on without understanding the performance implications of the queries used.
+
+### This Week I Learned #23
+
+🗓️ _2020-09-15_
+
+- _Parochialism_  is a term used to describe situations where solutions to small, local problems come with no consideration of their effect on the whole ([wikipedia](https://en.wikipedia.org/wiki/Parochialism)).
+
+- Daiji (大字) are alternative kanji numerals used on bank notes in China and Japan to reduce the risk of forgery. This is necessary given that many everyday kanji numerals can be turned into other numerals with few additional strokes ([link](https://www.sljfaq.org/afaq/banknote-numbers.html)).
+
+- [Brenda Storer](https://brendastorer.com) reminded me of the `ch` unit in CSS and how it can be effectively used in type-centric layouts. Thanks Brenda!
+
+- I recently hit a wall with protocols in Swift; they can only be conformed to once, which presents a challenge in certain use cases. For instance, when creating reusable, model-agnostic views using protocols, every business logic model is limited to a single conformance. This constraint is problematic when the model can have more than one data mapping, depending on the context, screen, etc. To remedy this, I replaced protocols with value types, or "protocol witnesses", allowing me to create several data mappings between a given model and the view.
+
+### This Week I Learned #24
+
+🗓️ _2020-09-20_
+
+- [Moment.js](https://momentjs.com) is now in [maintenance mode](https://momentjs.com/docs/#/-project-status/). I have used it on several occasions in the past, without realizing that it has fallen out of favor as of late. I looked for an alternative to display relative dates on the [microblog](/microblog) page and settled up on the more lightweight [date-fns](https://date-fns.org).
+
+- This week I have been grappling with an annoying SwiftUI bug that only affects simulator builds. The stack trace isn’t of much help and no amount of view hierarchy tweaks got rid of it entirely. Initially I was under the impression that either my code or one of my external dependencies were doing something horribly wrong, but [this post](https://steipete.com/posts/state-of-swiftui/) from Peter Steinberger made me realize that it is a rather widespread issue. For the time being, I am commenting out the code branch that triggers the issue when running the app on the simulator.
+
+- I refreshed my knowledge on variable fonts in CSS and the considerations to make when working with them thanks to this wonderful [guest lecture](https://gist.github.com/ubuwaits/81bd4945c94ab905333a5ce686daca11) by [Chad Mazzola](https://chad.is). Hope my students enjoyed it as much as I did!
+
+### This Week I Learned #25
+
+🗓️ _2020-09-29_
+
+- The term _”bleeding edge”_ was first coined in the early 80s as a more extreme version of "cutting-edge" or "leading-edge" ([Source](https://www.contrast.app/posts/bleeding-edge-tech-means-youll-bleed-to-death)). You know that things are serious when blood is involved.
+
+- _Idempotence_ in the context of REST APIs refers to the ability to repeatedly call an endpoint without producing additional side effects on the server other than the ones produced by the first call ([Wikipedia](https://en.wikipedia.org/wiki/Idempotence), [link](https://restfulapi.net/idempotent-rest-apis/)). It’s typical for REST endpoints to be idempotent save for the ones using the `POST` HTTP method.
+
+### This Week I Learned #26
+
+🗓️ _2020-10-06_
+
+- Two concepts I learned about this week came straight from Ted Lasso, the Apple TV+ series. The first is the official name of the phenomenon where repeating a word enough causes it to temporarily lose its meaning: *semantic satiation- ([wiki](https://en.wikipedia.org/wiki/Semantic_satiation)). The second is the german word _Schadenfreude_, which means drawing pleasure from the pain that besets others. Coincidentally, it's also trending on Merriam-Webster for an entirely [different reason](https://www.merriam-webster.com/news-trend-watch/schadenfreude-20201002).
+
+- From reading One Piece I picked up a new Japanese expression: 臭いものに蓋 (_kusai-mono-ni-futa_). Its literal meaning is "to cover what stinks". Its figurative meaning is to look the other way or hush up a problem ([link](https://meaning.jp/posts/377)).
+
+- A _snowclone_ is an expression template where replacing one or two words produces an infinite number of variants. Example: _X is the new Y_. There is even [a website](https://snowclones.org) that tracks them!
+
+### This Week I Learned #27
+
+🗓️ _2020-10-13_
+
+- 尻拭い (_shiri-nugui_). The literal meaning is "ass-wiping", but the figurative meaning is to _clean up somebody’s else mess_.
+
+- 自業自得 (_jigou-jitoku_): Reap what you sow.
+
+- I have used SwiftUI’s `LazyVGrid` for the first time and I am quite pleased with the result. The API was easy to figure out, despite the lack of documentation, and the performance has been decent for my particular use case. I even managed to achieve an interesting visual effect by wrapping two lazy grids in a `ZStack`.
+
+- In UI programming, working with states other than the happy path represents at least two thirds of the work. In particular, the transitions between success, error, and loading states take an inordinate amount of time to get right.
+
+### This Week I Learned #28
+
+🗓️ _2020-10-20_
+
+- Prima facie, a Latin expression that means _on the first impression_ or _on the face of it_ ([wiki](https://en.wikipedia.org/wiki/Prima_facie), via [this article](https://daringfireball.net/2020/10/telegram_apple_belarus) on Daring Fireball).
+
+- This weekend I wrote a [tiny](https://github.com/kaishin/posse-server) Express.js app to use as a [POSSE](https://indieweb.org/POSSE) server for this website. After learning the hard way about the difference between [`CMD`](https://docs.docker.com/engine/reference/builder/#cmd) and [`RUN`](https://docs.docker.com/engine/reference/builder/#run) in a Dockerfile, I ran into an issue with my [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy) and Let's Encrypt setup on the <abbr title="Virtual Private Server">VPS</abbr>. After several hours of poking around, I found an outdated version of [this Docker image](https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion) to be the culprit, which will make me think twice before version-locking security dependencies like this one.
+
+- The assignment operator `:=` in Python is called the _walrus operator_ (via [this episode](https://www.youtube.com/watch?v=nWTvXbQHwWs) of the Lex Fridman podcast). Simply brilliant; I mean, look at it!
+
+### This Week I Learned #29
+
+🗓️ _2020-10-27_
+
+- In a typical [RTFM](https://en.wikipedia.org/wiki/RTFM) case, I just learned that [`localizedDescription`](https://developer.apple.com/documentation/swift/error/2292912-localizeddescription) was not defined in  `LocalizedError` like I've been incorrectly assuming.
+
+- To make up for that, I am now more familiar with the properties that come with the [`LocalizedError`](https://developer.apple.com/documentation/foundation/localizederror) protocol and how to use each to improve error handling in both server and client apps.
+
+- Speaking of errors, dealing with synchronous errors using `do`/`catch` _alongside_ asynchronous ones in [SwiftNIO](https://github.com/apple/swift-nio) requires taking some special API design considerations. It's easy to fall into the trap of writing code that can both throw and return futures, thus requiring two forms of incompatible error handling. One possible, and rather straightforward, solution is to turn synchronous throws into failed futures that can be easily used in an async pipeline.
+
+- I gave the official Mongo [driver](https://github.com/mongodb/mongo-swift-driver) for Swift a try and I am quite pleased with it. On the API-front, I have some quibbles with how it handles decoding errors for `Decodable` types, but I can live with those for now.
+  - I have mixed feelings about Mongo itself, but I appreciate not having to worry about schemas and migrations for every server app I am deploying. For certain micro-projects, the benefits of [NoSQL](https://en.wikipedia.org/wiki/NoSQL) far outweigh the drawbacks.
+
+### This Week I Learned #30
+
+🗓️ _2020-11-03_
+
+- <ruby><rb>是</rb><rp>(</rp><rt>ぜ</rt><rp>)</rp></ruby>が<ruby><rb>非</rb><rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>でも (_ze-ga-hi-demo_). To do something at any cost. No matter what. Similar to 是非とも. On its own, 是非 (_zehi_) refers to the pros (是) and cons (非) of something.
+
+- The _Streisand effect_ refers to the phenomenon that happens when the act of trying to hide or censor certain information ends up having the opposite effect of spreading it even further ([wiki](https://en.wikipedia.org/wiki/Streisand_effect)).
+
+- I needed to migrate a few lines of code from [CryptoKit](https://developer.apple.com/documentation/cryptokit) in a Mac app to [Swift Crypto](https://github.com/apple/swift-crypto) in a server-side service, and was pleasantly surprised when I realized that the two frameworks expose the same APIs, making for a hassle-free migration and a happy Swift developer.
+
+- Is it only me or executable Swift packages can't be tested in [SPM](https://swift.org/package-manager/) and Xcode? I haven’t tried in the CLI but I was getting all sorts of cryptic errors that only went away when I moved the code to a standalone library. I need to take a closer look into this to get a more complete understanding of what’s going on.
+
+- While trying to follow along the [Swift Concurrency Roadmap](https://forums.swift.org/t/swift-concurrency-roadmap/41611), I came across the concept of the [actor model](https://en.wikipedia.org/wiki/Actor_model) which, beside yielding some noteworthy image results in DuckDuckGo, seems to be a tried-and-true computation concurrency model that draws some inspiration from the laws of physics. I have a ton more reading to do to actually understand any of this, but I'm looking forward to that.
+
+### This Week I Learned #31
+
+🗓️ _2020-11-11_
+
+- [This tweet](https://twitter.com/settern/status/1325255449982115840) by Serenity Caldwell taught me a new word: _chiasmus_. It's a literary device in which two or more clauses use similar words but in a reversed structure. While reading about it, I also came across another similar concept, _antimetabole_, which seems to be similar but with a subtle difference that I can't quite wrap my head around ([link](https://www.wisegeek.com/what-is-the-difference-between-chiasmus-and-antimetabole.htm)).
+
+- Every developer comes across a time zone bug some time during their career; and it was my turn last week. While using Swift's Foundation, I forgot to set the `timezone` property on the formatter that parses a string into a date, which resulted in different dates in the client and server apps. The fix was quite straightforward:
+
+  ```swift
+  formatter.timeZone = TimeZone(identifier: "UTC")
+  ```
+
+- I finally decided to sit down and fix the myriad Core Data issues that plagued my iOS app. I learned a ton regarding some APIs that I wasn't familiar with, including `perform`/`performAndWait`([link](https://www.kairadiagne.com/2019/01/06/understanding-the-core-data-perform-methods.html)), background contexts, and batch deletions. I recommend checking out [Antoine's blog](https://www.avanderlee.com/category/core-data/) to learn more about some of these topics.
+
+### This Week I Learned #32
+
+🗓️ _2020-11-17_
+
+- I learned a good deal about integrating [Vapor](https://vapor.codes) apps with [MeiliSearch](https://www.meilisearch.com), a lightweight alternative to ElasticSearch written in Rust. The bulk of the work consisted in writing a NIO-compatible API wrapper for MeiliSearch, since the [official one](https://github.com/meilisearch/meilisearch-swift) wasn’t meant to be used in server environments. I briefly considered using ElasticSearch, but I like the sound of a more focused library with a smaller footprint.
+
+- GPT-2, the open-source predecessor to GPT-3, is perfectly capable of generating images when trained on pixel sequences ([paper](https://openai.com/blog/image-gpt/)). Here is [a project](https://github.com/MatthewRayfield/pokemon-gpt-2) that uses it to generate thousands of Pokémon-_like_ pixel illustrations. I am tempted to give this a go and see what fun applications I can come up with.

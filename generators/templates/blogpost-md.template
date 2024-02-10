@@ -1,7 +1,0 @@
----
-date: {{createdDate}}
-title: "{{title}}"
-category:
-audience: "{{audience}}"
-draft: true{{tags}}
----

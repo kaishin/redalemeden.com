@@ -1,0 +1,40 @@
+---
+---
+<nav class="md:row-start-2 md:col-start-1 self-start">
+  <hr class="mb-4 md:mb-16 mx-24 block h-px border-0 bg-stone-300 dark:bg-ash opacity-60">
+
+  <ul class="text-center">
+    <li class="navigation-link">
+      <a href="/work" class="sidebar-link">Work</a>
+    </li>
+    <li class="navigation-link">
+      <a href="/blog">
+        <span class="sidebar-link">Blog</span>
+        <small class="sidebar-sublink">Unredacted</small>
+      </a>
+    </li>
+    <li class="navigation-link">
+      <a href="/contact" class="sidebar-link">Contact</a>
+    </li>
+  </ul>
+
+  <hr class="md:hidden mb-12 mx-24 block h-px border-0 bg-stone-300 dark:bg-ash opacity-60">
+</nav>
+
+<style>
+  @tailwind utilities;
+
+  @layer utilities {
+    .sidebar-link {
+      @apply uppercase font-semibold tracking-widest text-xs md:text-sm;
+    }
+
+    .sidebar-sublink {
+      @apply hidden md:block uppercase font-light tracking-widest text-[.68em] text-stone-500 dark:text-ash;
+    }
+
+    .navigation-link {
+      @apply mb-4 md:mb-8 px-4 md:px-0 inline-block md:block  align-middle;
+    }
+  }
+</style>

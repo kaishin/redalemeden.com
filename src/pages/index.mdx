@@ -1,32 +1,34 @@
-import { Link, graphql } from 'gatsby';
-import ProjectList from '../components/project/project-list.js';
-import ArticleList from '../components/article-list.js';
-import Seo from '../components/seo';
-import Helmet from 'react-helmet';
-import ReactTooltip from 'react-tooltip';
-import AppleLogo from '../images/apple-logo.svg'
-import SwiftLogo from '../images/swift-logo.svg'
+---
+layout: "@layouts/NavigationLayout.astro"
+title: "Home"
+---
 
-import DefaultLayout from '../components/layouts/default.js';
+import ProjectGrid from "@components/ProjectGrid.astro"
 
-<Seo title="Reda Lemeden" />
-<Helmet bodyAttributes={{ class: 'home-page' }} />
+<h2 class="not-prose text-3xl font-bold mb-10">
+  Hi, my name is *Reda Lemeden*
+  <span class="block font-light text-2xl my-1 text-stone-400 dark:text-ash">
+  I design and make software, and sometimes I write about it
+  </span>
+</h2>
 
-<ReactTooltip type="light" textColor="var(--theme-foreground-color)" backgroundColor="var(--theme-body-background-color)"/>
+Before settling on mobile app development, I worked with graphic design, UI/UX design, web development, game design, and product management.
 
-<div data-tip="Hi, my name is Reda Lemeden." title="Hi, my name is Reda Lemeden.">
+My programming tools nowadays include Swift, SwiftUI, Astro.js, Deno.js, Vapor, Kotlin, and Jetpack Compose. For design, I use Sketch for 2D and Spline for 3D.
 
-### こんにちは, _mitt_ name _est_ Reda لمدن
+---
 
-</div>
+### Projects
 
-<div className="intro-content">
+Here are some of the recent projects I've worked on. For a full list, check out my resume or design portfolio.
 
-# I'm a software developer, designer, and tech writer based in Stockholm.
+<ProjectGrid />
 
-</div>
+---
 
-I spent two thirds of my life in my hometown of Casablanca <span title="Morocco">🇲🇦</span>,
+### Backstory
+
+I spent half of my life in my hometown of Casablanca <span title="Morocco">🇲🇦</span>,
 where I grew up playing <span title="Atari, DOS, Nintendo, etc.">video games 🎮</span> and
 tinkering with <span title="Macromedia, Adobe, etc.">creative software 🖌</span>.
 
@@ -36,90 +38,4 @@ then Nantes <span title="France">🇫🇷</span> to resume my post-graduate stud
 then Boston, MA <span title="USA">🇺🇸</span> to work as a product designer & developer,
 before finally settling in Stockholm <span title="Sweden">🇸🇪</span> in 2014. 
 
-Today I write software—and about software—for a living.
-I particularly enjoy working with **interaction** and **interface** design,
-**web** technologies, **app development** on Apple platforms, and more recently **server-side** Swift.
- 
-
-<section className="home-content">
-
-## Currently Working On
-
-<ProjectList projects={props.data.currentProjects.list} />
-
-## Recent Projects
-
-<ProjectList projects={props.data.recentProjects.list} />
-
-</section>
-
-export const pageQuery = graphql`
-  query Index {
-    site {
-      siteMetadata {
-        title
-        authorBio
-      }
-    }
-    currentProjects: allProjectsYaml(limit: 6, filter: {state: {in: ["current"]}}, sort: { fields: [year], order: DESC }) {
-      list: edges {
-        project: node {
-          ...ProjectDetails
-        }
-      }
-    }
-    recentProjects: allProjectsYaml(limit: 6, filter: {state: {in: ["recent"]}}, sort: { fields: [year], order: DESC }) {
-      list: edges {
-        project: node {
-          ...ProjectDetails
-        }
-      }
-    }
-    highlightedArticles: allArticlesYaml(
-      limit: 3
-      filter: { highlighted: { eq: true } }
-      sort: { fields: [published], order: DESC }
-    ) {
-      list: edges {
-        article: node {
-          title
-          url
-          outlet_name
-          formattedDate: published(formatString: "MMMM DD, YYYY")
-        }
-      }
-    }
-    recentArticles: allArticlesYaml(limit: 3, sort: { fields: [published], order: DESC }) {
-      list: edges {
-        article: node {
-          title
-          url
-          outlet_name
-          formattedDate: published(formatString: "MMMM DD, YYYY")
-        }
-      }
-    }
-    recentPodcasts: allPodcastsYaml(limit: 3, sort: { fields: [published], order: DESC }) {
-      list: edges {
-        podcast: node {
-          name
-          thumbnail {
-            name
-            extension
-            childImageSharp {
-              gatsbyImageData(width: 256, layout: CONSTRAINED)
-            }
-          }
-          url
-          description
-          episode
-          role
-          published
-          formattedPublishedDate: published(formatString: "MMMM DD, YYYY")
-        }
-      }
-    }
-  }
-`;
-
-export default DefaultLayout;
+These days I write software for a living. If you have any questions or just want to say hi, don't hesitate to get in touch!

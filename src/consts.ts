@@ -6,5 +6,4 @@ export const SITE_DESCRIPTION = 'Personal website of Reda Lemeden, an independen
 export const SITE_URL = 'https://redalemeden.com';
 export const SITE_AUTHOR = 'Reda Lemeden';
 export const SITE_AUTHOR_BIO = 'Developer, Designer, and Writer Based in Stockholm, Sweden.';
-export const SITE_EMAIL = 'hello@redalemeden.com';
 export const SITE_KEYWORDS = ['Reda', 'Lemeden', 'Kaishin', 'Designer', 'Programmer', 'Swift', 'Stockholm', 'KaishinLab'];

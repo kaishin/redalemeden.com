@@ -3,7 +3,6 @@ import ThemeSelect from "./ThemeSelect.astro";
 const today = new Date();
 
 import {
-  SITE_EMAIL,
   SITE_URL,
   SITE_AUTHOR,
   SITE_AUTHOR_BIO,
@@ -30,9 +29,6 @@ import {
       alt={SITE_AUTHOR}
     />
     <p class="p-note">{SITE_AUTHOR_BIO}</p>
-    <a class="u-email" href={'mailto:' + SITE_EMAIL}>
-      {SITE_EMAIL}
-    </a>
   </div>
   <span class="text-stone-400 dark:text-ash pb-6 block">
     <em>&copy;</em> 2009-{today.getFullYear()} Reda Lemeden

@@ -11,7 +11,7 @@
     "items": [
         {
             "id": "https://redalemeden.com/",
-            "content_html": "<p>The JSON feed is no longer maintained. Please use the <a href=\"https://redalemeden.com/feed.xml\">RSS feed</a> instead.</p>",
+            "content_html": "<p>The JSON version of the feed will no longer be maintained. Please use the <a href=\"https://redalemeden.com/feed.xml\">RSS feed</a> instead.</p>",
             "url": "https://redalemeden.com/feed.xml",
             "title": "JSON Feed Deprecation Notice",
             "date_modified": "2024-01-25T20:49:00.000Z",

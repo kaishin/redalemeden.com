@@ -43,5 +43,6 @@ export default defineConfig({
     "/microblog/5": "/experiments/microblog",
     "/microblog/6": "/experiments/microblog",
     "/frequent-typos": "/experiments/frequent-typos",
+    "/writing/chrome-no-more": "/blog/2019/we-need-chrome-no-more/",
   }
 });

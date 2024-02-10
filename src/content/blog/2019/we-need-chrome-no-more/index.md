@@ -5,6 +5,7 @@ keywords: ["Web", "Google", "Browsers", "Opinion"]
 tags:
   - Opinion
 audience: "This article was written for people interested in the open Web as a platform."
+image: chrome-no-more.jpg
 ---
 
 Ten years ago, we needed Google Chrome to break the Web free from corporate hegemony,

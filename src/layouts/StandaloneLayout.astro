@@ -2,39 +2,39 @@
 import Footer from "@components/Footer.astro";
 import BaseLayout from "./BaseLayout.astro";
 
-const {title, description, image} = Astro.props.frontmatter || Astro.props;
+const { title, description, image } = Astro.props.frontmatter || Astro.props;
 ---
 
 <BaseLayout title={title} description={description} image={image}>
-  <main class="mx-auto mt-32 p-5 max-w-screen-md">
-    <article class="
-      prose
-      max-w-none
+  <main class="mx-auto mt-32 max-w-screen-md p-5">
+    <article
+      class="prose
       prose-stone
+      mb-12
+      max-w-none
       dark:prose-slate
       dark:prose-invert
       lg:prose-lg
-      prose-inline-code:font-mono
-      prose-inline-code:px-2
-      prose-inline-code:py-1
+      prose-pre:bg-stone-200
+      prose-pre:font-mono
+      prose-inline-code:mx-1
       prose-inline-code:rounded-md
       prose-inline-code:bg-stone-200
-      prose-inline-code:dark:bg-slate-900
-      prose-inline-code:dark:text-ash
-      prose-inline-code:mx-1
+      prose-inline-code:px-2
+      prose-inline-code:py-1
+      prose-inline-code:font-mono
       prose-inline-code:before:content-none
       prose-inline-code:after:content-none
-      prose-pre:font-mono
-      prose-pre:bg-stone-200
       prose-pre:dark:bg-slate-900
       prose-pre:dark:text-ash
-      mb-12
-    ">
+      prose-inline-code:dark:bg-slate-900
+      prose-inline-code:dark:text-ash"
+    >
       <slot />
     </article>
   </main>
   <div class="mx-auto max-w-sm">
-    <hr class="border-ash-200 dark:border-slate-800 my-12" />
+    <hr class="border-ash-200 my-12 dark:border-slate-800" />
     <Footer />
   </div>
 </BaseLayout>

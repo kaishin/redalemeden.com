@@ -33,8 +33,8 @@ const { title, description, image } = Astro.props.frontmatter || Astro.props;
       <slot />
     </article>
   </main>
-  <div class="mx-auto max-w-sm">
+  <div class="mx-auto max-w-sm print:hidden">
     <hr class="border-ash-200 my-12 dark:border-slate-800" />
-    <Footer class="print:hidden" />
+    <Footer />
   </div>
 </BaseLayout>

@@ -39,17 +39,17 @@ do not maximize efficiency_.
 This may sound incompatible with the mantra that customization leads to more
 productivity, but not if you consider the following angles:
 
-* Most users are not aware of what works best for them. Their personalization
+- Most users are not aware of what works best for them. Their personalization
   choices are more often than not based on tastes and vague assumptions.
 
-* Learning the customization features and exploring all the possibilities before
+- Learning the customization features and exploring all the possibilities before
   making a choice will most likely distract users from the task at hand.
 
-* Customizable interfaces add an extra layer of complexity that may turn off
+- Customizable interfaces add an extra layer of complexity that may turn off
   less experienced users. For instance, complaints of "disappearing" toolbar
   buttons are not hard to come by in less computer-savvy circles.
 
-* The efficiency of customizable interfaces may be difficult to assess using
+- The efficiency of customizable interfaces may be difficult to assess using
   quantitative methods.
 
 In some particular circumstances, giving users control over some elements of the
@@ -66,7 +66,7 @@ application developers fail to realize that even the slightest level of
 customization can undermine their selling point. Distraction slowly creeps in
 when users are given the ability to customize fonts, colors, and backgrounds.
 
-The recently released iA Writer for Mac trod the path of *zero customizability*
+The recently released iA Writer for Mac trod the path of _zero customizability_
 in a bold move that goes against this trend. Unsurprisingly, it takes only a
 couple of minutes on iA Writer to realize that the lack of customization is
 nowhere near detrimental to efficiency. From typography to colors, everything

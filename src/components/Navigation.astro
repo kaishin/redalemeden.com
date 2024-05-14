@@ -1,7 +1,11 @@
 ---
+
 ---
-<nav class="md:row-start-2 md:col-start-1 self-start">
-  <hr class="mb-4 md:mb-16 mx-24 block h-px border-0 bg-stone-300 dark:bg-ash opacity-60">
+
+<nav class="self-start md:col-start-1 md:row-start-2">
+  <hr
+    class="mx-24 mb-4 block h-px border-0 bg-stone-300 opacity-60 dark:bg-ash md:mb-16"
+  />
 
   <ul class="text-center">
     <li class="navigation-link">
@@ -18,7 +22,9 @@
     </li>
   </ul>
 
-  <hr class="md:hidden mb-12 mx-24 block h-px border-0 bg-stone-300 dark:bg-ash opacity-60">
+  <hr
+    class="mx-24 mb-12 block h-px border-0 bg-stone-300 opacity-60 dark:bg-ash md:hidden"
+  />
 </nav>
 
 <style>
@@ -26,15 +32,15 @@
 
   @layer utilities {
     .sidebar-link {
-      @apply uppercase font-semibold tracking-widest text-xs md:text-sm;
+      @apply text-xs font-semibold uppercase tracking-widest md:text-sm;
     }
 
     .sidebar-sublink {
-      @apply hidden md:block uppercase font-light tracking-widest text-[.68em] text-stone-500 dark:text-ash;
+      @apply hidden text-[.68em] font-light uppercase tracking-widest text-stone-500 dark:text-ash md:block;
     }
 
     .navigation-link {
-      @apply mb-4 md:mb-8 px-4 md:px-0 inline-block md:block  align-middle;
+      @apply mb-4 inline-block px-4 align-middle md:mb-8 md:block  md:px-0;
     }
   }
 </style>

@@ -1,6 +1,7 @@
 ---
 import "@fontsource-variable/inter";
-import {SITE_TITLE, SITE_DESCRIPTION} from "@consts";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@consts";
+import "./src/styles/global.css";
 
 interface Props {
   title?: string;
@@ -11,9 +12,9 @@ interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 let {
-  title = SITE_TITLE, 
-  description = SITE_DESCRIPTION, 
-  image = "/social-cards/default.jpg"
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+  image = "/social-cards/default.jpg",
 } = Astro.props;
 
 if (title != SITE_TITLE) {
@@ -21,7 +22,7 @@ if (title != SITE_TITLE) {
 }
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -31,12 +32,20 @@ if (title != SITE_TITLE) {
     />
 
     <!-- SEO -->
-    <meta name="robots" content="noodp, noydir">
-    <meta name="keywords" content="Reda, Lemeden, Kaishin, Indie, Designer, Programmer, Swift, Stockholm">
+    <meta name="robots" content="noodp, noydir" />
+    <meta
+      name="keywords"
+      content="Reda, Lemeden, Kaishin, Indie, Designer, Programmer, Swift, Stockholm"
+    />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="/feed.xml"
+    />
 
     <!-- Icons -->
     <link
@@ -69,7 +78,7 @@ if (title != SITE_TITLE) {
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    
+
     <!-- Additional Meta Tags -->
     <slot name="head" />
 
@@ -90,20 +99,23 @@ if (title != SITE_TITLE) {
     <!-- Dark Mode -->
     <script is:inline>
       if (
-        localStorage.theme === 'dark' 
-        || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
-        document.documentElement.classList.add('dark')
+        document.documentElement.classList.add("dark");
       } else {
-        document.documentElement.classList.remove('dark')
+        document.documentElement.classList.remove("dark");
       }
     </script>
 
     <!-- GoatCounter -->
-    <script data-goatcounter="https://4rays.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script
+      data-goatcounter="https://4rays.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"></script>
   </head>
   <body class="bg-cream dark:bg-asphalt dark:text-white">
     <slot />
   </body>
 </html>
-

@@ -33,7 +33,7 @@ know quite a lot of them!—but in practice it means I can start with plain
 markdown and add inline interactive bits and pieces whenever I need to, without
 having to rewrite the entire page in HTML first.
 
-Let’s start by adding the *mdsvex* dependency. It might sound like an
+Let’s start by adding the _mdsvex_ dependency. It might sound like an
 antibiotic, but you can add it just like any other `npm` library!
 
 ```sh
@@ -48,6 +48,7 @@ Next, I created a new markdown file in `routes`, and called it `about.md`:
 
 ```md
 # About
+
 This is my personal blog made using Svelte and SvelteKit.
 ```
 
@@ -86,10 +87,10 @@ Visiting the `/about` page in the browser produced no error this time...but no
 HTML either. The page shows `# About This is my personal blog made using Svelte
 and SvelteKit.` as plain text. What gives?
 
-*Few minutes later*...
+_Few minutes later_...
 
 Sparing you the painful details this time around, I realized that adding
-`mdsvex` as a *processor* was required for the markdown to be properly parsed.
+`mdsvex` as a _processor_ was required for the markdown to be properly parsed.
 To do that I had to import it at the top of the config file:
 
 ```js
@@ -119,7 +120,7 @@ ends up generating a stand-alone page. You can read more about SvelteKit routing
 [here](https://kit.svelte.dev/docs#routing).
 
 Since this is not strict markdown, we can have some fun! For instance we can add
-styles that only apply to the *about* page.
+styles that only apply to the _about_ page.
 
 ```md
 # About

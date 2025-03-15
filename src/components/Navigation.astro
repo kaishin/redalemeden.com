@@ -28,19 +28,18 @@ import "../styles/global.css";
 </nav>
 
 <style>
-  /* @tailwind utilities;
+  @import "tailwindcss";
+  @plugin "@tailwindcss/typography";
 
-  @layer utilities {
-    .sidebar-link {
-      @apply text-xs font-semibold tracking-widest uppercase md:text-sm;
-    }
+  @utility sidebar-link {
+    @apply text-xs font-semibold tracking-widest uppercase md:text-sm;
+  }
 
-    .sidebar-sublink {
-      @apply dark:text-ash hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block;
-    }
+  /* @utility sidebar-sublink {
+    @apply dark:text-ash hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block;
+  }
 
-    .navigation-link {
-      @apply mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0;
-    }
+  @utility navigation-link {
+    @apply mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0;
   } */
 </style>

@@ -4,36 +4,21 @@ import Footer from "@components/Footer.astro";
 import Navigation from "@components/Navigation.astro";
 import BaseLayout from "./BaseLayout.astro";
 
-const {title, description, image} = Astro.props.frontmatter || Astro.props;
+const { title, description, image } = Astro.props.frontmatter || Astro.props;
 ---
 
 <BaseLayout title={title} description={description} image={image}>
-  <div class="md:grid md:grid-cols-main md:grid-rows-main my-0 mx-auto min-h-screen max-w-7xl">
+  <div
+    class="md:grid-cols-main md:grid-rows-main mx-auto my-0 min-h-screen max-w-7xl md:grid"
+  >
     <Header />
     <Navigation />
-    <main class="md:row-start-2 md:col-start-2 md:row-end-4 px-6 pb-12 md:px-24">
-      <article class="
-        prose
-        prose-stone
-        dark:prose-slate
-        dark:prose-invert
-        lg:prose-lg
-        prose-inline-code:font-mono
-        prose-inline-code:px-2
-        prose-inline-code:py-1
-        prose-inline-code:rounded-md
-        prose-inline-code:bg-stone-200
-        prose-inline-code:dark:bg-slate-900
-        prose-inline-code:dark:text-ash
-        prose-inline-code:mx-1
-        prose-inline-code:before:content-none
-        prose-inline-code:after:content-none
-        prose-pre:font-mono
-        prose-pre:bg-stone-200
-        prose-pre:dark:bg-slate-900
-        prose-pre:dark:text-ash
-        mb-12 md:mb-48
-      ">
+    <main
+      class="px-6 pb-12 md:col-start-2 md:row-start-2 md:row-end-4 md:px-24"
+    >
+      <article
+        class="prose prose-stone dark:prose-slate dark:prose-invert lg:prose-lg prose-inline-code:font-mono prose-inline-code:px-2 prose-inline-code:py-1 prose-inline-code:rounded-md prose-inline-code:bg-stone-200 prose-inline-code:dark:bg-slate-900 prose-inline-code:dark:text-ash prose-inline-code:mx-1 prose-inline-code:before:content-none prose-inline-code:after:content-none prose-pre:font-mono prose-pre:bg-stone-200 prose-pre:dark:bg-slate-900 prose-pre:dark:text-ash mb-12 md:mb-48"
+      >
         <slot />
       </article>
     </main>

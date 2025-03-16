@@ -1,5 +1,5 @@
 {
-  "name": "redalemeden-2023",
+  "name": "redalemeden.com",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,23 +10,23 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.6.0",
-    "@astrojs/mdx": "^3.0.0",
-    "@astrojs/rss": "^4.0.5",
-    "@astrojs/sitemap": "^3.1.4",
-    "@astrojs/tailwind": "^5.1.0",
-    "@fontsource-variable/inter": "^5.0.18",
-    "@tailwindcss/typography": "^0.5.13",
-    "astro": "^4.8.3",
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/mdx": "^4.2.0",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.2.1",
+    "@fontsource-variable/inter": "^5.2.5",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.0.14",
+    "astro": "^5.5.2",
     "markdown-it": "^14.1.0",
-    "sanitize-html": "^2.13.0",
-    "sharp": "^0.33.3",
-    "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.5"
+    "sanitize-html": "^2.14.0",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^4.0.14",
+    "typescript": "^5.8.2"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.13.0",
-    "prettier-plugin-tailwindcss": "^0.5.14"
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.11"
   }
 }

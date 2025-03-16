@@ -32,6 +32,5 @@ export async function GET(context) {
         <link>https://redalemeden.com</link>
       </image>
     `,
-    stylesheet: "/rss.xsl",
   });
 }

@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --grid-template-columns-main: 22rem 1fr;
+  --grid-template-columns-projects: repeat(auto-fill, minmax(14rem, 1fr));
+  --grid-template-rows-main: auto 1fr auto;
+  --color-cream: #fffbf5;
+  --color-asphalt: #191f2d;
+  --color-banana: #ffd080;
+  --color-amethyst: #4a20ac;
+  --color-ash: #7b94ce;
+  --font-sans: "Inter Variable", "Inter", sans-serif;
+}
+
+@custom-variant prose-inline-code (&.prose :where(:not(pre)>code):not(:where([class~="not-prose"] *)));

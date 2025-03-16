@@ -4,43 +4,38 @@
 
 <nav class="self-start md:col-start-1 md:row-start-2">
   <hr
-    class="mx-24 mb-4 block h-px border-0 bg-stone-300 opacity-60 dark:bg-ash md:mb-16"
+    class="dark:bg-ash mx-24 mb-4 block h-px border-0 bg-stone-300 opacity-60 md:mb-16"
   />
 
   <ul class="text-center">
-    <li class="navigation-link">
-      <a href="/work" class="sidebar-link">Work</a>
+    <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
+      <a
+        href="/work"
+        class="text-xs font-semibold tracking-widest uppercase md:text-sm"
+        >Work</a
+      >
     </li>
-    <li class="navigation-link">
+    <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
       <a href="/blog">
-        <span class="sidebar-link">Blog</span>
-        <small class="sidebar-sublink">Unredacted</small>
+        <span class="text-xs font-semibold tracking-widest uppercase md:text-sm"
+          >Blog</span
+        >
+        <small
+          class="dark:text-ash hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block"
+          >Unredacted</small
+        >
       </a>
     </li>
-    <li class="navigation-link">
-      <a href="/contact" class="sidebar-link">Contact</a>
+    <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
+      <a
+        href="/contact"
+        class="text-xs font-semibold tracking-widest uppercase md:text-sm"
+        >Contact</a
+      >
     </li>
   </ul>
 
   <hr
-    class="mx-24 mb-12 block h-px border-0 bg-stone-300 opacity-60 dark:bg-ash md:hidden"
+    class="dark:bg-ash mx-24 mb-12 block h-px border-0 bg-stone-300 opacity-60 md:hidden"
   />
 </nav>
-
-<style>
-  @tailwind utilities;
-
-  @layer utilities {
-    .sidebar-link {
-      @apply text-xs font-semibold uppercase tracking-widest md:text-sm;
-    }
-
-    .sidebar-sublink {
-      @apply hidden text-[.68em] font-light uppercase tracking-widest text-stone-500 dark:text-ash md:block;
-    }
-
-    .navigation-link {
-      @apply mb-4 inline-block px-4 align-middle md:mb-8 md:block  md:px-0;
-    }
-  }
-</style>

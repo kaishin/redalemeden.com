@@ -22,14 +22,14 @@ const posts = (await getCollection("blog")).sort(
         <li class="mb-10">
           <a href={`/blog/${post.slug}`}>
             <h3 class="max-w-prose text-2xl font-medium">{post.data.title}</h3>
-            <p class="mt-1 text-sm font-semibold uppercase leading-normal tracking-wider text-purple-500 dark:text-banana">
+            <p class="dark:text-banana mt-1 text-sm leading-normal font-semibold tracking-wider text-purple-500 uppercase">
               <FormattedDate date={post.data.pubDate} />
             </p>
             {post.data.tags && post.data.tags.length > 0 && (
               <ul class="mt-2 list-none">
                 {post.data.tags.map((tag: string) => (
                   <li class="mr-2 inline-block">
-                    <span class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium uppercase tracking-wider text-stone-800 dark:bg-slate-800 dark:text-slate-400">
+                    <span class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium tracking-wider text-stone-800 uppercase dark:bg-slate-800 dark:text-slate-400">
                       {tag}
                     </span>
                   </li>

@@ -1,0 +1,27 @@
+---
+description: TypeScript, React, and Astro coding standards and formatting rules
+globs: src/**/*.{ts,tsx,astro},.prettierrc
+alwaysApply: true
+---
+# Code Style Guidelines
+
+## TypeScript
+
+- Use TypeScript for all new code
+- Strict mode is enabled
+- Follow the existing type definitions
+
+## Formatting
+
+- Prettier is configured in [.prettierrc](mdc:.prettierrc)
+- Use 2 spaces for indentation
+- Semicolons are required
+- Single quotes for strings
+- Trailing commas in multi-line structures
+
+## Components
+
+- Use `.astro` for Astro components
+- Use `.tsx` for React components
+- Keep components focused and single-purpose
+- Props should be typed explicitly

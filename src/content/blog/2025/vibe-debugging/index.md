@@ -10,7 +10,7 @@ tags:
 
 I'm pretty sure that at this point you've heard about _vibe coding_. There's a
 lot being said about the topic in the dev community, both from people who
-hail it as the panacea of coding, and those who insist it's a tad of horse
+hail it as the panacea of coding, and those who insist it's a tad bit of horse
 manure, if you pardon my French.
 
 The unfortunate part is that black and white thinking has hogged the
@@ -26,7 +26,7 @@ human problem-solving and can help find even the most obscure of bugs.
 I recently found myself looking at a chat message duplication bug in the Circle
 iOS app. The reported issue proved quite difficult to reproduce consistently,
 likely due to a hard-to-track race condition sporadically taking place somewhere
-in the codebase. These kind of issues are notoriously hard to pinpoint since
+in the codebase. These kinds of issues are notoriously hard to pinpoint since
 they can materialize in seemingly unrelated parts of the program. After spending
 an afternoon sprinkling semi-random `print` statements in the hope of finding
 any inconsistencies, I surrendered to our AI overlords.
@@ -36,7 +36,7 @@ any inconsistencies, I surrendered to our AI overlords.
 One thing I found extremely helpful and time-saving is establishing proper
 context from the outset by explaining the issue and providing some additional
 hints either directly or via markdown files documenting the project's structure
-and coding style preferences. It might help to use dictation program if you find
+and coding style preferences. It might help to use a dictation program if you find
 yourself typing a lot to explain the issue (I use Wispr Flow).
 
 This initial investment helps the agent keep the suggestions relevant and
@@ -51,13 +51,13 @@ approaches.
 ## Step 2: Debugging
 
 Complex bugs rarely yield to frontal assaults. Instead of asking for a
-comprehensive solution from the get-go, I often try to decompose the debugging process into
-discrete steps—especially for non-thinking models. I start by asking the
-model to add some `print` statements (or `console.log` for you JavaScript heads)
-in specific files or folders. If the feature is well documented, I found equal
-success with leaving the model decide where these should be added. I almost
-never tell the model what to log exactly, as most models nowadays are good
-enough to figure that out on their own.
+comprehensive solution from the get-go, I often try to decompose the debugging
+process into discrete steps—especially for non-thinking models. I start by
+asking the model to add some `print` statements (or `console.log` for you
+JavaScript heads) in specific files or folders. If the feature is well
+documented, I found equal success with leaving the model to decide where these
+should be added. I almost never tell the model what to log exactly, as most
+models nowadays are good enough to figure that out on their own.
 
 ```swift
 func handleMessage(_ message: Message) {
@@ -102,5 +102,5 @@ escaped the developer.
 Human engineering judgment remains irreplaceable, at least as of this writing.
 The tasks of evaluating suggestions, testing theories systematically, and making
 architectural decisions still require human expertise. But coding agents are
-here to stay and we better learn how to work with them by being specific,
+here to stay and we'd better learn how to work with them by being specific,
 providing relevant context, and guiding their focus to get the best results.

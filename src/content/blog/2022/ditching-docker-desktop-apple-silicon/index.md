@@ -13,11 +13,11 @@ image: docker-whale.jpg
 When I got my first M1 MacBook Pro last year and started setting it up, I
  decided to not bring over Docker Desktop. For starters, the dashboard UI is
  wonky and had always put me off whenever I used it. Performance was nothing to
-write home about either. But the straw that broke the camel back so to speak was
-the licensing changes that denoted a clear shift in the company’s focus and
+write home about either. But the straw that broke the camel's back, so to speak, was
+the licensing changes that denoted a clear shift in the company's focus and
 target audience.
 
-Docker Desktop is collection of tools bundled in a single app: Engine, CLI,
+Docker Desktop is a collection of tools bundled in a single app: Engine, CLI,
 Compose, Build, Content Trust, Scan, Kubernetes, and Credential Helper. Lucky
 for me, my use case is relatively simple—I mostly rely on Docker to run half a
 dozen databases locally. This means that I only need a subset of features that

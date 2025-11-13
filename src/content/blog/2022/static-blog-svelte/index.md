@@ -8,7 +8,7 @@ tags:
 ---
 
 For the first post of 2022, let's build a static site using Svelte. I previously
-shared my [first impressions](https://redalemeden.com/blog/2021/picking-up-svelte) picking up
+shared my [first impressions](https://redalemeden.com/blog/2021/picking-up-svelte) of picking up
 SvelteKit. Since then, I managed to get closer to a workable static site setup,
 and today I'd like to share some of my learnings.
 
@@ -60,7 +60,7 @@ Error: Parse failure: Unexpected token (1:0)
 Contents of line 1: # About
 ```
 
-That’s because I don’t read documentation. Ok I usually do, but the `mdsvex`
+That's because I don't read documentation. Ok, I usually do, but the `mdsvex`
 website had no mention of `SvelteKit`. This kind of puzzle piece matching in the
 front-end tooling ecosystem is pervasive, and some things never change.
 

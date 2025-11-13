@@ -75,8 +75,8 @@ The sessions below are listed in the order I have watched them:
   much easier.
 
 - [Meet Shortcuts for macOS](https://developer.apple.com/wwdc21/10232) I am
-  really impressed but the amount of work that went into introducing Shortcuts
-  for macOS.It even comes with a <abbr title="Command Line Interface">CLI</abbr>
+  really impressed by the amount of work that went into introducing Shortcuts
+  for macOS. It even comes with a <abbr title="Command Line Interface">CLI</abbr>
   for more integration flexibility.
 
 - [Host and automate your DocC

@@ -52,7 +52,7 @@ referencing previous chats (both Cursor and Windsurf do), use that to avoid
 having to start the conversation from scratch when trying other models or
 approaches.
 
-While working on my message duplication bug, I laid down the issue
+While working on my message duplication bug, I laid out the issue
 and attached the screenshot from the bug report, in case there are any revealing
 details I missed. The project was already documented using Cursor rules, so all
 I had to do was to attach a couple of relevant ones to the chat.

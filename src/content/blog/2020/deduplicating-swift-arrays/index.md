@@ -56,8 +56,8 @@ struct Game: Codable, Hashable {
 }
 
 /*
-  The API reponse returns a list of non-unique games separated.
-  by release date, but for this view we only want a single instance.
+  The API response returns a list of non-unique games separated
+  by release date, but for this view we only want a single instance
   of each game.
 */
 

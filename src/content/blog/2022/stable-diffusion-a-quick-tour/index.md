@@ -28,7 +28,7 @@ classroom](./3313248937.png) _"A photo of a panda sitting in a primary school
 classroom"_
 
 The model managed to capture the meaning of the prompt and even nailed the focus
-blur for that perfect photograph feel. The fascinating part, is that even small
+blur for that perfect photograph feel. The fascinating part is that even small
 variations in the prompt or the parameters produce widely different results. For
 instance, consider the following prompt-output combination.
 
@@ -37,11 +37,11 @@ classroom"_ ![A generated image of a painting by Katsushika Hokusai of a panda
 sitting in a primary school classroom](./3345077563.png) _"A painting by
 Katsushika Hokusai of a panda sitting in a primary school classroom"_
 
-Not only the model recognized and reproduced the style of the famous Japanese
+Not only did the model recognize and reproduce the style of the famous Japanese
 artist, but it managed to do so while capturing the historical context by
 eliminating all modern details from the image. If we try with a completely
-different prompt that purposefully include words like “cyberpunk” and
-“futuristic”, it still does its best to stay faithful to the aesthetics of the
+different prompt that purposefully includes words like "cyberpunk" and
+"futuristic", it still does its best to stay faithful to the aesthetics of the
 [Ukiyo-e](https://en.wikipedia.org/wiki/Ukiyo-e) art form.
 
 _"A painting by Katsushika Hokusai of a cyberpunk futuristic city"_ ![A
@@ -107,12 +107,12 @@ necessary. Anatomy in general seems to be a hit or miss. Another shortcoming is
 the often-incorrect interpretation of relations between various objects and
 actors in the prompt.
 
-That being said, It’s been only a couple of weeks, and these early limitations
-are already in the radar of the Stability Ai team and the community.
+That being said, it's been only a couple of weeks, and these early limitations
+are already on the radar of the Stability Ai team and the community.
 
 The other aspect to consider is the ethical one. Using text-to-image to
 replicate the style of living artists without their permission is not only
-possible but on the way to become the norm. The model also is as biased as the
+possible but on the way to become the norm. The model is also as biased as the
 data it was trained on. The good news is that SD can be retrained by anyone
 invested enough on more curated datasets to minimize these issues.
 
@@ -167,6 +167,6 @@ of a cucumber, renaissance style_
 
 [^1]: The others were far less coherent, but that’s par for the course in these
     kind of models.
-[^2]: The model works best with Nvidia GPUs, but can work with AMD of even
-    Apple’s M1 chips. At least 6Gb of VRAM is needed to generate images of 512px
+[^2]: The model works best with Nvidia GPUs, but can work with AMD or even
+    Apple's M1 chips. At least 6Gb of VRAM is needed to generate images of 512px
     by 512px.

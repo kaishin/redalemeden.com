@@ -35,7 +35,7 @@ almost confident that BBedit would fit the bill. Alas, the intrusive toolbar,
 the nebulous syntax highlighting, and the poor support for CSS preprocessors
 left me disappointed.
 
-The only options I was left with was to wade through an unhealthy number of
+The only option I was left with was to wade through an unhealthy number of
 Textmate 2 wannabes. Some came out of the lot, such as Sublime Text, while many
 others were too unstable for doing any serious work. What they all seemed to
 have in common was a noticeable lack of third party extensions and community

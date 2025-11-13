@@ -24,7 +24,7 @@ One of the main selling points of Svelte is how it does away with the virtual
 DOM approach popularized by *React.js*. Instead, the framework generates vanilla
 JavaScript during build time, which in turn directly manipulates the DOM as the
 application state changes on the client. This means that your production code
-will be depedency-free and will have a smaller resource footprint as a result.
+will be dependency-free and will have a smaller resource footprint as a result.
 
 I previously hadn't considered Svelte for static site generation, but
 [SvelteKit](https://kit.svelte.dev/docs) changed that. SvelteKit is the official

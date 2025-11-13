@@ -18,6 +18,6 @@ experience.
 
 In the end, I decided to move the old content from `kaishinlab.com` to this blog
 and set up redirects when necessary---a prime example of the freedom you unlock
-when you have control over you data.
+when you have control over your data.
 
 It feels good to be back.

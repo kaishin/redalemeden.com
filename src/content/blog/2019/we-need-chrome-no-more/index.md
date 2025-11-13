@@ -35,7 +35,7 @@ sprawling platform that spares no area of modern computing.
 While the Chrome browser itself is not open-source, most of its innards are. Chromium, the non-proprietary
 subset of Chrome, was open-sourced early on with a generously permissive license as a sign of commitment to
 the open Web community. As a full-featured browser, Chromium became widely popular among Linux users. As an
-open-source project, it has gained a large following in the open-source ecosystem, often used as a the
+open-source project, it has gained a large following in the open-source ecosystem, often used as the
 foundation of other browsers and applications.
 
 Both Chrome and Chromium run Blink under the hood, the rendering engine that started as a WebKit fork in

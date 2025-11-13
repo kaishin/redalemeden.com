@@ -31,7 +31,7 @@ On top of that, I started the process of migrating older essays and entries to
 this blog, setting up permanent redirects when necessary. The RSS feed has moved
 to a [new URL](/feed.xml) and is now also available as a [JSON Feed](/feed.json).
 
-Beside these changes, the website itself got a much needed facelift. The new
+Besides these changes, the website itself got a much needed facelift. The new
 design uses a more vivid color palette with an increased focus on contrast. It
 also introduces a unified type system across all pages of the site; something
 that was hard to achieve when three font families were in simultaneous use. As a

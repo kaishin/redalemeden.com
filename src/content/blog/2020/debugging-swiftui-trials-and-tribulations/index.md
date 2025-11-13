@@ -1,7 +1,7 @@
 ---
 pubDate: Oct 30 2020
 title: "Debugging SwiftUI: Trials and Tribulations"
-audience: people interested SwiftUI or UI programming in general
+audience: people interested in SwiftUI or UI programming in general
 tags:
   - Programming
 ---
@@ -101,7 +101,7 @@ It’s a bittersweet feeling when you fix a bug in a non-deterministic, haphazar
 way. On one hand you are elated you’ve managed to fix it at all. On the other,
 you feel somewhat powerless and insecure about your ability to handle similar
 situations in the future. I adore SwiftUI, but moments like these give me a good
-dose of anticipatory anxiety—the kind that erodes trust and dampen the thrill of
+dose of anticipatory anxiety—the kind that erodes trust and dampens the thrill of
 being at the bleeding edge.
 
 [^1]: As an aside, apps that greet users with a sign up screen are generally

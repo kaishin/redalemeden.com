@@ -21,7 +21,7 @@ and republished here under a [CC BY-NC-SA 3.0](https://creativecommons.org/licen
 ---
 
 Humanity has been contemptuously used by vast digital empires. Thus it is now
-necessary to replace these empires with decentralized networks on f independent
+necessary to replace these empires with decentralized networks of independent
 individuals, as in the first decades of the Internet. As our participation has
 been voluntary, no one doubts our right to take this step. But if we are to
 persuade as many people as possible to join together and make reformed networks

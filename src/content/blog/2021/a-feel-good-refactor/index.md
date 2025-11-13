@@ -17,7 +17,7 @@ to improve the API at the call site. And while we're at it, we can make it
 easier to remember by using a similar syntax to handle both success and failure
 scenarios.
 
-Since the goal here to create a type-erased publisher that emits either a value
+Since the goal here is to create a type-erased publisher that emits either a value
 or an error then completes, we can call the helper _"once"_. As for the
 implementation, we have a couple of options: define a static function on
 `Publisher`, or create a custom `Publisher` type. Since the latter would still

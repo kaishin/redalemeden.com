@@ -22,11 +22,11 @@ of using the language for general purpose programming.
 
 As a Website maintainer, finding a static site generator that works exactly the
 way you want is no small feat. I used a handful in the past 10 years, across
-personal  and client projects, and I still haven’t found _the one_. Plugins and
+personal and client projects, and I still haven't found _the one_. Plugins and
 extensions do help, but there will always be a set of assumptions that are not
 true for every project.
 
-> But the beauty of open source is exactly that, so I  forked it  and fixed my
+> But the beauty of open source is exactly that, so I forked it and fixed my
 > two biggest issues.
 
 If you’re going to use a static site generator, use one written in a language

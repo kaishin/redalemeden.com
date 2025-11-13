@@ -36,7 +36,7 @@ Here are some highlights:
 * I am currently not going to consider architecture and data flow projects,
   full-fledged apps, and playgrounds. This might change in the future.
 * The website supports dark mode. A manual toggle will be added down the line.
-* Currently the website is in english only. I will consider localizing it to
+* Currently the website is in English only. I will consider localizing it to
   other languages if there is enough user and contributor interest.
 
 Hope you have a pleasant experience using SwiftUI Directory and don’t hesitate

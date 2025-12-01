@@ -3,6 +3,7 @@ pubDate: Nov 06 2019
 title: "Inset Grouped Lists in SwiftUI"
 tags:
   - Programming
+isArchived: true
 ---
 
 When SwiftUI shipped earlier this fall, it didn't provide any APIs to use the

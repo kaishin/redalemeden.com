@@ -3,6 +3,7 @@ pubDate: Sep 28 2019
 title: "Update About Nope & Syndicate"
 tags:
   - Announcement
+isArchived: true
 ---
 
 [![Nope & Syndicate](@images/microblog/image-1569611662504.jpg)](@images/microblog/image-1569611662504.jpg)

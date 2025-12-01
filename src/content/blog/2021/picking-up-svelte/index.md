@@ -6,6 +6,7 @@ audience: "Web and front-end developers or people interested in the topic"
 tags:
   - Guide
   - Web
+isArchived: true
 ---
 
 In this latest installment of my static site generation escapades, I will pick

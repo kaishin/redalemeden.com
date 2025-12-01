@@ -4,6 +4,7 @@ title: "Rethinking Google+ for iOS"
 tags:
   - Design
   - Mobile
+isArchived: true
 ---
 
 As of this writing, Google seems to be the only company that can challenge

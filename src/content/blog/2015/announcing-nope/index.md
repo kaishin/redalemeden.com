@@ -5,6 +5,7 @@ tags:
   - macOS
   - Announcement
 audience: "people interested in content blockers and privacy"
+isArchived: true
 ---
 
 ![Nope Icon](./nope-safari-icon.jpg)

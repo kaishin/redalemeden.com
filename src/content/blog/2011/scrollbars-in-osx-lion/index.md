@@ -6,6 +6,7 @@ tags:
   - Opinion
   - Apple
   - macOS
+isArchived: true
 ---
 
 Since the release of OS X Lion last July, the appearance and usability of the

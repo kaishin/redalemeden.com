@@ -5,6 +5,7 @@ audience: "my future self. Apple platform developers"
 tags:
   - Programming
   - Notes
+isArchived: true
 ---
 
 Instead of doing live reactions this year, I opted to jot down some notes during

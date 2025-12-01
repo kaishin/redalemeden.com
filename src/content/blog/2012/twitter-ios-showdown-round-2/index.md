@@ -5,6 +5,7 @@ tags:
   - HCI
   - Mobile
 audience: "anyone interested in interaction design heuristics"
+isArchived: true
 ---
 
 It has been almost a year since the [original showdown](/blog/2011/twitter-ios-showdown)

@@ -4,6 +4,7 @@ title: "Using Key Paths for Deduplicating Swift Arrays"
 tags:
   - Programming
   - Tips
+isArchived: true
 ---
 
 Today I needed to remove redundant elements from a Swift array based on the

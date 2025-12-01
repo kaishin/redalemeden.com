@@ -6,6 +6,7 @@ tags:
   - Guide
   - macOS
 image: docker-whale.jpg
+isArchived: true
 ---
 
 ![Whale](./header-image.jpg)

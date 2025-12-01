@@ -5,6 +5,7 @@ audience: "Web and front-end developers or people interested in the topic"
 tags:
   - Guide
   - Web
+isArchived: true
 ---
 
 For the first post of 2022, let's build a static site using Svelte. I previously

@@ -4,6 +4,7 @@ title: "Announcing IPinator"
 tags:
   - Announcement
 audience: "people who have been following my macOS-related work"
+isArchived: true
 ---
 
 I'm pleased to announce that [IPinator](http://ipinator.kaishin.co) is *finally*

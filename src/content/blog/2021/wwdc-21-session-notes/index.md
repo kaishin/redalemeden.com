@@ -5,6 +5,7 @@ audience: "my future self. Apple platform developers"
 tags:
   - Programming
   - Notes
+isArchived: true
 ---
 
 WWDC is finally here! Since I won't manage to post daily notes this year, I

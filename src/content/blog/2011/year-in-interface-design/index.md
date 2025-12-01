@@ -3,6 +3,7 @@ pubDate: Dec 31 2011
 title: "2011: A Year in Interface Design"
 tags:
   - Design
+isArchived: true
 ---
 
 This is a summary of what happened in the world of interface and interaction

@@ -5,7 +5,7 @@ import FormattedDate from "@components/FormattedDate.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, pubDate, updatedDate } = Astro.props;
+const { title, pubDate, updatedDate, isArchived } = Astro.props;
 ---
 
 <NavigationLayout>
@@ -23,5 +23,14 @@ const { title, pubDate, updatedDate } = Astro.props;
     <h1>{title}</h1>
     <hr />
   </div>
+  {
+    isArchived && (
+      <div class="mb-8 rounded-lg border-l-4 border-yellow-500 bg-yellow-100 px-4 py-1 dark:bg-yellow-900/20 dark:border-yellow-600">
+        <p class="text-sm font-medium text-yellow-800 dark:text-yellow-200">
+          This post has been <strong>archived</strong>. Some or all of the information below may no longer be relevant or correct.
+        </p>
+      </div>
+    )
+  }
   <slot />
 </NavigationLayout>

@@ -6,6 +6,7 @@ tags:
   - HCI
   - Mobile
   - Research
+isArchived: true
 ---
 
 In the thick of the controversy surrounding Twitter's new third party
@@ -27,35 +28,35 @@ tap._
 Before starting this exercise, let's go over some of the concepts that will be
 used throughout the article:
 
-* _An interaction_ is any point of contact between the user and the interface,
+- _An interaction_ is any point of contact between the user and the interface,
   such as a tap or a swipe. Each interaction is assigned a value based on the
   time required to execute it. For the sake of simplicity, a _single tap_ is
   given a nominal value of `1` and used as a base unit for other interactions.
 
-* _A task_ is any set of actions sharing the same end goal. There may be one or
+- _A task_ is any set of actions sharing the same end goal. There may be one or
   more set of interactions to carry out the same task. The time required to
   achieve a given task is considered to be equal to the sum of the individual
   values of each interaction involved. The lower the sum, the more efficient the
   interface.
 
-* Unless stated otherwise, typing time was zeroed out.
+- Unless stated otherwise, typing time was zeroed out.
 
-* When two or more methods of achieving a given task are possible, only the most
+- When two or more methods of achieving a given task are possible, only the most
   efficient one is used in the comparison. The impact on the overall workflow is
   also taken into account.
 
-* Only the default behavior of the triple tap is taken into consideration for
+- Only the default behavior of the triple tap is taken into consideration for
   Tweetbot.
 
 The values assigned to each interaction are as follows:
 
-| Interaction | Value
-|-|:-:|
-| Tap | 1
-| Double tap | 1.5 |
-| Swipe | 1.5 |
-| Triple tap | 2 |
-| Long tap | 2 |
+| Interaction | Value |
+| ----------- | :---: |
+| Tap         |   1   |
+| Double tap  |  1.5  |
+| Swipe       |  1.5  |
+| Triple tap  |   2   |
+| Long tap    |   2   |
 
 Thinking time was assigned a value of `0.5`, and will be referred to as MOP
 (multi-option prompt) in the tests. To keep things simple, the number of options
@@ -66,13 +67,13 @@ was not taken into account, nor was the habit factor.
 We'll start by having a look at how efficiently the two clients handle basic
 tasks such as tweeting and replying:
 
-| Task | Tweetbot | Twitter
-|-|:-:|:-:|
-| Send a Tweet&sup1;  | 2 | 2 |
-| Reply&sup1; &sup2;   | 3 | 4 |
-| Retweet (native) | 4 | 4.5 |
-| Send a new DM&sup3; | 6.5 | 5.5 |
-| Open a link | 1.5 | 2 |
+| Task                | Tweetbot | Twitter |
+| ------------------- | :------: | :-----: |
+| Send a Tweet&sup1;  |    2     |    2    |
+| Reply&sup1; &sup2;  |    3     |    4    |
+| Retweet (native)    |    4     |   4.5   |
+| Send a new DM&sup3; |   6.5    |   5.5   |
+| Open a link         |   1.5    |    2    |
 
 1. No hashtags or @ signs.
 2. No other users mentioned in the original tweet
@@ -91,13 +92,13 @@ less cumbersome.
 
 Let's now spice up the comparison with some hashtags and @ mentions:
 
-| Task | Tweetbot | Twitter
-|-|:-:|:-:|
-| Compose a tweet with # and @ | 7 | 4 |
-| Compose a tweet with 3 # and 2 @ | 15 | 7 |
-| View conversations&sup1; | 1.5 | 2 |
-| Reply all (<abbr title="Multi-Mention Tweet">MMT</abbr>)&sup2; | 4.5 | 5 |
-| Reply single (<abbr title="Multi-Mention Tweet">MMT</abbr>)&sup2; | 4.5 | 4 |
+| Task                                                              | Tweetbot | Twitter |
+| ----------------------------------------------------------------- | :------: | :-----: |
+| Compose a tweet with # and @                                      |    7     |    4    |
+| Compose a tweet with 3 # and 2 @                                  |    15    |    7    |
+| View conversations&sup1;                                          |   1.5    |    2    |
+| Reply all (<abbr title="Multi-Mention Tweet">MMT</abbr>)&sup2;    |   4.5    |    5    |
+| Reply single (<abbr title="Multi-Mention Tweet">MMT</abbr>)&sup2; |   4.5    |    4    |
 
 1. Where the user takes part
 2. Multi-mention tweet
@@ -115,14 +116,14 @@ Twitter's less intrusive solution gives it the upper hand.
 
 Now for the less frequent tasks:
 
-| Task | Tweetbot | Twitter
-|-|:-:|:-:|
-| Follow / Unfollow | 3.5 | 5 |
-| Report a user |5 | 8 |
-| Translate a tweet | 4.5 | 5 |
-| Favorite a tweet | 2.5 | 3 |
-| Delete a tweet | 3.5 | 4 |
-| Switch time-lines | 2.5 | 3 |
+| Task              | Tweetbot | Twitter |
+| ----------------- | :------: | :-----: |
+| Follow / Unfollow |   3.5    |    5    |
+| Report a user     |    5     |    8    |
+| Translate a tweet |   4.5    |    5    |
+| Favorite a tweet  |   2.5    |    3    |
+| Delete a tweet    |   3.5    |    4    |
+| Switch time-lines |   2.5    |    3    |
 
 **Outcome:** Tweetbot wins.
 
@@ -133,9 +134,9 @@ godsend.
 
 ### Results
 
-| Task | Tweetbot | Twitter
-|-|:-:|:-:|
-| Total | 71 | 68 |
+| Task  | Tweetbot | Twitter |
+| ----- | :------: | :-----: |
+| Total |    71    |   68    |
 
 The relatively awkward, albeit native, method of keying hashtags and @ mentions
 in Tweetbot skews the results in favor of Twitter for iPhone. If it wasn't for
@@ -156,15 +157,15 @@ occasional tweet, reply, or DM, we spend most of the time on Twitter wading
 through hundreds of tweets and swapping accounts and lists. Few Twitter clients
 address these areas as elegantly as Tweetbot does:
 
-* The number of new tweets (since the last refresh) is displayed in a
+- The number of new tweets (since the last refresh) is displayed in a
   unobtrusive blue bar in the timeline. This may seem gimmicky at first, but it
   turns out to be a huge time saver for timeline completionists.
 
-* Single swiping a tweet displays related tweets in a dedicated conversation
+- Single swiping a tweet displays related tweets in a dedicated conversation
   view, even if the user is not taking part in them. There seems to be no way to
   do that in the official client.
 
-* Even though the visual style may not appeal to everyone, it provides a good
+- Even though the visual style may not appeal to everyone, it provides a good
   balance of contrast between content and chrome.
 
 For a 1.0 release, Tweetbot is doing a remarkable job, especially when

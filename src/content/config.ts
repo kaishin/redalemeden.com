@@ -17,6 +17,7 @@ const blog = defineCollection({
       .optional()
       .transform((str) => (str ? new Date(str) : undefined)),
     image: z.string().optional(),
+    isArchived: z.boolean().optional().default(false),
   }),
 });
 

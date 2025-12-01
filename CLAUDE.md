@@ -76,3 +76,7 @@ npm run astro check
 - All new code should be TypeScript
 - Component props must be explicitly typed
 - Follow existing type patterns in the codebase
+
+## Development
+
+- Always update TODO.md before and after working on any given task that isn't a small typo or quick fix.

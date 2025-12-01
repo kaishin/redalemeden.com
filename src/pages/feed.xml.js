@@ -14,6 +14,7 @@ export async function GET(context) {
     description: SITE_DESCRIPTION,
     site: context.site,
     items: posts
+      .filter((post) => !post.data.isArchived)
       .sort((a, b) => {
         return new Date(b.data.pubDate) - new Date(a.data.pubDate);
       })

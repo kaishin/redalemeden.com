@@ -7,16 +7,43 @@
     <img
       src="/author-photo.jpg"
       alt="Reda Lemeden"
-      class="mask-sakigake mx-auto w-32 brightness-75 dark:brightness-100 dark:invert"
+      class="mask-sakigake mx-auto w-32 brightness-75 dark:brightness-100"
     />
     <h1 class="text-l pb-1 font-bold tracking-[.18em] uppercase">
       Reda Lemeden
     </h1>
-    <p class="dark:text-ash px-8 text-sm tracking-wide text-stone-400 italic">
-      Indie Developer & Designer
+    <p class="dark:text-ash px-8 text-xs tracking-wide text-stone-400 italic">
+      <span id="subtitle"></span>
+      <noscript>Indie Software Developer</noscript>
     </p>
   </a>
 </header>
+
+<script>
+  const subtitles = [
+    "Software Developer",
+    "Pixel Counter",
+    "Gamer Dad",
+    "Prompt Mage",
+    "Lifelong Learner",
+    "開発の何でも屋",
+  ];
+
+  const subtitleElement = document.getElementById("subtitle");
+
+  if (subtitleElement) {
+    // Get two different random subtitles
+    const firstIndex = Math.floor(Math.random() * subtitles.length);
+    let secondIndex = Math.floor(Math.random() * subtitles.length);
+
+    // Ensure we don't pick the same subtitle twice
+    while (secondIndex === firstIndex) {
+      secondIndex = Math.floor(Math.random() * subtitles.length);
+    }
+
+    subtitleElement.textContent = `${subtitles[firstIndex]} & ${subtitles[secondIndex]}`;
+  }
+</script>
 
 <style>
   .mask-sakigake {

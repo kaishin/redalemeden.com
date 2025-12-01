@@ -10,7 +10,7 @@ I haven't updated this blog since I joined thoughtbot in 2012. This was due to a
 combination of not having the time to do proper research outside working hours
 and finding [better](https://robots.thoughtbot.com) [venues](http://www.smashingmagazine.com/) for technical writing.
 
-Given how tiny my blog audience got over the last three years, I considered
+Given how much my audience shrank over the last three years, I considered
 moving to Medium as a way to grow my readership though social connections. But
 that idea didn't last long; no amount of perks can convince me to write on a
 closed platform where I can't affect neither the writing nor the reading

@@ -5,14 +5,11 @@ import NavigationLayout from "@layouts/NavigationLayout.astro";
 <NavigationLayout>
   <h2>Get in Touch</h2>
   <p>
-    Do you have some feedback or just want to say hi? Use the form below to get
-    in touch. I will do my best to reply within a reasonable timeframe.
+    Do you have some feedback or just want to say hi? If you're a human email me
+    at hello@ and the website domain. If you're a robot, use the form below to
+    "get in touch". I will do my best to reply within a reasonable timeframe.
   </p>
-  <form
-    name="contact"
-    method="POST"
-    action="https://usebasin.com/f/7ca7e53b4b0d"
-  >
+  <form name="contact">
     <input type="hidden" name="form-name" value="contact" />
     <fieldset>
       <label class="mb-2 block">
@@ -44,18 +41,7 @@ import NavigationLayout from "@layouts/NavigationLayout.astro";
     </fieldset>
     <button
       type="submit"
-      class="pressed:scale-90
-      rounded-3xl
-      bg-amethyst
-      px-6
-      py-2
-      text-white
-      transition
-      duration-150 ease-in-out hover:animate-pulse
-      hover:bg-blue-700
-      active:scale-90
-      dark:bg-banana
-      dark:text-asphalt"
+      class="pressed:scale-90 bg-amethyst dark:bg-banana dark:text-asphalt rounded-3xl px-6 py-2 text-white transition duration-150 ease-in-out hover:animate-pulse hover:bg-blue-700 active:scale-90"
       >Send</button
     >
   </form>

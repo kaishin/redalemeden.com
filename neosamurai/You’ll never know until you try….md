@@ -1,0 +1,10 @@
+# You’ll never know until you try…
+#website/neosamurai
+
+WEDNESDAY, OCTOBER 11, 2006
+
+… is what 当たって砕けよ , “ATATTE KUDAKE YO” when romanized, conveys in Japanese. Literally meaning “To hit/strike then break (it)”, which insinuates that if nothing is ventured, the “it” that risks to be broken in the Kotowaza, then nothing can be gained, thus it is always advisable to try before making any quick conclusions.
+
+I apologize by the same occasion for the lack of updates. I have resumed classes and I am working on some projects. I have also started contributing on  [Japundit ](https://web.archive.org/web/20061107172015/http://www.japundit.com/) since last week, and has written four posts so far, the latest being a short entry about the  [Sengoku Village put on sale on Rakuten](https://web.archive.org/web/20061107172015/http://japundit.com/archives/2006/10/11/3800/) . I highly advise anyone who doesn’t have enough time to browse the web for Japan-related news to check Japundit as well as the weekly podcast show  [Japantalk](https://web.archive.org/web/20061107172015/http://www.japantalk.org/) . I’d like also to notify all of you who are interested in learning Japanese that Japan Probe has put up a complete list of youtube links for the Japanese learning program  [Let’s Learn Japanese.](https://web.archive.org/web/20061107172015/http://www.japanprobe.com/?p=589)  I am uploading the program textbooks with the complete transcripts, lessons and exercises in PDF format (I don’t know about their copyright status, so please notify me if this violates any), [ click here ](https://web.archive.org/web/20061107172015/http://www.oxyshare.com/get/963397463452e949cbd0210.74708773/Lets%20Learn%20Japanese%20Basic%20I%20and%20II.zip.html) to download them.
+
+POSTED BY KAISHIN AT  [8:04 PM](https://web.archive.org/web/20061107172015/http://neosamurai.blogspot.com/2006/10/youll-never-know-until-you-try.html) 

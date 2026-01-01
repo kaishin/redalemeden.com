@@ -27,9 +27,7 @@ French dictionaries took a different approach. The Petit Robert 2026 showcased
 both borrowed and invented terms. "Prompter"
 entered the language as a verb for prompting AI systems. Quebec contributed
 "hypertrucage" as an alternative to "deepfake," alongside "clonage de voix"
-(voice cloning) and "apprentissage profond" (deep learning). France's approach
-balances linguistic pride with technological necessity—creating French
-equivalents while acknowledging AI's English-language dominance.
+(voice cloning) and "apprentissage profond" (deep learning).
 
 Japan's buzzwords focused less on the technology itself and more on human
 interaction with it. ChatGPT became "チャッピー" (Chappii), an affectionate

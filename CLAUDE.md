@@ -89,6 +89,27 @@ npm run astro check
 - Include all required metadata
 - Use consistent frontmatter structure
 
+### Blog Post Tags
+
+Available tags for blog posts (choose the most appropriate):
+
+- **Programming** - Technical posts about coding, languages, frameworks
+- **Design** - UI/UX, visual design, interface topics
+- **Opinion** - Editorial pieces, commentary, personal perspectives
+- **Journal** - Personal reflections, life updates, year-in-review posts
+- **Guide** - How-to articles, tutorials, walkthroughs
+- **Announcement** - Product launches, project releases
+- **Productivity** - Workflow tips, tools, efficiency
+- **Web** - Web standards, browsers, web development
+- **HCI** - Human-computer interaction topics
+- **Apple** - Apple platforms, technologies, ecosystem
+- **Linklog** - Link posts with commentary
+- **Privacy** - Privacy-related topics
+- **Learning** - Educational content, learning experiences
+- **Tips** - Quick tips and tricks
+- **Swift** - Swift programming language
+- **macOS** - macOS-specific content
+
 ### Markdown Best Practices
 
 - Always leave an empty line below headings

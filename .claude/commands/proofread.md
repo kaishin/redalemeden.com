@@ -5,12 +5,17 @@ allowed-tools: Read, Edit
 
 # Proofread Blog Post
 
-Review the provided blog post content and fix:
+First, check if there is a currently opened file in the IDE. If there is, use
+that file for proofreading without asking the user. If no file is open, ask the
+user which file to proofread.
+
+Review the blog post content and fix:
 
 - Typos and spelling errors
 - Grammar and punctuation issues
 - Awkward phrasing or unclear sentences
 - Inconsistent formatting
+- Title capitalization (use AP style: capitalize all major words)
 
 Make edits directly to improve clarity and correctness while preserving the
 author's voice and intent.

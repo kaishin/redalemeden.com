@@ -93,6 +93,7 @@ npm run astro check
 
 Available tags for blog posts (choose the most appropriate):
 
+- **AI** - Artificial intelligence, machine learning, LLMs
 - **Programming** - Technical posts about coding, languages, frameworks
 - **Design** - UI/UX, visual design, interface topics
 - **Opinion** - Editorial pieces, commentary, personal perspectives
@@ -109,6 +110,7 @@ Available tags for blog posts (choose the most appropriate):
 - **Tips** - Quick tips and tricks
 - **Swift** - Swift programming language
 - **macOS** - macOS-specific content
+- **Language** - Linguistics, translation, language evolution
 
 ### Markdown Best Practices
 

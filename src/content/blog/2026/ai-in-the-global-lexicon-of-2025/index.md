@@ -3,8 +3,8 @@ title: "AI in the Global Lexicon of 2025"
 description: "From 'slop' to 'Chappii,' how AI terminology became universal across languages and cultures in 2025."
 audience: ""
 tags:
-  - Opinion
-  - Journal
+  - AI
+  - Language
 pubDate: 2026-01-01
 ---
 

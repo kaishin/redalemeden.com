@@ -1,6 +1,6 @@
 ---
 title: "The Kappa"
-pubDate: "2006-11-25"
+pubDate: Nov 25 2006
 tags: ["neosamurai"]
 isArchived: true
 ---

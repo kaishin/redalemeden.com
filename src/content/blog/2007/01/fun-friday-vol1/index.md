@@ -1,6 +1,6 @@
 ---
 title: "Death Note × The Simpsons"
-pubDate: "2007-01-13"
+pubDate: Jan 13 2007
 tags: ["neosamurai"]
 isArchived: true
 ---

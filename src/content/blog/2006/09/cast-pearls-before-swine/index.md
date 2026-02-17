@@ -1,6 +1,6 @@
 ---
 title: "Neko ni Koban"
-pubDate: "2006-09-29"
+pubDate: Sep 29 2006
 tags: ["neosamurai"]
 isArchived: true
 ---

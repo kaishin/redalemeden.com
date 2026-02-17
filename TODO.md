@@ -15,43 +15,48 @@ Track migration in batches of 12 posts. For each post:
 
 ### Writing Cleanup Recipe
 
-Apply these transformations to make writing more mature and deliberate:
+Clean up the original writing, but keep the author's voice.
+The goal is editing, not rewriting.
 
-**Remove rambling/casual language:**
+**Do:**
 
-- Cut phrases like "as you might be wondering," "well I guess," "truth is," "only god knows"
-- Remove apologetic language: "I went into the trouble of," "I couldn't help but"
-- Eliminate uncertain phrasing: "…ahem…", "!!!", multiple exclamation marks
-- Remove self-conscious asides and excessive commentary
+- Fix grammar, spelling, and typos
+- Break up run-on sentences
+- Remove filler and hedging ("luckily enough",
+  "almost impossible", "as you might be wondering")
+- Remove self-conscious asides and excessive punctuation
+  (!!!, …ahem…)
+- Tighten verbose passages into clearer statements
+- Make titles descriptive and direct (no clickbait ellipses)
 
-**Tighten structure:**
+**Don't:**
 
-- Get straight to the point—no meandering intros
-- Remove redundant explanations (e.g., don't explain what you're about to explain)
-- Condense verbose descriptions into concise statements
-- Cut tangential information that doesn't serve the main point
-
-**Improve titles:**
-
-- Make titles descriptive and direct
-- Avoid clickbait-style titles with ellipses or excessive punctuation
-- Use clear, professional language
+- Rewrite from scratch in a different voice
+- Add punchy openers ("Picture this:", "Here's the thing:")
+- Use triple-beat rhetorical structures
+  ("look twice, think harder, question everything")
+- Over-explain why the subject is interesting—let the
+  author's interest speak for itself
+- Inject vocabulary the author wouldn't use
+  ("weaponizing", "audacious visual collision")
+- Turn casual observations into dramatic statements
 
 **Preserve:**
 
-- Personal voice and opinions (keep "I" statements where they matter)
-- Important content like lyrics, lists, quotes, or technical details
-- Links and attributions
-- Cultural/historical context that adds value
+- The author's framing and narrative arc (e.g., "I had two
+  topics and found something that connects them")
+- Personal voice, first-person perspective, genuine enthusiasm
+- The author's own descriptions and characterizations
+- Specific terms and phrases from the original (e.g.,
+  "sarcastic disharmony" as the artist's concept,
+  not a clever aside)
+- Links, attributions, and cultural/historical context
+- The overall tone: someone writing a blog post,
+  not a magazine article
 
-**Examples:**
-
-- Before: "Even though I am not really into the Japanese Pop scene, I stumble from time to time upon..."
-- After: "While browsing [source], I stumbled upon..."
-- Before: "Can you read Japanese? You'd better spare your time and stop reading..."
-- After: "If you can read Japanese and own a Nintendo DS..."
-- Before: "I went into the trouble of checking the history of the page and got this wonderful description"
-- After: "I checked the page history and found some highlights"
+**In short:** if the original says something well enough,
+keep it. Clean up the rough edges,
+don't sand away the fingerprints.
 
 ### Batch 1 (Posts 1-12) ✅ COMPLETED
 

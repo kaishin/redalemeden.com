@@ -1,6 +1,6 @@
 ---
 title: "Furusato"
-pubDate: "2006-05-19"
+pubDate: May 19 2006
 tags: ["neosamurai"]
 isArchived: true
 ---

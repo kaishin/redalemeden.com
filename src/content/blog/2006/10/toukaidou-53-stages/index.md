@@ -1,6 +1,6 @@
 ---
 title: "The 53 Stages of the Toukaidou"
-pubDate: "2006-10-05"
+pubDate: Oct 05 2006
 tags: ["neosamurai"]
 isArchived: true
 ---

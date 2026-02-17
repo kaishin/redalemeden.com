@@ -1,6 +1,6 @@
 ---
 title: "12 Educational DS Games in Japanese"
-pubDate: "2006-12-21"
+pubDate: Dec 21 2006
 tags: ["neosamurai"]
 isArchived: true
 ---

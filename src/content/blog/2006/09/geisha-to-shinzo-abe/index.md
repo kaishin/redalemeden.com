@@ -1,6 +1,6 @@
 ---
 title: "Geisha, Firefox, and Rising Nationalism"
-pubDate: "2006-09-03"
+pubDate: Sep 03 2006
 tags: ["neosamurai"]
 isArchived: true
 ---

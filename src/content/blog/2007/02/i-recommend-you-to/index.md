@@ -1,6 +1,6 @@
 ---
 title: "Links and Recommendations"
-pubDate: "2007-02-27"
+pubDate: Feb 27 2007
 tags: ["neosamurai"]
 isArchived: true
 ---

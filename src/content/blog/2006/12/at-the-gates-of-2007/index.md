@@ -1,6 +1,6 @@
 ---
 title: "At the Gates of 2007"
-pubDate: "2006-12-30"
+pubDate: Dec 30 2006
 tags: ["neosamurai"]
 isArchived: true
 ---

@@ -28,6 +28,8 @@ The goal is editing, not rewriting.
   (!!!, …ahem…)
 - Tighten verbose passages into clearer statements
 - Make titles descriptive and direct (no clickbait ellipses)
+- Emphasize Japanese romaji words with single underscores
+  (_obake_, _koban_, _nihongo_)
 
 **Don't:**
 

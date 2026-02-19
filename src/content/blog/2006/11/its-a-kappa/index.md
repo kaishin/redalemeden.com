@@ -5,10 +5,28 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-Kappa are among the most prominent obake (お化け)—ghosts, goblins, and monsters—in Japanese folklore.
+I mentioned the _Kappa_ in the [previous post](/blog/2006/11/to-err-is-human/),
+so this is a good opportunity to introduce one of the most prominent _obake_
+around. _Obake_ (お化け)—also _obakemono_, _bakemono_, or _youkai_—are ghosts,
+goblins, and monsters in Japanese folklore.
 
-These aquatic creatures have humanoid shapes with monkey faces, predatory beaks, turtle shells, and frog limbs. Their scaly skin ranges in color, though blue and green are most common. They live in rivers and emerge when hungry, feeding on children, shirikodama (尻子玉, a mythical energy ball in the anus), and cucumbers.
+The Kappa is an aquatic creature with a humanoid shape, a monkey face, a
+predatory beak, a turtle shell, and frog limbs. Its scaly skin can have various
+colors, but blue and green are the most common. The creature lives in rivers and
+ventures out when hungry. Its favorite meals are children, _shirikodama_
+(尻子玉, a mythical energy ball in the anus), and cucumbers.
 
-The kappa's defining feature is a water-filled organ on top of its head, surrounded by bushy hair. This organ keeps the kappa alive on land, but if the water spills, the creature dies instantly. Tradition holds that bowing to a kappa prompts it to bow back, spilling its survival water. Kappa are also said to be skilled in traditional medicine and fluent in Japanese.
+The Kappa has a water-containing organ on top of its head, surrounded by bushy
+hair, that allows it to stay alive on land. If the water spills, the creature
+dies instantly—which is why some people bow to the Kappa, so that it bows back
+and unintentionally spills the water. Kappa are also said to be skilled in
+traditional medicine, and can communicate in Japanese.
 
-Warning signs near rivers still caution children about kappa, though no one has ever photographed one. The legend likely originated from the practice of floating stillborn fetuses down rivers, or as a cautionary tale using the swollen anus of drowning victims as "proof" of shirikodama theft.
+Kappa are deeply embedded in Japanese culture. You might even stumble across a
+sign warning kids to stay away from rivers. But no one who has reported sighting
+a Kappa was ever able to photograph one. The legend may have developed from an
+ancient practice of floating stillborn fetuses down rivers, or it may have been
+invented to scare children away from water—using the swollen anus common in
+drowning victims as "proof" of having one's _shirikodama_ stolen.
+
+And yes, even Kappa get swept away by the current.

@@ -92,6 +92,27 @@ don't sand away the fingerprints.
 - [x] Stereotypes (Aug 2006)
 - [x] Wabi-Sabi (Aug 2006)
 
-### Batch 3-8 (Posts 25-87)
+### Batch 3 (Posts 24-38) ✅ COMPLETED
+
+- [x] Nō (Aug 2006)
+- [~] I am Nipponjin (Aug 2006) — skipped, redundant with Stereotypes
+- [~] Samurai Clay (Aug 2006) — skipped, just a dead YouTube embed
+- [x] Musings (Sep 2006)
+- [~] Internet Trends (Sep 2006) — skipped, too dated
+- [x] Shinwa: The Creation of the Universe (Sep 2006)
+- [x] Shinwa: The Birth of Japan (Sep 2006)
+- [x] Shinwa: The Birth of Gods (Sep 2006)
+- [x] Shinwa: The Slaying of Kagutsushi (Sep 2006)
+- [x] Shinwa: The Realm of Hades (Sep 2006)
+- [x] Shinwa: The Purification of Izanagi (Sep 2006)
+- [x] Shinwa Wrap Up: The Beginnings (Oct 2006)
+- [x] Shinwa: Susanowo's Visit (Oct 2006)
+- [x] Shinwa: The Missing Sun (Oct 2006)
+- [x] Shinwa: Orochi, the Eight-Headed Snake (Oct 2006)
+- [x] Shinwa: The Palace of Suga (Oct 2006)
+- [x] Neo? (Oct 2006)
+- [x] Shinwa Wrap Up: Amaterasu and Susanowo (Nov 2006)
+
+### Batch 4-8 (Posts 39-87)
 
 - [ ] To be populated as we progress

@@ -30,6 +30,8 @@ The goal is editing, not rewriting.
 - Make titles descriptive and direct (no clickbait ellipses)
 - Emphasize Japanese romaji words with single underscores
   (_obake_, _koban_, _nihongo_)
+- Use em dash (—) only when the original did; otherwise use
+  commas, colons, or semicolons
 
 **Don't:**
 
@@ -75,6 +77,21 @@ don't sand away the fingerprints.
 - [x] Fun 金曜日! Vol.1 (Jan 2007)
 - [x] Furusato!! My hometown!! (May 2006)
 
-### Batch 2-8 (Posts 13-87)
+### Batch 2 (Posts 13-23) ✅ COMPLETED
+
+- [x] The Way of the Samurai (May 2006)
+- [~] Michael Jackson, Samurai-Wise (May 2006) — skipped, not worth migrating
+- [x] Japanese Mythology: Origins (Jun 2006)
+- [x] The Nihonshoki (Jun 2006)
+- [x] Personal Notes (Jun 2006)
+- [x] Kikunokai (Jun 2006)
+- [x] Kikunokai: A Bit of History (Jun 2006)
+- [x] WIIRE Samurai Campaign (Jun 2006)
+- [x] Kiyomori (Jun 2006)
+- [x] Neo Samurai V3.0 (Aug 2006)
+- [x] Stereotypes (Aug 2006)
+- [x] Wabi-Sabi (Aug 2006)
+
+### Batch 3-8 (Posts 25-87)
 
 - [ ] To be populated as we progress

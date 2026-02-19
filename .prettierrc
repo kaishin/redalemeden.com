@@ -1,6 +1,7 @@
 {
   "tabWidth": 2,
   "useTabs": false,
+  "proseWrap": "always",
   "plugins": [
     "prettier-plugin-astro",
     "prettier-plugin-tailwindcss"

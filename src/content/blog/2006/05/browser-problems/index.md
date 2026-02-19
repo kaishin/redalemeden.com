@@ -5,10 +5,11 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-A blog directory notified me that Neo Samurai looks broken in Internet Explorer.
-You don't say! I haven't used IE in years and I hate it, but it's frustrating to
-see how poorly the site renders on it, so I'll adjust the frame width and sidebar
-link sizes to improve compatibility.
+I received an email from a blog directory saying that Neo Samurai looks
+scrambled on Internet Explorer. I haven't used IE in ages—I had almost forgotten
+it existed. But I understand that many people still use it, so I'll try to
+adjust the frame widths, sidebar link sizes, and other details.
 
-If you're still on IE please consider using [Firefox](https://www.mozilla.com/firefox/)
-or [Opera](https://www.opera.com/) instead.
+That said, please consider using [Firefox](http://www.mozilla.com/firefox/) or
+[Opera](http://www.opera.com/) instead. They are much better for viewing
+websites in general, and my blog in particular.

@@ -113,6 +113,27 @@ don't sand away the fingerprints.
 - [x] Neo? (Oct 2006)
 - [x] Shinwa Wrap Up: Amaterasu and Susanowo (Nov 2006)
 
-### Batch 4-8 (Posts 39-87)
+### Batch 4 (Posts 39-56) ✅ COMPLETED
+
+- [x] Kotowaza Vol. 1 (May 2006)
+- [x] Kotowaza Vol. 2 (May 2006)
+- [x] Geisha and the World Wide Web (Sep 2006)
+- [x] Otome Road to BL (Sep 2006)
+- [x] Jindies, Anyone? (Oct 2006)
+- [x] Shinwa: The White Hare of Inaba (Nov 2006)
+- [x] Shinwa: Oonamuji's Hardships (Nov 2006)
+- [x] To Err Is Human (Nov 2006)
+- [x] Two Thousand and Six (Dec 2006)
+- [~] Kotowaza Vol. 3 (Jun 2006) — list only, no prose
+- [~] Here and there Japan-related web picks! (Sep 2006) — link dump, too dated
+- [~] Katana manufacturing (Oct 2006) — one video link, no content
+- [~] You'll never know until you try (Oct 2006) — empty/unreadable
+- [~] Irrelevant title: Sake (Oct 2006) — brief filler, no lasting content
+- [~] Jindies, Anyone? Part II (Oct 2006) — mostly a podcast link
+- [~] J-indies on Neo Samurai (Nov 2006) — announcement stub
+- [~] Updates (a lack of) (Nov 2006) — filler update
+- [~] Koremon (Dec 2006) — single meme caption
+
+### Batch 5-8 (Posts 57-87)
 
 - [ ] To be populated as we progress

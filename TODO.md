@@ -134,6 +134,39 @@ don't sand away the fingerprints.
 - [~] Updates (a lack of) (Nov 2006) — filler update
 - [~] Koremon (Dec 2006) — single meme caption
 
-### Batch 5-8 (Posts 57-87)
+### Batch 5 (Posts 57-70)
 
-- [ ] To be populated as we progress
+- [ ] The Travels of Nishikawa-san (Oct 2006)
+- [ ] Mewii Christmas (Dec 2006)
+- [ ] Pink Is Beautiful (Dec 2006)
+- [ ] Neo Samurai Resolutions (Jan 2007)
+- [ ] Shibuya University (Jan 2007)
+- [ ] Shinwa: Yachihoko and Nunakaha (Jan 2007)
+- [ ] Fuurin Kazan (Jan 2007)
+- [ ] Names in Shinwa (Jan 2007)
+- [ ] Shinwa: Ookuninushi's Conquests (Jan 2007)
+- [ ] Samurai Figurines (Jan 2007)
+- [ ] Shinwa: Sidestories to End Ookuninushi's Arc (Jan 2007)
+- [ ] Otokei Underground (Feb 2007)
+- [ ] Speedy Kotowaza (Feb 2007)
+- [ ] White Sox Blunder (Aug 2007)
+- [~] Nihongon (Dec 2006) — one line of Japanese, no content
+- [~] Neo Samurai V5.0 (Jan 2007) — blog redesign announcement, too meta
+- [~] Fun 金曜日 Rationality (Jan 2007) — image links, mostly dead
+- [~] Unevenness (Jan 2007) — 3 sentences about kanji 凸凹
+- [~] Very Speedy (Feb 2007) — filler about being busy + dead video
+- [~] Speedy: Experimental Music (Feb 2007) — just a YouTube link
+- [~] Doesn't Even Deserve a Title (Feb 2007) — 2 sentences
+- [~] The End of Japan (Feb 2007) — 3 sentences, joke image (dead)
+- [~] Katamari Plushy (Feb 2007) — 2 lines + dead image link
+- [~] Neo Samurai (May 2006) — "About me" intro page, not a post
+- [~] Links (May 2006) — link directory page, not a post
+- [~] It's a Boy (Sep 2006) — one line about royal baby
+- [~] Archive URL — not a post
+
+### Progress
+
+**Completed:** 51 migrated posts (batches 1-4)
+**Remaining:** 14 posts to migrate (batch 5)
+**Skipped:** 25 posts (too thin, dead media, or not real posts)
+**Total in archive:** 101 posts

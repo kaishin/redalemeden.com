@@ -3,25 +3,23 @@ import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import NavigationLayout from "@layouts/NavigationLayout.astro";
 
-const posts = (await getCollection("blog"))
+const posts = (await getCollection("derived-data"))
   .filter((post) => !post.data.isArchived)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <NavigationLayout>
-  <h2>Unredacted</h2>
+  <h2>Derived Data</h2>
   <p class="">
-    A blog about design, technology, programming, and other personal interests.
-    Apple platform content lives in{" "}
-    <a href="/derived-data">Derived Data</a>. Subscribe to the RSS or JSON
-    feeds to get the latest articles, or follow me on Mastodon.
+    A blog about Apple platforms, Swift, SwiftUI, Xcode, and related developer
+    topics. Subscribe to the RSS feed to get the latest articles.
   </p>
   <hr class="mb-10" />
   <ul class="not-prose list-none">
     {
       posts.map((post) => (
         <li class="mb-10">
-          <a href={`/blog/${post.slug}`}>
+          <a href={`/derived-data/${post.slug}`}>
             <h3 class="max-w-prose text-2xl font-medium">{post.data.title}</h3>
             <p class="dark:text-banana mt-1 text-sm leading-normal font-semibold tracking-wider text-purple-500 uppercase">
               <FormattedDate date={post.data.pubDate} />

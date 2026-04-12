@@ -726,7 +726,7 @@ often referred to, is the uncontested cornerstone of good development practices.
 
 SwiftUI, as new and unpolished as it is, already exposes some powerful APIs for
 that end. We’ve been using view extensions, view modifiers, and preference keys
-on a constantly growing codebase [at work](/blog/2019/swift-ui-early-lessons).
+on a constantly growing codebase [at work](/derived-data/2019/swift-ui-early-lessons).
 If you’re looking to learn more about these largely undocumented capabilities,
 look no further than these two fresh posts:
 

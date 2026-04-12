@@ -1,24 +1,24 @@
 import { defineCollection, z } from "astro:content";
 
-const blog = defineCollection({
-  // Type-check frontmatter using a schema
-  schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
-    audience: z.string().optional(),
-    tags: z.array(z.string()).optional(),
-    // Transform string to Date object
-    pubDate: z
-      .string()
-      .or(z.date())
-      .transform((val) => new Date(val)),
-    updatedDate: z
-      .string()
-      .optional()
-      .transform((str) => (str ? new Date(str) : undefined)),
-    image: z.string().optional(),
-    isArchived: z.boolean().optional().default(false),
-  }),
+const postSchema = z.object({
+  title: z.string(),
+  description: z.string().optional(),
+  audience: z.string().optional(),
+  tags: z.array(z.string()).optional(),
+  // Transform string to Date object
+  pubDate: z
+    .string()
+    .or(z.date())
+    .transform((val) => new Date(val)),
+  updatedDate: z
+    .string()
+    .optional()
+    .transform((str) => (str ? new Date(str) : undefined)),
+  image: z.string().optional(),
+  isArchived: z.boolean().optional().default(false),
 });
 
-export const collections = { blog };
+const blog = defineCollection({ schema: postSchema });
+const derivedData = defineCollection({ schema: postSchema });
+
+export const collections = { blog, "derived-data": derivedData };

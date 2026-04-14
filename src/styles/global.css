@@ -42,6 +42,7 @@
   --tag-bg: oklch(93.3% 0.016 85);
   --tag-text: oklch(39% 0.04 296);
   --code-bg: oklch(92% 0.012 82);
+  --code-block-overlay: rgb(255 255 255 / 0.34);
   --input-bg: oklch(99.3% 0.003 90);
   --input-text: oklch(29% 0.03 292);
   --input-placeholder: oklch(72% 0.015 85);
@@ -67,7 +68,8 @@
   --accent-link-hover: oklch(90% 0.1 98);
   --tag-bg: oklch(37% 0.034 298 / 0.94);
   --tag-text: oklch(86% 0.032 304);
-  --code-bg: oklch(30% 0.026 293);
+  --code-bg: oklch(18% 0.022 290 / 0.58);
+  --code-block-overlay: rgb(0 0 0 / 0.14);
   --input-bg: oklch(31% 0.028 295);
   --input-text: oklch(92% 0.018 302);
   --input-placeholder: oklch(66% 0.024 300);
@@ -82,6 +84,28 @@ body {
   background-color: var(--page-bg);
   background-image: var(--page-bg-image);
   background-attachment: fixed;
+}
+
+.prose :where(pre):not(:where([class~="not-prose"] *)) {
+  border-radius: 1rem;
+  background-color: var(--code-block-overlay);
+  box-shadow:
+    inset 0 1px 0 oklch(100% 0 0 / 0.05),
+    0 10px 30px oklch(12% 0.02 286 / 0.14);
+  backdrop-filter: blur(16px) saturate(115%);
+  -webkit-backdrop-filter: blur(16px) saturate(115%);
+}
+
+.prose :where(pre.astro-code):not(:where([class~="not-prose"] *)) {
+  background-color: var(--code-block-overlay) !important;
+}
+
+:root.dark .astro-code,
+:root.dark .astro-code span {
+  color: var(--shiki-dark) !important;
+  font-style: var(--shiki-dark-font-style, inherit) !important;
+  font-weight: var(--shiki-dark-font-weight, inherit) !important;
+  text-decoration: var(--shiki-dark-text-decoration, inherit) !important;
 }
 
 ::selection {

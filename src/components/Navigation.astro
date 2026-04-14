@@ -1,5 +1,5 @@
 ---
-
+import { Rss } from "@lucide/astro";
 ---
 
 <nav class="self-start md:col-start-1 md:row-start-2">
@@ -16,32 +16,50 @@
       >
     </li>
     <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
-      <a
-        href="/blog"
-        class="transition-colors hover:text-[var(--accent-link)] dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
-      >
-        <span class="text-xs font-semibold tracking-widest uppercase md:text-sm"
-          >Unredacted</span
+      <div class="relative inline-block text-center">
+        <a
+          href="/blog"
+          class="block transition-colors hover:text-[var(--accent-link)] dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
         >
-        <small
-          class="hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block dark:text-[var(--muted-text)]"
-          >Main Blog</small
+          <span class="text-xs font-semibold tracking-widest uppercase md:text-sm"
+            >Unredacted</span
+          >
+          <small
+            class="hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block dark:text-[var(--muted-text)]"
+            >Main Blog</small
+          >
+        </a>
+        <a
+          href="/feed.xml"
+          aria-label="Subscribe to the Unredacted RSS feed"
+          class="absolute top-[0.4rem] right-0 translate-x-[1.35rem] text-stone-400 transition-colors hover:text-[var(--accent-link)] dark:text-[var(--muted-text)] dark:hover:text-[var(--accent-link)]"
         >
-      </a>
+          <Rss size={14} stroke-width={2} />
+        </a>
+      </div>
     </li>
     <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
-      <a
-        href="/derived-data"
-        class="transition-colors hover:text-[var(--accent-link)] dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
-      >
-        <span class="text-xs font-semibold tracking-widest uppercase md:text-sm"
-          >Derived Data</span
+      <div class="relative inline-block text-center">
+        <a
+          href="/derived-data"
+          class="block transition-colors hover:text-[var(--accent-link)] dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
         >
-        <small
-          class="hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block dark:text-[var(--muted-text)]"
-          >Apple Dev</small
+          <span class="text-xs font-semibold tracking-widest uppercase md:text-sm"
+            >Derived Data</span
+          >
+          <small
+            class="hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block dark:text-[var(--muted-text)]"
+            >Apple Dev</small
+          >
+        </a>
+        <a
+          href="/derived-data-feed.xml"
+          aria-label="Subscribe to the Derived Data RSS feed"
+          class="absolute top-[0.4rem] right-0 translate-x-[1.35rem] text-stone-400 transition-colors hover:text-[var(--accent-link)] dark:text-[var(--muted-text)] dark:hover:text-[var(--accent-link)]"
         >
-      </a>
+          <Rss size={14} stroke-width={2} />
+        </a>
+      </div>
     </li>
     <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
       <a

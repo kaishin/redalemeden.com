@@ -13,8 +13,8 @@ const posts = (await getCollection("blog"))
   <p class="">
     A blog about design, technology, programming, and other personal interests.
     Apple platform content lives in{" "}
-    <a href="/derived-data">Derived Data</a>. Subscribe to the RSS or JSON
-    feeds to get the latest articles, or follow me on Mastodon.
+    <a href="/derived-data">Derived Data</a>. Subscribe to the RSS or JSON feeds
+    to get the latest articles, or follow me on Mastodon.
   </p>
   <hr class="mb-10" />
   <ul class="not-prose list-none">
@@ -23,14 +23,14 @@ const posts = (await getCollection("blog"))
         <li class="mb-10">
           <a href={`/blog/${post.slug}`}>
             <h3 class="max-w-prose text-2xl font-medium">{post.data.title}</h3>
-            <p class="dark:text-banana mt-1 text-sm leading-normal font-semibold tracking-wider text-purple-500 uppercase">
+            <p class="mt-1 text-sm leading-normal font-semibold tracking-wider text-purple-500 uppercase dark:text-[var(--accent-link)]">
               <FormattedDate date={post.data.pubDate} />
             </p>
             {post.data.tags && post.data.tags.length > 0 && (
               <ul class="mt-2 list-none">
                 {post.data.tags.map((tag: string) => (
                   <li class="mr-2 inline-block">
-                    <span class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium tracking-wider text-stone-800 uppercase dark:bg-slate-800 dark:text-slate-400">
+                    <span class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium tracking-wider text-stone-800 uppercase dark:bg-[var(--tag-bg)] dark:text-[var(--tag-text)]">
                       {tag}
                     </span>
                   </li>

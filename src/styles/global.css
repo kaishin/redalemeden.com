@@ -6,12 +6,84 @@
   --grid-template-columns-main: 22rem 1fr;
   --grid-template-columns-projects: repeat(auto-fill, minmax(14rem, 1fr));
   --grid-template-rows-main: auto 1fr auto;
-  --color-cream: #fffbf5;
-  --color-asphalt: #191f2d;
-  --color-banana: #ffd080;
-  --color-amethyst: #4a20ac;
-  --color-ash: #7b94ce;
+  --color-cream: oklch(98.2% 0.012 85);
+  --color-asphalt: oklch(23% 0.038 295);
+  --color-banana: oklch(84% 0.105 92);
+  --color-amethyst: oklch(58% 0.2 312);
+  --color-ash: oklch(75% 0.045 305);
+  --color-nightshade: oklch(18.5% 0.028 292);
+  --color-plum: oklch(28% 0.044 298);
+  --color-orchid: oklch(72% 0.16 325);
+  --color-lilac: oklch(87% 0.03 300);
   --font-sans: "Inter Variable", "Inter", sans-serif;
 }
 
 @custom-variant prose-inline-code (&.prose :where(:not(pre)>code):not(:where([class~="not-prose"] *)));
+
+:root {
+  color-scheme: light;
+  --page-bg: var(--color-cream);
+  --page-bg-image: linear-gradient(
+    180deg,
+    oklch(96.5% 0.035 92) 0%,
+    var(--color-cream) 18%,
+    var(--color-cream) 100%
+  );
+  --page-text: oklch(29% 0.03 292);
+  --surface-soft: oklch(99.1% 0.004 90);
+  --surface-muted: oklch(95.7% 0.012 85);
+  --border-soft: oklch(83% 0.018 82 / 0.8);
+  --muted-text: oklch(56% 0.024 294);
+  --soft-text: oklch(42% 0.028 294);
+  --accent-ui: var(--color-amethyst);
+  --accent-ui-hover: oklch(51% 0.22 316);
+  --accent-link: var(--color-amethyst);
+  --accent-link-hover: var(--accent-ui-hover);
+  --tag-bg: oklch(93.3% 0.016 85);
+  --tag-text: oklch(39% 0.04 296);
+  --code-bg: oklch(92% 0.012 82);
+  --input-bg: oklch(99.3% 0.003 90);
+  --input-text: oklch(29% 0.03 292);
+  --input-placeholder: oklch(72% 0.015 85);
+}
+
+:root.dark {
+  color-scheme: dark;
+  --page-bg: oklch(34% 0.065 299);
+  --page-bg-image: linear-gradient(
+    180deg,
+    oklch(24% 0.04 289) 0%,
+    oklch(34% 0.065 299) 100%
+  );
+  --page-text: oklch(95% 0.016 302);
+  --surface-soft: oklch(31% 0.038 295);
+  --surface-muted: oklch(35% 0.04 298);
+  --border-soft: oklch(57% 0.034 302 / 0.7);
+  --muted-text: var(--color-ash);
+  --soft-text: oklch(83% 0.03 302);
+  --accent-ui: oklch(77% 0.18 324);
+  --accent-ui-hover: oklch(82% 0.16 327);
+  --accent-link: oklch(86% 0.115 92);
+  --accent-link-hover: oklch(90% 0.1 98);
+  --tag-bg: oklch(37% 0.034 298 / 0.94);
+  --tag-text: oklch(86% 0.032 304);
+  --code-bg: oklch(30% 0.026 293);
+  --input-bg: oklch(31% 0.028 295);
+  --input-text: oklch(92% 0.018 302);
+  --input-placeholder: oklch(66% 0.024 300);
+}
+
+html {
+  background: var(--page-bg);
+}
+
+body {
+  color: var(--page-text);
+  background-color: var(--page-bg);
+  background-image: var(--page-bg-image);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent-ui) 30%, transparent);
+}

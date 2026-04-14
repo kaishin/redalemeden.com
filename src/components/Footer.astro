@@ -11,15 +11,20 @@ import { SITE_URL, SITE_AUTHOR, SITE_AUTHOR_BIO } from "../consts";
       <a
         href="https://github.com/kaishin"
         rel="me"
-        class="text-purple-500 dark:text-banana">GitHub</a
+        class="hover:text-amethyst text-purple-500 transition-colors dark:text-[var(--accent-link)] dark:hover:text-[var(--accent-link-hover)]"
+        >GitHub</a
       >
-      <span class="px-3 text-stone-300 opacity-50 dark:text-ash">/</span>
+      <span
+        class="px-3 text-stone-300 opacity-50 dark:text-[var(--muted-text)]"
+      >
+        /
+      </span>
     </li>
     <li class="inline-block">
       <a
         href="https://mastodon.social/@redalemeden"
         rel="me"
-        class="text-purple-500 dark:text-banana"
+        class="hover:text-amethyst text-purple-500 transition-colors dark:text-[var(--accent-link)] dark:hover:text-[var(--accent-link-hover)]"
       >
         Mastodon</a
       >
@@ -31,12 +36,12 @@ import { SITE_URL, SITE_AUTHOR, SITE_AUTHOR_BIO } from "../consts";
     </a>
     <img
       class="u-photo"
-      src={SITE_URL + "/author-photo.jpg"}
+      src={SITE_URL + "/logo-bg.jpg"}
       alt={SITE_AUTHOR}
     />
     <p class="p-note">{SITE_AUTHOR_BIO}</p>
   </div>
-  <span class="block pb-6 text-stone-400 dark:text-ash">
+  <span class="block pb-6 text-stone-400 dark:text-[var(--muted-text)]">
     <em>&copy;</em> 2009-{today.getFullYear()} Reda Lemeden
   </span>
 

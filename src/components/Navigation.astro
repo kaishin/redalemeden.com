@@ -4,35 +4,41 @@
 
 <nav class="self-start md:col-start-1 md:row-start-2">
   <hr
-    class="dark:bg-ash mx-24 mb-4 block h-px border-0 bg-stone-300 opacity-60 md:mb-16"
+    class="mx-24 mb-4 block h-px border-0 bg-stone-300 opacity-60 md:mb-16 dark:bg-[var(--border-soft)] dark:opacity-100"
   />
 
   <ul class="text-center">
     <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
       <a
         href="/work"
-        class="text-xs font-semibold tracking-widest uppercase md:text-sm"
+        class="text-xs font-semibold tracking-widest uppercase transition-colors hover:text-[var(--accent-link)] md:text-sm dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
         >Work</a
       >
     </li>
     <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
-      <a href="/blog">
+      <a
+        href="/blog"
+        class="transition-colors hover:text-[var(--accent-link)] dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
+      >
         <span class="text-xs font-semibold tracking-widest uppercase md:text-sm"
           >Unredacted</span
         >
         <small
-          class="dark:text-ash hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block"
+          class="hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block dark:text-[var(--muted-text)]"
           >Main Blog</small
         >
       </a>
     </li>
     <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
-      <a href="/derived-data">
+      <a
+        href="/derived-data"
+        class="transition-colors hover:text-[var(--accent-link)] dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
+      >
         <span class="text-xs font-semibold tracking-widest uppercase md:text-sm"
           >Derived Data</span
         >
         <small
-          class="dark:text-ash hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block"
+          class="hidden text-[.68em] font-light tracking-widest text-stone-500 uppercase md:block dark:text-[var(--muted-text)]"
           >Apple Dev</small
         >
       </a>
@@ -40,13 +46,13 @@
     <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
       <a
         href="/contact"
-        class="text-xs font-semibold tracking-widest uppercase md:text-sm"
+        class="text-xs font-semibold tracking-widest uppercase transition-colors hover:text-[var(--accent-link)] md:text-sm dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
         >Contact</a
       >
     </li>
   </ul>
 
   <hr
-    class="dark:bg-ash mx-24 mb-12 block h-px border-0 bg-stone-300 opacity-60 md:hidden"
+    class="mx-24 mb-12 block h-px border-0 bg-stone-300 opacity-60 md:hidden dark:bg-[var(--border-soft)] dark:opacity-100"
   />
 </nav>

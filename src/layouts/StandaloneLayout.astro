@@ -8,33 +8,13 @@ const { title, description, image } = Astro.props.frontmatter || Astro.props;
 <BaseLayout title={title} description={description} image={image}>
   <main class="mx-auto mt-32 max-w-screen-md p-5">
     <article
-      class="prose
-      prose-stone
-      mb-12
-      max-w-none
-      dark:prose-slate
-      dark:prose-invert
-      lg:prose-lg
-      prose-pre:bg-stone-200
-      prose-pre:font-mono
-      prose-inline-code:mx-1
-      prose-inline-code:rounded-md
-      prose-inline-code:bg-stone-200
-      prose-inline-code:px-2
-      prose-inline-code:py-1
-      prose-inline-code:font-mono
-      prose-inline-code:before:content-none
-      prose-inline-code:after:content-none
-      prose-pre:dark:bg-slate-900
-      prose-pre:dark:text-ash
-      prose-inline-code:dark:bg-slate-900
-      prose-inline-code:dark:text-ash"
+      class="prose prose-stone lg:prose-lg dark:prose-invert dark:prose-headings:text-[var(--page-text)] dark:prose-lead:text-[var(--soft-text)] dark:prose-p:text-[var(--soft-text)] dark:prose-strong:text-[var(--page-text)] dark:prose-a:text-[var(--accent-link)] dark:prose-a:decoration-[color-mix(in_oklab,var(--accent-link)_32%,transparent)] dark:prose-code:text-[var(--soft-text)] dark:prose-pre:bg-[var(--code-bg)] dark:prose-pre:text-[var(--soft-text)] dark:prose-hr:border-[var(--border-soft)] dark:prose-quote:border-[var(--border-soft)] dark:prose-quote:text-[var(--soft-text)] dark:prose-li:marker:text-[var(--accent-link)] prose-pre:bg-stone-200 prose-pre:font-mono prose-inline-code:mx-1 prose-inline-code:rounded-md prose-inline-code:bg-stone-200 prose-inline-code:px-2 prose-inline-code:py-1 prose-inline-code:font-mono prose-inline-code:before:content-none prose-inline-code:after:content-none prose-inline-code:dark:bg-[var(--code-bg)] prose-inline-code:dark:text-[var(--soft-text)] mb-12 max-w-none"
     >
       <slot />
     </article>
   </main>
   <div class="mx-auto max-w-sm print:hidden">
-    <hr class="border-ash-200 my-12 dark:border-slate-800" />
+    <hr class="border-ash/30 my-12 dark:border-[var(--border-soft)]" />
     <Footer />
   </div>
 </BaseLayout>

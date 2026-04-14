@@ -14,7 +14,7 @@ import NavigationLayout from "@layouts/NavigationLayout.astro";
     <fieldset>
       <label class="mb-2 block">
         <input
-          class="w-full appearance-none rounded-md px-3 py-2 text-base placeholder:text-stone-300 dark:bg-slate-800 dark:text-slate-400 placeholder:dark:text-slate-500"
+          class="focus:border-amethyst w-full appearance-none rounded-xl border border-stone-200/80 bg-white px-3 py-2 text-base text-stone-900 shadow-sm transition-colors placeholder:text-stone-300 focus:outline-none dark:border-[var(--border-soft)] dark:bg-[var(--input-bg)] dark:text-[var(--input-text)] dark:placeholder:text-[var(--input-placeholder)] dark:focus:border-[var(--accent-ui)]"
           placeholder="Your Name"
           type="text"
           name="name"
@@ -23,7 +23,7 @@ import NavigationLayout from "@layouts/NavigationLayout.astro";
       </label>
       <label class="mb-2 block">
         <input
-          class="w-full appearance-none rounded-md px-3 py-2 text-base placeholder:text-stone-300 dark:bg-slate-800 dark:text-slate-400 placeholder:dark:text-slate-500"
+          class="focus:border-amethyst w-full appearance-none rounded-xl border border-stone-200/80 bg-white px-3 py-2 text-base text-stone-900 shadow-sm transition-colors placeholder:text-stone-300 focus:outline-none dark:border-[var(--border-soft)] dark:bg-[var(--input-bg)] dark:text-[var(--input-text)] dark:placeholder:text-[var(--input-placeholder)] dark:focus:border-[var(--accent-ui)]"
           placeholder="Your Email"
           type="email"
           name="email"
@@ -32,7 +32,7 @@ import NavigationLayout from "@layouts/NavigationLayout.astro";
       </label>
       <label class="mb-2 block">
         <textarea
-          class="h-40 w-full appearance-none rounded-md px-3 py-2 text-base placeholder:text-stone-300 dark:bg-slate-800 dark:text-slate-400 placeholder:dark:text-slate-500"
+          class="focus:border-amethyst h-40 w-full appearance-none rounded-xl border border-stone-200/80 bg-white px-3 py-2 text-base text-stone-900 shadow-sm transition-colors placeholder:text-stone-300 focus:outline-none dark:border-[var(--border-soft)] dark:bg-[var(--input-bg)] dark:text-[var(--input-text)] dark:placeholder:text-[var(--input-placeholder)] dark:focus:border-[var(--accent-ui)]"
           placeholder="Your Message..."
           name="message"
           id="message"
@@ -41,7 +41,7 @@ import NavigationLayout from "@layouts/NavigationLayout.astro";
     </fieldset>
     <button
       type="submit"
-      class="pressed:scale-90 bg-amethyst dark:bg-banana dark:text-asphalt rounded-3xl px-6 py-2 text-white transition duration-150 ease-in-out hover:animate-pulse hover:bg-blue-700 active:scale-90"
+      class="bg-amethyst rounded-3xl px-6 py-2 text-white transition duration-150 ease-in-out hover:bg-[var(--accent-ui-hover)] active:scale-95 dark:bg-[var(--accent-ui)] dark:text-[var(--color-nightshade)] dark:hover:bg-[var(--accent-ui-hover)]"
       >Send</button
     >
   </form>

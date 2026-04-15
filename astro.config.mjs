@@ -11,8 +11,8 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       themes: {
-        light: "github-light",
-        dark: "dracula",
+        light: "catppuccin-latte",
+        dark: "catppuccin-mocha",
       },
       wrap: true,
     },
@@ -36,7 +36,8 @@ export default defineConfig({
     "/blog/2020/this-week-i-learned-30": "/experiments/twil",
     "/blog/2020/this-week-i-learned-31": "/experiments/twil",
     "/blog/2020/this-week-i-learned-32": "/experiments/twil",
-    "/blog/2021/a-feel-good-refactor": "/derived-data/2021/a-feel-good-refactor/",
+    "/blog/2021/a-feel-good-refactor":
+      "/derived-data/2021/a-feel-good-refactor/",
     "/blog/2021/wwdc-21-day-2-session-notes":
       "/derived-data/2021/wwdc-21-session-notes/",
     "/blog/2021/wwdc-21-day-3-session-notes":
@@ -47,10 +48,12 @@ export default defineConfig({
     "/blog/2016/swift-3-access-control":
       "/derived-data/2016/swift-3-access-control/",
     "/blog/2016/units-in-foundation": "/derived-data/2016/units-in-foundation/",
-    "/blog/2019/ibm-serverside-swift": "/derived-data/2019/ibm-serverside-swift/",
+    "/blog/2019/ibm-serverside-swift":
+      "/derived-data/2019/ibm-serverside-swift/",
     "/blog/2019/inset-grouped-lists-swiftui":
       "/derived-data/2019/inset-grouped-lists-swiftui/",
-    "/blog/2019/swift-killer-feature": "/derived-data/2019/swift-killer-feature/",
+    "/blog/2019/swift-killer-feature":
+      "/derived-data/2019/swift-killer-feature/",
     "/blog/2019/swift-ui-early-lessons":
       "/derived-data/2019/swift-ui-early-lessons/",
     "/blog/2020/debugging-swiftui-trials-and-tribulations":

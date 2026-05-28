@@ -631,6 +631,18 @@ rough edges, don't sand away the fingerprints.
 to migrate **Skipped:** 40 posts (too thin, dead media, or not real posts)
 **Total in archive:** 101 posts
 
+## Astro 6 Upgrade (superseded)
+
+The site has already upgraded to Astro 7 (see Shipped above). This earlier
+checklist is retained for reference, not pending work.
+
+- [ ] Run `npx @astrojs/upgrade` to automate the migration
+- [ ] Review and update dependencies (Vite 7, Shiki 4, Zod 4)
+- [ ] Update Node.js requirement to v22+
+- [ ] Verify Cloudflare Pages adapter compatibility
+- [ ] Test dev server with new Environment API
+- [ ] Update any custom Vite plugins (if used)
+
 ## Not ready
 
 Blocked on explicit owner direction; the autonomous builder must not pick

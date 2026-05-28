@@ -1,5 +1,14 @@
 # TODO
 
+## Astro 6 Upgrade
+
+- [ ] Run `npx @astrojs/upgrade` to automate the migration
+- [ ] Review and update dependencies (Vite 7, Shiki 4, Zod 4)
+- [ ] Update Node.js requirement to v22+
+- [ ] Verify Cloudflare Pages adapter compatibility
+- [ ] Test dev server with new Environment API
+- [ ] Update any custom Vite plugins (if used)
+
 ## Tasks
 
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)

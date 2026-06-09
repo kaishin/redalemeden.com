@@ -1,7 +1,7 @@
 ---
 title: "What's New in Xcode 27 MCP Bridge"
 description: "Xcode 27 beta expands the mcpbridge catalog of tools from 21 to 48, adding deep device interaction, live debugging, crash analytics, localization support, and more."
-audience: ""
+audience: "Apple platform developers using AI coding tools"
 tags: ["Apple", "Programming", "AI"]
 pubDate: 2026-06-09
 image: ""

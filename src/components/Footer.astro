@@ -1,33 +1,53 @@
 ---
 import ThemeSelect from "./ThemeSelect.astro";
+import BlueskyIcon from "./icons/BlueskyIcon.astro";
+import GitHubIcon from "./icons/GitHubIcon.astro";
+import MastodonIcon from "./icons/MastodonIcon.astro";
+import XIcon from "./icons/XIcon.astro";
 const today = new Date();
 
 import { SITE_URL, SITE_AUTHOR, SITE_AUTHOR_BIO } from "../consts";
 ---
 
 <footer class="self-end px-6 pb-12 text-center md:col-start-1 md:row-start-3">
-  <ul>
-    <li class="inline-block">
+  <ul class="flex items-center justify-center gap-5 mb-4">
+    <li>
       <a
         href="https://github.com/kaishin"
         rel="me"
-        class="hover:text-amethyst text-purple-500 transition-colors dark:text-[var(--accent-link)] dark:hover:text-[var(--accent-link-hover)]"
-        >GitHub</a
+        aria-label="GitHub"
+        class="block text-stone-400 transition-colors hover:text-[var(--accent-link)] dark:text-[var(--muted-text)] dark:hover:text-[var(--accent-link)]"
       >
-      <span
-        class="px-3 text-stone-300 opacity-50 dark:text-[var(--muted-text)]"
-      >
-        /
-      </span>
+        <GitHubIcon width={20} height={20} />
+      </a>
     </li>
-    <li class="inline-block">
+    <li>
       <a
         href="https://mastodon.social/@redalemeden"
         rel="me"
-        class="hover:text-amethyst text-purple-500 transition-colors dark:text-[var(--accent-link)] dark:hover:text-[var(--accent-link-hover)]"
+        aria-label="Mastodon"
+        class="block text-stone-400 transition-colors hover:text-[var(--accent-link)] dark:text-[var(--muted-text)] dark:hover:text-[var(--accent-link)]"
       >
-        Mastodon</a
+        <MastodonIcon width={20} height={20} />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://x.com/kaishin"
+        aria-label="X"
+        class="block text-stone-400 transition-colors hover:text-[var(--accent-link)] dark:text-[var(--muted-text)] dark:hover:text-[var(--accent-link)]"
       >
+        <XIcon width={20} height={20} />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://bsky.app/profile/kaishinlab.bsky.social"
+        aria-label="Bluesky"
+        class="block text-stone-400 transition-colors hover:text-[var(--accent-link)] dark:text-[var(--muted-text)] dark:hover:text-[var(--accent-link)]"
+      >
+        <BlueskyIcon width={20} height={20} />
+      </a>
     </li>
   </ul>
   <div class="h-card hidden">

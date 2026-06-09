@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import { Rss } from "@lucide/astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import NavigationLayout from "@layouts/NavigationLayout.astro";
 
@@ -10,9 +11,9 @@ const posts = (await getCollection("derived-data"))
 
 <NavigationLayout>
   <h2>Derived Data</h2>
-  <p class="">
-    A blog about Apple platforms, Swift, SwiftUI, Xcode, and related developer
-    topics. Subscribe to the RSS feed to get the latest articles.
+  <p>
+    A blog about Apple platforms, Swift, SwiftUI, Xcode, and related developer topics.
+    <span class="block text-sm text-stone-500 dark:text-[var(--muted-text)]">Subscribe to the <a href="/derived-data-feed.xml" class="inline-flex items-center gap-1 hover:text-[var(--accent-link)]">RSS feed <Rss size={14} stroke-width={3} /></a> to get the latest articles, or follow me on <a href="https://mastodon.social/@redalemeden" class="hover:text-[var(--accent-link)]">Mastodon</a>, <a href="https://x.com/kaishin" class="hover:text-[var(--accent-link)]">X</a>, or <a href="https://bsky.app/profile/kaishinlab.bsky.social" class="hover:text-[var(--accent-link)]">Bluesky</a>.</span>
   </p>
   <hr class="mb-10" />
   <ul class="not-prose list-none">

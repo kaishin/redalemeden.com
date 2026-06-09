@@ -115,3 +115,17 @@ body {
 ::selection {
   background: color-mix(in oklab, var(--accent-ui) 30%, transparent);
 }
+
+.prose :where(.footnotes h2) {
+  display: none;
+}
+
+.prose :where(.footnotes) {
+  font-size: 0.8em;
+}
+
+.prose :where(img):not(:where([class~="not-prose"] *)) {
+  border-radius: 1rem;
+  border: 1px solid color-mix(in oklab, var(--border-soft) 25%, transparent);
+  box-shadow: var(--code-block-shadow);
+}

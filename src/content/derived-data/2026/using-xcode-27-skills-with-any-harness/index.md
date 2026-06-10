@@ -4,7 +4,6 @@ description: "Xcode 27 ships with a set of AI coding skills you can export and u
 audience: "Apple platform developers using AI coding tools"
 tags: ["Apple", "Programming", "Swift", "AI"]
 pubDate: 2026-06-09T12:00:00
-image: ""
 ---
 
 Beside [new MCP tools](/derived-data/2026/what-new-in-xcode-27-mcp-bridge), the Xcode 27 beta comes with a half dozen agent skills covering topics such as SwiftUI, security, and testing. These are all available to agents used from within Xcode, but even if you use an external agent like I do, you're in for a treat as these can be exported as skill folders and used by any AI coding harness such as [Claude Code](https://claude.ai/code), [OpenCode](https://opencode.ai), or anything else that supports the skills format.

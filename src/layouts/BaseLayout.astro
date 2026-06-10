@@ -11,10 +11,12 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
+const rawImage = (Astro.props.image ?? "").trim();
+const image = rawImage === "" ? "/social-cards/default.jpg" : rawImage;
+
 let {
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
-  image = "/social-cards/default.jpg",
 } = Astro.props;
 
 if (title != SITE_TITLE) {
@@ -87,14 +89,14 @@ if (title != SITE_TITLE) {
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL(image, Astro.url)} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={Astro.url} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={new URL(image, Astro.url)} />
+    <meta property="twitter:image" content={new URL(image, Astro.site)} />
 
     <!-- Dark Mode -->
     <script is:inline>

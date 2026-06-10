@@ -4,7 +4,6 @@ description: "Xcode 27 beta expands the mcpbridge catalog of tools from 21 to 48
 audience: "Apple platform developers using AI coding tools"
 tags: ["Apple", "Programming", "AI"]
 pubDate: 2026-06-09
-image: ""
 ---
 
 WWDC 2026 kicked off yesterday with the usual keynote, State of the Union, and beta software for those who like to live life dangerously. Xcode 27 beta is also out, and it includes a significant expansion of the `mcpbridge` toolset. I have been using the bridge for a while in my agentic coding workflow, and this beta goes from 21 tools to 48, adding deep device interaction, live debugging, crash analytics, localization, and more. This will solve a lot of the problems I've been patching around in my workflow, inlcuding interacting with the simulator and debugging.

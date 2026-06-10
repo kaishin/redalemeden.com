@@ -8,7 +8,6 @@ tags:
   - Programming
   - Guide
 pubDate: 2026-06-09T13:00:00
-image: ""
 ---
 
 One of the most exciting announcements out of WWDC this year is support for third-party coding agents, or harnesses, in Xcode 27. Over the past couple of years, I've used a lot of GUIs and TUIs for coding agents, but the Xcode Intelligence team has knocked it out of the park with the UI and animations, so much so that I feel, for the first time, incentivized to use it.

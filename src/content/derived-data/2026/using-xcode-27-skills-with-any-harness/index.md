@@ -25,7 +25,7 @@ xcrun agent skills export
 This creates an `xcode-skills/` folder containing all the skill folders, but if you want to save these in a different folder, either global or repo-specific, use the following command:
 
 ```bash
-xcrun agent skills export --replace-existing ~/.claude/skills
+xcrun agent skills export --output-dir ~/.claude/skills
 ```
 
 Once exported, feel free to revert xcode-select to the stable version, as skills stay put regardless of which Xcode version is active afterward.

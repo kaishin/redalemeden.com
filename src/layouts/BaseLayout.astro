@@ -32,6 +32,7 @@ if (title != SITE_TITLE) {
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta name="color-scheme" content="light dark" />
 
     <!-- SEO -->
     <meta name="robots" content="noodp, noydir" />
@@ -100,15 +101,30 @@ if (title != SITE_TITLE) {
 
     <!-- Dark Mode -->
     <script is:inline>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
+      (() => {
+        const storedTheme = localStorage.getItem("theme");
+        const systemPrefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const resolvedTheme =
+          storedTheme === "dark" ||
+          (storedTheme !== "light" && systemPrefersDark)
+            ? "dark"
+            : "light";
+
+        document.documentElement.classList.toggle(
+          "dark",
+          resolvedTheme === "dark",
+        );
+        document
+          .querySelector('meta[name="color-scheme"]')
+          ?.setAttribute(
+            "content",
+            storedTheme === "light" || storedTheme === "dark"
+              ? storedTheme
+              : "light dark",
+          );
+      })();
     </script>
 
     <!-- GoatCounter -->

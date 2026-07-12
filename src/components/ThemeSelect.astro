@@ -53,34 +53,63 @@ import { Moon, Sun } from "@lucide/astro";
 </style>
 
 <script is:inline>
-  const handleSelectChange = (event) => {
-    const theme = event.target.value;
-    const element = document.documentElement;
+  (() => {
+    const select = document.getElementById("themeSelect");
+    const root = document.documentElement;
+    const colorSchemeMeta = document.querySelector('meta[name="color-scheme"]');
+    const systemScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-    if (theme === "system") {
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        element.classList.add("dark");
+    const setColorScheme = (theme) => {
+      colorSchemeMeta?.setAttribute(
+        "content",
+        theme === "system" ? "light dark" : theme,
+      );
+    };
+
+    const applyTheme = (theme) => {
+      const resolvedTheme =
+        theme === "system" ? (systemScheme.matches ? "dark" : "light") : theme;
+
+      root.classList.toggle("dark", resolvedTheme === "dark");
+      setColorScheme(theme);
+
+      if (select) {
+        select.value = theme;
+      }
+    };
+
+    const saveTheme = (theme) => {
+      if (theme === "system") {
+        localStorage.removeItem("theme");
       } else {
-        element.classList.remove("dark");
+        localStorage.setItem("theme", theme);
       }
 
-      localStorage.removeItem("theme");
-      document.getElementById("themeSelect").value = "system";
-    } else if (theme === "light") {
-      element.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      document.getElementById("themeSelect").value = "light";
-    } else if (theme === "dark") {
-      element.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      document.getElementById("themeSelect").value = "dark";
+      applyTheme(theme);
+    };
+
+    const storedTheme = localStorage.getItem("theme");
+    const theme =
+      storedTheme === "light" || storedTheme === "dark"
+        ? storedTheme
+        : "system";
+
+    applyTheme(theme);
+
+    select?.addEventListener("change", (event) => {
+      saveTheme(event.target.value);
+    });
+
+    const handleSystemChange = () => {
+      if (!localStorage.getItem("theme")) {
+        applyTheme("system");
+      }
+    };
+
+    if (systemScheme.addEventListener) {
+      systemScheme.addEventListener("change", handleSystemChange);
+    } else {
+      systemScheme.addListener(handleSystemChange);
     }
-  };
-
-  const theme = localStorage.getItem("theme") || "system";
-  handleSelectChange({ target: { value: theme } });
-
-  document
-    .getElementById("themeSelect")
-    .addEventListener("change", handleSelectChange);
+  })();
 </script>

@@ -4,61 +4,7 @@
 
 Items are ordered; each is one focused pull request.
 
-### 1. Upgrade TypeScript to 6 and drop `baseUrl`
-
-- [x] **Gap.** `typescript@^5.9.3` trails the rest of the toolchain, and
-      `tsconfig.json` resolves its `paths` aliases through `baseUrl: "."`, a key
-      newer TypeScript releases deprecate in favour of paths relative to the
-      config file.
-- [x] **Scope.** Bump `typescript` to the 6.x line (`^6.0.3` or the newest 6.x
-      at the time of the PR), remove `baseUrl`, and rewrite all six entries in
-      `paths` as `./`-relative paths (`"@components/*": ["./src/components/*"]`,
-      and likewise for `@assets`, `@images`, `@styles`, `@layouts`, and
-      `"@consts": ["./src/consts.ts"]`). Keep `extends:
-astro/tsconfigs/strict` and `strictNullChecks`. Fix only the type errors
-      the new compiler surfaces; do not restructure code. Regenerate and commit
-      `pnpm-lock.yaml` so the `--frozen-lockfile` CI install keeps
-      passing.
-- [x] **Same-PR tidy.** `@astrojs/check` sits in `dependencies` even though it
-      is a type-checking tool that never ships to the site. Move it to
-      `devDependencies` alongside the compiler bump so the whole type-check
-      toolchain lands in one change; keep the version at `^0.9.10`, which drives
-      the TypeScript 6 compiler fine, and `astro check` must still run from
-      `pnpm check`.
-- [x] **Dependencies.** None left. `.github/workflows/ci.yml` has shipped, so
-      this bump lands on a pull request that already runs `pnpm format:check`,
-      `pnpm check`, and `pnpm build` automatically.
-- [x] **Acceptance.** All 34 alias references across 22 files in `src/` still
-      resolve. They come in three kinds and each needs its own proof, because
-      only the first is type-checked:
-  - 16 `import` statements across 13 files (`src/layouts/*.astro`,
-    `src/components/ProjectGrid.astro`, and the `.astro`/`.mdx` pages under
-    `src/pages/`), covered by `pnpm check`.
-  - 8 `layout: "@layouts/..."` strings, one each in the frontmatter of
-    `src/pages/index.mdx`, `work/index.mdx`, `resume/mobile.mdx`,
-    `collections/stable-diffusion.mdx`, `collections/swiftui-2022.mdx`, and
-    `experiments/{frequent-typos,twil}/index.mdx` plus
-    `experiments/microblog/index.md`. Only Vite resolves these at build time,
-    so `pnpm build` must succeed and those pages must render with their
-    layout chrome.
-  - 10 `@images/...` URLs inside markdown image syntax across 3 files
-    (`src/pages/experiments/microblog/index.md` has 8;
-    `src/content/blog/2019/update-nope-syndicate/index.md` and
-    `src/content/derived-data/2019/inset-grouped-lists-swiftui/index.md`
-    have 1 each). These go through the markdown asset pipeline, not the
-    compiler, so they need an output diff rather than a green type check.
-- [x] **Acceptance, cont.** If the compiler bump produces errors that are not
-      mechanical, stop and split them out rather than widening this PR.
-- [x] **Validation.** `pnpm install`, `pnpm check`, `pnpm build`. Build `main`
-      first and keep `dist/`, then diff it against the build from this branch:
-      the two must be byte-identical, which is what proves the `baseUrl`
-      removal changed no resolution behaviour for any of the three reference
-      kinds. If the diff is non-empty, inspect the three markdown-image pages
-      and the layout-by-string pages specifically before accepting it. Finish
-      with editor-side confirmation that go-to-definition still follows an
-      `@layouts/*` import.
-
-### 2. Type the RSS endpoints and extract their shared feed builder
+### 1. Type the RSS endpoints and extract their shared feed builder
 
 - [ ] **Gap.** `src/pages/feed.xml.js` and `src/pages/derived-data-feed.xml.js`
       are the only two `.js` files under `src/`; everything else is `.astro` or
@@ -82,10 +28,10 @@ astro/tsconfigs/strict` and `strictNullChecks`. Fix only the type errors
       to `@consts` so all of `src/` uses one import style. No behaviour change:
       still the 10 most recent non-archived posts, still the sanitized rendered
       body, still the same `customData` block.
-- [ ] **Dependencies.** Item 1, for two reasons. It rewrites the entire `paths`
-      block that this item appends to, and landing second means these new `.ts`
-      files are type-checked by the TypeScript 6 compiler rather than needing a
-      second pass.
+- [ ] **Dependencies.** None left. The TypeScript 6 upgrade has shipped, so
+      `paths` is already `./`-relative with no `baseUrl` (append the new alias
+      in the same style), and the new `.ts` files are checked by the
+      TypeScript 6 compiler under CI's `pnpm check`.
 - [ ] **Acceptance.** `pnpm check` must now cover both endpoints and the
       helper. Two type errors are expected to surface, and both must be
       resolved in this PR rather than silenced:
@@ -111,6 +57,9 @@ astro/tsconfigs/strict` and `strictNullChecks`. Fix only the type errors
 
 ### Shipped
 
+- [x] Upgrade TypeScript to 6 and drop `baseUrl`: `typescript@^6.0.3`,
+      `./`-relative `paths` entries, and `@astrojs/check` moved to
+      `devDependencies`.
 - [x] Run the project checks in CI: add `.github/workflows/ci.yml` that runs
       `pnpm format:check`, `pnpm check`, and `pnpm build` on pull requests and
       pushes to `main`, with Node pinned via `node-version-file: .node-version`,

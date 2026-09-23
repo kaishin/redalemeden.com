@@ -4,59 +4,78 @@
 
 Items are ordered; each is one focused pull request.
 
-### 1. Type the RSS endpoints and extract their shared feed builder
+### 1. Fail `pnpm check` on warnings, not only errors
 
-- [x] **Gap.** `src/pages/feed.xml.js` and `src/pages/derived-data-feed.xml.js`
-      are the only two `.js` files under `src/`; everything else is `.astro` or
-      `.ts`. Being untyped JavaScript, they are invisible to `pnpm check`, and
-      they are near-identical 37-line copies differing only in the collection
-      they read (`blog` vs `derived-data`), the two `consts` they import, and
-      the `link` prefix. The duplication already hides a defect: both sort with
-      `new Date(b.data.pubDate) - new Date(a.data.pubDate)`, arithmetic on
-      `Date` objects that a type-checked file rejects. `postSchema` in
-      `src/content.config.ts` already transforms `pubDate` into a `Date`, so
-      the `new Date(...)` wrappers are redundant as well.
-- [x] **Scope.** Rename both files to `.ts` (`src/pages/feed.xml.ts`,
-      `src/pages/derived-data-feed.xml.ts` — the route URLs are unchanged) and
-      move the shared body into one `src/lib/feed.ts` helper parameterized by
-      collection name, feed title, feed description, and link prefix, returning
-      the `rss()` response. Type the `GET` parameter as Astro's `APIContext`
-      and the items as `@astrojs/rss`'s own item type. Replace the sort with
-      `b.data.pubDate.getTime() - a.data.pubDate.getTime()`. Add
-      `"@lib/*": ["./src/lib/*"]` to `paths` in `tsconfig.json`, import the
-      helper through it, and switch the endpoints' relative `../consts` import
-      to `@consts` so all of `src/` uses one import style. No behaviour change:
-      still the 10 most recent non-archived posts, still the sanitized rendered
-      body, still the same `customData` block.
-- [x] **Dependencies.** None left. The TypeScript 6 upgrade has shipped, so
-      `paths` is already `./`-relative with no `baseUrl` (append the new alias
-      in the same style), and the new `.ts` files are checked by the
-      TypeScript 6 compiler under CI's `pnpm check`.
-- [x] **Acceptance.** `pnpm check` must now cover both endpoints and the
-      helper. Two type errors are expected to surface, and both must be
-      resolved in this PR rather than silenced:
-  - `items` currently spreads `...post.data`, which carries `audience`,
-    `tags`, `image`, `updatedDate`, and `isArchived` into every feed item. If
-    the item type rejects them, pass `title`, `description`, `pubDate`,
-    `link`, and `content` explicitly instead of casting the spread.
-  - `context.site` is `URL | undefined` under `strictNullChecks`. Handle the
-    undefined case by throwing with a clear message; do not use `!`.
-- [x] **Acceptance, cont.** The feed URLs must not move. `/feed.xml` is linked
-      from `src/layouts/BaseLayout.astro`, `src/components/Navigation.astro`,
-      and `src/pages/blog/index.astro`; `/derived-data-feed.xml` from
-      `src/components/Navigation.astro` and
-      `src/pages/derived-data/index.astro`. Those five hrefs stay as they are,
-      and `dist/feed.xml` plus `dist/derived-data-feed.xml` must still be
-      emitted.
-- [x] **Validation.** `pnpm check`, `pnpm build`. Build `main` first, keep its
-      `dist/`, then diff both feed files against the build from this branch.
-      The only permitted difference is the `<lastBuildDate>` value, which is
-      stamped at build time; item order, `<link>` values, the escaped HTML in
-      each item's content, and both `<image>` blocks must match byte for byte.
-      Any other diff means the item shape changed and the PR is not ready.
+- [ ] **Gap.** `check` in `package.json` is a bare `astro check`, which exits 0
+      whenever there are no errors. Warnings such as unused imports and
+      variables, deprecated Astro APIs, and suspicious template expressions
+      appear in the log but never turn CI's `Type check` step red, so they
+      pile up unnoticed. Deprecations matter most here: they are the early
+      notice for the next Astro major, and today nothing forces anyone to
+      act on them.
+- [ ] **Scope.** Change the script to
+      `astro check --minimumSeverity warning`. Fix every warning it surfaces
+      in the same PR, keeping each fix minimal (delete the unused binding,
+      move to the non-deprecated API). Do not relax `tsconfig.json`, do not
+      add `// @ts-ignore` or `// @ts-expect-error`, and do not add hint-level
+      reporting. `.github/workflows/ci.yml` already runs `pnpm check`, so it
+      needs no change.
+- [ ] **Acceptance.** `pnpm check` reports 0 errors and 0 warnings and exits 0.
+      Record the warnings the first run found in the PR description, grouped
+      by file. If they amount to more than a small, mechanical set (say about
+      15, or any fix that changes rendered output), only change the script and
+      fix the mechanical ones. Leave the rest as a separate backlog item and
+      explain why in the PR, rather than growing this PR.
+- [ ] **Validation.** `pnpm check`, `pnpm format:check`, `pnpm build`. Add a
+      throwaway unused import to a `.astro` file and confirm `pnpm check` now
+      exits non-zero, then revert it. `dist/` should not change apart from
+      build-stamped values such as `<lastBuildDate>` in the two feeds.
+
+### 2. Upgrade pnpm to 11 and check peer dependencies in CI
+
+- [ ] **Gap.** `packageManager` pins `pnpm@10.33.0`, and nothing in CI notices
+      when an installed package's peer range stops matching its host. That
+      matters most during major upgrades like the Astro 7 move: an
+      `@astrojs/*` integration or `@astrojs/check` can peer-require a
+      `typescript` or `astro` range that the lockfile no longer satisfies.
+      pnpm only warns about this during `pnpm install`, where nobody reads the
+      output. pnpm 11 adds `pnpm peers check`, which exits non-zero on
+      unmet or invalid peers. The repo also has no `pnpm-workspace.yaml`, so
+      nothing records which dependencies may run install scripts (`sharp`,
+      `esbuild`, `@tailwindcss/oxide`).
+- [ ] **Scope, one toolchain change.**
+  - Bump `packageManager` to the current `pnpm@11.x` release.
+  - pnpm 11 refuses to run below Node `22.13.0`. Raise `.node-version` and
+    `engines.node` from `22.12.0` / `>=22.12.0` to `22.13.0` / `>=22.13.0`,
+    together. CI reads `.node-version`, so without this bump CI would break
+    as soon as the pin moves. Astro 7's own floor is `>=22.12.0`, so the
+    higher pnpm floor wins.
+  - Add `pnpm-workspace.yaml` with `packages: ["."]` and an `allowBuilds` map
+    listing each dependency that `pnpm install` reports as having an
+    unapproved build script. Expect `sharp`, `esbuild`, and
+    `@tailwindcss/oxide`. Set each to `true` only if the build needs it and
+    `false` otherwise, and give the reason in the PR description.
+  - Regenerate `pnpm-lock.yaml` with the new pnpm, then run `pnpm format` so
+    the lockfile keeps the Prettier formatting it already has.
+  - Add a `Check peer dependencies` step running `pnpm peers check` to
+    `.github/workflows/ci.yml` before `Check formatting`, with
+    `if: ${{ !cancelled() }}` like the other steps.
+- [ ] **Acceptance.** Delete `node_modules`, then run
+      `pnpm install --frozen-lockfile`. It must exit 0 with no warnings about
+      unapproved build scripts. `pnpm peers check` exits 0. If it reports real
+      peer mismatches, fix them by moving the offending range in this PR. If a
+      fix would need a major upgrade, stop and record it as its own backlog
+      item instead of widening this PR. Update any Node or pnpm version
+      mentioned in `README.md` or `CLAUDE.md`.
+- [ ] **Validation.** Run `pnpm peers check`, `pnpm format:check`,
+      `pnpm check`, and `pnpm build` locally on Node 22.13.0. CI must pass
+      with the new step, and the `Setup pnpm` log must show the 11.x version.
 
 ### Shipped
 
+- [x] Type the RSS endpoints and extract their shared feed builder into
+      `src/lib/feed.ts` (`src/pages/feed.xml.ts`,
+      `src/pages/derived-data-feed.xml.ts`, `@lib/*` path alias).
 - [x] Upgrade TypeScript to 6 and drop `baseUrl`: `typescript@^6.0.3`,
       `./`-relative `paths` entries, and `@astrojs/check` moved to
       `devDependencies`.

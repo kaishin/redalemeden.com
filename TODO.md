@@ -25,8 +25,9 @@ astro/tsconfigs/strict` and `strictNullChecks`. Fix only the type errors
       toolchain lands in one change; keep the version at `^0.9.10`, which drives
       the TypeScript 6 compiler fine, and `astro check` must still run from
       `pnpm check`.
-- [ ] **Dependencies.** The shipped CI workflow, so the bump lands against a
-      pull request that already runs `pnpm check` and `pnpm build` automatically.
+- [ ] **Dependencies.** None left. `.github/workflows/ci.yml` has shipped, so
+      this bump lands on a pull request that already runs `pnpm format:check`,
+      `pnpm check`, and `pnpm build` automatically.
 - [ ] **Acceptance.** All 34 alias references across 22 files in `src/` still
       resolve. They come in three kinds and each needs its own proof, because
       only the first is type-checked:
@@ -56,6 +57,57 @@ astro/tsconfigs/strict` and `strictNullChecks`. Fix only the type errors
       and the layout-by-string pages specifically before accepting it. Finish
       with editor-side confirmation that go-to-definition still follows an
       `@layouts/*` import.
+
+### 2. Type the RSS endpoints and extract their shared feed builder
+
+- [ ] **Gap.** `src/pages/feed.xml.js` and `src/pages/derived-data-feed.xml.js`
+      are the only two `.js` files under `src/`; everything else is `.astro` or
+      `.ts`. Being untyped JavaScript, they are invisible to `pnpm check`, and
+      they are near-identical 37-line copies differing only in the collection
+      they read (`blog` vs `derived-data`), the two `consts` they import, and
+      the `link` prefix. The duplication already hides a defect: both sort with
+      `new Date(b.data.pubDate) - new Date(a.data.pubDate)`, arithmetic on
+      `Date` objects that a type-checked file rejects. `postSchema` in
+      `src/content.config.ts` already transforms `pubDate` into a `Date`, so
+      the `new Date(...)` wrappers are redundant as well.
+- [ ] **Scope.** Rename both files to `.ts` (`src/pages/feed.xml.ts`,
+      `src/pages/derived-data-feed.xml.ts` — the route URLs are unchanged) and
+      move the shared body into one `src/lib/feed.ts` helper parameterized by
+      collection name, feed title, feed description, and link prefix, returning
+      the `rss()` response. Type the `GET` parameter as Astro's `APIContext`
+      and the items as `@astrojs/rss`'s own item type. Replace the sort with
+      `b.data.pubDate.getTime() - a.data.pubDate.getTime()`. Add
+      `"@lib/*": ["./src/lib/*"]` to `paths` in `tsconfig.json`, import the
+      helper through it, and switch the endpoints' relative `../consts` import
+      to `@consts` so all of `src/` uses one import style. No behaviour change:
+      still the 10 most recent non-archived posts, still the sanitized rendered
+      body, still the same `customData` block.
+- [ ] **Dependencies.** Item 1, for two reasons. It rewrites the entire `paths`
+      block that this item appends to, and landing second means these new `.ts`
+      files are type-checked by the TypeScript 6 compiler rather than needing a
+      second pass.
+- [ ] **Acceptance.** `pnpm check` must now cover both endpoints and the
+      helper. Two type errors are expected to surface, and both must be
+      resolved in this PR rather than silenced:
+  - `items` currently spreads `...post.data`, which carries `audience`,
+    `tags`, `image`, `updatedDate`, and `isArchived` into every feed item. If
+    the item type rejects them, pass `title`, `description`, `pubDate`,
+    `link`, and `content` explicitly instead of casting the spread.
+  - `context.site` is `URL | undefined` under `strictNullChecks`. Handle the
+    undefined case by throwing with a clear message; do not use `!`.
+- [ ] **Acceptance, cont.** The feed URLs must not move. `/feed.xml` is linked
+      from `src/layouts/BaseLayout.astro`, `src/components/Navigation.astro`,
+      and `src/pages/blog/index.astro`; `/derived-data-feed.xml` from
+      `src/components/Navigation.astro` and
+      `src/pages/derived-data/index.astro`. Those five hrefs stay as they are,
+      and `dist/feed.xml` plus `dist/derived-data-feed.xml` must still be
+      emitted.
+- [ ] **Validation.** `pnpm check`, `pnpm build`. Build `main` first, keep its
+      `dist/`, then diff both feed files against the build from this branch.
+      The only permitted difference is the `<lastBuildDate>` value, which is
+      stamped at build time; item order, `<link>` values, the escaped HTML in
+      each item's content, and both `<image>` blocks must match byte for byte.
+      Any other diff means the item shape changed and the PR is not ready.
 
 ### Shipped
 

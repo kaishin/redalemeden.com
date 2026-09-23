@@ -58,20 +58,35 @@ astro/tsconfigs/strict` and `strictNullChecks`. Fix only the type errors
       `pnpm check`.
 - [ ] **Dependencies.** Item 1, so the bump lands against a pull request that
       already runs `pnpm check` and `pnpm build` automatically.
-- [ ] **Acceptance.** All 24 alias references across 20 files in `src/` still
-      resolve. They come in two kinds and need two different proofs: 16 are
-      `import` statements in `.astro`/`.mdx` frontmatter, covered by
-      `pnpm check`; the other 8 are `layout: "@layouts/..."` strings in the
-      frontmatter of `.md`/`.mdx` pages (`src/pages/index.mdx`,
-      `work/index.mdx`, `resume/mobile.mdx`, `collections/*.mdx`,
-      `experiments/*/index.{md,mdx}`), which only Vite resolves at build time,
-      so `pnpm build` must succeed and those pages must render. If the compiler
-      bump produces errors that are not mechanical, stop and split them out
-      rather than widening this PR.
-- [ ] **Validation.** `pnpm install`, `pnpm check`, `pnpm build`, spot-check the
-      built HTML for one layout-by-string page to confirm it still has its
-      navigation chrome, and editor-side confirmation that go-to-definition
-      still follows an `@layouts/*` import.
+- [ ] **Acceptance.** All 34 alias references across 22 files in `src/` still
+      resolve. They come in three kinds and each needs its own proof, because
+      only the first is type-checked:
+  - 16 `import` statements across 13 files (`src/layouts/*.astro`,
+    `src/components/ProjectGrid.astro`, and the `.astro`/`.mdx` pages under
+    `src/pages/`), covered by `pnpm check`.
+  - 8 `layout: "@layouts/..."` strings, one each in the frontmatter of
+    `src/pages/index.mdx`, `work/index.mdx`, `resume/mobile.mdx`,
+    `collections/stable-diffusion.mdx`, `collections/swiftui-2022.mdx`, and
+    `experiments/{frequent-typos,twil}/index.mdx` plus
+    `experiments/microblog/index.md`. Only Vite resolves these at build time,
+    so `pnpm build` must succeed and those pages must render with their
+    layout chrome.
+  - 10 `@images/...` URLs inside markdown image syntax across 3 files
+    (`src/pages/experiments/microblog/index.md` has 8;
+    `src/content/blog/2019/update-nope-syndicate/index.md` and
+    `src/content/derived-data/2019/inset-grouped-lists-swiftui/index.md`
+    have 1 each). These go through the markdown asset pipeline, not the
+    compiler, so they need an output diff rather than a green type check.
+- [ ] **Acceptance, cont.** If the compiler bump produces errors that are not
+      mechanical, stop and split them out rather than widening this PR.
+- [ ] **Validation.** `pnpm install`, `pnpm check`, `pnpm build`. Build `main`
+      first and keep `dist/`, then diff it against the build from this branch:
+      the two must be byte-identical, which is what proves the `baseUrl`
+      removal changed no resolution behaviour for any of the three reference
+      kinds. If the diff is non-empty, inspect the three markdown-image pages
+      and the layout-by-string pages specifically before accepting it. Finish
+      with editor-side confirmation that go-to-definition still follows an
+      `@layouts/*` import.
 
 ### Shipped
 

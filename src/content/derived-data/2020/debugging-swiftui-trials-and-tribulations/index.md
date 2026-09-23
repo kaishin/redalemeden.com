@@ -64,7 +64,7 @@ The call stack points exclusively to SwiftUI internals, with the last call
 referring to a certain
 `AG::Graph`—[responsible](https://steipete.com/posts/state-of-swiftui/#swiftui-attributegraph-crashes)
 for holding the view tree and diffing it. As far as debugging goes, this is
-very, *very* little to work with.
+very, _very_ little to work with.
 
 With my hands tied, I briefly considered resurrecting the `UITabBarController`
 wrapper I used prior to WWDC, especially since I didn’t manage to make a
@@ -77,7 +77,7 @@ screen—pitchfork in hand—ready to gut the entire tab navigation and replace 
 with a custom-made solution. I had had enough.
 
 But then came the proverbial aha moment: what if the conditional check took
-place *inside* the second tab, instead of *around* it?
+place _inside_ the second tab, instead of _around_ it?
 
 ```swift
 TabView {
@@ -91,7 +91,7 @@ TabView {
 }
 ```
 
-And *just* like that, the crasher was gone. Squashed into oblivion.
+And _just_ like that, the crasher was gone. Squashed into oblivion.
 
 If this sounds dumb, it’s because it is. At no point did the compiler chastise
 me for doing something I wasn't supposed to do. And to make matters worse, the
@@ -104,6 +104,7 @@ situations in the future. I adore SwiftUI, but moments like these give me a good
 dose of anticipatory anxiety—the kind that erodes trust and dampens the thrill of
 being at the bleeding edge.
 
-[^1]: As an aside, apps that greet users with a sign up screen are generally
+[^1]:
+    As an aside, apps that greet users with a sign up screen are generally
     trash. You don't ask prospective tenants to sign the contract at the door
     before they've even seen the apartment.

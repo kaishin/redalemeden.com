@@ -101,7 +101,7 @@ Here's an example from the codebase that prompted me to write this post:
 
 ```swift
 let cache = Cache(
-  upsert: { value in // -> AnyPublisher<Value, CachingError> 
+  upsert: { value in // -> AnyPublisher<Value, CachingError>
     Just(value)
       .setFailureType(to: CachingError.self)
       .eraseToAnyPublisher()

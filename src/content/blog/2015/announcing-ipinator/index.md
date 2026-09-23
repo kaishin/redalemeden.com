@@ -7,14 +7,14 @@ audience: "people who have been following my macOS-related work"
 isArchived: true
 ---
 
-I'm pleased to announce that [IPinator](http://ipinator.kaishin.co) is *finally*
+I'm pleased to announce that [IPinator](http://ipinator.kaishin.co) is _finally_
 [live on the App Store](https://itunes.apple.com/us/app/ipinator/id959111981).
 It's a utility app and Notification Center widget that displays your external IP
 address and locates it on a map for easy access during local development, VPN
 setup, etc.
 
-![IPinator screenshot](./ipinator-screenshot.jpg) *Application window and
-Notification Center extension.*
+![IPinator screenshot](./ipinator-screenshot.jpg) _Application window and
+Notification Center extension._
 
 IPinator is written in Swift and uses [Argo](https://github.com/thoughtbot/Argo)
 for JSON parsing and [Llamakit](https://github.com/LlamaKit/LlamaKit) for

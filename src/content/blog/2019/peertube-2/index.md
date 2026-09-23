@@ -16,7 +16,7 @@ connect multiple independent instances. Any individual or organization can run
 their own instance and have total control over their content and communities.
 
 I am very excited to see this platform evolve and get more traction the world
-over. Hating on YouTube is *cliché* these days, but the service deserves every
+over. Hating on YouTube is _cliché_ these days, but the service deserves every
 bit of it. [And then
 some](https://www.theverge.com/2019/11/23/20946114/google-youtube-premium-subscription-ads-pop-ups-spam-rant).
 

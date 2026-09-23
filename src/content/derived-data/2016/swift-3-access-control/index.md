@@ -21,7 +21,7 @@ cheatsheet to help with the transition:
   properties.
 
 - **Internal**: Entity can only be accessed within the same module, i.e. app or
-  framework target. This is the *default* if no access keyword is specified. You
+  framework target. This is the _default_ if no access keyword is specified. You
   can subclass classes and override their non-private methods and properties.
 
 - **Public**: Entity can be accessed from within other modules. Classes cannot

@@ -10,7 +10,7 @@ with Swift static site generators:
 
 > After a bit of spelunking, I realized that it had been built with some beta
 > version of Xcode long since lost to the sands of time — I was stuck with a
-> binary I couldn’t run.  
+> binary I couldn’t run.
 
 Luckily most of this is behind us now. Prior to 4.0, this was a major drawback
 of using the language for general purpose programming.
@@ -36,7 +36,7 @@ existing one, especially if you are making Websites for a living.
 
 > In practice I found [using an HTML DSL] to be more clunky and mistake-prone
 > than just writing HTML with Mustache templates, which is what I was converting
-> from.  
+> from.
 
 Couldn’t agree more as someone who always preferred templating languages
 (Mustache, Liquid, etc) to DSLs. The latter often introduce friction that seems

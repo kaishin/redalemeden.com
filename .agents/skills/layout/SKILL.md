@@ -103,6 +103,7 @@ Create a systematic plan:
 - If an icon looks visually off-center despite being geometrically centered, nudge it — but only if you're confident it actually looks wrong. Don't adjust speculatively.
 
 **NEVER**:
+
 - Use arbitrary spacing values outside your scale
 - Make all spacing equal — variety creates hierarchy
 - Wrap everything in cards — not everything needs a container

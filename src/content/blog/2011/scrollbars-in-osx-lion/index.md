@@ -30,7 +30,7 @@ be in the user's [locus of
 attention](http://www.usabilityfirst.com/glossary/locus-of-attention/)[^1].
 Using screen real-estate to display non-critical information is nothing short of
 a hindrance and is against the [progressive
-disclosure](http://en.wikipedia.org/wiki/Progressive_disclosure ) principle. The
+disclosure](http://en.wikipedia.org/wiki/Progressive_disclosure) principle. The
 view provides immediate feedback when the user initiates a scroll, giving them
 thereby the right information at the right time.
 

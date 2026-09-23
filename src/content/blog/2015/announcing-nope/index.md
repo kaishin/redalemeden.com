@@ -52,33 +52,33 @@ and privacy.
 Once Nope is enabled, every website you visit will fall into one of these three
 categories:
 
-- *Yep*: Nothing is blocked.
-- *Nope*: Third party resources belonging to any of the enabled categories (ads,
+- _Yep_: Nothing is blocked.
+- _Nope_: Third party resources belonging to any of the enabled categories (ads,
   tracking, social) are blocked. This is the default behavior.
-- *Mega Nope*: All third party resources are blocked, regardless of whether they
+- _Mega Nope_: All third party resources are blocked, regardless of whether they
   are on the rules list or not.
 
 You can view a list of all the (sub)domains that you've already categorized in
-the settings accessible from  *Safari > Preferences > Extensions > Nope*. It's
+the settings accessible from _Safari > Preferences > Extensions > Nope_. It's
 also possible to manually edit the comma-separated list to add new (sub)domains
 or remove existing ones.
 
-![Nope Screenshot](./nope-screenshot.jpg) *You can set the behavior for a
-specific domain or subdomain using the toolbar button.*
+![Nope Screenshot](./nope-screenshot.jpg) _You can set the behavior for a
+specific domain or subdomain using the toolbar button._
 
 ## API Limitations
 
 Currently the content blocking APIs don't expose the blocked resources to the
 extension. This means that there is no way of displaying what has been blocked
-outside of the *Console* logs in the developer console---not a great user
+outside of the _Console_ logs in the developer console---not a great user
 experience for the average user.
 
 Those who are happy to make this---hopefully temporary---tradeoff will see
 improved Safari performance, especially on sites that load dozens of third party
 scripts.
 
-![Safari Developer Console](./content-blocked-console.jpg) *Logging blocked
-resources in the Safari Developer Console.*
+![Safari Developer Console](./content-blocked-console.jpg) _Logging blocked
+resources in the Safari Developer Console._
 
 ## Roadmap
 

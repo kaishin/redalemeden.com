@@ -13,19 +13,19 @@ from NetNewsWire:
 >
 > [...]
 >
-> There *is* a solution to the problem of showing full content and not leaving
-> the app, and it’s a feature that really *does* belong in an RSS reader: using
+> There _is_ a solution to the problem of showing full content and not leaving
+> the app, and it’s a feature that really _does_ belong in an RSS reader: using
 > content extraction to grab the article from the original page.
 >
 > If you’ve ever used Safari’s Reader view, then you know what I’m talking
 > about. The idea is that NetNewsWire would do something very much like the
 > Reader view (but inline, in the article pane), that grabs the content and
-> formats it nicely, without all the extra junk that is *not* the article you
+> formats it nicely, without all the extra junk that is _not_ the article you
 > want to read.
 
 Let me be clear about this: Truncating content in RSS feeds is, without a sliver
 of doubt, an accessibility issue first and foremost. Accessibility as in making
-your content accessible to your readers wherever they *chose* to subscribe to
+your content accessible to your readers wherever they _chose_ to subscribe to
 your feeds---be it a mobile app, a command line, or through a screen reader.
 Undermining this aspect and coercing them to visit your website, no matter how
 much love you poured into it, is short-sighted at best, and inconsiderate at
@@ -43,4 +43,4 @@ readers.
 
 In the meantime, industrious developers will keep finding workarounds to restore
 functionality that users yearn for. And nothing can stop that, because open
-*always* wins.
+_always_ wins.

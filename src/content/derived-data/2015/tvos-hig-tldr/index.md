@@ -9,10 +9,10 @@ audience: "people interested in designing or building apps for tvOS"
 
 I often joke about the
 [HIG](https://developer.apple.com/tvos/human-interface-guidelines/) being an
-acronym for *Highly Ignored Guidelines*. This is an effort to change that, at
+acronym for _Highly Ignored Guidelines_. This is an effort to change that, at
 least for tvOS.
 
-![tvOS User Interface](./tvos-screen-capture.jpg) *The user interface of tvOS.*
+![tvOS User Interface](./tvos-screen-capture.jpg) _The user interface of tvOS._
 
 ## Glossary
 
@@ -41,7 +41,7 @@ least for tvOS.
 - **Top Shelf**. The area above the first row of apps where featured content of
   the focused app appears.
 
-*Update*: My colleague [Jack Nutting](https://twitter.com/jacknutting) pointed
+_Update_: My colleague [Jack Nutting](https://twitter.com/jacknutting) pointed
 out that clicks require you to press the touch surface until it clicks, whereas
 taps don't.
 

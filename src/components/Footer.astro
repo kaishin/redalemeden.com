@@ -10,7 +10,7 @@ import { SITE_URL, SITE_AUTHOR, SITE_AUTHOR_BIO } from "../consts";
 ---
 
 <footer class="self-end px-6 pb-12 text-center md:col-start-1 md:row-start-3">
-  <ul class="flex items-center justify-center gap-5 mb-4">
+  <ul class="mb-4 flex items-center justify-center gap-5">
     <li>
       <a
         href="https://github.com/kaishin"
@@ -54,11 +54,7 @@ import { SITE_URL, SITE_AUTHOR, SITE_AUTHOR_BIO } from "../consts";
     <a class="p-name u-url" href={SITE_URL}>
       {SITE_AUTHOR}
     </a>
-    <img
-      class="u-photo"
-      src={SITE_URL + "/logo-bg.jpg"}
-      alt={SITE_AUTHOR}
-    />
+    <img class="u-photo" src={SITE_URL + "/logo-bg.jpg"} alt={SITE_AUTHOR} />
     <p class="p-note">{SITE_AUTHOR_BIO}</p>
   </div>
   <span class="block pb-6 text-stone-400 dark:text-[var(--muted-text)]">

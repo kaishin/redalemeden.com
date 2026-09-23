@@ -175,7 +175,7 @@ the Internet itself. Thus we pledge to code, design, and participate in newer
 and better networks that follow these principles, and to eschew the older,
 controlling, and soon to be outmoded networks.
 
-*We, therefore, the undersigned people of the Internet*, do solemnly publish and
+_We, therefore, the undersigned people of the Internet_, do solemnly publish and
 declare that we will do all we can to create decentralized social networks; that
 as many of us as possible should distribute, discuss, and sign their names to
 this document; that we endorse the preceding statement of principles of

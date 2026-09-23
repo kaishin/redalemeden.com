@@ -57,6 +57,7 @@ Work through these dimensions methodically:
 - **Grid adherence**: Elements snap to baseline grid
 
 **Check**:
+
 - Enable grid overlay and verify alignment
 - Check spacing with browser inspector
 - Test at multiple viewport sizes
@@ -194,6 +195,7 @@ Go through systematically:
 **IMPORTANT**: Polish is about details. Zoom in. Squint at it. Use it yourself. The little things add up.
 
 **NEVER**:
+
 - Polish before it's functionally complete
 - Spend hours on polish if it ships in 30 minutes (triage)
 - Introduce bugs while polishing (test thoroughly)

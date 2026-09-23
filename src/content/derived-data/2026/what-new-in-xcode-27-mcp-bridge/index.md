@@ -16,7 +16,7 @@ Here's every new tool and what it does.
 - **StopProject**: Stops the running app, the equivalent of Cmd+. Returns immediately if nothing is running.
 - **InvokeDebuggerCommand**: Sends any lldb command to Xcode's active debug session and returns the output. The process must already be running with the debugger attached. Supports the full lldb surface: `bt`, `po`, `breakpoint set`, `thread step-over`, `frame variable`, etc. The agent and Xcode UI share the same lldb session, so state is consistent on both sides.
 - **GetConsoleOutput**: Retrieves stdout, stderr, and OSLog output from a running or completed app session. Supports regex filtering, severity filtering, and context extraction.
-- **RunCodeSnippet** *(replaces ExecuteSnippet)*: Builds and runs a code snippet in the context of a specific source file and waits for results. Returns the output of any `print` statements in the snippet. Works for app, framework, library, and command-line targets.
+- **RunCodeSnippet** _(replaces ExecuteSnippet)_: Builds and runs a code snippet in the context of a specific source file and waits for results. Returns the output of any `print` statements in the snippet. Works for app, framework, library, and command-line targets.
 
 ## Device Interaction
 
@@ -57,6 +57,5 @@ Here's every new tool and what it does.
 - **StringCatalogContext**: Returns the source language value and context for a given string in the String Catalog. Requires the `xcode-integration:translation` skill.
 - **StringCatalogEdit**: Inserts a translation for a given locale into the String Catalog. Requires the `xcode-integration:translation` skill.
 - **LocalizationPlanner**: Ensures the project is ready for translations to be added. Call this each time you're adding a new language or translating an entire project. Requires the `xcode-integration:translation-coordinator` skill.
-
 
 Whether the agent runs standalone or inside Xcode through [ACP](https://agentclientprotocol.com/get-started/introduction), the new tools close the loop that previously required reaching out to `simctl` and friends just to run and poke at the app to verify their work. `DeviceInteractionSynthesize` alone eliminates a whole class of workarounds. `GetConsoleOutput` is similarly welcome, since pulling logs directly instead of switching windows and copy-pasting saves more time than it sounds once you're doing it dozens of times a session.

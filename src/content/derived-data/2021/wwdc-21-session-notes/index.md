@@ -22,7 +22,7 @@ The sessions below are listed in the order I have watched them:
   attributed string and formatter APIs are simply brilliant. Kudos.
 
 - [Add rich graphics to your SwiftUI app](https://developer.apple.com/wwdc21/10021): While I sort of expected the
-  addition of  `Material`, `Canvas` caught me off-guard and I am loving it. 😍
+  addition of `Material`, `Canvas` caught me off-guard and I am loving it. 😍
 
 - [Meet DocC Documentation in Xcode](https://developer.apple.com/wwdc21/10166):
   Hands-down my favorite new surprise announcement this year. Lots of neat

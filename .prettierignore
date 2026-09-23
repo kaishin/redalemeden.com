@@ -1,0 +1,7 @@
+# Build output and generated types are handled outside Prettier
+dist/
+.astro/
+
+# Prettier's MDX formatter oscillates on this file's inline <ruby> markup:
+# repeated runs never settle on one output, so --check never passes.
+src/pages/experiments/twil/index.mdx

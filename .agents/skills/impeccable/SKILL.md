@@ -14,6 +14,7 @@ This skill guides creation of distinctive, production-grade frontend interfaces 
 Design skills produce generic output without project context. You MUST have confirmed design context before doing any design work.
 
 **Required context** (every design skill needs at minimum):
+
 - **Target audience**: Who uses this product and in what context?
 - **Use cases**: What jobs are they trying to get done?
 - **Brand personality/tone**: How should the interface feel?
@@ -23,6 +24,7 @@ Individual skills may require additional context. Check the skill's preparation 
 **CRITICAL**: You cannot infer this context by reading the codebase. Code tells you what was built, not who it's for or what it should feel like. Only the creator can provide this context.
 
 **Gathering order:**
+
 1. **Check current instructions (instant)**: If your loaded instructions already contain a **Design Context** section, proceed immediately.
 2. **Check .impeccable.md (fast)**: If not in instructions, read `.impeccable.md` from the project root. If it exists and contains the required context, proceed.
 3. **Run impeccable teach (REQUIRED)**: If neither source has context, you MUST run /impeccable teach NOW before doing anything else. Do NOT skip this step. Do NOT attempt to infer context from the codebase instead.
@@ -32,6 +34,7 @@ Individual skills may require additional context. Check the skill's preparation 
 ## Design Direction
 
 Commit to a BOLD aesthetic direction:
+
 - **Purpose**: What problem does this interface solve? Who uses it?
 - **Tone**: Pick an extreme: brutally minimal, maximalist chaos, retro-futuristic, organic/natural, luxury/refined, playful/toy-like, editorial/magazine, brutalist/raw, art deco/geometric, soft/pastel, industrial/utilitarian, etc. There are so many flavors to choose from. Use these for inspiration but design one that is true to the aesthetic direction.
 - **Constraints**: Technical requirements (framework, performance, accessibility).
@@ -40,6 +43,7 @@ Commit to a BOLD aesthetic direction:
 **CRITICAL**: Choose a clear conceptual direction and execute it with precision. Bold maximalism and refined minimalism both work. The key is intentionality, not intensity.
 
 Then implement working code that is:
+
 - Production-grade and functional
 - Visually striking and memorable
 - Cohesive with a clear aesthetic point-of-view
@@ -48,7 +52,8 @@ Then implement working code that is:
 ## Frontend Aesthetics Guidelines
 
 ### Typography
-→ *Consult [typography reference](reference/typography.md) for OpenType features, web font loading, and the deeper material on scales.*
+
+→ _Consult [typography reference](reference/typography.md) for OpenType features, web font loading, and the deeper material on scales._
 
 Choose fonts that are beautiful, unique, and interesting. Pair a distinctive display font with a refined body font.
 
@@ -59,7 +64,7 @@ Always apply these — do not consult a reference, just do them:
 - Use fewer sizes with more contrast. A 5-step scale with at least a 1.25 ratio between steps creates clearer hierarchy than 8 sizes that are 1.1× apart.
 - Line-height scales inversely with line length. Narrow columns want tighter leading, wide columns want more. For light text on dark backgrounds, ADD 0.05-0.1 to your normal line-height — light type reads as lighter weight and needs more breathing room.
 - Cap line length at ~65-75ch. Body text wider than that is fatiguing.
-</typography_principles>
+  </typography_principles>
 
 <font_selection_procedure>
 DO THIS BEFORE TYPING ANY FONT NAME.
@@ -98,7 +103,7 @@ Instrument Serif
 
 Reject every font that appears in the reflex_fonts_to_reject list. They are your training-data defaults and they create monoculture across projects.
 
-Step 3. Browse a font catalog with the 3 brand words in mind. Sources: Google Fonts, Pangram Pangram, Future Fonts, Adobe Fonts, ABC Dinamo, Klim Type Foundry, Velvetyne. Look for something that fits the brand as a *physical object* — a museum exhibit caption, a hand-painted shop sign, a 1970s mainframe terminal manual, a fabric label on the inside of a coat, a children's book printed on cheap newsprint. Reject the first thing that "looks designy" — that's the trained reflex too. Keep looking.
+Step 3. Browse a font catalog with the 3 brand words in mind. Sources: Google Fonts, Pangram Pangram, Future Fonts, Adobe Fonts, ABC Dinamo, Klim Type Foundry, Velvetyne. Look for something that fits the brand as a _physical object_ — a museum exhibit caption, a hand-painted shop sign, a 1970s mainframe terminal manual, a fabric label on the inside of a coat, a children's book printed on cheap newsprint. Reject the first thing that "looks designy" — that's the trained reflex too. Keep looking.
 
 Step 4. Cross-check the result. The right font for an "elegant" brief is NOT necessarily a serif. The right font for a "technical" brief is NOT necessarily a sans-serif. The right font for a "warm" brief is NOT Fraunces. If your final pick lines up with your reflex pattern, go back to Step 3.
 </font_selection_procedure>
@@ -117,17 +122,18 @@ DO NOT set long body passages in uppercase. Reserve all-caps for short labels an
 </typography_rules>
 
 ### Color & Theme
-→ *Consult [color reference](reference/color-and-contrast.md) for the deeper material on contrast, accessibility, and palette construction.*
+
+→ _Consult [color reference](reference/color-and-contrast.md) for the deeper material on contrast, accessibility, and palette construction._
 
 Commit to a cohesive palette. Dominant colors with sharp accents outperform timid, evenly-distributed palettes.
 
 <color_principles>
 Always apply these — do not consult a reference, just do them:
 
-- Use OKLCH, not HSL. OKLCH is perceptually uniform: equal steps in lightness *look* equal, which HSL does not deliver. As you move toward white or black, REDUCE chroma — high chroma at extreme lightness looks garish. A light blue at 85% lightness wants ~0.08 chroma, not the 0.15 of your base color.
+- Use OKLCH, not HSL. OKLCH is perceptually uniform: equal steps in lightness _look_ equal, which HSL does not deliver. As you move toward white or black, REDUCE chroma — high chroma at extreme lightness looks garish. A light blue at 85% lightness wants ~0.08 chroma, not the 0.15 of your base color.
 - Tint your neutrals toward your brand hue. Even a chroma of 0.005-0.01 is perceptible and creates subconscious cohesion between brand color and UI surfaces. The hue you tint toward should come from THIS brand, not from a "warm = friendly" or "cool = tech" formula. Pick the brand's actual hue first, then tint everything toward it.
-- The 60-30-10 rule is about visual *weight*, not pixel count. 60% neutral / surface, 30% secondary text and borders, 10% accent. Accents work BECAUSE they're rare. Overuse kills their power.
-</color_principles>
+- The 60-30-10 rule is about visual _weight_, not pixel count. 60% neutral / surface, 30% secondary text and borders, 10% accent. Accents work BECAUSE they're rare. Overuse kills their power.
+  </color_principles>
 
 <theme_selection>
 Theme (light vs dark) should be DERIVED from audience and viewing context, not picked from a default. Read the brief and ask: when is this product used, by whom, in what physical setting?
@@ -157,7 +163,8 @@ DO NOT default to light mode "to be safe" either. The point is to choose, not to
 </color_rules>
 
 ### Layout & Space
-→ *Consult [spatial reference](reference/spatial-design.md) for the deeper material on grids, container queries, and optical adjustments.*
+
+→ _Consult [spatial reference](reference/spatial-design.md) for the deeper material on grids, container queries, and optical adjustments._
 
 Create visual rhythm through varied spacing, not the same padding everywhere. Embrace asymmetry and unexpected compositions. Break the grid intentionally for emphasis.
 
@@ -169,7 +176,7 @@ Always apply these — do not consult a reference, just do them:
 - Vary spacing for hierarchy. A heading with extra space above it reads as more important — make use of that. Don't apply the same padding everywhere.
 - Self-adjusting grid pattern: `grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))` is the breakpoint-free responsive grid for card-style content.
 - Container queries are for components, viewport queries are for page layout. A card in a sidebar should adapt to the sidebar's width, not the viewport's.
-</spatial_principles>
+  </spatial_principles>
 
 <spatial_rules>
 DO create visual rhythm through varied spacing: tight groupings, generous separations.
@@ -191,18 +198,20 @@ DO NOT let body text wrap beyond ~80 characters per line. Add a max-width like 6
 These CSS patterns are NEVER acceptable. They are the most recognizable AI design tells. Match-and-refuse: if you find yourself about to write any of these, stop and rewrite the element with a different structure entirely.
 
 BAN 1: Side-stripe borders on cards/list items/callouts/alerts
-  - PATTERN: `border-left:` or `border-right:` with width greater than 1px
-  - INCLUDES: hard-coded colors AND CSS variables
-  - FORBIDDEN: `border-left: 3px solid red`, `border-left: 4px solid #ff0000`, `border-left: 4px solid var(--color-warning)`, `border-left: 5px solid oklch(...)`, etc.
-  - WHY: this is the single most overused "design touch" in admin, dashboard, and medical UIs. It never looks intentional regardless of color, radius, opacity, or whether the variable name is "primary" or "warning" or "accent."
-  - REWRITE: use a different element structure entirely. Do not just swap to box-shadow inset. Reach for full borders, background tints, leading numbers/icons, or no visual indicator at all.
+
+- PATTERN: `border-left:` or `border-right:` with width greater than 1px
+- INCLUDES: hard-coded colors AND CSS variables
+- FORBIDDEN: `border-left: 3px solid red`, `border-left: 4px solid #ff0000`, `border-left: 4px solid var(--color-warning)`, `border-left: 5px solid oklch(...)`, etc.
+- WHY: this is the single most overused "design touch" in admin, dashboard, and medical UIs. It never looks intentional regardless of color, radius, opacity, or whether the variable name is "primary" or "warning" or "accent."
+- REWRITE: use a different element structure entirely. Do not just swap to box-shadow inset. Reach for full borders, background tints, leading numbers/icons, or no visual indicator at all.
 
 BAN 2: Gradient text
-  - PATTERN: `background-clip: text` (or `-webkit-background-clip: text`) combined with a gradient background
-  - FORBIDDEN: any combination that makes text fill come from a `linear-gradient`, `radial-gradient`, or `conic-gradient`
-  - WHY: gradient text is decorative rather than meaningful and is one of the top three AI design tells
-  - REWRITE: use a single solid color for text. If you want emphasis, use weight or size, not gradient fill.
-</absolute_bans>
+
+- PATTERN: `background-clip: text` (or `-webkit-background-clip: text`) combined with a gradient background
+- FORBIDDEN: any combination that makes text fill come from a `linear-gradient`, `radial-gradient`, or `conic-gradient`
+- WHY: gradient text is decorative rather than meaningful and is one of the top three AI design tells
+- REWRITE: use a single solid color for text. If you want emphasis, use weight or size, not gradient fill.
+  </absolute_bans>
 
 DO: Use intentional, purposeful decorative elements that reinforce brand.
 DO NOT: Use border-left or border-right greater than 1px as a colored accent stripe on cards, list items, callouts, or alerts. See <absolute_bans> above for the strict CSS pattern.
@@ -212,7 +221,8 @@ DO NOT: Use rounded rectangles with generic drop shadows. Safe, forgettable, cou
 DO NOT: Use modals unless there's truly no better alternative. Modals are lazy.
 
 ### Motion
-→ *Consult [motion reference](reference/motion-design.md) for timing, easing, and reduced motion.*
+
+→ _Consult [motion reference](reference/motion-design.md) for timing, easing, and reduced motion._
 
 Focus on high-impact moments: one well-orchestrated page load with staggered reveals creates more delight than scattered micro-interactions.
 
@@ -223,7 +233,8 @@ Focus on high-impact moments: one well-orchestrated page load with staggered rev
 **DON'T**: Use bounce or elastic easing. They feel dated and tacky; real objects decelerate smoothly
 
 ### Interaction
-→ *Consult [interaction reference](reference/interaction-design.md) for forms, focus, and loading patterns.*
+
+→ _Consult [interaction reference](reference/interaction-design.md) for forms, focus, and loading patterns._
 
 Make interactions feel fast. Use optimistic UI: update immediately, sync later.
 
@@ -234,14 +245,16 @@ Make interactions feel fast. Use optimistic UI: update immediately, sync later.
 **DON'T**: Make every button primary. Use ghost buttons, text links, secondary styles; hierarchy matters
 
 ### Responsive
-→ *Consult [responsive reference](reference/responsive-design.md) for mobile-first, fluid design, and container queries.*
+
+→ _Consult [responsive reference](reference/responsive-design.md) for mobile-first, fluid design, and container queries._
 
 **DO**: Use container queries (@container) for component-level responsiveness
 **DO**: Adapt the interface for different contexts, not just shrink it
 **DON'T**: Hide critical functionality on mobile. Adapt the interface, don't amputate it
 
 ### UX Writing
-→ *Consult [ux-writing reference](reference/ux-writing.md) for labels, errors, and empty states.*
+
+→ _Consult [ux-writing reference](reference/ux-writing.md) for labels, errors, and empty states._
 
 **DO**: Make every word earn its place
 **DON'T**: Repeat information users can already see
@@ -296,21 +309,25 @@ Note what you've learned and what remains unclear.
 STOP and call the `question` tool to clarify. Focus only on what you couldn't infer from the codebase:
 
 #### Users & Purpose
+
 - Who uses this? What's their context when using it?
 - What job are they trying to get done?
 - What emotions should the interface evoke? (confidence, delight, calm, urgency, etc.)
 
 #### Brand & Personality
+
 - How would you describe the brand personality in 3 words?
 - Any reference sites or apps that capture the right feel? What specifically about them?
 - What should this explicitly NOT look like? Any anti-references?
 
 #### Aesthetic Preferences
+
 - Any strong preferences for visual direction? (minimal, bold, elegant, playful, technical, organic, etc.)
 - Light mode, dark mode, or both?
 - Any colors that must be used or avoided?
 
 #### Accessibility & Inclusion
+
 - Specific accessibility requirements? (WCAG level, known user needs)
 - Considerations for reduced motion, color blindness, or other accommodations?
 
@@ -324,15 +341,19 @@ Synthesize your findings and the user's answers into a `## Design Context` secti
 ## Design Context
 
 ### Users
+
 [Who they are, their context, the job to be done]
 
 ### Brand Personality
+
 [Voice, tone, 3-word personality, emotional goals]
 
 ### Aesthetic Direction
+
 [Visual tone, references, anti-references, theme]
 
 ### Design Principles
+
 [3-5 principles derived from the conversation that should guide all design decisions]
 ```
 

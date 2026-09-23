@@ -30,7 +30,6 @@ xcrun agent skills export --output-dir ~/.claude/skills
 
 Once exported, feel free to revert xcode-select to the stable version, as skills stay put regardless of which Xcode version is active afterward.
 
-
 ## The Skills
 
 - **`swiftui-whats-new-27`**: Xcode 27 SwiftUI changes such as the `@State` macro migration, reorderable containers, and the new document model.

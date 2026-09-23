@@ -34,5 +34,6 @@ compete for user attention. But then, the computer he imagined talking to is
 certainly not one you can fit in your pocket. From that angle, we are by all
 means moving one step closer to invisible computers.
 
-[^1]: Perspectives. [Interactions](http://dl.acm.org/citation.cfm?id=174800)
+[^1]:
+    Perspectives. [Interactions](http://dl.acm.org/citation.cfm?id=174800)
     issue 1 (January 1994)

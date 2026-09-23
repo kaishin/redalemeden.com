@@ -8,7 +8,7 @@
       "@images/*": ["src/assets/images/*"],
       "@styles/*": ["src/styles/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@consts": ["src/consts.ts"],
+      "@consts": ["src/consts.ts"]
     },
     "strictNullChecks": true
   }

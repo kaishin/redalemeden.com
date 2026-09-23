@@ -6,7 +6,7 @@ Items are ordered; each is one focused pull request.
 
 ### 1. Type the RSS endpoints and extract their shared feed builder
 
-- [ ] **Gap.** `src/pages/feed.xml.js` and `src/pages/derived-data-feed.xml.js`
+- [x] **Gap.** `src/pages/feed.xml.js` and `src/pages/derived-data-feed.xml.js`
       are the only two `.js` files under `src/`; everything else is `.astro` or
       `.ts`. Being untyped JavaScript, they are invisible to `pnpm check`, and
       they are near-identical 37-line copies differing only in the collection
@@ -16,7 +16,7 @@ Items are ordered; each is one focused pull request.
       `Date` objects that a type-checked file rejects. `postSchema` in
       `src/content.config.ts` already transforms `pubDate` into a `Date`, so
       the `new Date(...)` wrappers are redundant as well.
-- [ ] **Scope.** Rename both files to `.ts` (`src/pages/feed.xml.ts`,
+- [x] **Scope.** Rename both files to `.ts` (`src/pages/feed.xml.ts`,
       `src/pages/derived-data-feed.xml.ts` — the route URLs are unchanged) and
       move the shared body into one `src/lib/feed.ts` helper parameterized by
       collection name, feed title, feed description, and link prefix, returning
@@ -28,11 +28,11 @@ Items are ordered; each is one focused pull request.
       to `@consts` so all of `src/` uses one import style. No behaviour change:
       still the 10 most recent non-archived posts, still the sanitized rendered
       body, still the same `customData` block.
-- [ ] **Dependencies.** None left. The TypeScript 6 upgrade has shipped, so
+- [x] **Dependencies.** None left. The TypeScript 6 upgrade has shipped, so
       `paths` is already `./`-relative with no `baseUrl` (append the new alias
       in the same style), and the new `.ts` files are checked by the
       TypeScript 6 compiler under CI's `pnpm check`.
-- [ ] **Acceptance.** `pnpm check` must now cover both endpoints and the
+- [x] **Acceptance.** `pnpm check` must now cover both endpoints and the
       helper. Two type errors are expected to surface, and both must be
       resolved in this PR rather than silenced:
   - `items` currently spreads `...post.data`, which carries `audience`,
@@ -41,14 +41,14 @@ Items are ordered; each is one focused pull request.
     `link`, and `content` explicitly instead of casting the spread.
   - `context.site` is `URL | undefined` under `strictNullChecks`. Handle the
     undefined case by throwing with a clear message; do not use `!`.
-- [ ] **Acceptance, cont.** The feed URLs must not move. `/feed.xml` is linked
+- [x] **Acceptance, cont.** The feed URLs must not move. `/feed.xml` is linked
       from `src/layouts/BaseLayout.astro`, `src/components/Navigation.astro`,
       and `src/pages/blog/index.astro`; `/derived-data-feed.xml` from
       `src/components/Navigation.astro` and
       `src/pages/derived-data/index.astro`. Those five hrefs stay as they are,
       and `dist/feed.xml` plus `dist/derived-data-feed.xml` must still be
       emitted.
-- [ ] **Validation.** `pnpm check`, `pnpm build`. Build `main` first, keep its
+- [x] **Validation.** `pnpm check`, `pnpm build`. Build `main` first, keep its
       `dist/`, then diff both feed files against the build from this branch.
       The only permitted difference is the `<lastBuildDate>` value, which is
       stamped at build time; item order, `<link>` values, the escaped HTML in

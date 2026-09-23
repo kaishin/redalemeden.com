@@ -1,0 +1,10 @@
+packages:
+  - "."
+
+allowBuilds:
+  "@tailwindcss/oxide": false
+  esbuild: true
+  sharp: true
+
+minimumReleaseAgeExclude:
+  - prettier@3.9.9

@@ -6,27 +6,27 @@ Items are ordered; each is one focused pull request.
 
 ### 1. Upgrade the Prettier toolchain
 
-- [ ] **Gap.** `devDependencies` pins `prettier@^3.6.2`,
+- [x] **Gap.** `devDependencies` pins `prettier@^3.6.2`,
       `prettier-plugin-astro@^0.14.1`, and `prettier-plugin-tailwindcss@^0.7.1`.
       Both plugins predate the Astro 7 compiler and Tailwind 4 that the repo now
       builds against, so `.astro` formatting and class sorting drift from what
       the installed toolchain produces, and `pnpm format:check` is only as
       trustworthy as those stale plugins.
-- [ ] **Scope.** Bump `prettier` to its current 3.x, `prettier-plugin-astro` to
+- [x] **Scope.** Bump `prettier` to its current 3.x, `prettier-plugin-astro` to
       its 1.x major, and `prettier-plugin-tailwindcss` to its current release,
       then run `pnpm format` and commit the resulting reformat in the same PR.
       Leave the `.prettierrc` options (`tabWidth`, `useTabs`, plugin list)
       unchanged unless the new plugin majors reject a key.
-- [ ] **Risk to control.** `.prettierignore` excludes
+- [x] **Risk to control.** `.prettierignore` excludes
       `src/pages/experiments/twil/index.mdx` because the old MDX formatter never
       converged on that file's inline `<ruby>` markup. After the bump, try
       removing the exclusion and run `pnpm format` twice: if the second run
       produces no diff, drop the entry and its comment; if it still oscillates,
       keep both untouched.
-- [ ] **Acceptance.** `pnpm format:check` passes on a clean tree; the diff is
+- [x] **Acceptance.** `pnpm format:check` passes on a clean tree; the diff is
       formatting-only — no behavioural edits ride along; `pnpm build` emits the
       same route list as before.
-- [ ] **Validation.** `pnpm install`, `pnpm format:check`, `pnpm check`,
+- [x] **Validation.** `pnpm install`, `pnpm format:check`, `pnpm check`,
       `pnpm build`, and a skim of the reformat diff for anything that is not
       whitespace or class reordering.
 
@@ -74,7 +74,7 @@ Items are ordered; each is one focused pull request.
 - [ ] **Acceptance.** The workflow runs on a pull request and all three checks
       pass on an unmodified `main`; deliberately introducing a type error in a
       scratch branch fails the `pnpm check` step; `pnpm install
-      --frozen-lockfile` succeeds, proving `pnpm-lock.yaml` is in sync with
+--frozen-lockfile` succeeds, proving `pnpm-lock.yaml` is in sync with
       `package.json`.
 - [ ] **Validation.** Open the PR that adds the workflow and confirm the run is
       green on the PR itself; check that the `format:check` and `check` steps

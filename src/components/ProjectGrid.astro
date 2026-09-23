@@ -32,11 +32,9 @@ const projects = [
 ---
 
 <ul class="not-prose grid-cols-projects grid list-none gap-4 px-0">
-  {
-    projects.map((project) => (
-      <li class="list-display">
-        <ProjectCard {...project} />
-      </li>
-    ))
-  }
+  {projects.map((project) => (
+    <li class="list-display">
+      <ProjectCard {...project} />
+    </li>
+  ))}
 </ul>

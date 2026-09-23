@@ -6,11 +6,11 @@ Items are ordered; each is one focused pull request.
 
 ### 1. Upgrade TypeScript to 6 and drop `baseUrl`
 
-- [ ] **Gap.** `typescript@^5.9.3` trails the rest of the toolchain, and
+- [x] **Gap.** `typescript@^5.9.3` trails the rest of the toolchain, and
       `tsconfig.json` resolves its `paths` aliases through `baseUrl: "."`, a key
       newer TypeScript releases deprecate in favour of paths relative to the
       config file.
-- [ ] **Scope.** Bump `typescript` to the 6.x line (`^6.0.3` or the newest 6.x
+- [x] **Scope.** Bump `typescript` to the 6.x line (`^6.0.3` or the newest 6.x
       at the time of the PR), remove `baseUrl`, and rewrite all six entries in
       `paths` as `./`-relative paths (`"@components/*": ["./src/components/*"]`,
       and likewise for `@assets`, `@images`, `@styles`, `@layouts`, and
@@ -19,16 +19,16 @@ astro/tsconfigs/strict` and `strictNullChecks`. Fix only the type errors
       the new compiler surfaces; do not restructure code. Regenerate and commit
       `pnpm-lock.yaml` so the `--frozen-lockfile` CI install keeps
       passing.
-- [ ] **Same-PR tidy.** `@astrojs/check` sits in `dependencies` even though it
+- [x] **Same-PR tidy.** `@astrojs/check` sits in `dependencies` even though it
       is a type-checking tool that never ships to the site. Move it to
       `devDependencies` alongside the compiler bump so the whole type-check
       toolchain lands in one change; keep the version at `^0.9.10`, which drives
       the TypeScript 6 compiler fine, and `astro check` must still run from
       `pnpm check`.
-- [ ] **Dependencies.** None left. `.github/workflows/ci.yml` has shipped, so
+- [x] **Dependencies.** None left. `.github/workflows/ci.yml` has shipped, so
       this bump lands on a pull request that already runs `pnpm format:check`,
       `pnpm check`, and `pnpm build` automatically.
-- [ ] **Acceptance.** All 34 alias references across 22 files in `src/` still
+- [x] **Acceptance.** All 34 alias references across 22 files in `src/` still
       resolve. They come in three kinds and each needs its own proof, because
       only the first is type-checked:
   - 16 `import` statements across 13 files (`src/layouts/*.astro`,
@@ -47,9 +47,9 @@ astro/tsconfigs/strict` and `strictNullChecks`. Fix only the type errors
     `src/content/derived-data/2019/inset-grouped-lists-swiftui/index.md`
     have 1 each). These go through the markdown asset pipeline, not the
     compiler, so they need an output diff rather than a green type check.
-- [ ] **Acceptance, cont.** If the compiler bump produces errors that are not
+- [x] **Acceptance, cont.** If the compiler bump produces errors that are not
       mechanical, stop and split them out rather than widening this PR.
-- [ ] **Validation.** `pnpm install`, `pnpm check`, `pnpm build`. Build `main`
+- [x] **Validation.** `pnpm install`, `pnpm check`, `pnpm build`. Build `main`
       first and keep `dist/`, then diff it against the build from this branch:
       the two must be byte-identical, which is what proves the `baseUrl`
       removal changed no resolution behaviour for any of the three reference

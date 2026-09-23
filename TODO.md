@@ -12,7 +12,9 @@ Items are ordered; each is one focused pull request.
       is only caught by whoever remembers to run them locally.
 - [ ] **Scope.** Add a single workflow, `.github/workflows/ci.yml`, triggered on
       `pull_request` and `push` to `main`, with one `ubuntu-latest` job that
-      checks out, sets up pnpm, sets up Node with pnpm caching, runs
+      checks out (`actions/checkout@v7`), sets up pnpm
+      (`pnpm/action-setup@v6`), sets up Node with pnpm caching
+      (`actions/setup-node@v7`, `cache: "pnpm"`), runs
       `pnpm install --frozen-lockfile`, then `pnpm format:check`, `pnpm check`,
       and `pnpm build` as separate steps. Guard each check step with
       `if: ${{ !cancelled() }}` so one run reports every failure instead of
@@ -39,27 +41,37 @@ Items are ordered; each is one focused pull request.
       `tsconfig.json` resolves its `paths` aliases through `baseUrl: "."`, a key
       newer TypeScript releases deprecate in favour of paths relative to the
       config file.
-- [ ] **Scope.** Bump `typescript` to its 6.x major, remove `baseUrl`, and
-      rewrite each entry in `paths` as a `./`-relative path (`"@components/*":
-["./src/components/*"]` and so on for `@assets`, `@images`, `@styles`,
-      `@layouts`, `@consts`). Keep `extends: astro/tsconfigs/strict` and
-      `strictNullChecks`. Fix only the type errors the new compiler surfaces; do
-      not restructure code.
+- [ ] **Scope.** Bump `typescript` to the 6.x line (`^6.0.3` or the newest 6.x
+      at the time of the PR), remove `baseUrl`, and rewrite all six entries in
+      `paths` as `./`-relative paths (`"@components/*": ["./src/components/*"]`,
+      and likewise for `@assets`, `@images`, `@styles`, `@layouts`, and
+      `"@consts": ["./src/consts.ts"]`). Keep `extends:
+astro/tsconfigs/strict` and `strictNullChecks`. Fix only the type errors
+      the new compiler surfaces; do not restructure code. Regenerate and commit
+      `pnpm-lock.yaml` so the `--frozen-lockfile` install from item 1 keeps
+      passing.
 - [ ] **Same-PR tidy.** `@astrojs/check` sits in `dependencies` even though it
       is a type-checking tool that never ships to the site. Move it to
       `devDependencies` alongside the compiler bump so the whole type-check
-      toolchain lands in one change; `astro check` must still run from
+      toolchain lands in one change; keep the version at `^0.9.10`, which drives
+      the TypeScript 6 compiler fine, and `astro check` must still run from
       `pnpm check`.
 - [ ] **Dependencies.** Item 1, so the bump lands against a pull request that
       already runs `pnpm check` and `pnpm build` automatically.
-- [ ] **Acceptance.** Every `@`-prefixed import still resolves — the 34 alias
-      imports across 22 files in `src/` — so `pnpm check` passes with no
-      unresolved-module diagnostics, and `pnpm build` succeeds. If the compiler
+- [ ] **Acceptance.** All 24 alias references across 20 files in `src/` still
+      resolve. They come in two kinds and need two different proofs: 16 are
+      `import` statements in `.astro`/`.mdx` frontmatter, covered by
+      `pnpm check`; the other 8 are `layout: "@layouts/..."` strings in the
+      frontmatter of `.md`/`.mdx` pages (`src/pages/index.mdx`,
+      `work/index.mdx`, `resume/mobile.mdx`, `collections/*.mdx`,
+      `experiments/*/index.{md,mdx}`), which only Vite resolves at build time,
+      so `pnpm build` must succeed and those pages must render. If the compiler
       bump produces errors that are not mechanical, stop and split them out
       rather than widening this PR.
-- [ ] **Validation.** `pnpm install`, `pnpm check`, `pnpm build`, and
-      editor-side confirmation that go-to-definition still follows an
-      `@layouts/*` import.
+- [ ] **Validation.** `pnpm install`, `pnpm check`, `pnpm build`, spot-check the
+      built HTML for one layout-by-string page to confirm it still has its
+      navigation chrome, and editor-side confirmation that go-to-definition
+      still follows an `@layouts/*` import.
 
 ### Shipped
 

@@ -4,8 +4,7 @@ import NavigationLayout from "@layouts/NavigationLayout.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 
 type Props =
-  | CollectionEntry<"blog">["data"]
-  | CollectionEntry<"derived-data">["data"];
+  CollectionEntry<"blog">["data"] | CollectionEntry<"derived-data">["data"];
 
 const { title, description, image, pubDate, updatedDate, isArchived } =
   Astro.props;
@@ -15,26 +14,22 @@ const { title, description, image, pubDate, updatedDate, isArchived } =
   <div class="title">
     <div class="date">
       <FormattedDate date={pubDate} />
-      {
-        updatedDate && (
-          <div class="last-updated-on">
-            Last updated on <FormattedDate date={updatedDate} />
-          </div>
-        )
-      }
+      {updatedDate && (
+        <div class="last-updated-on">
+          Last updated on <FormattedDate date={updatedDate} />
+        </div>
+      )}
     </div>
     <h1>{title}</h1>
     <div class="my-6 h-px bg-(--border-soft)"></div>
   </div>
-  {
-    isArchived && (
-      <div class="mb-8 rounded-2xl border border-yellow-300 bg-yellow-100/80 px-5 py-4 dark:border-yellow-500/35 dark:bg-yellow-500/10">
-        <p class="text-sm font-medium text-yellow-900 dark:text-yellow-100">
-          This post has been <strong>archived</strong>. Some or all of the
-          information below may no longer be relevant or correct.
-        </p>
-      </div>
-    )
-  }
+  {isArchived && (
+    <div class="mb-8 rounded-2xl border border-yellow-300 bg-yellow-100/80 px-5 py-4 dark:border-yellow-500/35 dark:bg-yellow-500/10">
+      <p class="text-sm font-medium text-yellow-900 dark:text-yellow-100">
+        This post has been <strong>archived</strong>. Some or all of the
+        information below may no longer be relevant or correct.
+      </p>
+    </div>
+  )}
   <slot />
 </NavigationLayout>

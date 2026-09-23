@@ -21,9 +21,9 @@ export async function GET(context) {
       .slice(0, 10)
       .map((post) => ({
         ...post.data,
-        link: `/blog/${post.slug}/`,
+        link: `/blog/${post.id}/`,
         pubDate: post.data.pubDate,
-        content: sanitizeHtml(parser.render(post.body)),
+        content: post.body ? sanitizeHtml(parser.render(post.body)) : undefined,
       })),
     customData: `
       <lastBuildDate>${currentDate}</lastBuildDate>

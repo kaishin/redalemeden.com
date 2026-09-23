@@ -22,7 +22,7 @@ on the side:
 - Published [three](https://robots.thoughtbot.com/building-ios-interfaces-views)
   [more](https://robots.thoughtbot.com/building-ios-interfaces-custom-button)
   [articles](https://robots.thoughtbot.com/building-ios-interfaces-subclassing-views)
-  in the *Designing for iOS* series that I started back in 2015.
+  in the _Designing for iOS_ series that I started back in 2015.
 
 - [Customized an arcade stick](https://twitter.com/kaishin/status/706076592976629761) 🕹 and had a ton
   of fun doing it.

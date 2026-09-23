@@ -6,16 +6,16 @@ tags:
 audience: "people interested in the Swift programming language"
 ---
 
-Starting iOS 10 and macOS 10.12, *Foundation* supports units and measurements
+Starting iOS 10 and macOS 10.12, _Foundation_ supports units and measurements
 out of the box, in the form of
 [(NS)Unit](https://developer.apple.com/reference/foundation/unit) and
 [(NS)Measurement](https://developer.apple.com/reference/foundation/nsmeasurement)
 respectively. Let's take a look at how they work.
 
-Note: All code snippets below are written in __Swift 3.0__.
+Note: All code snippets below are written in **Swift 3.0**.
 
 To get started, let's define a measurement. To do that, you have to pass a
-*value* and a *unit* to the initializer:
+_value_ and a _unit_ to the initializer:
 
 ```swift
 import Foundation
@@ -32,7 +32,7 @@ let snorlaxWightInImperial = snorlaxWeight.converted(to: .pounds)
 ```
 
 You can also define your own unit by extending one of the default
-[*dimensions*](https://developer.apple.com/reference/foundation/dimension)
+[_dimensions_](https://developer.apple.com/reference/foundation/dimension)
 available:
 
 ```swift

@@ -5,7 +5,7 @@ code in this repository.
 
 ## Project Overview
 
-This is a personal website built with Astro 5, using TypeScript, Tailwind CSS 4,
+This is a personal website built with Astro 7, using TypeScript, Tailwind CSS 4,
 and MDX for content. The site includes a blog with content collections and is
 statically generated.
 
@@ -13,16 +13,20 @@ statically generated.
 
 ```bash
 # Development server (runs on localhost:3000)
-npm run dev
+pnpm dev
 
 # Production build
-npm run build
+pnpm build
 
 # Preview production build locally
-npm run preview
+pnpm preview
 
 # Type checking
-npm run astro check
+pnpm check
+
+# Formatting
+pnpm format
+pnpm format:check
 
 # Create new blog post
 ./scripts/new-post.mjs "Post Title"
@@ -34,8 +38,8 @@ npm run astro check
 
 - Blog posts are managed through Astro Content Collections in
   [src/content/blog/](src/content/blog/)
-- Content schema is defined in [src/content/config.ts](src/content/config.ts)
-  with Zod validation
+- Content schema is defined in [src/content.config.ts](src/content.config.ts)
+  with Zod validation, using the Content Layer API glob loader
 - Required frontmatter fields: `title`, `pubDate`
 - Optional frontmatter fields: `description`, `audience`, `tags`, `updatedDate`,
   `image`

@@ -29,30 +29,35 @@ Most AI-generated UIs fail not because of bad code, but because of skipped think
 Ask these questions in conversation, adapting based on answers. Don't dump them all at once; have a natural dialogue. STOP and call the `question` tool to clarify.
 
 ### Purpose & Context
+
 - What is this feature for? What problem does it solve?
 - Who specifically will use it? (Not "users"; be specific: role, context, frequency)
 - What does success look like? How will you know this feature is working?
 - What's the user's state of mind when they reach this feature? (Rushed? Exploring? Anxious? Focused?)
 
 ### Content & Data
+
 - What content or data does this feature display or collect?
 - What are the realistic ranges? (Minimum, typical, maximum, e.g., 0 items, 5 items, 500 items)
 - What are the edge cases? (Empty state, error state, first-time use, power user)
 - Is any content dynamic? What changes and how often?
 
 ### Design Goals
+
 - What's the single most important thing a user should do or understand here?
 - What should this feel like? (Fast/efficient? Calm/trustworthy? Fun/playful? Premium/refined?)
 - Are there existing patterns in the product this should be consistent with?
 - Are there specific examples (inside or outside the product) that capture what you're going for?
 
 ### Constraints
+
 - Are there technical constraints? (Framework, performance budget, browser support)
 - Are there content constraints? (Localization, dynamic text length, user-generated content)
 - Mobile/responsive requirements?
 - Accessibility requirements beyond WCAG AA?
 
 ### Anti-Goals
+
 - What should this NOT be? What would be a wrong direction?
 - What's the biggest risk of getting this wrong?
 

@@ -1,4 +1,6 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
+import { z } from "astro/zod";
 
 const postSchema = z.object({
   title: z.string(),
@@ -18,7 +20,17 @@ const postSchema = z.object({
   isArchived: z.boolean().optional().default(false),
 });
 
-const blog = defineCollection({ schema: postSchema });
-const derivedData = defineCollection({ schema: postSchema });
+const blog = defineCollection({
+  loader: glob({ base: "./src/content/blog", pattern: "**/*.{md,mdx}" }),
+  schema: postSchema,
+});
+
+const derivedData = defineCollection({
+  loader: glob({
+    base: "./src/content/derived-data",
+    pattern: "**/*.{md,mdx}",
+  }),
+  schema: postSchema,
+});
 
 export const collections = { blog, "derived-data": derivedData };

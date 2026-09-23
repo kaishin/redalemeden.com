@@ -18,6 +18,7 @@ Based on the design brief's "Recommended References" section, consult the releva
 - [typography.md](typography.md) for type hierarchy
 
 Then add references based on the brief's needs:
+
 - Complex interactions or forms? Consult [interaction-design.md](interaction-design.md)
 - Animation or transitions? Consult [motion-design.md](motion-design.md)
 - Color-heavy or themed? Consult [color-and-contrast.md](color-and-contrast.md)
@@ -37,6 +38,7 @@ Implement the feature following the design brief. Work in this order:
 7. **Responsive**: Adapt for different viewports. Don't just shrink; redesign for the context.
 
 ### During Build
+
 - Test with real (or realistic) data at every step, not placeholder text
 - Check each state as you build it, not all at the end
 - If you discover a design question, stop and ask rather than guessing
@@ -62,6 +64,7 @@ After each round of fixes, visually verify again. **Repeat until you would be pr
 ## Step 5: Present
 
 Present the result to the user:
+
 - Show the feature in its primary state
 - Walk through the key states (empty, error, responsive)
 - Explain design decisions that connect back to the design brief

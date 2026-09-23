@@ -33,7 +33,7 @@ long run. As much as some of us hate to admit, the competition is colossal on
 the server and scripting side of things, and it’s getting uncomfortably stronger
 on the native platform front.
 
-On top of that, the *write-preview-debug* development cycle that we’ve been
+On top of that, the _write-preview-debug_ development cycle that we’ve been
 dealt since the dawn of Cocoa is considered sluggish and tedious by today’s
 standards. A liability that’s long overdue for reconsideration. To make matters
 worse, Apple's UI frameworks haven’t converged fast enough to alleviate some of
@@ -48,10 +48,10 @@ tried-and-true programming language behind[^1].
 But all of this is bound to change.
 
 During this past WWDC, Apple introduced
-*[SwiftUI](https://developer.apple.com/xcode/swiftui/)*---a modern, universal
-framework for building user interfaces across their platforms. And it’s *packing
-quite a punch.* SwiftUI is declarative, reactive, and ready to take us places;
-the killer feature that Swift *deserved* all along. Not only is it tightly
+_[SwiftUI](https://developer.apple.com/xcode/swiftui/)_---a modern, universal
+framework for building user interfaces across their platforms. And it’s _packing
+quite a punch._ SwiftUI is declarative, reactive, and ready to take us places;
+the killer feature that Swift _deserved_ all along. Not only is it tightly
 integrated with the language, but it’s also pushing it forward by providing a
 use case for new additions such as [function builders](https://github.com/apple/swift-evolution/blob/9992cf3c11c2d5e0ea20bee98657d93902d5b174/proposals/XXXX-function-builders.md)
 and [property wrappers](https://github.com/DougGregor/swift-evolution/blob/property-wrappers/proposals/0258-property-wrappers.md).
@@ -62,7 +62,8 @@ myself included. I don't have a shred of doubt that this is the future of UI
 programming on Apple platforms, and I am thrilled to witness, and be part of,
 this transition.
 
-[^1]: Part of me appreciates the prudent approach with regard to adopting new
+[^1]:
+    Part of me appreciates the prudent approach with regard to adopting new
     technology that’s yet to prove itself. Another part of me fails to see the
     point of swimming against the current in a predominantly closed platform
     where a single company gets to call the shots.

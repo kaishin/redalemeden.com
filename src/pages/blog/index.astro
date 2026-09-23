@@ -13,14 +13,28 @@ const posts = (await getCollection("blog"))
   <h2>Unredacted</h2>
   <p>
     A blog about design, technology, programming, and other personal interests.
-    <span class="block text-sm text-stone-500 dark:text-[var(--muted-text)]">Subscribe to the <a href="/feed.xml" class="inline-flex items-center gap-1 hover:text-[var(--accent-link)]">RSS feed <Rss size={14} stroke-width={3} /></a> to get the latest articles, or follow me on <a href="https://mastodon.social/@redalemeden" class="hover:text-[var(--accent-link)]">Mastodon</a>, <a href="https://x.com/kaishin" class="hover:text-[var(--accent-link)]">X</a>, or <a href="https://bsky.app/profile/kaishinlab.bsky.social" class="hover:text-[var(--accent-link)]">Bluesky</a>.</span>
+    <span class="block text-sm text-stone-500 dark:text-[var(--muted-text)]"
+      >Subscribe to the <a
+        href="/feed.xml"
+        class="inline-flex items-center gap-1 hover:text-[var(--accent-link)]"
+        >RSS feed <Rss size={14} stroke-width={3} /></a
+      > to get the latest articles, or follow me on <a
+        href="https://mastodon.social/@redalemeden"
+        class="hover:text-[var(--accent-link)]">Mastodon</a
+      >, <a href="https://x.com/kaishin" class="hover:text-[var(--accent-link)]"
+        >X</a
+      >, or <a
+        href="https://bsky.app/profile/kaishinlab.bsky.social"
+        class="hover:text-[var(--accent-link)]">Bluesky</a
+      >.</span
+    >
   </p>
   <hr class="mb-10" />
   <ul class="not-prose list-none">
     {
       posts.map((post) => (
         <li class="mb-10">
-          <a href={`/blog/${post.slug}`}>
+          <a href={`/blog/${post.id}`}>
             <h3 class="max-w-prose text-2xl font-medium">{post.data.title}</h3>
             <p class="mt-1 text-sm leading-normal font-semibold tracking-wider text-purple-500 uppercase dark:text-[var(--accent-link)]">
               <FormattedDate date={post.data.pubDate} />

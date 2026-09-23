@@ -44,4 +44,4 @@ support.
 At the end of this fruitless search, I kept Sublime Text 2, BBedit, and Espresso
 2 installed, and used them in rotation depending on the project and the mood.
 
-*To be continued...*
+_To be continued..._

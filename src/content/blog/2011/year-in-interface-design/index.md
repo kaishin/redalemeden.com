@@ -12,7 +12,7 @@ design in 2011.
 ### The Desktop Identity Crisis
 
 After a series of leaks, Microsoft unveiled the eighth major iteration of its
-ubiquitous desktop operating system. Based on the *Metro* design language that
+ubiquitous desktop operating system. Based on the _Metro_ design language that
 they introduced previously on mobile, Windows 8 is touted as a "no-compromise"
 OS that offers the best of both worlds---a strategy that will likely continue to
 be a hot topic for years to come.
@@ -59,7 +59,7 @@ introduce.
 
 The transition to gestural interfaces is dividing the design community. As
 users, our interaction mental model is currently in disarray; we can hardly keep
-up with the overwhelming number of new gestures that we have to learn  every
+up with the overwhelming number of new gestures that we have to learn every
 day. As designers, striking the balance between ease of use, memorability, and
 discoverability is becoming increasingly hard in the lack of industry-wide
 standards.

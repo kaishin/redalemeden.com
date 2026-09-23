@@ -165,8 +165,11 @@ _"An intricate painting of a cucumber, renaissance style"_ ![An intricate
 painting of a cucumber, renaissance style](./4716763.png) _An intricate painting
 of a cucumber, renaissance style_
 
-[^1]: The others were far less coherent, but that’s par for the course in these
+[^1]:
+    The others were far less coherent, but that’s par for the course in these
     kind of models.
-[^2]: The model works best with Nvidia GPUs, but can work with AMD or even
+
+[^2]:
+    The model works best with Nvidia GPUs, but can work with AMD or even
     Apple's M1 chips. At least 6Gb of VRAM is needed to generate images of 512px
     by 512px.

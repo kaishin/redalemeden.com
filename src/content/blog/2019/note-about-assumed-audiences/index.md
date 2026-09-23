@@ -18,7 +18,7 @@ specific, the momentous and the mundane, the subjective and the objective, is
 the main selling point of a personal blog. This editorial freedom, however,
 often comes at the price of readership loyalty.
 
-Adopting this habit as an author should *in theory* alleviate some of the burden
+Adopting this habit as an author should _in theory_ alleviate some of the burden
 on visitors, both new and returning, of figuring out whether the content matches
 their interests.
 

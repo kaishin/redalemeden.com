@@ -12,8 +12,8 @@ isArchived: true
 ![Whale](./header-image.jpg)
 
 When I got my first M1 MacBook Pro last year and started setting it up, I
- decided to not bring over Docker Desktop. For starters, the dashboard UI is
- wonky and had always put me off whenever I used it. Performance was nothing to
+decided to not bring over Docker Desktop. For starters, the dashboard UI is
+wonky and had always put me off whenever I used it. Performance was nothing to
 write home about either. But the straw that broke the camel's back, so to speak, was
 the licensing changes that denoted a clear shift in the company's focus and
 target audience.
@@ -42,7 +42,7 @@ are some of the alternatives I came across:
   by C.Y. Wong.
 
 - [Minikube](https://minikube.sigs.k8s.io/docs/start/): The official way to run
-  Kubernetes locally on macOS through the Hypervisor framework.  Supports Docker
+  Kubernetes locally on macOS through the Hypervisor framework. Supports Docker
   out of the box. The only gotcha is that you can’t use `docker-compose` and you
   need to migrate to Kubernetes manifest files.
 
@@ -95,7 +95,7 @@ colima completion bash #fish, zsh, etc.
 ```
 
 By default Colima seems to mount the entire user directory, but I’d rather mount
-specific folders instead. I had previously created a `~/Volumes`  folder that I
+specific folders instead. I had previously created a `~/Volumes` folder that I
 use for various VM volume needs, so I mounted it as a read-write volume using
 the following command:
 

@@ -61,6 +61,7 @@ Create a systematic plan:
 ### Font Selection
 
 If fonts need replacing:
+
 - Choose fonts that reflect the brand personality
 - Pair with genuine contrast (serif + sans, geometric + humanist) — or use a single family in multiple weights
 - Ensure web font loading doesn't cause layout shift (`font-display: swap`, metric-matched fallbacks)
@@ -68,6 +69,7 @@ If fonts need replacing:
 ### Establish Hierarchy
 
 Build a clear type scale:
+
 - **5 sizes cover most needs**: caption, secondary, body, subheading, heading
 - **Use a consistent ratio** between levels (1.25, 1.333, or 1.5)
 - **Combine dimensions**: Size + weight + color + space for strong hierarchy — don't rely on size alone
@@ -95,6 +97,7 @@ Build a clear type scale:
 - Load only the weights you actually use (each weight adds to page load)
 
 **NEVER**:
+
 - Use more than 2-3 font families
 - Pick sizes arbitrarily — commit to a scale
 - Set body text below 16px

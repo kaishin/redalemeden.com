@@ -18,23 +18,41 @@
  *   4. Removes the corresponding entries from skills-lock.json.
  */
 
-import { existsSync, readFileSync, writeFileSync, rmSync, readdirSync, statSync, lstatSync, unlinkSync } from 'node:fs';
-import { join, resolve } from 'node:path';
+import {
+  existsSync,
+  readFileSync,
+  writeFileSync,
+  rmSync,
+  readdirSync,
+  statSync,
+  lstatSync,
+  unlinkSync,
+} from "node:fs";
+import { join, resolve } from "node:path";
 
 // Skills that were renamed, merged, or folded in v2.0 and v2.1.
 const DEPRECATED_NAMES = [
-  'frontend-design',    // renamed to impeccable (v2.0)
-  'teach-impeccable',   // folded into /impeccable teach (v2.0)
-  'arrange',            // renamed to layout (v2.1)
-  'normalize',          // merged into polish (v2.1)
-  'onboard',            // merged into harden (v2.1)
-  'extract',            // merged into /impeccable extract (v2.1)
+  "frontend-design", // renamed to impeccable (v2.0)
+  "teach-impeccable", // folded into /impeccable teach (v2.0)
+  "arrange", // renamed to layout (v2.1)
+  "normalize", // merged into polish (v2.1)
+  "onboard", // merged into harden (v2.1)
+  "extract", // merged into /impeccable extract (v2.1)
 ];
 
 // All known harness directories that may contain a skills/ subfolder.
 const HARNESS_DIRS = [
-  '.claude', '.cursor', '.gemini', '.codex', '.agents',
-  '.trae', '.trae-cn', '.pi', '.opencode', '.kiro', '.rovodev',
+  ".claude",
+  ".cursor",
+  ".gemini",
+  ".codex",
+  ".agents",
+  ".trae",
+  ".trae-cn",
+  ".pi",
+  ".opencode",
+  ".kiro",
+  ".rovodev",
 ];
 
 /**
@@ -43,16 +61,16 @@ const HARNESS_DIRS = [
  */
 export function findProjectRoot(startDir = process.cwd()) {
   let dir = resolve(startDir);
-  const { root } = { root: '/' };
+  const { root } = { root: "/" };
   while (dir !== root) {
     if (
-      existsSync(join(dir, 'package.json')) ||
-      existsSync(join(dir, '.git')) ||
-      existsSync(join(dir, 'skills-lock.json'))
+      existsSync(join(dir, "package.json")) ||
+      existsSync(join(dir, ".git")) ||
+      existsSync(join(dir, "skills-lock.json"))
     ) {
       return dir;
     }
-    const parent = resolve(dir, '..');
+    const parent = resolve(dir, "..");
     if (parent === dir) break;
     dir = parent;
   }
@@ -65,10 +83,10 @@ export function findProjectRoot(startDir = process.cwd()) {
  * Returns false for non-existent paths or skills that don't match.
  */
 export function isImpeccableSkill(skillDir) {
-  const skillMd = join(skillDir, 'SKILL.md');
+  const skillMd = join(skillDir, "SKILL.md");
   if (!existsSync(skillMd)) return false;
   try {
-    const content = readFileSync(skillMd, 'utf-8');
+    const content = readFileSync(skillMd, "utf-8");
     return /impeccable/i.test(content);
   } catch {
     return false;
@@ -95,7 +113,7 @@ export function buildTargetNames() {
 export function findSkillsDirs(projectRoot) {
   const dirs = [];
   for (const harness of HARNESS_DIRS) {
-    const candidate = join(projectRoot, harness, 'skills');
+    const candidate = join(projectRoot, harness, "skills");
     if (existsSync(candidate)) {
       dirs.push(candidate);
     }
@@ -154,17 +172,17 @@ export function removeDeprecatedSkills(projectRoot) {
  * Returns the list of removed skill names.
  */
 export function cleanSkillsLock(projectRoot) {
-  const lockPath = join(projectRoot, 'skills-lock.json');
+  const lockPath = join(projectRoot, "skills-lock.json");
   if (!existsSync(lockPath)) return [];
 
   let lock;
   try {
-    lock = JSON.parse(readFileSync(lockPath, 'utf-8'));
+    lock = JSON.parse(readFileSync(lockPath, "utf-8"));
   } catch {
     return [];
   }
 
-  if (!lock.skills || typeof lock.skills !== 'object') return [];
+  if (!lock.skills || typeof lock.skills !== "object") return [];
 
   const targets = buildTargetNames();
   const removed = [];
@@ -173,14 +191,14 @@ export function cleanSkillsLock(projectRoot) {
     const entry = lock.skills[name];
     if (!entry) continue;
     // Only remove if it belongs to impeccable
-    if (entry.source === 'pbakaus/impeccable') {
+    if (entry.source === "pbakaus/impeccable") {
       delete lock.skills[name];
       removed.push(name);
     }
   }
 
   if (removed.length > 0) {
-    writeFileSync(lockPath, JSON.stringify(lock, null, 2) + '\n', 'utf-8');
+    writeFileSync(lockPath, JSON.stringify(lock, null, 2) + "\n", "utf-8");
   }
 
   return removed;
@@ -197,17 +215,25 @@ export function cleanup(projectRoot) {
 }
 
 // CLI entry point
-if (process.argv[1] && resolve(process.argv[1]) === resolve(new URL(import.meta.url).pathname)) {
+if (
+  process.argv[1] &&
+  resolve(process.argv[1]) === resolve(new URL(import.meta.url).pathname)
+) {
   const result = cleanup();
-  if (result.deletedPaths.length === 0 && result.removedLockEntries.length === 0) {
-    console.log('No deprecated Impeccable skills found. Nothing to clean up.');
+  if (
+    result.deletedPaths.length === 0 &&
+    result.removedLockEntries.length === 0
+  ) {
+    console.log("No deprecated Impeccable skills found. Nothing to clean up.");
   } else {
     if (result.deletedPaths.length > 0) {
       console.log(`Removed ${result.deletedPaths.length} deprecated skill(s):`);
       for (const p of result.deletedPaths) console.log(`  - ${p}`);
     }
     if (result.removedLockEntries.length > 0) {
-      console.log(`Cleaned ${result.removedLockEntries.length} entry/entries from skills-lock.json:`);
+      console.log(
+        `Cleaned ${result.removedLockEntries.length} entry/entries from skills-lock.json:`,
+      );
       for (const name of result.removedLockEntries) console.log(`  - ${name}`);
     }
   }

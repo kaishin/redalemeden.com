@@ -16,7 +16,7 @@ is not a throwing `flatMap`:
 > in my view a bit user hostile. They can fail in _two_ different ways: by
 > throwing [and] by returning a failed future. That means a user needs to look
 > for errors in two different places. […] On top of that: If an asynchronous
-> function throws synchronously, is it really asynchronous?  
+> function throws synchronously, is it really asynchronous?
 
 This one caught me off-guard more than once. Considering the signatures of `map`
 and `flatmap` (abridged for brevity):
@@ -26,7 +26,7 @@ func map<NewValue>(callback: @escaping (Value) -> NewValue) -> EventLoopFuture<N
 func flatMap<NewValue>(callback: @escaping (Value) -> EventLoopFuture<NewValue>) -> EventLoopFuture<NewValue>
 ```
 
-It’s easy to assume that `flatMapThrowing`  is a version of `flatMap` that takes
+It’s easy to assume that `flatMapThrowing` is a version of `flatMap` that takes
 a throwing closure of type `(Value) throws -> EventLoopFuture<NewValue>`. But
 that’s not the case.
 

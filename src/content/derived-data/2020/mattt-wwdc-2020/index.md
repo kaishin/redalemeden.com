@@ -7,7 +7,7 @@ It's refreshing to see [Mattt's reasoned take](https://nshipster.com/wwdc-2020/)
 amidst all the attention-seeking headlines this week:
 
 > As it turns out, going fully remote wasn’t merely good enough — it was, in
-> many ways, superior to the original thing.  [...] Sessions are tight and
+> many ways, superior to the original thing. [...] Sessions are tight and
 > well-paced. Rather than stretching or cramming content into a fixed time slot,
 > they’re as long as they need to be.
 
@@ -23,7 +23,7 @@ productivity:
 > for a lot of us (myself included). When you’re excited, it’s almost impossible
 > to get anything done.
 
-This is true for any endeavor, but especially so for software development. 
+This is true for any endeavor, but especially so for software development.
 
 > There are plenty of voices in the community who are echoing this excitement. I
 > can’t add anything to that discussion. And besides, that’s not really where my

@@ -4,34 +4,16 @@
 
 Items are ordered; each is one focused pull request.
 
-### 1. Fail `pnpm check` on warnings, not only errors
-
-- [ ] **Gap.** `check` in `package.json` is a bare `astro check`, which exits 0
-      whenever there are no errors. Warnings such as unused imports and
-      variables, deprecated Astro APIs, and suspicious template expressions
-      appear in the log but never turn CI's `Type check` step red, so they
-      pile up unnoticed. Deprecations matter most here: they are the early
-      notice for the next Astro major, and today nothing forces anyone to
-      act on them.
-- [ ] **Scope.** Change the script to
-      `astro check --minimumSeverity warning`. Fix every warning it surfaces
-      in the same PR, keeping each fix minimal (delete the unused binding,
-      move to the non-deprecated API). Do not relax `tsconfig.json`, do not
-      add `// @ts-ignore` or `// @ts-expect-error`, and do not add hint-level
-      reporting. `.github/workflows/ci.yml` already runs `pnpm check`, so it
-      needs no change.
-- [ ] **Acceptance.** `pnpm check` reports 0 errors and 0 warnings and exits 0.
-      Record the warnings the first run found in the PR description, grouped
-      by file. If they amount to more than a small, mechanical set (say about
-      15, or any fix that changes rendered output), only change the script and
-      fix the mechanical ones. Leave the rest as a separate backlog item and
-      explain why in the PR, rather than growing this PR.
-- [ ] **Validation.** `pnpm check`, `pnpm format:check`, `pnpm build`. Add a
-      throwaway unused import to a `.astro` file and confirm `pnpm check` now
-      exits non-zero, then revert it. `dist/` should not change apart from
-      build-stamped values such as `<lastBuildDate>` in the two feeds.
-
 ### Shipped
+
+- [x] Fail `pnpm check` on warnings, not only errors: `check` now runs
+      `astro check --minimumSeverity warning` (matching the reference
+      toolchain). The current tree is clean — 0 errors and 0 warnings. Note:
+      the planned throwaway unused-import probe exits 0, because
+      `astro/tsconfigs/strict` does not enable `noUnusedLocals`, so unused
+      imports are not reported as diagnostics at all; the flag now guards
+      against warning-severity diagnostics such as future deprecated-API
+      notices instead.
 
 - [x] Upgrade pnpm to 11 and check peer dependencies in CI: `packageManager`
       pinned to `pnpm@11.22.0`, `.node-version` and `engines.node` raised to

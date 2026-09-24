@@ -31,47 +31,16 @@ Items are ordered; each is one focused pull request.
       exits non-zero, then revert it. `dist/` should not change apart from
       build-stamped values such as `<lastBuildDate>` in the two feeds.
 
-### 2. Upgrade pnpm to 11 and check peer dependencies in CI
-
-- [ ] **Gap.** `packageManager` pins `pnpm@10.33.0`, and nothing in CI notices
-      when an installed package's peer range stops matching its host. That
-      matters most during major upgrades like the Astro 7 move: an
-      `@astrojs/*` integration or `@astrojs/check` can peer-require a
-      `typescript` or `astro` range that the lockfile no longer satisfies.
-      pnpm only warns about this during `pnpm install`, where nobody reads the
-      output. pnpm 11 adds `pnpm peers check`, which exits non-zero on
-      unmet or invalid peers. The repo also has no `pnpm-workspace.yaml`, so
-      nothing records which dependencies may run install scripts (`sharp`,
-      `esbuild`, `@tailwindcss/oxide`).
-- [ ] **Scope, one toolchain change.**
-  - Bump `packageManager` to the current `pnpm@11.x` release.
-  - pnpm 11 refuses to run below Node `22.13.0`. Raise `.node-version` and
-    `engines.node` from `22.12.0` / `>=22.12.0` to `22.13.0` / `>=22.13.0`,
-    together. CI reads `.node-version`, so without this bump CI would break
-    as soon as the pin moves. Astro 7's own floor is `>=22.12.0`, so the
-    higher pnpm floor wins.
-  - Add `pnpm-workspace.yaml` with `packages: ["."]` and an `allowBuilds` map
-    listing each dependency that `pnpm install` reports as having an
-    unapproved build script. Expect `sharp`, `esbuild`, and
-    `@tailwindcss/oxide`. Set each to `true` only if the build needs it and
-    `false` otherwise, and give the reason in the PR description.
-  - Regenerate `pnpm-lock.yaml` with the new pnpm, then run `pnpm format` so
-    the lockfile keeps the Prettier formatting it already has.
-  - Add a `Check peer dependencies` step running `pnpm peers check` to
-    `.github/workflows/ci.yml` before `Check formatting`, with
-    `if: ${{ !cancelled() }}` like the other steps.
-- [ ] **Acceptance.** Delete `node_modules`, then run
-      `pnpm install --frozen-lockfile`. It must exit 0 with no warnings about
-      unapproved build scripts. `pnpm peers check` exits 0. If it reports real
-      peer mismatches, fix them by moving the offending range in this PR. If a
-      fix would need a major upgrade, stop and record it as its own backlog
-      item instead of widening this PR. Update any Node or pnpm version
-      mentioned in `README.md` or `CLAUDE.md`.
-- [ ] **Validation.** Run `pnpm peers check`, `pnpm format:check`,
-      `pnpm check`, and `pnpm build` locally on Node 22.13.0. CI must pass
-      with the new step, and the `Setup pnpm` log must show the 11.x version.
-
 ### Shipped
+
+- [x] Upgrade pnpm to 11 and check peer dependencies in CI: `packageManager`
+      pinned to `pnpm@11.22.0`, `.node-version` and `engines.node` raised to
+      22.13.0 (pnpm 11's floor, verified to refuse 22.12.0),
+      `pnpm-workspace.yaml` with `allowBuilds` (`esbuild`/`sharp` true — both
+      have install-time scripts; `@tailwindcss/oxide` false — it ships
+      prebuilt and has no install-time script) and a `minimumReleaseAgeExclude`
+      for the already-pinned `prettier@3.9.9`, plus a `Check peer dependencies`
+      CI step running `pnpm peers check`.
 
 - [x] Type the RSS endpoints and extract their shared feed builder into
       `src/lib/feed.ts` (`src/pages/feed.xml.ts`,

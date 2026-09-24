@@ -30,6 +30,10 @@ jobs:
       # Every check below runs even if an earlier one failed, so a single CI
       # run reports every problem at once. Without this a formatting nit masks
       # the type check and build results behind it.
+      - name: Check peer dependencies
+        if: ${{ !cancelled() }}
+        run: pnpm peers check
+
       - name: Check formatting
         if: ${{ !cancelled() }}
         run: pnpm format:check

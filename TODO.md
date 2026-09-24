@@ -7,11 +7,13 @@ Items are ordered; each is one focused pull request.
 ### Shipped
 
 - [x] Fail `pnpm check` on warnings, not only errors: `check` now runs
-      `astro check --minimumSeverity warning` (matching the reference
-      toolchain). The current tree is clean — 0 errors and 0 warnings. Note:
-      the planned throwaway unused-import probe exits 0, because
+      `astro check --minimumFailingSeverity warning --minimumSeverity warning`
+      (the failing-severity flag is what turns a nonzero exit on warnings;
+      `--minimumSeverity` only filters what is displayed, so both are set).
+      The current tree is clean — 0 errors and 0 warnings. Note: the planned
+      throwaway unused-import probe exits 0, because
       `astro/tsconfigs/strict` does not enable `noUnusedLocals`, so unused
-      imports are not reported as diagnostics at all; the flag now guards
+      imports are not reported as diagnostics at all; the flags now guard
       against warning-severity diagnostics such as future deprecated-API
       notices instead.
 

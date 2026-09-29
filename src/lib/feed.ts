@@ -8,12 +8,36 @@ import sanitizeHtml from "sanitize-html";
 
 const parser = new MarkdownIt();
 
-type FeedConfig = {
+export type FeedConfig = {
   collection: CollectionKey;
   title: string;
   description: string;
   linkPrefix: string;
 };
+
+type FeedEntry = {
+  title: string;
+  description: string | undefined;
+  pubDate: Date;
+  link: string;
+  content: string | undefined;
+};
+
+export async function getFeedEntries(config: FeedConfig): Promise<FeedEntry[]> {
+  const posts = await getCollection(config.collection);
+
+  return posts
+    .filter((post) => !post.data.isArchived)
+    .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+    .slice(0, 10)
+    .map((post) => ({
+      title: post.data.title,
+      description: post.data.description,
+      pubDate: post.data.pubDate,
+      link: `${config.linkPrefix}/${post.id}/`,
+      content: post.body ? sanitizeHtml(parser.render(post.body)) : undefined,
+    }));
+}
 
 export function createFeedHandler(config: FeedConfig) {
   return async function GET(context: APIContext): Promise<Response> {
@@ -23,26 +47,20 @@ export function createFeedHandler(config: FeedConfig) {
       );
     }
 
-    const posts = await getCollection(config.collection);
+    const entries = await getFeedEntries(config);
     const currentDate = new Date().toUTCString();
 
     return rss({
       title: config.title,
       description: config.description,
       site: context.site,
-      items: posts
-        .filter((post) => !post.data.isArchived)
-        .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
-        .slice(0, 10)
-        .map((post): RSSFeedItem => ({
-          title: post.data.title,
-          description: post.data.description,
-          pubDate: post.data.pubDate,
-          link: `${config.linkPrefix}/${post.id}/`,
-          content: post.body
-            ? sanitizeHtml(parser.render(post.body))
-            : undefined,
-        })),
+      items: entries.map((entry): RSSFeedItem => ({
+        title: entry.title,
+        description: entry.description,
+        pubDate: entry.pubDate,
+        link: entry.link,
+        content: entry.content,
+      })),
       customData: `
       <lastBuildDate>${currentDate}</lastBuildDate>
       <image>

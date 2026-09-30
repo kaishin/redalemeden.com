@@ -29,7 +29,9 @@ export async function GET(context: APIContext): Promise<Response> {
     icon: new URL("/icon-touch.png", site).href,
     author,
     items: entries.map((entry) => ({
-      id: new URL(entry.link, site).href,
+      // Keep the pre-generated feed's ID form (no trailing slash) so
+      // subscribers do not see the same post as a new item.
+      id: new URL(entry.link, site).href.replace(/\/$/, ""),
       url: new URL(entry.link, site).href,
       title: entry.title,
       content_html: entry.content,

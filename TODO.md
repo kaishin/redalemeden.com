@@ -51,24 +51,32 @@ Items are ordered; each is one focused pull request.
 
 ## Tasks
 
-- [ ] Upgrade redalemeden.com to Astro 7 (Tasker #48)
-  Appears already shipped (astro ^7.3.4, listed under Shipped above). Verify
-  on main with `pnpm check` and `pnpm build`, bump to the latest 7.x patch if
-  available, otherwise close as done with no code change.
+- [ ] Update the Astro lockfile to the latest 7.x patch (Tasker #48)
+      The Astro 5 to 7 upgrade is already shipped (astro ^7.3.4, listed under
+      Shipped above); only the lockfile lags at 7.3.4 while 7.3.5 is out.
+      Run `pnpm up astro`, verify on main with `pnpm check` and `pnpm build`,
+      and close as done.
 - [ ] Generate the main blog JSON feed instead of serving a stale static file (Tasker #104)
-  `public/feed.json` is hand-committed and stops at 2024-01-25. Replace it with
-  `src/pages/feed.json.ts` mirroring `src/pages/derived-data-feed.json.ts` and
-  delete the static file. Acceptance: `pnpm check` and `pnpm build` pass;
-  `dist/feed.json` leads with the newest blog post and matches `dist/feed.xml`.
+      `public/feed.json` is hand-committed and stops at 2024-01-25. Replace it with
+      `src/pages/feed.json.ts` mirroring `src/pages/derived-data-feed.json.ts` and
+      delete the static file. Acceptance: `pnpm check` and `pnpm build` pass;
+      `dist/feed.json` leads with the newest blog post and matches `dist/feed.xml`.
 - [ ] Advertise every site feed via link rel=alternate autodiscovery (Tasker #105)
-  `BaseLayout.astro` only advertises `/feed.xml`. Add a JSON Feed alternate
-  there, and RSS + JSON alternates for Derived Data on its index and post
-  pages via the head slot. Acceptance: checks and build pass; built HTML lists
-  the expected alternates.
-- [ ] Write a response to https://jola.dev/posts/ai-antithetical-learning (Tasker #49)
-  Owner-authored blog post; the builder should not draft opinion writing on
-  the owner's behalf without explicit direction.
+      `BaseLayout.astro` only advertises `/feed.xml`. Add a JSON Feed alternate
+      there, and RSS + JSON alternates for Derived Data on its index and post
+      pages via the head slot. Acceptance: checks and build pass; built HTML lists
+      the expected alternates.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed
       if present)
+
+## Owner-only
+
+Blocked on explicit owner direction; the autonomous builder must not pick
+these up.
+
+- [ ] Write a response to https://jola.dev/posts/ai-antithetical-learning (Tasker #49)
+      Owner-authored blog post; the builder should not draft opinion writing on
+      the owner's behalf without explicit direction. Parked here so it cannot
+      block the autonomous queue above.

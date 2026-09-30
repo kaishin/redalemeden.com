@@ -56,7 +56,7 @@ Items are ordered; each is one focused pull request.
       Shipped above); only the lockfile lags at 7.3.4 while 7.3.5 is out.
       Run `pnpm up astro`, verify on main with `pnpm check` and `pnpm build`,
       and close as done.
-- [ ] Generate the main blog JSON feed instead of serving a stale static file (Tasker #104)
+- [x] Generate the main blog JSON feed instead of serving a stale static file (Tasker #104)
       `public/feed.json` is hand-committed and stops at 2024-01-25. Replace it with
       `src/pages/feed.json.ts` mirroring `src/pages/derived-data-feed.json.ts` and
       delete the static file. Acceptance: `pnpm check` and `pnpm build` pass;

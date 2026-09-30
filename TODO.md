@@ -51,7 +51,7 @@ Items are ordered; each is one focused pull request.
 
 ## Tasks
 
-- [ ] Update the Astro lockfile to the latest 7.x patch (Tasker #48)
+- [x] Update the Astro lockfile to the latest 7.x patch (Tasker #48)
       The Astro 5 to 7 upgrade is already shipped (astro ^7.3.4, listed under
       Shipped above); only the lockfile lags at 7.3.4 while 7.3.5 is out.
       Run `pnpm up astro`, verify on main with `pnpm check` and `pnpm build`,

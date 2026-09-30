@@ -23,7 +23,7 @@
     "@lucide/astro": "^1.47.0",
     "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.4",
+    "astro": "^7.3.5",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.17.0",
     "sharp": "^0.34.5",

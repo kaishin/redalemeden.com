@@ -16,6 +16,9 @@ const post = Astro.props;
 const { Content } = await render(post);
 ---
 
-<BlogPost {...post.data}>
+<BlogPost
+  {...post.data}
+  backLink={{ href: "/derived-data", label: "Derived Data" }}
+>
   <Content />
 </BlogPost>

@@ -3,31 +3,15 @@ import type { CollectionEntry } from "astro:content";
 import NavigationLayout from "@layouts/NavigationLayout.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 
-type Props = (
-  CollectionEntry<"blog">["data"] | CollectionEntry<"derived-data">["data"]
-) & { backLink?: { href: string; label: string } };
+type Props =
+  CollectionEntry<"blog">["data"] | CollectionEntry<"derived-data">["data"];
 
-const {
-  title,
-  description,
-  image,
-  pubDate,
-  updatedDate,
-  isArchived,
-  backLink,
-} = Astro.props;
+const { title, description, image, pubDate, updatedDate, isArchived } =
+  Astro.props;
 ---
 
 <NavigationLayout title={title} description={description} image={image}>
   <div class="title">
-    {backLink && (
-      <a
-        href={backLink.href}
-        class="mb-3 inline-block text-xs font-semibold tracking-widest text-stone-500 uppercase transition-colors hover:text-[var(--accent-link)] dark:text-[var(--muted-text)] dark:hover:text-[var(--accent-link)]"
-      >
-        ← {backLink.label}
-      </a>
-    )}
     <div class="date">
       <FormattedDate date={pubDate} />
       {updatedDate && (

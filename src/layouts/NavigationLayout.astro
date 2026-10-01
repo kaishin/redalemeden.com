@@ -8,6 +8,7 @@ const { title, description, image } = Astro.props.frontmatter || Astro.props;
 ---
 
 <BaseLayout title={title} description={description} image={image}>
+  <slot name="head" slot="head" />
   <div class="md:grid-cols-main md:grid-rows-main mx-auto my-0 min-h-screen max-w-7xl md:grid">
     <Header />
     <Navigation />

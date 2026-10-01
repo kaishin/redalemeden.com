@@ -76,7 +76,7 @@ Items are ordered; each is one focused pull request.
       and `alt={name}` beside the visible name in the same link. Switch to `<h4>`
       (same classes) and `alt=""`. Acceptance: checks and build pass;
       `dist/index.html` cards use `<h4>` and `alt=""`; no visual change.
-- [ ] Advertise every site feed via link rel=alternate autodiscovery (Tasker #105)
+- [x] Advertise every site feed via link rel=alternate autodiscovery (Tasker #105)
       `BaseLayout.astro` only advertises `/feed.xml`. Add a JSON Feed alternate
       there, and RSS + JSON alternates for Derived Data on its index and post
       pages via the head slot, which `NavigationLayout.astro` and

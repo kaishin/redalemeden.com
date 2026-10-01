@@ -8,6 +8,33 @@ import sanitizeHtml from "sanitize-html";
 
 const parser = new MarkdownIt();
 
+const contentAssetUrls = import.meta.glob<string>(
+  "/src/content/**/*.{avif,gif,jpeg,jpg,png,svg,webp}",
+  { query: "?url", import: "default", eager: true },
+);
+
+function resolveContentAsset(
+  src: string,
+  contentDir: string,
+): string | undefined {
+  if (
+    !src ||
+    /^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i.test(src) ||
+    src.startsWith("/")
+  ) {
+    return undefined;
+  }
+
+  const segments: string[] = [];
+  for (const segment of `${contentDir}${src}`.split("/")) {
+    if (!segment || segment === ".") continue;
+    if (segment === "..") segments.pop();
+    else segments.push(segment);
+  }
+
+  return contentAssetUrls[`/${segments.join("/")}`];
+}
+
 export type FeedConfig = {
   collection: CollectionKey;
   title: string;
@@ -24,7 +51,11 @@ type FeedEntry = {
   content: string | undefined;
 };
 
-function renderFeedContent(body: string, postUrl: string): string {
+function renderFeedContent(
+  body: string,
+  postUrl: string,
+  contentDir: string,
+): string {
   return sanitizeHtml(parser.render(body), {
     allowedTags: [...sanitizeHtml.defaults.allowedTags, "img"],
     allowedAttributes: {
@@ -37,12 +68,15 @@ function renderFeedContent(body: string, postUrl: string): string {
           return { tagName, attribs };
         }
 
+        const assetUrl = resolveContentAsset(attribs.src, contentDir);
+        const resolved = assetUrl ?? attribs.src;
+
         try {
           return {
             tagName,
             attribs: {
               ...attribs,
-              src: new URL(attribs.src, postUrl).href,
+              src: new URL(resolved, postUrl).href,
             },
           };
         } catch {
@@ -66,6 +100,7 @@ export async function getFeedEntries(
     .map((post) => {
       const link = `${config.linkPrefix}/${post.id}/`;
       const postUrl = new URL(link, site).href;
+      const contentDir = `/src/content/${config.collection}/${post.id}/`;
 
       return {
         title: post.data.title,
@@ -73,7 +108,9 @@ export async function getFeedEntries(
         pubDate: post.data.pubDate,
         updatedDate: post.data.updatedDate,
         link,
-        content: post.body ? renderFeedContent(post.body, postUrl) : undefined,
+        content: post.body
+          ? renderFeedContent(post.body, postUrl, contentDir)
+          : undefined,
       };
     });
 }

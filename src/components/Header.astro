@@ -1,4 +1,5 @@
 ---
+const { isPost = false } = Astro.props;
 ---
 
 <header class="mb-8 sm:pt-8 md:col-start-1 md:row-start-1">
@@ -6,14 +7,16 @@
     href="/"
     class="block text-center transition-opacity hover:opacity-70 dark:hover:opacity-85"
   >
-    <img
-      src="/logo-bg.jpg"
-      alt="Reda Lemeden"
-      class="mask-sakigake mx-auto w-32"
-    />
-    <h1 class="text-l pb-1 font-bold tracking-[.18em] uppercase">
-      Reda Lemeden
-    </h1>
+    <img src="/logo-bg.jpg" alt="" class="mask-sakigake mx-auto w-32" />
+    {isPost ? (
+      <p class="text-l pb-1 font-bold tracking-[.18em] uppercase">
+        Reda Lemeden
+      </p>
+    ) : (
+      <h1 class="text-l pb-1 font-bold tracking-[.18em] uppercase">
+        Reda Lemeden
+      </h1>
+    )}
     <p class="px-8 text-xs tracking-wide text-stone-400 italic dark:text-[var(--muted-text)]">
       <span id="subtitle"></span>
       <noscript>Indie Software Developer</noscript>

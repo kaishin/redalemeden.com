@@ -61,6 +61,16 @@ Items are ordered; each is one focused pull request.
       `src/pages/feed.json.ts` mirroring `src/pages/derived-data-feed.json.ts` and
       delete the static file. Acceptance: `pnpm check` and `pnpm build` pass;
       `dist/feed.json` leads with the newest blog post and matches `dist/feed.xml`.
+- [ ] Remove the nested main landmark from the 404 page (Tasker #107)
+      `src/pages/404.astro` wraps its content in `<main>` inside
+      `NavigationLayout`'s own `<main>`. Replace the inner one with a fragment or
+      plain element. Acceptance: checks and build pass; `dist/404.html` has
+      exactly one `<main>`.
+- [ ] Give the theme selector an accessible name (Tasker #106)
+      `src/components/ThemeSelect.astro`'s `<select id="themeSelect">` has no
+      label or `aria-label`. Add one (e.g. `aria-label="Color theme"` or an
+      `sr-only` label) without visual change. Acceptance: checks and build pass;
+      the built select carries an accessible name.
 - [ ] Advertise every site feed via link rel=alternate autodiscovery (Tasker #105)
       `BaseLayout.astro` only advertises `/feed.xml`. Add a JSON Feed alternate
       there, and RSS + JSON alternates for Derived Data on its index and post

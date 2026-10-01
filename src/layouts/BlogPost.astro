@@ -11,6 +11,7 @@ const { title, description, image, pubDate, updatedDate, isArchived } =
 ---
 
 <NavigationLayout title={title} description={description} image={image}>
+  <slot name="head" slot="head" />
   <div class="title">
     <div class="date">
       <FormattedDate date={pubDate} />

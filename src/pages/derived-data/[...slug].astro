@@ -17,5 +17,19 @@ const { Content } = await render(post);
 ---
 
 <BlogPost {...post.data}>
+  <Fragment slot="head">
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Derived Data RSS"
+      href="/derived-data-feed.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/feed+json"
+      title="Derived Data JSON Feed"
+      href="/derived-data-feed.json"
+    />
+  </Fragment>
   <Content />
 </BlogPost>

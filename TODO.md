@@ -61,7 +61,7 @@ Items are ordered; each is one focused pull request.
       `src/pages/feed.json.ts` mirroring `src/pages/derived-data-feed.json.ts` and
       delete the static file. Acceptance: `pnpm check` and `pnpm build` pass;
       `dist/feed.json` leads with the newest blog post and matches `dist/feed.xml`.
-- [ ] Remove the nested main landmark from the 404 page (Tasker #107)
+- [x] Remove the nested main landmark from the 404 page (Tasker #107)
       `src/pages/404.astro` wraps its content in `<main>` inside
       `NavigationLayout`'s own `<main>`. Replace the inner one with a fragment or
       plain element. Acceptance: checks and build pass; `dist/404.html` has

@@ -71,11 +71,24 @@ Items are ordered; each is one focused pull request.
       label or `aria-label`. Add one (e.g. `aria-label="Color theme"` or an
       `sr-only` label) without visual change. Acceptance: checks and build pass;
       the built select carries an accessible name.
+- [ ] Fix project card heading level and redundant image alt (Tasker #109)
+      `src/components/ProjectCard.astro` uses `<h5>` under the home page's h3
+      and `alt={name}` beside the visible name in the same link. Switch to `<h4>`
+      (same classes) and `alt=""`. Acceptance: checks and build pass;
+      `dist/index.html` cards use `<h4>` and `alt=""`; no visual change.
 - [ ] Advertise every site feed via link rel=alternate autodiscovery (Tasker #105)
       `BaseLayout.astro` only advertises `/feed.xml`. Add a JSON Feed alternate
       there, and RSS + JSON alternates for Derived Data on its index and post
-      pages via the head slot. Acceptance: checks and build pass; built HTML lists
-      the expected alternates.
+      pages via the head slot, which `NavigationLayout.astro` and
+      `BlogPost.astro` must first forward to `BaseLayout`. Acceptance: checks and
+      build pass; built HTML lists the expected alternates inside `<head>`.
+- [ ] Give post pages a single h1 and stop repeating the site name in the header link (Tasker #108)
+      `Header.astro` renders the site name as `<h1>` on every page and
+      `BlogPost.astro` adds the post title as a second `<h1>`; the header logo's
+      `alt="Reda Lemeden"` duplicates the link text. Set the logo `alt=""` and
+      render the header name as a non-heading on post pages (prop via
+      `NavigationLayout`). Acceptance: checks and build pass; built blog and
+      Derived Data posts have exactly one `<h1>`; `dist/index.html` keeps one.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

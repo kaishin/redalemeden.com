@@ -71,7 +71,7 @@ Items are ordered; each is one focused pull request.
       label or `aria-label`. Add one (e.g. `aria-label="Color theme"` or an
       `sr-only` label) without visual change. Acceptance: checks and build pass;
       the built select carries an accessible name.
-- [ ] Fix project card heading level and redundant image alt (Tasker #109)
+- [x] Fix project card heading level and redundant image alt (Tasker #109)
       `src/components/ProjectCard.astro` uses `<h5>` under the home page's h3
       and `alt={name}` beside the visible name in the same link. Switch to `<h4>`
       (same classes) and `alt=""`. Acceptance: checks and build pass;

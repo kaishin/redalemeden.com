@@ -89,6 +89,18 @@ Items are ordered; each is one focused pull request.
       render the header name as a non-heading on post pages (prop via
       `NavigationLayout`). Acceptance: checks and build pass; built blog and
       Derived Data posts have exactly one `<h1>`; `dist/index.html` keeps one.
+- [ ] Mark the current section in the navigation and delete the unused HeaderLink component (Tasker #114)
+      `Navigation.astro` never marks the current page, and `HeaderLink.astro` is
+      imported nowhere. Add `aria-current="page"` to the link matching
+      `Astro.url.pathname` (trailing slash stripped) and delete `HeaderLink.astro`.
+      Acceptance: checks and build pass; built `/blog`, `/derived-data` and
+      `/contact` each mark only their own link; `dist/index.html` marks none.
+- [ ] Mark post pages as Open Graph articles with their publish dates (Tasker #113)
+      `BaseLayout.astro` hard-codes `og:type=website`. Add optional props
+      (og type, published/modified time) passed via `NavigationLayout` from
+      `BlogPost.astro`, emitting `og:type=article`, `article:published_time` and
+      `article:modified_time` when `updatedDate` exists. Acceptance: checks and
+      build pass; built posts carry them; `dist/index.html` stays `website`.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

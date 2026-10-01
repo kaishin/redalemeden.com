@@ -82,7 +82,7 @@ Items are ordered; each is one focused pull request.
       pages via the head slot, which `NavigationLayout.astro` and
       `BlogPost.astro` must first forward to `BaseLayout`. Acceptance: checks and
       build pass; built HTML lists the expected alternates inside `<head>`.
-- [ ] Give post pages a single h1 and stop repeating the site name in the header link (Tasker #108)
+- [x] Give post pages a single h1 and stop repeating the site name in the header link (Tasker #108)
       `Header.astro` renders the site name as `<h1>` on every page and
       `BlogPost.astro` adds the post title as a second `<h1>`; the header logo's
       `alt="Reda Lemeden"` duplicates the link text. Set the logo `alt=""` and

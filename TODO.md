@@ -89,7 +89,7 @@ Items are ordered; each is one focused pull request.
       render the header name as a non-heading on post pages (prop via
       `NavigationLayout`). Acceptance: checks and build pass; built blog and
       Derived Data posts have exactly one `<h1>`; `dist/index.html` keeps one.
-- [ ] Mark the current section in the navigation and delete the unused HeaderLink component (Tasker #114)
+- [x] Mark the current section in the navigation and delete the unused HeaderLink component (Tasker #114)
       `Navigation.astro` never marks the current page, and `HeaderLink.astro` is
       imported nowhere. Add `aria-current="page"` to the link matching
       `Astro.url.pathname` (trailing slash stripped) and delete `HeaderLink.astro`.

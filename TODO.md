@@ -66,7 +66,7 @@ Items are ordered; each is one focused pull request.
       `NavigationLayout`'s own `<main>`. Replace the inner one with a fragment or
       plain element. Acceptance: checks and build pass; `dist/404.html` has
       exactly one `<main>`.
-- [ ] Give the theme selector an accessible name (Tasker #106)
+- [x] Give the theme selector an accessible name (Tasker #106)
       `src/components/ThemeSelect.astro`'s `<select id="themeSelect">` has no
       label or `aria-label`. Add one (e.g. `aria-label="Color theme"` or an
       `sr-only` label) without visual change. Acceptance: checks and build pass;

@@ -100,7 +100,7 @@ Items are ordered; each is one focused pull request.
       the fix for "Occurance"; the correct spelling is `Occurrence`. Change only
       that word. Acceptance: format check, checks and build pass; the built page
       contains "Occurrence" and no `<strong>Occurence</strong>`.
-- [ ] Give the collection pages a single h1 (Tasker #117)
+- [x] Give the collection pages a single h1 (Tasker #117)
       `src/pages/collections/swiftui-2022.mdx` and `stable-diffusion.mdx` open
       with a Markdown `#` heading under `Header.astro`'s site-name `<h1>`. Add
       `isPost: true` to both frontmatters (the flag from #108) so the header

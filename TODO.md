@@ -100,6 +100,22 @@ Items are ordered; each is one focused pull request.
       the fix for "Occurance"; the correct spelling is `Occurrence`. Change only
       that word. Acceptance: format check, checks and build pass; the built page
       contains "Occurrence" and no `<strong>Occurence</strong>`.
+- [ ] Give the collection pages a single h1 (Tasker #117)
+      `src/pages/collections/swiftui-2022.mdx` and `stable-diffusion.mdx` open
+      with a Markdown `#` heading under `Header.astro`'s site-name `<h1>`. Add
+      `isPost: true` to both frontmatters (the flag from #108) so the header
+      renders a `<p>`. Acceptance: checks and build pass; each built collection
+      page has exactly one `<h1>` (its title); `dist/index.html` keeps one.
+- [ ] Repoint dead microblog post permalinks to their anchors on the microblog page (Tasker #116)
+      Eight links use `microblog/post-<ms>` permalinks that 404 (only
+      `/microblog/` redirects): six absolute (`https://redalemeden.com/…`) and
+      two relative (`/microblog/post-…` in twil #6 and microblog line 268).
+      Repoint to `/experiments/microblog#<day>` anchors (`may-13-2020`,
+      `mar-17-2020`, `mar-04-2020`, `jul-25-2021`, `nov-14-2020`), and to the
+      bare page for the three with no matching entry (twil `#2`, twil `#6`,
+      microblog line 499). Acceptance: checks and build pass; a recursive grep
+      for `microblog/post-` under `src` finds nothing; every fragment exists
+      in the built microblog page.
 - [ ] Mark post pages as Open Graph articles with their publish dates (Tasker #113)
       `BaseLayout.astro` hard-codes `og:type=website`. Add optional props
       (og type, published/modified time) passed via `NavigationLayout` from

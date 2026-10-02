@@ -95,12 +95,19 @@ Items are ordered; each is one focused pull request.
       `Astro.url.pathname` (trailing slash stripped) and delete `HeaderLink.astro`.
       Acceptance: checks and build pass; built `/blog`, `/derived-data` and
       `/contact` each mark only their own link; `dist/index.html` marks none.
+- [ ] Fix the misspelled correct spelling on the frequent typos page (Tasker #115)
+      `src/pages/experiments/frequent-typos/index.mdx` gives `**Occurence**` as
+      the fix for "Occurance"; the correct spelling is `Occurrence`. Change only
+      that word. Acceptance: format check, checks and build pass; the built page
+      contains "Occurrence" and no `<strong>Occurence</strong>`.
 - [ ] Mark post pages as Open Graph articles with their publish dates (Tasker #113)
       `BaseLayout.astro` hard-codes `og:type=website`. Add optional props
       (og type, published/modified time) passed via `NavigationLayout` from
       `BlogPost.astro`, emitting `og:type=article`, `article:published_time` and
-      `article:modified_time` when `updatedDate` exists. Acceptance: checks and
-      build pass; built posts carry them; `dist/index.html` stays `website`.
+      `article:modified_time` when `updatedDate` exists. Also switch the
+      `twitter:*` meta tags from `property=` to `name=`. Acceptance: checks and
+      build pass; built posts carry the article tags; `dist/index.html` stays
+      `website`; no built page contains `property="twitter:`.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

@@ -265,7 +265,7 @@ id="nov-14-2020"><a href="#nov-14-2020" class="no-underline">#</a> November 14,
 
 I found [a
 solution](https://discussions.apple.com/thread/8242927?answerId=32883265022#32883265022)
-to the problem I posted about [a while ago](/microblog/post-1605383139658). It
+to the problem I posted about [a while ago](/experiments/microblog#nov-14-2020). It
 turns out that clearing input cache using these two commands takes care of
 restoring things to the way they're supposed to be:
 
@@ -423,7 +423,7 @@ id="jun-18-2020"><a href="#jun-18-2020" class="no-underline">#</a> June 18,
 Shipping a macOS or iOS app nowadays without a setting to match the system
 appearance is an increasingly harmful accessibility oversight. Discord on macOS
 is one of the offenders that has been consistently annoying me since [earlier
-this summer](https://redalemeden.com/microblog/post-1589377531514).
+this summer](https://redalemeden.com/experiments/microblog#may-13-2020).
 
 ![Discord appearance settings](@images/microblog/image-1592489667900.png "Discord appearance settings")
 
@@ -496,7 +496,7 @@ I'm genuinely excited to see Chris Krycho
 [adopt](https://v5.chriskrycho.com/journal/this-week-i-learned-1/) the format
 I've been recently experimenting with on this microblog. I’ve learnt a lot from
 reading Chris’ essays and journal entries (also where I got the [assumed
-audience](https://redalemeden.com/microblog/post-1570576215962) idea from.), and
+audience](https://redalemeden.com/experiments/microblog) idea from.), and
 I am looking forward to reading more of these.
 
 <time datetime="2020-04-02T22:23:01.108Z" class="font-semibold text-2xl"
@@ -532,7 +532,7 @@ id="mar-30-2020"><a href="#mar-30-2020" class="no-underline">#</a> March 30,
 
 My good friend [Mikael Muszynski](https://twitter.com/linduxed) sent me this
 nugget about [metasyntactic
-variables](https://redalemeden.com/microblog/post-1584485660627):
+variables](https://redalemeden.com/experiments/microblog#mar-17-2020):
 
 > I was reminded of the fact that companies which speak primarily in Swedish
 > have their own metasyntactic variables!

@@ -124,6 +124,16 @@ Items are ordered; each is one focused pull request.
       `twitter:*` meta tags from `property=` to `name=`. Acceptance: checks and
       build pass; built posts carry the article tags; `dist/index.html` stays
       `website`; no built page contains `property="twitter:`.
+- [ ] Give the blog, Derived Data, contact and resume pages their own titles (Tasker #119)
+      `blog/index.astro`, `derived-data/index.astro`, `contact/index.astro` and
+      `contact/thank-you/index.astro` pass no title to `NavigationLayout`, so all
+      four are titled just "Reda Lemeden". Pass titles ("Unredacted", "Derived
+      Data", "Get in Touch", "Message Sent") and, for the two indexes, their
+      intro sentence as description; leave the contact form alone. Also drop the
+      "Reda Lemeden | " prefix from `resume/mobile.mdx`'s title (BaseLayout
+      appends the suffix). Acceptance: checks and build pass; each page has its
+      own `<title>`; the resume title names the site once; `dist/index.html`
+      unchanged.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

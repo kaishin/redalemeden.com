@@ -116,7 +116,7 @@ Items are ordered; each is one focused pull request.
       microblog line 499). Acceptance: checks and build pass; a recursive grep
       for `microblog/post-` under `src` finds nothing; every fragment exists
       in the built microblog page.
-- [ ] Mark post pages as Open Graph articles with their publish dates (Tasker #113)
+- [x] Mark post pages as Open Graph articles with their publish dates (Tasker #113)
       `BaseLayout.astro` hard-codes `og:type=website`. Add optional props
       (og type, published/modified time) passed via `NavigationLayout` from
       `BlogPost.astro`, emitting `og:type=article`, `article:published_time` and

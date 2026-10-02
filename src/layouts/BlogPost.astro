@@ -10,7 +10,15 @@ const { title, description, image, pubDate, updatedDate, isArchived } =
   Astro.props;
 ---
 
-<NavigationLayout title={title} description={description} image={image} isPost>
+<NavigationLayout
+  title={title}
+  description={description}
+  image={image}
+  isPost
+  ogType="article"
+  publishedTime={pubDate}
+  modifiedTime={updatedDate}
+>
   <slot name="head" slot="head" />
   <div class="title">
     <div class="date">

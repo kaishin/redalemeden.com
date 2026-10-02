@@ -107,12 +107,15 @@ Items are ordered; each is one focused pull request.
       renders a `<p>`. Acceptance: checks and build pass; each built collection
       page has exactly one `<h1>` (its title); `dist/index.html` keeps one.
 - [ ] Repoint dead microblog post permalinks to their anchors on the microblog page (Tasker #116)
-      Six links use `https://redalemeden.com/microblog/post-<ms>`, which 404
-      (only `/microblog/` redirects). Repoint to `/experiments/microblog#<day>`
-      anchors (`may-13-2020`, `mar-17-2020`, `mar-04-2020`, `jul-25-2021`), and
-      to the bare page for the two with no matching entry (twil `#2`, microblog
-      line 499). Acceptance: checks and build pass; `grep -r 'microblog/post-'
-      src` is empty; every fragment exists in the built microblog page.
+      Eight links use `microblog/post-<ms>` permalinks that 404 (only
+      `/microblog/` redirects): six absolute (`https://redalemeden.com/…`) and
+      two relative (`/microblog/post-…` in twil #6 and microblog line 268).
+      Repoint to `/experiments/microblog#<day>` anchors (`may-13-2020`,
+      `mar-17-2020`, `mar-04-2020`, `jul-25-2021`, `nov-14-2020`), and to the
+      bare page for the three with no matching entry (twil `#2`, twil `#6`,
+      microblog line 499). Acceptance: checks and build pass; a recursive grep
+      for `microblog/post-` under `src` finds nothing; every fragment exists
+      in the built microblog page.
 - [ ] Mark post pages as Open Graph articles with their publish dates (Tasker #113)
       `BaseLayout.astro` hard-codes `og:type=website`. Add optional props
       (og type, published/modified time) passed via `NavigationLayout` from

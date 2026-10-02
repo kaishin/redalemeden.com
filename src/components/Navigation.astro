@@ -1,5 +1,9 @@
 ---
 import { Rss } from "@lucide/astro";
+
+const pathname = Astro.url.pathname.replace(/\/$/, "");
+
+const isCurrent = (href: string) => href === pathname;
 ---
 
 <nav class="self-start md:col-start-1 md:row-start-2">
@@ -10,6 +14,7 @@ import { Rss } from "@lucide/astro";
       <div class="relative inline-block text-center">
         <a
           href="/blog"
+          aria-current={isCurrent("/blog") ? "page" : undefined}
           class="block transition-colors hover:text-[var(--accent-link)] dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
         >
           <span class="text-xs font-semibold tracking-widest uppercase md:text-sm">
@@ -32,6 +37,7 @@ import { Rss } from "@lucide/astro";
       <div class="relative inline-block text-center">
         <a
           href="/derived-data"
+          aria-current={isCurrent("/derived-data") ? "page" : undefined}
           class="block transition-colors hover:text-[var(--accent-link)] dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
         >
           <span class="text-xs font-semibold tracking-widest uppercase md:text-sm">
@@ -53,6 +59,7 @@ import { Rss } from "@lucide/astro";
     <li class="mb-4 inline-block px-4 align-middle md:mb-8 md:block md:px-0">
       <a
         href="/contact"
+        aria-current={isCurrent("/contact") ? "page" : undefined}
         class="text-xs font-semibold tracking-widest uppercase transition-colors hover:text-[var(--accent-link)] md:text-sm dark:text-[var(--soft-text)] dark:hover:text-[var(--accent-link)]"
       >
         Contact

@@ -95,7 +95,7 @@ Items are ordered; each is one focused pull request.
       `Astro.url.pathname` (trailing slash stripped) and delete `HeaderLink.astro`.
       Acceptance: checks and build pass; built `/blog`, `/derived-data` and
       `/contact` each mark only their own link; `dist/index.html` marks none.
-- [ ] Fix the misspelled correct spelling on the frequent typos page (Tasker #115)
+- [x] Fix the misspelled correct spelling on the frequent typos page (Tasker #115)
       `src/pages/experiments/frequent-typos/index.mdx` gives `**Occurence**` as
       the fix for "Occurance"; the correct spelling is `Occurrence`. Change only
       that word. Acceptance: format check, checks and build pass; the built page

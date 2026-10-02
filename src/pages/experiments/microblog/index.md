@@ -265,7 +265,7 @@ id="nov-14-2020"><a href="#nov-14-2020" class="no-underline">#</a> November 14,
 
 I found [a
 solution](https://discussions.apple.com/thread/8242927?answerId=32883265022#32883265022)
-to the problem I posted about [a while ago](/experiments/microblog#nov-14-2020). It
+to the problem I posted about [a while ago](/experiments/microblog#nov-14-2020-2046). It
 turns out that clearing input cache using these two commands takes care of
 restoring things to the way they're supposed to be:
 
@@ -277,7 +277,7 @@ sudo rm /var/folders/*/*/*/com.apple.IntlDataCache*
 Now back to typing Japanese. やったー!
 
 <time datetime="2020-11-14T20:46+01:00" class="font-semibold text-2xl"
-id="nov-14-2020"><a href="#nov-14-2020" class="no-underline">#</a> November 14,
+id="nov-14-2020-2046"><a href="#nov-14-2020-2046" class="no-underline">#</a> November 14,
 2020</time>
 
 After updating my main partition to Big Sur, I noticed that my Japanese keyboard

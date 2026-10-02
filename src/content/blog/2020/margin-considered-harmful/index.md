@@ -17,7 +17,7 @@ hinder component reuse across different adaptive layouts.
 
 A few years back, margins were the only way to create float-based grid layouts
 in CSS. Today, [margin
-gymnastics](https://redalemeden.com/microblog/post-1583342143001) are no longer
+gymnastics](https://redalemeden.com/experiments/microblog#mar-04-2020) are no longer
 necessary.
 
 > Instead of margin I have started using spacer components, which move the

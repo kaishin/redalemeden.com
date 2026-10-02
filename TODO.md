@@ -106,7 +106,7 @@ Items are ordered; each is one focused pull request.
       `isPost: true` to both frontmatters (the flag from #108) so the header
       renders a `<p>`. Acceptance: checks and build pass; each built collection
       page has exactly one `<h1>` (its title); `dist/index.html` keeps one.
-- [ ] Repoint dead microblog post permalinks to their anchors on the microblog page (Tasker #116)
+- [x] Repoint dead microblog post permalinks to their anchors on the microblog page (Tasker #116)
       Eight links use `microblog/post-<ms>` permalinks that 404 (only
       `/microblog/` redirects): six absolute (`https://redalemeden.com/…`) and
       two relative (`/microblog/post-…` in twil #6 and microblog line 268).

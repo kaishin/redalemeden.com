@@ -13,7 +13,7 @@ In this latest installment of my static site generation escapades, I will pick
 up [Svelte](https://svelte.dev), a relatively new Web framework (2016) with an
 increased focus on developer experience and performance.
 
-[My dissatisfaction with Gatsby](https://redalemeden.com/microblog/post-1627249229000) has left me
+[My dissatisfaction with Gatsby](https://redalemeden.com/experiments/microblog#jul-25-2021) has left me
 looking for alternatives, including writing my own in Swift—a daunting task
 given the long list of features I need to support for this website. I also
 considered [Eleventy](https://www.11ty.dev), [Next.js](https://nextjs.org),

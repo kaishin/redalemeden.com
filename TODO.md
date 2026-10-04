@@ -124,7 +124,7 @@ Items are ordered; each is one focused pull request.
       `twitter:*` meta tags from `property=` to `name=`. Acceptance: checks and
       build pass; built posts carry the article tags; `dist/index.html` stays
       `website`; no built page contains `property="twitter:`.
-- [ ] Give the blog, Derived Data, contact and resume pages their own titles (Tasker #119)
+- [x] Give the blog, Derived Data, contact and resume pages their own titles (Tasker #119)
       `blog/index.astro`, `derived-data/index.astro`, `contact/index.astro` and
       `contact/thank-you/index.astro` pass no title to `NavigationLayout`, so all
       four are titled just "Reda Lemeden". Pass titles ("Unredacted", "Derived

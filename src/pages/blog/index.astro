@@ -9,7 +9,10 @@ const posts = (await getCollection("blog"))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<NavigationLayout>
+<NavigationLayout
+  title="Unredacted"
+  description="A blog about design, technology, programming, and other personal interests."
+>
   <h2>Unredacted</h2>
   <p>
     A blog about design, technology, programming, and other personal interests.

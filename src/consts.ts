@@ -16,9 +16,9 @@ export const SITE_KEYWORDS = [
   "Reda",
   "Lemeden",
   "Kaishin",
+  "Indie",
   "Designer",
   "Programmer",
   "Swift",
   "Stockholm",
-  "KaishinLab",
 ];

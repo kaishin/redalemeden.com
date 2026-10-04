@@ -1,6 +1,6 @@
 ---
 import "@fontsource-variable/inter";
-import { SITE_TITLE, SITE_DESCRIPTION } from "@consts";
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_KEYWORDS } from "@consts";
 import "../styles/global.css";
 
 interface Props {
@@ -38,10 +38,7 @@ if (title != SITE_TITLE) {
 
     <!-- SEO -->
     <meta name="robots" content="noodp, noydir" />
-    <meta
-      name="keywords"
-      content="Reda, Lemeden, Kaishin, Indie, Designer, Programmer, Swift, Stockholm"
-    />
+    <meta name="keywords" content={SITE_KEYWORDS.join(", ")} />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Feeds -->

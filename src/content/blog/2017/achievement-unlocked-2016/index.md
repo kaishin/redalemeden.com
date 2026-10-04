@@ -12,9 +12,9 @@ on the side:
 
 - Built and launched [Speedster](https://speedsterapp.com), a native bandwidth
   speed testing app for macOS. The feedback was very positive, but I [struggled
-  with the business model](/2016/speedster-a-retrospective). As of this writing,
-  the app is no longer available on the App Store, while version 3.0 is still in
-  the works (more on that later).
+  with the business model](/blog/2016/speedster-a-retrospective/). As of this
+  writing, the app is no longer available on the App Store, while version 3.0 is
+  still in the works (more on that later).
 
 - Launched then open-sourced [Markoff](https://github.com/thoughtbot/Markoff), a
   lightweight Markdown previewer app for macOS.
@@ -33,8 +33,8 @@ on the side:
 - Released [ImageScout 1.0](https://github.com/kaishin/ImageScout), a Swift
   implementation of `fastimage`.
 
-- Made a [visualization](/2016/swift-3-access-control) on Swift 3.0 Access
-  control.
+- Made a [visualization](/derived-data/2016/swift-3-access-control/) on Swift
+  3.0 Access control.
 
 - Gave [a talk](https://speakerdeck.com/kaishin/swift-3-api-best-practices-by-example)
   about Swift API guidelines at CocoaHeads Stockholm.

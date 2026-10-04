@@ -141,6 +141,22 @@ Items are ordered; each is one focused pull request.
       `/blog/2016/speedster-a-retrospective/` and
       `/derived-data/2016/swift-3-access-control/`. Acceptance: format check,
       checks and build pass; no `](/2016/` under `src/content`.
+- [ ] Render the keywords meta tag from SITE_KEYWORDS (Tasker #139)
+      `src/consts.ts` exports `SITE_KEYWORDS`, but nothing imports it, while
+      `BaseLayout.astro` hard-codes a drifted list. Make the constant match the
+      rendered list exactly (add `Indie` after `Kaishin`, drop `KaishinLab`),
+      import it, and render `SITE_KEYWORDS.join(", ")`. Acceptance: format
+      check, checks and build pass; the keywords meta in `dist/index.html` is
+      byte-identical; no literal keyword string is left in `BaseLayout.astro`.
+- [ ] Fix og:image URLs for posts that set a bare image filename (Tasker #138)
+      `BaseLayout.astro` resolves `image` against the site root, so bare
+      filenames 404: `swift-killer-feature` (`default.jpg`), `we-need-chrome-no-more`
+      (`chrome-no-more.jpg`, which lives in `public/social-cards/`) and
+      `ditching-docker-desktop-apple-silicon` (`docker-whale.jpg`, which doesn't exist).
+      Drop the image line from the first and third posts, and set the second to
+      `/social-cards/chrome-no-more.jpg`. Acceptance: format check, checks
+      and build pass; every built `og:image`/`twitter:image` starts with
+      `https://redalemeden.com/social-cards/`.
 - [ ] Make link hrefs in feed item content absolute (Tasker #135)
       `src/lib/feed.ts` absolutizes `<img src>` but not `<a href>`, so the newest
       Derived Data post's `/derived-data/2026/what-new-in-xcode-27-mcp-bridge`

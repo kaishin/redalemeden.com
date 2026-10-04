@@ -134,7 +134,7 @@ Items are ordered; each is one focused pull request.
       appends the suffix). Acceptance: checks and build pass; each page has its
       own `<title>`; the resume title names the site once; `dist/index.html`
       unchanged.
-- [ ] Fix two dead post links in the 2016 achievement roundup (Tasker #134)
+- [x] Fix two dead post links in the 2016 achievement roundup (Tasker #134)
       `src/content/blog/2017/achievement-unlocked-2016/index.md` links
       `/2016/speedster-a-retrospective` and `/2016/swift-3-access-control`;
       no `/2016/*` route or redirect exists. Repoint to

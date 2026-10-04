@@ -80,22 +80,23 @@ Furusato makes me feel nostalgious for a place I have never been to!!
 occasions and events including the closing ceremony of the [1998 Nagano
 Olympics](https://en.wikipedia.org/wiki/Nagano_Olympic_Games).
 
-## Japanese Lyrics
+It goes like this in Japanese:
 
-兎追いし かの山
-小鮒釣りし　かの川
-夢は今も　めぐりて、
-忘れがたき　故郷
 
-如何に在ます　父母
-恙なしや　友がき
-雨に風に　つけても
-思い出ずる　故郷
+兎追いし かの山 (うさぎおいし かのやま, the hill where I chased rabbits)
+小鮒釣りし　かの川 (こぶなつりし かのかわ, the stream where I fished for small crucian carp)
+夢は今も　めぐりて、 (ゆめはいまも めぐりて, those dreams still visit me)
+忘れがたき　故郷 (わすれがたき ふるさと, my unforgettable hometown)
 
-志を　はたして
-いつの日にか　帰らん
-山は青き　故郷
-水は清き　故郷
+如何に在ます　父母 (いかにいます ちちはは, how are my father and mother faring)
+恙なしや　友がき (つつがないや ともがき, are my old friends safe and well)
+雨に風に　つけても (あめにかぜに つけても, with every rain and wind)
+思い出ずる　故郷 (おもいでずる ふるさと, I think of my hometown)
+
+志を　はたして (こころざしを はたして, once I fulfill my ambitions)
+いつの日にか　帰らん (いつのひにか かえらん, someday I shall return)
+山は青き　故郷 (やまはあおき ふるさと, hometown of green mountains)
+水は清き　故郷 (みずはきよき ふるさと, hometown of clear waters)
 
 This song somehow evokes a sense of nostalgia for a place I’ve never actually
-been to—a fictional, picturesque _furusato_ that I always wished I had.
+been to—a fictional, picturesque _furusato_ that I somehow wished I could come back to someday.

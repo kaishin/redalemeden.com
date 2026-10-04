@@ -9,7 +9,10 @@ const posts = (await getCollection("derived-data"))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<NavigationLayout>
+<NavigationLayout
+  title="Derived Data"
+  description="A blog about Apple platforms, Swift, SwiftUI, Xcode, and related developer topics."
+>
   <Fragment slot="head">
     <link
       rel="alternate"

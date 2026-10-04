@@ -134,6 +134,20 @@ Items are ordered; each is one focused pull request.
       appends the suffix). Acceptance: checks and build pass; each page has its
       own `<title>`; the resume title names the site once; `dist/index.html`
       unchanged.
+- [ ] Fix two dead post links in the 2016 achievement roundup (Tasker #134)
+      `src/content/blog/2017/achievement-unlocked-2016/index.md` links
+      `/2016/speedster-a-retrospective` and `/2016/swift-3-access-control`;
+      no `/2016/*` route or redirect exists. Repoint to
+      `/blog/2016/speedster-a-retrospective/` and
+      `/derived-data/2016/swift-3-access-control/`. Acceptance: format check,
+      checks and build pass; no `](/2016/` under `src/content`.
+- [ ] Make link hrefs in feed item content absolute (Tasker #135)
+      `src/lib/feed.ts` absolutizes `<img src>` but not `<a href>`, so the newest
+      Derived Data post's `/derived-data/2026/what-new-in-xcode-27-mcp-bridge`
+      link ships relative in both Derived Data feeds. Add an `a` transform
+      resolving `href` against the post URL (skip absolute, `mailto:` and
+      `#` hrefs). Acceptance: checks and build pass; no built feed contains a
+      root-relative `href`; image `src` output unchanged.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

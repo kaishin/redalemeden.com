@@ -9,10 +9,20 @@ const {
   description,
   image,
   isPost = false,
+  ogType,
+  publishedTime,
+  modifiedTime,
 } = Astro.props.frontmatter || Astro.props;
 ---
 
-<BaseLayout title={title} description={description} image={image}>
+<BaseLayout
+  title={title}
+  description={description}
+  image={image}
+  ogType={ogType}
+  publishedTime={publishedTime}
+  modifiedTime={modifiedTime}
+>
   <slot name="head" slot="head" />
   <div class="md:grid-cols-main md:grid-rows-main mx-auto my-0 min-h-screen max-w-7xl md:grid">
     <Header isPost={isPost} />

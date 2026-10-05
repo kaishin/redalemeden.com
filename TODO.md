@@ -141,7 +141,7 @@ Items are ordered; each is one focused pull request.
       `/blog/2016/speedster-a-retrospective/` and
       `/derived-data/2016/swift-3-access-control/`. Acceptance: format check,
       checks and build pass; no `](/2016/` under `src/content`.
-- [ ] Render the keywords meta tag from SITE_KEYWORDS (Tasker #139)
+- [x] Render the keywords meta tag from SITE_KEYWORDS (Tasker #139)
       `src/consts.ts` exports `SITE_KEYWORDS`, but nothing imports it, while
       `BaseLayout.astro` hard-codes a drifted list. Make the constant match the
       rendered list exactly (add `Indie` after `Kaishin`, drop `KaishinLab`),

@@ -169,12 +169,9 @@ Items are ordered; each is one focused pull request.
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed
       if present)
 
-## Owner-only
+## Not ready
 
 Blocked on explicit owner direction; the autonomous builder must not pick
 these up.
 
-- [ ] Write a response to https://jola.dev/posts/ai-antithetical-learning (Tasker #49)
-      Owner-authored blog post; the builder should not draft opinion writing on
-      the owner's behalf without explicit direction. Parked here so it cannot
-      block the autonomous queue above.
+- Tasker #49 — blocked: Write a response to https://jola.dev/posts/ai-antithetical-learning

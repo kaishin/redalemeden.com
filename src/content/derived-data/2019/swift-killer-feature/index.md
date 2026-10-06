@@ -4,7 +4,6 @@ title: "Swift's Killer Feature"
 tags:
   - Programming
 audience: "Apple platform developers interested in Swift and its adoption in the community"
-image: default.jpg
 ---
 
 Since its release 5 years ago, Swift has matured a great deal as a programming

@@ -5,7 +5,6 @@ audience: "Docker and Apple silicon Mac users"
 tags:
   - Guide
   - macOS
-image: docker-whale.jpg
 isArchived: true
 ---
 

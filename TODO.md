@@ -148,7 +148,7 @@ Items are ordered; each is one focused pull request.
       import it, and render `SITE_KEYWORDS.join(", ")`. Acceptance: format
       check, checks and build pass; the keywords meta in `dist/index.html` is
       byte-identical; no literal keyword string is left in `BaseLayout.astro`.
-- [ ] Fix og:image URLs for posts that set a bare image filename (Tasker #138)
+- [x] Fix og:image URLs for posts that set a bare image filename (Tasker #138)
       `BaseLayout.astro` resolves `image` against the site root, so bare
       filenames 404: `swift-killer-feature` (`default.jpg`), `we-need-chrome-no-more`
       (`chrome-no-more.jpg`, which lives in `public/social-cards/`) and

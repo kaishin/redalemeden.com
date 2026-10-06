@@ -164,6 +164,14 @@ Items are ordered; each is one focused pull request.
       resolving `href` against the post URL (skip absolute, `mailto:` and
       `#` hrefs). Acceptance: checks and build pass; no built feed contains a
       root-relative `href`; image `src` output unchanged.
+- [ ] Carry post summaries and tags into the JSON feeds and declare JSON Feed 1.1 (Tasker #157)
+      `feed.json.ts` and `derived-data-feed.json.ts` drop `description` (the
+      RSS feeds ship it) and `tags`, and declare version 1 with the deprecated
+      `author`. Expose tags on `FeedEntry`, switch to version 1.1, add
+      `language`, `authors` (keep `author` for 1.0 readers), item `summary` and
+      `tags`. Keep item ids unchanged. Acceptance: format check, checks and
+      build pass; both JSON feeds declare 1.1 with `authors`; described items
+      carry `summary`; ids and RSS output unchanged.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

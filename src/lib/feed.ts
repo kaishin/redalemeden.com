@@ -63,6 +63,27 @@ function renderFeedContent(
       img: ["src", "srcset", "alt", "title", "width", "height", "loading"],
     },
     transformTags: {
+      a: (tagName, attribs) => {
+        if (!attribs.href) {
+          return { tagName, attribs };
+        }
+
+        if (/^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i.test(attribs.href)) {
+          return { tagName, attribs };
+        }
+
+        try {
+          return {
+            tagName,
+            attribs: {
+              ...attribs,
+              href: new URL(attribs.href, postUrl).href,
+            },
+          };
+        } catch {
+          return { tagName, attribs };
+        }
+      },
       img: (tagName, attribs) => {
         if (!attribs.src) {
           return { tagName, attribs };

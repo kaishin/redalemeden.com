@@ -174,6 +174,15 @@ Items are ordered; each is one focused pull request.
       format check, checks and build pass; the sitemap omits thank-you but keeps
       `/contact/`; thank-you carries `noindex`; no page contains `noodp`;
       `dist/index.html` has no robots meta.
+- [ ] Accept unquoted YAML dates for updatedDate (Tasker #175)
+      `src/content.config.ts` types `updatedDate` as `z.string()` only, while
+      `pubDate` accepts string or Date and 59 posts write it unquoted (a YAML
+      Date). An unquoted `updatedDate` therefore fails validation and breaks the
+      build. Give it `pubDate`'s string-or-date union and transform, still
+      optional; set it on no post. Acceptance: format check, checks and build
+      pass; built output unchanged; a throwaway (uncommitted) unquoted
+      `updatedDate` on one post builds and renders "Last updated on" plus
+      `article:modified_time`.
 - [ ] Carry post summaries and tags into the JSON feeds and declare JSON Feed 1.1 (Tasker #157)
       `feed.json.ts` and `derived-data-feed.json.ts` drop `description` (the
       RSS feeds ship it) and `tags`, and declare version 1 with the deprecated

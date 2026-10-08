@@ -12,6 +12,7 @@ const {
   ogType,
   publishedTime,
   modifiedTime,
+  noindex = false,
 } = Astro.props.frontmatter || Astro.props;
 ---
 
@@ -22,6 +23,7 @@ const {
   ogType={ogType}
   publishedTime={publishedTime}
   modifiedTime={modifiedTime}
+  noindex={noindex}
 >
   <slot name="head" slot="head" />
   <div class="md:grid-cols-main md:grid-rows-main mx-auto my-0 min-h-screen max-w-7xl md:grid">

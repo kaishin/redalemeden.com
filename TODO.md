@@ -164,6 +164,16 @@ Items are ordered; each is one focused pull request.
       resolving `href` against the post URL (skip absolute, `mailto:` and
       `#` hrefs). Acceptance: checks and build pass; no built feed contains a
       root-relative `href`; image `src` output unchanged.
+- [ ] Keep the contact thank-you page out of the sitemap and search results (Tasker #174)
+      `sitemap()` in `astro.config.mjs` has no filter, so the form confirmation
+      page `contact/thank-you` is listed and indexable, and `BaseLayout.astro`
+      hard-codes an obsolete `noodp, noydir` robots tag. Add an optional
+      `noindex` prop (forwarded by `NavigationLayout`) that renders a `noindex`
+      robots meta in place of that tag, set it on the thank-you page, and filter
+      the page out of the sitemap. Leave archived posts alone. Acceptance:
+      format check, checks and build pass; the sitemap omits thank-you but keeps
+      `/contact/`; thank-you carries `noindex`; no page contains `noodp`;
+      `dist/index.html` has no robots meta.
 - [ ] Carry post summaries and tags into the JSON feeds and declare JSON Feed 1.1 (Tasker #157)
       `feed.json.ts` and `derived-data-feed.json.ts` drop `description` (the
       RSS feeds ship it) and `tags`, and declare version 1 with the deprecated

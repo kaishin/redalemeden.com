@@ -164,7 +164,7 @@ Items are ordered; each is one focused pull request.
       resolving `href` against the post URL (skip absolute, `mailto:` and
       `#` hrefs). Acceptance: checks and build pass; no built feed contains a
       root-relative `href`; image `src` output unchanged.
-- [ ] Keep the contact thank-you page out of the sitemap and search results (Tasker #174)
+- [x] Keep the contact thank-you page out of the sitemap and search results (Tasker #174)
       `sitemap()` in `astro.config.mjs` has no filter, so the form confirmation
       page `contact/thank-you` is listed and indexable, and `BaseLayout.astro`
       hard-codes an obsolete `noodp, noydir` robots tag. Add an optional

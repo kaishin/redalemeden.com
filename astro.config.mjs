@@ -4,9 +4,16 @@ import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
+const site = "https://redalemeden.com";
+
 export default defineConfig({
-  site: "https://redalemeden.com",
-  integrations: [mdx(), sitemap()],
+  site,
+  integrations: [
+    mdx(),
+    sitemap({
+      filter: (page) => page.replace(/\/$/, "") !== `${site}/contact/thank-you`,
+    }),
+  ],
 
   markdown: {
     shikiConfig: {

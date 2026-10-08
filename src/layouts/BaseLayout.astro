@@ -10,6 +10,7 @@ interface Props {
   ogType?: string;
   publishedTime?: Date;
   modifiedTime?: Date;
+  noindex?: boolean;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -19,7 +20,12 @@ const image = rawImage === "" ? "/social-cards/default.jpg" : rawImage;
 
 let { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
 
-const { ogType = "website", publishedTime, modifiedTime } = Astro.props;
+const {
+  ogType = "website",
+  publishedTime,
+  modifiedTime,
+  noindex = false,
+} = Astro.props;
 
 if (title != SITE_TITLE) {
   title = `${title} | ${SITE_TITLE}`;
@@ -37,7 +43,7 @@ if (title != SITE_TITLE) {
     <meta name="color-scheme" content="light dark" />
 
     <!-- SEO -->
-    <meta name="robots" content="noodp, noydir" />
+    {noindex && <meta name="robots" content="noindex" />}
     <meta name="keywords" content={SITE_KEYWORDS.join(", ")} />
     <link rel="sitemap" href="/sitemap-index.xml" />
 

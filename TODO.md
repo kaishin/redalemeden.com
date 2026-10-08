@@ -157,7 +157,7 @@ Items are ordered; each is one focused pull request.
       `/social-cards/chrome-no-more.jpg`. Acceptance: format check, checks
       and build pass; every built `og:image`/`twitter:image` starts with
       `https://redalemeden.com/social-cards/`.
-- [ ] Make link hrefs in feed item content absolute (Tasker #135)
+- [x] Make link hrefs in feed item content absolute (Tasker #135)
       `src/lib/feed.ts` absolutizes `<img src>` but not `<a href>`, so the newest
       Derived Data post's `/derived-data/2026/what-new-in-xcode-27-mcp-bridge`
       link ships relative in both Derived Data feeds. Add an `a` transform

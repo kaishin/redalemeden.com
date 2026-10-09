@@ -183,7 +183,7 @@ Items are ordered; each is one focused pull request.
       pass; built output unchanged; a throwaway (uncommitted) unquoted
       `updatedDate` on one post builds and renders "Last updated on" plus
       `article:modified_time`.
-- [ ] Carry post summaries and tags into the JSON feeds and declare JSON Feed 1.1 (Tasker #157)
+- [x] Carry post summaries and tags into the JSON feeds and declare JSON Feed 1.1 (Tasker #157)
       `feed.json.ts` and `derived-data-feed.json.ts` drop `description` (the
       RSS feeds ship it) and `tags`, and declare version 1 with the deprecated
       `author`. Expose tags on `FeedEntry`, switch to version 1.1, add

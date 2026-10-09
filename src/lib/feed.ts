@@ -49,6 +49,7 @@ type FeedEntry = {
   updatedDate: Date | undefined;
   link: string;
   content: string | undefined;
+  tags: string[] | undefined;
 };
 
 function renderFeedContent(
@@ -132,6 +133,7 @@ export async function getFeedEntries(
         content: post.body
           ? renderFeedContent(post.body, postUrl, contentDir)
           : undefined,
+        tags: post.data.tags,
       };
     });
 }

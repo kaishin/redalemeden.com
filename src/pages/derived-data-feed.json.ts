@@ -26,12 +26,14 @@ export async function GET(context: APIContext): Promise<Response> {
   const author = { name: SITE_AUTHOR, url: SITE_URL };
 
   const feed = {
-    version: "https://jsonfeed.org/version/1",
+    version: "https://jsonfeed.org/version/1.1",
     title: DERIVED_DATA_TITLE,
     home_page_url: new URL("/derived-data/", site).href,
     feed_url: new URL("/derived-data-feed.json", site).href,
     description: DERIVED_DATA_DESCRIPTION,
     icon: new URL("/icon-touch.png", site).href,
+    language: "en",
+    authors: [author],
     author,
     items: entries.map((entry) => ({
       id: new URL(entry.link, site).href,
@@ -42,6 +44,9 @@ export async function GET(context: APIContext): Promise<Response> {
       ...(entry.updatedDate
         ? { date_modified: entry.updatedDate.toISOString() }
         : {}),
+      ...(entry.description ? { summary: entry.description } : {}),
+      ...(entry.tags ? { tags: entry.tags } : {}),
+      authors: [author],
       author,
     })),
   };

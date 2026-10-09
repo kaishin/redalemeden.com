@@ -21,12 +21,14 @@ export async function GET(context: APIContext): Promise<Response> {
   const author = { name: SITE_AUTHOR, url: SITE_URL };
 
   const feed = {
-    version: "https://jsonfeed.org/version/1",
+    version: "https://jsonfeed.org/version/1.1",
     title: SITE_TITLE,
     home_page_url: new URL("/", site).href,
     feed_url: new URL("/feed.json", site).href,
     description: SITE_DESCRIPTION,
     icon: new URL("/icon-touch.png", site).href,
+    language: "en",
+    authors: [author],
     author,
     items: entries.map((entry) => ({
       // Keep the pre-generated feed's ID form (no trailing slash) so
@@ -39,6 +41,9 @@ export async function GET(context: APIContext): Promise<Response> {
       ...(entry.updatedDate
         ? { date_modified: entry.updatedDate.toISOString() }
         : {}),
+      ...(entry.description ? { summary: entry.description } : {}),
+      ...(entry.tags ? { tags: entry.tags } : {}),
+      authors: [author],
       author,
     })),
   };

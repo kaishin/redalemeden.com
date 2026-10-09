@@ -201,6 +201,13 @@ Items are ordered; each is one focused pull request.
       placeholders stay as they are. Acceptance: format check, checks and
       build pass; no `text-stone-400` under `src`; light `--muted-text` is
       ≥4.5:1 against cream and the gradient top.
+- [ ] Raise light-mode contrast of post dates on the blog and Derived Data indexes (Tasker #178)
+      The date line under each post title in `src/pages/blog/index.astro` and
+      `src/pages/derived-data/index.astro` uses `text-purple-500` on cream
+      (~3.9:1 for small semibold text, failing WCAG AA). Replace it with
+      `text-purple-600` (~5.3:1 on cream, ~5.0:1 on the gradient top) in both
+      places, keeping the dark variant. Acceptance: format check, checks and
+      build pass; no `text-purple-500` under `src`; dark mode unchanged.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

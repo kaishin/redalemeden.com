@@ -191,6 +191,16 @@ Items are ordered; each is one focused pull request.
       `tags`. Keep item ids unchanged. Acceptance: format check, checks and
       build pass; both JSON feeds declare 1.1 with `authors`; described items
       carry `summary`; ids and RSS output unchanged.
+- [ ] Raise light-mode contrast of muted text and icons (Tasker #177)
+      Nine light-mode elements use `text-stone-400` on cream (~2.5:1, failing
+      WCAG AA): the Header tagline, the home intro span, the Navigation RSS
+      icons, and the Footer social icons and copyright. Replace
+      `text-stone-400 dark:text-[var(--muted-text)]` with
+      `text-[var(--muted-text)]` and lower the light `--muted-text` in
+      `global.css` to `oklch(52% 0.024 294)`. Dark mode and the contact
+      placeholders stay as they are. Acceptance: format check, checks and
+      build pass; no `text-stone-400` under `src`; light `--muted-text` is
+      ≥4.5:1 against cream and the gradient top.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

@@ -214,7 +214,7 @@ Items are ordered; each is one focused pull request.
       with an English voice and may get Chinese glyphs. Have the subtitle
       script wrap the Japanese option in an element with `lang="ja"` (build
       child spans via `textContent`, no `innerHTML`); keep the list, random
-      pick, ` & ` separator, noscript and classes. Acceptance: format check,
+      pick, `&` separator, noscript and classes. Acceptance: format check,
       checks and build pass; the Japanese subtitle renders inside `lang="ja"`,
       English ones carry no `lang`; the header looks the same.
 - [ ] Give the resume page an h1 and a logical heading order (Tasker #194)

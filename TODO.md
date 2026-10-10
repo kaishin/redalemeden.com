@@ -208,6 +208,23 @@ Items are ordered; each is one focused pull request.
       `text-purple-600` (~5.3:1 on cream, ~5.0:1 on the gradient top) in both
       places, keeping the dark variant. Acceptance: format check, checks and
       build pass; no `text-purple-500` under `src`; dark mode unchanged.
+- [ ] Mark the Japanese header subtitle as Japanese (Tasker #195)
+      `src/components/Header.astro` can show `開発の何でも屋` as a subtitle on an
+      `lang="en"` page with an Inter + generic sans-serif stack, so it is read
+      with an English voice and may get Chinese glyphs. Have the subtitle
+      script wrap the Japanese option in an element with `lang="ja"` (build
+      child spans via `textContent`, no `innerHTML`); keep the list, random
+      pick, ` & ` separator, noscript and classes. Acceptance: format check,
+      checks and build pass; the Japanese subtitle renders inside `lang="ja"`,
+      English ones carry no `lang`; the header looks the same.
+- [ ] Give the resume page an h1 and a logical heading order (Tasker #194)
+      `src/pages/resume/mobile.mdx` (on `StandaloneLayout`, no Header) has no
+      `<h1>`: it opens with `### Reda Lemeden` then `## Staff Engineer — Mobile`.
+      Render the name as the single `<h1>` while keeping its current h3 look;
+      leave every other heading, the print layout and the content unchanged.
+      Acceptance: format check, checks and build pass; the built resume has
+      exactly one `<h1>` ("Reda Lemeden") before the h2; it looks the same on
+      screen and in print preview.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

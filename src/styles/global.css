@@ -33,7 +33,7 @@
   --surface-soft: oklch(99.1% 0.004 90);
   --surface-muted: oklch(95.7% 0.012 85);
   --border-soft: oklch(83% 0.018 82 / 0.8);
-  --muted-text: oklch(56% 0.024 294);
+  --muted-text: oklch(52% 0.024 294);
   --soft-text: oklch(42% 0.028 294);
   --accent-ui: var(--color-amethyst);
   --accent-ui-hover: oklch(51% 0.22 316);

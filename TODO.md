@@ -191,7 +191,7 @@ Items are ordered; each is one focused pull request.
       `tags`. Keep item ids unchanged. Acceptance: format check, checks and
       build pass; both JSON feeds declare 1.1 with `authors`; described items
       carry `summary`; ids and RSS output unchanged.
-- [ ] Raise light-mode contrast of muted text and icons (Tasker #177)
+- [x] Raise light-mode contrast of muted text and icons (Tasker #177)
       Nine light-mode elements use `text-stone-400` on cream (~2.5:1, failing
       WCAG AA): the Header tagline, the home intro span, the Navigation RSS
       icons, and the Footer social icons and copyright. Replace

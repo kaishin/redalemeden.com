@@ -201,7 +201,7 @@ Items are ordered; each is one focused pull request.
       placeholders stay as they are. Acceptance: format check, checks and
       build pass; no `text-stone-400` under `src`; light `--muted-text` is
       ≥4.5:1 against cream and the gradient top.
-- [ ] Raise light-mode contrast of post dates on the blog and Derived Data indexes (Tasker #178)
+- [x] Raise light-mode contrast of post dates on the blog and Derived Data indexes (Tasker #178)
       The date line under each post title in `src/pages/blog/index.astro` and
       `src/pages/derived-data/index.astro` uses `text-purple-500` on cream
       (~3.9:1 for small semibold text, failing WCAG AA). Replace it with

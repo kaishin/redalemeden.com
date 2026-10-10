@@ -66,7 +66,7 @@ const posts = (await getCollection("derived-data"))
       <li class="mb-10">
         <a href={`/derived-data/${post.id}`}>
           <h3 class="max-w-prose text-2xl font-medium">{post.data.title}</h3>
-          <p class="mt-1 text-sm leading-normal font-semibold tracking-wider text-purple-500 uppercase dark:text-[var(--accent-link)]">
+          <p class="mt-1 text-sm leading-normal font-semibold tracking-wider text-purple-600 uppercase dark:text-[var(--accent-link)]">
             <FormattedDate date={post.data.pubDate} />
           </p>
           {post.data.tags && post.data.tags.length > 0 && (

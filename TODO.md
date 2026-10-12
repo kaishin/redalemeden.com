@@ -227,7 +227,7 @@ Items are ordered; each is one focused pull request.
       Acceptance: format check, checks and build pass; cards in a row share
       one rendered height at narrow and wide widths, light and dark; each
       card stays one link.
-- [ ] Give the resume page an h1 and a logical heading order (Tasker #194)
+- [x] Give the resume page an h1 and a logical heading order (Tasker #194)
       `src/pages/resume/mobile.mdx` (on `StandaloneLayout`, no Header) has no
       `<h1>`: it opens with `### Reda Lemeden` then `## Staff Engineer — Mobile`.
       Render the name as the single `<h1>` while keeping its current h3 look;

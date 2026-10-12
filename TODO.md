@@ -235,6 +235,26 @@ Items are ordered; each is one focused pull request.
       Acceptance: format check, checks and build pass; the built resume has
       exactly one `<h1>` ("Reda Lemeden") before the h2; it looks the same on
       screen and in print preview.
+- [ ] Give project cards a visible keyboard focus state and respect reduced motion (Tasker #226)
+      In `src/components/ProjectCard.astro` the full-size link sits inside an
+      `overflow-hidden` rounded `<article>`, so the default focus outline is
+      clipped and keyboard users see no focus indicator; the hover scale never
+      applies on focus and has no reduced-motion variant. Add a visible focus
+      ring on the card when its link is `:focus-visible` (light and dark),
+      mirror the hover lift on focus, and add `motion-reduce` variants that
+      drop scale and transition. Keep the look, equal heights and one link per
+      card. Acceptance: format check, checks and build pass; tabbing shows an
+      unclipped focus indicator in both modes; no scaling with reduced motion.
+- [ ] Link only the post title on the blog and Derived Data indexes (Tasker #227)
+      `src/pages/blog/index.astro` and `src/pages/derived-data/index.astro`
+      wrap each entry's `<h3>`, date and tag `<ul>` in one `<a>`, so its
+      accessible name runs title + date + tags. Move the `<a>` inside the
+      `<h3>` around the title only and keep the entry clickable with a
+      stretched link (`relative` on the `<li>`, `after:absolute after:inset-0`
+      on the link); keep classes, hrefs, order and filtering. Acceptance:
+      format check, checks and build pass; every built index post link sits in
+      an `<h3>` and holds only the title; clicking anywhere on an entry still
+      opens the post; no visual change in either mode.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

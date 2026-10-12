@@ -208,7 +208,7 @@ Items are ordered; each is one focused pull request.
       `text-purple-600` (~5.3:1 on cream, ~5.0:1 on the gradient top) in both
       places, keeping the dark variant. Acceptance: format check, checks and
       build pass; no `text-purple-500` under `src`; dark mode unchanged.
-- [ ] Mark the Japanese header subtitle as Japanese (Tasker #195)
+- [x] Mark the Japanese header subtitle as Japanese (Tasker #195)
       `src/components/Header.astro` can show `開発の何でも屋` as a subtitle on an
       `lang="en"` page with an Inter + generic sans-serif stack, so it is read
       with an English voice and may get Chinese glyphs. Have the subtitle

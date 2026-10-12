@@ -34,7 +34,19 @@ const { isPost = false } = Astro.props;
     "開発の何でも屋",
   ];
 
+  const JAPANESE_PATTERN =
+    /[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u;
+
   const subtitleElement = document.getElementById("subtitle");
+
+  function buildSubtitleSpan(text: string): HTMLSpanElement {
+    const span = document.createElement("span");
+    if (JAPANESE_PATTERN.test(text)) {
+      span.setAttribute("lang", "ja");
+    }
+    span.textContent = text;
+    return span;
+  }
 
   if (subtitleElement) {
     // Get two different random subtitles
@@ -46,7 +58,11 @@ const { isPost = false } = Astro.props;
       secondIndex = Math.floor(Math.random() * subtitles.length);
     }
 
-    subtitleElement.textContent = `${subtitles[firstIndex]} & ${subtitles[secondIndex]}`;
+    subtitleElement.append(
+      buildSubtitleSpan(subtitles[firstIndex]),
+      " & ",
+      buildSubtitleSpan(subtitles[secondIndex]),
+    );
   }
 </script>
 

@@ -235,7 +235,7 @@ Items are ordered; each is one focused pull request.
       Acceptance: format check, checks and build pass; the built resume has
       exactly one `<h1>` ("Reda Lemeden") before the h2; it looks the same on
       screen and in print preview.
-- [ ] Give project cards a visible keyboard focus state and respect reduced motion (Tasker #226)
+- [x] Give project cards a visible keyboard focus state and respect reduced motion (Tasker #226)
       In `src/components/ProjectCard.astro` the full-size link sits inside an
       `overflow-hidden` rounded `<article>`, so the default focus outline is
       clipped and keyboard users see no focus indicator; the hover scale never

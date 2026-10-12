@@ -217,6 +217,16 @@ Items are ordered; each is one focused pull request.
       pick, `&` separator, noscript and classes. Acceptance: format check,
       checks and build pass; the Japanese subtitle renders inside `lang="ja"`,
       English ones carry no `lang`; the header looks the same.
+- [ ] Project cards should be same height (Tasker #196)
+      `src/components/ProjectGrid.astro` stretches each grid `<li>` to its
+      row's height, but the `<article>` in `src/components/ProjectCard.astro`
+      and its `<a>` keep content height, so cards in a row end unevenly. Make
+      the card fill its cell (e.g. `h-full` on the article, a full-height
+      block or flex column on the link), keeping image, padding, hover scale,
+      colors and dark ring. Leave grid columns, project data and text alone.
+      Acceptance: format check, checks and build pass; cards in a row share
+      one rendered height at narrow and wide widths, light and dark; each
+      card stays one link.
 - [ ] Give the resume page an h1 and a logical heading order (Tasker #194)
       `src/pages/resume/mobile.mdx` (on `StandaloneLayout`, no Header) has no
       `<h1>`: it opens with `### Reda Lemeden` then `## Staff Engineer — Mobile`.

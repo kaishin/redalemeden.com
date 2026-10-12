@@ -21,8 +21,8 @@ if (!images[imagePath]) throw new Error(`Image ${imagePath} not found`);
 const imageSrc = images[imagePath]();
 ---
 
-<article class="overflow-hidden rounded-2xl bg-white shadow transition-all duration-300 ease-linear hover:scale-[1.03] dark:bg-[var(--surface-muted)] dark:shadow-[0_26px_80px_color-mix(in_oklab,var(--color-amethyst)_10%,transparent)] dark:ring-1 dark:ring-[var(--border-soft)]">
-  <a href={url}>
+<article class="h-full overflow-hidden rounded-2xl bg-white shadow transition-all duration-300 ease-linear hover:scale-[1.03] dark:bg-[var(--surface-muted)] dark:shadow-[0_26px_80px_color-mix(in_oklab,var(--color-amethyst)_10%,transparent)] dark:ring-1 dark:ring-[var(--border-soft)]">
+  <a href={url} class="block h-full">
     <Image src={imageSrc} class="max-w-full" alt="" />
 
     <div class="p-6">

@@ -217,7 +217,7 @@ Items are ordered; each is one focused pull request.
       pick, `&` separator, noscript and classes. Acceptance: format check,
       checks and build pass; the Japanese subtitle renders inside `lang="ja"`,
       English ones carry no `lang`; the header looks the same.
-- [ ] Project cards should be same height (Tasker #196)
+- [x] Project cards should be same height (Tasker #196)
       `src/components/ProjectGrid.astro` stretches each grid `<li>` to its
       row's height, but the `<article>` in `src/components/ProjectCard.astro`
       and its `<a>` keep content height, so cards in a row end unevenly. Make

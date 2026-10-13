@@ -245,7 +245,7 @@ Items are ordered; each is one focused pull request.
       drop scale and transition. Keep the look, equal heights and one link per
       card. Acceptance: format check, checks and build pass; tabbing shows an
       unclipped focus indicator in both modes; no scaling with reduced motion.
-- [ ] Link only the post title on the blog and Derived Data indexes (Tasker #227)
+- [x] Link only the post title on the blog and Derived Data indexes (Tasker #227)
       `src/pages/blog/index.astro` and `src/pages/derived-data/index.astro`
       wrap each entry's `<h3>`, date and tag `<ul>` in one `<a>`, so its
       accessible name runs title + date + tags. Move the `<a>` inside the

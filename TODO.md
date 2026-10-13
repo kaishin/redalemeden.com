@@ -255,6 +255,15 @@ Items are ordered; each is one focused pull request.
       format check, checks and build pass; every built index post link sits in
       an `<h3>` and holds only the title; clicking anywhere on an entry still
       opens the post; no visual change in either mode.
+- [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
+      `src/layouts/BlogPost.astro` shows only date, title and archived notice;
+      58 posts carry tags visible only on the indexes, and there is no way to
+      the adjacent post. Proposal: tag pills under the title (index style) and a
+      previous/next footer within the same collection by `pubDate`. Owner
+      decides first: plain pills or new per-tag pages; whether prev/next is
+      wanted and skips archived posts; tag placement. Acceptance once decided:
+      format check, checks and build pass; tagged posts show their tags;
+      prev/next stays in-collection and points at built posts.
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

@@ -255,6 +255,14 @@ Items are ordered; each is one focused pull request.
       format check, checks and build pass; every built index post link sits in
       an `<h3>` and holds only the title; clicking anywhere on an entry still
       opens the post; no visual change in either mode.
+- [ ] Add og:site_name and og:locale to the Open Graph tags (Tasker #229)
+      `src/layouts/BaseLayout.astro` emits og:type, og:url, og:title,
+      og:description and og:image but no `og:site_name` or `og:locale`. Add
+      `<meta property="og:site_name" content={SITE_TITLE} />` (already
+      imported) and `<meta property="og:locale" content="en_US" />` next to
+      og:type; change nothing else. Acceptance: format check, checks and build
+      pass; every built page carries exactly one og:site_name ("Reda Lemeden")
+      and one og:locale ("en_US"); other meta tags unchanged.
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

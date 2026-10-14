@@ -42,7 +42,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## Assets
 
-An experimental feature in v2 that will be official in v3. Read more [here](https://docs.astro.build/en/guides/assets/).
+Astro's built-in assets support optimizes images placed in `src/assets/`. Read more [here](https://docs.astro.build/en/guides/assets/).
 
 ## Astro Resources
 

@@ -263,6 +263,24 @@ Items are ordered; each is one focused pull request.
       og:type; change nothing else. Acceptance: format check, checks and build
       pass; every built page carries exactly one og:site_name ("Reda Lemeden")
       and one og:locale ("en_US"); other meta tags unchanged.
+- [ ] Fix drifted code style and collection notes in CLAUDE.md and README.md (Tasker #233)
+      `CLAUDE.md` says strings use single quotes, but `.prettierrc` sets no
+      `singleQuote` and the code uses double quotes; it describes only the
+      `blog` collection (not `derived-data`) and omits `isArchived` from the
+      optional fields. `README.md`'s Assets section still calls assets "an
+      experimental feature in v2". Fix those lines; docs only. Acceptance:
+      format check passes; neither file mentions single quotes or the v2
+      note; `CLAUDE.md` names both collections and `isArchived`.
+- [ ] Stop the new-post script from scaffolding ignored and blank frontmatter (Tasker #232)
+      `scripts/new-post.mjs` writes `draft: true` (no schema field, so Zod
+      strips it and the post publishes anyway) and empty `description`,
+      `audience` and `image` (an empty description beats `BaseLayout`'s
+      `SITE_DESCRIPTION` default, so meta/og descriptions ship empty). Drop
+      those four lines, keep title, `tags: []` and `pubDate`, and add a YAML
+      comment listing the optional fields. No draft support, no post edits.
+      Acceptance: format check, checks and build pass; a throwaway scaffolded
+      post has no `draft` key or empty strings and renders the site
+      description.
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

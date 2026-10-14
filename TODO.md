@@ -281,6 +281,16 @@ Items are ordered; each is one focused pull request.
       Acceptance: format check, checks and build pass; a throwaway scaffolded
       post has no `draft` key or empty strings and renders the site
       description.
+- [ ] Add a web app manifest so the Android home-screen icons are used (Tasker #234)
+      `public/android-chrome-192x192.png` and `-512x512.png` are referenced
+      nowhere: there is no `site.webmanifest` and no `rel=manifest` link in
+      `BaseLayout.astro`. Add `public/site.webmanifest` (name/short_name
+      "Reda Lemeden", `start_url` "/", the two PNG icons), a `rel=manifest`
+      link after the shortcut icon, and a `public/_headers` entry serving it
+      as `application/manifest+json`. No `theme_color`/`display`, no other
+      icon or meta changes. Acceptance: format check, checks and build pass;
+      `dist/site.webmanifest` is valid JSON with existing icon paths; every
+      built page has one `rel=manifest` link.
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

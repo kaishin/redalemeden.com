@@ -263,7 +263,7 @@ Items are ordered; each is one focused pull request.
       og:type; change nothing else. Acceptance: format check, checks and build
       pass; every built page carries exactly one og:site_name ("Reda Lemeden")
       and one og:locale ("en_US"); other meta tags unchanged.
-- [ ] Fix drifted code style and collection notes in CLAUDE.md and README.md (Tasker #233)
+- [x] Fix drifted code style and collection notes in CLAUDE.md and README.md (Tasker #233)
       `CLAUDE.md` says strings use single quotes, but `.prettierrc` sets no
       `singleQuote` and the code uses double quotes; it describes only the
       `blog` collection (not `derived-data`) and omits `isArchived` from the

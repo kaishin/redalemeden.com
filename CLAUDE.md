@@ -37,12 +37,14 @@ pnpm format:check
 ### Content Management
 
 - Blog posts are managed through Astro Content Collections in
-  [src/content/blog/](src/content/blog/)
+  [src/content/blog/](src/content/blog/) and
+  [src/content/derived-data/](src/content/derived-data/), which share the same
+  post schema
 - Content schema is defined in [src/content.config.ts](src/content.config.ts)
   with Zod validation, using the Content Layer API glob loader
 - Required frontmatter fields: `title`, `pubDate`
 - Optional frontmatter fields: `description`, `audience`, `tags`, `updatedDate`,
-  `image`
+  `image`, `isArchived`
 - Blog posts use the `[...slug].astro` dynamic route pattern for rendering
 
 ### Routing & Layouts
@@ -69,7 +71,7 @@ pnpm format:check
 - Code formatting:
   - 2 spaces for indentation
   - Semicolons are required
-  - Single quotes for strings
+  - Double quotes for strings
   - Trailing commas in multi-line structures
 
 ## Project Structure

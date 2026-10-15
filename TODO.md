@@ -291,6 +291,16 @@ Items are ordered; each is one focused pull request.
       icon or meta changes. Acceptance: format check, checks and build pass;
       `dist/site.webmanifest` is valid JSON with existing icon paths; every
       built page has one `rel=manifest` link.
+- [ ] Give the experiment and collection pages their own meta descriptions (Tasker #235)
+      `experiments/microblog/index.md`, `experiments/twil/index.mdx`,
+      `experiments/frequent-typos/index.mdx`, `collections/stable-diffusion.mdx`
+      and `collections/swiftui-2022.mdx` under `src/pages` set no
+      `description`, so they ship `SITE_DESCRIPTION` in meta, og and twitter
+      tags. Add a quoted one-line `description` from each page's intro
+      sentence (as #119 did), ending twil and frequent-typos with a period.
+      Leave the bodies and the other pages alone. Acceptance: format check,
+      checks and build pass; each of the five pages' descriptions equals its
+      intro sentence; `dist/index.html` keeps `SITE_DESCRIPTION`.
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

@@ -291,7 +291,7 @@ Items are ordered; each is one focused pull request.
       icon or meta changes. Acceptance: format check, checks and build pass;
       `dist/site.webmanifest` is valid JSON with existing icon paths; every
       built page has one `rel=manifest` link.
-- [ ] Title the home page with the site name alone (Tasker #236)
+- [x] Title the home page with the site name alone (Tasker #236)
       `src/pages/index.mdx` sets `title: "Home"`, so `BaseLayout.astro` makes
       the home `<title>`, meta title, og:title and twitter:title read
       "Home | Reda Lemeden". Remove that frontmatter line so the title falls

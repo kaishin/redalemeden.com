@@ -31,12 +31,9 @@ async function createBlogPost(title) {
 
   const frontmatter = `---
 title: "${title}"
-description: ""
-audience: ""
 tags: []
 pubDate: ${date.toISOString().split("T")[0]}
-image: ""
-draft: true
+# Optional fields: description, audience, updatedDate, image, isArchived
 ---
 
 `;

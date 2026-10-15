@@ -271,7 +271,7 @@ Items are ordered; each is one focused pull request.
       experimental feature in v2". Fix those lines; docs only. Acceptance:
       format check passes; neither file mentions single quotes or the v2
       note; `CLAUDE.md` names both collections and `isArchived`.
-- [ ] Stop the new-post script from scaffolding ignored and blank frontmatter (Tasker #232)
+- [x] Stop the new-post script from scaffolding ignored and blank frontmatter (Tasker #232)
       `scripts/new-post.mjs` writes `draft: true` (no schema field, so Zod
       strips it and the post publishes anyway) and empty `description`,
       `audience` and `image` (an empty description beats `BaseLayout`'s

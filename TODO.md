@@ -281,7 +281,7 @@ Items are ordered; each is one focused pull request.
       Acceptance: format check, checks and build pass; a throwaway scaffolded
       post has no `draft` key or empty strings and renders the site
       description.
-- [ ] Add a web app manifest so the Android home-screen icons are used (Tasker #234)
+- [x] Add a web app manifest so the Android home-screen icons are used (Tasker #234)
       `public/android-chrome-192x192.png` and `-512x512.png` are referenced
       nowhere: there is no `site.webmanifest` and no `rel=manifest` link in
       `BaseLayout.astro`. Add `public/site.webmanifest` (name/short_name

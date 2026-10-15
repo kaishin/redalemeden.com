@@ -2,3 +2,5 @@
   Content-Type: application/feed+json; charset=utf-8
 /derived-data-feed.json
   Content-Type: application/feed+json; charset=utf-8
+/site.webmanifest
+  Content-Type: application/manifest+json

@@ -18,10 +18,12 @@ Create a new blog post draft using the provided headline.
 
 The script creates `src/content/blog/{year}/{slug}/index.md` with:
 
+- the headline as `title`
 - today's date as `pubDate`
-- a slug derived from the headline
-- `draft: true`
-- empty `description`, `audience`, `tags`, and `image` fields
+- an empty `tags` list
+- a YAML comment listing the optional fields (`description`, `audience`, `updatedDate`, `image`, `isArchived`)
+
+The schema has no `draft` field, so the post is publishable as-is; there is no draft support.
 
 ## Guardrails
 

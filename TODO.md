@@ -310,6 +310,18 @@ Items are ordered; each is one focused pull request.
       Leave the bodies and the other pages alone. Acceptance: format check,
       checks and build pass; each of the five pages' descriptions equals its
       intro sentence; `dist/index.html` keeps `SITE_DESCRIPTION`.
+- [ ] Fall back to the post's opening paragraph for its meta description (Tasker #237)
+      Only 5 of 59 posts set `description`, so 54 post pages ship
+      `SITE_DESCRIPTION` in meta, og and twitter tags. Add a `src/lib` helper
+      that parses `post.body` with markdown-it, takes the first paragraph with
+      text (some posts open with an image), joins its text tokens as plain text
+      and truncates to ~160 characters at a word boundary with an ellipsis. Both
+      `[...slug].astro` routes pass `description ?? excerpt(post.body)`; a
+      frontmatter description wins. Feeds, indexes and content unchanged.
+      Acceptance: format check, checks and build pass; no built post's
+      description equals `SITE_DESCRIPTION` or contains `](`, `**`, `<` or
+      `&amp;amp;`; the five set descriptions are verbatim; `dist/index.html`
+      keeps `SITE_DESCRIPTION`.
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

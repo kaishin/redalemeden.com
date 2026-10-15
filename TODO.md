@@ -291,6 +291,15 @@ Items are ordered; each is one focused pull request.
       icon or meta changes. Acceptance: format check, checks and build pass;
       `dist/site.webmanifest` is valid JSON with existing icon paths; every
       built page has one `rel=manifest` link.
+- [ ] Title the home page with the site name alone (Tasker #236)
+      `src/pages/index.mdx` sets `title: "Home"`, so `BaseLayout.astro` makes
+      the home `<title>`, meta title, og:title and twitter:title read
+      "Home | Reda Lemeden". Remove that frontmatter line so the title falls
+      back to `SITE_TITLE` (left unsuffixed); keep the layout line and body,
+      touch no other page or layout. Acceptance: format check, checks and
+      build pass; `dist/index.html` is titled "Reda Lemeden" in `<title>`,
+      og:title and twitter:title; no built title contains "Home |"; other
+      titles unchanged.
 - [ ] Give the experiment and collection pages their own meta descriptions (Tasker #235)
       `experiments/microblog/index.md`, `experiments/twil/index.mdx`,
       `experiments/frequent-typos/index.mdx`, `collections/stable-diffusion.mdx`

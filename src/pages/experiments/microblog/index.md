@@ -1,6 +1,7 @@
 ---
 layout: "@layouts/NavigationLayout.astro"
 title: "Microblog"
+description: "An experiment where, for almost a full year, I published micro posts directly on the site."
 ---
 
 ## Microblog

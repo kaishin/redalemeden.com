@@ -44,9 +44,12 @@ const audienceLine = assumedAudience
     <div class="my-6 h-px bg-(--border-soft)"></div>
   </div>
   {audienceLine && (
-    <p class="not-prose mb-8 text-sm text-[var(--muted-text)]">
-      {audienceLine}
-    </p>
+    <>
+      <p class="not-prose mb-6 text-sm text-[var(--muted-text)]">
+        {audienceLine}
+      </p>
+      <div class="my-6 h-px bg-(--border-soft)"></div>
+    </>
   )}
   {isArchived && (
     <div class="mb-8 rounded-2xl border border-yellow-300 bg-yellow-100/80 px-5 py-4 dark:border-yellow-500/35 dark:bg-yellow-500/10">

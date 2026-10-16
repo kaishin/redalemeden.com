@@ -310,7 +310,7 @@ Items are ordered; each is one focused pull request.
       Leave the bodies and the other pages alone. Acceptance: format check,
       checks and build pass; each of the five pages' descriptions equals its
       intro sentence; `dist/index.html` keeps `SITE_DESCRIPTION`.
-- [ ] Show each post's assumed audience under its title (Tasker #238)
+- [x] Show each post's assumed audience under its title (Tasker #238)
       32 posts set `audience` (31 non-empty) and the 2019
       `note-about-assumed-audiences` post says every article opens with it, but
       `src/layouts/BlogPost.astro` never renders it. When `audience?.trim()` is

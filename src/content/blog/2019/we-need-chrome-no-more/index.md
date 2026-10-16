@@ -4,7 +4,7 @@ title: "We Need Chrome No More"
 keywords: ["Web", "Google", "Browsers", "Opinion"]
 tags:
   - Opinion
-audience: "This article was written for people interested in the open Web as a platform."
+audience: "people interested in the open Web as a platform."
 image: /social-cards/chrome-no-more.jpg
 ---
 

@@ -340,8 +340,9 @@ Items are ordered; each is one focused pull request.
       with a schema.org `BlogPosting`: raw-title `headline`, `description` when
       passed, `datePublished`, `dateModified` (only with `updatedDate`), a
       `Person` author from `SITE_AUTHOR`/`SITE_URL`, canonical `url` and
-      `mainEntityOfPage`, and `image` resolved like og:image. Escape `<` as
-      `<`. BaseLayout, meta tags, feeds and other pages unchanged.
+      `mainEntityOfPage`, and `image` resolved like og:image. Escape `<` in
+      the JSON as its Unicode escape (backslash, `u003c`). BaseLayout, meta
+      tags, feeds and other pages unchanged.
       Acceptance: format check, checks and build pass; each built post has one
       parseable `BlogPosting` whose headline, `datePublished` and image match
       its h1, `article:published_time` and og:image; the home and index pages

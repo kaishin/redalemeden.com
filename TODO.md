@@ -310,6 +310,18 @@ Items are ordered; each is one focused pull request.
       Leave the bodies and the other pages alone. Acceptance: format check,
       checks and build pass; each of the five pages' descriptions equals its
       intro sentence; `dist/index.html` keeps `SITE_DESCRIPTION`.
+- [ ] Show each post's assumed audience under its title (Tasker #238)
+      32 posts set `audience` (31 non-empty) and the 2019
+      `note-about-assumed-audiences` post says every article opens with it, but
+      `src/layouts/BlogPost.astro` never renders it. When `audience?.trim()` is
+      non-empty, render "Assumed audience: <text>" (period added unless it ends
+      in `.`, `!` or `?`) after the title divider, before the archived notice,
+      as a small muted line (mind the dark `prose-p` color; `not-prose` helps).
+      Reword `we-need-chrome-no-more`'s full-sentence value to "people
+      interested in the open Web as a platform." Schema, feeds, indexes and
+      other content unchanged. Acceptance: format check, checks and build pass;
+      the 31 posts show exactly one line; empty or missing values show none; no
+      "Assumed audience: This article"; legible in both modes.
 - [ ] Fall back to the post's opening paragraph for its meta description (Tasker #237)
       Only 5 of 59 posts set `description`, so 54 post pages ship
       `SITE_DESCRIPTION` in meta, og and twitter tags. Add a `src/lib` helper
@@ -322,6 +334,18 @@ Items are ordered; each is one focused pull request.
       description equals `SITE_DESCRIPTION` or contains `](`, `**`, `<` or
       `&amp;amp;`; the five set descriptions are verbatim; `dist/index.html`
       keeps `SITE_DESCRIPTION`.
+- [ ] Add BlogPosting structured data to post pages (Tasker #239)
+      Nothing under `src` emits `application/ld+json`. In
+      `src/layouts/BlogPost.astro` add one `ld+json` script to the head slot
+      with a schema.org `BlogPosting`: raw-title `headline`, `description` when
+      passed, `datePublished`, `dateModified` (only with `updatedDate`), a
+      `Person` author from `SITE_AUTHOR`/`SITE_URL`, canonical `url` and
+      `mainEntityOfPage`, and `image` resolved like og:image. Escape `<` as
+      `<`. BaseLayout, meta tags, feeds and other pages unchanged.
+      Acceptance: format check, checks and build pass; each built post has one
+      parseable `BlogPosting` whose headline, `datePublished` and image match
+      its h1, `article:published_time` and og:image; the home and index pages
+      have none.
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

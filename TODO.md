@@ -300,7 +300,7 @@ Items are ordered; each is one focused pull request.
       build pass; `dist/index.html` is titled "Reda Lemeden" in `<title>`,
       og:title and twitter:title; no built title contains "Home |"; other
       titles unchanged.
-- [ ] Give the experiment and collection pages their own meta descriptions (Tasker #235)
+- [x] Give the experiment and collection pages their own meta descriptions (Tasker #235)
       `experiments/microblog/index.md`, `experiments/twil/index.mdx`,
       `experiments/frequent-typos/index.mdx`, `collections/stable-diffusion.mdx`
       and `collections/swiftui-2022.mdx` under `src/pages` set no

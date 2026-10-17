@@ -322,7 +322,7 @@ Items are ordered; each is one focused pull request.
       other content unchanged. Acceptance: format check, checks and build pass;
       the 31 posts show exactly one line; empty or missing values show none; no
       "Assumed audience: This article"; legible in both modes.
-- [ ] Fall back to the post's opening paragraph for its meta description (Tasker #237)
+- [x] Fall back to the post's opening paragraph for its meta description (Tasker #237)
       Only 5 of 59 posts set `description`, so 54 post pages ship
       `SITE_DESCRIPTION` in meta, og and twitter tags. Add a `src/lib` helper
       that parses `post.body` with markdown-it, takes the first paragraph with

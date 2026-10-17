@@ -15,7 +15,8 @@ function firstParagraphText(body: string): string {
     let text = "";
     for (const child of inline.children ?? []) {
       if (child.type === "text") text += child.content;
-      else if (child.type === "softbreak") text += " ";
+      else if (child.type === "softbreak" || child.type === "hardbreak")
+        text += " ";
       else if (child.type === "code_inline") text += child.content;
     }
     text = text.trim();

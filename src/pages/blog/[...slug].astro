@@ -19,7 +19,7 @@ const { Content } = await render(post);
 
 <BlogPost
   {...post.data}
-  description={post.data.description ?? excerpt(post.body ?? "")}
+  description={post.data.description ?? (excerpt(post.body ?? "") || undefined)}
 >
   <Content />
 </BlogPost>

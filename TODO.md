@@ -347,6 +347,18 @@ Items are ordered; each is one focused pull request.
       parseable `BlogPosting` whose headline, `datePublished` and image match
       its h1, `article:published_time` and og:image; the home and index pages
       have none.
+- [ ] Stop the new-post script from overwriting posts or writing outside a slug folder (Tasker #243)
+      `scripts/new-post.mjs` writes `index.md` with no existence check, so a
+      repeated title in the same year silently replaces a post; a title with no
+      ASCII letters or digits slugifies to "" and writes
+      `src/content/blog/<year>/index.md`; and the raw title inside a
+      double-quoted YAML scalar breaks on a double quote or backslash. Exit 1
+      on an empty slug, refuse to overwrite (`wx` flag or a check), and write
+      the title as `JSON.stringify(title)`. Frontmatter shape, paths and the
+      skill unchanged. Acceptance: format check, checks and build pass;
+      throwaway runs (deleted, nothing committed) show a fresh title works, a
+      repeat exits nonzero leaving the file intact, a Japanese-only title
+      creates nothing, and a title with a double quote builds verbatim.
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import NavigationLayout from "@layouts/NavigationLayout.astro";
 import FormattedDate from "@components/FormattedDate.astro";
+import { SITE_AUTHOR, SITE_URL } from "@consts";
 
 type Props =
   CollectionEntry<"blog">["data"] | CollectionEntry<"derived-data">["data"];
@@ -19,6 +20,35 @@ const assumedAudience = audience?.trim();
 const audienceLine = assumedAudience
   ? `Assumed audience: ${assumedAudience}${/[.!?]$/.test(assumedAudience) ? "" : "."}`
   : undefined;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const rawImage = (image ?? "").trim();
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  ...(description ? { description } : {}),
+  datePublished: pubDate.toISOString(),
+  ...(updatedDate ? { dateModified: updatedDate.toISOString() } : {}),
+  author: {
+    "@type": "Person",
+    name: SITE_AUTHOR,
+    url: SITE_URL,
+  },
+  url: canonicalURL.href,
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalURL.href,
+  },
+  image: new URL(
+    rawImage === "" ? "/social-cards/default.jpg" : rawImage,
+    Astro.site,
+  ).href,
+};
+const structuredDataJson = JSON.stringify(structuredData).replace(
+  /</g,
+  "\\u003c",
+);
 ---
 
 <NavigationLayout
@@ -30,7 +60,10 @@ const audienceLine = assumedAudience
   publishedTime={pubDate}
   modifiedTime={updatedDate}
 >
-  <slot name="head" slot="head" />
+  <Fragment slot="head">
+    <slot name="head" />
+    <script type="application/ld+json" set:html={structuredDataJson}></script>
+  </Fragment>
   <div class="title">
     <div class="date">
       <FormattedDate date={pubDate} />

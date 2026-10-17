@@ -334,7 +334,7 @@ Items are ordered; each is one focused pull request.
       description equals `SITE_DESCRIPTION` or contains `](`, `**`, `<` or
       `&amp;amp;`; the five set descriptions are verbatim; `dist/index.html`
       keeps `SITE_DESCRIPTION`.
-- [ ] Add BlogPosting structured data to post pages (Tasker #239)
+- [x] Add BlogPosting structured data to post pages (Tasker #239)
       Nothing under `src` emits `application/ld+json`. In
       `src/layouts/BlogPost.astro` add one `ld+json` script to the head slot
       with a schema.org `BlogPosting`: raw-title `headline`, `description` when

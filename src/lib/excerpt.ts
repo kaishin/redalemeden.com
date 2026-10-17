@@ -8,7 +8,7 @@ function firstParagraphText(body: string): string {
   const tokens = parser.parse(body, {});
 
   for (let i = 0; i < tokens.length; i += 1) {
-    if (tokens[i].type !== "paragraph_open") continue;
+    if (tokens[i].type !== "paragraph_open" || tokens[i].level !== 0) continue;
     const inline = tokens[i + 1];
     if (inline?.type !== "inline") continue;
 

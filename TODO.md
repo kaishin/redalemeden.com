@@ -347,6 +347,17 @@ Items are ordered; each is one focused pull request.
       parseable `BlogPosting` whose headline, `datePublished` and image match
       its h1, `article:published_time` and og:image; the home and index pages
       have none.
+- [ ] Keep the footnotes heading available to screen readers (Tasker #247)
+      `src/styles/global.css` hides `.prose :where(.footnotes h2)` with
+      `display: none`. That unlayered rule beats any `sr-only` utility and
+      drops Astro's `<h2 class="sr-only" id="footnote-label">Footnotes</h2>`
+      from the accessibility tree. Nine posts have footnotes. Replace `display: none` in that rule with the
+      standard visually-hidden declarations (absolute, 1px box, -1px margin, no
+      padding or border, overflow hidden, clip rect 0, nowrap). Selector, the
+      font-size rule, markdown config and content unchanged. Acceptance: format
+      check, checks and build pass; a footnoted post keeps one "Footnotes" h2
+      (`id="footnote-label"`) in `section.footnotes`, invisible in both modes
+      with no layout shift; no built CSS sets `display: none` on it.
 - [ ] Stop the new-post script from overwriting posts or writing outside a slug folder (Tasker #243)
       `scripts/new-post.mjs` writes `index.md` with no existence check, so a
       repeated title in the same year silently replaces a post; a title with no

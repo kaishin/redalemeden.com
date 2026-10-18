@@ -114,8 +114,18 @@ body {
   background: color-mix(in oklab, var(--accent-ui) 30%, transparent);
 }
 
+/* Visually hidden but exposed to screen readers (the unlayered rule
+   outweighs the sr-only utility, so mirror its declarations here). */
 .prose :where(.footnotes h2) {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .prose :where(.footnotes) {

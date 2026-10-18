@@ -370,6 +370,20 @@ Items are ordered; each is one focused pull request.
       throwaway runs (deleted, nothing committed) show a fresh title works, a
       repeat exits nonzero leaving the file intact, a Japanese-only title
       creates nothing, and a title with a double quote builds verbatim.
+- [ ] Render footnotes in feed content and keep footnote markers out of post excerpts (Tasker #255)
+      `src/lib/feed.ts` and `src/lib/excerpt.ts` use a bare markdown-it with no
+      footnote syntax, so feeds show literal `[^1]` references and `[^1]:`
+      paragraphs (the newest Derived Data post in both Derived Data feeds;
+      `stable-diffusion-a-quick-tour` in both blog feeds), and
+      `2011/invisible-computers`'s meta description reads "article[^1] from".
+      Add `markdown-it-footnote` (plus its types if needed), use it in both
+      parsers, and allow `id` on `a` and `li` in the sanitize-html options so
+      the fragments resolve. Keep other tags, attributes, the a/img transforms,
+      content and the feed shape as they are. Acceptance: format check, checks
+      and build pass; no built feed contains `[^`; each footnote renders as a
+      sup link whose `#fn` fragment matches a `li` id in the same item;
+      invisible-computers' description has no `[^`; feed items for posts
+      without footnotes are byte-identical (ignore lastBuildDate).
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

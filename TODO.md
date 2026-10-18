@@ -347,7 +347,7 @@ Items are ordered; each is one focused pull request.
       parseable `BlogPosting` whose headline, `datePublished` and image match
       its h1, `article:published_time` and og:image; the home and index pages
       have none.
-- [ ] Keep the footnotes heading available to screen readers (Tasker #247)
+- [x] Keep the footnotes heading available to screen readers (Tasker #247)
       `src/styles/global.css` hides `.prose :where(.footnotes h2)` with
       `display: none`. That unlayered rule beats any `sr-only` utility and
       drops Astro's `<h2 class="sr-only" id="footnote-label">Footnotes</h2>`

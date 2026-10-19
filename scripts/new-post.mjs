@@ -19,6 +19,11 @@ async function createBlogPost(title) {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
+  if (!slug) {
+    console.error("Title must contain at least one ASCII letter or digit");
+    process.exit(1);
+  }
+
   const postDir = join(
     __dirname,
     "..",
@@ -30,7 +35,7 @@ async function createBlogPost(title) {
   );
 
   const frontmatter = `---
-title: "${title}"
+title: ${JSON.stringify(title)}
 tags: []
 pubDate: ${date.toISOString().split("T")[0]}
 # Optional fields: description, audience, updatedDate, image, isArchived
@@ -40,9 +45,15 @@ pubDate: ${date.toISOString().split("T")[0]}
 
   try {
     await mkdir(postDir, { recursive: true });
-    await writeFile(join(postDir, "index.md"), frontmatter);
+    await writeFile(join(postDir, "index.md"), frontmatter, { flag: "wx" });
     console.log(`Created new blog post: ${postDir}/index.md`);
   } catch (error) {
+    if (error.code === "EEXIST") {
+      console.error(
+        `A blog post already exists at ${postDir}/index.md; refusing to overwrite`,
+      );
+      process.exit(1);
+    }
     console.error("Error creating blog post:", error);
     process.exit(1);
   }

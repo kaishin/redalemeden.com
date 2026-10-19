@@ -358,7 +358,7 @@ Items are ordered; each is one focused pull request.
       check, checks and build pass; a footnoted post keeps one "Footnotes" h2
       (`id="footnote-label"`) in `section.footnotes`, invisible in both modes
       with no layout shift; no built CSS sets `display: none` on it.
-- [ ] Stop the new-post script from overwriting posts or writing outside a slug folder (Tasker #243)
+- [x] Stop the new-post script from overwriting posts or writing outside a slug folder (Tasker #243)
       `scripts/new-post.mjs` writes `index.md` with no existence check, so a
       repeated title in the same year silently replaces a post; a title with no
       ASCII letters or digits slugifies to "" and writes

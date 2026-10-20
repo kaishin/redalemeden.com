@@ -57,8 +57,11 @@ function renderFeedContent(
   body: string,
   postUrl: string,
   contentDir: string,
+  docId: string,
 ): string {
-  return sanitizeHtml(parser.render(body), {
+  // Namespace footnote fragment ids per post so references stay unambiguous
+  // when a reader renders several feed entries in one document.
+  return sanitizeHtml(parser.render(body, { docId }), {
     allowedTags: [...sanitizeHtml.defaults.allowedTags, "img"],
     allowedAttributes: {
       ...sanitizeHtml.defaults.allowedAttributes,
@@ -134,7 +137,7 @@ export async function getFeedEntries(
         updatedDate: post.data.updatedDate,
         link,
         content: post.body
-          ? renderFeedContent(post.body, postUrl, contentDir)
+          ? renderFeedContent(post.body, postUrl, contentDir, post.id)
           : undefined,
         tags: post.data.tags,
       };

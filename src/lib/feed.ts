@@ -4,9 +4,10 @@ import type { APIContext } from "astro";
 import { getCollection } from "astro:content";
 import type { CollectionKey } from "astro:content";
 import MarkdownIt from "markdown-it";
+import footnote from "markdown-it-footnote";
 import sanitizeHtml from "sanitize-html";
 
-const parser = new MarkdownIt();
+const parser = new MarkdownIt().use(footnote);
 
 const contentAssetUrls = import.meta.glob<string>(
   "/src/content/**/*.{avif,gif,jpeg,jpg,png,svg,webp}",
@@ -56,12 +57,17 @@ function renderFeedContent(
   body: string,
   postUrl: string,
   contentDir: string,
+  docId: string,
 ): string {
-  return sanitizeHtml(parser.render(body), {
+  // Namespace footnote fragment ids per post so references stay unambiguous
+  // when a reader renders several feed entries in one document.
+  return sanitizeHtml(parser.render(body, { docId }), {
     allowedTags: [...sanitizeHtml.defaults.allowedTags, "img"],
     allowedAttributes: {
       ...sanitizeHtml.defaults.allowedAttributes,
+      a: [...sanitizeHtml.defaults.allowedAttributes.a, "id"],
       img: ["src", "srcset", "alt", "title", "width", "height", "loading"],
+      li: ["id"],
     },
     transformTags: {
       a: (tagName, attribs) => {
@@ -131,7 +137,7 @@ export async function getFeedEntries(
         updatedDate: post.data.updatedDate,
         link,
         content: post.body
-          ? renderFeedContent(post.body, postUrl, contentDir)
+          ? renderFeedContent(post.body, postUrl, contentDir, post.id)
           : undefined,
         tags: post.data.tags,
       };

@@ -1,6 +1,7 @@
 import MarkdownIt from "markdown-it";
+import footnote from "markdown-it-footnote";
 
-const parser = new MarkdownIt({ html: true });
+const parser = new MarkdownIt({ html: true }).use(footnote);
 
 const MAX_LENGTH = 160;
 

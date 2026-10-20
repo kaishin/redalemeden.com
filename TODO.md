@@ -384,6 +384,20 @@ Items are ordered; each is one focused pull request.
       sup link whose `#fn` fragment matches a `li` id in the same item;
       invisible-computers' description has no `[^`; feed items for posts
       without footnotes are byte-identical (ignore lastBuildDate).
+- [ ] Keep the theme scripts working when localStorage is blocked (Tasker #258)
+      The inline theme scripts in `src/layouts/BaseLayout.astro` and
+      `src/components/ThemeSelect.astro` access `localStorage` unguarded.
+      Browsers throw a SecurityError when site storage is blocked, so the head
+      script never applies a dark system theme and the selector gets no change
+      listener. Wrap reads and writes in try/catch helpers (a failed read means
+      no stored theme, a failed write is ignored), and keep the current choice
+      in a variable so `handleSystemChange` doesn't undo an in-session pick.
+      Key, values, theme logic, color-scheme meta, markup and styles stay as
+      they are; both scripts stay `is:inline`. Acceptance: format check,
+      checks and build pass; with storage blocked a page loads without console
+      errors, follows the system scheme, and the selector switches the theme
+      for the session; with storage available, saved choices persist and
+      System clears them, as now.
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

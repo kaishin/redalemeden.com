@@ -370,7 +370,7 @@ Items are ordered; each is one focused pull request.
       throwaway runs (deleted, nothing committed) show a fresh title works, a
       repeat exits nonzero leaving the file intact, a Japanese-only title
       creates nothing, and a title with a double quote builds verbatim.
-- [ ] Render footnotes in feed content and keep footnote markers out of post excerpts (Tasker #255)
+- [x] Render footnotes in feed content and keep footnote markers out of post excerpts (Tasker #255)
       `src/lib/feed.ts` and `src/lib/excerpt.ts` use a bare markdown-it with no
       footnote syntax, so feeds show literal `[^1]` references and `[^1]:`
       paragraphs (the newest Derived Data post in both Derived Data feeds;

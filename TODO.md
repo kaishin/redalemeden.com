@@ -384,7 +384,7 @@ Items are ordered; each is one focused pull request.
       sup link whose `#fn` fragment matches a `li` id in the same item;
       invisible-computers' description has no `[^`; feed items for posts
       without footnotes are byte-identical (ignore lastBuildDate).
-- [ ] Carry post tags and the feed language into the RSS feeds (Tasker #259)
+- [x] Carry post tags and the feed language into the RSS feeds (Tasker #259)
       Both RSS feeds (built by `createFeedHandler` in `src/lib/feed.ts`) drop
       what the JSON feeds ship: tags never reach the item `categories` field,
       the channel has no `language`, and the hard-coded image title "Reda

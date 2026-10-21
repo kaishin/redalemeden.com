@@ -397,6 +397,18 @@ Items are ordered; each is one focused pull request.
       in frontmatter order, untagged items none; the Derived Data image title
       matches its channel title; otherwise both feeds are byte-identical
       (ignore lastBuildDate).
+- [ ] Fix skipped heading levels in five early posts (Tasker #260)
+      Post pages render the title as the only h1, and most posts open sections
+      with `##`. Five posts under `src/content/blog` skip or mix levels:
+      `2011/twitter-ios-showdown` (5 `###`), `2011/rethinking-google-plus-ios`
+      (3 `###`), `2011/year-in-interface-design` (3 `###`, 2 `####` under
+      Honorable Mentions), `2012/twitter-ios-showdown-round-2` (3 `###`) and
+      `2015/initial-thoughts-about-react-native` (`###` The Good, `##` The Bad,
+      `###` The Meh). In those five files only, raise `###` to `##` and `####`
+      to `###`; heading text, bodies, frontmatter and other posts unchanged.
+      Acceptance: format check, checks and build pass; each of the five built
+      posts has one h1 then h2 sections with no skipped level (the two
+      subsections stay h3); no other built post changes.
 - [ ] Keep the theme scripts working when localStorage is blocked (Tasker #258)
       The inline theme scripts in `src/layouts/BaseLayout.astro` and
       `src/components/ThemeSelect.astro` access `localStorage` unguarded.

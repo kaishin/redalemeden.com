@@ -384,6 +384,19 @@ Items are ordered; each is one focused pull request.
       sup link whose `#fn` fragment matches a `li` id in the same item;
       invisible-computers' description has no `[^`; feed items for posts
       without footnotes are byte-identical (ignore lastBuildDate).
+- [ ] Carry post tags and the feed language into the RSS feeds (Tasker #259)
+      Both RSS feeds (built by `createFeedHandler` in `src/lib/feed.ts`) drop
+      what the JSON feeds ship: tags never reach the item `categories` field,
+      the channel has no `language`, and the hard-coded image title "Reda
+      Lemeden" differs from the Derived Data channel title. In `feed.ts` only,
+      pass `categories: entry.tags`, add a `language` element (`en`) to
+      `customData`, and use `config.title` for the image title. Image url and
+      link, items, limit, archived filtering and the JSON feeds unchanged.
+      Acceptance: format check, checks and build pass; each built RSS feed has
+      one channel `language` (`en`); tagged items carry one `category` per tag
+      in frontmatter order, untagged items none; the Derived Data image title
+      matches its channel title; otherwise both feeds are byte-identical
+      (ignore lastBuildDate).
 - [ ] Keep the theme scripts working when localStorage is blocked (Tasker #258)
       The inline theme scripts in `src/layouts/BaseLayout.astro` and
       `src/components/ThemeSelect.astro` access `localStorage` unguarded.

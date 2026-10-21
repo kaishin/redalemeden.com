@@ -54,7 +54,7 @@ The new scores used in the test are as follows:
 | Long tap            | 2.5   |
 | Multi-option prompt | 0.5   |
 
-### Basic tasks
+## Basic tasks
 
 | Task              | Tweetbot | Twitter  | Twitterrific |
 | ----------------- | -------- | -------- | ------------ |
@@ -77,7 +77,7 @@ other third part clients. Twitterrific lands very close to Tweetbot but does a
 better job in terms of consistency and ease of use: all primary tasks can be
 carried out using only single taps.
 
-### Advanced tasks
+## Advanced tasks
 
 | Task                                                          | Tweetbot | Twitter  | Twitterrific |
 | ------------------------------------------------------------- | -------- | -------- | ------------ |
@@ -98,7 +98,7 @@ Twitter 4. Twitterrific does direct messages best, despite the 2 penalty points
 tied to the impossibility of sending a new DM without resorting to the obscure
 trick of adding a lowercase "d" to the beginning of the tweet.
 
-### Verdict
+## Verdict
 
 | Task                 | Tweetbot | Twitter | Twitterrific |
 | -------------------- | -------- | ------- | ------------ |

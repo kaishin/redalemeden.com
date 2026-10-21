@@ -11,7 +11,7 @@ Facebook open-sourced [React Native](http://reactnative.com) last week, so I
 spent a couple of days toying with it. Here are my initial thoughts, as someone
 who works with both iOS and Web development:
 
-### The Good
+## The Good
 
 - _Immutable user interface_. You no longer have to track state in both the
   model and the view; the latter is a function of the former. As soon as the
@@ -57,7 +57,7 @@ who works with both iOS and Web development:
 - _Styling nested view controllers is a pain_. You are taken back to the root
   view controller after each refresh.
 
-### The Meh
+## The Meh
 
 - _Flexbox_. The authors missed the opportunity of offering a better API and
   favored sticking to the official, confusing spec instead.

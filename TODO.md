@@ -397,7 +397,7 @@ Items are ordered; each is one focused pull request.
       in frontmatter order, untagged items none; the Derived Data image title
       matches its channel title; otherwise both feeds are byte-identical
       (ignore lastBuildDate).
-- [ ] Fix skipped heading levels in five early posts (Tasker #260)
+- [x] Fix skipped heading levels in five early posts (Tasker #260)
       Post pages render the title as the only h1, and most posts open sections
       with `##`. Five posts under `src/content/blog` skip or mix levels:
       `2011/twitter-ios-showdown` (5 `###`), `2011/rethinking-google-plus-ios`

@@ -165,11 +165,13 @@ export function createFeedHandler(config: FeedConfig) {
         pubDate: entry.pubDate,
         link: entry.link,
         content: entry.content,
+        categories: entry.tags,
       })),
       customData: `
+      <language>en</language>
       <lastBuildDate>${currentDate}</lastBuildDate>
       <image>
-        <title>Reda Lemeden</title>
+        <title>${config.title}</title>
         <url>https://redalemeden.com/icon-touch.png</url>
         <link>https://redalemeden.com</link>
       </image>

@@ -144,6 +144,13 @@ export async function getFeedEntries(
     });
 }
 
+function escapeXmlText(value: string): string {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
 export function createFeedHandler(config: FeedConfig) {
   return async function GET(context: APIContext): Promise<Response> {
     if (!context.site) {
@@ -171,7 +178,7 @@ export function createFeedHandler(config: FeedConfig) {
       <language>en</language>
       <lastBuildDate>${currentDate}</lastBuildDate>
       <image>
-        <title>${config.title}</title>
+        <title>${escapeXmlText(config.title)}</title>
         <url>https://redalemeden.com/icon-touch.png</url>
         <link>https://redalemeden.com</link>
       </image>

@@ -9,7 +9,7 @@ isArchived: true
 This is a summary of what happened in the world of interface and interaction
 design in 2011.
 
-### The Desktop Identity Crisis
+## The Desktop Identity Crisis
 
 After a series of leaks, Microsoft unveiled the eighth major iteration of its
 ubiquitous desktop operating system. Based on the _Metro_ design language that
@@ -26,7 +26,7 @@ look and feel of yore gave place to a hodgepodge of visual styles and design
 patterns: popovers, pull-to-refresh, icon-based tab navigation, monochrome
 icons, you name it.
 
-### Social Innovation
+## Social Innovation
 
 Google+ is the new kid in the block, and everyone is talking about it. Led by
 Andy Hertzfeld, a prominent member of the original Macintosh team, the fledgling
@@ -45,9 +45,9 @@ Speaking of delight, Path has managed to steal the spotlight from the trio above
 when they released a revamped UI that packed a healthy amount of playful
 interactions and experimental design patterns.
 
-### Honorable Mentions
+## Honorable Mentions
 
-#### Web, Native, or Hybrid?
+### Web, Native, or Hybrid?
 
 The debate has shifted from Web vs. Native to the UX implications of Web views,
 a new hybrid technique that involves displaying Web pages within native
@@ -55,7 +55,7 @@ containers. Even though Web views have been widely adopted in the mobile space,
 they have yet to prove their worth considering the UX inconsistencies they
 introduce.
 
-#### Gestures vs. Buttons
+### Gestures vs. Buttons
 
 The transition to gestural interfaces is dividing the design community. As
 users, our interaction mental model is currently in disarray; we can hardly keep

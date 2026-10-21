@@ -23,7 +23,7 @@ Twitter.
 ![Tweet options](./tweet-options.jpg) _Tweet options displayed after a single
 tap._
 
-### The Rules
+## The Rules
 
 Before starting this exercise, let's go over some of the concepts that will be
 used throughout the article:
@@ -62,7 +62,7 @@ Thinking time was assigned a value of `0.5`, and will be referred to as MOP
 (multi-option prompt) in the tests. To keep things simple, the number of options
 was not taken into account, nor was the habit factor.
 
-### Round 1: Basic Tasks
+## Round 1: Basic Tasks
 
 We'll start by having a look at how efficiently the two clients handle basic
 tasks such as tweeting and replying:
@@ -88,7 +88,7 @@ less cumbersome.
 
 ![Direct messaging](./twitter-dm.jpg) _Sending a direct message._
 
-### Round 2: Hashtags, Mentions, and Group Replies
+## Round 2: Hashtags, Mentions, and Group Replies
 
 Let's now spice up the comparison with some hashtags and @ mentions:
 
@@ -112,7 +112,7 @@ Twitter's less intrusive solution gives it the upper hand.
 
 ![Replying all](./replying-all.jpg) _Replying a tweet with multiple @ mentions._
 
-### Round 3: User Actions & Lists
+## Round 3: User Actions & Lists
 
 Now for the less frequent tasks:
 
@@ -132,7 +132,7 @@ godsend.
 
 ![Following](./following.jpg) _Following a user._
 
-### Results
+## Results
 
 | Task  | Tweetbot | Twitter |
 | ----- | :------: | :-----: |

@@ -16,7 +16,7 @@ Having said that, the Google+ app on iOS is falling short of the standards set
 by its Web counterpart. The app is a mishmash of Web views, experimental touch
 interactions, and unpolished graphics. The result is a sub-par user experience.
 
-### Signing In
+## Signing In
 
 To start off, users have to go through two completely useless screens to get to
 the sign-in form. In order to create an account, you have to hunt down a blue
@@ -27,7 +27,7 @@ mocked below:
 ![Signing in](./google-plus-signing-in.jpg) _An improved sign-in screen for
 Google+ on iOS._
 
-### The Stream
+## The Stream
 
 Dashboard navigation on mobile apps is as hacky as a design pattern can get,
 especially when a tab bar can perfectly fit the bill. As for the default tab, it
@@ -43,7 +43,7 @@ hard to miss regardless of where you are. Content should be given more
 prominence by using the full-width of the screen. Ideally, raw URLs should be
 hidden as long as the actual content of the link is displayed inline.
 
-### Touch Interactions
+## Touch Interactions
 
 Buttons might be a hack, but it'd be safe to assume that users won't be
 switching streams often enough to justify gesture-driven navigation. Instead,

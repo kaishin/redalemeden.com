@@ -423,6 +423,20 @@ Items are ordered; each is one focused pull request.
       errors, follows the system scheme, and the selector switches the theme
       for the session; with storage available, saved choices persist and
       System clears them, as now.
+- [ ] Send the old This Week I Learned URLs to their issue on the TWIL page (Tasker #421)
+      The 12 redirects `/blog/2020/this-week-i-learned-21` to `-32` in
+      `astro.config.mjs` all point at `/experiments/twil`, so old links land at
+      the top of a 32-issue page. Each issue heading
+      (`### This Week I Learned #N`) gets the id `this-week-i-learned-N`. The
+      Derived Data post `2020/debugging-swiftui-trials-and-tribulations` links
+      `.../this-week-i-learned-24#programming`, a fragment the redirect drops
+      and the page lacks. Point each redirect at
+      `/experiments/twil#this-week-i-learned-N` and repoint that link to
+      `/experiments/twil#this-week-i-learned-24`. Sources, the TWIL page,
+      `public/_redirects` and other content unchanged. Acceptance: format
+      check, checks and build pass; each built redirect page refreshes to its
+      issue anchor; the built TWIL page has all 12 ids; no `#programming` link
+      to TWIL remains under `src`.
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

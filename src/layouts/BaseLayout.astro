@@ -128,7 +128,15 @@ if (title != SITE_TITLE) {
     <!-- Dark Mode -->
     <script is:inline>
       (() => {
-        const storedTheme = localStorage.getItem("theme");
+        const readStoredTheme = () => {
+          try {
+            return localStorage.getItem("theme");
+          } catch {
+            return null;
+          }
+        };
+
+        const storedTheme = readStoredTheme();
         const systemPrefersDark = window.matchMedia(
           "(prefers-color-scheme: dark)",
         ).matches;

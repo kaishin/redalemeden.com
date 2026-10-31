@@ -409,7 +409,7 @@ Items are ordered; each is one focused pull request.
       Acceptance: format check, checks and build pass; each of the five built
       posts has one h1 then h2 sections with no skipped level (the two
       subsections stay h3); no other built post changes.
-- [ ] Keep the theme scripts working when localStorage is blocked (Tasker #258)
+- [x] Keep the theme scripts working when localStorage is blocked (Tasker #258)
       The inline theme scripts in `src/layouts/BaseLayout.astro` and
       `src/components/ThemeSelect.astro` access `localStorage` unguarded.
       Browsers throw a SecurityError when site storage is blocked, so the head

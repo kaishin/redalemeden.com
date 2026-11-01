@@ -423,7 +423,7 @@ Items are ordered; each is one focused pull request.
       errors, follows the system scheme, and the selector switches the theme
       for the session; with storage available, saved choices persist and
       System clears them, as now.
-- [ ] Send the old This Week I Learned URLs to their issue on the TWIL page (Tasker #421)
+- [x] Send the old This Week I Learned URLs to their issue on the TWIL page (Tasker #421)
       The 12 redirects `/blog/2020/this-week-i-learned-21` to `-32` in
       `astro.config.mjs` all point at `/experiments/twil`, so old links land at
       the top of a 32-issue page. Each issue heading

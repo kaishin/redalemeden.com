@@ -58,6 +58,26 @@ import { Moon, Sun } from "@lucide/astro";
     const colorSchemeMeta = document.querySelector('meta[name="color-scheme"]');
     const systemScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
+    const readStoredTheme = () => {
+      try {
+        return localStorage.getItem("theme");
+      } catch {
+        return null;
+      }
+    };
+
+    const writeStoredTheme = (theme) => {
+      try {
+        if (theme === "system") {
+          localStorage.removeItem("theme");
+        } else {
+          localStorage.setItem("theme", theme);
+        }
+      } catch {
+        // Storage is blocked; keep the choice for this session only.
+      }
+    };
+
     const setColorScheme = (theme) => {
       colorSchemeMeta?.setAttribute(
         "content",
@@ -77,30 +97,28 @@ import { Moon, Sun } from "@lucide/astro";
       }
     };
 
-    const saveTheme = (theme) => {
-      if (theme === "system") {
-        localStorage.removeItem("theme");
-      } else {
-        localStorage.setItem("theme", theme);
-      }
+    let currentTheme;
 
+    const saveTheme = (theme) => {
+      currentTheme = theme;
+      writeStoredTheme(theme);
       applyTheme(theme);
     };
 
-    const storedTheme = localStorage.getItem("theme");
-    const theme =
+    const storedTheme = readStoredTheme();
+    currentTheme =
       storedTheme === "light" || storedTheme === "dark"
         ? storedTheme
         : "system";
 
-    applyTheme(theme);
+    applyTheme(currentTheme);
 
     select?.addEventListener("change", (event) => {
       saveTheme(event.target.value);
     });
 
     const handleSystemChange = () => {
-      if (!localStorage.getItem("theme")) {
+      if (currentTheme === "system") {
         applyTheme("system");
       }
     };

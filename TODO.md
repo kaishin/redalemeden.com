@@ -437,6 +437,18 @@ Items are ordered; each is one focused pull request.
       check, checks and build pass; each built redirect page refreshes to its
       issue anchor; the built TWIL page has all 12 ids; no `#programming` link
       to TWIL remains under `src`.
+- [ ] Point the mattt-wwdc-2020 redirect at a page that exists (Tasker #424)
+      `astro.config.mjs` redirects `/blog/2020/mattt-wwdc-2020` to
+      `/derived-data/2020/mattt-wwdc-2020/`, but no such post exists under
+      `src/content` and `public/_redirects` has no entry, so the old URL lands
+      on the 404 page. Every other destination is an existing page. Change
+      only that destination to `/derived-data` (bare-path style, like the
+      `/blog/1` to `/blog/5` redirects); keep the source, other redirects,
+      `public/_redirects` and content unchanged. Acceptance: format check,
+      checks and build pass; the built
+      `dist/blog/2020/mattt-wwdc-2020/index.html` refreshes to
+      `/derived-data`; every redirect destination in `astro.config.mjs` is a
+      built page (ignoring any `#fragment`).
 - [ ] Proposal: Show tags and previous/next post links on post pages (Tasker #228)
       `src/layouts/BlogPost.astro` shows only date, title and archived notice;
       58 posts carry tags visible only on the indexes, and there is no way to

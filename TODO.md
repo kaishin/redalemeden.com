@@ -644,8 +644,8 @@ link (dead → Wayback snapshot, no snapshot → plain text), then remove the
 - [x] Revise all remaining posts with 4 parallel agents: 60 posts done, one
       commit each (`git log --grep 'against original'`). `pnpm check` and
       `pnpm build` pass.
-- [ ] Furusato, Kotowaza Vol. 1 and Vol. 2: confirm whether already revised
-      (no revision found in git; `## Original` block still present)
+- [x] Furusato, Kotowaza Vol. 1 and Vol. 2. Furusato keeps the author's own
+      kana edit (fe949dc); only the `## Original` block was removed.
 
 ## Astro 6 Upgrade (superseded)
 

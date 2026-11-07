@@ -5,39 +5,34 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+- Watch this
+  [samurai documentary](https://web.archive.org/web/20070322184022/http://www.veoh.com/videos/v2484053qRBbhKy)
+  uploaded by a do-gooder to
+  [Veoh.com](https://web.archive.org/web/20070202022955/http://www.veoh.com:80/),
+  a website offering high-definition videos uploaded by other, ahem,
+  copyright-infringing users! Unlike YouTube, Veoh allows you to download
+  high-quality videos to your computer and watch them whenever you feel like it.
+  It manages your videocasts, video torrents, and local media. Veoh also
+  features a built-in video player with a slick black UI. (Thanks to
+  [alexpappas over at Japundit](https://web.archive.org/web/20071103202754/http://japundit.com/archives/2007/02/27/5140/)
+  for the link.)
 
-```text
-# I recommend you to…
-#website/neosamurai
+- Check out the Wonderfest 2007 coverage on Danny Choo's website:
+  [Figures](https://web.archive.org/web/20070228102118/http://www.dannychoo.com:80/blog_entry/eng/765/WF%2B2007%2BWinter%2B-%2BFigures/)
+  and
+  [Mecha](https://web.archive.org/web/20070301085203/http://www.dannychoo.com:80/blog_entry/eng/767/WF+2007+Winter+-+Mecha/).
+  And for less exhaustive but more entertaining coverage, head over to
+  [An Eternal Thought in the Mind of Godzilla](https://web.archive.org/web/20070302111030/http://patrickmacias.blogs.com:80/er/2007/02/world_war_wonde.html).
+  Never mind if you're still wondering what Wonderfest is!
 
-*TUESDAY, FEBRUARY 27, 2007*
+- A sublime commercial from Fukuoka-based watch company 宝石時計 長野 (_Houseki
+  Tokei Nagano_) has a message that roughly translates as:
 
-* - Watch this  [Samurai documentary](https://web.archive.org/web/20070519015302/http://www.veoh.com/videos/v2484053qRBbhKy)  uploaded by a do-gooder to  [Veoh.com](https://web.archive.org/web/20070519015302/http://www.veoh.com/) , a website that offers high def videos uploaded by other …ahem…copyright infringing…users! Unlike YouTube, Veoh allows you to download high quality videos to your computer and watch them whenever you feel like doing so. It manages your video casts , video torrents and local media . Veoh features as well a built-in video player that has a slick black UI. (thanks to  [alexpappas over at Japundit](https://web.archive.org/web/20070519015302/http://japundit.com/archives/2007/02/27/5140/)  for the link)
-
-* - Check the Wonderfest 2007 coverages on Dannychoo’s website ( [Figures](https://web.archive.org/web/20070519015302/http://www.dannychoo.com/blog_entry/eng/765/WF+2007+Winter+-+Figures/) ,  [Mecha](https://web.archive.org/web/20070519015302/http://www.dannychoo.com/blog_entry/eng/767/WF+2007+Winter+-+Mecha/) ). And for a less exhaustive but more entertaining coverage head over to “ [An eternal thought in the mind of Gozilla](https://web.archive.org/web/20070519015302/http://patrickmacias.blogs.com/er/2007/02/world_war_wonde.html) “. Nevermind if you are still wondering what Wonderfest is!
-
-* -Watch this sublime CM of a Fukuoka based watches company called 宝石時計 長野 (Houseki Tokei Nagano):
-
-Can be roughly translated as:
-“What takes a person one hour to do, will take only 30 minutes for two”
-“What takes a person one month to do, will take only one day for 30 people”
-“What humanity can’t achieve in thousands years, might be done in one day if everyone unites to achieve it…”
-“…as long as they work in harmony, that is”
-
-
-Posted by Kai心
-at  [8:14 PM](https://web.archive.org/web/20070519015302/http://neosamurai.blogspot.com/2007/02/i-recommend-you-to.html)
-```
-
-- [Samurai documentary](https://web.archive.org/web/20070519015302/http://www.veoh.com/videos/v2484053qRBbhKy) on Veoh, a video site that allows downloads unlike YouTube. (via [Japundit](https://web.archive.org/web/20070519015302/http://japundit.com/archives/2007/02/27/5140/))
-
-- Wonderfest 2007 coverage: [Figures](https://web.archive.org/web/20070519015302/http://www.dannychoo.com/blog_entry/eng/765/WF+2007+Winter+-+Figures/), [Mecha](https://web.archive.org/web/20070519015302/http://www.dannychoo.com/blog_entry/eng/767/WF+2007+Winter+-+Mecha/), and [Patrick Macias' take](https://web.archive.org/web/20070519015302/http://patrickmacias.blogs.com/er/2007/02/world_war_wonde.html)
-
-- Commercial from Fukuoka watch company 宝石時計 長野 (Houseki Tokei Nagano) about the power of collaboration:
-
-> "What takes a person one hour to do will take only 30 minutes for two"
->
-> "What takes a person one month to do will take only one day for 30 people"
->
-> "What humanity can't achieve in thousands of years might be done in one day if everyone unites to achieve it…as long as they work in harmony"
+  > What takes one person an hour to do will take only 30 minutes for two.
+  >
+  > What takes one person a month to do will take only one day for 30 people.
+  >
+  > What humanity can't achieve in thousands of years might be done in one day
+  > if everyone unites to achieve it…
+  >
+  > As long as they work in harmony, that is.

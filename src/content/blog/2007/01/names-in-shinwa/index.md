@@ -5,68 +5,46 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+As [Clayton requested](/blog/2007/01/shinwa-yachihoko-and-nunakaha/), I'll
+briefly explain some aspects of naming in _Shinwa_. It can be rather confusing
+even in Japanese texts, let alone in romanization and translations into other
+languages.
 
-```text
-# Names in Shinwa
-#website/neosamurai
+The names given to deities usually consist of several kanji, ranging from three
+to seven or even more in some cases. These aren't names in the strict sense, but
+rather aliases given on specific occasions, referring to one or more attributes
+of the _kami_ concerned. Each kanji represents a concept or an attribute. For
+example, the full name of _Amaterasu_ is _Amaterasu-oo-omi-kami_ 天照大御神,
+meaning the Honorable (御) Great (大) Shining (照) Heaven (天) Deity (神).
+_Kami_ (神) is almost always appended to the names of deities. Deities are named
+at birth based on their most striking features, like _Hinoyagi-Hayawo-no-kami_
+(火之夜藝速男神), "Fire-Burning-Swift-Male-Deity," who embodied fire.
 
-MONDAY, JANUARY 22, 2007
+Sometimes deities change their names when a specific event occurs, either by
+changing the kanji altogether or just the readings of the same characters. Take
+_Oonamuji_ 大国主, "Master-of-the-great-land," who got a new alias when
+[he received _Susanowo_'s bow](https://web.archive.org/web/20070518232820/http://neosamurai.blogspot.com:80/2006/12/shinwa-ohokuninushis-victory.html):
+_Ookuninushi_ (大国主), just another reading of his previous alias. After he
+defeated his brothers and married _Suseribime_, however, he got a completely new
+name, _Hachi-Sen-Hoko-Kami_ (八千矛神), or "One-thousand-spear-Kami."
 
-[Names in Shinwa](https://web.archive.org/web/20070502195140/http://neosamurai.blogspot.com/2007/01/names-in-shinwa.html)
-
-As [ Clayton had requested](https://web.archive.org/web/20070502195140/http://neosamurai.blogspot.com/2007/01/yachihoko-nunakawa.html) , I’ll explain briefly some aspects of naming in Shinwa, since it is sometimes rather confusing even in Japanese texts, let alone romanization and interpretation in other languages.
-
-Usually the names given to different deities are composed of several kanji, ranging from 3 to 7 or even more in some cases. Those aren’t names in the strict sense, but rather aliases given in specific occasions, referring to one or many attributes of the /Kami/ concerned, with each kanji representing a concept or an attribute. As an example, the complete name of /Amaterasu/ is *Amaterasu-oo-omi-kami*天照大御神, meaning the Honorable(御) Great (大) Shining (照) Heaven (天) Deity (神). It is to note that Kami (神) is almost all the time appended to the name of deities. Deities are baptized in the moment of their birth, based on their most striking features, like *Hinoyagi-Hayawo-no-kami* (火之夜藝速男神), “Fire-Burning-Swift-Male-Deity” , since he embodied fire. Sometime, deities change their names when a specific event occurs, whether by changing the kanji altogether, or just the readings of the previous characters, like Oonamuji 大国主, Master-of-the-great-land, who got a new alias when  [he received Susanowo’s bow](https://web.archive.org/web/20070502195140/http://neosamurai.blogspot.com/2006/12/shinwa-ohokuninushis-victory.html) , Ookuninushi (大国主) , which is just another reading of his previous alias. However after he defeated his brothers and married /Suseribime/, he got a completely new name, *Hachi-Sen-Hoko-Kami* (八千矛神), or “One-thousand-spear-Kami”.
-
-In some cases, the long names of deities are shortened for the sake of simplification, as *Hinoyagi-Hayawo*cited above, Izanami’s son whose birth caused her demise, who was given the more common name of /Kagutsushi/迦具土, or *Hachi-Sen-Hoko-Kami*(formerly /Oonamuji/) who was called later/Yachihoko/ヤチホコ．Actually it is common to write the names of some well known deities in Katakana, as Izanami イザナミ and Izanagi　イザナギ.
-Since there are two major sources of /shinwa/, the  [Nihongi](https://web.archive.org/web/20070502195140/http://neosamurai.blogspot.com/2006/06/nihonshoki.html)  and the  [Kojiki,](https://web.archive.org/web/20070502195140/http://neosamurai.blogspot.com/2006/06/japanese-mythology-origins.html)  there are often differences in names, which explains why some deities have several aliases. Sometimes the names are pronounced the same way in the two versions, but are written with different characters.
-
-PS: For romanization, I am following the  [Hepburn romanization system](https://web.archive.org/web/20070502195140/http://en.wikipedia.org/wiki/Hepburn_romanization) . I use hyphens in the names for the sole reason of making them easier to read, since a one block name would be illegible , something in the lines of “Hachisenhokonokami”. The hyphens are put where I judge appropriate to split, following no specific rule.
-
-Posted by Kaishin 魁心 at  [9:00 AM](https://web.archive.org/web/20070502195140/http://neosamurai.blogspot.com/2007/01/names-in-shinwa.html)
-```
-
-As Clayton had requested, I'll explain briefly some aspects of naming in Shinwa,
-since it is sometimes rather confusing even in Japanese texts, let alone
-romanization and interpretation in other languages.
-
-Usually the names given to different deities are composed of several kanji,
-ranging from 3 to 7 or even more in some cases. Those aren't names in the strict
-sense, but rather aliases given in specific occasions, referring to one or many
-attributes of the _Kami_ concerned, with each kanji representing a concept or an
-attribute. As an example, the complete name of _Amaterasu_ is
-_Amaterasu-oo-omi-kami_ 天照大御神, meaning the Honorable (御) Great (大)
-Shining (照) Heaven (天) Deity (神). It is to note that Kami (神) is almost all
-the time appended to the name of deities. Deities are baptized in the moment of
-their birth, based on their most striking features, like
-_Hinoyagi-Hayawo-no-kami_ (火之夜藝速男神), "Fire-Burning-Swift-Male-Deity",
-since he embodied fire. Sometime, deities change their names when a specific
-event occurs, whether by changing the kanji altogether, or just the readings of
-the previous characters, like Oonamuji (大穴牟遅), Master-of-the-great-land, who got
-a new alias when he received Susanowo's bow, Ookuninushi (大国主), which is just
-another reading with different characters. However after he defeated his brothers
-and married _Suseribime_, he got a completely new name, _Hachi-Sen-Hoko-Kami_
-(八千矛神), or "One-thousand-spear-Kami".
-
-In some cases, the long names of deities are shortened for the sake of
-simplification, as _Hinoyagi-Hayawo_ cited above, Izanami's son whose birth
-caused her demise, who was given the more common name of _Kagutsuchi_ 迦具土, or
-_Hachi-Sen-Hoko-Kami_ (formerly Oonamuji) who was called later _Yachihoko_
-ヤチホコ. Actually it is common to write the names of some well known deities in
-Katakana, as Izanami イザナミ and Izanagi イザナギ.
+In some cases, the long names of deities are shortened for simplicity.
+_Hinoyagi-Hayawo_, mentioned above, was _Izanami_'s son whose birth caused her
+death. He was given the more common name of _Kagutsuchi_ 迦具土.
+_Hachi-Sen-Hoko-Kami_ (formerly _Oonamuji_) was later called _Yachihoko_
+ヤチホコ. It's also common to write the names of some well-known deities in
+katakana, like _Izanami_ イザナミ and _Izanagi_ イザナギ.
 
 Since there are two major sources of _shinwa_, the
-[Nihongi](https://web.archive.org/web/20070502195140/http://neosamurai.blogspot.com/2006/06/nihonshoki.html)
-and the
-[Kojiki](https://web.archive.org/web/20070502195140/http://neosamurai.blogspot.com/2006/06/japanese-mythology-origins.html),
-there are often differences in names, which explains why some deities have
-several aliases. Sometimes the names are pronounced the same way in the two
-versions, but are written with different characters.
+[_Nihongi_](/blog/2006/06/the-nihonshoki/) and the
+[_Kojiki_](/blog/2006/06/japanese-mythology-origins/), there are often
+differences in names, which explains why some deities have several aliases.
+Sometimes the names are pronounced the same way in the two versions but written
+with different characters.
 
-PS: For romanization, I am following the
-[Hepburn romanization system](https://web.archive.org/web/20070502195140/http://en.wikipedia.org/wiki/Hepburn_romanization).
-I use hyphens in the names for the sole reason of making them easier to read,
-since a one block name would be illegible, something in the lines of
-"Hachisenhokonokami". The hyphens are put where I judge appropriate to split,
-following no specific rule.
+PS: For romanization, I'm following the
+[Hepburn romanization system](https://en.wikipedia.org/wiki/Hepburn_romanization).
+I use hyphens in the names only to make them easier to read, since a name in one
+block would be illegible, something like "_Hachisenhokonokami_." I put the
+hyphens wherever I think it makes sense to split the name, following no specific
+rule.

@@ -5,72 +5,52 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+![Masked performers surrounded by coiled serpent costumes in a staging of the Orochi story.](./orochi.jpg)
 
-```text
-# Shinwa: Orochi, the eight headed snake
-#website/neosamurai
-
-FRIDAY, OCTOBER 20, 2006
-
-![](Shinwa%20Orochi,%20the%20eight%20headed%20snake/orochi11.jpg)
-
-After he was [ expelled from Takamanohara](https://web.archive.org/web/20061107172015/http://neosamurai.blogspot.com/2006/10/shinwa-missing-sun.html) , *Susanowo* descended to earth, and headed to *Hii*(斐伊) river, in  [Izumo province*.](https://web.archive.org/web/20061107172015/http://upload.wikimedia.org/wikipedia/en/0/0b/Japan_prov_map_izumo.PNG)  While strolling alongside the river, he spotted a chopstick drifting with the stream of water, and deduced that someone should be dwelling in the hills up ahead. He kept going until he met an old couple and a young charming girl. They were weeping uninterruptedly. Curious, Susanowo inquired about the reason of their mourning. The old man explained that every year, an eight* headed serpent called *Yamata-no-Orochi* (八岐の大蛇) comes an get one of his eight daughters, and it was almost time for the beast to come and claim the last daughter.
-
-/“I had originally eight young girls as daughters. But the eight-forked serpent of Koshi* has come every year and devoured one, and it is now its time to come, wherefore we weep. Its eyes are like akakagachi, it has one body with eight heads and eight tails. Moreover on its body grows moss. Its length extends over eight valleys and eight hills, and if one look at its belly, it is all constantly bloody and inflamed”/, Said the old man,*Ashi-Nazuchi*.
-
-Hearing this , Susanowo suggested to the old couple to marry their daughter, *Kushinada-hime*, if he defeats Orochi and safeguard her life . Knowing that he came from heaven, *Ashi-Nazuchi* and *Te-Nazuchi* couldn’t help but accept his deal. Susanowo asked them to build a fence around the house, and to make eight gates into that fence, in each a barrel of Sake will stand. He turned the young lady into a comb and hid her in his hair.
-
-After a while , the eight-headed snake-dragon came to take Kushinada-hime. However, even the almighty Orochi couldn’t resist and went ahead drinking the Sake before him, each head fuddling from one barrel. After he imbibed, he fell asleep, giving the golden chance to Susanowo to wield the Totsuka-no-Tsurugi and cut Orochi’s heads one by one, as well as his tails. When he slashed the last tail, his sword hit another metallic object and made a strident sound. when he carefully cut the tail open , he found a sword called*Ame-no-Murakamo-no-Tsurugi** (天叢雲剣) that he handed afterwards to his sister Amaterasu.
-
-*Sidenotes:*
-*Izumo is in present day Shimane prefecture.
-*Koshi is a district in the province of Echigo, today’s niigata prefecture.
-*”Eight” in mythology texts means “numerous”, and not necessarily eight. The same thing can be said on the number of gods who gathered in front of the cave to bring out Amaterasu as some versions say 80, some 800 and some use the more correct term of “myriads”. But for the sake of simplicity it’ll be considered eight heads and tails.
-*Later called Kusanagi.
-
-
-*Moral:*
-NEVER EVER drink Sake before picking a fight! (-_-)”
-
-POSTED BY KAISHIN AT  [8:57 PM](https://web.archive.org/web/20061107172015/http://neosamurai.blogspot.com/2006/10/shinwa-orochi-eight-headed-snake.html)
-```
-
-After being [expelled from Takamanohara](/blog/2006/10/shinwa-the-missing-sun/),
-Susanowo descended to earth and headed to the **Hii** river (斐伊) in Izumo
-province. Drifting downstream, he spotted a chopstick in the current, deduced
-that someone must be living upriver, and followed it until he found an old
-couple weeping beside a young woman. The old man explained:
+After he was
+[expelled from _Takamanohara_](/blog/2006/10/shinwa-the-missing-sun/),
+_Susanowo_ descended to earth and headed to the _Hii_ river (斐伊) in
+[Izumo province](https://web.archive.org/web/20070621221523/http://upload.wikimedia.org/wikipedia/en/0/0b/Japan_prov_map_izumo.PNG).
+While strolling along the river, he spotted a chopstick drifting with the
+current and deduced that someone must be living in the hills up ahead. He kept
+going until he met an old couple and a charming young woman. They were weeping
+nonstop. Curious, _Susanowo_ asked why they were mourning. The old man explained
+that every year, an eight-headed serpent called _Yamata-no-Orochi_ (八岐の大蛇)
+came and took one of his eight daughters. It was almost time for the beast to
+come and claim the last one.
 
 "I had originally eight young girls as daughters. But the eight-forked serpent
 of Koshi has come every year and devoured one, and it is now its time to come,
-wherefore we weep. Its eyes are like akakagachi, it has one body with eight
-heads and eight tails. Moreover on its body grows moss. Its length extends over
-eight valleys and eight hills, and if one look at its belly, it is all
-constantly bloody and inflamed."
+wherefore we weep. Its eyes are like _akakagachi_; it has one body with eight
+heads and eight tails. Moreover, on its body grows moss. Its length extends over
+eight valleys and eight hills, and if one looks at its belly, it is all
+constantly bloody and inflamed," said the old man, _Ashi-Nazuchi_.
 
-The serpent was **Yamata-no-Orochi** (八岐の大蛇). Susanowo offered to defeat it
-in exchange for the last daughter, **Kushinada-hime**, in marriage. The couple,
-**Ashi-Nazuchi** and **Te-Nazuchi**, accepted. Susanowo turned Kushinada-hime
-into a comb and tucked her in his hair, then instructed the couple to build a
-fence with eight gates, each holding a barrel of sake.
+Hearing this, _Susanowo_ proposed that he marry their daughter,
+_Kushinada-hime_, if he defeated _Orochi_ and saved her life. Knowing that he
+had come from heaven, _Ashi-Nazuchi_ and _Te-Nazuchi_ couldn't help but accept
+his deal. _Susanowo_ asked them to build a fence around the house with eight
+gates, each holding a barrel of _sake_. He turned the young woman into a comb
+and hid her in his hair.
 
-When Orochi arrived, each of its eight heads drank from a barrel and fell
-asleep. Susanowo drew the **Totsuka-no-Tsurugi** and cut off the heads one by
-one. When he slashed the last tail, his sword struck something metallic inside:
-a second sword, **Ame-no-Murakamo-no-Tsurugi** (天叢雲剣), which he presented to
-Amaterasu. (It was later renamed Kusanagi.)
+After a while, the eight-headed snake-dragon came to take _Kushinada-hime_.
+However, even the almighty _Orochi_ couldn't resist the _sake_ before him and
+started drinking, each head from its own barrel. After drinking, he fell asleep,
+giving _Susanowo_ the perfect chance to wield the _Totsuka-no-Tsurugi_ and cut
+off _Orochi_'s heads one by one, as well as his tails. When he slashed the last
+tail, his sword hit another metallic object with a shrill clang. He carefully
+cut the tail open and found a sword called _Ame-no-Murakamo-no-Tsurugi_
+(天叢雲剣), which he later handed to his sister _Amaterasu_.
 
-Susanowo then sought food from **Ohogetsu-hime**
-(no-kami) 大宜都比売神 (Princess-of-Great-Food). She made him an elaborate meal,
-drawing the ingredients from her nose, mouth, and other bodily openings.
-Susanowo, assuming the food was her bodily waste, killed her. From her body grew
-the crops of Japan: silkworms in her head, rice seeds in her eyes, millet in her
-ears, small beans in her nose, barley in her private parts, and large beans in
-her stomach. Susanowo gathered them as seeds.
+## Sidenotes
 
-Sidenotes: "Eight" in mythological texts means "numerous," not literally eight.
-Izumo is in present-day Shimane prefecture. Koshi was in present-day Niigata
-prefecture.
+- Izumo is in present-day Shimane prefecture.
+- Koshi is a district in the province of Echigo, today's Niigata prefecture.
+- "Eight" in mythological texts means "numerous," not necessarily eight. The
+  same goes for the number of gods who gathered in front of the cave to bring
+  out _Amaterasu_: some versions say 80, some 800, and some use the more correct
+  term "myriads." But for the sake of simplicity, we'll consider it eight heads
+  and tails.
+- _Ame-no-Murakamo-no-Tsurugi_ was later called _Kusanagi_.
 
-Moral: never drink sake before picking a fight.
+Moral: never, ever drink _sake_ before picking a fight!

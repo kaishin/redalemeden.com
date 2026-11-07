@@ -5,28 +5,13 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+_Kinyoubi_ (金曜日) means Friday, and this entry was meant to be posted
+yesterday. But since I upgraded to Blogger 2, I had to make some design tweaks
+before posting anything!
 
-```text
-# Fun 金曜日! Vol.1
-#website/neosamurai
+I've been getting into the [Death Note anime](https://anidb.net/anime/4563). The
+plot is original, the characters are charismatic, and the animation is top
+notch.
 
-*SATURDAY, JANUARY 13, 2007*
-
-Kinyoubi (金曜日) means Friday, and as you might be wondering, this entry was meant to be posted yesterday, but since I upgraded to Blogger 2 I had to do some design tweaks before posting anything!
-
-Well, I have become to like  [Death Note anime](https://web.archive.org/web/20070627180159/http://anidb.info/perl-bin/animedb.pl?show=anime&aid=4563) . The plot is original, the characters are charismatic, and the animation is top notch. In case you have never heard of Death Note, then the following illustration can give you a good idea of what to expect:
-
-Or at least, this is how it’d look like from a Simpsons perspective (props to  [Spacecoyote](https://web.archive.org/web/20070627180159/http://spacecoyote.deviantart.com/) )!
-
-Posted by Kai心
-at  [8:51 PM](https://web.archive.org/web/20070627180159/http://neosamurai.blogspot.com/2007/01/fun-vol1.html)
-```
-
-I've been getting into
-[Death Note](https://web.archive.org/web/20070627180159/http://anidb.info/perl-bin/animedb.pl?show=anime&aid=4563).
-The plot is original, the characters are charismatic, and the animation is top
-notch. If you've never heard of it, the following illustration should give you
-an idea of what to expect—or at least how it would look from a Simpsons
-perspective (props to
-[Spacecoyote](https://web.archive.org/web/20070627180159/http://spacecoyote.deviantart.com/)).
+Props to [Spacecoyote](https://www.deviantart.com/spacecoyote) for imagining it
+from a Simpsons perspective!

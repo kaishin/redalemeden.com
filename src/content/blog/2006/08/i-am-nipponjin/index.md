@@ -5,28 +5,20 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
-
-```text
-# I am Nipponjin…
-#website/neosamurai
-
-…is the title of the  [new movie](https://web.archive.org/web/20061107172136/http://www.crisscross.com/jp/newsmaker/341)  starring the American-Japanese 20 years old Christina Morimoto, who will be taking the leading role of a Japanese-American -naturally- having to move for a semester to Japan as an exchange student. The movie focuses on her exposure to Japanese culture for the first time and the difficulties she will have to face dealing with the , so popular, “cultures clash”. 
-I don’t know whether those who complain about “the cultures clash” think that Japan is too peculiar, that manners and customs are rather suffocating, or that it’s inconveniant to be unable to decipher Kanji… But I personally feel like things such as cultures clash and concepts of the like are a mere product of misunderstandings, stereotypes, ignorance and selfishness!
-Christina Morimoto thinks that “Americans need to have a lot more respect for the Japanese culture,” which is pretty true if all Americans were like [ the reporter who says FUJAMA](https://web.archive.org/web/20061107172136/http://www.japanprobe.com/?p=430) , and JAPPAN…Luckily “My Japan” isn’t as his!!
-
-POSTED BY KAISHIN AT  [7:39 PM](https://web.archive.org/web/20061107172136/http://neosamurai.blogspot.com/2006/08/i-am-nipponjin.html)
-```
-
 "I Am Nipponjin" is the title of a
-[new film](https://web.archive.org/web/20061107172136/http://www.crisscross.com/jp/newsmaker/341)
-starring Christina Morimoto, a twenty-year-old Japanese-American actress. She
-plays a Japanese-American exchange student navigating Japan for a semester and
-confronting the culture clash firsthand.
+[new movie](https://web.archive.org/web/20060812061904/http://www.crisscross.com:80/jp/newsmaker/341)
+starring twenty-year-old Japanese-American Christina Morimoto. She plays a
+Japanese-American (naturally) who moves to Japan for a semester as an exchange
+student. The movie focuses on her first exposure to Japanese culture and the
+difficulties she faces dealing with the much-talked-about "culture clash."
 
-Culture clash gets talked about as if Japanese culture was uniquely
-impenetrable, but most of it comes down to the usual mix of unfamiliarity and
-unexamined assumptions. Morimoto has said that "Americans need to have a lot
-more respect for Japanese culture," which is somewhat fair, considering
-reporters like
-[the one who says FUJAMA and JAPPAN](https://web.archive.org/web/20061107172136/http://www.japanprobe.com/?p=430).
+I don't know whether those who complain about "culture clash" think that Japan
+is too peculiar, that its manners and customs are suffocating, or that it's
+inconvenient to be unable to decipher _kanji_. But I personally feel that
+culture clash and similar concepts are just products of misunderstandings,
+stereotypes, ignorance and selfishness!
+
+Christina Morimoto thinks that "Americans need to have a lot more respect for
+the Japanese culture," which would be pretty true if all Americans were like
+[the reporter who says "Fujama" and "Jappan"](https://web.archive.org/web/20080602073642/http://www.japanprobe.com:80/?p=430).
+Luckily, "My Japan" isn't like his!

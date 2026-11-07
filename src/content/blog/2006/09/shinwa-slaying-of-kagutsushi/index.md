@@ -5,80 +5,50 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+![Illustration of a dancing figure holding a bamboo branch and a spear.](./amenouzume.jpg)
 
-```text
-# Shinwa: The slaying of Kagutsushi
-#website/neosamurai
+After [the birth of _Kagutsushi_](/blog/2006/09/shinwa-birth-of-gods/),
+_Izanami_ suffered greatly and died from the pain. _Izanagi_ knelt at her feet
+and wept: “Oh that I should have exchanged thee for this single child!” From his
+tears was born _Nakisawame_ (_no-kami_) 泣沢女神, “Crying-Weeping-Female”.
 
-FRIDAY, SEPTEMBER 22, 2006
+Then _Izanagi_ buried her at Mount _Hiba_ 比婆の山 (_Hiba-no-yama_, in
+present-day Shimane prefecture). Unable to control his anger, _Izanagi_ drew his
+sword, _Totsuka-no-tsurugi_ 十拳剣, and cut down _Kagutsushi_. The sword
+measured ten “grasps”, each grasp being the width of four fingers when
+_Izanagi_'s hand was clenched. The blood that dripped from the point of the
+_Totsuka_ gave birth to three deities:
 
-![](Shinwa%20The%20slaying%20of%20Kagutsushi/amenouzume.jpg)
- [After the birth of Kagutsushi,](https://web.archive.org/web/20061107172119/http://neosamurai.blogspot.com/2006/09/shinwa-birth-of-gods.html)  Izanami suffered a lot and died from the pain. Izanagi kneeled down and wept at her legs: “Oh that I should have exchanged thee for this single child!”. From his tears was born *Nakisawame* (no-kami) 泣沢女神,”Crying-Weeping-Female”. Then Izanagi buried her in *Mount Hiba* 比婆の山 (Hiba-no-yama, current  [Shimane prefecture](https://web.archive.org/web/20061107172119/http://ja.wikipedia.org/upload/a/ad/Shimane-pref_Small.png) ). Being unable to control his anger, Izanagai drew his sword, *Totsuka-no-tsurugi**十拳剣*, a sword measuring 10 “grasps”, each grasp being the width of four fingers when Izanagi’s hand is clenched, and cut Kagutsushi. The droplets of blood that dripped from the point of the Totsuka gave birth to three deities:
-* *Iwasaku* (no-kami) 石折神, “Rock-Splitter”
-* *Nesaku* (no-kami) 根折神, “Root-Splitter”
-* *Ihatsu-tsunowo* (no-kami) 石筒之男神, “Rock-Possessing-Male”
+- _Iwasaku_ (_no-kami_) 石折神, “Rock-Splitter”
+- _Nesaku_ (_no-kami_) 根折神, “Root-Splitter”
+- _Ihatsu-tsunowo_ (_no-kami_) 石筒之男神, “Rock-Possessing-Male”
 
-Then from the blood that stuck on the upper part of the sabre three other deities were born:
-* *Mika-hayabi* (no-kami) 甕速日神,”Awfully-Swift-Deity”
-* *Hi-hayabi*(no-kami) 樋速日神,”Fire-Swift-Deity”
-* *Takemi-kazushinowo* (no-kami) 建御雷之男神,”Brave-Awful-Possessing-Male”, who is also called /Take-futsu (no-kami)/ 建布都神 or /Toyo-futsu (no-kami)/ 豊布都神.
+Then, from the blood that stuck to the upper part of the blade, three other
+deities were born:
 
-Two other deities were born from the blood that dripped from the hilt on Izanagi’s fingers,
-*Kurao-kami*/(no-kami)/闇淤加美神 *Kura-mitsuha*/(no-kami)/闇御津羽神. From Kagutsushi’s body parts were born eight deities:
-* From the head: *Masaka-yamatsumi* (no-kami) 正鹿山津見神, “Possessor-of-the-True-Pass-Mountains”
-* From the chest: *Odo-yamatsumi*(no-kami) 淤縢山津見神, “Possessor-of-Descent-Mountains”
-* From the belly: *Oku-yamatsumi*(no-kami) 奥山津見神, “Possessor-of-the-Innermost-Mountains”
-* From the genitalia: *Kura-yamatsumi*(no-kami) 闇山津見神, “Possessor-of-the-dark-Mountains”
-* From the left hand: *Shigi-yamatsumi* (no-kami) 志藝山津見神, “ossessor-of-the-Densely-Wooded-Mountain”
-* From the right hand: *Ha-yamatsumi*(no-kami) 羽山津見神, “Possessor-of-the-Outlying-Mountains”
-* From the left leg: *Hara-yamatsumi* (no-kami) 原山津見神, “Possessor-of-the-Moorland-Mountains”
-* From the right leg: *To-yamatsumi*(no-kami) 戸山津見神, “Possessor-of-the-Outer-Mountains”
+- _Mika-hayabi_ (_no-kami_) 甕速日神, “Awfully-Swift-Deity”
+- _Hi-hayabi_ (_no-kami_) 樋速日神, “Fire-Swift-Deity”
+- _Takemi-kazushinowo_ (_no-kami_) 建御雷之男神, “Brave-Awful-Possessing-Male”,
+  who is also called _Take-futsu_ (_no-kami_) 建布都神 or _Toyo-futsu_
+  (_no-kami_) 豊布都神.
 
-POSTED BY KAISHIN AT  [9:42 PM](https://web.archive.org/web/20061107172119/http://neosamurai.blogspot.com/2006/09/shinwa-slaying-of-kagutsushi.html)
-```
+Two other deities were born from the blood that dripped from the hilt onto
+_Izanagi_'s fingers: _Kurao-kami_ (_no-kami_) 闇淤加美神 and _Kura-mitsuha_
+(_no-kami_) 闇御津羽神. From _Kagutsushi_'s body parts were born eight deities:
 
-After the [birth of the gods](/blog/2006/09/shinwa-birth-of-gods/), Izanami died
-from the burns caused by Kagutsushi, the fire deity, at his birth. Izanagi knelt
-at her legs and wept: "Oh that I should have exchanged thee for this single
-child!" From his tears was born **Nakisawame** (no-kami) 泣沢女神:
-Crying-Weeping-Female.
-
-He then buried her at **Mount Hiba** 比婆の山 (Hiba-no-yama, in present-day
-Shimane prefecture). Unable to contain his grief and rage, he drew his sword
-**Totsuka-no-tsurugi** (十拳剣, a sword measuring ten grasps, each the width of
-four clenched fingers) and cut down Kagutsushi. The blood from the sword tip
-gave birth to three deities:
-
-- **Iwasaku** (no-kami) 石折神: Rock-Splitter.
-- **Nesaku** (no-kami) 根折神: Root-Splitter.
-- **Ihatsu-tsunowo** (no-kami) 石筒之男神: Rock-Possessing-Male.
-
-From the blood on the upper part of the blade came three more:
-
-- **Mika-hayabi** (no-kami) 甕速日神: Awfully-Swift-Deity.
-- **Hi-hayabi** (no-kami) 樋速日神: Fire-Swift-Deity.
-- **Takemi-kazushinowo** (no-kami) 建御雷之男神: Brave-Awful-Possessing-Male
-  (also called _Takefutsu_ (no-kami) 建布都神 or _Toyofutsu_
-  (no-kami) 豊布都神).
-
-From the blood on Izanagi's fingers came two more: **Kurao-kami**
-(no-kami) 闇淤加美神 and **Kura-mitsuha** (no-kami) 闇御津羽神. And from
-Kagutsushi's body parts came eight mountain deities:
-
-- From the head: **Masaka-yamatsumi** (no-kami) 正鹿山津見神:
-  Possessor-of-the-True-Pass-Mountains.
-- From the chest: **Odo-yamatsumi** (no-kami) 淤縢山津見神:
-  Possessor-of-Descent-Mountains.
-- From the belly: **Oku-yamatsumi** (no-kami) 奥山津見神:
-  Possessor-of-the-Innermost-Mountains.
-- From the genitalia: **Kura-yamatsumi** (no-kami) 闇山津見神:
-  Possessor-of-the-Dark-Mountains.
-- From the left hand: **Shigi-yamatsumi** (no-kami) 志藝山津見神:
-  Possessor-of-the-Densely-Wooded-Mountain.
-- From the right hand: **Ha-yamatsumi** (no-kami) 羽山津見神:
-  Possessor-of-the-Outlying-Mountains.
-- From the left leg: **Hara-yamatsumi** (no-kami) 原山津見神:
-  Possessor-of-the-Moorland-Mountains.
-- From the right leg: **To-yamatsumi** (no-kami) 戸山津見神:
-  Possessor-of-the-Outer-Mountains.
+- From the head: _Masaka-yamatsumi_ (_no-kami_) 正鹿山津見神,
+  “Possessor-of-the-True-Pass-Mountains”
+- From the chest: _Odo-yamatsumi_ (_no-kami_) 淤縢山津見神,
+  “Possessor-of-Descent-Mountains”
+- From the belly: _Oku-yamatsumi_ (_no-kami_) 奥山津見神,
+  “Possessor-of-the-Innermost-Mountains”
+- From the genitalia: _Kura-yamatsumi_ (_no-kami_) 闇山津見神,
+  “Possessor-of-the-Dark-Mountains”
+- From the left hand: _Shigi-yamatsumi_ (_no-kami_) 志藝山津見神,
+  “Possessor-of-the-Densely-Wooded-Mountain”
+- From the right hand: _Ha-yamatsumi_ (_no-kami_) 羽山津見神,
+  “Possessor-of-the-Outlying-Mountains”
+- From the left leg: _Hara-yamatsumi_ (_no-kami_) 原山津見神,
+  “Possessor-of-the-Moorland-Mountains”
+- From the right leg: _To-yamatsumi_ (_no-kami_) 戸山津見神,
+  “Possessor-of-the-Outer-Mountains”

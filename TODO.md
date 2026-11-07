@@ -631,6 +631,22 @@ rough edges, don't sand away the fingerprints.
 to migrate **Skipped:** 40 posts (too thin, dead media, or not real posts)
 **Total in archive:** 101 posts
 
+### Second Pass: Revise Against the Original
+
+Each migrated post carries the source under `## Original`. Revise the rewrite
+against it (keep the spirit, fix grammar, cut the worst cringe), check every
+link (dead → Wayback snapshot, no snapshot → plain text), then remove the
+`## Original` block. Reference: `browser-problems` (commit aa961fb).
+
+- [x] Browser Problems (May 2006)
+- [x] Benchmark Opus vs pi+Codex on The Hyde Height Controversy: chose
+      pi + Codex (`gpt-6.1-sol`, thinking high). Hyde output not applied yet.
+- [ ] Furusato, Kotowaza Vol. 1 and Vol. 2: confirm whether already revised
+      (no revision found in git; `## Original` block still present)
+- [x] Michael Jackson Samurai Wise, Way of the Samurai, Edo Soccer,
+      Japanese Mythology Origins
+- [ ] Revise the remaining posts with 4 parallel agents (56 left)
+
 ## Astro 6 Upgrade (superseded)
 
 The site has already upgraded to Astro 7 (see Shipped above). This earlier

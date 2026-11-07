@@ -5,54 +5,33 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+For previous events, check
+[Shinwa Wrap Up: The Beginnings](/blog/2006/10/shinwa-wrap-up-beginnings/).
 
-```text
-# Shinwa wrap up: Amaterasu and Susanowo
-#website/neosamurai
+After _Izanagi_ gave birth to his three children, _Amaterasu_, _Susanowo_, and
+_Tsukiyomi_, during his purification, _Susanowo_ wept like mad and declared that
+he wanted to join his mother _Izanami_ in the land of darkness, _Yomi_. Furious,
+_Izanagi_ expelled him. _Susanowo_ decided to bid farewell to his sister before
+descending, but his outrageous behavior caused _Amaterasu_ to seclude herself in
+a cave, depriving the earth of daylight. To bring _Amaterasu_ out and vanquish
+the darkness, myriads of deities gathered at the entrance of the cave and
+devised a plan. They hung a mirror opposite the rock blocking the entrance and
+started rejoicing and laughing loudly at _Ameno-uzume_'s dance. As _Amaterasu_
+grew curious, she peeped out of the entrance and was dazzled by the reflection
+of her own light in the mirror. The deity _Amenota-jikarawo_ took the
+opportunity to pull her out. Thus light returned once again.
 
-SATURDAY, NOVEMBER 04, 2006
-
-For previous events check:  [“Shinwa wrap up: the beginnings!”](https://web.archive.org/web/20061107172037/http://neosamurai.blogspot.com/2006/10/shinwa-wrap-up-beginnings.html) 
-After /Izanagi/gave birth to the three children, /Amaterasu/, /Susanowo/ and /Tsukiyomi/, during his purification act, /Susanowo/ wept like mad, and declared that he wishes to join his mother /Izanami/ in the land of darkness, /Yomi/. Furious, /Izanagi/expelled him. /Susanowo/ decided to bid farewell to his sister before descending, but his outrageous behavior caused /Amaterasu/ to seclude herself in a cave, depriving the earth from daylight. In order to bring /Amaterasu/out and vanquish darkness, myriads of deities gathered at the entrance of the cave, and devised a plan. They hung a mirror in the opposite direction of the rock blocking the entrance and started rejoicing and laughing out loud at /Ameno-uzume/’s dance. As Amaterasu grew curious, she peeped from the entrance, and got dazzled by the reflexion of her own light on the mirror. The deity /Amenota-jikarawo/took the opportunity and pulled her out. Thus light came back once again.
-
-/Susanowo/ was expelled definitely from the valley of heaven. He ended up in /Izumo/, where he met an old couple and their daughter weeping of fear from the eight-headed snake, /Yamata no orochi/, who came everyday to claim one of their daughters. /Susanowo/ offered a deal: getting rid of the monster if they accept to marry him their daughter, /Kushinada-hime/. After he got their accord, he set a trap to /Yamata no orochi/, enticing him to drink saké and let his guard down. Everything went according to /Susanowo’/s plan, and he succeeded in finishing off the giant eight-headed snake. He wedded /Kushinada-hime/, and settled down in /Suga/, where they started bearing offsrpings.
+_Susanowo_ was expelled from the valley of heaven for good. He ended up in
+_Izumo_, where he met an old couple and their daughter weeping in fear of the
+eight-headed snake, _Yamata no orochi_, who came every day to claim one of their
+daughters. _Susanowo_ offered a deal: he would get rid of the monster if they
+agreed to let him marry their daughter, _Kushinada-hime_. Once they agreed, he
+set a trap for _Yamata no orochi_, enticing him to drink _saké_ and let his
+guard down. Everything went according to _Susanowo_'s plan, and he succeeded in
+finishing off the giant eight-headed snake. He wedded _Kushinada-hime_ and
+settled down in _Suga_, where they started having children.
 
 For more details:
- [VII-Susanowo’s visit](https://web.archive.org/web/20061107172037/http://neosamurai.blogspot.com/2006/10/shinwa-susanowos-visit.html) 
- [VIII-The missing sun](https://web.archive.org/web/20061107172037/http://neosamurai.blogspot.com/2006/10/shinwa-missing-sun.html) 
- [IX-orochi, the eight-headed snake](https://web.archive.org/web/20061107172037/http://neosamurai.blogspot.com/2006/10/shinwa-orochi-eight-headed-snake.html) 
- [X-The palace of Suga](https://web.archive.org/web/20061107172037/http://neosamurai.blogspot.com/2006/10/shinwa-palace-of-suga.html) 
-
-POSTED BY KAISHIN AT  [3:41 PM](https://web.archive.org/web/20061107172037/http://neosamurai.blogspot.com/2006/11/shinwa-wrap-up-amaterasu-and-susanowo.html)
-```
-
-A summary of events since the
-[previous wrap-up](/blog/2006/10/shinwa-wrap-up-beginnings/).
-
-After Izanagi bore three children, Amaterasu, Susanowo, and Tsukiyomi, Susanowo
-was assigned the sea but refused to rule it, weeping ceaselessly until Izanagi
-expelled him. Before descending, Susanowo went to bid farewell to his sister.
-His turbulent approach alarmed Amaterasu, but he convinced her of his good
-intentions. They performed a trial: each produced children from the other's
-possessions. Amaterasu declared the five male _Kami_ her own and the three
-female _Kami_ Susanowo's. Emboldened, Susanowo grew destructive: he ruined the
-divisions between Amaterasu's ricefields, desecrated her new palace, and flung a
-flayed horse into her weaving hall. Amaterasu retreated into the cave
-**Amano-iwato**, plunging the world into darkness.
-
-The assembled deities devised a ruse. They hung a mirror opposite the cave
-entrance and staged a noisy celebration outside. Amaterasu grew curious and
-looked out; the mirror dazzled her with her own reflected light, and the deity
-Amenota-jikarawo pulled her out of the cave. Light was restored. The _Kami_
-punished Susanowo, expelled him definitively, and he descended to Izumo, where
-he met the old couple and their daughter weeping in fear of **Yamata no
-Orochi**, the eight-headed serpent. Susanowo offered to defeat the beast in
-exchange for the daughter's hand. He lured Orochi to drink sake from eight
-barrels, slew each head in turn, and took Kushinada-hime as his wife. They
-settled in **Suga**, where he composed the first poem in Japan.
-
-For more detail:
 
 - [VII: Susanowo's visit](/blog/2006/10/shinwa-susanowos-visit/)
 - [VIII: The missing sun](/blog/2006/10/shinwa-the-missing-sun/)

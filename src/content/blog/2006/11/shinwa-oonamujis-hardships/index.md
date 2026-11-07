@@ -5,65 +5,43 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+After [saving the white hare](/blog/2006/11/shinwa-the-white-hare-of-inaba/),
+_Oonamuji_, the youngest brother, continued on his way, following his siblings'
+trail. The white hare hurried to Princess _Yagami_ and gave her an account of
+_Oonamuji_'s deeds. Hearing the animal's words, she rejected the other brothers
+upon their arrival and vowed to marry the brave young man.
 
-```text
-## Shinwa: Oonamuji’s hardships
-#website/neosamurai
-
-*TUESDAY, NOVEMBER 21, 2006*
-
-After  [saving the white hare](https://web.archive.org/web/20070518232945/http://neosamurai.blogspot.com/2006/11/shinwa-white-hare-of-inaba.html) , *Oonamuji*, the younger of the eighty brothers, continued his path following the trails of his siblings. The white hare hurried to princess *Yagami* and gave her an account of /Oonamuji/’s deeds. Hearing the animal’s words, she rejected the other brothers upon their arrival, and vowed to marry the brave young man. Furious, the eighty brothers ran back to /Oonamuji/with an evil ploy to bring forth his demise. They invited him to razorback hunting in the mountain. The sneaky siblings ordered their young brother to wait at the bottom of the mountain for the beast, after having moused it out from the top. As planned, /Oonamuji/ stood at the base of a slope and waited. Meanwhile, his older brother were busy carving a huge boulder so as to look like a boar, then they torched it ablaze. They unleashed the huge rock down the slope and gazed from atop the mountain. The boulder was coming at an incredible speed, and the naive /Oonamuji/ couldn’t identify its shape clearly. He stood firmly, without even questioning the real intentions of his brothers. The blazing boulder scorched /Oonamuji/’s body, and made an end to his life.
-
-Following these events, his mother mourned and ascended to the Plain of Heavens (/Takama-no-hara/). She implored Takami-Musubi to bring back her child. So the great deity did send /Kisagahi-hime/ and /Umugi-hime/ who used their divine powers to bring back /Oonamuji/.
-
-His eighty brothers couldn’t stand seeing him coming back to life, so they decided to deceive him again. They invited him for a walk in the mountain after having set up a trap for him. They cut a tree horizontally , and fixed a wedge between the two halves. Led by his brothers, the naive Oonamuji was standing on the wedge, when they promptly removed it and trapped him in the tree. They tortured him to death. Hearing his groaning, his mother rushed to the forest and released him. She intervened once again to bring him back to life, and advised him to leave Inaba at once, in order to escape the evil deeds of his siblings. He headed towards /Ohayabiko(no-kami)/’s place, in the land of Ki (land of trees). His brothers followed him with their bows and arrows, but he swiftly disappeared. It was about time that /Oonamuji/understands that his brothers want him no good!
-
-NOTE:
-There are various spellings of /Oonamuji/include /O_h_onamuji/, /O_h_onamudi,/ /O_h_namuji/, and others.By historical reasons, /k/, /s/, /t/, and /h/ are sometimes confused with /g/, /z/, /d/, and /b/ respectively. For instance, various spellings of /O_h_onamudi/ also include /O_h_onamuti/ and /O_h_onamuchi/(wikipedia)
-
-
-Posted by Kai心
-at  [7:11 PM](https://web.archive.org/web/20070518232945/http://neosamurai.blogspot.com/2006/11/shinwa-oonamujis-hardships.html)
-```
-
-After
-[saving the white hare](https://web.archive.org/web/20070518232945/http://neosamurai.blogspot.com/2006/11/shinwa-white-hare-of-inaba.html),
-_Oonamuji_, the younger of the eighty brothers, continued his path following the
-trails of his siblings. The white hare hurried to princess _Yagami_ and gave her
-an account of _Oonamuji_'s deeds. Hearing the animal's words, she rejected the
-other brothers upon their arrival, and vowed to marry the brave young man.
 Furious, the eighty brothers ran back to _Oonamuji_ with an evil ploy to bring
-forth his demise. They invited him to razorback hunting in the mountain. The
+about his demise. They invited him to hunt wild boar in the mountains. The
 sneaky siblings ordered their young brother to wait at the bottom of the
-mountain for the beast, after having moused it out from the top. As planned,
+mountain for the beast, which they would flush out from above. As planned,
 _Oonamuji_ stood at the base of a slope and waited. Meanwhile, his older
-brothers were busy carving a huge boulder so as to look like a boar, then they
-torched it ablaze. They unleashed the huge rock down the slope and gazed from
-atop the mountain. The boulder was coming at an incredible speed, and the naive
-_Oonamuji_ couldn't identify its shape clearly. He stood firmly, without even
-questioning the real intentions of his brothers. The blazing boulder scorched
-_Oonamuji_'s body, and made an end to his life.
+brothers were busy carving a huge boulder to look like a boar, then setting it
+ablaze. They sent the huge rock down the slope and watched from atop the
+mountain. The boulder was coming at an incredible speed, and the naive
+_Oonamuji_ couldn't make out its shape clearly. He stood firm, without even
+questioning his brothers' real intentions. The blazing boulder scorched
+_Oonamuji_'s body and put an end to his life.
 
-Following these events, his mother mourned and ascended to the Plain of Heavens
-(_Takama-no-hara_). She implored _Takami-Musubi_ to bring back her child. So the
-great deity did send _Kisagahi-hime_ and _Umugi-hime_ who used their divine
-powers to bring back _Oonamuji_.
+His mother mourned and ascended to the Plain of Heavens (_Takama-no-hara_). She
+implored _Takami-Musubi_ to bring back her child. So the great deity sent
+_Kisagahi-hime_ and _Umugi-hime_, who used their divine powers to bring
+_Oonamuji_ back to life.
 
-His eighty brothers couldn't stand seeing him coming back to life, so they
-decided to deceive him again. They invited him for a walk in the mountain after
-having set up a trap for him. They cut a tree horizontally, and fixed a wedge
-between the two halves. Led by his brothers, the naive _Oonamuji_ was standing
-on the wedge, when they promptly removed it and trapped him in the tree. They
-tortured him to death. Hearing his groaning, his mother rushed to the forest and
-released him. She intervened once again to bring him back to life, and advised
-him to leave _Inaba_ at once, in order to escape the evil deeds of his siblings.
-He headed towards _Ohayabiko-no-kami_'s place, in the land of _Ki_ (land of
-trees). His brothers followed him with their bows and arrows, but he swiftly
-disappeared. It was about time that _Oonamuji_ understands that his brothers
-want him no good!
+His eighty brothers couldn't stand seeing him come back to life, so they decided
+to deceive him again. They invited him for a walk in the mountains after setting
+up a trap for him. They cut a tree horizontally and held the two halves apart
+with a wedge. Led there by his brothers, the naive _Oonamuji_ was standing on
+the wedge when they promptly removed it, trapping him in the tree. They tortured
+him to death. Hearing his groaning, his mother rushed to the forest and released
+him. She intervened once again to bring him back to life and advised him to
+leave _Inaba_ at once to escape the evil deeds of his siblings. He headed
+towards _Ohayabiko-no-kami_'s place, in the land of _Ki_ (land of trees). His
+brothers followed him with their bows and arrows, but he swiftly disappeared. It
+was about time _Oonamuji_ understood that his brothers were up to no good!
 
-**Note:** There are various spellings of Oonamuji, including Ohonamuji,
-Ohonamudi, Ohnamuji, and others. For historical reasons, /k/, /s/, /t/, and /h/
-are sometimes confused with /g/, /z/, /d/, and /b/ respectively. Various
-spellings of Ohonamudi also include Ohonamuti and Ohonamuchi (Wikipedia).
+**Note:** There are various spellings of _Oonamuji_, including _Ohonamuji_,
+_Ohonamudi_, _Ohnamuji_, and others. For historical reasons, /k/, /s/, /t/, and
+/h/ are sometimes confused with /g/, /z/, /d/, and /b/, respectively. For
+instance, spellings of _Ohonamudi_ also include _Ohonamuti_ and _Ohonamuchi_
+(Wikipedia).

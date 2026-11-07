@@ -5,30 +5,15 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+The 53 stages, or _Toukaidou Gojuusan Tsugi_
+([東海道五十三次](https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1))
+in Japanese, are the stations on the _Toukaidou_ (Eastern Sea Path), the
+Edo-Kyoto highway during the Edo period.
 
-```text
-# 53 stages on the Toukaidou…
-#website/neosamurai
+18 _mangaka_ (cartoonists) have recently collaborated on a manga scroll
+depicting those 53 stations in a traditional Japanese style, with a touch of
+satire. (via Wa-no-Kokoro)
 
-THURSDAY, OCTOBER 05, 2006
-
-…or Toukaidou Gojuusan Tsugi  [東海道五十三次](https://web.archive.org/web/20061107172015/http://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1)  in Japanese, are the 53 stations on the Toukaidou (Eastern sea path), the Edo-Kyoto highway in the edo-period.
-
-18 Mangaka (cartoonists) have lately collaborated to make a  [Manga scroll](https://web.archive.org/web/20061107172015/http://homepage1.nifty.com/nagaragawagarou/A-208.htm)  depicting those 53 stations in a Japanese traditional style, with a touch of satire. (via  [Wa-no-Kokoro](https://web.archive.org/web/20061107172015/http://www.samurai69.net/mt/mt-tb.cgi/504) )
-
-Beside, tomorrow’s the next installment of Shinwa, the part involving Amaterasu and Susanowo. Look forward to it, as from there on is the most exciting part of Shinwa!
-
-POSTED BY KAISHIN AT  [9:42 PM](https://web.archive.org/web/20061107172015/http://neosamurai.blogspot.com/2006/10/53-stages-on-toukaidou.html)
-```
-
-Toukaidou Gojuusan Tsugi
-([東海道五十三次](https://web.archive.org/web/20061107172015/http://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1))
-are the 53 stations on the Toukaidou, the Edo–Kyoto highway during the Edo
-period.
-
-18 mangaka have collaborated on a
-[manga scroll](https://web.archive.org/web/20061107172015/http://homepage1.nifty.com/nagaragawagarou/A-208.htm)
-depicting those 53 stations in traditional Japanese style, with a touch of
-satire. (via
-[Wa-no-Kokoro](https://web.archive.org/web/20061107172015/http://www.samurai69.net/mt/mt-tb.cgi/504))
+Also, tomorrow’s the next installment of _Shinwa_, the part involving Amaterasu
+and Susanowo. Look forward to it, as this is where the most exciting part of
+_Shinwa_ begins!

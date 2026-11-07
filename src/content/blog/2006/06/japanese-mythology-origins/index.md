@@ -5,50 +5,37 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+I've finally decided to delve into the depths of _Nihon Shinwa_ (日本神話), or
+Japanese mythology in English.
 
-```text
-# Japanese mythology: Origins
-#website/neosamurai
+Often overlooked in favor of feudal Japanese history, Japanese mythology is a
+fascinating and exquisite facet of Japanese traditional culture and beliefs.
+Japanese folklore is part of today's mainstream culture, even if it often goes
+unnoticed because the two are so closely woven together.
 
-SATURDAY, JUNE 03, 2006
+The origins of _Shinwa_, as I'll refer to it from now on, are varied enough to
+leave anyone confused. From Chinese-influenced Buddhist beliefs to Shintoist
+traditions, by way of agricultural folklore, _Nihon Shinwa_ deserves its place
+among the richest and most complicated mythologies on earth.
 
-I have finally decided to delve into the depths of Nihon Shinwa (日本神話), or more appropriately Japanese Mythology in English.
-Often overlooked in favor of Feudal Japanese history, Japanese mythology is a fascinating, as well as exquisite facet of Japanese traditional culture and beliefs. Japanese folklore is a part of today’s mainstream culture, even though often unnoticed since it can’t be dissociated from the latter.
-The origins of Shinwa ,as I will refer to it henceforth, are versatile enough to drive one confused. From Chinese influenced Buddhist beliefs, to Shintoist traditions, en passant by agricultural-based folklore beliefs, Nihon Shinwa deserves its rank among the richest and most complicated mythologies on earth.
-The first recorded chronicle of Shinwa is the famous KOJIKI (古事記), translated literally as “Records of Ancient Matters”, that was complied in 712 AD by the order of Empress Gemmei. The Kojiki contains many mythological stories and chronicles, from the beginning of the world till the reign of Empress Gimmei. It is divided into three parts:
-Kami Tsumaki 上巻（かみつまき）(lit. Upper volume)focusing of the creation of Japan and the various deities (In shinto Pantheon there counts more than 8000 Kami/Megami).
-Naka Tsumaki 中巻（なかつまき）(lit. Middle volume)covering the period extending from the reign of Jimmu, the first empror of Japan, till the 15th empror Ojin .
-Shimo Tsumaki 下巻（しもつまき）(lit. Lower volume)covering the 16th to 33rd Emperors.
+The first recorded chronicle of _Shinwa_ is the famous _Kojiki_ (古事記),
+literally "Records of Ancient Matters," compiled in 712 AD by order of Empress
+Gemmei. The _Kojiki_ contains mythological stories and chronicles, from the
+beginning of the world to the reign of Empress Gemmei. It's divided into three
+parts:
 
-Even though the kojiki is the most prominent source of Shinwa, it lacks many details and events, especially concerning the deeds of several emprors who were mentioned without any further insight into their lives.
+- _Kami Tsumaki_ 上巻（かみつまき） (literally "Upper Volume") focuses on the
+  creation of Japan and its various deities. The Shinto pantheon counts more
+  than 8,000 _kami_ and _megami_.
+- _Naka Tsumaki_ 中巻（なかつまき） (literally "Middle Volume") covers the
+  period from the reign of Jimmu, the first emperor of Japan, to the 15th
+  emperor, Ojin.
+- _Shimo Tsumaki_ 下巻（しもつまき） (literally "Lower Volume") covers the 16th
+  through 33rd emperors.
 
-For those who want to do some further readings,  [here](https://web.archive.org/web/20061107172609/http://www.sacred-texts.com/shi/kj/index.htm)  is an online version of Basil Hall Chamberlain’s 1919 translation of Kojiki.
+Even though the _Kojiki_ is the most prominent source of _Shinwa_, it leaves out
+many details and events, especially the deeds of several emperors who are
+mentioned without any further insight into their lives.
 
-POSTED BY KAISHIN AT  [2:13 PM](https://web.archive.org/web/20061107172609/http://neosamurai.blogspot.com/2006/06/japanese-mythology-origins.html)
-```
-
-I've decided to delve into _Nihon Shinwa_ (日本神話), Japanese mythology. Often
-overshadowed by feudal history, it's a fascinating and underappreciated facet of
-Japanese traditional culture, deeply woven into mainstream culture even when it
-goes unnoticed.
-
-The origins of _Shinwa_ (as I'll refer to it from here) are varied enough to be
-confusing: Chinese-influenced Buddhist beliefs, Shintoist traditions,
-agricultural folklore, all intertwined. It deserves its place among the richest
-mythologies in the world.
-
-The first recorded chronicle of _Shinwa_ is the _Kojiki_ (古事記), "Records of
-Ancient Matters," compiled in 712 AD by order of Empress Gemmei. It's divided
-into three parts:
-
-- **Kami Tsumaki** 上巻 (Upper Volume): The creation of Japan and its deities.
-  The Shinto pantheon counts more than 8,000 _kami_.
-- **Naka Tsumaki** 中巻 (Middle Volume): From the reign of Jimmu, the first
-  Emperor, through the 15th Emperor Ojin.
-- **Shimo Tsumaki** 下巻 (Lower Volume): The 16th through 33rd Emperors.
-
-The _Kojiki_ is the primary source of _Shinwa_, though it leaves many gaps;
-several emperors are mentioned without much detail. An
-[online translation](https://web.archive.org/web/20061107172609/http://www.sacred-texts.com/shi/kj/index.htm)
-by Basil Hall Chamberlain (1919) is available for further reading.
+For those who want to read further, here's an
+[online version of Basil Hall Chamberlain's 1919 translation of _Kojiki_](https://web.archive.org/web/20060524004618/http://www.sacred-texts.com/shi/kj/index.htm).

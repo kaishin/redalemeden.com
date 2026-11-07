@@ -5,102 +5,91 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+![A shadowy figure raising an arm toward the light in a dark, green-toned painting.](./yomi.jpg)
 
-```text
-# Shinwa: The realm of Hades
-#website/neosamurai
+_Ameno-wo-habari_ 天之尾羽張 (also _Itsuno-wo-habari_ 都之尾羽張) was the name
+of Izanagi's blood-stained saber after
+[he cut down his son Kagutsushi](/blog/2006/09/shinwa-slaying-of-kagutsushi/),
+who was responsible for the death of his mother, Izanami. The saber is usually
+called _Totsuka-no-tsurugi_. Izanagi mourned his younger sister and decided to
+head towards _Yomi_ 黄泉の国 (_Yomi-no-kuni_), the land of Hades, to bring her
+back. _Yomi_ is believed to be the land where the dead are sent to rot forever.
+Unlike _Takamanohara_, the high heavenly plain, _Yomi_ is an underground realm
+with a geographical connection to the earth.
 
-MONDAY, SEPTEMBER 25, 2006
+At _Yomi_'s entrance, believed to be in present-day
+[Izumo Province](https://web.archive.org/web/20070621221523/http://upload.wikimedia.org/wikipedia/en/0/0b/Japan_prov_map_izumo.PNG),
+Izanagi met Izanami. In the pitch darkness, he could only make out his sister's
+blurry silhouette from outside. She came out from the depths of the filthy land
+to meet him, and he said:
 
-![](Shinwa%20The%20realm%20of%20Hades/04.11.aoki.jpg)
-
-*Ameno-wo-habari*天之尾羽張 (also *Itsuno-wo-habari*都之尾羽張)… so was called Izanagi’s blood-stained saber*1, after  [he cut down his son Kagutsushi](https://web.archive.org/web/20061107172119/http://neosamurai.blogspot.com/2006/09/shinwa-slaying-of-kagutsushi.html) , who was the responsible of Izanami’s, his mother, death . Izanagi bemoaned his younger sister’s demise, and decided to head towards *Yomi* 黄泉の国 (Yomi-no-kuni), or the land of Hades, to bring back Izanami. Yomi is believed to be the land where the dead are sent, rotting there forever. Unlike *Takamanohara*, the high heaven plain, Yomi in an underground realm that has a geographical connection with earth.
-Once at Yomi’s entrance, believed to be in present day [ Izumo Province](https://web.archive.org/web/20061107172119/http://upload.wikimedia.org/wikipedia/en/0/0b/Japan_prov_map_izumo.PNG) , Izanagi met Izanami, even though he couldn’t see but his sister’s blurry silhouette from outside, due to the pitch darkness of Yomi. Izanagi told Izanami, who came out from the depths of the dirty land to meet him:
-
-“My lovely younger sister! the lands that I and thou made are not yet finished making; so come back!”
-
-“Lamentable indeed that thou earnest not sooner! I have eaten of the furnace of Hades*2. Nevertheless, as I reverence the entry here of my lovely elder brother, I wish to return with thee to the land of the living. Moreover I will discuss it particularly with the Yomutsu-kami 黄泉神, the deities of Hades. Look not at me!” Replied Izanami.
-Izanami headed back towards the palace of the Yomitsu-kami to consult with them about leaving Yomi, insisting that Izanagi should by no mean take a glimpse at her. Truth is that Izanami was afraid of shocking her brother, when he’ll discover her repugnant form. Izanagi grew worried about his sister tardiness. Impatient, he torched the outermost tooth of the comb stuck in the left side of his long hair, and headed towards the abysses of Yomi to find Izanami. On his way, he witnessed the repugnance of the underworld. His appall was overwhelming when he caught up with Izanami and looked at her outrageously horrid and rotten body, with umpteen maggots swarming all over. From every rotten part of the body, dwelt a kami:
-* In her head, *Ohoi-kazuchi*大雷, the “Great thunder”
-* In her breasts , *Honoi-kazuchi* 火雷, the “Fire thunder”
-* In her belly, *Kuroi-kazuchi* 黒雷, the “Black thunder”
-* In her genitalia, *Sakii-kazuchi* 折雷, the “Chance thunder”
-* In her left hand, *Wakai-kazuchi*若雷, the “Young thunder”
-* In her right hand,*Tsuchii-kazuchi* 土雷, the “Land thunder”
-* In her left leg, *Narii-kazuchi*鳴雷, the “Rumbling thunder”
-* In her right leg, *Fushii-kazuchi* 伏雷, the “Couchant thunder”
-
-Scared, Izanagi fled back. Izanami, angry at him for disobeying her, said “Thou hast put me to shame”, then ordered *Yomotsushi-kome* 黄泉醜女, the “Ugly-female-of-Hades” to chase after him. Izanagi tossed away his headgear , and made it transform into grapes, in an attempt to delay Yomotsushi-kome. He kept running while she were picking them and enjoying their taste, a taste that she is unlikely to come across in Yomi. However she promptly caught up with him. He took off the outermost tooth of his right comb and made into turn into bamboo-sprouts, then fled on while she was devouring them. Izanami noticed that Yomotsushi-kome wasn’t a match to Izanagi, so she sent the eight thunder deities, along with 1500 warriors of Hades to catch him. He drew his saber the *Totsuka-no-tsurugi* and ran brandishing it at his back. When he reached the hills of *Yomotsu-hirasaka* 黄泉比良坂 , or the “Even Pass of Hades”, he took three peaches off the tree, and hurled them at the rushing hordes. Scared of his might, they fled back to where they came from. Izanagi uttered to thank the peaches that saved his life: “Like as ye have helped me, so must ye help all living people when they shall fall into troublous circumstances and be harassed!”, and then called them *Ohoka-muzumi-nomikoto* 意富加牟豆美命, the “Great-Divine-Fruit”. desperate, Izanami decided to pursue him herself. Izanagi rushed to the base of the slope that leads to Yomi, /Yomotsu-hirasaka ,/and blocked the pass with a huge boulder, called *Chibiki-no-iwa* 千引の岩. Each standing on one side of the boulder,Izanami said: “My lovely elder brother, If thou do like this, I will in one day strangle to death a thousand of the folks of thy land.” Then Izanagi replied: “My lovely younger sister, If /thou/ do this, /I/ will in one day set up a thousand and five hundred parturition-houses. In this manner each day a thousand people would surely be born.” From his event and on, Izanagi was called *Yomotsu-ohokami* 黄泉津大神, the “Great-deaity-of-Hades”. The rock blocking the path was called *Chikaheshi-no-ohokami* 道返之大神, the “Great-Deity-of-the-Road-Turning-back” and the pass is called *Ifuya* (伊賦夜坂 Ifuyazaka).
-
-
-*1: Usually called Totsuka-no-tsurugi
-*2: Those who taste the underground’s food, can never come out of it
-All the quotes are directly taken from Hall Chamberlain’s translation of the Kojiki, with few modifications.
-
-POSTED BY KAISHIN AT  [1:19 AM](https://web.archive.org/web/20061107172119/http://neosamurai.blogspot.com/2006/09/shinwa-realm-of-hades.html)
-```
-
-After [slaying Kagutsushi](/blog/2006/09/shinwa-slaying-of-kagutsushi/), Izanagi
-mourned Izanami and decided to descend to **Yomi** (黄泉の国, _Yomi-no-kuni_),
-the land of Hades, to bring her back. Unlike _Takamanohara_, the high heavenly
-plain, _Yomi_ is an underground realm with a geographical connection to the
-earth. Those who eat its food can never leave.
-
-At _Yomi_'s entrance, believed to be in present-day Izumo Province, Izanagi
-called out to Izanami's dim silhouette in the darkness:
-
-"My lovely younger sister! the lands that I and thou made are not yet finished
+"My lovely younger sister! The lands that I and thou made are not yet finished
 making; so come back!"
 
-She replied: "Lamentable indeed that thou earnest not sooner! I have eaten of
-the furnace of Hades. Nevertheless, as I reverence the entry here of my lovely
-elder brother, I wish to return with thee to the land of the living. Moreover I
-will discuss it particularly with the Yomutsu-kami, the deities of Hades. Look
-not at me!"
+"Lamentable indeed that thou camest not sooner! I have eaten of the furnace of
+Hades. Nevertheless, as I reverence the entry here of my lovely elder brother, I
+wish to return with thee to the land of the living. Moreover I will discuss it
+particularly with the _Yomutsu-kami_ 黄泉神, the deities of Hades. Look not at
+me!" replied Izanami.
 
-She headed deeper into _Yomi_ to consult the _Yomutsu-kami_, warning Izanagi not
-to follow. He waited, grew impatient, lit the tooth of a comb as a torch, and
-went after her. What he found was her body, putrid and swarming with maggots.
-From each rotten part dwelt a _Kami_:
+Those who taste the underworld's food can never leave. Izanami headed back to
+the palace of the _Yomutsu-kami_ to consult with them about leaving _Yomi_,
+insisting that Izanagi must not catch a glimpse of her. The truth was that she
+was afraid of shocking her brother with her repugnant form.
 
-- In her head: **Ohoi-kazuchi** 大雷, Great Thunder.
-- In her breasts: **Honoi-kazuchi** 火雷, Fire Thunder.
-- In her belly: **Kuroi-kazuchi** 黒雷, Black Thunder.
-- In her genitalia: **Sakii-kazuchi** 折雷, Chance Thunder.
-- In her left hand: **Wakai-kazuchi** 若雷, Young Thunder.
-- In her right hand: **Tsuchii-kazuchi** 土雷, Land Thunder.
-- In her left leg: **Narii-kazuchi** 鳴雷, Rumbling Thunder.
-- In her right leg: **Fushii-kazuchi** 伏雷, Couchant Thunder.
+Izanagi grew worried at his sister's delay. Impatient, he lit the outermost
+tooth of the comb tucked into the left side of his long hair and headed into the
+depths of _Yomi_ to find her. On his way, he witnessed the horrors of the
+underworld. He was overwhelmed with dread when he caught up with Izanami and saw
+her horrid, rotten body, with countless maggots swarming all over it. In each
+rotten part of her body dwelt a _kami_:
 
-Terrified, Izanagi fled. Izanami shouted, "Thou hast put me to shame," and sent
-**Yomotsushi-kome** (黄泉醜女, Ugly-Female-of-Hades) after him. Izanagi threw
-down his headgear; it became grapes, which she stopped to eat. When she caught
-up, he threw a comb tooth, which became bamboo shoots. He escaped again, but
-Izanami herself joined the pursuit, along with the eight thunder deities and
-1,500 warriors of Hades.
+- In her head, _Ohoi-kazuchi_ 大雷, the "Great Thunder"
+- In her breasts, _Honoi-kazuchi_ 火雷, the "Fire Thunder"
+- In her belly, _Kuroi-kazuchi_ 黒雷, the "Black Thunder"
+- In her genitalia, _Sakii-kazuchi_ 折雷, the "Chance Thunder"
+- In her left hand, _Wakai-kazuchi_ 若雷, the "Young Thunder"
+- In her right hand, _Tsuchii-kazuchi_ 土雷, the "Land Thunder"
+- In her left leg, _Narii-kazuchi_ 鳴雷, the "Rumbling Thunder"
+- In her right leg, _Fushii-kazuchi_ 伏雷, the "Couchant Thunder"
 
-At the hills of **Yomotsu-hirasaka** (黄泉比良坂, the Even Pass of Hades),
-Izanagi grabbed three peaches from a tree and hurled them at his pursuers. They
-retreated in fear. Grateful, he named the peaches **Ohoka-muzumi-nomikoto**
-(意富加牟豆美命, Great-Divine-Fruit) and charged them to aid all living people
-in distress.
+Terrified, Izanagi fled. Izanami, angry at him for disobeying her, said, "Thou
+hast put me to shame," then ordered _Yomotsushi-kome_ 黄泉醜女, the
+"Ugly-Female-of-Hades," to chase after him. Izanagi tossed away his headgear and
+made it turn into grapes in an attempt to delay her. He kept running while she
+picked them and enjoyed their taste, a taste she was unlikely to come across in
+_Yomi_. But she soon caught up with him. He broke off the outermost tooth of his
+right comb and made it turn into bamboo shoots, then fled while she devoured
+them.
 
-Izanami then came herself. Izanagi reached the base of the slope and blocked the
-pass with a great boulder, **Chibiki-no-iwa** (千引の岩). Standing on opposite
-sides of the rock:
+Izanami saw that _Yomotsushi-kome_ was no match for Izanagi, so she sent the
+eight thunder deities, along with 1,500 warriors of Hades, to catch him. He drew
+his saber, _Totsuka-no-tsurugi_, and ran, brandishing it behind him. When he
+reached the hills of _Yomotsu-hirasaka_ 黄泉比良坂, the "Even Pass of Hades," he
+took three peaches from a tree and hurled them at the rushing hordes. Scared of
+his might, they fled back to where they came from.
 
-"My lovely elder brother, If thou do like this, I will in one day strangle to
-death a thousand of the folks of thy land." said Izanami.
+Izanagi thanked the peaches that had saved his life: "Like as ye have helped me,
+so must ye help all living people when they shall fall into troublous
+circumstances and be harassed!" He then called them _Ohoka-muzumi-nomikoto_
+意富加牟豆美命, the "Great-Divine-Fruit."
 
-"My lovely younger sister, If thou do this, I will in one day set up a thousand
-and five hundred parturition-houses. In this manner each day a thousand people
-would surely be born." replied Izanagi.
+Desperate, Izanami decided to pursue him herself. Izanagi rushed to the base of
+the slope leading to _Yomi_, _Yomotsu-hirasaka_, and blocked the pass with a
+huge boulder called _Chibiki-no-iwa_ 千引の岩. With each of them standing on one
+side of the boulder, Izanami said:
 
-From that day, Izanagi was called **Yomotsu-ohokami** (黄泉津大神,
-Great-Deity-of-Hades). The blocking rock was called **Chikaheshi-no-ohokami**
-(道返之大神, Great-Deity-of-the-Road-Turning-Back), and the pass was called
-**Ifuya** (伊賦夜坂 _Ifuyazaka_).
+"My lovely elder brother, if thou do like this, I will in one day strangle to
+death a thousand of the folks of thy land."
 
-All quotes are taken directly from Hall Chamberlain's translation of the Kojiki,
-with minor modifications.
+Then Izanagi replied: "My lovely younger sister, if thou do this, I will in one
+day set up a thousand and five hundred parturition-houses. In this manner each
+day a thousand people would surely be born."
+
+From then on, Izanagi was called _Yomotsu-ohokami_ 黄泉津大神, the
+"Great-Deity-of-Hades." The rock blocking the path was called
+_Chikaheshi-no-ohokami_ 道返之大神, the "Great-Deity-of-the-Road-Turning-Back,"
+and the pass was called _Ifuya_ (伊賦夜坂 _Ifuyazaka_).
+
+All quotes are taken directly from Hall Chamberlain's translation of the
+_Kojiki_, with minor modifications.

@@ -5,25 +5,19 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
-
-```text
-# Samurai Clay
-#website/neosamurai
-
 コンチャ！
-It is pretty hard to come up with a fine topic everyday, especially if I don’t feel like writing about anything!
-I spent the day in front of my desk, listening to Podcasts, practicing Kanjis and drawing. I highly recommend  [Japan Talk](https://web.archive.org/web/20061107172136/http://japantalk.org/)  podcast for Japan-related news and stories, the topics are well chosen, and they feature nice podsafe music. Talking about podsafe music, I checked  [the website](https://web.archive.org/web/20061107172136/http://music.podshow.com/)  this evening to see what Japanese artists have to offer, and I wasn’t disapointed at all.
-I was browsing youtube when I came across this clay animated short movie entitled: Samurai Clay! enjoy!
 
-POSTED BY KAISHIN AT  [12:25 AM](https://web.archive.org/web/20061107172136/http://neosamurai.blogspot.com/2006/08/samurai-clay.html)
-```
+It's pretty hard to come up with a good topic every day, especially when I don't
+feel like writing about anything!
 
-コンチャ！ Spent the day at my desk listening to podcasts, practicing _kanji_,
-and drawing. For Japan-related news and stories, I highly recommend the
-[Japan Talk](https://web.archive.org/web/20061107172136/http://japantalk.org/)
-podcast — well-chosen topics and good podsafe music. I also browsed
-[the podsafe music site](https://web.archive.org/web/20061107172136/http://music.podshow.com/)
-to see what Japanese artists had to offer, and wasn't disappointed.
+I spent the day at my desk, listening to podcasts, practicing _kanji_, and
+drawing. I highly recommend the
+[Japan Talk](https://web.archive.org/web/20061116052008/http://www.japantalk.org:80/)
+podcast for Japan-related news and stories. The topics are well chosen, and they
+feature nice podsafe music. Speaking of podsafe music, I checked
+[the podsafe music website](https://web.archive.org/web/20060805070645/http://music.podshow.com:80/)
+this evening to see what Japanese artists have to offer, and I wasn't
+disappointed at all.
 
-PS: While on YouTube, I came across a clay-animated short titled _Samurai Clay_.
+I was browsing YouTube when I came across a clay-animated short film titled
+_Samurai Clay_.

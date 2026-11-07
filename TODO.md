@@ -645,7 +645,7 @@ link (dead → Wayback snapshot, no snapshot → plain text), then remove the
       (no revision found in git; `## Original` block still present)
 - [x] Michael Jackson Samurai Wise, Way of the Samurai, Edo Soccer,
       Japanese Mythology Origins
-- [ ] Revise the remaining posts with 4 parallel agents (28 left; 32 done in
+- [ ] Revise the remaining posts with 4 parallel agents (16 left; 44 done in
       this pass, see `git log --grep 'against original'`)
 
 ## Astro 6 Upgrade (superseded)

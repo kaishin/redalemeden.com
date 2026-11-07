@@ -5,98 +5,64 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
-
-```text
-## Sidestories to end Ookuninushi’s arc
-
-#website/neosamurai
-
-*WEDNESDAY, JANUARY 31, 2007*
-
-[Sidestories to end Ookuninushi’s arc](https://web.archive.org/web/20070519115217/http://neosamurai.blogspot.com/2007/01/sidestories-to-end-ookuninushis-arc.html)
-
-I have been writing about /Ookuninushi/ since November, and honestly I grew tired. This part of the /Kojiki/ lacks “action”, and most of the events are trivial at best. This great Susanowo’s descendant , who had a dozen of wives, was entrusted with the mission of “making the land”, and thus moved to  [Izumo](https://web.archive.org/web/20070519115217/http://en.wikipedia.org/wiki/Izumo_province) (today’s /Shimane-ken/), where he run into a deity wearing a moth skin, and riding the waves on a potato-like oval boat with his consorts (I couldn’t depict it in my mind though, so please help if you manage to do so). They docked their vessel, and came towards /Oonamuji/, who asked the deity his name. However the latter kept silent and refused to talk. His siblings claimed that they don’t know his name as well. Then a toad popped up from nowhere (??) and said “/Kue-Biko/(久延毘古) will surely know”. I think that this part is a little bit ambiguous, I mean , what on earth is that toad supposed to embody? Here is the line, taken word by word from Kojiki:
-
-すると多邇具久【たにぐく】が、「これは久延毘古【クエビコがきっと知っているでしょう」と申し上げた。
-
-Actually the toad was referred to as /Taniguku/ (多邇具久), which is an archaic word (modern: /hikigaeru/ (蟾蜍)), coming from Tani 谷　meaning valley, and /guu-kuu/ グークー, which is also an archaic onomatopoeia for frogs sound (modern: /kero-kero/ (ケロケロ)).Then the toad called Kue-biko, who replied that the deity if front of him is *Sukuna-Bikona*(/no-kami)/ 少名毘古那神, the little deity, son of *Kami-musubi*/(no-kami)/神産巣日, one of the first three deities that  [appeared in the universe](https://web.archive.org/web/20070519115217/http://neosamurai.blogspot.com/2006/09/shinwa-creation-of-universe.html) . When *Ookuninushi* asked him,  [Kami-musubi](https://web.archive.org/web/20070519115217/http://neosamurai.blogspot.com/2006/09/shinwa-creation-of-universe.html)  confirmed, saying:
-
-This is my child certainly. Among my children, this is the child who dripped between the fork of my fingers. So, thou, be brotherhood with /Ashihara-Shikowo-no-Mikoto/, then make and strengthen this land.”
-
-And guess who is /Ashihara-shiwoko/ (葦原色許男)? It is no one but /Ookuninushi/ himself!! And if I remember well, this is his fourth or so alias, meaning “The-Strong-Male-Deity-of-Reed-Plain”! And that is not all, it seems like he had another one as well, /Utsushi-Kunitama/ (宇都志国玉), the “The-Splendid-Deity-of-Land-Soul”…
-
-Thereupon, the two deities collaborated and expanded the land. But then, /Sukuna-Bikona/ left to the Eternal land (/Tokoya-no-kuni/常世国), a land beyond the sea.
-
-That /Kue-biko/, who is rumored to know everything, got a new alias after this incident, and was called henceforth /Yamada-no-Sohodo/ (山田之曾富騰) , the scarecrow deity. This name comes probably from the fact that he had no legs , and couldn’t move around.
-
-Alone, /Ookuninushi/worried about the fact that he was left alone to make the land. Then there came up the deity illuminating the sea and uttered “If you enshrine my soul carefully, I can work with thou and finish making this land. If thou do not do so, you cannot finish by yourself”
-Then /Ookuninushi/ asked, “If so, how do I enshrine you?”. He answered, “Reverently enshrine me on the eastern mountain in /Yamato/ (present Nara prefecture)”
-That is the deity who dwells on the Mt.Mimoro.
-
-
-This should be the end of Ookuninushi’s arc. I’ll try to advance faster in my Shinwa chronicles, since I’d like to move to something else, thus I’ll be picking only interesting stories and notable Kami now and onwards.
-
-
-Posted by Kai心
-at  [10:16 PM](https://web.archive.org/web/20070519115217/http://neosamurai.blogspot.com/2007/01/sidestories-to-end-ookuninushis-arc.html)
-```
-
-I have been writing about _Ookuninushi_ since November, and honestly I grew
+I have been writing about _Ookuninushi_ since November, and honestly, I've grown
 tired. This part of the _Kojiki_ lacks "action", and most of the events are
-trivial at best. This great Susanowo's descendant, who had a dozen of wives, was
-entrusted with the mission of "making the land", and thus moved to
-[Izumo](https://web.archive.org/web/20070519115217/http://en.wikipedia.org/wiki/Izumo_province)
-(today's Shimane-ken), where he ran into a deity wearing a moth skin, and riding
-the waves on a potato-like oval boat with his consorts. They docked their
-vessel, and came towards _Oonamuji_, who asked the deity his name. However the
-latter kept silent and refused to talk. His siblings claimed that they don't
-know his name as well. Then a toad popped up from nowhere and said "_Kue-Biko_
-(久延毘古) will surely know".
+trivial at best. This great descendant of _Susanowo_, who had a dozen wives, was
+entrusted with the mission of "making the land", and so moved to
+[Izumo](https://en.wikipedia.org/wiki/Izumo_province) (today's _Shimane-ken_).
+There he ran into a deity wearing a moth skin and riding the waves in a
+potato-like oval boat with his consorts (I couldn't picture it myself, so please
+help if you manage to).
 
-Here is the line, taken word by word from Kojiki:
+They docked their vessel and came towards _Oonamuji_, who asked the deity his
+name. However, the latter kept silent and refused to talk. His siblings said
+they didn't know his name either. Then a toad popped up from nowhere and said,
+"_Kue-biko_ (久延毘古) will surely know." I think this part is a bit ambiguous.
+I mean, what on earth is that toad supposed to embody? Here is the line, taken
+word for word from the _Kojiki_:
 
-> すると多邇具久【たにぐく】が、「これは久延毘古【クエビコがきっと知っているでしょう」と申し上げた。
+> すると多邇具久【たにぐく】が、「これは久延毘古【クエビコ】がきっと知っているでしょう」と申し上げた。
 
-Actually the toad was referred to as _Taniguku_ (多邇具久), which is an archaic
-word (modern: _hikigaeru_ (蟾蜍)), coming from Tani 谷 meaning valley, and
-_guu-kuu_ グークー, which is also an archaic onomatopoeia for frogs sound
-(modern: _kero-kero_ (ケロケロ)). Then the toad called Kue-biko, who replied
-that the deity in front of him is _Sukuna-Bikona_ (no-kami) 少名毘古那神, the
-little deity, son of _Kami-musubi_ (no-kami) 神産巣日, one of the first three
-deities that appeared in the universe. When _Ookuninushi_ asked him,
-_Kami-musubi_ confirmed, saying:
+Actually, the toad was referred to as _Taniguku_ (多邇具久), an archaic word
+(modern: _hikigaeru_ (蟾蜍)), coming from _tani_ 谷, meaning valley, and
+_guu-kuu_ グークー, an archaic onomatopoeia for the sound frogs make (modern:
+_kero-kero_ (ケロケロ)). Then the toad called _Kue-biko_, who replied that the
+deity in front of him was _Sukuna-Bikona_ (_no-kami_) 少名毘古那神, the little
+deity, son of _Kami-musubi_ (_no-kami_) 神産巣日, one of the first three deities
+that [appeared in the universe](/blog/2006/09/shinwa-creation-of-the-universe/).
+When _Ookuninushi_ asked him,
+[_Kami-musubi_](/blog/2006/09/shinwa-creation-of-the-universe/) confirmed,
+saying:
 
-> "This is my child certainly. Among my children, this is the child who dripped
-> between the fork of my fingers. So, thou, be brotherhood with
-> _Ashihara-Shikowo-no-Mikoto_, then make and strengthen this land."
+> "This is certainly my child. Among my children, this is the one who slipped
+> between my fingers. So, become brothers with _Ashihara-Shikowo-no-Mikoto_,
+> then make and strengthen this land."
 
-And guess who is _Ashihara-shiwoko_ (葦原色許男)? It is no one but _Ookuninushi_
-himself. And if I remember well, this is his fourth or so alias, meaning
-"The-Strong-Male-Deity-of-Reed-Plain". And that is not all, it seems like he had
-another one as well, _Utsushi-Kunitama_ (宇都志国玉), the
+And guess who _Ashihara-Shikowo_ (葦原色許男) is? None other than _Ookuninushi_
+himself! And if I remember correctly, this is his fourth or so alias, meaning
+"The-Strong-Male-Deity-of-Reed-Plain". And that's not all: it seems he had
+another one as well, _Utsushi-Kunitama_ (宇都志国玉),
 "The-Splendid-Deity-of-Land-Soul".
 
-Thereupon, the two deities collaborated and expanded the land. But then,
-_Sukuna-Bikona_ left to the Eternal land (_Tokoya-no-kuni_ 常世国), a land
-beyond the sea.
+The two deities worked together and expanded the land. But then, _Sukuna-Bikona_
+left for the Eternal Land (_Tokoya-no-kuni_ 常世国), a land beyond the sea.
 
 That _Kue-biko_, who is rumored to know everything, got a new alias after this
-incident, and was called henceforth _Yamada-no-Sohodo_ (山田之曾富騰), the
-scarecrow deity. This name comes probably from the fact that he had no legs, and
+incident and was henceforth called _Yamada-no-Sohodo_ (山田之曾富騰), the
+scarecrow deity. This name probably comes from the fact that he had no legs and
 couldn't move around.
 
-Alone, _Ookuninushi_ worried about the fact that he was left alone to make the
-land. Then there came up the deity illuminating the sea and uttered "If you
-enshrine my soul carefully, I can work with thou and finish making this land. If
-thou do not do so, you cannot finish by yourself."
+Left alone, _Ookuninushi_ worried about making the land by himself. Then a deity
+appeared, illuminating the sea, and said, "If you enshrine my soul carefully, I
+can work with you and finish making this land. If you do not do so, you cannot
+finish by yourself."
 
 Then _Ookuninushi_ asked, "If so, how do I enshrine you?" He answered,
-"Reverently enshrine me on the eastern mountain in _Yamato_ (present Nara
-prefecture)."
+"Reverently enshrine me on the eastern mountain in _Yamato_ (present-day Nara
+Prefecture)."
 
-That is the deity who dwells on the Mt. Mimoro.
+That is the deity who dwells on Mt. Mimoro.
 
-This should be the end of Ookuninushi's arc. I'll try to advance faster in my
-Shinwa chronicles, since I'd like to move to something else, thus I'll be
-picking only interesting stories and notable Kami now and onwards.
+This should be the end of _Ookuninushi_'s arc. I'll try to move faster through
+my _Shinwa_ chronicles, since I'd like to move on to something else. From now
+on, I'll be picking only interesting stories and notable _Kami_.

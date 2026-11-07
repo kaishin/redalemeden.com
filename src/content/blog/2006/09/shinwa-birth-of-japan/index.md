@@ -5,80 +5,69 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+![Izanagi stirring the sea with a spear as Izanami stands beside him among the clouds.](./izanagi-and-izanami.jpg)
 
-```text
-# Shinwa: The birth of Japan
-#website/neosamurai
+[Izanagi and Izanami](/blog/2006/09/shinwa-creation-of-the-universe/), the last
+of the seven _kami_ generations (_Kami-noyo-nana-yo_ 神世七代), were commanded
+by the Distinguishing Heaven _Kami_ (_Koto-amatsu-gami_ 別天津神) to “make,
+consolidate, and give birth to this drifting land.” The two _kami_ were given a
+jewelled halberd called _Ama-no-nuboko_ 天沼矛.
 
-THURSDAY, SEPTEMBER 14, 2006
+They stood on the bridge between heaven and earth, _Ame-no-ukihashi_ 天浮橋,
+translated as “Floating Bridge of Heaven,” and churned the sea with the spear,
+as illustrated in this artwork. They stirred until the brine became thick and
+glutinous, then drew the _Ama-no-nuboko_ from it. The droplets that fell from
+the spear's tip piled up and formed the first island, _Onogoro_ (_Onogoro-jima_
+淤能碁呂島).
 
-![](Shinwa%20The%20birth%20of%20Japan/Kobayashi_Izanami_and_izanagi.jpg)
- [Izanagi and Izanami](https://web.archive.org/web/20061107172119/http://neosamurai.blogspot.com/2006/09/shinwa-creation-of-universe.html#links) , the last of the 7 /kami/ generations /( Kami-noyo-nana-yo/ 神世七代 ) were commanded by the Distiguishing Heaven Kami (*Koto-amatsu-gami*別天津神) to “make, consolidate, and give birth to this drifting land.” The two /kami/ were given a jewelled halberd called *Ama-no-nuboko* 天沼矛.
+They descended and made a home on the island, building a pillar called
+_Ame-no-mihashira_ 天御柱 and a palace called _Yahirodono_ 八尋殿, literally
+“the hall eight arm lengths square.” Izanami called Izanagi to meet at the
+pillar. Standing on opposite sides, Izanagi asked, “How has your body
+developed?” (See the
+[original quotes](https://ja.wikipedia.org/wiki/%E5%9B%BD%E7%94%A3%E3%81%BF)
+from the [_Kojiki_](/blog/2006/06/japanese-mythology-origins/) in Japanese.)
+Izanami replied, “My body has matured, but there is one part that hasn't.” Then
+Izanagi said, “My body has matured too, but there is one part that has
+overgrown. So let's join the part that hasn't matured in your body with the part
+that has overgrown in mine to give birth.”
 
-They stood on the bridge between heaven and earth, *Ame-no-ukihashi*天浮橋, translated as “Floating Bridge of Heaven” and churned the sea with the spear, as illustrated in this artwork. They stirred till the brine became thick and glutinous, then drew the *Ama-no-nuboko*from the brine, at that time, the droplets of brine that fell from the spear tip piled up and formed the first island, *Onogoro* (Onogoro-jima 淤能碁呂島).
+This was the first sexual intercourse in _Shinwa_, which resulted in the birth
+of _Hiruko_ 蛭子. However, their first child was a failure and had no bones.
+Their second child was _Awashima_ 淡島, literally “the pale island,” and was
+also a failure. They put the children into a boat made of reeds and set them
+adrift in a river, or the sea according to some other sources.
 
-They descended and made a home of the island, and built a pillar called*Ame-no-mihashira* 天御柱 and a palace called *Yahirodono*八尋殿 , literally the hall whose area is 8 arm’s length square. Izanami called Izanagi to meet at the pillar , standing on opposite sides, Izanagi said “How is your body being perfected?” (view the  [original quotes](https://web.archive.org/web/20061107172119/http://ja.wikipedia.org/wiki/%E5%9B%BD%E7%94%A3%E3%81%BF)  from the  [Kojiki](https://web.archive.org/web/20061107172119/http://neosamurai.blogspot.com/2006/06/japanese-mythology-origins.html)  in Japanese). Izanami replied “My body has matured, but there is one part that hasn’t”, then Izanagai said “My body matured too, but there is one part that has overgrown. Thereupon, let’s join the place that hasn’t matured in your body, and the part that has overgrown in mine to give birth”.
+“The children to whom we have now given birth are not good. It will be best to
+announce this in _Takama-no-hara_, the High Plain of Heaven,” said Izanagi and
+Izanami. They went to the _Koto-amatsu-gami_ to ask why their offspring had
+failed. The heavenly deities replied, “They were not good because the woman
+spoke first. Descend again and amend your words.”
 
-This was the first sexual intercourse in Shinwa, which resulted in the birth of *Hiruko* 蛭子. However their first child was a failure, and had no bones. Their second child was *Awashima*淡島, literally the pale island, and was as well a failure. They put the children into a boat made of reeds and set them adrift in a river, or sea in some other sources.
+The two _kami_ did as they were told. Izanagi called Izanami to the pillar and
+said, “Ah! What a fair and lovely maiden!” She answered immediately, “Ah! What a
+fair and lovely youth!” From this union were born the _Ouyashima_ 大八洲, or the
+land of the eight islands:
 
-“The children to whom we have now given birth are not good. It will be best to announce this in Takama-no-hara , the high plain of heavens.” said the Izanagi and Izanami. They headed towards the Koto-amatsu-gami to question the cause of the failure of their offsprings. The heavenly deities replied “They were not good because the woman spoke first. Descend back again and amend your words.”. So did the two/kami/. Izanagi called Izanami to the pillar, and sai “”Ah! what a fair and lovely maiden!”. She answered immediately “Ah! what a fair and lovely youth!”. From this union were born the *Ouyashima*　大八洲 , or the land of the eight islands:
-* *Awaji*/(shima)/ 淡路島
-* *Iyo-no-futana*(no-shima)伊予之二名島 (later Shikoku)
-* *Oki-no-mitsugo*(no-shima) 隠伎之三子島
-* *Tsukushi*(no-shima) 筑紫島 (later Kyushu)
-* *Iki*(no-shima) 伊伎島
-* *Tsushima* 津島
-* *Sado*/(no-shima)/佐度島
-* *Oho-yamato-toyo-akitsu-shima* 大倭豊秋津島 (later Honshu)
+- _Awaji_ (_shima_) 淡路島
+- _Iyo-no-futana_ (_no-shima_) 伊予之二名島 (later Shikoku)
+- _Oki-no-mitsugo_ (_no-shima_) 隠伎之三子島
+- _Tsukushi_ (_no-shima_) 筑紫島 (later Kyushu)
+- _Iki_ (_no-shima_) 伊伎島
+- _Tsushima_ 津島
+- _Sado_ (_no-shima_) 佐度島
+- _Oho-yamato-toyo-akitsu-shima_ 大倭豊秋津島 (later Honshu)
 
-Note that Okinawa, Hokkaidou and Chishima weren’t a part of Japan in shinwa.
+Note that Okinawa, Hokkaido, and Chishima weren't part of Japan in _Shinwa_.
 
-*Glossary:*
-/Shinwa:/ Japanese mythology
-/Kami:/Japanese god
-/Shima:/island *Resources:*
- [Wikipedia](https://web.archive.org/web/20061107172119/http://en.wikipedia.org/)  (English and Japanese)
- [Fuushi’s network Japanese mythology page](https://web.archive.org/web/20061107172119/http://www.interq.or.jp/www-user/fuushi/b-eng/e-myth-1.htm) 
- [The Kojiki translation](https://web.archive.org/web/20061107172119/http://www.sacred-texts.com/shi/kj/kj009.htm) 
+## Glossary
 
-POSTED BY KAISHIN AT  [7:55 PM](https://web.archive.org/web/20061107172119/http://neosamurai.blogspot.com/2006/09/shinwa-birth-of-japan.html)
-```
+- _Shinwa_: Japanese mythology
+- _Kami_: Japanese god
+- _Shima_: island
 
-Izanagi and Izanami, the last of the
-[Seven _Kami_ Generations](/blog/2006/09/shinwa-creation-of-the-universe/), were
-commanded by the _Koto-amatsu-gami_ to "make, consolidate, and give birth to
-this drifting land." They were given a jewelled halberd called **Ama-no-nuboko**
-(天沼矛).
+## Resources
 
-Standing on the bridge between heaven and earth, **Ame-no-ukihashi** (天浮橋,
-"Floating Bridge of Heaven"), they churned the sea with the spear until the
-brine grew thick and glutinous. When they drew the **Ama-no-nuboko** from the
-brine, the droplets that fell from its tip piled up and formed the first island,
-**Onogoro** (Onogoro-jima 淤能碁呂島).
-
-They descended, built a pillar called **Ame-no-mihashira** (天御柱) and a palace
-called **Yahirodono** (八尋殿, "the hall eight arm's-lengths square"). Izanagi
-asked Izanami how her body was formed; she replied that one part had not
-matured. He said that one part of his had overgrown, and proposed they join the
-two. This was the first union in _Shinwa_.
-
-Their first child, **Hiruko** (蛭子), had no bones and was set adrift in a reed
-boat. Their second, **Awashima** (淡島, "Pale Island"), was likewise a failure.
-Consulting the _Koto-amatsu-gami_, they learned that the union had failed
-because the woman had spoken first. They repeated the ritual with Izanagi
-calling first — "Ah! what a fair and lovely maiden!" — and from this corrected
-union were born the **Ouyashima** (大八洲), the Eight Great Islands:
-
-- **Awaji** (shima) 淡路島
-- **Iyo-no-futana** (no-shima) 伊予之二名島 (later Shikoku)
-- **Oki-no-mitsugo** (no-shima) 隠伎之三子島
-- **Tsukushi** (no-shima) 筑紫島 (later Kyushu)
-- **Iki** (no-shima) 伊伎島
-- **Tsushima** 津島
-- **Sado** (no-shima) 佐度島
-- **Oho-yamato-toyo-akitsu-shima** 大倭豊秋津島 (later Honshu)
-
-Note that Okinawa, Hokkaido, and Chishima were not part of Japan in _Shinwa_.
-
-Glossary: _Shinwa_ = Japanese mythology · _Kami_ = deity · _Shima_ = island
+- [Wikipedia](https://en.wikipedia.org/) (English and Japanese)
+- [Fuushi's Network Japanese mythology page](https://web.archive.org/web/20060810040001/http://www.interq.or.jp:80/www-user/fuushi/b-eng/e-myth-1.htm)
+- [The _Kojiki_ translation](https://web.archive.org/web/20060202110531/http://www.sacred-texts.com:80/shi/kj/kj009.htm)

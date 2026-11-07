@@ -5,42 +5,25 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+Yesterday, Friday, May 26, pop music legend Michael Jackson landed in Japan for
+MTV Japan's "Legend Award," which will be presented today, Saturday, May 27.
+This is his first public appearance since his acquittal last June on child
+molestation charges in the United States. His visit also includes a trip to an
+orphanage in Tokyo and meetings with Asian business leaders on Sunday.
 
-```text
-# Michael Jackson: samurai-wise
-#website/neosamurai
-
-SATURDAY, MAY 27, 2006
-
-Yesterday (Friday 26th of May) the pop-music legend M.Jackson has landed in Japan for the MTV Japan “legend award” , that will take place today (Saturday 27th of May). This is his first public appearance since his acquittal last June on child molestation charges in the United States. His visit includes also an orphanage in Tokyo, and meetings with Asian business communities on Sunday.
-
-*”I look forward to seeing old friends and saying hello to my huge fan base in Japan who, like my other fans around the world, have for so many years consistently shown their love and support to me and my family,”* said Jackson in a statment.
-
-I shouldn’t have been writing about this story on Neo Samurai, but what prompted me to do so is this funny picture of Jackson in samurai garbs.
-
-IMAGE MISSING
-
-This photo was taken when I was one year old, i.e 1987, during Michael Jackson’s “BAD Tour” in Japan. I don’t know much about M.Jackson, and I have never been one of his fans, but I guess his deeds in the American and the world’s pop scene are praiseworthy. This said, I can’t affirm how cool -or uncool- he looks with this samurai suit on, but I can say that it looks too artificial!!
-
-Original story:
- [MSN-Mainichi News story](https://web.archive.org/web/20061107172534/http://mdn.mainichi-msn.co.jp/entertainment/news/20060527p2a00m0et021000c.html) 
- [CBC News story](https://web.archive.org/web/20061107172534/http://www.cbc.ca/story/arts/national/2006/05/26/jackson-michael-japan.html) 
-
-POSTED BY KAISHIN AT  [12:04 PM](https://web.archive.org/web/20061107172534/http://neosamurai.blogspot.com/2006/05/michael-jackson-samurai-wise.html)
-```
-
-On Friday, May 26, Michael Jackson landed in Japan for the MTV Japan "Legend
-Award," received the following day. It was his first public appearance since his
-acquittal on child molestation charges in the United States the previous June.
-
-"I look forward to seeing old friends and saying hello to my huge fan base in
+_"I look forward to seeing old friends and saying hello to my huge fan base in
 Japan who, like my other fans around the world, have for so many years
-consistently shown their love and support to me and my family," Jackson said in
+consistently shown their love and support to me and my family,"_ said Jackson in
 a statement.
 
-What prompted me to write about this is
-[this photo](https://www.rrauction.com/auctions/lot-detail/328959804201006-michael-jackson/)
-collection of Michael in traditional Japanese garb from a photoshoot during his
-"BAD Tour" in Japan in 1987. I can't help but think the whole thing looks a bit
-forced of a PR move, but I digress.
+I wouldn't normally write about this story on Neo Samurai, but what prompted me
+was a funny photo of Jackson in samurai garb.
+
+The photo was taken when I was one year old, in 1987, during Michael Jackson's
+"Bad" tour in Japan. I don't know much about Jackson, and I've never been one of
+his fans, but I guess his contributions to American and world pop music deserve
+praise. That said, I can't say how cool, or uncool, he looks in this samurai
+outfit, but I can say it looks too artificial!
+
+Original stories: MSN-Mainichi News and
+[CBC News](https://web.archive.org/web/20061016185444/http://www.cbc.ca:80/arts/story/2006/05/26/jackson-michael-japan.html).

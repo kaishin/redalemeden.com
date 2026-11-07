@@ -12,13 +12,10 @@ const posts = (await getCollection("neosamurai")).sort(
 
 <NavigationLayout
   title="Neo Samurai"
-  description="Posts from Neo Samurai, my 2006–2007 blog about Japan, lightly edited for this archive."
+  description="Posts from Neo Samurai, my 2006–2007 blog about Japan."
 >
   <h2>Neo Samurai</h2>
-  <p>
-    Posts from Neo Samurai, my 2006–2007 blog about Japan, lightly edited for
-    this archive.
-  </p>
+  <p>Posts from Neo Samurai, my 2006–2007 blog about Japan.</p>
   <hr class="mb-10" />
   <ul class="not-prose list-none">
     {posts.map((post) => (

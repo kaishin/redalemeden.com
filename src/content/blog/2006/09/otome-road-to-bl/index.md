@@ -5,89 +5,64 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+Japanese culture sure is fascinating, and sometimes perplexing, for
+_gaikokujin_, or more disparagingly, _gaijin_. But Japanese subcultures are
+sometimes even more baffling, so rich and so unique. I had a post about female
+_otaku_, but I somehow deleted it, probably because I realized it was a bit
+offensive.
 
-```text
-# Otome…road to BL!
-#website/neosamurai
+Female _otaku_ seem to be the Japanese media's new focus, now that the _otaku_
+world and the Akiba fortress are no more… I mean, no longer a mystery to the
+masses, thanks to the popular TV drama "Densha Otoko", the novel and movie of
+the same name, and internet boards and websites. Thanks to Japanprobe's entry, I
+felt it was time to rewrite my post about female _otaku_, since they're keeping
+the media busy lately when it comes to _otaku_-ism.
 
-SATURDAY, SEPTEMBER 16, 2006
+Being an _otaku_ is now a science, with branches and subcategories: cosplayers,
+_doujin_, _anitaku_ (anime _otaku_), and BL _otaku_. The last refers to the
+boys' love genre, also called やおい (_yaoi_), or 男性同性愛 (_dansei
+douseiai_), meaning male homosexual love. _Shounen-ai_ 少年愛 and _shotacon_
+ショタコン are also considered subgenres of BL.
 
-Japanese culture sure is fascinating, and sometimes perplexing, for /gaikokujin/ so to speak, or more disparagingly, /gaijin/. But Japanese subcultures are sometimes even more baffling, in the way they are exquisitely rich, and sort of unique. I had a topic about female Otaku, but I have somehow deleted it, probably I realized it was kind of offending. However, this topic seems to be the focus of Japanese medias , when it comes to subcultures, after the Otaku world and Akiba fortress are no more… I mean no more a mystery to the masses, thanks to the popular TV Dorama “Densha Otoko” , the novel and the movie of the same title and internet boards and websites. Thanks to Japanprobe’s entry, I felt like it’s time to rewrite the entry about female Otaku since it’s the subculture keeping media busy as of late, when it comes to Otaku-ism.
-As shown in the first video below, Otaku now is a science, with ramifications and subcategories. Cosplayers, Doujin, Anitaku (Anime otaku), and BL otaku. The last being the Boy’s Love genre, also called やおい /Yaoi/, or 男性同性愛 /Dansei Douseiai,/translated as boy’s homosexual love. Shounen-ai 少年愛 and Shotacon ショタコン are also considered subgenres of BL.
-In Japan female readers of BL are called Fujoushi 腐女子, literally meaning “rotten girls”, which often gives a derogatory meaning to the word. However; like Otaku, the word isn’t an insult in an absolute way, it all depends on the context and situations. Fujoushi’s heaven isn’t Akiba, but rather Otome Road, where you can find the butler cafés, that cater to this niche of Otaku, like the way maid cafés do for the male counterparts. Butler cafés feature REAL handsom boys sometimes, but recently more and more cafés are hiring girls, that impersonate handsom boys, i.e. FAKE handsom boys, like Cafe B:Lily-Rose, featured on [ Japanprobe’s post](https://web.archive.org/web/20061107172119/http://www.japanprobe.com/?p=506) .
-Those girls are often Fujoushi themselves, each with “his” own fetishes.
-In this TBS-TV progam,  [2時ピタッ!](https://web.archive.org/web/20061107172119/http://www.tbs.co.jp/niji-pita/)  (Niji PITA!), the duo, the half-French-half-Japanese Isabelle and the half-Slovakian-half-Senegalese Béné, know in Japan as  [イザベルとベネ (](https://web.archive.org/web/20061107172119/http://www.1242.com/surprise/img/photo_izabene.jpg) Izaberu to bene), or イザベネ (Izabene) delve into the realm of BL and Fujoushi, with a bit of sarcasm…
-First they go track Fujoushi in Otome road, carrying heavy bags, often filled with /Doujinshi/ and other related stuff. One of the girls came all the way from Kyushu, just to get some BL goods, stating that she will spend 50,000 Yen (around USD 420) to grab her fravorite novels and magazines. They went to Animato, a store that has a large BL section, with thousands of Doujinshi, novels and magazines, and drama CDs…which are “gross” according to Béné!
-In the second part they head to the famous butler cafés, and ask the FAKE handsom guys about their tastes, since they are Fujoushi themselves….
-*PS:*Fujoushi are also disparagingly called in Japan Kifujin 既腐人 (previously-rotten-person for older Fujoushi), Ochoufujin 汚超腐人 (Super-rotten-person), and Maaboudoufu、 [麻婆豆腐](https://web.archive.org/web/20061107172119/http://en.wikipedia.org/wiki/Mapo_doufu) （go figure out why!!).
-And just between brackets, there are Fudanshi 腐男子, who are boys who read Yaoi, as well as Yuri (female homosexual love)!
-Even though Fujoushi is a little bit offending, most girls answered YES witha SMILE when asked “Fujoushi??”. Why deny something that we have chosen to be ourselves?
+In Japan, female readers of BL are called _fujoushi_ 腐女子, literally meaning
+"rotten girls", which gives the word a derogatory ring. However, like _otaku_,
+it isn't always an insult; it all depends on the context. Heaven for _fujoushi_
+isn't Akiba, but rather Otome Road, where you can find butler cafés that cater
+to this niche of _otaku_, much as maid cafés do for their male counterparts.
+Butler cafés sometimes feature real handsome boys, but recently more and more
+cafés are hiring girls who impersonate handsome boys, i.e. fake handsome boys,
+like Cafe B:Lily-Rose, featured in
+[Japanprobe's post](https://web.archive.org/web/20071029194345/http://www.japanprobe.com/?p=506).
 
-and the second part
+Those girls are often _fujoushi_ themselves, each with "his" own fetishes.
 
-POSTED BY KAISHIN AT  [12:48 PM](https://web.archive.org/web/20061107172119/http://neosamurai.blogspot.com/2006/09/otomeroad-to-bl.html)
-```
+In the TBS-TV program
+[2時ピタッ!](https://web.archive.org/web/20060831203106/http://www.tbs.co.jp:80/niji-pita/)
+(_Niji Pita!_), the half-French, half-Japanese Isabelle and the half-Slovakian,
+half-Senegalese Béné, known in Japan as
+[イザベルとベネ](https://web.archive.org/web/20070309160602/http://www.1242.com:80/surprise/img/photo_izabene.jpg)
+(_Izaberu to Bene_), or イザベネ (_Izabene_), delve into the realm of BL and
+_fujoushi_ with a bit of sarcasm.
 
-Japanese culture sure is fascinating, and sometimes perplexing, for _gaikokujin_
-so to speak, or more disparagingly, _gaijin_. But Japanese subcultures are
-sometimes even more baffling, in the way they are exquisitely rich, and sort of
-unique. I had a topic about female Otaku, but I have somehow deleted it,
-probably I realized it was kind of offending. However, this topic seems to be
-the focus of Japanese medias, when it comes to subcultures, after the Otaku
-world and Akiba fortress are no more... I mean no more a mystery to the masses,
-thanks to the popular TV Dorama "Densha Otoko", the novel and the movie of the
-same title and internet boards and websites. Thanks to Japanprobe's entry, I
-felt like it's time to rewrite the entry about female Otaku since it's the
-subculture keeping media busy as of late, when it comes to Otaku-ism.
+First they go looking for _fujoushi_ on Otome Road, spotting girls carrying
+heavy bags, often filled with _doujinshi_ and other related stuff. One of the
+girls came all the way from Kyushu just to get some BL goods, saying she'll
+spend 50,000 yen (around USD 420) to grab her favorite novels and magazines.
+They go to Animato, a store with a large BL section, with thousands of
+_doujinshi_, novels, magazines, and drama CDs, which are "gross" according to
+Béné!
 
-As shown in the first video below, Otaku now is a science, with ramifications
-and subcategories. Cosplayers, Doujin, Anitaku (Anime otaku), and BL otaku. The
-last being the Boy's Love genre, also called やおい /_Yaoi_/,
-or 男性同性愛 /_Dansei Douseiai_/, translated as boy's homosexual love.
-_Shounen-ai_ 少年愛 and _Shotacon_ ショタコン are also considered subgenres of
-BL.
+In the second part of the program, they head to the famous butler cafés and ask
+the "fake" handsome guys about their tastes, since they're _fujoushi_
+themselves.
 
-In Japan female readers of BL are called _Fujoushi_ 腐女子, literally meaning
-"rotten girls", which often gives a derogatory meaning to the word. However;
-like Otaku, the word isn't an insult in an absolute way, it all depends on the
-context and situations. _Fujoushi_'s heaven isn't Akiba, but rather Otome Road,
-where you can find the butler cafés, that cater to this niche of Otaku, like the
-way maid cafés do for the male counterparts. Butler cafés feature REAL handsome
-boys sometimes, but recently more and more cafés are hiring girls, that
-impersonate handsome boys, i.e. FAKE handsome boys, like Cafe B:Lily-Rose,
-featured on
-[Japanprobe's post](https://web.archive.org/web/20061107172119/http://www.japanprobe.com/?p=506).
+PS: In Japan, _fujoushi_ are also disparagingly called _kifujin_
+既腐人 ("previously rotten person", for older _fujoushi_), _ochoufujin_
+汚超腐人 ("super-rotten person"), and _maaboudoufu_,
+[麻婆豆腐](https://en.wikipedia.org/wiki/Mapo_doufu) (go figure out why!).
 
-Those girls are often _Fujoushi_ themselves, each with "his" own fetishes.
+And as an aside, there are _fudanshi_ 腐男子, boys who read _yaoi_, as well as
+_yuri_ (female homosexual love)!
 
-In this TBS-TV program,
-[2時ピタッ!](https://web.archive.org/web/20061107172119/http://www.tbs.co.jp/niji-pita/)
-(_Niji PITA!_), the duo, the half-French-half-Japanese Isabelle and the
-half-Slovakian-half-Senegalese Béné, know in Japan as
-[イザベルとベネ](https://web.archive.org/web/20061107172119/http://www.1242.com/surprise/img/photo_izabene.jpg)
-(_Izaberu to bene_), or イザベネ (_Izabene_) delve into the realm of BL and
-_Fujoushi_, with a bit of sarcasm...
-
-First they go track _Fujoushi_ in Otome road, carrying heavy bags, often filled
-with _Doujinshi_ and other related stuff. One of the girls came all the way from
-Kyushu, just to get some BL goods, stating that she will spend 50,000 Yen
-(around USD 420) to grab her favorite novels and magazines. They went to
-Animato, a store that has a large BL section, with thousands of _Doujinshi_,
-novels and magazines, and drama CDs... which are "gross" according to Béné!
-
-In the second part they head to the famous butler cafés, and ask the FAKE
-handsome guys about their tastes, since they are _Fujoushi_ themselves....
-
-_PS:_ _Fujoushi_ are also disparagingly called in Japan _Kifujin_
-既腐人 (previously-rotten-person for older _Fujoushi_), _Ochoufujin_
-汚超腐人 (Super-rotten-person), and _Maaboudoufu_、
-[麻婆豆腐](https://web.archive.org/web/20061107172119/http://en.wikipedia.org/wiki/Mapo_doufu)
-(go figure out why!!).
-
-And just between brackets, there are _Fudanshi_ 腐男子, who are boys who read
-_Yaoi_, as well as _Yuri_ (female homosexual love)!
-
-Even though _Fujoushi_ is a little bit offending, most girls answered YES with a
-SMILE when asked "_Fujoushi_??". Why deny something that we have chosen to be
-ourselves?
+Even though _fujoushi_ is a little offensive, most girls answered yes with a
+smile when asked, "_Fujoushi_?" Why deny something we've chosen to be?

@@ -5,42 +5,24 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
-
-```text
-# Shibuya University?
-#website/neosamurai
-
-*TUESDAY, JANUARY 16, 2007*
-
-I learnt through  [Trends in Japan](https://web.archive.org/web/20070519115126/http://web-japan.org/trends/lifestyle/lif070109_01.html)  that an unconventional university has opened in the trendy district of Shibuya, meant to/provide just what is needed to instill the joy of learning in the modern youth/, or so they said. This school has no actual campus, as the whole district, with its cafés, bookstores, shops and other fashionable premises act as classrooms for the lectures provided by all kinds of people; even those who are not qualified to teach, including student themselves, store clerks, Manga artists… The goal of Shibuya university is not yielding recognized degrees but rather creating a symbiosis between the learning experience and the community life, for the ultimate aim of “creating Japan’s future from Shibuya”, in the words of its president Sakyo Yasuaki. It is to note that anyone , who deciphers Japanese of course, can participate free of charge.
-
-Personally I think that such an experience is worthwhile for a change from the stiff Japanese educational system. It is true that Shibuya, as a community, has contributed in the enrichment of modern Japanese youth culture, but one shouldn’t take it for more than an extra-curricular learning opportunity… Any thoughts?
-
- [Shibuya University Netwrok Official Website (Japanese)](https://web.archive.org/web/20070519115126/http://shibuya-univ.net/) 
-
-Posted by Kai心
-at  [1:02 PM](https://web.archive.org/web/20070519115126/http://neosamurai.blogspot.com/2007/01/shibuya-university.html)
-```
-
 I learnt through
-[Trends in Japan](https://web.archive.org/web/20070519115126/http://web-japan.org/trends/lifestyle/lif070109_01.html)
+[Trends in Japan](https://web.archive.org/web/20070315191543/http://web-japan.org:80/trends/lifestyle/lif070109_01.html)
 that an unconventional university has opened in the trendy district of Shibuya,
-meant to provide just what is needed to instill the joy of learning in the
-modern youth. This school has no actual campus, as the whole district, with its
-cafés, bookstores, shops and other fashionable premises act as classrooms for
-the lectures provided by all kinds of people; even those who are not qualified
-to teach, including students themselves, store clerks, Manga artists. The goal
-of Shibuya University is not yielding recognized degrees but rather creating a
-symbiosis between the learning experience and the community life, for the
-ultimate aim of "creating Japan's future from Shibuya", in the words of its
-president Sakyo Yasuaki. It is to note that anyone who deciphers Japanese, of
-course, can participate free of charge.
+meant to provide just what is needed to instill the joy of learning in modern
+youth, or so they say. This school has no actual campus: the whole district,
+with its cafés, bookstores, shops and other fashionable premises, acts as a
+classroom. Lectures are given by all kinds of people, even those without
+teaching qualifications, including students themselves, store clerks and manga
+artists.
 
-Personally I think that such an experience is worthwhile for a change from the
+The goal of Shibuya University isn't to award recognized degrees but to connect
+learning with community life, with the ultimate aim of “creating Japan’s future
+from Shibuya”, in the words of its president, Sakyo Yasuaki. Anyone can
+participate free of charge, provided they can decipher Japanese, of course.
+
+Personally, I think an experience like this makes a welcome change from the
 stiff Japanese educational system. It is true that Shibuya, as a community, has
-contributed in the enrichment of modern Japanese youth culture, but one
-shouldn't take it for more than an extra-curricular learning opportunity. Any
-thoughts?
+helped enrich modern Japanese youth culture, but one shouldn't take this for
+more than an extracurricular learning opportunity. Any thoughts?
 
-[Shibuya University Network Official Website (Japanese)](https://web.archive.org/web/20070519115126/http://shibuya-univ.net/)
+[Shibuya University Network Official Website (Japanese)](https://web.archive.org/web/20070115163257/http://shibuya-univ.net:80/)

@@ -5,129 +5,91 @@ tags: ["neosamurai"]
 isArchived: true
 ---
 
-## Original
+## Notes
 
-```text
-# Shinwa: The birth of Gods
-#website/neosamurai
+Even though notes usually come at the end of an entry, I thought they'd be more
+useful at the start. First, I'd like to clarify that I'm writing these entries
+to build a personal reference on Japanese mythology and share it with anyone
+willing to delve into it. There are several English resources on the net, but
+none seem complete. This compelled me to compile what I could find to satisfy my
+own thirst for knowledge. Then I thought, while I'm at it, why not let others
+interested in the topic benefit from my efforts? So I decided to write a kind of
+chronicle, with every bit of information I can find on the topic. Entries like
+this one may be heavy with long lists, but for the sake of completeness, I'm
+willing to sacrifice accessibility.
 
-MONDAY, SEPTEMBER 18, 2006
+- My main sources are Hall Chamberlain's _Kojiki_ translation and the Japanese
+  Wikipedia, with the English Wikipedia used occasionally.
+- The hyphens in the names of deities, places, and people follow no grammatical
+  or lexical rule. Since there are no spaces in those names, I added hyphens
+  solely to make them easier to read.
+- The "e" in Japanese names is read as in "set", so _Ihasuhime_ is read
+  "eeh-ha-su-hee-meh". For more details, see
+  [this pronunciation guide](https://web.archive.org/web/20061023191413/http://www.kanjistep.com:80/en/online/hiraganasteps/a.html).
 
-*NOTES:*
-Even though notes should be added at the end of the entry, I thought that they must be more useful if brought up at the start. First, I’d like to clarify that my purpose of writing such entries is to provide a personal reference of Japanese mythology, and share it with anyone who is willing to delve into its depths. There are several English resources around the net about the topic, but none seem to be complete. This compelled me to do a compilation work to satisfy my own thirst of knowledge. Then I thought that while I am at it, why not make others who might be interested in the topic capitalize on my efforts. Thus I decided to write a kind of chronicles , with every bit of information I can find on the topic. It’s true that entries like this one may look heavy with long lists such as the ones below, but for the sake of sufficiency, I’d like to sacrifice accessibility.
-* The resources are mainly Hall Chamberlain’s kojiki translation, the Japanese wikipedia and the English wikipedia occasionally.
-* The hyphens in the deities’, places’ and people’s names ARE BY NO MEAN based on any grammatical nor lexical rule. Since there are no spaces in those names, I put the hyphens for the sole purpose of facilitating their reading.
-* the “e” in Japanese names is read as “e” in “set”, so “Ihasuhime” is read “eeh-ha-su-hee-meh”, for further details  [check this](https://web.archive.org/web/20061107172119/http://www.kanjistep.com/en/online/hiraganasteps/a.html) .
+After giving birth to the
+[_Ouyashima_ 大八洲](/blog/2006/09/shinwa-birth-of-japan/), _Izanagi_ and
+_Izanami_ bore several deities who symbolized various natural elements.
 
-After giving birth to the  [Ouyashima　大八洲](https://web.archive.org/web/20061107172119/http://neosamurai.blogspot.com/2006/09/shinwa-birth-of-japan.html) , Izanagi and Izanami bore several deities who symbolized various natural elements.
-* *Ohokoto-oshiwo* (no-kami) 大事忍男神, the Kanji (Chinese characters meaning The “Male-Enduring-Great-Things”.
-* *Ihatsuchi-biko* (no-kami) 石土毘古神, meaning “Rock-Earth-Prince”.
-* *Ihasuhime* (no-kami) 石巣比売神, meaning “Rock-Nest-Princess”.
-* *Ohotohi-wake* (no-kami) 大戸日別神, with the Kanji characters for “Great-Door-Sun-Youth”.
-* *Ameno-fukiwo*天之吹男神 (no-kami), translated as “Heavenly-Blowing-Male”.
-* *Ohoya-bikono* (no-kami) 大屋毘古神, meaning “Great-House-Prince”.
-* *Kazamotsu-wakeno-oshiwo* (no-kami) 風木津別之忍男神, can be translated as “Youth-of-the-Wind-Breath-the-Great-Male”.
-* *Ohowa-tatsumi*/(no-kami)/大綿津見神 , “Great-Ocean-Possessor” , commonly known as the the sea kami.
-* *Haya-aki-tsuhiko* (no-kami) 速秋津日子神, “Prince-of-Swift-Autumn” , also known as the water-gates kami.
-* *Haya-aki-tsuhime* (no-kami) 速秋津比売神, “Princess-of-Swift-Autumn”, younger sister of Haya-aki-tsuhiko. To those two las Kami were born 7 other deities:
-  * *Ahanagi* (no-kami) 沫那藝神, “Foam-Calm”
-  * *Ahanami*(no-kami) 沫那美神, “Foam-waves”
-  * *Tsuranagi*(no-kami) 頬那藝神, “Bubble-calm”
-  * *Tsuranami* (no-kami) 頬那美神, “Bubble-waves”
-  * *Ameno-Mikumari* (no-kami) 天之水分神, “Heavenly-Water-Divider”
-  * *Kunino-Mikumari* (no-kami) 国之水分神, “Earthly-Water-Divider”
-  * *Ameno-Kuhizamochi* (no-kami) 天之久比奢母智神, “Heavenly-Water-Drawing-Gourd-Possessor”.
-  * *Kunino-Kuhizamochi* (no-kami) 国之久比奢母智神, “Earthly-Water-Drawing-Gourd-Possessor”.
-* 
-* *Shinatsu-hiko* (no-kami) 志那都比古神, “Prince-of-Long-Wind” also known as the wind kami.
-* *Kukunochi*(no-kami) 久久能智神, translated as “Stem-Elder”, the trees kami.
-* *Ohoyama-tsumi* (no-kami) 大山津見神, meaning “Great-Mountain-Possessor”, referring to the mountains kami.
-* *Kayano-hime*(no-kami) 鹿屋野比売神, “Thatch-Moor-Princess”, the moors kami.To these two kami were born eight deities:
-  * *Ameno-sazuchi*(no-kami) 天之狭土神, “Heavenly-Elder-of-the-Passes”
-  * *Kunino-sazuchi*(no-kami) 国之狭土神, “Earthly-Elder-of-the-Passes”
-  * *Ameno-sagiri* (no-kami) 天之狭霧神, “Heavenly-Pass-Boundary”
-  * *Kunino-sagiri* (no-kami) 国之狭霧神, “Earthly-Pass-Boundary”
-  * *Ameno-kurado* (no-kami) 天之闇戸神, “Heavenly-Dark-Door”
-  * *Kunino-Kurado* (no-kami) 国之闇戸神, “Earthly-Dark-Door”
-  * *Ohotoma-tohiko* (no-kami) 大戸惑子神, “Great-Vale-Prince”
-  * *Ohotoma-tohime* (no-kami) 大戸惑女神,”Great-Vale-Princess”
-* 
-* *Torinoi-hakusubune* (no-kami) 鳥之石楠船神, also known as Ameno-torifune 天鳥船, meaning “Heavenly-Bird-Boat”.
-* *Ohogetsu-hime* (no-kami)大宜都比売神, “Princess-of-Great-Food”.
-* *Hinoyagi-Hayawo* (no-kami) 火之夜藝速男神, “Fire-Burning-Swift-Male-Deity”, the fire kami, known as Kagutsushi 迦具土.
+- _Ohokoto-oshiwo_ (_no-kami_) 大事忍男神, with the _kanji_ (Chinese characters)
+  meaning "Male-Enduring-Great-Things".
+- _Ihatsuchi-biko_ (_no-kami_) 石土毘古神, meaning "Rock-Earth-Prince".
+- _Ihasuhime_ (_no-kami_) 石巣比売神, meaning "Rock-Nest-Princess".
+- _Ohotohi-wake_ (_no-kami_) 大戸日別神, with the _kanji_ for
+  "Great-Door-Sun-Youth".
+- _Ameno-fukiwo_ (_no-kami_) 天之吹男神, translated as "Heavenly-Blowing-Male".
+- _Ohoya-bikono_ (_no-kami_) 大屋毘古神, meaning "Great-House-Prince".
+- _Kazamotsu-wakeno-oshiwo_ (_no-kami_) 風木津別之忍男神, which can be
+  translated as "Youth-of-the-Wind-Breath-the-Great-Male".
+- _Ohowa-tatsumi_ (_no-kami_) 大綿津見神, "Great-Ocean-Possessor", commonly
+  known as the sea _kami_.
+- _Haya-aki-tsuhiko_ (_no-kami_) 速秋津日子神, "Prince-of-Swift-Autumn", also
+  known as the water-gates _kami_.
+- _Haya-aki-tsuhime_ (_no-kami_) 速秋津比売神, "Princess-of-Swift-Autumn",
+  younger sister of _Haya-aki-tsuhiko_. To these last two _kami_ were born eight
+  other deities:
+  - _Ahanagi_ (_no-kami_) 沫那藝神, "Foam-Calm".
+  - _Ahanami_ (_no-kami_) 沫那美神, "Foam-Waves".
+  - _Tsuranagi_ (_no-kami_) 頬那藝神, "Bubble-Calm".
+  - _Tsuranami_ (_no-kami_) 頬那美神, "Bubble-Waves".
+  - _Ameno-Mikumari_ (_no-kami_) 天之水分神, "Heavenly-Water-Divider".
+  - _Kunino-Mikumari_ (_no-kami_) 国之水分神, "Earthly-Water-Divider".
+  - _Ameno-Kuhizamochi_ (_no-kami_) 天之久比奢母智神,
+    "Heavenly-Water-Drawing-Gourd-Possessor".
+  - _Kunino-Kuhizamochi_ (_no-kami_) 国之久比奢母智神,
+    "Earthly-Water-Drawing-Gourd-Possessor".
+- _Shinatsu-hiko_ (_no-kami_) 志那都比古神, "Prince-of-Long-Wind", also known as
+  the wind _kami_.
+- _Kukunochi_ (_no-kami_) 久久能智神, translated as "Stem-Elder", the _kami_ of
+  trees.
+- _Ohoyama-tsumi_ (_no-kami_) 大山津見神, meaning "Great-Mountain-Possessor",
+  the _kami_ of mountains.
+- _Kayano-hime_ (_no-kami_) 鹿屋野比売神, "Thatch-Moor-Princess", the _kami_ of
+  moors. To these last two _kami_ were born eight deities:
+  - _Ameno-sazuchi_ (_no-kami_) 天之狭土神, "Heavenly-Elder-of-the-Passes".
+  - _Kunino-sazuchi_ (_no-kami_) 国之狭土神, "Earthly-Elder-of-the-Passes".
+  - _Ameno-sagiri_ (_no-kami_) 天之狭霧神, "Heavenly-Pass-Boundary".
+  - _Kunino-sagiri_ (_no-kami_) 国之狭霧神, "Earthly-Pass-Boundary".
+  - _Ameno-kurado_ (_no-kami_) 天之闇戸神, "Heavenly-Dark-Door".
+  - _Kunino-Kurado_ (_no-kami_) 国之闇戸神, "Earthly-Dark-Door".
+  - _Ohotoma-tohiko_ (_no-kami_) 大戸惑子神, "Great-Vale-Prince".
+  - _Ohotoma-tohime_ (_no-kami_) 大戸惑女神, "Great-Vale-Princess".
+- _Torinoi-hakusubune_ (_no-kami_) 鳥之石楠船神, also known as _Ameno-torifune_
+  天鳥船, meaning "Heavenly-Bird-Boat".
+- _Ohogetsu-hime_ (_no-kami_) 大宜都比売神, "Princess-of-Great-Food".
+- _Hinoyagi-Hayawo_ (_no-kami_) 火之夜藝速男神, "Fire-Burning-Swift-Male-Deity",
+  the fire _kami_, known as _Kagutsushi_ 迦具土.
 
-At the birth of Kagutsushi, Izanami private parts were burn from his fire. She fell sick and suffered a lot. According to the myth, two deities were born from her vomit, *Kanayama-biko*(no-kami) 金山毘古神 , “Metal-Mountain-Prince” and *Kanayama-bime*(no-kami) 金山毘売神, “Metal-Mountain-Princess”. Four other deities were born from her faeces:
-* *Hania-yasubiko* (no-kami) 波邇夜須毘古神, “Clay-Viscid-Prince”
-* *Hania-yasubime* (no-kami) 波邇夜須毘売神, “Clay-Viscid-Princess”
-* *Mitsuha-nome*(no-kami) 彌都波能売神
-* *Waku-musuhi*(no-kami) 和久産巣日神,”Young-Wondrous-Producing”, who gave birth to *Toyouke-bime* (no-kami) 豊宇気毘売, “Luxuriant-Food-Princess”.
+At the birth of _Kagutsushi_, _Izanami_'s private parts were burned by his fire.
+She fell sick and suffered a lot. According to the myth, two deities were born
+from her vomit: _Kanayama-biko_ (_no-kami_) 金山毘古神, "Metal-Mountain-Prince",
+and _Kanayama-bime_ (_no-kami_) 金山毘売神, "Metal-Mountain-Princess". Four
+other deities were born from her faeces:
 
-So far, the number of islands that were created by Izanami and Izanagi summed up to 14, alongside 35 deities.
+- _Hania-yasubiko_ (_no-kami_) 波邇夜須毘古神, "Clay-Viscid-Prince".
+- _Hania-yasubime_ (_no-kami_) 波邇夜須毘売神, "Clay-Viscid-Princess".
+- _Mitsuha-nome_ (_no-kami_) 彌都波能売神.
+- _Waku-musuhi_ (_no-kami_) 和久産巣日神, "Young-Wondrous-Producing", who gave
+  birth to _Toyouke-bime_ (_no-kami_) 豊宇気毘売, "Luxuriant-Food-Princess".
 
-POSTED BY KAISHIN AT  [5:14 PM](https://web.archive.org/web/20061107172119/http://neosamurai.blogspot.com/2006/09/shinwa-birth-of-gods.html)
-```
-
-Note on method: these entries draw mainly from Hall Chamberlain's Kojiki
-translation and the Japanese Wikipedia. Hyphens in deity names are added for
-readability only, following no grammatical rule. The "e" in Japanese names is
-read as in "set": "Ihasuhime" reads "eeh-ha-su-hee-meh."
-
-After creating the [Eight Islands](/blog/2006/09/shinwa-birth-of-japan/),
-Izanagi and Izanami bore several deities representing natural elements:
-
-- **Ohokoto-oshiwo** (no-kami) 大事忍男神: Male-Enduring-Great-Things.
-- **Ihatsuchi-biko** (no-kami) 石土毘古神: Rock-Earth-Prince.
-- **Ihasuhime** (no-kami) 石巣比売神: Rock-Nest-Princess.
-- **Ohotohi-wake** (no-kami) 大戸日別神: Great-Door-Sun-Youth.
-- **Ameno-fukiwo** (no-kami) 天之吹男神: Heavenly-Blowing-Male.
-- **Ohoya-bikono** (no-kami) 大屋毘古神: Great-House-Prince.
-- **Kazamotsu-wakeno-oshiwo** (no-kami) 風木津別之忍男神:
-  Youth-of-the-Wind-Breath-the-Great-Male.
-- **Ohowa-tatsumi** (no-kami) 大綿津見神: Great-Ocean-Possessor (the sea
-  _Kami_).
-- **Haya-aki-tsuhiko** (no-kami) 速秋津日子神: Prince-of-Swift-Autumn
-  (water-gates _Kami_).
-- **Haya-aki-tsuhime** (no-kami) 速秋津比売神: Princess-of-Swift-Autumn. To
-  these last two were born eight more deities:
-  - **Ahanagi** (no-kami) 沫那藝神: Foam-Calm.
-  - **Ahanami** (no-kami) 沫那美神: Foam-Waves.
-  - **Tsuranagi** (no-kami) 頬那藝神: Bubble-Calm.
-  - **Tsuranami** (no-kami) 頬那美神: Bubble-Waves.
-  - **Ameno-Mikumari** (no-kami) 天之水分神: Heavenly-Water-Divider.
-  - **Kunino-Mikumari** (no-kami) 国之水分神: Earthly-Water-Divider.
-  - **Ameno-Kuhizamochi** (no-kami) 天之久比奢母智神:
-    Heavenly-Water-Drawing-Gourd-Possessor.
-  - **Kunino-Kuhizamochi** (no-kami) 国之久比奢母智神:
-    Earthly-Water-Drawing-Gourd-Possessor.
-- **Shinatsu-hiko** (no-kami) 志那都比古神: Prince-of-Long-Wind (wind _Kami_).
-- **Kukunochi** (no-kami) 久久能智神: Stem-Elder (trees _Kami_).
-- **Ohoyama-tsumi** (no-kami) 大山津見神: Great-Mountain-Possessor (mountains
-  _Kami_).
-- **Kayano-hime** (no-kami) 鹿屋野比売神: Thatch-Moor-Princess (moors _Kami_).
-  To these last two were born eight more:
-  - **Ameno-sazuchi** (no-kami) 天之狭土神: Heavenly-Elder-of-the-Passes.
-  - **Kunino-sazuchi** (no-kami) 国之狭土神: Earthly-Elder-of-the-Passes.
-  - **Ameno-sagiri** (no-kami) 天之狭霧神: Heavenly-Pass-Boundary.
-  - **Kunino-sagiri** (no-kami) 国之狭霧神: Earthly-Pass-Boundary.
-  - **Ameno-kurado** (no-kami) 天之闇戸神: Heavenly-Dark-Door.
-  - **Kunino-Kurado** (no-kami) 国之闇戸神: Earthly-Dark-Door.
-  - **Ohotoma-tohiko** (no-kami) 大戸惑子神: Great-Vale-Prince.
-  - **Ohotoma-tohime** (no-kami) 大戸惑女神: Great-Vale-Princess.
-- **Torinoi-hakusubune** (no-kami) 鳥之石楠船神 (also **Ameno-torifune**
-  天鳥船): Heavenly-Bird-Boat.
-- **Ohogetsu-hime** (no-kami) 大宜都比売神: Princess-of-Great-Food.
-- **Hinoyagi-Hayawo** (no-kami) 火之夜藝速男神: Fire-Burning-Swift-Male-Deity,
-  the fire _Kami_, known as **Kagutsushi** (迦具土).
-
-At Kagutsushi's birth, Izanami's body was burned by his fire. She fell gravely
-ill. From her vomit were born **Kanayama-biko**
-(no-kami) 金山毘古神 (Metal-Mountain-Prince) and **Kanayama-bime**
-(no-kami) 金山毘売神 (Metal-Mountain-Princess). Four more deities were born from
-her suffering: **Hania-yasubiko** (no-kami) 波邇夜須毘古神 (Clay-Viscid-Prince),
-**Hania-yasubime** (no-kami) 波邇夜須毘売神 (Clay-Viscid-Princess),
-**Mitsuha-nome** (no-kami) 彌都波能売神, and **Waku-musuhi**
-(no-kami) 和久産巣日神 (Young-Wondrous-Producing), whose offspring was
-**Toyouke-bime** (no-kami) 豊宇気毘売 (Luxuriant-Food-Princess).
-
-With this, the count stood at 14 islands and 35 deities. Izanami would die from
-Kagutsushi's birth; her death is the subject of the next entry.
+So far, _Izanami_ and _Izanagi_ had created 14 islands, alongside 35 deities.

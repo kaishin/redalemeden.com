@@ -460,6 +460,8 @@ Items are ordered; each is one focused pull request.
       wanted and skips archived posts; tag placement. Acceptance once decided:
       format check, checks and build pass; tagged posts show their tags;
       prev/next stays in-collection and points at built posts.
+- [x] Remove the project-local `impeccable` skill
+- [x] Remove remaining non-writing local skills; keep only `new-post` and `proofread`
 - [ ] Move to self hosted [Rybbit](https://rybbit.com/docs/self-hosting)
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed

@@ -640,13 +640,12 @@ link (dead → Wayback snapshot, no snapshot → plain text), then remove the
 
 - [x] Browser Problems (May 2006)
 - [x] Benchmark Opus vs pi+Codex on The Hyde Height Controversy: chose
-      pi + Codex (`gpt-6.1-sol`, thinking high). Hyde output not applied yet.
+      pi + Codex (`gpt-6.1-sol`, thinking high).
+- [x] Revise all remaining posts with 4 parallel agents: 60 posts done, one
+      commit each (`git log --grep 'against original'`). `pnpm check` and
+      `pnpm build` pass.
 - [ ] Furusato, Kotowaza Vol. 1 and Vol. 2: confirm whether already revised
       (no revision found in git; `## Original` block still present)
-- [x] Michael Jackson Samurai Wise, Way of the Samurai, Edo Soccer,
-      Japanese Mythology Origins
-- [ ] Revise the remaining posts with 4 parallel agents (10 left; 50 done in
-      this pass, see `git log --grep 'against original'`)
 
 ## Astro 6 Upgrade (superseded)
 

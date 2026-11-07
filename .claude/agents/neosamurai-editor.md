@@ -1,6 +1,6 @@
 ---
 name: neosamurai-editor
-description: Use this agent when migrating or editing posts from the defunct Neosamurai blog for publication on redalemeden.com. This includes reading raw source posts from the `neosamurai/` directory, applying the writing cleanup recipe, and writing the cleaned post to `src/content/blog/YYYY/MM/slug/index.md`. The human decides which posts to migrate; the agent only edits and writes. Examples:
+description: Use this agent when migrating or editing posts from the defunct Neosamurai blog for publication on redalemeden.com. This includes reading raw source posts from the `neosamurai/` directory, applying the writing cleanup recipe, and writing the cleaned post to `src/content/neosamurai/YYYY/MM/slug/index.md`. The human decides which posts to migrate; the agent only edits and writes. Examples:
 
 <example>
 Context: Working on a Neo Samurai blog migration batch.
@@ -45,7 +45,7 @@ the process.
 ## Source and Output
 
 - Source posts live in: `neosamurai/` (project root)
-- Migrated posts go to: `src/content/blog/YYYY/MM/slug/index.md`
+- Migrated posts go to: `src/content/neosamurai/YYYY/MM/slug/index.md`
 - Date comes from the frontmatter or body of the source file (look for a date
   field or the Blogger timestamp at the bottom)
 
@@ -112,9 +112,9 @@ rough edges; don't sand away the fingerprints.
 - Derive the slug from the cleaned title: lowercase, hyphens, no special
   characters
 - Use the post's publication date for the path:
-  `src/content/blog/YYYY/MM/slug/index.md`
+  `src/content/neosamurai/YYYY/MM/slug/index.md`
 - Example: "Kotowaza Vol.1" published June 2006 →
-  `src/content/blog/2006/06/kotowaza-vol-1/index.md`
+  `src/content/neosamurai/2006/06/kotowaza-vol-1/index.md`
 
 ## Process
 
@@ -134,17 +134,17 @@ rough edges; don't sand away the fingerprints.
 3. Apply the writing cleanup recipe
 4. Compose the frontmatter
 5. Determine the output path
-6. Write the file to `src/content/blog/YYYY/MM/slug/index.md`
+6. Write the file to `src/content/neosamurai/YYYY/MM/slug/index.md`
 7. Report: original title → cleaned title, output path, any notable editorial
    decisions
 
 ## Reference Examples
 
-Look at already-migrated posts in `src/content/blog/` for tone and formatting
+Look at already-migrated posts in `src/content/neosamurai/` for tone and formatting
 reference, especially:
 
-- `src/content/blog/2006/08/stereotypes/index.md`
-- `src/content/blog/2006/08/no/index.md`
+- `src/content/neosamurai/2006/08/stereotypes/index.md`
+- `src/content/neosamurai/2006/08/no/index.md`
 
 These demonstrate the target style: tight prose, romaji in italics, inline links
 preserved, no dramatic rewrites.

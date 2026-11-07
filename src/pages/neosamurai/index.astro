@@ -1,0 +1,40 @@
+---
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import NavigationLayout from "@layouts/NavigationLayout.astro";
+
+// Every Neo Samurai post is archived, so list them all, oldest first, to keep
+// serialized entries such as the Shinwa chronicles in reading order.
+const posts = (await getCollection("neosamurai")).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+);
+---
+
+<NavigationLayout
+  title="Neo Samurai"
+  description="Posts from Neo Samurai, my 2006–2007 blog about Japan, lightly edited for this archive."
+>
+  <h2>Neo Samurai</h2>
+  <p>
+    Posts from Neo Samurai, my 2006–2007 blog about Japan, lightly edited for
+    this archive.
+  </p>
+  <hr class="mb-10" />
+  <ul class="not-prose list-none">
+    {posts.map((post) => (
+      <li class="relative mb-10">
+        <h3 class="max-w-prose text-2xl font-medium">
+          <a
+            href={`/neosamurai/${post.id}/`}
+            class="after:absolute after:inset-0"
+          >
+            {post.data.title}
+          </a>
+        </h3>
+        <p class="mt-1 text-sm leading-normal font-semibold tracking-wider text-purple-600 uppercase dark:text-[var(--accent-link)]">
+          <FormattedDate date={post.data.pubDate} />
+        </p>
+      </li>
+    ))}
+  </ul>
+</NavigationLayout>

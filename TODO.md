@@ -647,6 +647,18 @@ link (dead → Wayback snapshot, no snapshot → plain text), then remove the
 - [x] Furusato, Kotowaza Vol. 1 and Vol. 2. Furusato keeps the author's own
       kana edit (fe949dc); only the `## Original` block was removed.
 
+### Neo Samurai Blog
+
+- [x] Restyle the archived-post banner with palette tokens (`--archive-*` in
+      `global.css`): banana-tinted note, "Archived · YEAR" label, one generic
+      line.
+- [x] Move the 64 posts to their own `neosamurai` collection at
+      `/neosamurai/` (index oldest first), mirroring Derived Data. No sidebar
+      entry and no RSS/JSON feed by design. Internal links rewritten; old
+      `/blog/2006…` URLs were never deployed, so no redirects.
+- [ ] Pre-existing: `pnpm format:check` fails on ~150 untouched files on this
+      branch because it predates main's Prettier reformat; resolves on rebase.
+
 ## Astro 6 Upgrade (superseded)
 
 The site has already upgraded to Astro 7 (see Shipped above). This earlier

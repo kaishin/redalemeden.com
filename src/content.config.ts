@@ -34,4 +34,12 @@ const derivedData = defineCollection({
   schema: postSchema,
 });
 
-export const collections = { blog, "derived-data": derivedData };
+const neosamurai = defineCollection({
+  loader: glob({
+    base: "./src/content/neosamurai",
+    pattern: "**/*.{md,mdx}",
+  }),
+  schema: postSchema,
+});
+
+export const collections = { blog, "derived-data": derivedData, neosamurai };

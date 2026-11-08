@@ -660,8 +660,9 @@ link (dead → Wayback snapshot, no snapshot → plain text), then remove the
       Derived Data, Neo Samurai) via `PostNavigation.astro` and
       `withNeighbors` in `src/lib/adjacent.ts`. Chronological within the
       collection; archived and current posts form separate chains.
-- [ ] Pre-existing: `pnpm format:check` fails on ~150 untouched files on this
-      branch because it predates main's Prettier reformat; resolves on rebase.
+- [x] Fix `pnpm format:check` on this branch: drop the branch-only
+      `proseWrap: "always"` from `.prettierrc` (main does not set it), which
+      made 62 untouched files fail.
 
 ## Astro 6 Upgrade (superseded)
 

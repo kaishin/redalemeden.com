@@ -656,6 +656,10 @@ link (dead → Wayback snapshot, no snapshot → plain text), then remove the
       `/neosamurai/` (index oldest first), mirroring Derived Data. No sidebar
       entry and no RSS/JSON feed by design. Internal links rewritten; old
       `/blog/2006…` URLs were never deployed, so no redirects.
+- [x] Add Previous/Next buttons at the bottom of every post (Unredacted,
+      Derived Data, Neo Samurai) via `PostNavigation.astro` and
+      `withNeighbors` in `src/lib/adjacent.ts`. Chronological within the
+      collection; archived and current posts form separate chains.
 - [ ] Pre-existing: `pnpm format:check` fails on ~150 untouched files on this
       branch because it predates main's Prettier reformat; resolves on rebase.
 

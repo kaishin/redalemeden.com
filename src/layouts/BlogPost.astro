@@ -2,12 +2,18 @@
 import type { CollectionEntry } from "astro:content";
 import NavigationLayout from "@layouts/NavigationLayout.astro";
 import FormattedDate from "@components/FormattedDate.astro";
+import PostNavigation from "@components/PostNavigation.astro";
+import type { PostLink } from "@lib/adjacent";
 import { SITE_AUTHOR, SITE_URL } from "@consts";
 
-type Props =
+type Props = (
   | CollectionEntry<"blog">["data"]
   | CollectionEntry<"derived-data">["data"]
-  | CollectionEntry<"neosamurai">["data"];
+  | CollectionEntry<"neosamurai">["data"]
+) & {
+  previous?: PostLink;
+  next?: PostLink;
+};
 
 const {
   title,
@@ -17,6 +23,8 @@ const {
   updatedDate,
   isArchived,
   audience,
+  previous,
+  next,
 } = Astro.props;
 const assumedAudience = audience?.trim();
 const audienceLine = assumedAudience
@@ -120,4 +128,5 @@ const structuredDataJson = JSON.stringify(structuredData).replace(
     </aside>
   )}
   <slot />
+  <PostNavigation previous={previous} next={next} />
 </NavigationLayout>

@@ -37,14 +37,19 @@ pnpm format:check
 ### Content Management
 
 - Blog posts are managed through Astro Content Collections in
-  [src/content/blog/](src/content/blog/) and
-  [src/content/derived-data/](src/content/derived-data/), which share the same
-  post schema
+  [src/content/blog/](src/content/blog/),
+  [src/content/derived-data/](src/content/derived-data/), and
+  [src/content/neosamurai/](src/content/neosamurai/), which share the same post
+  schema
+- Neo Samurai (`/neosamurai/`) holds the migrated 2006–2007 posts. It has no
+  sidebar entry and no RSS or JSON feed by design
 - Content schema is defined in [src/content.config.ts](src/content.config.ts)
   with Zod validation, using the Content Layer API glob loader
 - Required frontmatter fields: `title`, `pubDate`
 - Optional frontmatter fields: `description`, `audience`, `tags`, `updatedDate`,
-  `image`, `isArchived`
+  `image`, `isArchived`, `draft`
+- `draft: true` hides a post from production builds (pages, indexes, feeds, and
+  previous/next links); drafts still render in `pnpm dev`
 - Blog posts use the `[...slug].astro` dynamic route pattern for rendering
 
 ### Routing & Layouts

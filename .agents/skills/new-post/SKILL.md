@@ -21,9 +21,9 @@ The script creates `src/content/blog/{year}/{slug}/index.md` with:
 - the headline as `title`
 - today's date as `pubDate`
 - an empty `tags` list
-- a YAML comment listing the optional fields (`description`, `audience`, `updatedDate`, `image`, `isArchived`)
+- a YAML comment listing the optional fields (`description`, `audience`, `updatedDate`, `image`, `isArchived`, `draft`)
 
-The schema has no `draft` field, so the post is publishable as-is; there is no draft support.
+The post is publishable as-is. Add `draft: true` to keep it out of production builds; drafts still render in `pnpm dev`.
 
 ## Guardrails
 

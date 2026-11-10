@@ -48,6 +48,10 @@
   --input-bg: oklch(99.3% 0.003 90);
   --input-text: oklch(29% 0.03 292);
   --input-placeholder: oklch(72% 0.015 85);
+  --archive-bg: color-mix(in oklab, var(--color-banana) 20%, var(--page-bg));
+  --archive-border: color-mix(in oklab, var(--color-banana) 70%, transparent);
+  --archive-label: oklch(44% 0.085 80);
+  --archive-text: oklch(36% 0.05 82);
 }
 
 :root.dark {
@@ -77,6 +81,10 @@
   --input-bg: oklch(31% 0.028 295);
   --input-text: oklch(92% 0.018 302);
   --input-placeholder: oklch(66% 0.024 300);
+  --archive-bg: color-mix(in oklab, var(--color-banana) 9%, transparent);
+  --archive-border: color-mix(in oklab, var(--color-banana) 32%, transparent);
+  --archive-label: oklch(86% 0.115 92);
+  --archive-text: oklch(88% 0.035 95);
 }
 
 html {

@@ -1,10 +1,11 @@
 ---
+import { isPublished } from "@lib/published";
 import { getCollection } from "astro:content";
 import { Rss } from "@lucide/astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import NavigationLayout from "@layouts/NavigationLayout.astro";
 
-const posts = (await getCollection("blog"))
+const posts = (await getCollection("blog", isPublished))
   .filter((post) => !post.data.isArchived)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---

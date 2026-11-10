@@ -19,6 +19,7 @@ const postSchema = z.object({
     .transform((val) => (val ? new Date(val) : undefined)),
   image: z.string().optional(),
   isArchived: z.boolean().optional().default(false),
+  draft: z.boolean().optional().default(false),
 });
 
 const blog = defineCollection({
@@ -34,4 +35,12 @@ const derivedData = defineCollection({
   schema: postSchema,
 });
 
-export const collections = { blog, "derived-data": derivedData };
+const neosamurai = defineCollection({
+  loader: glob({
+    base: "./src/content/neosamurai",
+    pattern: "**/*.{md,mdx}",
+  }),
+  schema: postSchema,
+});
+
+export const collections = { blog, "derived-data": derivedData, neosamurai };

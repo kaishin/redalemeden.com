@@ -47,7 +47,9 @@ pnpm format:check
   with Zod validation, using the Content Layer API glob loader
 - Required frontmatter fields: `title`, `pubDate`
 - Optional frontmatter fields: `description`, `audience`, `tags`, `updatedDate`,
-  `image`, `isArchived`
+  `image`, `isArchived`, `draft`
+- `draft: true` hides a post from production builds (pages, indexes, feeds, and
+  previous/next links); drafts still render in `pnpm dev`
 - Blog posts use the `[...slug].astro` dynamic route pattern for rendering
 
 ### Routing & Layouts

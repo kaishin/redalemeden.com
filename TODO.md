@@ -663,6 +663,8 @@ link (dead → Wayback snapshot, no snapshot → plain text), then remove the
 - [x] Fix `pnpm format:check` on this branch: drop the branch-only
       `proseWrap: "always"` from `.prettierrc` (main does not set it), which
       made 62 untouched files fail.
+- [x] Add a `draft` frontmatter flag (hidden from production builds, shown in
+      `pnpm dev`) and mark the Michael Jackson post as a draft.
 
 ## Astro 6 Upgrade (superseded)
 

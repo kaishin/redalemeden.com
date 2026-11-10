@@ -19,6 +19,7 @@ const postSchema = z.object({
     .transform((val) => (val ? new Date(val) : undefined)),
   image: z.string().optional(),
   isArchived: z.boolean().optional().default(false),
+  draft: z.boolean().optional().default(false),
 });
 
 const blog = defineCollection({

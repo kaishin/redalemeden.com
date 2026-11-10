@@ -1,11 +1,12 @@
 ---
+import { isPublished } from "@lib/published";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import NavigationLayout from "@layouts/NavigationLayout.astro";
 
 // Every Neo Samurai post is archived, so list them all, oldest first, to keep
 // serialized entries such as the Shinwa chronicles in reading order.
-const posts = (await getCollection("neosamurai")).sort(
+const posts = (await getCollection("neosamurai", isPublished)).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
 );
 ---

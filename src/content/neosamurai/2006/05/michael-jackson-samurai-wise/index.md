@@ -3,6 +3,7 @@ title: "Michael Jackson, Samurai-Wise"
 pubDate: May 27 2006
 tags: ["neosamurai"]
 isArchived: true
+draft: true
 ---
 
 Michael Jackson landed in Japan yesterday for MTV Japan's "Legend Award," which

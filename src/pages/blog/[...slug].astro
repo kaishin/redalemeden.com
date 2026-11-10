@@ -1,11 +1,12 @@
 ---
+import { isPublished } from "@lib/published";
 import { type CollectionEntry, getCollection, render } from "astro:content";
 import BlogPost from "@layouts/BlogPost.astro";
 import { excerpt } from "@lib/excerpt";
 import { type PostLink, withNeighbors } from "@lib/adjacent";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const posts = await getCollection("blog", isPublished);
 
   return withNeighbors(posts, "/blog").map(({ post, previous, next }) => ({
     params: { slug: post.id },

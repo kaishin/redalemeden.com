@@ -1,11 +1,12 @@
 ---
+import { isPublished } from "@lib/published";
 import { type CollectionEntry, getCollection, render } from "astro:content";
 import BlogPost from "@layouts/BlogPost.astro";
 import { excerpt } from "@lib/excerpt";
 import { type PostLink, withNeighbors } from "@lib/adjacent";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("derived-data");
+  const posts = await getCollection("derived-data", isPublished);
 
   return withNeighbors(posts, "/derived-data").map(
     ({ post, previous, next }) => ({

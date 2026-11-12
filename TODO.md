@@ -466,9 +466,12 @@ Items are ordered; each is one focused pull request.
       New intro: career timeline (Orange, Yabie, clients, Circle) and
       multi-agent work, in an authoritative first-person voice. Shorter
       backstory. Four Rays and the conference link are not on the page.
-- [ ] Add the Generative AI and Algorithmic Manipulation conference (KTH,
-      28–29 January 2027) to Projects, and align the backstory with the new
-      intro timeline (Orange, Yabie).
+- [x] Add the Generative AI and Algorithmic Manipulation conference (KTH,
+      28–29 January 2027) to Projects and drop Dash Icon
+      (`src/components/ProjectGrid.astro`, card image cropped from the
+      conference social card).
+- [ ] Align the landing page backstory with the new intro timeline (Orange,
+      Yabie).
 
 ## Not ready
 

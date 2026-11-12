@@ -9,9 +9,10 @@ interface Props {
   state: string;
   url: string;
   description: string;
+  alt?: string;
 }
 
-const { name, image, year, url, description } = Astro.props;
+const { name, image, year, url, description, alt = "" } = Astro.props;
 
 const imagePath = "/src/assets/images/projects/" + image;
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -23,7 +24,7 @@ const imageSrc = images[imagePath]();
 
 <article class="h-full overflow-hidden rounded-2xl bg-white shadow transition-all duration-300 ease-linear hover:scale-[1.03] has-focus-visible:ring-2 has-focus-visible:ring-[var(--accent-ui)] has-focus-visible:scale-[1.03] motion-reduce:transition-none motion-reduce:hover:scale-100 motion-reduce:has-focus-visible:scale-100 dark:bg-[var(--surface-muted)] dark:shadow-[0_26px_80px_color-mix(in_oklab,var(--color-amethyst)_10%,transparent)] dark:ring-1 dark:ring-[var(--border-soft)]">
   <a href={url} class="block h-full">
-    <Image src={imageSrc} class="max-w-full" alt="" />
+    <Image src={imageSrc} class="max-w-full" alt={alt} />
 
     <div class="p-6">
       <h4 class="mx-0 mt-0 mb-2 text-sm font-semibold tracking-widest uppercase">

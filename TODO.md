@@ -462,6 +462,16 @@ Items are ordered; each is one focused pull request.
 - [ ] Integrate turnstile in contact form (Need to revert d551ee9b3bf2631ba3790d005cb5efd3699b3534)
 - [x] Add JSON feed for Derived Data blog (mirrors existing main blog JSON feed
       if present)
+- [x] Rewrite the landing page copy (`src/pages/index.mdx`)
+      New intro: career timeline (Orange, Yabie, clients, Circle) and
+      multi-agent work, in an authoritative first-person voice. Shorter
+      backstory. Four Rays and the conference link are not on the page.
+- [x] Add the Generative AI and Algorithmic Manipulation conference (KTH,
+      28–29 January 2027) to Projects and drop Dash Icon
+      (`src/components/ProjectGrid.astro`, card image cropped from the
+      conference social card).
+- [ ] Align the landing page backstory with the new intro timeline (Orange,
+      Yabie).
 
 ## Not ready
 

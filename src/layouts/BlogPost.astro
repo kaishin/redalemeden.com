@@ -2,10 +2,18 @@
 import type { CollectionEntry } from "astro:content";
 import NavigationLayout from "@layouts/NavigationLayout.astro";
 import FormattedDate from "@components/FormattedDate.astro";
+import PostNavigation from "@components/PostNavigation.astro";
+import type { PostLink } from "@lib/adjacent";
 import { SITE_AUTHOR, SITE_URL } from "@consts";
 
-type Props =
-  CollectionEntry<"blog">["data"] | CollectionEntry<"derived-data">["data"];
+type Props = (
+  | CollectionEntry<"blog">["data"]
+  | CollectionEntry<"derived-data">["data"]
+  | CollectionEntry<"neosamurai">["data"]
+) & {
+  previous?: PostLink;
+  next?: PostLink;
+};
 
 const {
   title,
@@ -15,6 +23,8 @@ const {
   updatedDate,
   isArchived,
   audience,
+  previous,
+  next,
 } = Astro.props;
 const assumedAudience = audience?.trim();
 const audienceLine = assumedAudience
@@ -85,12 +95,38 @@ const structuredDataJson = JSON.stringify(structuredData).replace(
     </>
   )}
   {isArchived && (
-    <div class="mb-8 rounded-2xl border border-yellow-300 bg-yellow-100/80 px-5 py-4 dark:border-yellow-500/35 dark:bg-yellow-500/10">
-      <p class="text-sm font-medium text-yellow-900 dark:text-yellow-100">
-        This post has been <strong>archived</strong>. Some or all of the
-        information below may no longer be relevant or correct.
-      </p>
-    </div>
+    <aside
+      aria-label="Archived post"
+      class="not-prose mb-10 flex items-start gap-3.5 rounded-2xl border border-(--archive-border) bg-(--archive-bg) px-5 py-4"
+    >
+      <svg
+        aria-hidden="true"
+        class="mt-0.5 size-4 shrink-0 text-(--archive-label)"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <rect width="20" height="5" x="2" y="3" rx="1"></rect>
+        <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path>
+        <path d="M10 12h4"></path>
+      </svg>
+      <div>
+        <p class="text-xs font-semibold tracking-[0.14em] text-(--archive-label) uppercase">
+          Archived
+          <span aria-hidden="true" class="mx-1">
+            ·
+          </span>
+          <span class="tabular-nums">{pubDate.getFullYear()}</span>
+        </p>
+        <p class="mt-1 text-sm/6 text-pretty text-(--archive-text)">
+          This post is archived. Some details may no longer be accurate.
+        </p>
+      </div>
+    </aside>
   )}
   <slot />
+  <PostNavigation previous={previous} next={next} />
 </NavigationLayout>

@@ -1,0 +1,60 @@
+---
+import { ArrowLeft, ArrowRight } from "@lucide/astro";
+import type { PostLink } from "@lib/adjacent";
+
+interface Props {
+  previous?: PostLink;
+  next?: PostLink;
+}
+
+const { previous, next } = Astro.props;
+
+const buttonClass =
+  "group flex flex-col gap-1.5 rounded-2xl border border-(--border-soft) bg-(--surface-soft) px-5 py-4 shadow-sm transition-colors duration-150 hover:border-(--accent-ui) focus-visible:border-(--accent-ui) focus-visible:ring-2 focus-visible:ring-(--accent-ui) focus-visible:outline-none";
+const labelClass =
+  "flex items-center gap-1.5 text-xs font-semibold tracking-[0.14em] text-(--muted-text) uppercase transition-colors group-hover:text-(--accent-link)";
+const titleClass =
+  "text-base/snug font-medium text-pretty text-(--page-text) transition-colors group-hover:text-(--accent-link)";
+const arrowClass =
+  "transition-transform duration-150 motion-reduce:transition-none";
+---
+
+{(previous || next) && (
+  <nav
+    aria-label="More posts"
+    class="not-prose mt-16 grid gap-4 border-t border-(--border-soft) pt-8 sm:grid-cols-2"
+  >
+    {previous && (
+      <a href={previous.href} rel="prev" class={buttonClass}>
+        <span class={labelClass}>
+          <ArrowLeft
+            size={14}
+            stroke-width={2.5}
+            aria-hidden="true"
+            class={`${arrowClass} group-hover:-translate-x-0.5`}
+          />
+          Previous
+        </span>
+        <span class={titleClass}>{previous.title}</span>
+      </a>
+    )}
+    {next && (
+      <a
+        href={next.href}
+        rel="next"
+        class={`${buttonClass} items-end text-right sm:col-start-2`}
+      >
+        <span class={labelClass}>
+          Next
+          <ArrowRight
+            size={14}
+            stroke-width={2.5}
+            aria-hidden="true"
+            class={`${arrowClass} group-hover:translate-x-0.5`}
+          />
+        </span>
+        <span class={titleClass}>{next.title}</span>
+      </a>
+    )}
+  </nav>
+)}

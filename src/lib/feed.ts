@@ -1,4 +1,5 @@
 import rss from "@astrojs/rss";
+import { isPublished } from "@lib/published";
 import type { RSSFeedItem } from "@astrojs/rss";
 import type { APIContext } from "astro";
 import { getCollection } from "astro:content";
@@ -119,7 +120,7 @@ export async function getFeedEntries(
   config: FeedConfig,
   site: URL,
 ): Promise<FeedEntry[]> {
-  const posts = await getCollection(config.collection);
+  const posts = await getCollection(config.collection, isPublished);
 
   return posts
     .filter((post) => !post.data.isArchived)

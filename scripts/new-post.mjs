@@ -38,7 +38,7 @@ async function createBlogPost(title) {
 title: ${JSON.stringify(title)}
 tags: []
 pubDate: ${date.toISOString().split("T")[0]}
-# Optional fields: description, audience, updatedDate, image, isArchived
+# Optional fields: description, audience, updatedDate, image, isArchived, draft
 ---
 
 `;

@@ -13,7 +13,7 @@ framework's bold ambitions are sometimes hampered by subpar debugging tools and
 arcane, seemingly random limitations.
 
 I previously
-[wrote](https://redalemeden.com/blog/2020/this-week-i-learned-24#programming)
+[wrote](/experiments/twil#this-week-i-learned-24)
 about a SwiftUI bug that gave me quite a run for my money:
 
 > The stack trace isn’t of much help and no amount of view hierarchy tweaks got

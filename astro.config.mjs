@@ -31,18 +31,30 @@ export default defineConfig({
     "/blog/3": "/blog",
     "/blog/4": "/blog",
     "/blog/5": "/blog",
-    "/blog/2020/this-week-i-learned-21": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-22": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-23": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-24": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-25": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-26": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-27": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-28": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-29": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-30": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-31": "/experiments/twil",
-    "/blog/2020/this-week-i-learned-32": "/experiments/twil",
+    "/blog/2020/this-week-i-learned-21":
+      "/experiments/twil#this-week-i-learned-21",
+    "/blog/2020/this-week-i-learned-22":
+      "/experiments/twil#this-week-i-learned-22",
+    "/blog/2020/this-week-i-learned-23":
+      "/experiments/twil#this-week-i-learned-23",
+    "/blog/2020/this-week-i-learned-24":
+      "/experiments/twil#this-week-i-learned-24",
+    "/blog/2020/this-week-i-learned-25":
+      "/experiments/twil#this-week-i-learned-25",
+    "/blog/2020/this-week-i-learned-26":
+      "/experiments/twil#this-week-i-learned-26",
+    "/blog/2020/this-week-i-learned-27":
+      "/experiments/twil#this-week-i-learned-27",
+    "/blog/2020/this-week-i-learned-28":
+      "/experiments/twil#this-week-i-learned-28",
+    "/blog/2020/this-week-i-learned-29":
+      "/experiments/twil#this-week-i-learned-29",
+    "/blog/2020/this-week-i-learned-30":
+      "/experiments/twil#this-week-i-learned-30",
+    "/blog/2020/this-week-i-learned-31":
+      "/experiments/twil#this-week-i-learned-31",
+    "/blog/2020/this-week-i-learned-32":
+      "/experiments/twil#this-week-i-learned-32",
     "/blog/2021/a-feel-good-refactor":
       "/derived-data/2021/a-feel-good-refactor/",
     "/blog/2021/wwdc-21-day-2-session-notes":
